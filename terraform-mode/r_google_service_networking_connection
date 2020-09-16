@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_service_networking_connection
+# key: r_google_service_networking_connection
+# --
+
+resource "google_service_networking_connection" "${1:this}" {
+    network = "${2:network}"
+    reserved_peering_ranges = "${3:reserved_peering_ranges}"
+    service = "${4:service}"
+}

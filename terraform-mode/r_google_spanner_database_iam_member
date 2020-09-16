@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_spanner_database_iam_member
+# key: r_google_spanner_database_iam_member
+# --
+
+resource "google_spanner_database_iam_member" "${1:this}" {
+    database = "${2:database}"
+    instance = "${3:instance}"
+    member = "${4:member}"
+    role = "${5:role}"
+}

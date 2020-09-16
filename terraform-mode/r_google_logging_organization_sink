@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_logging_organization_sink
+# key: r_google_logging_organization_sink
+# --
+
+resource "google_logging_organization_sink" "${1:this}" {
+    destination = "${2:destination}"
+    name = "${3:name}"
+    org_id = "${4:org_id}"
+}

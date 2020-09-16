@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_scheduler_job
+# key: r_google_cloud_scheduler_job
+# --
+
+resource "google_cloud_scheduler_job" "${1:this}" {
+    name = "${2:name}"
+}

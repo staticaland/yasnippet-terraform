@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_sql_ca_certs
+# key: d_google_sql_ca_certs
+# --
+
+data "google_sql_ca_certs" "${1:this}" {
+    instance = "${2:instance}"
+}

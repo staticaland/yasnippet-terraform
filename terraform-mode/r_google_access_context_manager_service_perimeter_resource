@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_access_context_manager_service_perimeter_resource
+# key: r_google_access_context_manager_service_perimeter_resource
+# --
+
+resource "google_access_context_manager_service_perimeter_resource" "${1:this}" {
+    perimeter_name = "${2:perimeter_name}"
+    resource = "${3:resource}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_node_template
+# key: r_google_compute_node_template
+# --
+
+resource "google_compute_node_template" "${1:this}" {
+}

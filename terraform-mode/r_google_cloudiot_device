@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_cloudiot_device
+# key: r_google_cloudiot_device
+# --
+
+resource "google_cloudiot_device" "${1:this}" {
+    name = "${2:name}"
+    registry = "${3:registry}"
+}

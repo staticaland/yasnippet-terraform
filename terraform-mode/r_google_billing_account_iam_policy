@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_billing_account_iam_policy
+# key: r_google_billing_account_iam_policy
+# --
+
+resource "google_billing_account_iam_policy" "${1:this}" {
+    billing_account_id = "${2:billing_account_id}"
+    policy_data = "${3:policy_data}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_identity_platform_oauth_idp_config
+# key: r_google_identity_platform_oauth_idp_config
+# --
+
+resource "google_identity_platform_oauth_idp_config" "${1:this}" {
+    client_id = "${2:client_id}"
+    issuer = "${3:issuer}"
+    name = "${4:name}"
+}

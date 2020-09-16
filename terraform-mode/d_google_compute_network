@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_network
+# key: d_google_compute_network
+# --
+
+data "google_compute_network" "${1:this}" {
+    name = "${2:name}"
+}

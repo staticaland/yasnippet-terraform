@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_network
+# key: r_google_compute_network
+# --
+
+resource "google_compute_network" "${1:this}" {
+    name = "${2:name}"
+}

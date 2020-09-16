@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_lb_ip_ranges
+# key: d_google_compute_lb_ip_ranges
+# --
+
+data "google_compute_lb_ip_ranges" "${1:this}" {
+}

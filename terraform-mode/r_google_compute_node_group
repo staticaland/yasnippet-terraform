@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_node_group
+# key: r_google_compute_node_group
+# --
+
+resource "google_compute_node_group" "${1:this}" {
+    node_template = "${2:node_template}"
+    size = "${3:size}"
+}

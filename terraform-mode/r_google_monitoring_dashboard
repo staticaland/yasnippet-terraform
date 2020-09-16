@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_monitoring_dashboard
+# key: r_google_monitoring_dashboard
+# --
+
+resource "google_monitoring_dashboard" "${1:this}" {
+    dashboard_json = "${2:dashboard_json}"
+}

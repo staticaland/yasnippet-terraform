@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_iam_testable_permissions
+# key: d_google_iam_testable_permissions
+# --
+
+data "google_iam_testable_permissions" "${1:this}" {
+    full_resource_name = "${2:full_resource_name}"
+}

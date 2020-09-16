@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_backend_bucket
+# key: r_google_compute_backend_bucket
+# --
+
+resource "google_compute_backend_bucket" "${1:this}" {
+    bucket_name = "${2:bucket_name}"
+    name = "${3:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_sourcerepo_repository_iam_member
+# key: r_google_sourcerepo_repository_iam_member
+# --
+
+resource "google_sourcerepo_repository_iam_member" "${1:this}" {
+    member = "${2:member}"
+    repository = "${3:repository}"
+    role = "${4:role}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_project_iam_custom_role
+# key: r_google_project_iam_custom_role
+# --
+
+resource "google_project_iam_custom_role" "${1:this}" {
+    permissions = "${2:permissions}"
+    role_id = "${3:role_id}"
+    title = "${4:title}"
+}

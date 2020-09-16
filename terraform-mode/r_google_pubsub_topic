@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_pubsub_topic
+# key: r_google_pubsub_topic
+# --
+
+resource "google_pubsub_topic" "${1:this}" {
+    name = "${2:name}"
+}

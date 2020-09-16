@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_data_loss_prevention_stored_info_type
+# key: r_google_data_loss_prevention_stored_info_type
+# --
+
+resource "google_data_loss_prevention_stored_info_type" "${1:this}" {
+    parent = "${2:parent}"
+}

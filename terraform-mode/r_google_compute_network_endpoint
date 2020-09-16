@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_network_endpoint
+# key: r_google_compute_network_endpoint
+# --
+
+resource "google_compute_network_endpoint" "${1:this}" {
+    instance = "${2:instance}"
+    ip_address = "${3:ip_address}"
+    network_endpoint_group = "${4:network_endpoint_group}"
+    port = "${5:port}"
+}

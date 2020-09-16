@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_instance_group_manager
+# key: r_google_compute_instance_group_manager
+# --
+
+resource "google_compute_instance_group_manager" "${1:this}" {
+    base_instance_name = "${2:base_instance_name}"
+    name = "${3:name}"
+}

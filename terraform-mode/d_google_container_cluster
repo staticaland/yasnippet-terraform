@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_container_cluster
+# key: d_google_container_cluster
+# --
+
+data "google_container_cluster" "${1:this}" {
+    name = "${2:name}"
+}

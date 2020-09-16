@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_monitoring_slo
+# key: r_google_monitoring_slo
+# --
+
+resource "google_monitoring_slo" "${1:this}" {
+    goal = "${2:goal}"
+    service = "${3:service}"
+}

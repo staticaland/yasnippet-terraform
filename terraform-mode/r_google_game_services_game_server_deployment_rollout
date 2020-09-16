@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_game_services_game_server_deployment_rollout
+# key: r_google_game_services_game_server_deployment_rollout
+# --
+
+resource "google_game_services_game_server_deployment_rollout" "${1:this}" {
+    default_game_server_config = "${2:default_game_server_config}"
+    deployment_id = "${3:deployment_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_sql_source_representation_instance
+# key: r_google_sql_source_representation_instance
+# --
+
+resource "google_sql_source_representation_instance" "${1:this}" {
+    database_version = "${2:database_version}"
+    host = "${3:host}"
+    name = "${4:name}"
+}

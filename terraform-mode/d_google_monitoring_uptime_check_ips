@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_monitoring_uptime_check_ips
+# key: d_google_monitoring_uptime_check_ips
+# --
+
+data "google_monitoring_uptime_check_ips" "${1:this}" {
+}

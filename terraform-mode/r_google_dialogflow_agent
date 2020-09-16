@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_dialogflow_agent
+# key: r_google_dialogflow_agent
+# --
+
+resource "google_dialogflow_agent" "${1:this}" {
+    default_language_code = "${2:default_language_code}"
+    display_name = "${3:display_name}"
+    time_zone = "${4:time_zone}"
+}

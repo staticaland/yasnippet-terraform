@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_vpc_access_connector
+# key: r_google_vpc_access_connector
+# --
+
+resource "google_vpc_access_connector" "${1:this}" {
+    ip_cidr_range = "${2:ip_cidr_range}"
+    name = "${3:name}"
+    network = "${4:network}"
+    region = "${5:region}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_dataproc_job_iam_member
+# key: r_google_dataproc_job_iam_member
+# --
+
+resource "google_dataproc_job_iam_member" "${1:this}" {
+    job_id = "${2:job_id}"
+    member = "${3:member}"
+    role = "${4:role}"
+}

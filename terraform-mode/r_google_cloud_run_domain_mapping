@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_run_domain_mapping
+# key: r_google_cloud_run_domain_mapping
+# --
+
+resource "google_cloud_run_domain_mapping" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_identity_platform_inbound_saml_config
+# key: r_google_identity_platform_inbound_saml_config
+# --
+
+resource "google_identity_platform_inbound_saml_config" "${1:this}" {
+    display_name = "${2:display_name}"
+    name = "${3:name}"
+}

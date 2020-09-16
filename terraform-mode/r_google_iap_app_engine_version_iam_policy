@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_app_engine_version_iam_policy
+# key: r_google_iap_app_engine_version_iam_policy
+# --
+
+resource "google_iap_app_engine_version_iam_policy" "${1:this}" {
+    app_id = "${2:app_id}"
+    policy_data = "${3:policy_data}"
+    service = "${4:service}"
+    version_id = "${5:version_id}"
+}

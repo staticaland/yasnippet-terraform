@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_os_config_patch_deployment
+# key: r_google_os_config_patch_deployment
+# --
+
+resource "google_os_config_patch_deployment" "${1:this}" {
+    patch_deployment_id = "${2:patch_deployment_id}"
+}

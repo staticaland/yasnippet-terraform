@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_google_tpu_node
+# key: r_google_tpu_node
+# --
+
+resource "google_tpu_node" "${1:this}" {
+    accelerator_type = "${2:accelerator_type}"
+    cidr_block = "${3:cidr_block}"
+    name = "${4:name}"
+    tensorflow_version = "${5:tensorflow_version}"
+    zone = "${6:zone}"
+}

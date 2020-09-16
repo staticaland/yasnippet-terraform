@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_storage_notification
+# key: r_google_storage_notification
+# --
+
+resource "google_storage_notification" "${1:this}" {
+    bucket = "${2:bucket}"
+    payload_format = "${3:payload_format}"
+    topic = "${4:topic}"
+}

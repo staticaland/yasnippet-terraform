@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_dns_keys
+# key: d_google_dns_keys
+# --
+
+data "google_dns_keys" "${1:this}" {
+    managed_zone = "${2:managed_zone}"
+}

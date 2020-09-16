@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_google_kms_key_ring
+# key: d_google_kms_key_ring
+# --
+
+data "google_kms_key_ring" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+}

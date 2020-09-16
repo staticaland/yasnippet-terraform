@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_folder_access_approval_settings
+# key: r_google_folder_access_approval_settings
+# --
+
+resource "google_folder_access_approval_settings" "${1:this}" {
+    folder_id = "${2:folder_id}"
+}

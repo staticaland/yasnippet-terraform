@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_client_openid_userinfo
+# key: d_google_client_openid_userinfo
+# --
+
+data "google_client_openid_userinfo" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_app_engine_service_split_traffic
+# key: r_google_app_engine_service_split_traffic
+# --
+
+resource "google_app_engine_service_split_traffic" "${1:this}" {
+    service = "${2:service}"
+}

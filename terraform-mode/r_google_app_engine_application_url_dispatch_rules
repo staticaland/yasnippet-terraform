@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_app_engine_application_url_dispatch_rules
+# key: r_google_app_engine_application_url_dispatch_rules
+# --
+
+resource "google_app_engine_application_url_dispatch_rules" "${1:this}" {
+}

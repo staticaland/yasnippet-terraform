@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_cloudbuild_trigger
+# key: r_google_cloudbuild_trigger
+# --
+
+resource "google_cloudbuild_trigger" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_redis_instance
+# key: r_google_redis_instance
+# --
+
+resource "google_redis_instance" "${1:this}" {
+    memory_size_gb = "${2:memory_size_gb}"
+    name = "${3:name}"
+}

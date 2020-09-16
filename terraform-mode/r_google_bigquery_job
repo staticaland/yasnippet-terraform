@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_bigquery_job
+# key: r_google_bigquery_job
+# --
+
+resource "google_bigquery_job" "${1:this}" {
+    job_id = "${2:job_id}"
+}

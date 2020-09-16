@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_endpoints_service
+# key: r_google_endpoints_service
+# --
+
+resource "google_endpoints_service" "${1:this}" {
+    service_name = "${2:service_name}"
+}

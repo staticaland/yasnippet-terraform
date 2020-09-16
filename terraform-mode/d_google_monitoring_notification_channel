@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_monitoring_notification_channel
+# key: d_google_monitoring_notification_channel
+# --
+
+data "google_monitoring_notification_channel" "${1:this}" {
+}

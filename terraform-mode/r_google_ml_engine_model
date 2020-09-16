@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_ml_engine_model
+# key: r_google_ml_engine_model
+# --
+
+resource "google_ml_engine_model" "${1:this}" {
+    name = "${2:name}"
+}

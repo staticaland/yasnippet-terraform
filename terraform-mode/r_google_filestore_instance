@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_filestore_instance
+# key: r_google_filestore_instance
+# --
+
+resource "google_filestore_instance" "${1:this}" {
+    name = "${2:name}"
+    tier = "${3:tier}"
+    zone = "${4:zone}"
+}

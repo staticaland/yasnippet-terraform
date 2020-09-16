@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_dns_managed_zone
+# key: r_google_dns_managed_zone
+# --
+
+resource "google_dns_managed_zone" "${1:this}" {
+    dns_name = "${2:dns_name}"
+    name = "${3:name}"
+}

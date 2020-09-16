@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_instance_from_template
+# key: r_google_compute_instance_from_template
+# --
+
+resource "google_compute_instance_from_template" "${1:this}" {
+    name = "${2:name}"
+    source_instance_template = "${3:source_instance_template}"
+}

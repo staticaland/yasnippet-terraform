@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_dialogflow_entity_type
+# key: r_google_dialogflow_entity_type
+# --
+
+resource "google_dialogflow_entity_type" "${1:this}" {
+    display_name = "${2:display_name}"
+    kind = "${3:kind}"
+}

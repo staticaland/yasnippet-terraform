@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_access_context_manager_access_policy
+# key: r_google_access_context_manager_access_policy
+# --
+
+resource "google_access_context_manager_access_policy" "${1:this}" {
+    parent = "${2:parent}"
+    title = "${3:title}"
+}

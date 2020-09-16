@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_healthcare_fhir_store_iam_policy
+# key: r_google_healthcare_fhir_store_iam_policy
+# --
+
+resource "google_healthcare_fhir_store_iam_policy" "${1:this}" {
+    fhir_store_id = "${2:fhir_store_id}"
+    policy_data = "${3:policy_data}"
+}

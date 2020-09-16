@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_instance_serial_port
+# key: d_google_compute_instance_serial_port
+# --
+
+data "google_compute_instance_serial_port" "${1:this}" {
+    instance = "${2:instance}"
+    port = "${3:port}"
+}

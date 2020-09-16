@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_organization_access_approval_settings
+# key: r_google_organization_access_approval_settings
+# --
+
+resource "google_organization_access_approval_settings" "${1:this}" {
+    organization_id = "${2:organization_id}"
+}

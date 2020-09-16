@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_binary_authorization_attestor
+# key: r_google_binary_authorization_attestor
+# --
+
+resource "google_binary_authorization_attestor" "${1:this}" {
+    name = "${2:name}"
+}

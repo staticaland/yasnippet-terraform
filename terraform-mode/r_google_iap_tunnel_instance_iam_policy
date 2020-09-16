@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_tunnel_instance_iam_policy
+# key: r_google_iap_tunnel_instance_iam_policy
+# --
+
+resource "google_iap_tunnel_instance_iam_policy" "${1:this}" {
+    instance = "${2:instance}"
+    policy_data = "${3:policy_data}"
+}

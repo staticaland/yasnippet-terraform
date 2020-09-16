@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_projects
+# key: d_google_projects
+# --
+
+data "google_projects" "${1:this}" {
+    filter = "${2:filter}"
+}

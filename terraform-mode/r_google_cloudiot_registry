@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_cloudiot_registry
+# key: r_google_cloudiot_registry
+# --
+
+resource "google_cloudiot_registry" "${1:this}" {
+    name = "${2:name}"
+}

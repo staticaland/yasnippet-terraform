@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_sourcerepo_repository
+# key: r_google_sourcerepo_repository
+# --
+
+resource "google_sourcerepo_repository" "${1:this}" {
+    name = "${2:name}"
+}

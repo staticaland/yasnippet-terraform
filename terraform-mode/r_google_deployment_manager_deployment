@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_deployment_manager_deployment
+# key: r_google_deployment_manager_deployment
+# --
+
+resource "google_deployment_manager_deployment" "${1:this}" {
+    name = "${2:name}"
+}

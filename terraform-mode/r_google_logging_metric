@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_logging_metric
+# key: r_google_logging_metric
+# --
+
+resource "google_logging_metric" "${1:this}" {
+    filter = "${2:filter}"
+    name = "${3:name}"
+}

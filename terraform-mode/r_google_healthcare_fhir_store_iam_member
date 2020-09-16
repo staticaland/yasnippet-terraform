@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_healthcare_fhir_store_iam_member
+# key: r_google_healthcare_fhir_store_iam_member
+# --
+
+resource "google_healthcare_fhir_store_iam_member" "${1:this}" {
+    fhir_store_id = "${2:fhir_store_id}"
+    member = "${3:member}"
+    role = "${4:role}"
+}

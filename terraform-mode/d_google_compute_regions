@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_regions
+# key: d_google_compute_regions
+# --
+
+data "google_compute_regions" "${1:this}" {
+}

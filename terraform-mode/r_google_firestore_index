@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_firestore_index
+# key: r_google_firestore_index
+# --
+
+resource "google_firestore_index" "${1:this}" {
+    collection = "${2:collection}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_run_service_iam_member
+# key: r_google_cloud_run_service_iam_member
+# --
+
+resource "google_cloud_run_service_iam_member" "${1:this}" {
+    member = "${2:member}"
+    role = "${3:role}"
+    service = "${4:service}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_container_registry
+# key: r_google_container_registry
+# --
+
+resource "google_container_registry" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_bigtable_app_profile
+# key: r_google_bigtable_app_profile
+# --
+
+resource "google_bigtable_app_profile" "${1:this}" {
+    app_profile_id = "${2:app_profile_id}"
+}

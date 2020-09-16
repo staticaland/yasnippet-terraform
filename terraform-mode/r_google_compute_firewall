@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_firewall
+# key: r_google_compute_firewall
+# --
+
+resource "google_compute_firewall" "${1:this}" {
+    name = "${2:name}"
+    network = "${3:network}"
+}

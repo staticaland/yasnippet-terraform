@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_project_access_approval_settings
+# key: r_google_project_access_approval_settings
+# --
+
+resource "google_project_access_approval_settings" "${1:this}" {
+    project_id = "${2:project_id}"
+}

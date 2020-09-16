@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_web_backend_service_iam_policy
+# key: r_google_iap_web_backend_service_iam_policy
+# --
+
+resource "google_iap_web_backend_service_iam_policy" "${1:this}" {
+    policy_data = "${2:policy_data}"
+    web_backend_service = "${3:web_backend_service}"
+}

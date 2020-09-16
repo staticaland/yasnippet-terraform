@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_container_registry_image
+# key: d_google_container_registry_image
+# --
+
+data "google_container_registry_image" "${1:this}" {
+    name = "${2:name}"
+}
