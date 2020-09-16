@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_mysql_database
+# key: r_azurerm_mysql_database
+# --
+
+resource "azurerm_mysql_database" "${1:this}" {
+    charset = "${2:charset}"
+    collation = "${3:collation}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    server_name = "${6:server_name}"
+}

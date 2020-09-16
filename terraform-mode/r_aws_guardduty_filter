@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_guardduty_filter
+# key: r_aws_guardduty_filter
+# --
+
+resource "aws_guardduty_filter" "${1:this}" {
+    action = "${2:action}"
+    detector_id = "${3:detector_id}"
+    name = "${4:name}"
+    rank = "${5:rank}"
+}

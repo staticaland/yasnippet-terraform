@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_kubernetes_service_versions
+# key: d_azurerm_kubernetes_service_versions
+# --
+
+data "azurerm_kubernetes_service_versions" "${1:this}" {
+    location = "${2:location}"
+}

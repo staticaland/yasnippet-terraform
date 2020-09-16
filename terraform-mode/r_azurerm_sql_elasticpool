@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_sql_elasticpool
+# key: r_azurerm_sql_elasticpool
+# --
+
+resource "azurerm_sql_elasticpool" "${1:this}" {
+    dtu = "${2:dtu}"
+    edition = "${3:edition}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    server_name = "${7:server_name}"
+}

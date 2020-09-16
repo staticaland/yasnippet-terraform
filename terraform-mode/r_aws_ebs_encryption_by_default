@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ebs_encryption_by_default
+# key: r_aws_ebs_encryption_by_default
+# --
+
+resource "aws_ebs_encryption_by_default" "${1:this}" {
+}

@@ -1,0 +1,18 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_xray_sampling_rule
+# key: r_aws_xray_sampling_rule
+# --
+
+resource "aws_xray_sampling_rule" "${1:this}" {
+    fixed_rate = "${2:fixed_rate}"
+    host = "${3:host}"
+    http_method = "${4:http_method}"
+    priority = "${5:priority}"
+    reservoir_size = "${6:reservoir_size}"
+    resource_arn = "${7:resource_arn}"
+    service_name = "${8:service_name}"
+    service_type = "${9:service_type}"
+    url_path = "${10:url_path}"
+    version = "${11:version}"
+}

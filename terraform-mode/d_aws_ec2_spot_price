@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ec2_spot_price
+# key: d_aws_ec2_spot_price
+# --
+
+data "aws_ec2_spot_price" "${1:this}" {
+}

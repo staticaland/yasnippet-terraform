@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_backup_protected_file_share
+# key: r_azurerm_backup_protected_file_share
+# --
+
+resource "azurerm_backup_protected_file_share" "${1:this}" {
+    backup_policy_id = "${2:backup_policy_id}"
+    recovery_vault_name = "${3:recovery_vault_name}"
+    resource_group_name = "${4:resource_group_name}"
+    source_file_share_name = "${5:source_file_share_name}"
+    source_storage_account_id = "${6:source_storage_account_id}"
+}

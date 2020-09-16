@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_mssql_virtual_machine
+# key: r_azurerm_mssql_virtual_machine
+# --
+
+resource "azurerm_mssql_virtual_machine" "${1:this}" {
+    sql_license_type = "${2:sql_license_type}"
+    virtual_machine_id = "${3:virtual_machine_id}"
+}

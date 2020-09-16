@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_user_ssh_key
+# key: r_aws_iam_user_ssh_key
+# --
+
+resource "aws_iam_user_ssh_key" "${1:this}" {
+    encoding = "${2:encoding}"
+    public_key = "${3:public_key}"
+    username = "${4:username}"
+}

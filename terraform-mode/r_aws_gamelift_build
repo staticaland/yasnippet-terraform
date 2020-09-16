@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_gamelift_build
+# key: r_aws_gamelift_build
+# --
+
+resource "aws_gamelift_build" "${1:this}" {
+    name = "${2:name}"
+    operating_system = "${3:operating_system}"
+}

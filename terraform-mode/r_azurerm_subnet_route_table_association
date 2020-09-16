@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_subnet_route_table_association
+# key: r_azurerm_subnet_route_table_association
+# --
+
+resource "azurerm_subnet_route_table_association" "${1:this}" {
+    route_table_id = "${2:route_table_id}"
+    subnet_id = "${3:subnet_id}"
+}

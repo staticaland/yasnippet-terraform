@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_gateway_association_proposal
+# key: r_aws_dx_gateway_association_proposal
+# --
+
+resource "aws_dx_gateway_association_proposal" "${1:this}" {
+    associated_gateway_id = "${2:associated_gateway_id}"
+    dx_gateway_id = "${3:dx_gateway_id}"
+    dx_gateway_owner_account_id = "${4:dx_gateway_owner_account_id}"
+}

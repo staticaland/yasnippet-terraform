@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lex_slot_type
+# key: r_aws_lex_slot_type
+# --
+
+resource "aws_lex_slot_type" "${1:this}" {
+    name = "${2:name}"
+}

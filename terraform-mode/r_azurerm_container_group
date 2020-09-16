@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_container_group
+# key: r_azurerm_container_group
+# --
+
+resource "azurerm_container_group" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    os_type = "${4:os_type}"
+    resource_group_name = "${5:resource_group_name}"
+}

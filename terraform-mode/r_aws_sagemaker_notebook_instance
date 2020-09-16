@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sagemaker_notebook_instance
+# key: r_aws_sagemaker_notebook_instance
+# --
+
+resource "aws_sagemaker_notebook_instance" "${1:this}" {
+    instance_type = "${2:instance_type}"
+    name = "${3:name}"
+    role_arn = "${4:role_arn}"
+}

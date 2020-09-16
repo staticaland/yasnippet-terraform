@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lightsail_static_ip_attachment
+# key: r_aws_lightsail_static_ip_attachment
+# --
+
+resource "aws_lightsail_static_ip_attachment" "${1:this}" {
+    instance_name = "${2:instance_name}"
+    static_ip_name = "${3:static_ip_name}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_db_instance_role_association
+# key: r_aws_db_instance_role_association
+# --
+
+resource "aws_db_instance_role_association" "${1:this}" {
+    db_instance_identifier = "${2:db_instance_identifier}"
+    feature_name = "${3:feature_name}"
+    role_arn = "${4:role_arn}"
+}

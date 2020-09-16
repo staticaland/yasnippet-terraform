@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_directory_service_conditional_forwarder
+# key: r_aws_directory_service_conditional_forwarder
+# --
+
+resource "aws_directory_service_conditional_forwarder" "${1:this}" {
+    directory_id = "${2:directory_id}"
+    dns_ips = "${3:dns_ips}"
+    remote_domain_name = "${4:remote_domain_name}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codecommit_trigger
+# key: r_aws_codecommit_trigger
+# --
+
+resource "aws_codecommit_trigger" "${1:this}" {
+    repository_name = "${2:repository_name}"
+}

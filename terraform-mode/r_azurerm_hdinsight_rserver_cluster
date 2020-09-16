@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_hdinsight_rserver_cluster
+# key: r_azurerm_hdinsight_rserver_cluster
+# --
+
+resource "azurerm_hdinsight_rserver_cluster" "${1:this}" {
+    cluster_version = "${2:cluster_version}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    rstudio = "${6:rstudio}"
+    tier = "${7:tier}"
+}

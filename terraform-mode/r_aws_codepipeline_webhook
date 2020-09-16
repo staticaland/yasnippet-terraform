@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codepipeline_webhook
+# key: r_aws_codepipeline_webhook
+# --
+
+resource "aws_codepipeline_webhook" "${1:this}" {
+    authentication = "${2:authentication}"
+    name = "${3:name}"
+    target_action = "${4:target_action}"
+    target_pipeline = "${5:target_pipeline}"
+}

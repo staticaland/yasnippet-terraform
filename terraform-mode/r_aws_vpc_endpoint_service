@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_vpc_endpoint_service
+# key: r_aws_vpc_endpoint_service
+# --
+
+resource "aws_vpc_endpoint_service" "${1:this}" {
+    acceptance_required = "${2:acceptance_required}"
+    network_load_balancer_arns = "${3:network_load_balancer_arns}"
+}

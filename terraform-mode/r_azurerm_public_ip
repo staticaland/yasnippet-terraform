@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_public_ip
+# key: r_azurerm_public_ip
+# --
+
+resource "azurerm_public_ip" "${1:this}" {
+    allocation_method = "${2:allocation_method}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

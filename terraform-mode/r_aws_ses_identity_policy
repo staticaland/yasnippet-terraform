@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ses_identity_policy
+# key: r_aws_ses_identity_policy
+# --
+
+resource "aws_ses_identity_policy" "${1:this}" {
+    identity = "${2:identity}"
+    name = "${3:name}"
+    policy = "${4:policy}"
+}

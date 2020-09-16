@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_relay_hybrid_connection
+# key: r_azurerm_relay_hybrid_connection
+# --
+
+resource "azurerm_relay_hybrid_connection" "${1:this}" {
+    name = "${2:name}"
+    relay_namespace_name = "${3:relay_namespace_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

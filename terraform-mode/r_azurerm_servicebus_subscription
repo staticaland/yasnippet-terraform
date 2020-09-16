@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_servicebus_subscription
+# key: r_azurerm_servicebus_subscription
+# --
+
+resource "azurerm_servicebus_subscription" "${1:this}" {
+    max_delivery_count = "${2:max_delivery_count}"
+    name = "${3:name}"
+    namespace_name = "${4:namespace_name}"
+    resource_group_name = "${5:resource_group_name}"
+    topic_name = "${6:topic_name}"
+}

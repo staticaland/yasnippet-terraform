@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_guardduty_organization_configuration
+# key: r_aws_guardduty_organization_configuration
+# --
+
+resource "aws_guardduty_organization_configuration" "${1:this}" {
+    auto_enable = "${2:auto_enable}"
+    detector_id = "${3:detector_id}"
+}

@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_app_service
+# key: r_azurerm_app_service
+# --
+
+resource "azurerm_app_service" "${1:this}" {
+    app_service_plan_id = "${2:app_service_plan_id}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

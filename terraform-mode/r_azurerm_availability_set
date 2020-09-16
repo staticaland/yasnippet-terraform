@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_availability_set
+# key: r_azurerm_availability_set
+# --
+
+resource "azurerm_availability_set" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

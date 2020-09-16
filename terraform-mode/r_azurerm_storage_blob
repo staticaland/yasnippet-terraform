@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_storage_blob
+# key: r_azurerm_storage_blob
+# --
+
+resource "azurerm_storage_blob" "${1:this}" {
+    name = "${2:name}"
+    storage_account_name = "${3:storage_account_name}"
+    storage_container_name = "${4:storage_container_name}"
+    type = "${5:type}"
+}

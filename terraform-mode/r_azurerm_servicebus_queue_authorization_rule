@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_servicebus_queue_authorization_rule
+# key: r_azurerm_servicebus_queue_authorization_rule
+# --
+
+resource "azurerm_servicebus_queue_authorization_rule" "${1:this}" {
+    name = "${2:name}"
+    namespace_name = "${3:namespace_name}"
+    queue_name = "${4:queue_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

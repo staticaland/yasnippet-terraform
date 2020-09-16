@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_glue_security_configuration
+# key: r_aws_glue_security_configuration
+# --
+
+resource "aws_glue_security_configuration" "${1:this}" {
+    name = "${2:name}"
+}

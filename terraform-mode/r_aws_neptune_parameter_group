@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_neptune_parameter_group
+# key: r_aws_neptune_parameter_group
+# --
+
+resource "aws_neptune_parameter_group" "${1:this}" {
+    family = "${2:family}"
+    name = "${3:name}"
+}

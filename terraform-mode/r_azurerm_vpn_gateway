@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_vpn_gateway
+# key: r_azurerm_vpn_gateway
+# --
+
+resource "azurerm_vpn_gateway" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    virtual_hub_id = "${5:virtual_hub_id}"
+}

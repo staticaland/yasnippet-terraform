@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_mq_configuration
+# key: r_aws_mq_configuration
+# --
+
+resource "aws_mq_configuration" "${1:this}" {
+    data = "${2:data}"
+    engine_type = "${3:engine_type}"
+    engine_version = "${4:engine_version}"
+    name = "${5:name}"
+}

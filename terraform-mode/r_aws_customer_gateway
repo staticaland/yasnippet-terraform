@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_customer_gateway
+# key: r_aws_customer_gateway
+# --
+
+resource "aws_customer_gateway" "${1:this}" {
+    bgp_asn = "${2:bgp_asn}"
+    ip_address = "${3:ip_address}"
+    type = "${4:type}"
+}

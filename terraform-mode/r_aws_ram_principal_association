@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ram_principal_association
+# key: r_aws_ram_principal_association
+# --
+
+resource "aws_ram_principal_association" "${1:this}" {
+    principal = "${2:principal}"
+    resource_share_arn = "${3:resource_share_arn}"
+}

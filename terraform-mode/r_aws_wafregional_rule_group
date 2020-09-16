@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_wafregional_rule_group
+# key: r_aws_wafregional_rule_group
+# --
+
+resource "aws_wafregional_rule_group" "${1:this}" {
+    metric_name = "${2:metric_name}"
+    name = "${3:name}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_emr_instance_fleet
+# key: r_aws_emr_instance_fleet
+# --
+
+resource "aws_emr_instance_fleet" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

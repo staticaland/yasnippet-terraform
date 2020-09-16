@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_client_vpn_endpoint
+# key: r_aws_ec2_client_vpn_endpoint
+# --
+
+resource "aws_ec2_client_vpn_endpoint" "${1:this}" {
+    client_cidr_block = "${2:client_cidr_block}"
+    server_certificate_arn = "${3:server_certificate_arn}"
+}

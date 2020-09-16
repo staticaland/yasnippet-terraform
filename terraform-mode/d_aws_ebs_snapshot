@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ebs_snapshot
+# key: d_aws_ebs_snapshot
+# --
+
+data "aws_ebs_snapshot" "${1:this}" {
+}

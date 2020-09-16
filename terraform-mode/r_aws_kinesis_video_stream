@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_kinesis_video_stream
+# key: r_aws_kinesis_video_stream
+# --
+
+resource "aws_kinesis_video_stream" "${1:this}" {
+    name = "${2:name}"
+}

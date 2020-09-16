@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudwatch_event_permission
+# key: r_aws_cloudwatch_event_permission
+# --
+
+resource "aws_cloudwatch_event_permission" "${1:this}" {
+    principal = "${2:principal}"
+    statement_id = "${3:statement_id}"
+}

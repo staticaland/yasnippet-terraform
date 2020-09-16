@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_sentinel_alert_rule_ms_security_incident
+# key: r_azurerm_sentinel_alert_rule_ms_security_incident
+# --
+
+resource "azurerm_sentinel_alert_rule_ms_security_incident" "${1:this}" {
+    display_name = "${2:display_name}"
+    log_analytics_workspace_id = "${3:log_analytics_workspace_id}"
+    name = "${4:name}"
+    product_filter = "${5:product_filter}"
+    severity_filter = "${6:severity_filter}"
+}

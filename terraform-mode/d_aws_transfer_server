@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_transfer_server
+# key: d_aws_transfer_server
+# --
+
+data "aws_transfer_server" "${1:this}" {
+    server_id = "${2:server_id}"
+}

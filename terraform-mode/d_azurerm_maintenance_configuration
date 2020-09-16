@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_maintenance_configuration
+# key: d_azurerm_maintenance_configuration
+# --
+
+data "azurerm_maintenance_configuration" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

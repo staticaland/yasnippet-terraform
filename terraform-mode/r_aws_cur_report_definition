@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cur_report_definition
+# key: r_aws_cur_report_definition
+# --
+
+resource "aws_cur_report_definition" "${1:this}" {
+    additional_schema_elements = "${2:additional_schema_elements}"
+    compression = "${3:compression}"
+    format = "${4:format}"
+    report_name = "${5:report_name}"
+    s3_bucket = "${6:s3_bucket}"
+    s3_region = "${7:s3_region}"
+    time_unit = "${8:time_unit}"
+}

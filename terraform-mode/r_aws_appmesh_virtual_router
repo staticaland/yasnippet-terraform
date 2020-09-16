@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_appmesh_virtual_router
+# key: r_aws_appmesh_virtual_router
+# --
+
+resource "aws_appmesh_virtual_router" "${1:this}" {
+    mesh_name = "${2:mesh_name}"
+    name = "${3:name}"
+}

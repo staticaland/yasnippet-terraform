@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ecs_capacity_provider
+# key: r_aws_ecs_capacity_provider
+# --
+
+resource "aws_ecs_capacity_provider" "${1:this}" {
+    name = "${2:name}"
+}

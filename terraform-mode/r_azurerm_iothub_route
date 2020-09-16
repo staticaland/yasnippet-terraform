@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iothub_route
+# key: r_azurerm_iothub_route
+# --
+
+resource "azurerm_iothub_route" "${1:this}" {
+    enabled = "${2:enabled}"
+    endpoint_names = "${3:endpoint_names}"
+    iothub_name = "${4:iothub_name}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    source = "${7:source}"
+}

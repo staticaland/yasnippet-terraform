@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_traffic_mirror_filter_rule
+# key: r_aws_ec2_traffic_mirror_filter_rule
+# --
+
+resource "aws_ec2_traffic_mirror_filter_rule" "${1:this}" {
+    destination_cidr_block = "${2:destination_cidr_block}"
+    rule_action = "${3:rule_action}"
+    rule_number = "${4:rule_number}"
+    source_cidr_block = "${5:source_cidr_block}"
+    traffic_direction = "${6:traffic_direction}"
+    traffic_mirror_filter_id = "${7:traffic_mirror_filter_id}"
+}

@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_guardduty_threatintelset
+# key: r_aws_guardduty_threatintelset
+# --
+
+resource "aws_guardduty_threatintelset" "${1:this}" {
+    activate = "${2:activate}"
+    detector_id = "${3:detector_id}"
+    format = "${4:format}"
+    location = "${5:location}"
+    name = "${6:name}"
+}

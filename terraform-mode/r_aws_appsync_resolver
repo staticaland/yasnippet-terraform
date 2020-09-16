@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_appsync_resolver
+# key: r_aws_appsync_resolver
+# --
+
+resource "aws_appsync_resolver" "${1:this}" {
+    api_id = "${2:api_id}"
+    field = "${3:field}"
+    request_template = "${4:request_template}"
+    response_template = "${5:response_template}"
+    type = "${6:type}"
+}

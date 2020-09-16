@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_firewall_application_rule_collection
+# key: r_azurerm_firewall_application_rule_collection
+# --
+
+resource "azurerm_firewall_application_rule_collection" "${1:this}" {
+    action = "${2:action}"
+    azure_firewall_name = "${3:azure_firewall_name}"
+    name = "${4:name}"
+    priority = "${5:priority}"
+    resource_group_name = "${6:resource_group_name}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ebs_snapshot
+# key: r_aws_ebs_snapshot
+# --
+
+resource "aws_ebs_snapshot" "${1:this}" {
+    volume_id = "${2:volume_id}"
+}

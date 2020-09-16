@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lb_listener_certificate
+# key: r_aws_lb_listener_certificate
+# --
+
+resource "aws_lb_listener_certificate" "${1:this}" {
+    certificate_arn = "${2:certificate_arn}"
+    listener_arn = "${3:listener_arn}"
+}

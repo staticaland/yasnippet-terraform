@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_attestation_provider
+# key: d_azurerm_attestation_provider
+# --
+
+data "azurerm_attestation_provider" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

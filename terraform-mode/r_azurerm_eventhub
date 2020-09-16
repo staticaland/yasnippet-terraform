@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_eventhub
+# key: r_azurerm_eventhub
+# --
+
+resource "azurerm_eventhub" "${1:this}" {
+    message_retention = "${2:message_retention}"
+    name = "${3:name}"
+    namespace_name = "${4:namespace_name}"
+    partition_count = "${5:partition_count}"
+    resource_group_name = "${6:resource_group_name}"
+}

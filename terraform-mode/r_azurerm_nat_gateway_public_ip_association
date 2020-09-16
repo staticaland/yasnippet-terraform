@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_nat_gateway_public_ip_association
+# key: r_azurerm_nat_gateway_public_ip_association
+# --
+
+resource "azurerm_nat_gateway_public_ip_association" "${1:this}" {
+    nat_gateway_id = "${2:nat_gateway_id}"
+    public_ip_address_id = "${3:public_ip_address_id}"
+}

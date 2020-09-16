@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_automation_connection_service_principal
+# key: r_azurerm_automation_connection_service_principal
+# --
+
+resource "azurerm_automation_connection_service_principal" "${1:this}" {
+    application_id = "${2:application_id}"
+    automation_account_name = "${3:automation_account_name}"
+    certificate_thumbprint = "${4:certificate_thumbprint}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    subscription_id = "${7:subscription_id}"
+    tenant_id = "${8:tenant_id}"
+}

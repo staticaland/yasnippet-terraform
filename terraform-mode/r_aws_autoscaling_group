@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_autoscaling_group
+# key: r_aws_autoscaling_group
+# --
+
+resource "aws_autoscaling_group" "${1:this}" {
+    max_size = "${2:max_size}"
+    min_size = "${3:min_size}"
+}

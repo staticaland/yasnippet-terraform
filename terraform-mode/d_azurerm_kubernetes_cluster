@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_kubernetes_cluster
+# key: d_azurerm_kubernetes_cluster
+# --
+
+data "azurerm_kubernetes_cluster" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

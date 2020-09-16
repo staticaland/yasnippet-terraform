@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_storagegateway_smb_file_share
+# key: r_aws_storagegateway_smb_file_share
+# --
+
+resource "aws_storagegateway_smb_file_share" "${1:this}" {
+    gateway_arn = "${2:gateway_arn}"
+    location_arn = "${3:location_arn}"
+    role_arn = "${4:role_arn}"
+}

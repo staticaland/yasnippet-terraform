@@ -1,0 +1,18 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_dev_test_windows_virtual_machine
+# key: r_azurerm_dev_test_windows_virtual_machine
+# --
+
+resource "azurerm_dev_test_windows_virtual_machine" "${1:this}" {
+    lab_name = "${2:lab_name}"
+    lab_subnet_name = "${3:lab_subnet_name}"
+    lab_virtual_network_id = "${4:lab_virtual_network_id}"
+    location = "${5:location}"
+    name = "${6:name}"
+    password = "${7:password}"
+    resource_group_name = "${8:resource_group_name}"
+    size = "${9:size}"
+    storage_type = "${10:storage_type}"
+    username = "${11:username}"
+}

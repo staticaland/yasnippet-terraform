@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_integration_service_environment
+# key: r_azurerm_integration_service_environment
+# --
+
+resource "azurerm_integration_service_environment" "${1:this}" {
+    access_endpoint_type = "${2:access_endpoint_type}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    virtual_network_subnet_ids = "${6:virtual_network_subnet_ids}"
+}

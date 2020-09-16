@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ebs_snapshot_copy
+# key: r_aws_ebs_snapshot_copy
+# --
+
+resource "aws_ebs_snapshot_copy" "${1:this}" {
+    source_region = "${2:source_region}"
+    source_snapshot_id = "${3:source_snapshot_id}"
+}

@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_dev_test_global_vm_shutdown_schedule
+# key: r_azurerm_dev_test_global_vm_shutdown_schedule
+# --
+
+resource "azurerm_dev_test_global_vm_shutdown_schedule" "${1:this}" {
+    daily_recurrence_time = "${2:daily_recurrence_time}"
+    location = "${3:location}"
+    timezone = "${4:timezone}"
+    virtual_machine_id = "${5:virtual_machine_id}"
+}

@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_log_analytics_saved_search
+# key: r_azurerm_log_analytics_saved_search
+# --
+
+resource "azurerm_log_analytics_saved_search" "${1:this}" {
+    category = "${2:category}"
+    display_name = "${3:display_name}"
+    log_analytics_workspace_id = "${4:log_analytics_workspace_id}"
+    name = "${5:name}"
+    query = "${6:query}"
+}

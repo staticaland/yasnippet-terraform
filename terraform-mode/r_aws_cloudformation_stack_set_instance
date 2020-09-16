@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudformation_stack_set_instance
+# key: r_aws_cloudformation_stack_set_instance
+# --
+
+resource "aws_cloudformation_stack_set_instance" "${1:this}" {
+    stack_set_name = "${2:stack_set_name}"
+}

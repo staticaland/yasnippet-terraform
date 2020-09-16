@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_eks_node_group
+# key: r_aws_eks_node_group
+# --
+
+resource "aws_eks_node_group" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    node_group_name = "${3:node_group_name}"
+    node_role_arn = "${4:node_role_arn}"
+    subnet_ids = "${5:subnet_ids}"
+}

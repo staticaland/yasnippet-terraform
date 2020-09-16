@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_s3_bucket_policy
+# key: r_aws_s3_bucket_policy
+# --
+
+resource "aws_s3_bucket_policy" "${1:this}" {
+    bucket = "${2:bucket}"
+    policy = "${3:policy}"
+}

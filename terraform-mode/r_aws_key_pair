@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_key_pair
+# key: r_aws_key_pair
+# --
+
+resource "aws_key_pair" "${1:this}" {
+    public_key = "${2:public_key}"
+}

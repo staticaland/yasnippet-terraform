@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_netapp_snapshot
+# key: d_azurerm_netapp_snapshot
+# --
+
+data "azurerm_netapp_snapshot" "${1:this}" {
+    account_name = "${2:account_name}"
+    name = "${3:name}"
+    pool_name = "${4:pool_name}"
+    resource_group_name = "${5:resource_group_name}"
+    volume_name = "${6:volume_name}"
+}

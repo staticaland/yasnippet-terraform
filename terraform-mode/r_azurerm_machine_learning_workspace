@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_machine_learning_workspace
+# key: r_azurerm_machine_learning_workspace
+# --
+
+resource "azurerm_machine_learning_workspace" "${1:this}" {
+    application_insights_id = "${2:application_insights_id}"
+    key_vault_id = "${3:key_vault_id}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    storage_account_id = "${7:storage_account_id}"
+}

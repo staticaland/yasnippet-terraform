@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_transit_gateway
+# key: r_aws_ec2_transit_gateway
+# --
+
+resource "aws_ec2_transit_gateway" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sns_topic_subscription
+# key: r_aws_sns_topic_subscription
+# --
+
+resource "aws_sns_topic_subscription" "${1:this}" {
+    endpoint = "${2:endpoint}"
+    protocol = "${3:protocol}"
+    topic_arn = "${4:topic_arn}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_backup_selection
+# key: r_aws_backup_selection
+# --
+
+resource "aws_backup_selection" "${1:this}" {
+    iam_role_arn = "${2:iam_role_arn}"
+    name = "${3:name}"
+    plan_id = "${4:plan_id}"
+}

@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_vpn_server_configuration
+# key: r_azurerm_vpn_server_configuration
+# --
+
+resource "azurerm_vpn_server_configuration" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    vpn_authentication_types = "${5:vpn_authentication_types}"
+}

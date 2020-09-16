@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_storagegateway_local_disk
+# key: d_aws_storagegateway_local_disk
+# --
+
+data "aws_storagegateway_local_disk" "${1:this}" {
+    gateway_arn = "${2:gateway_arn}"
+}

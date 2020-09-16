@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_appsync_graphql_api
+# key: r_aws_appsync_graphql_api
+# --
+
+resource "aws_appsync_graphql_api" "${1:this}" {
+    authentication_type = "${2:authentication_type}"
+    name = "${3:name}"
+}

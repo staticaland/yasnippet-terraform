@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudwatch_log_destination
+# key: r_aws_cloudwatch_log_destination
+# --
+
+resource "aws_cloudwatch_log_destination" "${1:this}" {
+    name = "${2:name}"
+    role_arn = "${3:role_arn}"
+    target_arn = "${4:target_arn}"
+}

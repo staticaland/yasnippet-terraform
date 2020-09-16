@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iot_time_series_insights_reference_data_set
+# key: r_azurerm_iot_time_series_insights_reference_data_set
+# --
+
+resource "azurerm_iot_time_series_insights_reference_data_set" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    time_series_insights_environment_id = "${4:time_series_insights_environment_id}"
+}

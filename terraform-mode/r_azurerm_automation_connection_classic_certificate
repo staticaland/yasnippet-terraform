@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_automation_connection_classic_certificate
+# key: r_azurerm_automation_connection_classic_certificate
+# --
+
+resource "azurerm_automation_connection_classic_certificate" "${1:this}" {
+    automation_account_name = "${2:automation_account_name}"
+    certificate_asset_name = "${3:certificate_asset_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    subscription_id = "${6:subscription_id}"
+    subscription_name = "${7:subscription_name}"
+}

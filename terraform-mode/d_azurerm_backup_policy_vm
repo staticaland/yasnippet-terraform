@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_backup_policy_vm
+# key: d_azurerm_backup_policy_vm
+# --
+
+data "azurerm_backup_policy_vm" "${1:this}" {
+    name = "${2:name}"
+    recovery_vault_name = "${3:recovery_vault_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

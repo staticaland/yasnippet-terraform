@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_hdinsight_hbase_cluster
+# key: r_azurerm_hdinsight_hbase_cluster
+# --
+
+resource "azurerm_hdinsight_hbase_cluster" "${1:this}" {
+    cluster_version = "${2:cluster_version}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    tier = "${6:tier}"
+}

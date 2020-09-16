@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_eks_cluster
+# key: d_aws_eks_cluster
+# --
+
+data "aws_eks_cluster" "${1:this}" {
+    name = "${2:name}"
+}

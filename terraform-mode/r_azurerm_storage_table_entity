@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_storage_table_entity
+# key: r_azurerm_storage_table_entity
+# --
+
+resource "azurerm_storage_table_entity" "${1:this}" {
+    entity = "${2:entity}"
+    partition_key = "${3:partition_key}"
+    row_key = "${4:row_key}"
+    storage_account_name = "${5:storage_account_name}"
+    table_name = "${6:table_name}"
+}

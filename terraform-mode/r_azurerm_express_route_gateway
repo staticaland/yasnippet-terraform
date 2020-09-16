@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_express_route_gateway
+# key: r_azurerm_express_route_gateway
+# --
+
+resource "azurerm_express_route_gateway" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    scale_units = "${5:scale_units}"
+    virtual_hub_id = "${6:virtual_hub_id}"
+}

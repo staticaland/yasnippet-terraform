@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_workspaces_directory
+# key: d_aws_workspaces_directory
+# --
+
+data "aws_workspaces_directory" "${1:this}" {
+    directory_id = "${2:directory_id}"
+}

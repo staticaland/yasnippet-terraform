@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_container_registry_webhook
+# key: r_azurerm_container_registry_webhook
+# --
+
+resource "azurerm_container_registry_webhook" "${1:this}" {
+    actions = "${2:actions}"
+    location = "${3:location}"
+    name = "${4:name}"
+    registry_name = "${5:registry_name}"
+    resource_group_name = "${6:resource_group_name}"
+    service_uri = "${7:service_uri}"
+}

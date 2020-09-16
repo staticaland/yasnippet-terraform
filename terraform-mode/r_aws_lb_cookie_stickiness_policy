@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lb_cookie_stickiness_policy
+# key: r_aws_lb_cookie_stickiness_policy
+# --
+
+resource "aws_lb_cookie_stickiness_policy" "${1:this}" {
+    lb_port = "${2:lb_port}"
+    load_balancer = "${3:load_balancer}"
+    name = "${4:name}"
+}

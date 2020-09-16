@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_storagegateway_upload_buffer
+# key: r_aws_storagegateway_upload_buffer
+# --
+
+resource "aws_storagegateway_upload_buffer" "${1:this}" {
+    disk_id = "${2:disk_id}"
+    gateway_arn = "${3:gateway_arn}"
+}

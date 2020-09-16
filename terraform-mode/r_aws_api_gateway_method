@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_api_gateway_method
+# key: r_aws_api_gateway_method
+# --
+
+resource "aws_api_gateway_method" "${1:this}" {
+    authorization = "${2:authorization}"
+    http_method = "${3:http_method}"
+    resource_id = "${4:resource_id}"
+    rest_api_id = "${5:rest_api_id}"
+}

@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_qldb_ledger
+# key: r_aws_qldb_ledger
+# --
+
+resource "aws_qldb_ledger" "${1:this}" {
+}

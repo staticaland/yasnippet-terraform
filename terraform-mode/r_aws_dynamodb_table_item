@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dynamodb_table_item
+# key: r_aws_dynamodb_table_item
+# --
+
+resource "aws_dynamodb_table_item" "${1:this}" {
+    hash_key = "${2:hash_key}"
+    item = "${3:item}"
+    table_name = "${4:table_name}"
+}

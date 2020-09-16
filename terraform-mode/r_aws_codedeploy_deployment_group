@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codedeploy_deployment_group
+# key: r_aws_codedeploy_deployment_group
+# --
+
+resource "aws_codedeploy_deployment_group" "${1:this}" {
+    app_name = "${2:app_name}"
+    deployment_group_name = "${3:deployment_group_name}"
+    service_role_arn = "${4:service_role_arn}"
+}

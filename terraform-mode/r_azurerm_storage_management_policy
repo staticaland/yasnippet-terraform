@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_storage_management_policy
+# key: r_azurerm_storage_management_policy
+# --
+
+resource "azurerm_storage_management_policy" "${1:this}" {
+    storage_account_id = "${2:storage_account_id}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_spot_fleet_request
+# key: r_aws_spot_fleet_request
+# --
+
+resource "aws_spot_fleet_request" "${1:this}" {
+    iam_fleet_role = "${2:iam_fleet_role}"
+    target_capacity = "${3:target_capacity}"
+}

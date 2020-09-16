@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cognito_resource_server
+# key: r_aws_cognito_resource_server
+# --
+
+resource "aws_cognito_resource_server" "${1:this}" {
+    identifier = "${2:identifier}"
+    name = "${3:name}"
+    user_pool_id = "${4:user_pool_id}"
+}

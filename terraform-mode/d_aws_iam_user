@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_iam_user
+# key: d_aws_iam_user
+# --
+
+data "aws_iam_user" "${1:this}" {
+    user_name = "${2:user_name}"
+}

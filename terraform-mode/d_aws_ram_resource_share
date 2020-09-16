@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ram_resource_share
+# key: d_aws_ram_resource_share
+# --
+
+data "aws_ram_resource_share" "${1:this}" {
+    name = "${2:name}"
+    resource_owner = "${3:resource_owner}"
+}

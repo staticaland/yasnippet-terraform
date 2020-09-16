@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_mssql_database
+# key: d_azurerm_mssql_database
+# --
+
+data "azurerm_mssql_database" "${1:this}" {
+    name = "${2:name}"
+    server_id = "${3:server_id}"
+}

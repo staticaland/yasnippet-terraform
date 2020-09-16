@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_automation_variable_string
+# key: d_azurerm_automation_variable_string
+# --
+
+data "azurerm_automation_variable_string" "${1:this}" {
+    automation_account_name = "${2:automation_account_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

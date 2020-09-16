@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_role_assignment
+# key: r_azurerm_role_assignment
+# --
+
+resource "azurerm_role_assignment" "${1:this}" {
+    principal_id = "${2:principal_id}"
+    scope = "${3:scope}"
+}

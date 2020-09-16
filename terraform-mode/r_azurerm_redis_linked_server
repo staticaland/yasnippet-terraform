@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_redis_linked_server
+# key: r_azurerm_redis_linked_server
+# --
+
+resource "azurerm_redis_linked_server" "${1:this}" {
+    linked_redis_cache_id = "${2:linked_redis_cache_id}"
+    linked_redis_cache_location = "${3:linked_redis_cache_location}"
+    resource_group_name = "${4:resource_group_name}"
+    server_role = "${5:server_role}"
+    target_redis_cache_name = "${6:target_redis_cache_name}"
+}

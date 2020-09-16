@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_transit_gateway_peering_attachment
+# key: r_aws_ec2_transit_gateway_peering_attachment
+# --
+
+resource "aws_ec2_transit_gateway_peering_attachment" "${1:this}" {
+    peer_region = "${2:peer_region}"
+    peer_transit_gateway_id = "${3:peer_transit_gateway_id}"
+    transit_gateway_id = "${4:transit_gateway_id}"
+}

@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ec2_local_gateways
+# key: d_aws_ec2_local_gateways
+# --
+
+data "aws_ec2_local_gateways" "${1:this}" {
+}

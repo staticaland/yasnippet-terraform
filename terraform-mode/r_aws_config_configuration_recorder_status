@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_config_configuration_recorder_status
+# key: r_aws_config_configuration_recorder_status
+# --
+
+resource "aws_config_configuration_recorder_status" "${1:this}" {
+    is_enabled = "${2:is_enabled}"
+    name = "${3:name}"
+}

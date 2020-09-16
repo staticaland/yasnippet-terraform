@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_share_dataset_data_lake_gen1
+# key: r_azurerm_data_share_dataset_data_lake_gen1
+# --
+
+resource "azurerm_data_share_dataset_data_lake_gen1" "${1:this}" {
+    data_lake_store_id = "${2:data_lake_store_id}"
+    data_share_id = "${3:data_share_id}"
+    folder_path = "${4:folder_path}"
+    name = "${5:name}"
+}

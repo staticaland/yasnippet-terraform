@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_s3_bucket_inventory
+# key: r_aws_s3_bucket_inventory
+# --
+
+resource "aws_s3_bucket_inventory" "${1:this}" {
+    bucket = "${2:bucket}"
+    included_object_versions = "${3:included_object_versions}"
+    name = "${4:name}"
+}

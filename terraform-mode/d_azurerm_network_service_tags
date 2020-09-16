@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_network_service_tags
+# key: d_azurerm_network_service_tags
+# --
+
+data "azurerm_network_service_tags" "${1:this}" {
+    location = "${2:location}"
+    service = "${3:service}"
+}

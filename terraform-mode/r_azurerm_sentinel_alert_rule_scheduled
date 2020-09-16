@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_sentinel_alert_rule_scheduled
+# key: r_azurerm_sentinel_alert_rule_scheduled
+# --
+
+resource "azurerm_sentinel_alert_rule_scheduled" "${1:this}" {
+    display_name = "${2:display_name}"
+    log_analytics_workspace_id = "${3:log_analytics_workspace_id}"
+    name = "${4:name}"
+    query = "${5:query}"
+    severity = "${6:severity}"
+}

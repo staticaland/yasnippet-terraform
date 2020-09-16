@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codedeploy_deployment_config
+# key: r_aws_codedeploy_deployment_config
+# --
+
+resource "aws_codedeploy_deployment_config" "${1:this}" {
+    deployment_config_name = "${2:deployment_config_name}"
+}

@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_datasync_location_smb
+# key: r_aws_datasync_location_smb
+# --
+
+resource "aws_datasync_location_smb" "${1:this}" {
+    agent_arns = "${2:agent_arns}"
+    password = "${3:password}"
+    server_hostname = "${4:server_hostname}"
+    subdirectory = "${5:subdirectory}"
+    user = "${6:user}"
+}

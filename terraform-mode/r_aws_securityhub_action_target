@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_securityhub_action_target
+# key: r_aws_securityhub_action_target
+# --
+
+resource "aws_securityhub_action_target" "${1:this}" {
+    description = "${2:description}"
+    identifier = "${3:identifier}"
+    name = "${4:name}"
+}

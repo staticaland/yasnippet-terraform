@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_guardduty_member
+# key: r_aws_guardduty_member
+# --
+
+resource "aws_guardduty_member" "${1:this}" {
+    account_id = "${2:account_id}"
+    detector_id = "${3:detector_id}"
+    email = "${4:email}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_api_gateway_vpc_link
+# key: r_aws_api_gateway_vpc_link
+# --
+
+resource "aws_api_gateway_vpc_link" "${1:this}" {
+    name = "${2:name}"
+    target_arns = "${3:target_arns}"
+}

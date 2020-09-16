@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_security_group_rule
+# key: r_aws_security_group_rule
+# --
+
+resource "aws_security_group_rule" "${1:this}" {
+    from_port = "${2:from_port}"
+    protocol = "${3:protocol}"
+    security_group_id = "${4:security_group_id}"
+    to_port = "${5:to_port}"
+    type = "${6:type}"
+}

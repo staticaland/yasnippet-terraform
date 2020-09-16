@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_organizations_organization
+# key: d_aws_organizations_organization
+# --
+
+data "aws_organizations_organization" "${1:this}" {
+}

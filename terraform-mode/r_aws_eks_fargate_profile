@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_eks_fargate_profile
+# key: r_aws_eks_fargate_profile
+# --
+
+resource "aws_eks_fargate_profile" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    fargate_profile_name = "${3:fargate_profile_name}"
+    pod_execution_role_arn = "${4:pod_execution_role_arn}"
+}

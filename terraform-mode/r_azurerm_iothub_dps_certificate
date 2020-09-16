@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iothub_dps_certificate
+# key: r_azurerm_iothub_dps_certificate
+# --
+
+resource "azurerm_iothub_dps_certificate" "${1:this}" {
+    certificate_content = "${2:certificate_content}"
+    iot_dps_name = "${3:iot_dps_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

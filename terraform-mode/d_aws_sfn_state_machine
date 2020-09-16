@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_sfn_state_machine
+# key: d_aws_sfn_state_machine
+# --
+
+data "aws_sfn_state_machine" "${1:this}" {
+    name = "${2:name}"
+}

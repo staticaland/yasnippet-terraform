@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudwatch_log_subscription_filter
+# key: r_aws_cloudwatch_log_subscription_filter
+# --
+
+resource "aws_cloudwatch_log_subscription_filter" "${1:this}" {
+    destination_arn = "${2:destination_arn}"
+    filter_pattern = "${3:filter_pattern}"
+    log_group_name = "${4:log_group_name}"
+    name = "${5:name}"
+}

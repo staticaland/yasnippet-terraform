@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_cost_management_export_resource_group
+# key: r_azurerm_cost_management_export_resource_group
+# --
+
+resource "azurerm_cost_management_export_resource_group" "${1:this}" {
+    name = "${2:name}"
+    recurrence_period_end = "${3:recurrence_period_end}"
+    recurrence_period_start = "${4:recurrence_period_start}"
+    recurrence_type = "${5:recurrence_type}"
+    resource_group_id = "${6:resource_group_id}"
+}

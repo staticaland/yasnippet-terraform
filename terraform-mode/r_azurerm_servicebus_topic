@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_servicebus_topic
+# key: r_azurerm_servicebus_topic
+# --
+
+resource "azurerm_servicebus_topic" "${1:this}" {
+    name = "${2:name}"
+    namespace_name = "${3:namespace_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_connection_association
+# key: r_aws_dx_connection_association
+# --
+
+resource "aws_dx_connection_association" "${1:this}" {
+    connection_id = "${2:connection_id}"
+    lag_id = "${3:lag_id}"
+}

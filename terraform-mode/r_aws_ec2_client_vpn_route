@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_client_vpn_route
+# key: r_aws_ec2_client_vpn_route
+# --
+
+resource "aws_ec2_client_vpn_route" "${1:this}" {
+    client_vpn_endpoint_id = "${2:client_vpn_endpoint_id}"
+    destination_cidr_block = "${3:destination_cidr_block}"
+    target_vpc_subnet_id = "${4:target_vpc_subnet_id}"
+}

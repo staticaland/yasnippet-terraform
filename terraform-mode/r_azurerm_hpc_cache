@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_hpc_cache
+# key: r_azurerm_hpc_cache
+# --
+
+resource "azurerm_hpc_cache" "${1:this}" {
+    cache_size_in_gb = "${2:cache_size_in_gb}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    sku_name = "${6:sku_name}"
+    subnet_id = "${7:subnet_id}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_subnet_ids
+# key: d_aws_subnet_ids
+# --
+
+data "aws_subnet_ids" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

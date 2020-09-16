@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_fms_admin_account
+# key: r_aws_fms_admin_account
+# --
+
+resource "aws_fms_admin_account" "${1:this}" {
+}

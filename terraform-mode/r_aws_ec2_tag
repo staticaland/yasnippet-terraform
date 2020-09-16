@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_tag
+# key: r_aws_ec2_tag
+# --
+
+resource "aws_ec2_tag" "${1:this}" {
+    key = "${2:key}"
+    resource_id = "${3:resource_id}"
+    value = "${4:value}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codepipeline
+# key: r_aws_codepipeline
+# --
+
+resource "aws_codepipeline" "${1:this}" {
+    name = "${2:name}"
+    role_arn = "${3:role_arn}"
+}

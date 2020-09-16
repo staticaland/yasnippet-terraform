@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_resource_data_sync
+# key: r_aws_ssm_resource_data_sync
+# --
+
+resource "aws_ssm_resource_data_sync" "${1:this}" {
+    name = "${2:name}"
+}

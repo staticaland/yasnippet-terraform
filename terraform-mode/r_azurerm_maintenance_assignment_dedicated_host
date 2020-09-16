@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_maintenance_assignment_dedicated_host
+# key: r_azurerm_maintenance_assignment_dedicated_host
+# --
+
+resource "azurerm_maintenance_assignment_dedicated_host" "${1:this}" {
+    dedicated_host_id = "${2:dedicated_host_id}"
+    location = "${3:location}"
+    maintenance_configuration_id = "${4:maintenance_configuration_id}"
+}

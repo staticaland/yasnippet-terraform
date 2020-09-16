@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_bot_channel_email
+# key: r_azurerm_bot_channel_email
+# --
+
+resource "azurerm_bot_channel_email" "${1:this}" {
+    bot_name = "${2:bot_name}"
+    email_address = "${3:email_address}"
+    email_password = "${4:email_password}"
+    location = "${5:location}"
+    resource_group_name = "${6:resource_group_name}"
+}

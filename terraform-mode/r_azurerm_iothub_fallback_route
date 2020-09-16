@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iothub_fallback_route
+# key: r_azurerm_iothub_fallback_route
+# --
+
+resource "azurerm_iothub_fallback_route" "${1:this}" {
+    enabled = "${2:enabled}"
+    endpoint_names = "${3:endpoint_names}"
+    iothub_name = "${4:iothub_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

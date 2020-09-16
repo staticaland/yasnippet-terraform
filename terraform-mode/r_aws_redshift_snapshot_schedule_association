@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_redshift_snapshot_schedule_association
+# key: r_aws_redshift_snapshot_schedule_association
+# --
+
+resource "aws_redshift_snapshot_schedule_association" "${1:this}" {
+    cluster_identifier = "${2:cluster_identifier}"
+    schedule_identifier = "${3:schedule_identifier}"
+}

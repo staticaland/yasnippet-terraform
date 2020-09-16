@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_maps_account
+# key: r_azurerm_maps_account
+# --
+
+resource "azurerm_maps_account" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    sku_name = "${4:sku_name}"
+}

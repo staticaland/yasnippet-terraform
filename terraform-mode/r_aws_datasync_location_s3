@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_datasync_location_s3
+# key: r_aws_datasync_location_s3
+# --
+
+resource "aws_datasync_location_s3" "${1:this}" {
+    s3_bucket_arn = "${2:s3_bucket_arn}"
+    subdirectory = "${3:subdirectory}"
+}

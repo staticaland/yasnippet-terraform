@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_vpn_connection
+# key: r_aws_vpn_connection
+# --
+
+resource "aws_vpn_connection" "${1:this}" {
+    customer_gateway_id = "${2:customer_gateway_id}"
+    type = "${3:type}"
+}

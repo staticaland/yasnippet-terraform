@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dms_endpoint
+# key: r_aws_dms_endpoint
+# --
+
+resource "aws_dms_endpoint" "${1:this}" {
+    endpoint_id = "${2:endpoint_id}"
+    endpoint_type = "${3:endpoint_type}"
+    engine_name = "${4:engine_name}"
+}

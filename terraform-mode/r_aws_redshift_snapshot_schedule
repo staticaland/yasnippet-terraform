@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_redshift_snapshot_schedule
+# key: r_aws_redshift_snapshot_schedule
+# --
+
+resource "aws_redshift_snapshot_schedule" "${1:this}" {
+    definitions = "${2:definitions}"
+}

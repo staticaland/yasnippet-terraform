@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_blueprint_definition
+# key: d_azurerm_blueprint_definition
+# --
+
+data "azurerm_blueprint_definition" "${1:this}" {
+    name = "${2:name}"
+    scope_id = "${3:scope_id}"
+}

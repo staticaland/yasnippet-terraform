@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ec2_local_gateway_route_tables
+# key: d_aws_ec2_local_gateway_route_tables
+# --
+
+data "aws_ec2_local_gateway_route_tables" "${1:this}" {
+}

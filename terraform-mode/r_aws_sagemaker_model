@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sagemaker_model
+# key: r_aws_sagemaker_model
+# --
+
+resource "aws_sagemaker_model" "${1:this}" {
+    execution_role_arn = "${2:execution_role_arn}"
+}

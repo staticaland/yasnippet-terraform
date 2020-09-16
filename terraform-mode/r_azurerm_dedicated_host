@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_dedicated_host
+# key: r_azurerm_dedicated_host
+# --
+
+resource "azurerm_dedicated_host" "${1:this}" {
+    dedicated_host_group_id = "${2:dedicated_host_group_id}"
+    location = "${3:location}"
+    name = "${4:name}"
+    platform_fault_domain = "${5:platform_fault_domain}"
+    sku_name = "${6:sku_name}"
+}

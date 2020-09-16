@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_appsync_function
+# key: r_aws_appsync_function
+# --
+
+resource "aws_appsync_function" "${1:this}" {
+    api_id = "${2:api_id}"
+    data_source = "${3:data_source}"
+    name = "${4:name}"
+    request_mapping_template = "${5:request_mapping_template}"
+    response_mapping_template = "${6:response_mapping_template}"
+}

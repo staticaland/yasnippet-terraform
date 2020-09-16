@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_datasync_location_nfs
+# key: r_aws_datasync_location_nfs
+# --
+
+resource "aws_datasync_location_nfs" "${1:this}" {
+    server_hostname = "${2:server_hostname}"
+    subdirectory = "${3:subdirectory}"
+}

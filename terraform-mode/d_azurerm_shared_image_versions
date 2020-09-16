@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_shared_image_versions
+# key: d_azurerm_shared_image_versions
+# --
+
+data "azurerm_shared_image_versions" "${1:this}" {
+    gallery_name = "${2:gallery_name}"
+    image_name = "${3:image_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

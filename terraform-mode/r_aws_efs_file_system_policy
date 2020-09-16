@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_efs_file_system_policy
+# key: r_aws_efs_file_system_policy
+# --
+
+resource "aws_efs_file_system_policy" "${1:this}" {
+    file_system_id = "${2:file_system_id}"
+    policy = "${3:policy}"
+}

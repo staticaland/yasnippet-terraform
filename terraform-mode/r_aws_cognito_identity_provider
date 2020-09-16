@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cognito_identity_provider
+# key: r_aws_cognito_identity_provider
+# --
+
+resource "aws_cognito_identity_provider" "${1:this}" {
+    provider_details = "${2:provider_details}"
+    provider_name = "${3:provider_name}"
+    provider_type = "${4:provider_type}"
+    user_pool_id = "${5:user_pool_id}"
+}

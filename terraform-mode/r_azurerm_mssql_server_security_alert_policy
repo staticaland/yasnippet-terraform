@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_mssql_server_security_alert_policy
+# key: r_azurerm_mssql_server_security_alert_policy
+# --
+
+resource "azurerm_mssql_server_security_alert_policy" "${1:this}" {
+    resource_group_name = "${2:resource_group_name}"
+    server_name = "${3:server_name}"
+    state = "${4:state}"
+}

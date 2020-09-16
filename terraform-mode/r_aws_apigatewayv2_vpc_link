@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_apigatewayv2_vpc_link
+# key: r_aws_apigatewayv2_vpc_link
+# --
+
+resource "aws_apigatewayv2_vpc_link" "${1:this}" {
+    name = "${2:name}"
+    security_group_ids = "${3:security_group_ids}"
+    subnet_ids = "${4:subnet_ids}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_eventgrid_event_subscription
+# key: r_azurerm_eventgrid_event_subscription
+# --
+
+resource "azurerm_eventgrid_event_subscription" "${1:this}" {
+    name = "${2:name}"
+    scope = "${3:scope}"
+}

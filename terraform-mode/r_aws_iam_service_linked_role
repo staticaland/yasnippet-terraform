@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_service_linked_role
+# key: r_aws_iam_service_linked_role
+# --
+
+resource "aws_iam_service_linked_role" "${1:this}" {
+    aws_service_name = "${2:aws_service_name}"
+}

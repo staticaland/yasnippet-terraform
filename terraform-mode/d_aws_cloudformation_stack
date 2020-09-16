@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_cloudformation_stack
+# key: d_aws_cloudformation_stack
+# --
+
+data "aws_cloudformation_stack" "${1:this}" {
+    name = "${2:name}"
+}

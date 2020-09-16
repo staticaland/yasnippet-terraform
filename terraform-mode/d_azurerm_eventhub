@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_eventhub
+# key: d_azurerm_eventhub
+# --
+
+data "azurerm_eventhub" "${1:this}" {
+    name = "${2:name}"
+    namespace_name = "${3:namespace_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

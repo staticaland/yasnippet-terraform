@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_api_diagnostic
+# key: r_azurerm_api_management_api_diagnostic
+# --
+
+resource "azurerm_api_management_api_diagnostic" "${1:this}" {
+    api_management_logger_id = "${2:api_management_logger_id}"
+    api_management_name = "${3:api_management_name}"
+    api_name = "${4:api_name}"
+    identifier = "${5:identifier}"
+    resource_group_name = "${6:resource_group_name}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_iam_policy
+# key: d_aws_iam_policy
+# --
+
+data "aws_iam_policy" "${1:this}" {
+    arn = "${2:arn}"
+}

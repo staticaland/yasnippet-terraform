@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_cosmosdb_account
+# key: r_azurerm_cosmosdb_account
+# --
+
+resource "azurerm_cosmosdb_account" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    offer_type = "${4:offer_type}"
+    resource_group_name = "${5:resource_group_name}"
+}

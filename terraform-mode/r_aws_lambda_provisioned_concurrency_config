@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lambda_provisioned_concurrency_config
+# key: r_aws_lambda_provisioned_concurrency_config
+# --
+
+resource "aws_lambda_provisioned_concurrency_config" "${1:this}" {
+    function_name = "${2:function_name}"
+    provisioned_concurrent_executions = "${3:provisioned_concurrent_executions}"
+    qualifier = "${4:qualifier}"
+}

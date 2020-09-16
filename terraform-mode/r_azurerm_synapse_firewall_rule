@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_synapse_firewall_rule
+# key: r_azurerm_synapse_firewall_rule
+# --
+
+resource "azurerm_synapse_firewall_rule" "${1:this}" {
+    end_ip_address = "${2:end_ip_address}"
+    name = "${3:name}"
+    start_ip_address = "${4:start_ip_address}"
+    synapse_workspace_id = "${5:synapse_workspace_id}"
+}

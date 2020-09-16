@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_elastic_beanstalk_application_version
+# key: r_aws_elastic_beanstalk_application_version
+# --
+
+resource "aws_elastic_beanstalk_application_version" "${1:this}" {
+    application = "${2:application}"
+    bucket = "${3:bucket}"
+    key = "${4:key}"
+    name = "${5:name}"
+}

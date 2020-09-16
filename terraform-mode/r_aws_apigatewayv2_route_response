@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_apigatewayv2_route_response
+# key: r_aws_apigatewayv2_route_response
+# --
+
+resource "aws_apigatewayv2_route_response" "${1:this}" {
+    api_id = "${2:api_id}"
+    route_id = "${3:route_id}"
+    route_response_key = "${4:route_response_key}"
+}

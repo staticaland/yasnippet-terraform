@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_patch_group
+# key: r_aws_ssm_patch_group
+# --
+
+resource "aws_ssm_patch_group" "${1:this}" {
+    baseline_id = "${2:baseline_id}"
+    patch_group = "${3:patch_group}"
+}

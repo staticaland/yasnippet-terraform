@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_quicksight_group
+# key: r_aws_quicksight_group
+# --
+
+resource "aws_quicksight_group" "${1:this}" {
+    group_name = "${2:group_name}"
+}

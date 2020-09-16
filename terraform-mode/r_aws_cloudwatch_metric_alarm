@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudwatch_metric_alarm
+# key: r_aws_cloudwatch_metric_alarm
+# --
+
+resource "aws_cloudwatch_metric_alarm" "${1:this}" {
+    alarm_name = "${2:alarm_name}"
+    comparison_operator = "${3:comparison_operator}"
+    evaluation_periods = "${4:evaluation_periods}"
+}

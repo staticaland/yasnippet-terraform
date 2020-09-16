@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_eventhub_namespace_disaster_recovery_config
+# key: r_azurerm_eventhub_namespace_disaster_recovery_config
+# --
+
+resource "azurerm_eventhub_namespace_disaster_recovery_config" "${1:this}" {
+    name = "${2:name}"
+    namespace_name = "${3:namespace_name}"
+    partner_namespace_id = "${4:partner_namespace_id}"
+    resource_group_name = "${5:resource_group_name}"
+}

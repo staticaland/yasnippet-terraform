@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codebuild_project
+# key: r_aws_codebuild_project
+# --
+
+resource "aws_codebuild_project" "${1:this}" {
+    name = "${2:name}"
+    service_role = "${3:service_role}"
+}

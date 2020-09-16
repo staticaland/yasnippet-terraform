@@ -1,0 +1,17 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_authorization_server
+# key: r_azurerm_api_management_authorization_server
+# --
+
+resource "azurerm_api_management_authorization_server" "${1:this}" {
+    api_management_name = "${2:api_management_name}"
+    authorization_endpoint = "${3:authorization_endpoint}"
+    authorization_methods = "${4:authorization_methods}"
+    client_id = "${5:client_id}"
+    client_registration_endpoint = "${6:client_registration_endpoint}"
+    display_name = "${7:display_name}"
+    grant_types = "${8:grant_types}"
+    name = "${9:name}"
+    resource_group_name = "${10:resource_group_name}"
+}

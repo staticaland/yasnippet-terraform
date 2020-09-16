@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_directory_service_log_subscription
+# key: r_aws_directory_service_log_subscription
+# --
+
+resource "aws_directory_service_log_subscription" "${1:this}" {
+    directory_id = "${2:directory_id}"
+    log_group_name = "${3:log_group_name}"
+}

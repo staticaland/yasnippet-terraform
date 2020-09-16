@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_outposts_outpost_instance_types
+# key: d_aws_outposts_outpost_instance_types
+# --
+
+data "aws_outposts_outpost_instance_types" "${1:this}" {
+    arn = "${2:arn}"
+}

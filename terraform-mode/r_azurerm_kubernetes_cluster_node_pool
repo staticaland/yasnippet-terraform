@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_kubernetes_cluster_node_pool
+# key: r_azurerm_kubernetes_cluster_node_pool
+# --
+
+resource "azurerm_kubernetes_cluster_node_pool" "${1:this}" {
+    kubernetes_cluster_id = "${2:kubernetes_cluster_id}"
+    name = "${3:name}"
+    vm_size = "${4:vm_size}"
+}

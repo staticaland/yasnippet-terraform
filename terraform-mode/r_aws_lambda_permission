@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lambda_permission
+# key: r_aws_lambda_permission
+# --
+
+resource "aws_lambda_permission" "${1:this}" {
+    action = "${2:action}"
+    function_name = "${3:function_name}"
+    principal = "${4:principal}"
+}

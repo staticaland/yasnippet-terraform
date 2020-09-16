@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_msk_configuration
+# key: r_aws_msk_configuration
+# --
+
+resource "aws_msk_configuration" "${1:this}" {
+    kafka_versions = "${2:kafka_versions}"
+    name = "${3:name}"
+    server_properties = "${4:server_properties}"
+}

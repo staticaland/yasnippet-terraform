@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_network_packet_capture
+# key: r_azurerm_network_packet_capture
+# --
+
+resource "azurerm_network_packet_capture" "${1:this}" {
+    name = "${2:name}"
+    network_watcher_name = "${3:network_watcher_name}"
+    resource_group_name = "${4:resource_group_name}"
+    target_resource_id = "${5:target_resource_id}"
+}

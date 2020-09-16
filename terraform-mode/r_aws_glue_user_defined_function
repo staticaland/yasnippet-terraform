@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_glue_user_defined_function
+# key: r_aws_glue_user_defined_function
+# --
+
+resource "aws_glue_user_defined_function" "${1:this}" {
+    class_name = "${2:class_name}"
+    database_name = "${3:database_name}"
+    name = "${4:name}"
+    owner_name = "${5:owner_name}"
+    owner_type = "${6:owner_type}"
+}

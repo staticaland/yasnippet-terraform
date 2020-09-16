@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_route53_resolver_endpoint
+# key: r_aws_route53_resolver_endpoint
+# --
+
+resource "aws_route53_resolver_endpoint" "${1:this}" {
+    direction = "${2:direction}"
+    security_group_ids = "${3:security_group_ids}"
+}

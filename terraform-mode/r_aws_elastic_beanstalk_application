@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_elastic_beanstalk_application
+# key: r_aws_elastic_beanstalk_application
+# --
+
+resource "aws_elastic_beanstalk_application" "${1:this}" {
+    name = "${2:name}"
+}

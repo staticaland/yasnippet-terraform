@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_monitor_log_profile
+# key: r_azurerm_monitor_log_profile
+# --
+
+resource "azurerm_monitor_log_profile" "${1:this}" {
+    categories = "${2:categories}"
+    locations = "${3:locations}"
+    name = "${4:name}"
+}

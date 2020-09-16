@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cognito_identity_pool
+# key: r_aws_cognito_identity_pool
+# --
+
+resource "aws_cognito_identity_pool" "${1:this}" {
+    identity_pool_name = "${2:identity_pool_name}"
+}

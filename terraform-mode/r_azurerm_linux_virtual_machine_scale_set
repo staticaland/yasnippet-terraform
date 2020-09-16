@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_linux_virtual_machine_scale_set
+# key: r_azurerm_linux_virtual_machine_scale_set
+# --
+
+resource "azurerm_linux_virtual_machine_scale_set" "${1:this}" {
+    admin_username = "${2:admin_username}"
+    instances = "${3:instances}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    sku = "${7:sku}"
+}

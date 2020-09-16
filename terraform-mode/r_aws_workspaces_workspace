@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_workspaces_workspace
+# key: r_aws_workspaces_workspace
+# --
+
+resource "aws_workspaces_workspace" "${1:this}" {
+    bundle_id = "${2:bundle_id}"
+    directory_id = "${3:directory_id}"
+    user_name = "${4:user_name}"
+}

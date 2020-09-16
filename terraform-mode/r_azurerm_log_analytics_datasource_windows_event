@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_log_analytics_datasource_windows_event
+# key: r_azurerm_log_analytics_datasource_windows_event
+# --
+
+resource "azurerm_log_analytics_datasource_windows_event" "${1:this}" {
+    event_log_name = "${2:event_log_name}"
+    event_types = "${3:event_types}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    workspace_name = "${6:workspace_name}"
+}

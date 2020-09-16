@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_application_insights
+# key: r_azurerm_application_insights
+# --
+
+resource "azurerm_application_insights" "${1:this}" {
+    application_type = "${2:application_type}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

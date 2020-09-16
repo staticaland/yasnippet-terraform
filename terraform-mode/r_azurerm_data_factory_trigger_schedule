@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_trigger_schedule
+# key: r_azurerm_data_factory_trigger_schedule
+# --
+
+resource "azurerm_data_factory_trigger_schedule" "${1:this}" {
+    data_factory_name = "${2:data_factory_name}"
+    name = "${3:name}"
+    pipeline_name = "${4:pipeline_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

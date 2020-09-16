@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_role_policy
+# key: r_aws_iam_role_policy
+# --
+
+resource "aws_iam_role_policy" "${1:this}" {
+    policy = "${2:policy}"
+    role = "${3:role}"
+}

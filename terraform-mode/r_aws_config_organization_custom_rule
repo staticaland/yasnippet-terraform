@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_config_organization_custom_rule
+# key: r_aws_config_organization_custom_rule
+# --
+
+resource "aws_config_organization_custom_rule" "${1:this}" {
+    lambda_function_arn = "${2:lambda_function_arn}"
+    name = "${3:name}"
+    trigger_types = "${4:trigger_types}"
+}

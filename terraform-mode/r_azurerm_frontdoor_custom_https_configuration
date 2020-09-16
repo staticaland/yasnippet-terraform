@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_frontdoor_custom_https_configuration
+# key: r_azurerm_frontdoor_custom_https_configuration
+# --
+
+resource "azurerm_frontdoor_custom_https_configuration" "${1:this}" {
+    custom_https_provisioning_enabled = "${2:custom_https_provisioning_enabled}"
+    frontend_endpoint_id = "${3:frontend_endpoint_id}"
+}

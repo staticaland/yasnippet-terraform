@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_openid_connect_provider
+# key: r_aws_iam_openid_connect_provider
+# --
+
+resource "aws_iam_openid_connect_provider" "${1:this}" {
+    client_id_list = "${2:client_id_list}"
+    thumbprint_list = "${3:thumbprint_list}"
+    url = "${4:url}"
+}

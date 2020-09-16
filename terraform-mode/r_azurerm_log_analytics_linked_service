@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_log_analytics_linked_service
+# key: r_azurerm_log_analytics_linked_service
+# --
+
+resource "azurerm_log_analytics_linked_service" "${1:this}" {
+    resource_group_name = "${2:resource_group_name}"
+    resource_id = "${3:resource_id}"
+    workspace_name = "${4:workspace_name}"
+}

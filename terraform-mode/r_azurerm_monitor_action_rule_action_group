@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_monitor_action_rule_action_group
+# key: r_azurerm_monitor_action_rule_action_group
+# --
+
+resource "azurerm_monitor_action_rule_action_group" "${1:this}" {
+    action_group_id = "${2:action_group_id}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

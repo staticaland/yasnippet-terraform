@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_securityhub_product_subscription
+# key: r_aws_securityhub_product_subscription
+# --
+
+resource "aws_securityhub_product_subscription" "${1:this}" {
+    product_arn = "${2:product_arn}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_wafregional_rate_based_rule
+# key: d_aws_wafregional_rate_based_rule
+# --
+
+data "aws_wafregional_rate_based_rule" "${1:this}" {
+    name = "${2:name}"
+}

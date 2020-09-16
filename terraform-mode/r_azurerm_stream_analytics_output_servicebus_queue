@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_stream_analytics_output_servicebus_queue
+# key: r_azurerm_stream_analytics_output_servicebus_queue
+# --
+
+resource "azurerm_stream_analytics_output_servicebus_queue" "${1:this}" {
+    name = "${2:name}"
+    queue_name = "${3:queue_name}"
+    resource_group_name = "${4:resource_group_name}"
+    servicebus_namespace = "${5:servicebus_namespace}"
+    shared_access_policy_key = "${6:shared_access_policy_key}"
+    shared_access_policy_name = "${7:shared_access_policy_name}"
+    stream_analytics_job_name = "${8:stream_analytics_job_name}"
+}

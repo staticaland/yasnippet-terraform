@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_storage_account_customer_managed_key
+# key: r_azurerm_storage_account_customer_managed_key
+# --
+
+resource "azurerm_storage_account_customer_managed_key" "${1:this}" {
+    key_name = "${2:key_name}"
+    key_vault_id = "${3:key_vault_id}"
+    key_version = "${4:key_version}"
+    storage_account_id = "${5:storage_account_id}"
+}

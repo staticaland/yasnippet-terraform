@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_batch_pool
+# key: r_azurerm_batch_pool
+# --
+
+resource "azurerm_batch_pool" "${1:this}" {
+    account_name = "${2:account_name}"
+    name = "${3:name}"
+    node_agent_sku_id = "${4:node_agent_sku_id}"
+    resource_group_name = "${5:resource_group_name}"
+    vm_size = "${6:vm_size}"
+}

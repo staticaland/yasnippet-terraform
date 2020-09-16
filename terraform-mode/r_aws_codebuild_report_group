@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_codebuild_report_group
+# key: r_aws_codebuild_report_group
+# --
+
+resource "aws_codebuild_report_group" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

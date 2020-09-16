@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_outposts_sites
+# key: d_aws_outposts_sites
+# --
+
+data "aws_outposts_sites" "${1:this}" {
+}

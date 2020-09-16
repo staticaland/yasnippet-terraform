@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_rds_orderable_db_instance
+# key: d_aws_rds_orderable_db_instance
+# --
+
+data "aws_rds_orderable_db_instance" "${1:this}" {
+    engine = "${2:engine}"
+}

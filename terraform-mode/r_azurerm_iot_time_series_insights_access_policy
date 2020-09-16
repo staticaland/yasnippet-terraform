@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iot_time_series_insights_access_policy
+# key: r_azurerm_iot_time_series_insights_access_policy
+# --
+
+resource "azurerm_iot_time_series_insights_access_policy" "${1:this}" {
+    name = "${2:name}"
+    principal_object_id = "${3:principal_object_id}"
+    roles = "${4:roles}"
+    time_series_insights_environment_id = "${5:time_series_insights_environment_id}"
+}

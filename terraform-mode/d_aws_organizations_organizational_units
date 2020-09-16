@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_organizations_organizational_units
+# key: d_aws_organizations_organizational_units
+# --
+
+data "aws_organizations_organizational_units" "${1:this}" {
+    parent_id = "${2:parent_id}"
+}

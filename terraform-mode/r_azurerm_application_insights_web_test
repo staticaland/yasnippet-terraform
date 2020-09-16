@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_application_insights_web_test
+# key: r_azurerm_application_insights_web_test
+# --
+
+resource "azurerm_application_insights_web_test" "${1:this}" {
+    application_insights_id = "${2:application_insights_id}"
+    configuration = "${3:configuration}"
+    geo_locations = "${4:geo_locations}"
+    kind = "${5:kind}"
+    location = "${6:location}"
+    name = "${7:name}"
+    resource_group_name = "${8:resource_group_name}"
+}

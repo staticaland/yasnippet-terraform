@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_backup_vault
+# key: d_aws_backup_vault
+# --
+
+data "aws_backup_vault" "${1:this}" {
+    name = "${2:name}"
+}

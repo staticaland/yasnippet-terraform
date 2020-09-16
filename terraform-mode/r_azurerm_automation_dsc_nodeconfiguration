@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_automation_dsc_nodeconfiguration
+# key: r_azurerm_automation_dsc_nodeconfiguration
+# --
+
+resource "azurerm_automation_dsc_nodeconfiguration" "${1:this}" {
+    automation_account_name = "${2:automation_account_name}"
+    content_embedded = "${3:content_embedded}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

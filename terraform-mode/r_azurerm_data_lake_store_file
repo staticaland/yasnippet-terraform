@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_lake_store_file
+# key: r_azurerm_data_lake_store_file
+# --
+
+resource "azurerm_data_lake_store_file" "${1:this}" {
+    account_name = "${2:account_name}"
+    local_file_path = "${3:local_file_path}"
+    remote_file_path = "${4:remote_file_path}"
+}

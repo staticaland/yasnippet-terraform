@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_postgresql_firewall_rule
+# key: r_azurerm_postgresql_firewall_rule
+# --
+
+resource "azurerm_postgresql_firewall_rule" "${1:this}" {
+    end_ip_address = "${2:end_ip_address}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    server_name = "${5:server_name}"
+    start_ip_address = "${6:start_ip_address}"
+}

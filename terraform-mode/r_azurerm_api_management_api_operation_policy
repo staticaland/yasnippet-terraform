@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_api_operation_policy
+# key: r_azurerm_api_management_api_operation_policy
+# --
+
+resource "azurerm_api_management_api_operation_policy" "${1:this}" {
+    api_management_name = "${2:api_management_name}"
+    api_name = "${3:api_name}"
+    operation_id = "${4:operation_id}"
+    resource_group_name = "${5:resource_group_name}"
+}

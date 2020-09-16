@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ecs_task_definition
+# key: d_aws_ecs_task_definition
+# --
+
+data "aws_ecs_task_definition" "${1:this}" {
+    task_definition = "${2:task_definition}"
+}

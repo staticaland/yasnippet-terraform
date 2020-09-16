@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_logic_app_trigger_custom
+# key: r_azurerm_logic_app_trigger_custom
+# --
+
+resource "azurerm_logic_app_trigger_custom" "${1:this}" {
+    body = "${2:body}"
+    logic_app_id = "${3:logic_app_id}"
+    name = "${4:name}"
+}

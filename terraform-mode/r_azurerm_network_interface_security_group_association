@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_network_interface_security_group_association
+# key: r_azurerm_network_interface_security_group_association
+# --
+
+resource "azurerm_network_interface_security_group_association" "${1:this}" {
+    network_interface_id = "${2:network_interface_id}"
+    network_security_group_id = "${3:network_security_group_id}"
+}

@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_resources
+# key: d_azurerm_resources
+# --
+
+data "azurerm_resources" "${1:this}" {
+}

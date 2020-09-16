@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_regions
+# key: d_aws_regions
+# --
+
+data "aws_regions" "${1:this}" {
+}

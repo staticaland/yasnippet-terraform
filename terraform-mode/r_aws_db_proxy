@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_db_proxy
+# key: r_aws_db_proxy
+# --
+
+resource "aws_db_proxy" "${1:this}" {
+    engine_family = "${2:engine_family}"
+    name = "${3:name}"
+    role_arn = "${4:role_arn}"
+    vpc_subnet_ids = "${5:vpc_subnet_ids}"
+}

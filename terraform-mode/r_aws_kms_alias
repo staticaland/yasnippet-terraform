@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_kms_alias
+# key: r_aws_kms_alias
+# --
+
+resource "aws_kms_alias" "${1:this}" {
+    target_key_id = "${2:target_key_id}"
+}

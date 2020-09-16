@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lightsail_instance
+# key: r_aws_lightsail_instance
+# --
+
+resource "aws_lightsail_instance" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    blueprint_id = "${3:blueprint_id}"
+    bundle_id = "${4:bundle_id}"
+    name = "${5:name}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_kms_grant
+# key: r_aws_kms_grant
+# --
+
+resource "aws_kms_grant" "${1:this}" {
+    grantee_principal = "${2:grantee_principal}"
+    key_id = "${3:key_id}"
+    operations = "${4:operations}"
+}

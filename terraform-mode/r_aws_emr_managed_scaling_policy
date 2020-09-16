@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_emr_managed_scaling_policy
+# key: r_aws_emr_managed_scaling_policy
+# --
+
+resource "aws_emr_managed_scaling_policy" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

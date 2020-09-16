@@ -1,0 +1,16 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_stream_analytics_stream_input_iothub
+# key: r_azurerm_stream_analytics_stream_input_iothub
+# --
+
+resource "azurerm_stream_analytics_stream_input_iothub" "${1:this}" {
+    endpoint = "${2:endpoint}"
+    eventhub_consumer_group_name = "${3:eventhub_consumer_group_name}"
+    iothub_namespace = "${4:iothub_namespace}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    shared_access_policy_key = "${7:shared_access_policy_key}"
+    shared_access_policy_name = "${8:shared_access_policy_name}"
+    stream_analytics_job_name = "${9:stream_analytics_job_name}"
+}

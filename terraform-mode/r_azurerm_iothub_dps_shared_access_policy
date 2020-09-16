@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iothub_dps_shared_access_policy
+# key: r_azurerm_iothub_dps_shared_access_policy
+# --
+
+resource "azurerm_iothub_dps_shared_access_policy" "${1:this}" {
+    iothub_dps_name = "${2:iothub_dps_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

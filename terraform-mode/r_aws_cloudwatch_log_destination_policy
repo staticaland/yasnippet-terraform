@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudwatch_log_destination_policy
+# key: r_aws_cloudwatch_log_destination_policy
+# --
+
+resource "aws_cloudwatch_log_destination_policy" "${1:this}" {
+    access_policy = "${2:access_policy}"
+    destination_name = "${3:destination_name}"
+}

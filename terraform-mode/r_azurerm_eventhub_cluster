@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_eventhub_cluster
+# key: r_azurerm_eventhub_cluster
+# --
+
+resource "azurerm_eventhub_cluster" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    sku_name = "${5:sku_name}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ecs_container_definition
+# key: d_aws_ecs_container_definition
+# --
+
+data "aws_ecs_container_definition" "${1:this}" {
+    container_name = "${2:container_name}"
+    task_definition = "${3:task_definition}"
+}

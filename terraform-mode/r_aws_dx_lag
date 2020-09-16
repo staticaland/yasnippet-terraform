@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_lag
+# key: r_aws_dx_lag
+# --
+
+resource "aws_dx_lag" "${1:this}" {
+    connections_bandwidth = "${2:connections_bandwidth}"
+    location = "${3:location}"
+    name = "${4:name}"
+}

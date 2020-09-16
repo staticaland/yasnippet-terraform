@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_web_application_firewall_policy
+# key: d_azurerm_web_application_firewall_policy
+# --
+
+data "azurerm_web_application_firewall_policy" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

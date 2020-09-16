@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_identity_provider_twitter
+# key: r_azurerm_api_management_identity_provider_twitter
+# --
+
+resource "azurerm_api_management_identity_provider_twitter" "${1:this}" {
+    api_key = "${2:api_key}"
+    api_management_name = "${3:api_management_name}"
+    api_secret_key = "${4:api_secret_key}"
+    resource_group_name = "${5:resource_group_name}"
+}

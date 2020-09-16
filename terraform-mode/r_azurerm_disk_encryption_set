@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_disk_encryption_set
+# key: r_azurerm_disk_encryption_set
+# --
+
+resource "azurerm_disk_encryption_set" "${1:this}" {
+    key_vault_key_id = "${2:key_vault_key_id}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

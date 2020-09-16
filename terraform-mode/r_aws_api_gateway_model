@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_api_gateway_model
+# key: r_aws_api_gateway_model
+# --
+
+resource "aws_api_gateway_model" "${1:this}" {
+    content_type = "${2:content_type}"
+    name = "${3:name}"
+    rest_api_id = "${4:rest_api_id}"
+}

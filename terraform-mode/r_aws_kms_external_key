@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_kms_external_key
+# key: r_aws_kms_external_key
+# --
+
+resource "aws_kms_external_key" "${1:this}" {
+}

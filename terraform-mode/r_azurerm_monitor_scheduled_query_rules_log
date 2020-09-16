@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_monitor_scheduled_query_rules_log
+# key: r_azurerm_monitor_scheduled_query_rules_log
+# --
+
+resource "azurerm_monitor_scheduled_query_rules_log" "${1:this}" {
+    data_source_id = "${2:data_source_id}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

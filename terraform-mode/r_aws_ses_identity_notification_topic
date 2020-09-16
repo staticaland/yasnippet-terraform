@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ses_identity_notification_topic
+# key: r_aws_ses_identity_notification_topic
+# --
+
+resource "aws_ses_identity_notification_topic" "${1:this}" {
+    identity = "${2:identity}"
+    notification_type = "${3:notification_type}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_association
+# key: r_aws_ssm_association
+# --
+
+resource "aws_ssm_association" "${1:this}" {
+    name = "${2:name}"
+}

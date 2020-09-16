@@ -1,0 +1,16 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_kusto_database_principal_assignment
+# key: r_azurerm_kusto_database_principal_assignment
+# --
+
+resource "azurerm_kusto_database_principal_assignment" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    database_name = "${3:database_name}"
+    name = "${4:name}"
+    principal_id = "${5:principal_id}"
+    principal_type = "${6:principal_type}"
+    resource_group_name = "${7:resource_group_name}"
+    role = "${8:role}"
+    tenant_id = "${9:tenant_id}"
+}

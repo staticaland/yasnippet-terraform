@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_dataset_delimited_text
+# key: r_azurerm_data_factory_dataset_delimited_text
+# --
+
+resource "azurerm_data_factory_dataset_delimited_text" "${1:this}" {
+    data_factory_name = "${2:data_factory_name}"
+    linked_service_name = "${3:linked_service_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

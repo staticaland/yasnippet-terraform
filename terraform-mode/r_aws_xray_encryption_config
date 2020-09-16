@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_xray_encryption_config
+# key: r_aws_xray_encryption_config
+# --
+
+resource "aws_xray_encryption_config" "${1:this}" {
+    type = "${2:type}"
+}

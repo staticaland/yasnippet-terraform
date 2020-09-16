@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_organizations_account
+# key: r_aws_organizations_account
+# --
+
+resource "aws_organizations_account" "${1:this}" {
+    email = "${2:email}"
+    name = "${3:name}"
+}

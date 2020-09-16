@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_managed_application_definition
+# key: r_azurerm_managed_application_definition
+# --
+
+resource "azurerm_managed_application_definition" "${1:this}" {
+    display_name = "${2:display_name}"
+    location = "${3:location}"
+    lock_level = "${4:lock_level}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+}

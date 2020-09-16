@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sagemaker_notebook_instance_lifecycle_configuration
+# key: r_aws_sagemaker_notebook_instance_lifecycle_configuration
+# --
+
+resource "aws_sagemaker_notebook_instance_lifecycle_configuration" "${1:this}" {
+}

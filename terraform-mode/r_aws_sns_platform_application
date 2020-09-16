@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sns_platform_application
+# key: r_aws_sns_platform_application
+# --
+
+resource "aws_sns_platform_application" "${1:this}" {
+    name = "${2:name}"
+    platform = "${3:platform}"
+    platform_credential = "${4:platform_credential}"
+}

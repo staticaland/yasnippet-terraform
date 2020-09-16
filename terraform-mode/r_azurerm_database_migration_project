@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_database_migration_project
+# key: r_azurerm_database_migration_project
+# --
+
+resource "azurerm_database_migration_project" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    service_name = "${5:service_name}"
+    source_platform = "${6:source_platform}"
+    target_platform = "${7:target_platform}"
+}

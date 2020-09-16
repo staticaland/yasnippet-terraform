@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_management_lock
+# key: r_azurerm_management_lock
+# --
+
+resource "azurerm_management_lock" "${1:this}" {
+    lock_level = "${2:lock_level}"
+    name = "${3:name}"
+    scope = "${4:scope}"
+}

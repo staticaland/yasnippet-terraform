@@ -1,0 +1,17 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_stream_analytics_stream_input_blob
+# key: r_azurerm_stream_analytics_stream_input_blob
+# --
+
+resource "azurerm_stream_analytics_stream_input_blob" "${1:this}" {
+    date_format = "${2:date_format}"
+    name = "${3:name}"
+    path_pattern = "${4:path_pattern}"
+    resource_group_name = "${5:resource_group_name}"
+    storage_account_key = "${6:storage_account_key}"
+    storage_account_name = "${7:storage_account_name}"
+    storage_container_name = "${8:storage_container_name}"
+    stream_analytics_job_name = "${9:stream_analytics_job_name}"
+    time_format = "${10:time_format}"
+}

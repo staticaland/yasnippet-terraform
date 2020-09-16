@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iot_role_alias
+# key: r_aws_iot_role_alias
+# --
+
+resource "aws_iot_role_alias" "${1:this}" {
+    alias = "${2:alias}"
+    role_arn = "${3:role_arn}"
+}

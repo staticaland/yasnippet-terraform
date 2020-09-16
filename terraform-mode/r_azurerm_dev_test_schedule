@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_dev_test_schedule
+# key: r_azurerm_dev_test_schedule
+# --
+
+resource "azurerm_dev_test_schedule" "${1:this}" {
+    lab_name = "${2:lab_name}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    task_type = "${6:task_type}"
+    time_zone_id = "${7:time_zone_id}"
+}

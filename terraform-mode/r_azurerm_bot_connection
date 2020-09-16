@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_bot_connection
+# key: r_azurerm_bot_connection
+# --
+
+resource "azurerm_bot_connection" "${1:this}" {
+    bot_name = "${2:bot_name}"
+    client_id = "${3:client_id}"
+    client_secret = "${4:client_secret}"
+    location = "${5:location}"
+    name = "${6:name}"
+    resource_group_name = "${7:resource_group_name}"
+    service_provider_name = "${8:service_provider_name}"
+}

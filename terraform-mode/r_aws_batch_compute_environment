@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_batch_compute_environment
+# key: r_aws_batch_compute_environment
+# --
+
+resource "aws_batch_compute_environment" "${1:this}" {
+    service_role = "${2:service_role}"
+    type = "${3:type}"
+}

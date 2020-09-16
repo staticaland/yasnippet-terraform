@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_kusto_cluster_customer_managed_key
+# key: r_azurerm_kusto_cluster_customer_managed_key
+# --
+
+resource "azurerm_kusto_cluster_customer_managed_key" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    key_name = "${3:key_name}"
+    key_vault_id = "${4:key_vault_id}"
+    key_version = "${5:key_version}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dms_event_subscription
+# key: r_aws_dms_event_subscription
+# --
+
+resource "aws_dms_event_subscription" "${1:this}" {
+    event_categories = "${2:event_categories}"
+    name = "${3:name}"
+    sns_topic_arn = "${4:sns_topic_arn}"
+}

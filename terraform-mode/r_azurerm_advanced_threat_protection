@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_advanced_threat_protection
+# key: r_azurerm_advanced_threat_protection
+# --
+
+resource "azurerm_advanced_threat_protection" "${1:this}" {
+    enabled = "${2:enabled}"
+    target_resource_id = "${3:target_resource_id}"
+}

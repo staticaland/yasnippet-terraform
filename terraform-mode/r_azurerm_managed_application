@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_managed_application
+# key: r_azurerm_managed_application
+# --
+
+resource "azurerm_managed_application" "${1:this}" {
+    kind = "${2:kind}"
+    location = "${3:location}"
+    managed_resource_group_name = "${4:managed_resource_group_name}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+}

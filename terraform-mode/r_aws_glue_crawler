@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_glue_crawler
+# key: r_aws_glue_crawler
+# --
+
+resource "aws_glue_crawler" "${1:this}" {
+    database_name = "${2:database_name}"
+    name = "${3:name}"
+    role = "${4:role}"
+}

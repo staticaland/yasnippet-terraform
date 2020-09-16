@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_spring_cloud_service
+# key: r_azurerm_spring_cloud_service
+# --
+
+resource "azurerm_spring_cloud_service" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

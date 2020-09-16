@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lambda_event_source_mapping
+# key: r_aws_lambda_event_source_mapping
+# --
+
+resource "aws_lambda_event_source_mapping" "${1:this}" {
+    event_source_arn = "${2:event_source_arn}"
+    function_name = "${3:function_name}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_config_organization_managed_rule
+# key: r_aws_config_organization_managed_rule
+# --
+
+resource "aws_config_organization_managed_rule" "${1:this}" {
+    name = "${2:name}"
+    rule_identifier = "${3:rule_identifier}"
+}

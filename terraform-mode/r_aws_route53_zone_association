@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_route53_zone_association
+# key: r_aws_route53_zone_association
+# --
+
+resource "aws_route53_zone_association" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+    zone_id = "${3:zone_id}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_private_link_service_endpoint_connections
+# key: d_azurerm_private_link_service_endpoint_connections
+# --
+
+data "azurerm_private_link_service_endpoint_connections" "${1:this}" {
+    resource_group_name = "${2:resource_group_name}"
+    service_id = "${3:service_id}"
+}

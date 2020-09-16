@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iothub_endpoint_eventhub
+# key: r_azurerm_iothub_endpoint_eventhub
+# --
+
+resource "azurerm_iothub_endpoint_eventhub" "${1:this}" {
+    connection_string = "${2:connection_string}"
+    iothub_name = "${3:iothub_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sagemaker_endpoint_configuration
+# key: r_aws_sagemaker_endpoint_configuration
+# --
+
+resource "aws_sagemaker_endpoint_configuration" "${1:this}" {
+}

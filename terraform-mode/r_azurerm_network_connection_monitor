@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_network_connection_monitor
+# key: r_azurerm_network_connection_monitor
+# --
+
+resource "azurerm_network_connection_monitor" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    network_watcher_name = "${4:network_watcher_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

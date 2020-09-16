@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_acmpca_certificate_authority
+# key: r_aws_acmpca_certificate_authority
+# --
+
+resource "aws_acmpca_certificate_authority" "${1:this}" {
+}

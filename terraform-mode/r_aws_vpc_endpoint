@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_vpc_endpoint
+# key: r_aws_vpc_endpoint
+# --
+
+resource "aws_vpc_endpoint" "${1:this}" {
+    service_name = "${2:service_name}"
+    vpc_id = "${3:vpc_id}"
+}

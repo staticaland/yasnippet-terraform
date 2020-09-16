@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_default_vpc
+# key: r_aws_default_vpc
+# --
+
+resource "aws_default_vpc" "${1:this}" {
+}

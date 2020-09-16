@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_local_gateway_route_table_vpc_association
+# key: r_aws_ec2_local_gateway_route_table_vpc_association
+# --
+
+resource "aws_ec2_local_gateway_route_table_vpc_association" "${1:this}" {
+    local_gateway_route_table_id = "${2:local_gateway_route_table_id}"
+    vpc_id = "${3:vpc_id}"
+}

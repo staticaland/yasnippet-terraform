@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_availability_zone_group
+# key: r_aws_ec2_availability_zone_group
+# --
+
+resource "aws_ec2_availability_zone_group" "${1:this}" {
+    group_name = "${2:group_name}"
+    opt_in_status = "${3:opt_in_status}"
+}

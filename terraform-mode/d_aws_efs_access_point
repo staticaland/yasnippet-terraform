@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_efs_access_point
+# key: d_aws_efs_access_point
+# --
+
+data "aws_efs_access_point" "${1:this}" {
+    access_point_id = "${2:access_point_id}"
+}

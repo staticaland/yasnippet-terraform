@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_transit_virtual_interface
+# key: r_aws_dx_transit_virtual_interface
+# --
+
+resource "aws_dx_transit_virtual_interface" "${1:this}" {
+    address_family = "${2:address_family}"
+    bgp_asn = "${3:bgp_asn}"
+    connection_id = "${4:connection_id}"
+    dx_gateway_id = "${5:dx_gateway_id}"
+    name = "${6:name}"
+    vlan = "${7:vlan}"
+}

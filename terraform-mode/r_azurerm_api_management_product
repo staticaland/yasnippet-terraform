@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_product
+# key: r_azurerm_api_management_product
+# --
+
+resource "azurerm_api_management_product" "${1:this}" {
+    api_management_name = "${2:api_management_name}"
+    display_name = "${3:display_name}"
+    product_id = "${4:product_id}"
+    published = "${5:published}"
+    resource_group_name = "${6:resource_group_name}"
+    subscription_required = "${7:subscription_required}"
+}

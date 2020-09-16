@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_shared_image_gallery
+# key: d_azurerm_shared_image_gallery
+# --
+
+data "azurerm_shared_image_gallery" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

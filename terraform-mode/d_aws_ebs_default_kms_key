@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ebs_default_kms_key
+# key: d_aws_ebs_default_kms_key
+# --
+
+data "aws_ebs_default_kms_key" "${1:this}" {
+}

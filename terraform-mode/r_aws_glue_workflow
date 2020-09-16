@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_glue_workflow
+# key: r_aws_glue_workflow
+# --
+
+resource "aws_glue_workflow" "${1:this}" {
+}

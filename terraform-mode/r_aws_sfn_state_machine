@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sfn_state_machine
+# key: r_aws_sfn_state_machine
+# --
+
+resource "aws_sfn_state_machine" "${1:this}" {
+    definition = "${2:definition}"
+    name = "${3:name}"
+    role_arn = "${4:role_arn}"
+}

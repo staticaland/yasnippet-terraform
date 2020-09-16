@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_cosmosdb_sql_database
+# key: r_azurerm_cosmosdb_sql_database
+# --
+
+resource "azurerm_cosmosdb_sql_database" "${1:this}" {
+    account_name = "${2:account_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

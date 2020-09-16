@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_network_watcher_flow_log
+# key: r_azurerm_network_watcher_flow_log
+# --
+
+resource "azurerm_network_watcher_flow_log" "${1:this}" {
+    enabled = "${2:enabled}"
+    network_security_group_id = "${3:network_security_group_id}"
+    network_watcher_name = "${4:network_watcher_name}"
+    resource_group_name = "${5:resource_group_name}"
+    storage_account_id = "${6:storage_account_id}"
+}

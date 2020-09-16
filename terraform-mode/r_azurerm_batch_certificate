@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_batch_certificate
+# key: r_azurerm_batch_certificate
+# --
+
+resource "azurerm_batch_certificate" "${1:this}" {
+    account_name = "${2:account_name}"
+    certificate = "${3:certificate}"
+    format = "${4:format}"
+    resource_group_name = "${5:resource_group_name}"
+    thumbprint = "${6:thumbprint}"
+    thumbprint_algorithm = "${7:thumbprint_algorithm}"
+}

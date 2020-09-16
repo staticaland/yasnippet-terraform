@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_monitor_scheduled_query_rules_alert
+# key: r_azurerm_monitor_scheduled_query_rules_alert
+# --
+
+resource "azurerm_monitor_scheduled_query_rules_alert" "${1:this}" {
+    data_source_id = "${2:data_source_id}"
+    frequency = "${3:frequency}"
+    location = "${4:location}"
+    name = "${5:name}"
+    query = "${6:query}"
+    resource_group_name = "${7:resource_group_name}"
+    time_window = "${8:time_window}"
+}

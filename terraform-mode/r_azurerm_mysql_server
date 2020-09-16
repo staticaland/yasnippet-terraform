@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_mysql_server
+# key: r_azurerm_mysql_server
+# --
+
+resource "azurerm_mysql_server" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    sku_name = "${5:sku_name}"
+    version = "${6:version}"
+}

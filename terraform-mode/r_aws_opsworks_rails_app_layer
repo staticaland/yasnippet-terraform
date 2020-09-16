@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_opsworks_rails_app_layer
+# key: r_aws_opsworks_rails_app_layer
+# --
+
+resource "aws_opsworks_rails_app_layer" "${1:this}" {
+    stack_id = "${2:stack_id}"
+}

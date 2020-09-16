@@ -1,0 +1,16 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_linked_service_sftp
+# key: r_azurerm_data_factory_linked_service_sftp
+# --
+
+resource "azurerm_data_factory_linked_service_sftp" "${1:this}" {
+    authentication_type = "${2:authentication_type}"
+    data_factory_name = "${3:data_factory_name}"
+    host = "${4:host}"
+    name = "${5:name}"
+    password = "${6:password}"
+    port = "${7:port}"
+    resource_group_name = "${8:resource_group_name}"
+    username = "${9:username}"
+}

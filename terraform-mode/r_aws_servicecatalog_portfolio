@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_servicecatalog_portfolio
+# key: r_aws_servicecatalog_portfolio
+# --
+
+resource "aws_servicecatalog_portfolio" "${1:this}" {
+    name = "${2:name}"
+}

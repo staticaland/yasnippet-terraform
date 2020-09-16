@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_eks_cluster
+# key: r_aws_eks_cluster
+# --
+
+resource "aws_eks_cluster" "${1:this}" {
+    name = "${2:name}"
+    role_arn = "${3:role_arn}"
+}

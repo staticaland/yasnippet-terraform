@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_alb_listener_rule
+# key: r_aws_alb_listener_rule
+# --
+
+resource "aws_alb_listener_rule" "${1:this}" {
+    listener_arn = "${2:listener_arn}"
+}

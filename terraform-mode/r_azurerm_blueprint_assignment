@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_blueprint_assignment
+# key: r_azurerm_blueprint_assignment
+# --
+
+resource "azurerm_blueprint_assignment" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    target_subscription_id = "${4:target_subscription_id}"
+    version_id = "${5:version_id}"
+}

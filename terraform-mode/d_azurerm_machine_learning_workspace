@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_machine_learning_workspace
+# key: d_azurerm_machine_learning_workspace
+# --
+
+data "azurerm_machine_learning_workspace" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

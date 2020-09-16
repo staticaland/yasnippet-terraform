@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_sql_active_directory_administrator
+# key: r_azurerm_sql_active_directory_administrator
+# --
+
+resource "azurerm_sql_active_directory_administrator" "${1:this}" {
+    login = "${2:login}"
+    object_id = "${3:object_id}"
+    resource_group_name = "${4:resource_group_name}"
+    server_name = "${5:server_name}"
+    tenant_id = "${6:tenant_id}"
+}

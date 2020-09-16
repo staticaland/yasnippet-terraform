@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_express_route_circuit
+# key: r_azurerm_express_route_circuit
+# --
+
+resource "azurerm_express_route_circuit" "${1:this}" {
+    bandwidth_in_mbps = "${2:bandwidth_in_mbps}"
+    location = "${3:location}"
+    name = "${4:name}"
+    peering_location = "${5:peering_location}"
+    resource_group_name = "${6:resource_group_name}"
+    service_provider_name = "${7:service_provider_name}"
+}

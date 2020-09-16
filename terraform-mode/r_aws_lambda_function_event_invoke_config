@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_lambda_function_event_invoke_config
+# key: r_aws_lambda_function_event_invoke_config
+# --
+
+resource "aws_lambda_function_event_invoke_config" "${1:this}" {
+    function_name = "${2:function_name}"
+}

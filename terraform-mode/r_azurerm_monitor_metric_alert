@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_monitor_metric_alert
+# key: r_azurerm_monitor_metric_alert
+# --
+
+resource "azurerm_monitor_metric_alert" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    scopes = "${4:scopes}"
+}

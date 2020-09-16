@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_application_insights_analytics_item
+# key: r_azurerm_application_insights_analytics_item
+# --
+
+resource "azurerm_application_insights_analytics_item" "${1:this}" {
+    application_insights_id = "${2:application_insights_id}"
+    content = "${3:content}"
+    name = "${4:name}"
+    scope = "${5:scope}"
+    type = "${6:type}"
+}

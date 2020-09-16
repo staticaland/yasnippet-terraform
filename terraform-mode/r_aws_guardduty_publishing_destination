@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_guardduty_publishing_destination
+# key: r_aws_guardduty_publishing_destination
+# --
+
+resource "aws_guardduty_publishing_destination" "${1:this}" {
+    destination_arn = "${2:destination_arn}"
+    detector_id = "${3:detector_id}"
+    kms_key_arn = "${4:kms_key_arn}"
+}

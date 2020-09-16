@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_kusto_cluster
+# key: r_azurerm_kusto_cluster
+# --
+
+resource "azurerm_kusto_cluster" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

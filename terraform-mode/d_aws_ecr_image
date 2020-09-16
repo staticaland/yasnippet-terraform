@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ecr_image
+# key: d_aws_ecr_image
+# --
+
+data "aws_ecr_image" "${1:this}" {
+    repository_name = "${2:repository_name}"
+}

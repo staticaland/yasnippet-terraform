@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudformation_stack_set
+# key: r_aws_cloudformation_stack_set
+# --
+
+resource "aws_cloudformation_stack_set" "${1:this}" {
+    administration_role_arn = "${2:administration_role_arn}"
+    name = "${3:name}"
+}

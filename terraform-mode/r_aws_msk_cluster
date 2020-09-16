@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_msk_cluster
+# key: r_aws_msk_cluster
+# --
+
+resource "aws_msk_cluster" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    kafka_version = "${3:kafka_version}"
+    number_of_broker_nodes = "${4:number_of_broker_nodes}"
+}

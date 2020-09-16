@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_guardduty_detector
+# key: d_aws_guardduty_detector
+# --
+
+data "aws_guardduty_detector" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_s3_bucket
+# key: d_aws_s3_bucket
+# --
+
+data "aws_s3_bucket" "${1:this}" {
+    bucket = "${2:bucket}"
+}

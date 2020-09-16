@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_redis_cache
+# key: r_azurerm_redis_cache
+# --
+
+resource "azurerm_redis_cache" "${1:this}" {
+    capacity = "${2:capacity}"
+    family = "${3:family}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    sku_name = "${7:sku_name}"
+}

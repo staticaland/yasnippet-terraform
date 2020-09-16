@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_redis_cache
+# key: d_azurerm_redis_cache
+# --
+
+data "azurerm_redis_cache" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

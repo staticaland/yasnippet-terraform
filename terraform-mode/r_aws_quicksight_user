@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_quicksight_user
+# key: r_aws_quicksight_user
+# --
+
+resource "aws_quicksight_user" "${1:this}" {
+    email = "${2:email}"
+    identity_type = "${3:identity_type}"
+    user_role = "${4:user_role}"
+}

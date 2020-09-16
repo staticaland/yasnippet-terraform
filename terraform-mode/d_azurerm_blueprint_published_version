@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_blueprint_published_version
+# key: d_azurerm_blueprint_published_version
+# --
+
+data "azurerm_blueprint_published_version" "${1:this}" {
+    blueprint_name = "${2:blueprint_name}"
+    scope_id = "${3:scope_id}"
+    version = "${4:version}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_bgp_peer
+# key: r_aws_dx_bgp_peer
+# --
+
+resource "aws_dx_bgp_peer" "${1:this}" {
+    address_family = "${2:address_family}"
+    bgp_asn = "${3:bgp_asn}"
+    virtual_interface_id = "${4:virtual_interface_id}"
+}

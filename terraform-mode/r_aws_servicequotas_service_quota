@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_servicequotas_service_quota
+# key: r_aws_servicequotas_service_quota
+# --
+
+resource "aws_servicequotas_service_quota" "${1:this}" {
+    quota_code = "${2:quota_code}"
+    service_code = "${3:service_code}"
+    value = "${4:value}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_patch_baseline
+# key: r_aws_ssm_patch_baseline
+# --
+
+resource "aws_ssm_patch_baseline" "${1:this}" {
+    name = "${2:name}"
+}

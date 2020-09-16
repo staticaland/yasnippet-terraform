@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_sagemaker_endpoint
+# key: r_aws_sagemaker_endpoint
+# --
+
+resource "aws_sagemaker_endpoint" "${1:this}" {
+    endpoint_config_name = "${2:endpoint_config_name}"
+}

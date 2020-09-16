@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_postgresql_server
+# key: d_azurerm_postgresql_server
+# --
+
+data "azurerm_postgresql_server" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

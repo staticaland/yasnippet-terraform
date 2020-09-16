@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_api_gateway_resource
+# key: r_aws_api_gateway_resource
+# --
+
+resource "aws_api_gateway_resource" "${1:this}" {
+    parent_id = "${2:parent_id}"
+    path_part = "${3:path_part}"
+    rest_api_id = "${4:rest_api_id}"
+}

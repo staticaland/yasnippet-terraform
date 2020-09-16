@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_backup_container_storage_account
+# key: r_azurerm_backup_container_storage_account
+# --
+
+resource "azurerm_backup_container_storage_account" "${1:this}" {
+    recovery_vault_name = "${2:recovery_vault_name}"
+    resource_group_name = "${3:resource_group_name}"
+    storage_account_id = "${4:storage_account_id}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_sql_failover_group
+# key: r_azurerm_sql_failover_group
+# --
+
+resource "azurerm_sql_failover_group" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    server_name = "${4:server_name}"
+}

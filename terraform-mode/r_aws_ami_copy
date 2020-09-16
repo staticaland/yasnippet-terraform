@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ami_copy
+# key: r_aws_ami_copy
+# --
+
+resource "aws_ami_copy" "${1:this}" {
+    name = "${2:name}"
+    source_ami_id = "${3:source_ami_id}"
+    source_ami_region = "${4:source_ami_region}"
+}

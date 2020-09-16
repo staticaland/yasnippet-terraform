@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iotcentral_application
+# key: r_azurerm_iotcentral_application
+# --
+
+resource "azurerm_iotcentral_application" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    sub_domain = "${5:sub_domain}"
+}

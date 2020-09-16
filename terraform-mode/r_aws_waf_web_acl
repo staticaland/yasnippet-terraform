@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_waf_web_acl
+# key: r_aws_waf_web_acl
+# --
+
+resource "aws_waf_web_acl" "${1:this}" {
+    metric_name = "${2:metric_name}"
+    name = "${3:name}"
+}

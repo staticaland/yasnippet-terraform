@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_appsync_datasource
+# key: r_aws_appsync_datasource
+# --
+
+resource "aws_appsync_datasource" "${1:this}" {
+    api_id = "${2:api_id}"
+    name = "${3:name}"
+    type = "${4:type}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_linked_service_cosmosdb
+# key: r_azurerm_data_factory_linked_service_cosmosdb
+# --
+
+resource "azurerm_data_factory_linked_service_cosmosdb" "${1:this}" {
+    data_factory_name = "${2:data_factory_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

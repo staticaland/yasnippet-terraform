@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_policy_remediation
+# key: r_azurerm_policy_remediation
+# --
+
+resource "azurerm_policy_remediation" "${1:this}" {
+    name = "${2:name}"
+    policy_assignment_id = "${3:policy_assignment_id}"
+    scope = "${4:scope}"
+}

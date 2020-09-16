@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_cdn_endpoint
+# key: r_azurerm_cdn_endpoint
+# --
+
+resource "azurerm_cdn_endpoint" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    profile_name = "${4:profile_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

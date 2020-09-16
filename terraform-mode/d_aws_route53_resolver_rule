@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_route53_resolver_rule
+# key: d_aws_route53_resolver_rule
+# --
+
+data "aws_route53_resolver_rule" "${1:this}" {
+}

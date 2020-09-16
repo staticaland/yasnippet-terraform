@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_autoscaling_policy
+# key: r_aws_autoscaling_policy
+# --
+
+resource "aws_autoscaling_policy" "${1:this}" {
+    autoscaling_group_name = "${2:autoscaling_group_name}"
+    name = "${3:name}"
+}

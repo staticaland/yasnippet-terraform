@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_cur_report_definition
+# key: d_aws_cur_report_definition
+# --
+
+data "aws_cur_report_definition" "${1:this}" {
+    report_name = "${2:report_name}"
+}

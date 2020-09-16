@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_cosmosdb_gremlin_graph
+# key: r_azurerm_cosmosdb_gremlin_graph
+# --
+
+resource "azurerm_cosmosdb_gremlin_graph" "${1:this}" {
+    account_name = "${2:account_name}"
+    database_name = "${3:database_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

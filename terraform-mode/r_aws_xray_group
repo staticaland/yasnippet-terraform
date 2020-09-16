@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_xray_group
+# key: r_aws_xray_group
+# --
+
+resource "aws_xray_group" "${1:this}" {
+    filter_expression = "${2:filter_expression}"
+    group_name = "${3:group_name}"
+}

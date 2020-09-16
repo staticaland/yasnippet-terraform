@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_autoscaling_notification
+# key: r_aws_autoscaling_notification
+# --
+
+resource "aws_autoscaling_notification" "${1:this}" {
+    group_names = "${2:group_names}"
+    notifications = "${3:notifications}"
+    topic_arn = "${4:topic_arn}"
+}

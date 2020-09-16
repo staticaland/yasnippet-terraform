@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_access_key
+# key: r_aws_iam_access_key
+# --
+
+resource "aws_iam_access_key" "${1:this}" {
+    user = "${2:user}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_private_endpoint_connection
+# key: d_azurerm_private_endpoint_connection
+# --
+
+data "azurerm_private_endpoint_connection" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_msk_configuration
+# key: d_aws_msk_configuration
+# --
+
+data "aws_msk_configuration" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_wafv2_ip_set
+# key: d_aws_wafv2_ip_set
+# --
+
+data "aws_wafv2_ip_set" "${1:this}" {
+    name = "${2:name}"
+    scope = "${3:scope}"
+}

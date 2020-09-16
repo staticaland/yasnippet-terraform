@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_user_assigned_identity
+# key: r_azurerm_user_assigned_identity
+# --
+
+resource "azurerm_user_assigned_identity" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

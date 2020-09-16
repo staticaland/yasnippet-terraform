@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_mssql_elasticpool
+# key: d_azurerm_mssql_elasticpool
+# --
+
+data "azurerm_mssql_elasticpool" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    server_name = "${4:server_name}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_volume_attachment
+# key: r_aws_volume_attachment
+# --
+
+resource "aws_volume_attachment" "${1:this}" {
+    device_name = "${2:device_name}"
+    instance_id = "${3:instance_id}"
+    volume_id = "${4:volume_id}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_mssql_database
+# key: r_azurerm_mssql_database
+# --
+
+resource "azurerm_mssql_database" "${1:this}" {
+    name = "${2:name}"
+    server_id = "${3:server_id}"
+}

@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_lake_store_firewall_rule
+# key: r_azurerm_data_lake_store_firewall_rule
+# --
+
+resource "azurerm_data_lake_store_firewall_rule" "${1:this}" {
+    account_name = "${2:account_name}"
+    end_ip_address = "${3:end_ip_address}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    start_ip_address = "${6:start_ip_address}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_dev_test_virtual_network
+# key: d_azurerm_dev_test_virtual_network
+# --
+
+data "azurerm_dev_test_virtual_network" "${1:this}" {
+    lab_name = "${2:lab_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

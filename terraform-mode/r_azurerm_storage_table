@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_storage_table
+# key: r_azurerm_storage_table
+# --
+
+resource "azurerm_storage_table" "${1:this}" {
+    name = "${2:name}"
+    storage_account_name = "${3:storage_account_name}"
+}

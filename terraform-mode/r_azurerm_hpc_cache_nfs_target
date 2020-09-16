@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_hpc_cache_nfs_target
+# key: r_azurerm_hpc_cache_nfs_target
+# --
+
+resource "azurerm_hpc_cache_nfs_target" "${1:this}" {
+    cache_name = "${2:cache_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    target_host_name = "${5:target_host_name}"
+    usage_model = "${6:usage_model}"
+}

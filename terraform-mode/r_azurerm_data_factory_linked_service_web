@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_linked_service_web
+# key: r_azurerm_data_factory_linked_service_web
+# --
+
+resource "azurerm_data_factory_linked_service_web" "${1:this}" {
+    authentication_type = "${2:authentication_type}"
+    data_factory_name = "${3:data_factory_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    url = "${6:url}"
+}

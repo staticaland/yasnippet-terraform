@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_kinesis_stream
+# key: r_aws_kinesis_stream
+# --
+
+resource "aws_kinesis_stream" "${1:this}" {
+    name = "${2:name}"
+    shard_count = "${3:shard_count}"
+}

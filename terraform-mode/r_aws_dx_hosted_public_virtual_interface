@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_hosted_public_virtual_interface
+# key: r_aws_dx_hosted_public_virtual_interface
+# --
+
+resource "aws_dx_hosted_public_virtual_interface" "${1:this}" {
+    address_family = "${2:address_family}"
+    bgp_asn = "${3:bgp_asn}"
+    connection_id = "${4:connection_id}"
+    name = "${5:name}"
+    owner_account_id = "${6:owner_account_id}"
+    route_filter_prefixes = "${7:route_filter_prefixes}"
+    vlan = "${8:vlan}"
+}

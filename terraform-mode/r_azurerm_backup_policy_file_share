@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_backup_policy_file_share
+# key: r_azurerm_backup_policy_file_share
+# --
+
+resource "azurerm_backup_policy_file_share" "${1:this}" {
+    name = "${2:name}"
+    recovery_vault_name = "${3:recovery_vault_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

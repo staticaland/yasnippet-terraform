@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_shield_protection
+# key: r_aws_shield_protection
+# --
+
+resource "aws_shield_protection" "${1:this}" {
+    name = "${2:name}"
+    resource_arn = "${3:resource_arn}"
+}

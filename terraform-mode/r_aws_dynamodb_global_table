@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dynamodb_global_table
+# key: r_aws_dynamodb_global_table
+# --
+
+resource "aws_dynamodb_global_table" "${1:this}" {
+    name = "${2:name}"
+}

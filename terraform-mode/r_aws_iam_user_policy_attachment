@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_user_policy_attachment
+# key: r_aws_iam_user_policy_attachment
+# --
+
+resource "aws_iam_user_policy_attachment" "${1:this}" {
+    policy_arn = "${2:policy_arn}"
+    user = "${3:user}"
+}

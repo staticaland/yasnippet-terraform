@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_config_aggregate_authorization
+# key: r_aws_config_aggregate_authorization
+# --
+
+resource "aws_config_aggregate_authorization" "${1:this}" {
+    account_id = "${2:account_id}"
+    region = "${3:region}"
+}

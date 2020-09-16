@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_glacier_vault_lock
+# key: r_aws_glacier_vault_lock
+# --
+
+resource "aws_glacier_vault_lock" "${1:this}" {
+    complete_lock = "${2:complete_lock}"
+    policy = "${3:policy}"
+    vault_name = "${4:vault_name}"
+}

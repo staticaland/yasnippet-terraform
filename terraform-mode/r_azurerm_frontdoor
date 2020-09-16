@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_frontdoor
+# key: r_azurerm_frontdoor
+# --
+
+resource "azurerm_frontdoor" "${1:this}" {
+    enforce_backend_pools_certificate_name_check = "${2:enforce_backend_pools_certificate_name_check}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

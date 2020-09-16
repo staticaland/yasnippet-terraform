@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_function_app_slot
+# key: r_azurerm_function_app_slot
+# --
+
+resource "azurerm_function_app_slot" "${1:this}" {
+    app_service_plan_id = "${2:app_service_plan_id}"
+    function_app_name = "${3:function_app_name}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+    storage_account_access_key = "${7:storage_account_access_key}"
+    storage_account_name = "${8:storage_account_name}"
+}

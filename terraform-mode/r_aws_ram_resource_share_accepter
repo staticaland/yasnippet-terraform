@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ram_resource_share_accepter
+# key: r_aws_ram_resource_share_accepter
+# --
+
+resource "aws_ram_resource_share_accepter" "${1:this}" {
+    share_arn = "${2:share_arn}"
+}

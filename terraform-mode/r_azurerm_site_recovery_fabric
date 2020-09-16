@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_site_recovery_fabric
+# key: r_azurerm_site_recovery_fabric
+# --
+
+resource "azurerm_site_recovery_fabric" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    recovery_vault_name = "${4:recovery_vault_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

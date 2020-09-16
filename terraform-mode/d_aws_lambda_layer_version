@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_lambda_layer_version
+# key: d_aws_lambda_layer_version
+# --
+
+data "aws_lambda_layer_version" "${1:this}" {
+    layer_name = "${2:layer_name}"
+}

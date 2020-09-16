@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_traffic_mirror_target
+# key: r_aws_ec2_traffic_mirror_target
+# --
+
+resource "aws_ec2_traffic_mirror_target" "${1:this}" {
+}

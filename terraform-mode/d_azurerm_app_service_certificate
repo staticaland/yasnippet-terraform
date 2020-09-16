@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_app_service_certificate
+# key: d_azurerm_app_service_certificate
+# --
+
+data "azurerm_app_service_certificate" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

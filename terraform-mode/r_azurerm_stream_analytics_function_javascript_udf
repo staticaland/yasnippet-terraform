@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_stream_analytics_function_javascript_udf
+# key: r_azurerm_stream_analytics_function_javascript_udf
+# --
+
+resource "azurerm_stream_analytics_function_javascript_udf" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    script = "${4:script}"
+    stream_analytics_job_name = "${5:stream_analytics_job_name}"
+}

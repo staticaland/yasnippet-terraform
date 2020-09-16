@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_autoscaling_schedule
+# key: r_aws_autoscaling_schedule
+# --
+
+resource "aws_autoscaling_schedule" "${1:this}" {
+    autoscaling_group_name = "${2:autoscaling_group_name}"
+    scheduled_action_name = "${3:scheduled_action_name}"
+}

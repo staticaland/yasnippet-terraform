@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_traffic_mirror_session
+# key: r_aws_ec2_traffic_mirror_session
+# --
+
+resource "aws_ec2_traffic_mirror_session" "${1:this}" {
+    network_interface_id = "${2:network_interface_id}"
+    session_number = "${3:session_number}"
+    traffic_mirror_filter_id = "${4:traffic_mirror_filter_id}"
+    traffic_mirror_target_id = "${5:traffic_mirror_target_id}"
+}

@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_netapp_pool
+# key: d_azurerm_netapp_pool
+# --
+
+data "azurerm_netapp_pool" "${1:this}" {
+    account_name = "${2:account_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

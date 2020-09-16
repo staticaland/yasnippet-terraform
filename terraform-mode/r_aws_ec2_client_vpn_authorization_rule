@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_client_vpn_authorization_rule
+# key: r_aws_ec2_client_vpn_authorization_rule
+# --
+
+resource "aws_ec2_client_vpn_authorization_rule" "${1:this}" {
+    client_vpn_endpoint_id = "${2:client_vpn_endpoint_id}"
+    target_network_cidr = "${3:target_network_cidr}"
+}

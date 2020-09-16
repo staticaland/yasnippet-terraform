@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_private_link_service
+# key: r_azurerm_private_link_service
+# --
+
+resource "azurerm_private_link_service" "${1:this}" {
+    load_balancer_frontend_ip_configuration_ids = "${2:load_balancer_frontend_ip_configuration_ids}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

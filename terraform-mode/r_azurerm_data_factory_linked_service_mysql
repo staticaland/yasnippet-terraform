@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_linked_service_mysql
+# key: r_azurerm_data_factory_linked_service_mysql
+# --
+
+resource "azurerm_data_factory_linked_service_mysql" "${1:this}" {
+    connection_string = "${2:connection_string}"
+    data_factory_name = "${3:data_factory_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

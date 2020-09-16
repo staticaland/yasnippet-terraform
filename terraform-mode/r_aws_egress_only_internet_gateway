@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_egress_only_internet_gateway
+# key: r_aws_egress_only_internet_gateway
+# --
+
+resource "aws_egress_only_internet_gateway" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_s3_bucket_notification
+# key: r_aws_s3_bucket_notification
+# --
+
+resource "aws_s3_bucket_notification" "${1:this}" {
+    bucket = "${2:bucket}"
+}

@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_policy_set_definition
+# key: d_azurerm_policy_set_definition
+# --
+
+data "azurerm_policy_set_definition" "${1:this}" {
+}

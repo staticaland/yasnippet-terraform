@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_mariadb_server
+# key: d_azurerm_mariadb_server
+# --
+
+data "azurerm_mariadb_server" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_traffic_manager_endpoint
+# key: r_azurerm_traffic_manager_endpoint
+# --
+
+resource "azurerm_traffic_manager_endpoint" "${1:this}" {
+    name = "${2:name}"
+    profile_name = "${3:profile_name}"
+    resource_group_name = "${4:resource_group_name}"
+    type = "${5:type}"
+}

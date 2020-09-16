@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_automation_variable_bool
+# key: d_azurerm_automation_variable_bool
+# --
+
+data "azurerm_automation_variable_bool" "${1:this}" {
+    automation_account_name = "${2:automation_account_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

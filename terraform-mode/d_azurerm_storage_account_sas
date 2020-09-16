@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_storage_account_sas
+# key: d_azurerm_storage_account_sas
+# --
+
+data "azurerm_storage_account_sas" "${1:this}" {
+    connection_string = "${2:connection_string}"
+    expiry = "${3:expiry}"
+    start = "${4:start}"
+}

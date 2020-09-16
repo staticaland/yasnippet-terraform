@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_service_fabric_cluster
+# key: r_azurerm_service_fabric_cluster
+# --
+
+resource "azurerm_service_fabric_cluster" "${1:this}" {
+    location = "${2:location}"
+    management_endpoint = "${3:management_endpoint}"
+    name = "${4:name}"
+    reliability_level = "${5:reliability_level}"
+    resource_group_name = "${6:resource_group_name}"
+    upgrade_mode = "${7:upgrade_mode}"
+    vm_image = "${8:vm_image}"
+}

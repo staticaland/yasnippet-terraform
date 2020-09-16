@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_storagegateway_cached_iscsi_volume
+# key: r_aws_storagegateway_cached_iscsi_volume
+# --
+
+resource "aws_storagegateway_cached_iscsi_volume" "${1:this}" {
+    gateway_arn = "${2:gateway_arn}"
+    network_interface_id = "${3:network_interface_id}"
+    target_name = "${4:target_name}"
+    volume_size_in_bytes = "${5:volume_size_in_bytes}"
+}

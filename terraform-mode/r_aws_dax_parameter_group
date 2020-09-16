@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dax_parameter_group
+# key: r_aws_dax_parameter_group
+# --
+
+resource "aws_dax_parameter_group" "${1:this}" {
+    name = "${2:name}"
+}

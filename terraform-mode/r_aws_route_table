@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_route_table
+# key: r_aws_route_table
+# --
+
+resource "aws_route_table" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

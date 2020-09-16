@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_batch_certificate
+# key: d_azurerm_batch_certificate
+# --
+
+data "azurerm_batch_certificate" "${1:this}" {
+    account_name = "${2:account_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

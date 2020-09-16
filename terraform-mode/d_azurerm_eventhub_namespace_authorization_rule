@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_eventhub_namespace_authorization_rule
+# key: d_azurerm_eventhub_namespace_authorization_rule
+# --
+
+data "azurerm_eventhub_namespace_authorization_rule" "${1:this}" {
+    name = "${2:name}"
+    namespace_name = "${3:namespace_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

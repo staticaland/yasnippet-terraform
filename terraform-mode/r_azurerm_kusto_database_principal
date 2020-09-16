@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_kusto_database_principal
+# key: r_azurerm_kusto_database_principal
+# --
+
+resource "azurerm_kusto_database_principal" "${1:this}" {
+    client_id = "${2:client_id}"
+    cluster_name = "${3:cluster_name}"
+    database_name = "${4:database_name}"
+    object_id = "${5:object_id}"
+    resource_group_name = "${6:resource_group_name}"
+    role = "${7:role}"
+    type = "${8:type}"
+}

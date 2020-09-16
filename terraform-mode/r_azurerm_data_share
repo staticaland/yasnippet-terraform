@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_share
+# key: r_azurerm_data_share
+# --
+
+resource "azurerm_data_share" "${1:this}" {
+    account_id = "${2:account_id}"
+    kind = "${3:kind}"
+    name = "${4:name}"
+}

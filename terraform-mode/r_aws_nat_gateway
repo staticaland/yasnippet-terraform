@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_nat_gateway
+# key: r_aws_nat_gateway
+# --
+
+resource "aws_nat_gateway" "${1:this}" {
+    allocation_id = "${2:allocation_id}"
+    subnet_id = "${3:subnet_id}"
+}

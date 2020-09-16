@@ -1,0 +1,17 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_netapp_volume
+# key: r_azurerm_netapp_volume
+# --
+
+resource "azurerm_netapp_volume" "${1:this}" {
+    account_name = "${2:account_name}"
+    location = "${3:location}"
+    name = "${4:name}"
+    pool_name = "${5:pool_name}"
+    resource_group_name = "${6:resource_group_name}"
+    service_level = "${7:service_level}"
+    storage_quota_in_gb = "${8:storage_quota_in_gb}"
+    subnet_id = "${9:subnet_id}"
+    volume_path = "${10:volume_path}"
+}

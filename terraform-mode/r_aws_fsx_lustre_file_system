@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_fsx_lustre_file_system
+# key: r_aws_fsx_lustre_file_system
+# --
+
+resource "aws_fsx_lustre_file_system" "${1:this}" {
+    storage_capacity = "${2:storage_capacity}"
+    subnet_ids = "${3:subnet_ids}"
+}

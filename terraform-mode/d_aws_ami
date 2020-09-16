@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ami
+# key: d_aws_ami
+# --
+
+data "aws_ami" "${1:this}" {
+    owners = "${2:owners}"
+}

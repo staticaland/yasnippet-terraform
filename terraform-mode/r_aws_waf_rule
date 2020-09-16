@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_waf_rule
+# key: r_aws_waf_rule
+# --
+
+resource "aws_waf_rule" "${1:this}" {
+    metric_name = "${2:metric_name}"
+    name = "${3:name}"
+}

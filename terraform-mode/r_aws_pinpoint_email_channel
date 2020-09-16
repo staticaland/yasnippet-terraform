@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_pinpoint_email_channel
+# key: r_aws_pinpoint_email_channel
+# --
+
+resource "aws_pinpoint_email_channel" "${1:this}" {
+    application_id = "${2:application_id}"
+    from_address = "${3:from_address}"
+    identity = "${4:identity}"
+    role_arn = "${5:role_arn}"
+}

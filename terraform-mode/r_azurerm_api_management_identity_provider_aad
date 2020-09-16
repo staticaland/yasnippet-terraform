@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_identity_provider_aad
+# key: r_azurerm_api_management_identity_provider_aad
+# --
+
+resource "azurerm_api_management_identity_provider_aad" "${1:this}" {
+    allowed_tenants = "${2:allowed_tenants}"
+    api_management_name = "${3:api_management_name}"
+    client_id = "${4:client_id}"
+    client_secret = "${5:client_secret}"
+    resource_group_name = "${6:resource_group_name}"
+}

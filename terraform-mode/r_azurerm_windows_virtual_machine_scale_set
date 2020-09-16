@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_windows_virtual_machine_scale_set
+# key: r_azurerm_windows_virtual_machine_scale_set
+# --
+
+resource "azurerm_windows_virtual_machine_scale_set" "${1:this}" {
+    admin_password = "${2:admin_password}"
+    admin_username = "${3:admin_username}"
+    instances = "${4:instances}"
+    location = "${5:location}"
+    name = "${6:name}"
+    resource_group_name = "${7:resource_group_name}"
+    sku = "${8:sku}"
+}

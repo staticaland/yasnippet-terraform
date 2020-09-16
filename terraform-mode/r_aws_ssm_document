@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_document
+# key: r_aws_ssm_document
+# --
+
+resource "aws_ssm_document" "${1:this}" {
+    content = "${2:content}"
+    document_type = "${3:document_type}"
+    name = "${4:name}"
+}

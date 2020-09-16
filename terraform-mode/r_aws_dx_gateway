@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_dx_gateway
+# key: r_aws_dx_gateway
+# --
+
+resource "aws_dx_gateway" "${1:this}" {
+    amazon_side_asn = "${2:amazon_side_asn}"
+    name = "${3:name}"
+}

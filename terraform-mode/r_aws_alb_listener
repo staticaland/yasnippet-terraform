@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_alb_listener
+# key: r_aws_alb_listener
+# --
+
+resource "aws_alb_listener" "${1:this}" {
+    load_balancer_arn = "${2:load_balancer_arn}"
+    port = "${3:port}"
+}

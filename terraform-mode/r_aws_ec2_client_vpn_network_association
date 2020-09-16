@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_client_vpn_network_association
+# key: r_aws_ec2_client_vpn_network_association
+# --
+
+resource "aws_ec2_client_vpn_network_association" "${1:this}" {
+    client_vpn_endpoint_id = "${2:client_vpn_endpoint_id}"
+    subnet_id = "${3:subnet_id}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_api_gateway_documentation_part
+# key: r_aws_api_gateway_documentation_part
+# --
+
+resource "aws_api_gateway_documentation_part" "${1:this}" {
+    properties = "${2:properties}"
+    rest_api_id = "${3:rest_api_id}"
+}

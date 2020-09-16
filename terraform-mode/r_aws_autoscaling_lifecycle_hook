@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_autoscaling_lifecycle_hook
+# key: r_aws_autoscaling_lifecycle_hook
+# --
+
+resource "aws_autoscaling_lifecycle_hook" "${1:this}" {
+    autoscaling_group_name = "${2:autoscaling_group_name}"
+    lifecycle_transition = "${3:lifecycle_transition}"
+    name = "${4:name}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_docdb_cluster_instance
+# key: r_aws_docdb_cluster_instance
+# --
+
+resource "aws_docdb_cluster_instance" "${1:this}" {
+    cluster_identifier = "${2:cluster_identifier}"
+    instance_class = "${3:instance_class}"
+}

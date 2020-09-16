@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_elasticsearch_domain
+# key: d_aws_elasticsearch_domain
+# --
+
+data "aws_elasticsearch_domain" "${1:this}" {
+    domain_name = "${2:domain_name}"
+}

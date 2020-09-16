@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_powerbi_embedded
+# key: r_azurerm_powerbi_embedded
+# --
+
+resource "azurerm_powerbi_embedded" "${1:this}" {
+    administrators = "${2:administrators}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    sku_name = "${6:sku_name}"
+}

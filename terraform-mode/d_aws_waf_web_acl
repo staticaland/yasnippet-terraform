@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_waf_web_acl
+# key: d_aws_waf_web_acl
+# --
+
+data "aws_waf_web_acl" "${1:this}" {
+    name = "${2:name}"
+}

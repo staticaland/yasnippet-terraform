@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_db_event_subscription
+# key: r_aws_db_event_subscription
+# --
+
+resource "aws_db_event_subscription" "${1:this}" {
+    sns_topic = "${2:sns_topic}"
+}

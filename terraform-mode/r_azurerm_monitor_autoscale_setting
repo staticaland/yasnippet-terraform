@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_monitor_autoscale_setting
+# key: r_azurerm_monitor_autoscale_setting
+# --
+
+resource "azurerm_monitor_autoscale_setting" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    target_resource_id = "${5:target_resource_id}"
+}

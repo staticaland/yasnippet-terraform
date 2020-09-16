@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_load_balancer_policy
+# key: r_aws_load_balancer_policy
+# --
+
+resource "aws_load_balancer_policy" "${1:this}" {
+    load_balancer_name = "${2:load_balancer_name}"
+    policy_name = "${3:policy_name}"
+    policy_type_name = "${4:policy_type_name}"
+}

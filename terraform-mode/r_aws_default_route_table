@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_default_route_table
+# key: r_aws_default_route_table
+# --
+
+resource "aws_default_route_table" "${1:this}" {
+    default_route_table_id = "${2:default_route_table_id}"
+}

@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ssm_patch_baseline
+# key: d_aws_ssm_patch_baseline
+# --
+
+data "aws_ssm_patch_baseline" "${1:this}" {
+    owner = "${2:owner}"
+}

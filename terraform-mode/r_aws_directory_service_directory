@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_directory_service_directory
+# key: r_aws_directory_service_directory
+# --
+
+resource "aws_directory_service_directory" "${1:this}" {
+    name = "${2:name}"
+    password = "${3:password}"
+}

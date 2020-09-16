@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_eventhub_consumer_group
+# key: d_azurerm_eventhub_consumer_group
+# --
+
+data "azurerm_eventhub_consumer_group" "${1:this}" {
+    eventhub_name = "${2:eventhub_name}"
+    name = "${3:name}"
+    namespace_name = "${4:namespace_name}"
+    resource_group_name = "${5:resource_group_name}"
+}

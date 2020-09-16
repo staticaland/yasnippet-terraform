@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management
+# key: r_azurerm_api_management
+# --
+
+resource "azurerm_api_management" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    publisher_email = "${4:publisher_email}"
+    publisher_name = "${5:publisher_name}"
+    resource_group_name = "${6:resource_group_name}"
+    sku_name = "${7:sku_name}"
+}

@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_advisor_recommendations
+# key: d_azurerm_advisor_recommendations
+# --
+
+data "azurerm_advisor_recommendations" "${1:this}" {
+}

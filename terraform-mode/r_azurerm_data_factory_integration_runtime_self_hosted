@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_integration_runtime_self_hosted
+# key: r_azurerm_data_factory_integration_runtime_self_hosted
+# --
+
+resource "azurerm_data_factory_integration_runtime_self_hosted" "${1:this}" {
+    data_factory_name = "${2:data_factory_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

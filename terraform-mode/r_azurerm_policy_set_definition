@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_policy_set_definition
+# key: r_azurerm_policy_set_definition
+# --
+
+resource "azurerm_policy_set_definition" "${1:this}" {
+    display_name = "${2:display_name}"
+    name = "${3:name}"
+    policy_type = "${4:policy_type}"
+}

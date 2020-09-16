@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_sql_database
+# key: d_azurerm_sql_database
+# --
+
+data "azurerm_sql_database" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    server_name = "${4:server_name}"
+}

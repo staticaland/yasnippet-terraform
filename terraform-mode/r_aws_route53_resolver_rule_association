@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_route53_resolver_rule_association
+# key: r_aws_route53_resolver_rule_association
+# --
+
+resource "aws_route53_resolver_rule_association" "${1:this}" {
+    resolver_rule_id = "${2:resolver_rule_id}"
+    vpc_id = "${3:vpc_id}"
+}

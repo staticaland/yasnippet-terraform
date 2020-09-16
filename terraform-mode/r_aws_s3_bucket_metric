@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_s3_bucket_metric
+# key: r_aws_s3_bucket_metric
+# --
+
+resource "aws_s3_bucket_metric" "${1:this}" {
+    bucket = "${2:bucket}"
+    name = "${3:name}"
+}

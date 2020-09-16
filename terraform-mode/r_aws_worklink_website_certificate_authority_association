@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_worklink_website_certificate_authority_association
+# key: r_aws_worklink_website_certificate_authority_association
+# --
+
+resource "aws_worklink_website_certificate_authority_association" "${1:this}" {
+    certificate = "${2:certificate}"
+    fleet_arn = "${3:fleet_arn}"
+}

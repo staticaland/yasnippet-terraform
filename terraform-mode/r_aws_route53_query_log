@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_route53_query_log
+# key: r_aws_route53_query_log
+# --
+
+resource "aws_route53_query_log" "${1:this}" {
+    cloudwatch_log_group_arn = "${2:cloudwatch_log_group_arn}"
+    zone_id = "${3:zone_id}"
+}

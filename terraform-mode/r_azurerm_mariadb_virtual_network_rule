@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_mariadb_virtual_network_rule
+# key: r_azurerm_mariadb_virtual_network_rule
+# --
+
+resource "azurerm_mariadb_virtual_network_rule" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    server_name = "${4:server_name}"
+    subnet_id = "${5:subnet_id}"
+}

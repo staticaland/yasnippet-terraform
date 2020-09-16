@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_customer_gateway
+# key: d_aws_customer_gateway
+# --
+
+data "aws_customer_gateway" "${1:this}" {
+}

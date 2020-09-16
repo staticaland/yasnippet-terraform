@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_iot_time_series_insights_standard_environment
+# key: r_azurerm_iot_time_series_insights_standard_environment
+# --
+
+resource "azurerm_iot_time_series_insights_standard_environment" "${1:this}" {
+    data_retention_time = "${2:data_retention_time}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    sku_name = "${6:sku_name}"
+}

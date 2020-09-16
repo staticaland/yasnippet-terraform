@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_s3_bucket_object
+# key: r_aws_s3_bucket_object
+# --
+
+resource "aws_s3_bucket_object" "${1:this}" {
+    bucket = "${2:bucket}"
+    key = "${3:key}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_sentinel_alert_rule
+# key: d_azurerm_sentinel_alert_rule
+# --
+
+data "azurerm_sentinel_alert_rule" "${1:this}" {
+    log_analytics_workspace_id = "${2:log_analytics_workspace_id}"
+    name = "${3:name}"
+}

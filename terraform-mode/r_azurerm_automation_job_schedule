@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_automation_job_schedule
+# key: r_azurerm_automation_job_schedule
+# --
+
+resource "azurerm_automation_job_schedule" "${1:this}" {
+    automation_account_name = "${2:automation_account_name}"
+    resource_group_name = "${3:resource_group_name}"
+    runbook_name = "${4:runbook_name}"
+    schedule_name = "${5:schedule_name}"
+}

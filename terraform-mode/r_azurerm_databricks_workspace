@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_databricks_workspace
+# key: r_azurerm_databricks_workspace
+# --
+
+resource "azurerm_databricks_workspace" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    sku = "${5:sku}"
+}

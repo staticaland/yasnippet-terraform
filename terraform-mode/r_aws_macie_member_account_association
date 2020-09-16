@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_macie_member_account_association
+# key: r_aws_macie_member_account_association
+# --
+
+resource "aws_macie_member_account_association" "${1:this}" {
+    member_account_id = "${2:member_account_id}"
+}

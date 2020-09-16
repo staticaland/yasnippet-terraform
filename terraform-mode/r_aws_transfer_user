@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_transfer_user
+# key: r_aws_transfer_user
+# --
+
+resource "aws_transfer_user" "${1:this}" {
+    role = "${2:role}"
+    server_id = "${3:server_id}"
+    user_name = "${4:user_name}"
+}

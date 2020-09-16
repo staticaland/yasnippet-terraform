@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_virtual_machine_data_disk_attachment
+# key: r_azurerm_virtual_machine_data_disk_attachment
+# --
+
+resource "azurerm_virtual_machine_data_disk_attachment" "${1:this}" {
+    caching = "${2:caching}"
+    lun = "${3:lun}"
+    managed_disk_id = "${4:managed_disk_id}"
+    virtual_machine_id = "${5:virtual_machine_id}"
+}

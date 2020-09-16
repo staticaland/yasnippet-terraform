@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_data_factory_integration_runtime_managed
+# key: r_azurerm_data_factory_integration_runtime_managed
+# --
+
+resource "azurerm_data_factory_integration_runtime_managed" "${1:this}" {
+    data_factory_name = "${2:data_factory_name}"
+    location = "${3:location}"
+    name = "${4:name}"
+    node_size = "${5:node_size}"
+    resource_group_name = "${6:resource_group_name}"
+}

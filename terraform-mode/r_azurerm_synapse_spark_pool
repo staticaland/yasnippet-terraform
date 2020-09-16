@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_synapse_spark_pool
+# key: r_azurerm_synapse_spark_pool
+# --
+
+resource "azurerm_synapse_spark_pool" "${1:this}" {
+    name = "${2:name}"
+    node_size = "${3:node_size}"
+    node_size_family = "${4:node_size_family}"
+    synapse_workspace_id = "${5:synapse_workspace_id}"
+}

@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_guardduty_invite_accepter
+# key: r_aws_guardduty_invite_accepter
+# --
+
+resource "aws_guardduty_invite_accepter" "${1:this}" {
+    detector_id = "${2:detector_id}"
+    master_account_id = "${3:master_account_id}"
+}

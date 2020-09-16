@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_kusto_attached_database_configuration
+# key: r_azurerm_kusto_attached_database_configuration
+# --
+
+resource "azurerm_kusto_attached_database_configuration" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    cluster_resource_id = "${3:cluster_resource_id}"
+    database_name = "${4:database_name}"
+    location = "${5:location}"
+    name = "${6:name}"
+    resource_group_name = "${7:resource_group_name}"
+}

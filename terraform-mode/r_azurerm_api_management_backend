@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_api_management_backend
+# key: r_azurerm_api_management_backend
+# --
+
+resource "azurerm_api_management_backend" "${1:this}" {
+    api_management_name = "${2:api_management_name}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+    resource_group_name = "${5:resource_group_name}"
+    url = "${6:url}"
+}

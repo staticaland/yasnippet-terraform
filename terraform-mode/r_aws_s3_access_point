@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_s3_access_point
+# key: r_aws_s3_access_point
+# --
+
+resource "aws_s3_access_point" "${1:this}" {
+    bucket = "${2:bucket}"
+    name = "${3:name}"
+}

@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_hpc_cache_blob_target
+# key: r_azurerm_hpc_cache_blob_target
+# --
+
+resource "azurerm_hpc_cache_blob_target" "${1:this}" {
+    cache_name = "${2:cache_name}"
+    name = "${3:name}"
+    namespace_path = "${4:namespace_path}"
+    resource_group_name = "${5:resource_group_name}"
+    storage_container_id = "${6:storage_container_id}"
+}

@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_maintenance_window
+# key: r_aws_ssm_maintenance_window
+# --
+
+resource "aws_ssm_maintenance_window" "${1:this}" {
+    cutoff = "${2:cutoff}"
+    duration = "${3:duration}"
+    name = "${4:name}"
+    schedule = "${5:schedule}"
+}

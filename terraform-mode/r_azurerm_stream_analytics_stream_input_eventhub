@@ -1,0 +1,16 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_stream_analytics_stream_input_eventhub
+# key: r_azurerm_stream_analytics_stream_input_eventhub
+# --
+
+resource "azurerm_stream_analytics_stream_input_eventhub" "${1:this}" {
+    eventhub_consumer_group_name = "${2:eventhub_consumer_group_name}"
+    eventhub_name = "${3:eventhub_name}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    servicebus_namespace = "${6:servicebus_namespace}"
+    shared_access_policy_key = "${7:shared_access_policy_key}"
+    shared_access_policy_name = "${8:shared_access_policy_name}"
+    stream_analytics_job_name = "${9:stream_analytics_job_name}"
+}

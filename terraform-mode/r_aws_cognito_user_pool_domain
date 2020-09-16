@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cognito_user_pool_domain
+# key: r_aws_cognito_user_pool_domain
+# --
+
+resource "aws_cognito_user_pool_domain" "${1:this}" {
+    domain = "${2:domain}"
+    user_pool_id = "${3:user_pool_id}"
+}

@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_devspace_controller
+# key: r_azurerm_devspace_controller
+# --
+
+resource "azurerm_devspace_controller" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    sku_name = "${5:sku_name}"
+    target_container_host_credentials_base64 = "${6:target_container_host_credentials_base64}"
+    target_container_host_resource_id = "${7:target_container_host_resource_id}"
+}

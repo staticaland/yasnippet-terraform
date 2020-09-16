@@ -1,0 +1,14 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ssm_maintenance_window_task
+# key: r_aws_ssm_maintenance_window_task
+# --
+
+resource "aws_ssm_maintenance_window_task" "${1:this}" {
+    max_concurrency = "${2:max_concurrency}"
+    max_errors = "${3:max_errors}"
+    service_role_arn = "${4:service_role_arn}"
+    task_arn = "${5:task_arn}"
+    task_type = "${6:task_type}"
+    window_id = "${7:window_id}"
+}

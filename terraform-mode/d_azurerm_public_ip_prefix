@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_public_ip_prefix
+# key: d_azurerm_public_ip_prefix
+# --
+
+data "azurerm_public_ip_prefix" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

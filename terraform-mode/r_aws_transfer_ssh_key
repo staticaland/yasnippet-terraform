@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_transfer_ssh_key
+# key: r_aws_transfer_ssh_key
+# --
+
+resource "aws_transfer_ssh_key" "${1:this}" {
+    body = "${2:body}"
+    server_id = "${3:server_id}"
+    user_name = "${4:user_name}"
+}

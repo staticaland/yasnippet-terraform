@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_wafv2_web_acl_logging_configuration
+# key: r_aws_wafv2_web_acl_logging_configuration
+# --
+
+resource "aws_wafv2_web_acl_logging_configuration" "${1:this}" {
+    log_destination_configs = "${2:log_destination_configs}"
+    resource_arn = "${3:resource_arn}"
+}

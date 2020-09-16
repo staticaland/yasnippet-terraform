@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_marketplace_agreement
+# key: r_azurerm_marketplace_agreement
+# --
+
+resource "azurerm_marketplace_agreement" "${1:this}" {
+    offer = "${2:offer}"
+    plan = "${3:plan}"
+    publisher = "${4:publisher}"
+}

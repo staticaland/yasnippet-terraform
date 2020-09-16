@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_bot_channels_registration
+# key: r_azurerm_bot_channels_registration
+# --
+
+resource "azurerm_bot_channels_registration" "${1:this}" {
+    location = "${2:location}"
+    microsoft_app_id = "${3:microsoft_app_id}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    sku = "${6:sku}"
+}

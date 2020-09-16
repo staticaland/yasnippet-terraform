@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_notification_hub
+# key: d_azurerm_notification_hub
+# --
+
+data "azurerm_notification_hub" "${1:this}" {
+    name = "${2:name}"
+    namespace_name = "${3:namespace_name}"
+    resource_group_name = "${4:resource_group_name}"
+}

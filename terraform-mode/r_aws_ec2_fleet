@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ec2_fleet
+# key: r_aws_ec2_fleet
+# --
+
+resource "aws_ec2_fleet" "${1:this}" {
+}

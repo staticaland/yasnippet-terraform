@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_prefix_list
+# key: d_aws_prefix_list
+# --
+
+data "aws_prefix_list" "${1:this}" {
+}

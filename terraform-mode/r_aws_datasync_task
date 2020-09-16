@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_datasync_task
+# key: r_aws_datasync_task
+# --
+
+resource "aws_datasync_task" "${1:this}" {
+    destination_location_arn = "${2:destination_location_arn}"
+    source_location_arn = "${3:source_location_arn}"
+}

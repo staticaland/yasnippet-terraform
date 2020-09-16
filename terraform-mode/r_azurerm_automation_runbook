@@ -1,0 +1,15 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_automation_runbook
+# key: r_azurerm_automation_runbook
+# --
+
+resource "azurerm_automation_runbook" "${1:this}" {
+    automation_account_name = "${2:automation_account_name}"
+    location = "${3:location}"
+    log_progress = "${4:log_progress}"
+    log_verbose = "${5:log_verbose}"
+    name = "${6:name}"
+    resource_group_name = "${7:resource_group_name}"
+    runbook_type = "${8:runbook_type}"
+}

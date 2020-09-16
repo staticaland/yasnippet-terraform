@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_apigatewayv2_api
+# key: r_aws_apigatewayv2_api
+# --
+
+resource "aws_apigatewayv2_api" "${1:this}" {
+    name = "${2:name}"
+    protocol_type = "${3:protocol_type}"
+}

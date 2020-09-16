@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_logic_app_action_http
+# key: r_azurerm_logic_app_action_http
+# --
+
+resource "azurerm_logic_app_action_http" "${1:this}" {
+    logic_app_id = "${2:logic_app_id}"
+    method = "${3:method}"
+    name = "${4:name}"
+    uri = "${5:uri}"
+}

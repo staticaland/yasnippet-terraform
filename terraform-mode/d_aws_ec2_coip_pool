@@ -1,0 +1,8 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_ec2_coip_pool
+# key: d_aws_ec2_coip_pool
+# --
+
+data "aws_ec2_coip_pool" "${1:this}" {
+}

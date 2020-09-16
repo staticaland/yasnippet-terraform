@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_main_route_table_association
+# key: r_aws_main_route_table_association
+# --
+
+resource "aws_main_route_table_association" "${1:this}" {
+    route_table_id = "${2:route_table_id}"
+    vpc_id = "${3:vpc_id}"
+}

@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_mq_broker
+# key: r_aws_mq_broker
+# --
+
+resource "aws_mq_broker" "${1:this}" {
+    broker_name = "${2:broker_name}"
+    engine_type = "${3:engine_type}"
+    engine_version = "${4:engine_version}"
+    host_instance_type = "${5:host_instance_type}"
+    security_groups = "${6:security_groups}"
+}

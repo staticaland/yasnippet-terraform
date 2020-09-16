@@ -1,0 +1,12 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_private_dns_zone_virtual_network_link
+# key: r_azurerm_private_dns_zone_virtual_network_link
+# --
+
+resource "azurerm_private_dns_zone_virtual_network_link" "${1:this}" {
+    name = "${2:name}"
+    private_dns_zone_name = "${3:private_dns_zone_name}"
+    resource_group_name = "${4:resource_group_name}"
+    virtual_network_id = "${5:virtual_network_id}"
+}

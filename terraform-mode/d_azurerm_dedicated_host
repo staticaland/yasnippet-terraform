@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: d_azurerm_dedicated_host
+# key: d_azurerm_dedicated_host
+# --
+
+data "azurerm_dedicated_host" "${1:this}" {
+    dedicated_host_group_name = "${2:dedicated_host_group_name}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+}

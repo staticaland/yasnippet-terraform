@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_cloudwatch_dashboard
+# key: r_aws_cloudwatch_dashboard
+# --
+
+resource "aws_cloudwatch_dashboard" "${1:this}" {
+    dashboard_body = "${2:dashboard_body}"
+    dashboard_name = "${3:dashboard_name}"
+}

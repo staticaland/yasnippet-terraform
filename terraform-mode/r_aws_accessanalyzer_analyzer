@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_accessanalyzer_analyzer
+# key: r_aws_accessanalyzer_analyzer
+# --
+
+resource "aws_accessanalyzer_analyzer" "${1:this}" {
+    analyzer_name = "${2:analyzer_name}"
+}

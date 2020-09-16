@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: d_aws_cloudwatch_log_group
+# key: d_aws_cloudwatch_log_group
+# --
+
+data "aws_cloudwatch_log_group" "${1:this}" {
+    name = "${2:name}"
+}

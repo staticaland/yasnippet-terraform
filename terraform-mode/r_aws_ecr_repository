@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ecr_repository
+# key: r_aws_ecr_repository
+# --
+
+resource "aws_ecr_repository" "${1:this}" {
+    name = "${2:name}"
+}

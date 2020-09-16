@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_shared_image
+# key: r_azurerm_shared_image
+# --
+
+resource "azurerm_shared_image" "${1:this}" {
+    gallery_name = "${2:gallery_name}"
+    location = "${3:location}"
+    name = "${4:name}"
+    os_type = "${5:os_type}"
+    resource_group_name = "${6:resource_group_name}"
+}

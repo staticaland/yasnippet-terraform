@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_azurerm_virtual_hub
+# key: r_azurerm_virtual_hub
+# --
+
+resource "azurerm_virtual_hub" "${1:this}" {
+    address_prefix = "${2:address_prefix}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    virtual_wan_id = "${6:virtual_wan_id}"
+}

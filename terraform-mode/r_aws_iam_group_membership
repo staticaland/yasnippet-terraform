@@ -1,0 +1,11 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_iam_group_membership
+# key: r_aws_iam_group_membership
+# --
+
+resource "aws_iam_group_membership" "${1:this}" {
+    group = "${2:group}"
+    name = "${3:name}"
+    users = "${4:users}"
+}

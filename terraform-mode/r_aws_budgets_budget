@@ -1,0 +1,13 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_budgets_budget
+# key: r_aws_budgets_budget
+# --
+
+resource "aws_budgets_budget" "${1:this}" {
+    budget_type = "${2:budget_type}"
+    limit_amount = "${3:limit_amount}"
+    limit_unit = "${4:limit_unit}"
+    time_period_start = "${5:time_period_start}"
+    time_unit = "${6:time_unit}"
+}

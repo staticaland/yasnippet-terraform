@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_ami_from_instance
+# key: r_aws_ami_from_instance
+# --
+
+resource "aws_ami_from_instance" "${1:this}" {
+    name = "${2:name}"
+    source_instance_id = "${3:source_instance_id}"
+}

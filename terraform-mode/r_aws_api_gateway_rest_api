@@ -1,0 +1,9 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_api_gateway_rest_api
+# key: r_aws_api_gateway_rest_api
+# --
+
+resource "aws_api_gateway_rest_api" "${1:this}" {
+    name = "${2:name}"
+}

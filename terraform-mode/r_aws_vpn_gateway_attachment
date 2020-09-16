@@ -1,0 +1,10 @@
+
+# -*- mode: snippet -*-
+# name: r_aws_vpn_gateway_attachment
+# key: r_aws_vpn_gateway_attachment
+# --
+
+resource "aws_vpn_gateway_attachment" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+    vpn_gateway_id = "${3:vpn_gateway_id}"
+}
