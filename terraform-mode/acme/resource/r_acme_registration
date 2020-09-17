@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_acme_registration
+# key: r_acme_registration
+# --
+
+resource "acme_registration" "${1:this}" {
+    account_key_pem = "${2:account_key_pem}"
+    email_address = "${3:email_address}"
+}

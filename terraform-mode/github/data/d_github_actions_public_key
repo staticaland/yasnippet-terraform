@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_github_actions_public_key
+# key: d_github_actions_public_key
+# --
+
+data "github_actions_public_key" "${1:this}" {
+    repository = "${2:repository}"
+}

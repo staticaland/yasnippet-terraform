@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_github_organization_team_sync_groups
+# key: d_github_organization_team_sync_groups
+# --
+
+data "github_organization_team_sync_groups" "${1:this}" {
+}

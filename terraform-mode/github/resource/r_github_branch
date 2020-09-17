@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_github_branch
+# key: r_github_branch
+# --
+
+resource "github_branch" "${1:this}" {
+    branch = "${2:branch}"
+    repository = "${3:repository}"
+}

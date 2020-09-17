@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_github_repository_file
+# key: r_github_repository_file
+# --
+
+resource "github_repository_file" "${1:this}" {
+    content = "${2:content}"
+    file = "${3:file}"
+    repository = "${4:repository}"
+}

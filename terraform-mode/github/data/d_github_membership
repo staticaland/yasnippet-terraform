@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_github_membership
+# key: d_github_membership
+# --
+
+data "github_membership" "${1:this}" {
+    username = "${2:username}"
+}

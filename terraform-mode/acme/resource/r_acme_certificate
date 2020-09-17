@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_acme_certificate
+# key: r_acme_certificate
+# --
+
+resource "acme_certificate" "${1:this}" {
+    account_key_pem = "${2:account_key_pem}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_github_collaborators
+# key: d_github_collaborators
+# --
+
+data "github_collaborators" "${1:this}" {
+    owner = "${2:owner}"
+    repository = "${3:repository}"
+}

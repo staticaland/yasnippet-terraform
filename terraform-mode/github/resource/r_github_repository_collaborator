@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_github_repository_collaborator
+# key: r_github_repository_collaborator
+# --
+
+resource "github_repository_collaborator" "${1:this}" {
+    repository = "${2:repository}"
+    username = "${3:username}"
+}

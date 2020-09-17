@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_github_team_sync_group_mapping
+# key: r_github_team_sync_group_mapping
+# --
+
+resource "github_team_sync_group_mapping" "${1:this}" {
+    team_slug = "${2:team_slug}"
+}

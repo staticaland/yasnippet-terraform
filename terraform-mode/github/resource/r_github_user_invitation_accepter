@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_github_user_invitation_accepter
+# key: r_github_user_invitation_accepter
+# --
+
+resource "github_user_invitation_accepter" "${1:this}" {
+    invitation_id = "${2:invitation_id}"
+}

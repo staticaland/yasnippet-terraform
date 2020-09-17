@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_github_release
+# key: d_github_release
+# --
+
+data "github_release" "${1:this}" {
+    owner = "${2:owner}"
+    repository = "${3:repository}"
+    retrieve_by = "${4:retrieve_by}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_github_repository_deploy_key
+# key: r_github_repository_deploy_key
+# --
+
+resource "github_repository_deploy_key" "${1:this}" {
+    key = "${2:key}"
+    repository = "${3:repository}"
+    title = "${4:title}"
+}

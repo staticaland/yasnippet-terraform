@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_github_organization_block
+# key: r_github_organization_block
+# --
+
+resource "github_organization_block" "${1:this}" {
+    username = "${2:username}"
+}
