@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_gitops_checkout
+# key: r_gitops_checkout
+# --
+
+resource "gitops_checkout" "${1:this}" {
+}

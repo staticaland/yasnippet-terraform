@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_dms_instance_v1
+# key: r_opentelekomcloud_dms_instance_v1
+# --
+
+resource "opentelekomcloud_dms_instance_v1" "${1:this}" {
+    available_zones = "${2:available_zones}"
+    engine = "${3:engine}"
+    name = "${4:name}"
+    product_id = "${5:product_id}"
+    security_group_id = "${6:security_group_id}"
+    storage_space = "${7:storage_space}"
+    subnet_id = "${8:subnet_id}"
+    vpc_id = "${9:vpc_id}"
+}

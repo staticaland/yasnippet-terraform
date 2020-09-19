@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_update_updatable_objects_repository_content
+# key: r_checkpoint_management_update_updatable_objects_repository_content
+# --
+
+resource "checkpoint_management_update_updatable_objects_repository_content" "${1:this}" {
+}

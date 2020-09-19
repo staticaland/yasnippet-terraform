@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_kubeflowpipelines_job
+# key: r_kubeflowpipelines_job
+# --
+
+resource "kubeflowpipelines_job" "${1:this}" {
+    max_concurrency = "${2:max_concurrency}"
+    name = "${3:name}"
+}

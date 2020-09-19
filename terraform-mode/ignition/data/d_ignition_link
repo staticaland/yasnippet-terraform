@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ignition_link
+# key: d_ignition_link
+# --
+
+data "ignition_link" "${1:this}" {
+    path = "${2:path}"
+    target = "${3:target}"
+}

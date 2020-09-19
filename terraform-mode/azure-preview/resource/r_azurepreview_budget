@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurepreview_budget
+# key: r_azurepreview_budget
+# --
+
+resource "azurepreview_budget" "${1:this}" {
+    amount = "${2:amount}"
+    category = "${3:category}"
+    name = "${4:name}"
+    scope = "${5:scope}"
+    time_grain = "${6:time_grain}"
+}

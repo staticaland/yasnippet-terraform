@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_keypair
+# key: d_outscale_keypair
+# --
+
+data "outscale_keypair" "${1:this}" {
+}

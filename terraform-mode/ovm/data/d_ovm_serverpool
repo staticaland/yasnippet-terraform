@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ovm_serverpool
+# key: d_ovm_serverpool
+# --
+
+data "ovm_serverpool" "${1:this}" {
+    name = "${2:name}"
+}

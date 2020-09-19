@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_consul_license
+# key: r_consul_license
+# --
+
+resource "consul_license" "${1:this}" {
+    license = "${2:license}"
+}

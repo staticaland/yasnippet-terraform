@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_firenet
+# key: r_aviatrix_firenet
+# --
+
+resource "aviatrix_firenet" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

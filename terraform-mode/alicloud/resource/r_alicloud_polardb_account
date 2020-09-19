@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_polardb_account
+# key: r_alicloud_polardb_account
+# --
+
+resource "alicloud_polardb_account" "${1:this}" {
+    account_name = "${2:account_name}"
+    account_password = "${3:account_password}"
+    db_cluster_id = "${4:db_cluster_id}"
+}

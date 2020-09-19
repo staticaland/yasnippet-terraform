@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_openshift_netnamespace
+# key: r_openshift_netnamespace
+# --
+
+resource "openshift_netnamespace" "${1:this}" {
+    netname = "${2:netname}"
+}

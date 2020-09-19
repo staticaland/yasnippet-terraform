@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_consul_acl_policy
+# key: r_consul_acl_policy
+# --
+
+resource "consul_acl_policy" "${1:this}" {
+    name = "${2:name}"
+    rules = "${3:rules}"
+}

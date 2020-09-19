@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_dns_domain
+# key: r_vultr_dns_domain
+# --
+
+resource "vultr_dns_domain" "${1:this}" {
+    domain = "${2:domain}"
+}

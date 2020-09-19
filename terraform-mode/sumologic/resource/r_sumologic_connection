@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_connection
+# key: r_sumologic_connection
+# --
+
+resource "sumologic_connection" "${1:this}" {
+    default_payload = "${2:default_payload}"
+    name = "${3:name}"
+    type = "${4:type}"
+    url = "${5:url}"
+}

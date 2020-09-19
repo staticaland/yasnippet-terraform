@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_network_acl_rule
+# key: r_flexibleengine_network_acl_rule
+# --
+
+resource "flexibleengine_network_acl_rule" "${1:this}" {
+    action = "${2:action}"
+    protocol = "${3:protocol}"
+}

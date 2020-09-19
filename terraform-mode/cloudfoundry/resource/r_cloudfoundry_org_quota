@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_org_quota
+# key: r_cloudfoundry_org_quota
+# --
+
+resource "cloudfoundry_org_quota" "${1:this}" {
+    allow_paid_service_plans = "${2:allow_paid_service_plans}"
+    name = "${3:name}"
+    total_memory = "${4:total_memory}"
+    total_routes = "${5:total_routes}"
+    total_services = "${6:total_services}"
+}

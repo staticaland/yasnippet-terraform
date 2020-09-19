@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_machine
+# key: d_vra_machine
+# --
+
+data "vra_machine" "${1:this}" {
+}

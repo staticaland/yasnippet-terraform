@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_multicastaddress6
+# key: r_fortios_firewall_multicastaddress6
+# --
+
+resource "fortios_firewall_multicastaddress6" "${1:this}" {
+    ip6 = "${2:ip6}"
+}

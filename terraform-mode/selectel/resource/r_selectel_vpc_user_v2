@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_selectel_vpc_user_v2
+# key: r_selectel_vpc_user_v2
+# --
+
+resource "selectel_vpc_user_v2" "${1:this}" {
+    name = "${2:name}"
+    password = "${3:password}"
+}

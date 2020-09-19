@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_iploadbalancing_vrack_network
+# key: r_ovh_iploadbalancing_vrack_network
+# --
+
+resource "ovh_iploadbalancing_vrack_network" "${1:this}" {
+    nat_ip = "${2:nat_ip}"
+    service_name = "${3:service_name}"
+    subnet = "${4:subnet}"
+}

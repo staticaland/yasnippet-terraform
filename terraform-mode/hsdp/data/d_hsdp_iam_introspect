@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_hsdp_iam_introspect
+# key: d_hsdp_iam_introspect
+# --
+
+data "hsdp_iam_introspect" "${1:this}" {
+}

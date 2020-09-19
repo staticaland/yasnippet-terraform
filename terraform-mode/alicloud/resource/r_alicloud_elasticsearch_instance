@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_elasticsearch_instance
+# key: r_alicloud_elasticsearch_instance
+# --
+
+resource "alicloud_elasticsearch_instance" "${1:this}" {
+    data_node_amount = "${2:data_node_amount}"
+    data_node_disk_size = "${3:data_node_disk_size}"
+    data_node_disk_type = "${4:data_node_disk_type}"
+    data_node_spec = "${5:data_node_spec}"
+    version = "${6:version}"
+    vswitch_id = "${7:vswitch_id}"
+}

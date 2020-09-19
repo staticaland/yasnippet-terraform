@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logdisk_filter
+# key: r_fortios_logdisk_filter
+# --
+
+resource "fortios_logdisk_filter" "${1:this}" {
+}

@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_container_cluster
+# key: r_tencentcloud_container_cluster
+# --
+
+resource "tencentcloud_container_cluster" "${1:this}" {
+    bandwidth = "${2:bandwidth}"
+    bandwidth_type = "${3:bandwidth_type}"
+    cluster_cidr = "${4:cluster_cidr}"
+    cluster_name = "${5:cluster_name}"
+    goods_num = "${6:goods_num}"
+    instance_type = "${7:instance_type}"
+    is_vpc_gateway = "${8:is_vpc_gateway}"
+    os_name = "${9:os_name}"
+    root_size = "${10:root_size}"
+    storage_size = "${11:storage_size}"
+    subnet_id = "${12:subnet_id}"
+    vpc_id = "${13:vpc_id}"
+    zone_id = "${14:zone_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_container_cluster_config
+# key: d_ibm_container_cluster_config
+# --
+
+data "ibm_container_cluster_config" "${1:this}" {
+    cluster_name_id = "${2:cluster_name_id}"
+}

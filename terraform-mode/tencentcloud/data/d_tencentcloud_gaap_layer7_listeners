@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_gaap_layer7_listeners
+# key: d_tencentcloud_gaap_layer7_listeners
+# --
+
+data "tencentcloud_gaap_layer7_listeners" "${1:this}" {
+    protocol = "${2:protocol}"
+}

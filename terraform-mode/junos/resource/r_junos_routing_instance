@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_routing_instance
+# key: r_junos_routing_instance
+# --
+
+resource "junos_routing_instance" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fastly_service_waf_configuration
+# key: r_fastly_service_waf_configuration
+# --
+
+resource "fastly_service_waf_configuration" "${1:this}" {
+    waf_id = "${2:waf_id}"
+}

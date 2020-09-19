@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_registry_namespace_beta
+# key: d_scaleway_registry_namespace_beta
+# --
+
+data "scaleway_registry_namespace_beta" "${1:this}" {
+}

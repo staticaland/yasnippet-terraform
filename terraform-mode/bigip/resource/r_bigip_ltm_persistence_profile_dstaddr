@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_persistence_profile_dstaddr
+# key: r_bigip_ltm_persistence_profile_dstaddr
+# --
+
+resource "bigip_ltm_persistence_profile_dstaddr" "${1:this}" {
+    defaults_from = "${2:defaults_from}"
+    name = "${3:name}"
+}

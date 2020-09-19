@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_elasticsearch
+# key: d_aiven_elasticsearch
+# --
+
+data "aiven_elasticsearch" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

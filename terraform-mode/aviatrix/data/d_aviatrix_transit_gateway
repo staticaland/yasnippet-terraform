@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_transit_gateway
+# key: d_aviatrix_transit_gateway
+# --
+
+data "aviatrix_transit_gateway" "${1:this}" {
+    gw_name = "${2:gw_name}"
+}

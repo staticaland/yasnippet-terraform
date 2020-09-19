@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_autoscript
+# key: r_fortios_system_autoscript
+# --
+
+resource "fortios_system_autoscript" "${1:this}" {
+}

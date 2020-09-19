@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ssl_vpn_client_cert
+# key: r_alicloud_ssl_vpn_client_cert
+# --
+
+resource "alicloud_ssl_vpn_client_cert" "${1:this}" {
+    ssl_vpn_server_id = "${2:ssl_vpn_server_id}"
+}

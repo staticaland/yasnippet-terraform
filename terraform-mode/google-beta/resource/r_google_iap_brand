@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_brand
+# key: r_google_iap_brand
+# --
+
+resource "google_iap_brand" "${1:this}" {
+    application_title = "${2:application_title}"
+    support_email = "${3:support_email}"
+}

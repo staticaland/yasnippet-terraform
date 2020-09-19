@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_compute_cluster_vm_host_rule
+# key: r_vsphere_compute_cluster_vm_host_rule
+# --
+
+resource "vsphere_compute_cluster_vm_host_rule" "${1:this}" {
+    compute_cluster_id = "${2:compute_cluster_id}"
+    name = "${3:name}"
+    vm_group_name = "${4:vm_group_name}"
+}

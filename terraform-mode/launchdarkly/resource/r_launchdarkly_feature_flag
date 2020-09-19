@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_launchdarkly_feature_flag
+# key: r_launchdarkly_feature_flag
+# --
+
+resource "launchdarkly_feature_flag" "${1:this}" {
+    key = "${2:key}"
+    name = "${3:name}"
+    project_key = "${4:project_key}"
+    variation_type = "${5:variation_type}"
+}

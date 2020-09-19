@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ddoscoo_scheduler_rule
+# key: r_alicloud_ddoscoo_scheduler_rule
+# --
+
+resource "alicloud_ddoscoo_scheduler_rule" "${1:this}" {
+    rule_name = "${2:rule_name}"
+    rule_type = "${3:rule_type}"
+}

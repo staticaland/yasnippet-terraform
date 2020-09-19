@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_shipping_zone
+# key: r_commercetools_shipping_zone
+# --
+
+resource "commercetools_shipping_zone" "${1:this}" {
+}

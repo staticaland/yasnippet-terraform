@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_argocd_repository
+# key: r_argocd_repository
+# --
+
+resource "argocd_repository" "${1:this}" {
+    repo = "${2:repo}"
+}

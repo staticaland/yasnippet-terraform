@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_vm_cluster_network
+# key: r_oci_database_vm_cluster_network
+# --
+
+resource "oci_database_vm_cluster_network" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    exadata_infrastructure_id = "${4:exadata_infrastructure_id}"
+}

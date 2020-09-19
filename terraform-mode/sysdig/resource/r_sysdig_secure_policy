@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_policy
+# key: r_sysdig_secure_policy
+# --
+
+resource "sysdig_secure_policy" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_resource_monitor_grant
+# key: r_snowflake_resource_monitor_grant
+# --
+
+resource "snowflake_resource_monitor_grant" "${1:this}" {
+    monitor_name = "${2:monitor_name}"
+}

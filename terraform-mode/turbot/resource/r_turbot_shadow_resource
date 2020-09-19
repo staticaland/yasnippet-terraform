@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_turbot_shadow_resource
+# key: r_turbot_shadow_resource
+# --
+
+resource "turbot_shadow_resource" "${1:this}" {
+}

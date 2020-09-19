@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_caller_identity
+# key: d_aviatrix_caller_identity
+# --
+
+data "aviatrix_caller_identity" "${1:this}" {
+}

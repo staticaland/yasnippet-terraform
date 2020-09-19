@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_splunk_saved_searches
+# key: r_splunk_saved_searches
+# --
+
+resource "splunk_saved_searches" "${1:this}" {
+    name = "${2:name}"
+    search = "${3:search}"
+}

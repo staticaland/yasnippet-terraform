@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_compute_volume_attach_v2
+# key: r_flexibleengine_compute_volume_attach_v2
+# --
+
+resource "flexibleengine_compute_volume_attach_v2" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    volume_id = "${3:volume_id}"
+}

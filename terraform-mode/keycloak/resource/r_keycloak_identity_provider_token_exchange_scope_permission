@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_identity_provider_token_exchange_scope_permission
+# key: r_keycloak_identity_provider_token_exchange_scope_permission
+# --
+
+resource "keycloak_identity_provider_token_exchange_scope_permission" "${1:this}" {
+    clients = "${2:clients}"
+    provider_alias = "${3:provider_alias}"
+    realm_id = "${4:realm_id}"
+}

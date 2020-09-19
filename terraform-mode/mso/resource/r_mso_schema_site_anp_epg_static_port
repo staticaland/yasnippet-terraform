@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_site_anp_epg_static_port
+# key: r_mso_schema_site_anp_epg_static_port
+# --
+
+resource "mso_schema_site_anp_epg_static_port" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    deployment_immediacy = "${3:deployment_immediacy}"
+    epg_name = "${4:epg_name}"
+    leaf = "${5:leaf}"
+    mode = "${6:mode}"
+    path = "${7:path}"
+    path_type = "${8:path_type}"
+    pod = "${9:pod}"
+    schema_id = "${10:schema_id}"
+    site_id = "${11:site_id}"
+    template_name = "${12:template_name}"
+    vlan = "${13:vlan}"
+}

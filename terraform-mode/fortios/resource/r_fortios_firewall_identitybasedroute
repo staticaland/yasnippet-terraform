@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_identitybasedroute
+# key: r_fortios_firewall_identitybasedroute
+# --
+
+resource "fortios_firewall_identitybasedroute" "${1:this}" {
+    name = "${2:name}"
+}

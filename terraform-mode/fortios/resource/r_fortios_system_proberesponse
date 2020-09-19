@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_proberesponse
+# key: r_fortios_system_proberesponse
+# --
+
+resource "fortios_system_proberesponse" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_communitylist
+# key: r_fortios_router_communitylist
+# --
+
+resource "fortios_router_communitylist" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

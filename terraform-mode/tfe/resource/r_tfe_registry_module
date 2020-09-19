@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_tfe_registry_module
+# key: r_tfe_registry_module
+# --
+
+resource "tfe_registry_module" "${1:this}" {
+}

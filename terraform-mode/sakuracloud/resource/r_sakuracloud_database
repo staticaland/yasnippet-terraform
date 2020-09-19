@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_database
+# key: r_sakuracloud_database
+# --
+
+resource "sakuracloud_database" "${1:this}" {
+    name = "${2:name}"
+    password = "${3:password}"
+    username = "${4:username}"
+}

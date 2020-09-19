@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_group
+# key: r_okta_group
+# --
+
+resource "okta_group" "${1:this}" {
+    name = "${2:name}"
+}

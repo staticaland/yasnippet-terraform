@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_time_rotating
+# key: r_time_rotating
+# --
+
+resource "time_rotating" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ad_ou
+# key: d_ad_ou
+# --
+
+data "ad_ou" "${1:this}" {
+}

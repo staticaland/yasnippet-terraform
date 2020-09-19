@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_voip_profile
+# key: r_fortios_voip_profile
+# --
+
+resource "fortios_voip_profile" "${1:this}" {
+    name = "${2:name}"
+}

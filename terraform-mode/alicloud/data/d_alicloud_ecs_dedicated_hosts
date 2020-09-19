@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ecs_dedicated_hosts
+# key: d_alicloud_ecs_dedicated_hosts
+# --
+
+data "alicloud_ecs_dedicated_hosts" "${1:this}" {
+}

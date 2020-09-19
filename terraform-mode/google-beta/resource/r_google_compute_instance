@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_instance
+# key: r_google_compute_instance
+# --
+
+resource "google_compute_instance" "${1:this}" {
+    machine_type = "${2:machine_type}"
+    name = "${3:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_waas_policy
+# key: d_oci_waas_waas_policy
+# --
+
+data "oci_waas_waas_policy" "${1:this}" {
+    waas_policy_id = "${2:waas_policy_id}"
+}

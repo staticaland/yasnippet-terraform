@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_tesla
+# key: r_wavefront_cloud_integration_tesla
+# --
+
+resource "wavefront_cloud_integration_tesla" "${1:this}" {
+    email = "${2:email}"
+    name = "${3:name}"
+    password = "${4:password}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_radius
+# key: r_fortios_user_radius
+# --
+
+resource "fortios_user_radius" "${1:this}" {
+}

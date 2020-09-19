@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_vdom_setting
+# key: r_fortios_system_vdom_setting
+# --
+
+resource "fortios_system_vdom_setting" "${1:this}" {
+    name = "${2:name}"
+}

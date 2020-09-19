@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_newrelic_plugin_component
+# key: d_newrelic_plugin_component
+# --
+
+data "newrelic_plugin_component" "${1:this}" {
+    name = "${2:name}"
+    plugin_id = "${3:plugin_id}"
+}

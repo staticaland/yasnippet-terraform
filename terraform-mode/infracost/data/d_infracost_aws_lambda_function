@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_infracost_aws_lambda_function
+# key: d_infracost_aws_lambda_function
+# --
+
+data "infracost_aws_lambda_function" "${1:this}" {
+    resources = "${2:resources}"
+}

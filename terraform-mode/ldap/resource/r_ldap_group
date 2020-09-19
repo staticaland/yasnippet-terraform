@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ldap_group
+# key: r_ldap_group
+# --
+
+resource "ldap_group" "${1:this}" {
+    name = "${2:name}"
+    ou = "${3:ou}"
+}

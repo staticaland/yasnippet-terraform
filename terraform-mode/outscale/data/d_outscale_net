@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_net
+# key: d_outscale_net
+# --
+
+data "outscale_net" "${1:this}" {
+}

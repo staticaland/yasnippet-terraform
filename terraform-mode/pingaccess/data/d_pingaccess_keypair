@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pingaccess_keypair
+# key: d_pingaccess_keypair
+# --
+
+data "pingaccess_keypair" "${1:this}" {
+    alias = "${2:alias}"
+}

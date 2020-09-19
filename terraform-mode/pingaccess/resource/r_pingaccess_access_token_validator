@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_access_token_validator
+# key: r_pingaccess_access_token_validator
+# --
+
+resource "pingaccess_access_token_validator" "${1:this}" {
+    class_name = "${2:class_name}"
+    configuration = "${3:configuration}"
+    name = "${4:name}"
+}

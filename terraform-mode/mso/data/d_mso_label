@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mso_label
+# key: d_mso_label
+# --
+
+data "mso_label" "${1:this}" {
+    label = "${2:label}"
+}

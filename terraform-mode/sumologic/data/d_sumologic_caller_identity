@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sumologic_caller_identity
+# key: d_sumologic_caller_identity
+# --
+
+data "sumologic_caller_identity" "${1:this}" {
+}

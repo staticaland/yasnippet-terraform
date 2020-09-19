@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_node_pool
+# key: r_rancher2_node_pool
+# --
+
+resource "rancher2_node_pool" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    hostname_prefix = "${3:hostname_prefix}"
+    name = "${4:name}"
+    node_template_id = "${5:node_template_id}"
+}

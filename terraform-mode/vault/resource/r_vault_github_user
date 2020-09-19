@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vault_github_user
+# key: r_vault_github_user
+# --
+
+resource "vault_github_user" "${1:this}" {
+    user = "${2:user}"
+}

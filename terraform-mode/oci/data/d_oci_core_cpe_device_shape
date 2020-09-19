@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_cpe_device_shape
+# key: d_oci_core_cpe_device_shape
+# --
+
+data "oci_core_cpe_device_shape" "${1:this}" {
+    cpe_device_shape_id = "${2:cpe_device_shape_id}"
+}

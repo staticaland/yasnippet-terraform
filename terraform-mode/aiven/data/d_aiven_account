@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aiven_account
+# key: d_aiven_account
+# --
+
+data "aiven_account" "${1:this}" {
+    name = "${2:name}"
+}

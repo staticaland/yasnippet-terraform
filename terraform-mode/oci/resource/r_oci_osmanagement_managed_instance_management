@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_osmanagement_managed_instance_management
+# key: r_oci_osmanagement_managed_instance_management
+# --
+
+resource "oci_osmanagement_managed_instance_management" "${1:this}" {
+    managed_instance_id = "${2:managed_instance_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_nat_gateway
+# key: r_tencentcloud_nat_gateway
+# --
+
+resource "tencentcloud_nat_gateway" "${1:this}" {
+    assigned_eip_set = "${2:assigned_eip_set}"
+    name = "${3:name}"
+    vpc_id = "${4:vpc_id}"
+}

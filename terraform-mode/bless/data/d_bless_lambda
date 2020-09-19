@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_bless_lambda
+# key: d_bless_lambda
+# --
+
+data "bless_lambda" "${1:this}" {
+    encrypted_ca = "${2:encrypted_ca}"
+    encrypted_password = "${3:encrypted_password}"
+    kmsauth_key_id = "${4:kmsauth_key_id}"
+    output_path = "${5:output_path}"
+    service_name = "${6:service_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_nas_access_rules
+# key: d_alicloud_nas_access_rules
+# --
+
+data "alicloud_nas_access_rules" "${1:this}" {
+    access_group_name = "${2:access_group_name}"
+}

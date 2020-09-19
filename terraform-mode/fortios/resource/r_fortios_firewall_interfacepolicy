@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_interfacepolicy
+# key: r_fortios_firewall_interfacepolicy
+# --
+
+resource "fortios_firewall_interfacepolicy" "${1:this}" {
+    interface = "${2:interface}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_resource_instance
+# key: d_ibm_resource_instance
+# --
+
+data "ibm_resource_instance" "${1:this}" {
+    name = "${2:name}"
+}

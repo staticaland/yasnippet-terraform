@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_branch_protection
+# key: r_gitlab_branch_protection
+# --
+
+resource "gitlab_branch_protection" "${1:this}" {
+    branch = "${2:branch}"
+    merge_access_level = "${3:merge_access_level}"
+    project = "${4:project}"
+    push_access_level = "${5:push_access_level}"
+}

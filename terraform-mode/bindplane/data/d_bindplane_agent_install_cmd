@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_bindplane_agent_install_cmd
+# key: d_bindplane_agent_install_cmd
+# --
+
+data "bindplane_agent_install_cmd" "${1:this}" {
+    platform = "${2:platform}"
+}

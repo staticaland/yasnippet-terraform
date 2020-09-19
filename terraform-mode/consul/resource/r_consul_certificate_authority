@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_consul_certificate_authority
+# key: r_consul_certificate_authority
+# --
+
+resource "consul_certificate_authority" "${1:this}" {
+    config = "${2:config}"
+    connect_provider = "${3:connect_provider}"
+}

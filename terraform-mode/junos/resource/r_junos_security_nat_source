@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_nat_source
+# key: r_junos_security_nat_source
+# --
+
+resource "junos_security_nat_source" "${1:this}" {
+    name = "${2:name}"
+}

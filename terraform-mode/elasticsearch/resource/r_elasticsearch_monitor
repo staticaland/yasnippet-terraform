@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_monitor
+# key: r_elasticsearch_monitor
+# --
+
+resource "elasticsearch_monitor" "${1:this}" {
+    body = "${2:body}"
+}

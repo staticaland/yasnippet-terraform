@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_packet_filter_rules
+# key: r_sakuracloud_packet_filter_rules
+# --
+
+resource "sakuracloud_packet_filter_rules" "${1:this}" {
+    packet_filter_id = "${2:packet_filter_id}"
+}

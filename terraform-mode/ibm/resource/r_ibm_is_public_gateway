@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_public_gateway
+# key: r_ibm_is_public_gateway
+# --
+
+resource "ibm_is_public_gateway" "${1:this}" {
+    name = "${2:name}"
+    vpc = "${3:vpc}"
+    zone = "${4:zone}"
+}

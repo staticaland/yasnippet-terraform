@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_instance_pools
+# key: d_oci_core_instance_pools
+# --
+
+data "oci_core_instance_pools" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

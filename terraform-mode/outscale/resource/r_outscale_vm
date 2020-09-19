@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_vm
+# key: r_outscale_vm
+# --
+
+resource "outscale_vm" "${1:this}" {
+}

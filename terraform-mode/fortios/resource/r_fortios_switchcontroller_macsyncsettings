@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_macsyncsettings
+# key: r_fortios_switchcontroller_macsyncsettings
+# --
+
+resource "fortios_switchcontroller_macsyncsettings" "${1:this}" {
+}

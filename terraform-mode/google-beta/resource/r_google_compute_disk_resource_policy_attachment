@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_disk_resource_policy_attachment
+# key: r_google_compute_disk_resource_policy_attachment
+# --
+
+resource "google_compute_disk_resource_policy_attachment" "${1:this}" {
+    disk = "${2:disk}"
+    name = "${3:name}"
+}

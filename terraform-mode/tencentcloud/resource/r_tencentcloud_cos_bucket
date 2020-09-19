@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cos_bucket
+# key: r_tencentcloud_cos_bucket
+# --
+
+resource "tencentcloud_cos_bucket" "${1:this}" {
+    bucket = "${2:bucket}"
+}

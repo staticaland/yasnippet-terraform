@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_ipv4
+# key: r_gridscale_ipv4
+# --
+
+resource "gridscale_ipv4" "${1:this}" {
+}

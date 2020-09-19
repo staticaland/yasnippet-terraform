@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_api_client
+# key: r_commercetools_api_client
+# --
+
+resource "commercetools_api_client" "${1:this}" {
+    name = "${2:name}"
+    scope = "${3:scope}"
+}

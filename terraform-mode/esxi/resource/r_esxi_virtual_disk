@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_esxi_virtual_disk
+# key: r_esxi_virtual_disk
+# --
+
+resource "esxi_virtual_disk" "${1:this}" {
+    virtual_disk_dir = "${2:virtual_disk_dir}"
+    virtual_disk_disk_store = "${3:virtual_disk_disk_store}"
+}

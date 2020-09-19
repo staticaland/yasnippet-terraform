@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb_vpx
+# key: r_ibm_lb_vpx
+# --
+
+resource "ibm_lb_vpx" "${1:this}" {
+    datacenter = "${2:datacenter}"
+    ip_count = "${3:ip_count}"
+    plan = "${4:plan}"
+    speed = "${5:speed}"
+    version = "${6:version}"
+}

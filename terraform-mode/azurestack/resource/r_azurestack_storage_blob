@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_storage_blob
+# key: r_azurestack_storage_blob
+# --
+
+resource "azurestack_storage_blob" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+    storage_account_name = "${4:storage_account_name}"
+    storage_container_name = "${5:storage_container_name}"
+}

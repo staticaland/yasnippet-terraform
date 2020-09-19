@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_vrack_iploadbalancing
+# key: r_ovh_vrack_iploadbalancing
+# --
+
+resource "ovh_vrack_iploadbalancing" "${1:this}" {
+    ip_loadbalancing = "${2:ip_loadbalancing}"
+    service_name = "${3:service_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_deploy
+# key: r_mso_schema_template_deploy
+# --
+
+resource "mso_schema_template_deploy" "${1:this}" {
+    schema_id = "${2:schema_id}"
+    template_name = "${3:template_name}"
+}

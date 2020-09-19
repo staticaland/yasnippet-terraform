@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_reserved_ip
+# key: d_vultr_reserved_ip
+# --
+
+data "vultr_reserved_ip" "${1:this}" {
+}

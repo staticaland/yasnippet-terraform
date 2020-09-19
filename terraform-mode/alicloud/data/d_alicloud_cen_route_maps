@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cen_route_maps
+# key: d_alicloud_cen_route_maps
+# --
+
+data "alicloud_cen_route_maps" "${1:this}" {
+    cen_id = "${2:cen_id}"
+}

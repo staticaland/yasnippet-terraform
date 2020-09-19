@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_waf_falsealarmmasking_rule_v1
+# key: r_opentelekomcloud_waf_falsealarmmasking_rule_v1
+# --
+
+resource "opentelekomcloud_waf_falsealarmmasking_rule_v1" "${1:this}" {
+    policy_id = "${2:policy_id}"
+    rule = "${3:rule}"
+    url = "${4:url}"
+}

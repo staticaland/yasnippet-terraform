@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_vpc
+# key: r_ibm_is_vpc
+# --
+
+resource "ibm_is_vpc" "${1:this}" {
+    name = "${2:name}"
+}

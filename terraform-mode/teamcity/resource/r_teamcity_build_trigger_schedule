@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_build_trigger_schedule
+# key: r_teamcity_build_trigger_schedule
+# --
+
+resource "teamcity_build_trigger_schedule" "${1:this}" {
+    build_config_id = "${2:build_config_id}"
+    hour = "${3:hour}"
+    schedule = "${4:schedule}"
+}

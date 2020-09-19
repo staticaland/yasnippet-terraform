@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_admin_user
+# key: r_fortios_fmg_system_admin_user
+# --
+
+resource "fortios_fmg_system_admin_user" "${1:this}" {
+    userid = "${2:userid}"
+}

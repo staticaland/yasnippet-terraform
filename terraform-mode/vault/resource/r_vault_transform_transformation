@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vault_transform_transformation
+# key: r_vault_transform_transformation
+# --
+
+resource "vault_transform_transformation" "${1:this}" {
+    name = "${2:name}"
+    path = "${3:path}"
+}

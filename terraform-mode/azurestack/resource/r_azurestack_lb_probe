@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_lb_probe
+# key: r_azurestack_lb_probe
+# --
+
+resource "azurestack_lb_probe" "${1:this}" {
+    loadbalancer_id = "${2:loadbalancer_id}"
+    name = "${3:name}"
+    port = "${4:port}"
+    resource_group_name = "${5:resource_group_name}"
+}

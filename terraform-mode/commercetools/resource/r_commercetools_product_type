@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_product_type
+# key: r_commercetools_product_type
+# --
+
+resource "commercetools_product_type" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_secondary_ipaddress
+# key: r_cosmic_secondary_ipaddress
+# --
+
+resource "cosmic_secondary_ipaddress" "${1:this}" {
+    virtual_machine_id = "${2:virtual_machine_id}"
+}

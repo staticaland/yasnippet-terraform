@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_saml_endpoint
+# key: r_aviatrix_saml_endpoint
+# --
+
+resource "aviatrix_saml_endpoint" "${1:this}" {
+    endpoint_name = "${2:endpoint_name}"
+    idp_metadata = "${3:idp_metadata}"
+    idp_metadata_type = "${4:idp_metadata_type}"
+}

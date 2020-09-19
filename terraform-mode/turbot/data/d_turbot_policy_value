@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_turbot_policy_value
+# key: d_turbot_policy_value
+# --
+
+data "turbot_policy_value" "${1:this}" {
+    resource = "${2:resource}"
+    type = "${3:type}"
+}

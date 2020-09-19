@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_firewall_object_address
+# key: r_fortios_fmg_firewall_object_address
+# --
+
+resource "fortios_fmg_firewall_object_address" "${1:this}" {
+    name = "${2:name}"
+}

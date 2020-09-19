@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_dedicated_vm_host_shapes
+# key: d_oci_core_dedicated_vm_host_shapes
+# --
+
+data "oci_core_dedicated_vm_host_shapes" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

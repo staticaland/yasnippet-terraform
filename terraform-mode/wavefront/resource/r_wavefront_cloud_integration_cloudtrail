@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_cloudtrail
+# key: r_wavefront_cloud_integration_cloudtrail
+# --
+
+resource "wavefront_cloud_integration_cloudtrail" "${1:this}" {
+    bucket_name = "${2:bucket_name}"
+    external_id = "${3:external_id}"
+    name = "${4:name}"
+    region = "${5:region}"
+    role_arn = "${6:role_arn}"
+}

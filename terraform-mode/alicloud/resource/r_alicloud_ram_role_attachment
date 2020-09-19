@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ram_role_attachment
+# key: r_alicloud_ram_role_attachment
+# --
+
+resource "alicloud_ram_role_attachment" "${1:this}" {
+    instance_ids = "${2:instance_ids}"
+    role_name = "${3:role_name}"
+}

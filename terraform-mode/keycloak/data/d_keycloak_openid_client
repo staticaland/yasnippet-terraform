@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_keycloak_openid_client
+# key: d_keycloak_openid_client
+# --
+
+data "keycloak_openid_client" "${1:this}" {
+    client_id = "${2:client_id}"
+    realm_id = "${3:realm_id}"
+}

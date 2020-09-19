@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_bucket_object
+# key: d_sakuracloud_bucket_object
+# --
+
+data "sakuracloud_bucket_object" "${1:this}" {
+    access_key = "${2:access_key}"
+    bucket = "${3:bucket}"
+    key = "${4:key}"
+    secret_key = "${5:secret_key}"
+}

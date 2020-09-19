@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_artifactory_file
+# key: d_artifactory_file
+# --
+
+data "artifactory_file" "${1:this}" {
+    output_path = "${2:output_path}"
+    path = "${3:path}"
+    repository = "${4:repository}"
+}

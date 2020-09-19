@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_time_static
+# key: r_time_static
+# --
+
+resource "time_static" "${1:this}" {
+}

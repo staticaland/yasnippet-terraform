@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_archive_file
+# key: d_archive_file
+# --
+
+data "archive_file" "${1:this}" {
+    output_path = "${2:output_path}"
+    type = "${3:type}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_alb_server_attachment
+# key: r_tencentcloud_alb_server_attachment
+# --
+
+resource "tencentcloud_alb_server_attachment" "${1:this}" {
+    listener_id = "${2:listener_id}"
+    loadbalancer_id = "${3:loadbalancer_id}"
+}

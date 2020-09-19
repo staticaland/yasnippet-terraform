@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_organization_security_policy_rule
+# key: r_google_compute_organization_security_policy_rule
+# --
+
+resource "google_compute_organization_security_policy_rule" "${1:this}" {
+    action = "${2:action}"
+    policy_id = "${3:policy_id}"
+    priority = "${4:priority}"
+}

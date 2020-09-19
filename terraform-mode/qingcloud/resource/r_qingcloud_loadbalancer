@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_loadbalancer
+# key: r_qingcloud_loadbalancer
+# --
+
+resource "qingcloud_loadbalancer" "${1:this}" {
+}

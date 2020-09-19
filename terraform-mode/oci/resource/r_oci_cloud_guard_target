@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_cloud_guard_target
+# key: r_oci_cloud_guard_target
+# --
+
+resource "oci_cloud_guard_target" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    target_resource_id = "${4:target_resource_id}"
+    target_resource_type = "${5:target_resource_type}"
+}

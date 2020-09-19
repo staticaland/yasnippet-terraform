@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_hardcoded_attribute_identity_provider_mapper
+# key: r_keycloak_hardcoded_attribute_identity_provider_mapper
+# --
+
+resource "keycloak_hardcoded_attribute_identity_provider_mapper" "${1:this}" {
+    identity_provider_alias = "${2:identity_provider_alias}"
+    name = "${3:name}"
+    realm = "${4:realm}"
+    user_session = "${5:user_session}"
+}

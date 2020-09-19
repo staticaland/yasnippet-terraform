@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_jsonrpc_request
+# key: r_fortios_fmg_jsonrpc_request
+# --
+
+resource "fortios_fmg_jsonrpc_request" "${1:this}" {
+    json_content = "${2:json_content}"
+}

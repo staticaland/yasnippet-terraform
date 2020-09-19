@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_application_rulesettings
+# key: r_fortios_application_rulesettings
+# --
+
+resource "fortios_application_rulesettings" "${1:this}" {
+}

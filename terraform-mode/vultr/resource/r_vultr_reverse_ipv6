@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vultr_reverse_ipv6
+# key: r_vultr_reverse_ipv6
+# --
+
+resource "vultr_reverse_ipv6" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    ip = "${3:ip}"
+    reverse = "${4:reverse}"
+}

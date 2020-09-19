@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_feature_golang
+# key: r_teamcity_feature_golang
+# --
+
+resource "teamcity_feature_golang" "${1:this}" {
+    build_config_id = "${2:build_config_id}"
+}

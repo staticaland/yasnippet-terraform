@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fastly_user_v1
+# key: r_fastly_user_v1
+# --
+
+resource "fastly_user_v1" "${1:this}" {
+    login = "${2:login}"
+    name = "${3:name}"
+}

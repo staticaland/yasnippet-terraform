@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_view_grant
+# key: r_snowflake_view_grant
+# --
+
+resource "snowflake_view_grant" "${1:this}" {
+    database_name = "${2:database_name}"
+}

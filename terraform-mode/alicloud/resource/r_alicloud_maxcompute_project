@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_maxcompute_project
+# key: r_alicloud_maxcompute_project
+# --
+
+resource "alicloud_maxcompute_project" "${1:this}" {
+    name = "${2:name}"
+    order_type = "${3:order_type}"
+    specification_type = "${4:specification_type}"
+}

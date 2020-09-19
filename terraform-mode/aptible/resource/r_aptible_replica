@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aptible_replica
+# key: r_aptible_replica
+# --
+
+resource "aptible_replica" "${1:this}" {
+    env_id = "${2:env_id}"
+    handle = "${3:handle}"
+    primary_database_id = "${4:primary_database_id}"
+}

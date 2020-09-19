@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_vpc
+# key: d_ncloud_vpc
+# --
+
+data "ncloud_vpc" "${1:this}" {
+    vpc_no = "${2:vpc_no}"
+}

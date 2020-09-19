@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_mysql_mysql_versions
+# key: d_oci_mysql_mysql_versions
+# --
+
+data "oci_mysql_mysql_versions" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_akamai_property_activation
+# key: r_akamai_property_activation
+# --
+
+resource "akamai_property_activation" "${1:this}" {
+    contact = "${2:contact}"
+    property = "${3:property}"
+}

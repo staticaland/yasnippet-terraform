@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_azuredevops_service_endpoint
+# key: d_azuredevops_service_endpoint
+# --
+
+data "azuredevops_service_endpoint" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+    type = "${4:type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_zones
+# key: d_ibm_is_zones
+# --
+
+data "ibm_is_zones" "${1:this}" {
+    region = "${2:region}"
+}

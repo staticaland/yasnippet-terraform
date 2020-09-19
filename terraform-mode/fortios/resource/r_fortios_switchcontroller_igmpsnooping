@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_igmpsnooping
+# key: r_fortios_switchcontroller_igmpsnooping
+# --
+
+resource "fortios_switchcontroller_igmpsnooping" "${1:this}" {
+}

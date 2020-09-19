@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_externalresource
+# key: r_fortios_system_externalresource
+# --
+
+resource "fortios_system_externalresource" "${1:this}" {
+    name = "${2:name}"
+    refresh_rate = "${3:refresh_rate}"
+    resource = "${4:resource}"
+}

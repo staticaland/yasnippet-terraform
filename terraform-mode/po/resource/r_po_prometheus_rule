@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_po_prometheus_rule
+# key: r_po_prometheus_rule
+# --
+
+resource "po_prometheus_rule" "${1:this}" {
+}

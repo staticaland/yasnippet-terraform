@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_network_policy
+# key: r_cloudfoundry_network_policy
+# --
+
+resource "cloudfoundry_network_policy" "${1:this}" {
+}

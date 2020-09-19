@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_itop_organization
+# key: d_itop_organization
+# --
+
+data "itop_organization" "${1:this}" {
+    name = "${2:name}"
+}

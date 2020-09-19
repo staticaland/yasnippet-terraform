@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_group
+# key: r_nsxt_policy_group
+# --
+
+resource "nsxt_policy_group" "${1:this}" {
+    display_name = "${2:display_name}"
+}

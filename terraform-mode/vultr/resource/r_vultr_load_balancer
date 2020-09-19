@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_load_balancer
+# key: r_vultr_load_balancer
+# --
+
+resource "vultr_load_balancer" "${1:this}" {
+    region_id = "${2:region_id}"
+}

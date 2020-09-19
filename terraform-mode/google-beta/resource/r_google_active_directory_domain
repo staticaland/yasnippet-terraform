@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_active_directory_domain
+# key: r_google_active_directory_domain
+# --
+
+resource "google_active_directory_domain" "${1:this}" {
+    domain_name = "${2:domain_name}"
+    locations = "${3:locations}"
+    reserved_ip_range = "${4:reserved_ip_range}"
+}

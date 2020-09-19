@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_ip_pool
+# key: r_nsxt_ip_pool
+# --
+
+resource "nsxt_ip_pool" "${1:this}" {
+}

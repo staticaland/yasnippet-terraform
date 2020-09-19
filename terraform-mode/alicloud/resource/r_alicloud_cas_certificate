@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cas_certificate
+# key: r_alicloud_cas_certificate
+# --
+
+resource "alicloud_cas_certificate" "${1:this}" {
+    cert = "${2:cert}"
+    key = "${3:key}"
+    name = "${4:name}"
+}

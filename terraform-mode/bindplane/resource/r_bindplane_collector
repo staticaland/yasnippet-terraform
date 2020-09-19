@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_bindplane_collector
+# key: r_bindplane_collector
+# --
+
+resource "bindplane_collector" "${1:this}" {
+    name = "${2:name}"
+}

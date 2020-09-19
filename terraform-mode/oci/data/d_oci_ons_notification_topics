@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_ons_notification_topics
+# key: d_oci_ons_notification_topics
+# --
+
+data "oci_ons_notification_topics" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

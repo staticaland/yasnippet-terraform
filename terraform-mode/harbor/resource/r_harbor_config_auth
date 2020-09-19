@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_harbor_config_auth
+# key: r_harbor_config_auth
+# --
+
+resource "harbor_config_auth" "${1:this}" {
+    auth_mode = "${2:auth_mode}"
+}

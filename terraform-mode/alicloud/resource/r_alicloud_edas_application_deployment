@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_application_deployment
+# key: r_alicloud_edas_application_deployment
+# --
+
+resource "alicloud_edas_application_deployment" "${1:this}" {
+    app_id = "${2:app_id}"
+    group_id = "${3:group_id}"
+    war_url = "${4:war_url}"
+}

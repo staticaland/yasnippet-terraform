@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_availability_zones
+# key: d_huaweicloud_availability_zones
+# --
+
+data "huaweicloud_availability_zones" "${1:this}" {
+}

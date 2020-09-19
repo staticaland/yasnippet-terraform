@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_github_pull_request
+# key: r_github_pull_request
+# --
+
+resource "github_pull_request" "${1:this}" {
+    base = "${2:base}"
+    body = "${3:body}"
+    head = "${4:head}"
+    repository = "${5:repository}"
+    title = "${6:title}"
+    uid = "${7:uid}"
+}

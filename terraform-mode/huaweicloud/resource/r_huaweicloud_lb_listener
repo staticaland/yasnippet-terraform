@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_listener
+# key: r_huaweicloud_lb_listener
+# --
+
+resource "huaweicloud_lb_listener" "${1:this}" {
+    loadbalancer_id = "${2:loadbalancer_id}"
+    protocol = "${3:protocol}"
+    protocol_port = "${4:protocol_port}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_ruleset_rule
+# key: r_pagerduty_ruleset_rule
+# --
+
+resource "pagerduty_ruleset_rule" "${1:this}" {
+    ruleset = "${2:ruleset}"
+}

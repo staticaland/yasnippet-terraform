@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_group
+# key: r_gitlab_group
+# --
+
+resource "gitlab_group" "${1:this}" {
+    name = "${2:name}"
+    path = "${3:path}"
+}

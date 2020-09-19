@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_authorization_policy_detach
+# key: r_ibm_iam_authorization_policy_detach
+# --
+
+resource "ibm_iam_authorization_policy_detach" "${1:this}" {
+    authorization_policy_id = "${2:authorization_policy_id}"
+}

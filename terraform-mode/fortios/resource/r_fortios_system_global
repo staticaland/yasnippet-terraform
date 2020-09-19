@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_global
+# key: r_fortios_system_global
+# --
+
+resource "fortios_system_global" "${1:this}" {
+}

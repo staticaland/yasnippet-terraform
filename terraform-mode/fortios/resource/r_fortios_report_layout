@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_report_layout
+# key: r_fortios_report_layout
+# --
+
+resource "fortios_report_layout" "${1:this}" {
+    style_theme = "${2:style_theme}"
+}

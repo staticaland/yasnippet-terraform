@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_nat_destination
+# key: r_junos_security_nat_destination
+# --
+
+resource "junos_security_nat_destination" "${1:this}" {
+    name = "${2:name}"
+}

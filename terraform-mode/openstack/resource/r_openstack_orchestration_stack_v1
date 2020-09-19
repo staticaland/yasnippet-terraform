@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_openstack_orchestration_stack_v1
+# key: r_openstack_orchestration_stack_v1
+# --
+
+resource "openstack_orchestration_stack_v1" "${1:this}" {
+    name = "${2:name}"
+    template_opts = "${3:template_opts}"
+}

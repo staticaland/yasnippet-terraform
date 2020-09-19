@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ochk_security_policy
+# key: d_ochk_security_policy
+# --
+
+data "ochk_security_policy" "${1:this}" {
+    display_name = "${2:display_name}"
+}

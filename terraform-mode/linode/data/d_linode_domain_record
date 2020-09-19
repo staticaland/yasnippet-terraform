@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linode_domain_record
+# key: d_linode_domain_record
+# --
+
+data "linode_domain_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+}

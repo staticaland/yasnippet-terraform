@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_firewall_management_access
+# key: r_aviatrix_firewall_management_access
+# --
+
+resource "aviatrix_firewall_management_access" "${1:this}" {
+    management_access_resource_name = "${2:management_access_resource_name}"
+    transit_firenet_gateway_name = "${3:transit_firenet_gateway_name}"
+}

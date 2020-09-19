@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_apigateway_deployment
+# key: r_oci_apigateway_deployment
+# --
+
+resource "oci_apigateway_deployment" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    gateway_id = "${3:gateway_id}"
+    path_prefix = "${4:path_prefix}"
+}

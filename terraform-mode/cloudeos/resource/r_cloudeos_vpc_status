@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_vpc_status
+# key: r_cloudeos_vpc_status
+# --
+
+resource "cloudeos_vpc_status" "${1:this}" {
+    account = "${2:account}"
+    cloud_provider = "${3:cloud_provider}"
+    cnps = "${4:cnps}"
+    region = "${5:region}"
+    role = "${6:role}"
+    tf_id = "${7:tf_id}"
+    vpc_id = "${8:vpc_id}"
+}

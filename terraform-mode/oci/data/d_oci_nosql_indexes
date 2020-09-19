@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_nosql_indexes
+# key: d_oci_nosql_indexes
+# --
+
+data "oci_nosql_indexes" "${1:this}" {
+    table_name_or_id = "${2:table_name_or_id}"
+}

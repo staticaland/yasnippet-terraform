@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_marketplace_listing_packages
+# key: d_oci_marketplace_listing_packages
+# --
+
+data "oci_marketplace_listing_packages" "${1:this}" {
+    listing_id = "${2:listing_id}"
+}

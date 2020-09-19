@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_hamonitor
+# key: r_fortios_system_hamonitor
+# --
+
+resource "fortios_system_hamonitor" "${1:this}" {
+}

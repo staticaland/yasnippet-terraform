@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_sqlserver_db
+# key: r_tencentcloud_sqlserver_db
+# --
+
+resource "tencentcloud_sqlserver_db" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    name = "${3:name}"
+}

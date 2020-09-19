@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_stackpath_compute_workload
+# key: r_stackpath_compute_workload
+# --
+
+resource "stackpath_compute_workload" "${1:this}" {
+    name = "${2:name}"
+    slug = "${3:slug}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_ip_reverse
+# key: r_ovh_ip_reverse
+# --
+
+resource "ovh_ip_reverse" "${1:this}" {
+    ip = "${2:ip}"
+    reverse = "${3:reverse}"
+}

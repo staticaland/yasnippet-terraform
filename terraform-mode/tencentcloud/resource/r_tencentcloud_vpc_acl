@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_vpc_acl
+# key: r_tencentcloud_vpc_acl
+# --
+
+resource "tencentcloud_vpc_acl" "${1:this}" {
+    name = "${2:name}"
+    vpc_id = "${3:vpc_id}"
+}

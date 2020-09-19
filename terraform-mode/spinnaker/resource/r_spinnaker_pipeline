@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_spinnaker_pipeline
+# key: r_spinnaker_pipeline
+# --
+
+resource "spinnaker_pipeline" "${1:this}" {
+    application = "${2:application}"
+    name = "${3:name}"
+    pipeline = "${4:pipeline}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_elasticsearch_acl
+# key: d_aiven_elasticsearch_acl
+# --
+
+data "aiven_elasticsearch_acl" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_instana_application_config
+# key: r_instana_application_config
+# --
+
+resource "instana_application_config" "${1:this}" {
+    label = "${2:label}"
+    match_specification = "${3:match_specification}"
+}

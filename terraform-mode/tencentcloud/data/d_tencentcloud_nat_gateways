@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_nat_gateways
+# key: d_tencentcloud_nat_gateways
+# --
+
+data "tencentcloud_nat_gateways" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_triton_volume
+# key: d_triton_volume
+# --
+
+data "triton_volume" "${1:this}" {
+}

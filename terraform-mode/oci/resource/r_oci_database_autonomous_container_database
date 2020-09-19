@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_autonomous_container_database
+# key: r_oci_database_autonomous_container_database
+# --
+
+resource "oci_database_autonomous_container_database" "${1:this}" {
+    display_name = "${2:display_name}"
+    patch_model = "${3:patch_model}"
+}

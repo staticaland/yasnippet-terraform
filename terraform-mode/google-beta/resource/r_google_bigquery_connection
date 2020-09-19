@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_bigquery_connection
+# key: r_google_bigquery_connection
+# --
+
+resource "google_bigquery_connection" "${1:this}" {
+}

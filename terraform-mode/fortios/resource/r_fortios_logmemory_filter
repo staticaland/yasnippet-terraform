@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logmemory_filter
+# key: r_fortios_logmemory_filter
+# --
+
+resource "fortios_logmemory_filter" "${1:this}" {
+}

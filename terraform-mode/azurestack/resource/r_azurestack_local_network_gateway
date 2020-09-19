@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_local_network_gateway
+# key: r_azurestack_local_network_gateway
+# --
+
+resource "azurestack_local_network_gateway" "${1:this}" {
+    address_space = "${2:address_space}"
+    gateway_address = "${3:gateway_address}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+}

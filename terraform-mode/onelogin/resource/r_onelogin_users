@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_onelogin_users
+# key: r_onelogin_users
+# --
+
+resource "onelogin_users" "${1:this}" {
+    username = "${2:username}"
+}

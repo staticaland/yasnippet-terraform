@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dl_offering_speeds
+# key: d_ibm_dl_offering_speeds
+# --
+
+data "ibm_dl_offering_speeds" "${1:this}" {
+    offering_type = "${2:offering_type}"
+}

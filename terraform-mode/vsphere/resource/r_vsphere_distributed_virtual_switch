@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_distributed_virtual_switch
+# key: r_vsphere_distributed_virtual_switch
+# --
+
+resource "vsphere_distributed_virtual_switch" "${1:this}" {
+    datacenter_id = "${2:datacenter_id}"
+    name = "${3:name}"
+}

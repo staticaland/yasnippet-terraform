@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_data_safe_data_safe_private_endpoints
+# key: d_oci_data_safe_data_safe_private_endpoints
+# --
+
+data "oci_data_safe_data_safe_private_endpoints" "${1:this}" {
+}

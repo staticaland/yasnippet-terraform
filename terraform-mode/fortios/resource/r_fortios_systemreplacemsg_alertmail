@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_alertmail
+# key: r_fortios_systemreplacemsg_alertmail
+# --
+
+resource "fortios_systemreplacemsg_alertmail" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

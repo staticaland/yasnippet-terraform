@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sonarqube_project_user
+# key: r_sonarqube_project_user
+# --
+
+resource "sonarqube_project_user" "${1:this}" {
+    login = "${2:login}"
+    permission = "${3:permission}"
+    project_key = "${4:project_key}"
+}

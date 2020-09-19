@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_kms_plaintext
+# key: d_alicloud_kms_plaintext
+# --
+
+data "alicloud_kms_plaintext" "${1:this}" {
+    ciphertext_blob = "${2:ciphertext_blob}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_health_checks_http_monitor
+# key: d_oci_health_checks_http_monitor
+# --
+
+data "oci_health_checks_http_monitor" "${1:this}" {
+    monitor_id = "${2:monitor_id}"
+}

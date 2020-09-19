@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_sfs_turbo
+# key: r_huaweicloud_sfs_turbo
+# --
+
+resource "huaweicloud_sfs_turbo" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    name = "${3:name}"
+    security_group_id = "${4:security_group_id}"
+    size = "${5:size}"
+    subnet_id = "${6:subnet_id}"
+    vpc_id = "${7:vpc_id}"
+}

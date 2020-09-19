@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_cloud_guard_responder_recipe
+# key: d_oci_cloud_guard_responder_recipe
+# --
+
+data "oci_cloud_guard_responder_recipe" "${1:this}" {
+    responder_recipe_id = "${2:responder_recipe_id}"
+}

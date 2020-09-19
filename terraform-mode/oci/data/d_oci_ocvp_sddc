@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_ocvp_sddc
+# key: d_oci_ocvp_sddc
+# --
+
+data "oci_ocvp_sddc" "${1:this}" {
+    sddc_id = "${2:sddc_id}"
+}

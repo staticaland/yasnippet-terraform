@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_ruleset
+# key: r_pingaccess_ruleset
+# --
+
+resource "pingaccess_ruleset" "${1:this}" {
+    element_type = "${2:element_type}"
+    name = "${3:name}"
+    policy = "${4:policy}"
+    success_criteria = "${5:success_criteria}"
+}

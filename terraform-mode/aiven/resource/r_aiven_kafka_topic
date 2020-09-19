@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aiven_kafka_topic
+# key: r_aiven_kafka_topic
+# --
+
+resource "aiven_kafka_topic" "${1:this}" {
+    partitions = "${2:partitions}"
+    project = "${3:project}"
+    replication = "${4:replication}"
+    service_name = "${5:service_name}"
+    topic_name = "${6:topic_name}"
+}

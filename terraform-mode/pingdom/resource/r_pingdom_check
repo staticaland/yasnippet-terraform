@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_pingdom_check
+# key: r_pingdom_check
+# --
+
+resource "pingdom_check" "${1:this}" {
+    host = "${2:host}"
+    name = "${3:name}"
+    resolution = "${4:resolution}"
+    type = "${5:type}"
+}

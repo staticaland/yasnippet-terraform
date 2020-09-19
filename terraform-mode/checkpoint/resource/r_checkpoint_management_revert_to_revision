@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_revert_to_revision
+# key: r_checkpoint_management_revert_to_revision
+# --
+
+resource "checkpoint_management_revert_to_revision" "${1:this}" {
+}

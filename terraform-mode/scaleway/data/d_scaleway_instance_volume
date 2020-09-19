@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_instance_volume
+# key: d_scaleway_instance_volume
+# --
+
+data "scaleway_instance_volume" "${1:this}" {
+}

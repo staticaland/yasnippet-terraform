@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_snapshot_dependency
+# key: r_teamcity_snapshot_dependency
+# --
+
+resource "teamcity_snapshot_dependency" "${1:this}" {
+    build_config_id = "${2:build_config_id}"
+    source_build_config_id = "${3:source_build_config_id}"
+}

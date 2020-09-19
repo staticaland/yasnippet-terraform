@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_export
+# key: r_checkpoint_management_export
+# --
+
+resource "checkpoint_management_export" "${1:this}" {
+}

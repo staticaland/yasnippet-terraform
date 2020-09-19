@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ibm_ssl_certificate
+# key: r_ibm_ssl_certificate
+# --
+
+resource "ibm_ssl_certificate" "${1:this}" {
+    certificate_signing_request = "${2:certificate_signing_request}"
+    order_approver_email_address = "${3:order_approver_email_address}"
+    server_count = "${4:server_count}"
+    server_type = "${5:server_type}"
+    ssl_type = "${6:ssl_type}"
+    validity_months = "${7:validity_months}"
+}

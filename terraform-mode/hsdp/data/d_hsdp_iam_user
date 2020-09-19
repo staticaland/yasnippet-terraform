@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hsdp_iam_user
+# key: d_hsdp_iam_user
+# --
+
+data "hsdp_iam_user" "${1:this}" {
+    username = "${2:username}"
+}

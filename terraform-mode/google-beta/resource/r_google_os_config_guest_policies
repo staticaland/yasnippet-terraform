@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_os_config_guest_policies
+# key: r_google_os_config_guest_policies
+# --
+
+resource "google_os_config_guest_policies" "${1:this}" {
+    guest_policy_id = "${2:guest_policy_id}"
+}

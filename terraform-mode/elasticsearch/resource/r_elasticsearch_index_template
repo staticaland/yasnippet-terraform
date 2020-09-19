@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_index_template
+# key: r_elasticsearch_index_template
+# --
+
+resource "elasticsearch_index_template" "${1:this}" {
+    body = "${2:body}"
+    name = "${3:name}"
+}

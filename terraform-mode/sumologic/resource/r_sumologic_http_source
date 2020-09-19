@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_http_source
+# key: r_sumologic_http_source
+# --
+
+resource "sumologic_http_source" "${1:this}" {
+    collector_id = "${2:collector_id}"
+    name = "${3:name}"
+}

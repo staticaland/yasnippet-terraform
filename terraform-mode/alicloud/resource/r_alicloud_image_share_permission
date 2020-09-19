@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_image_share_permission
+# key: r_alicloud_image_share_permission
+# --
+
+resource "alicloud_image_share_permission" "${1:this}" {
+    account_id = "${2:account_id}"
+    image_id = "${3:image_id}"
+}

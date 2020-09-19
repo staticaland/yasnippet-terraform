@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_disk_iam_binding
+# key: r_google_compute_disk_iam_binding
+# --
+
+resource "google_compute_disk_iam_binding" "${1:this}" {
+    members = "${2:members}"
+    name = "${3:name}"
+    role = "${4:role}"
+}

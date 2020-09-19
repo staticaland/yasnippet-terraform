@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_network_profile
+# key: d_vra_network_profile
+# --
+
+data "vra_network_profile" "${1:this}" {
+}

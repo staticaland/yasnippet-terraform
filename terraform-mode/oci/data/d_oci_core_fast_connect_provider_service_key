@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_fast_connect_provider_service_key
+# key: d_oci_core_fast_connect_provider_service_key
+# --
+
+data "oci_core_fast_connect_provider_service_key" "${1:this}" {
+    provider_service_id = "${2:provider_service_id}"
+    provider_service_key_name = "${3:provider_service_key_name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_flow_logs
+# key: d_ibm_is_flow_logs
+# --
+
+data "ibm_is_flow_logs" "${1:this}" {
+}

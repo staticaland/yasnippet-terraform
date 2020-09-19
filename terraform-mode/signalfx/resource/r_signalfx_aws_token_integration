@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_aws_token_integration
+# key: r_signalfx_aws_token_integration
+# --
+
+resource "signalfx_aws_token_integration" "${1:this}" {
+    name = "${2:name}"
+}

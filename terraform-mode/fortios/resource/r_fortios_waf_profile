@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_waf_profile
+# key: r_fortios_waf_profile
+# --
+
+resource "fortios_waf_profile" "${1:this}" {
+}

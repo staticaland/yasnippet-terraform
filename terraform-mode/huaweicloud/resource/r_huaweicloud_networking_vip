@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_networking_vip
+# key: r_huaweicloud_networking_vip
+# --
+
+resource "huaweicloud_networking_vip" "${1:this}" {
+    network_id = "${2:network_id}"
+    subnet_id = "${3:subnet_id}"
+}

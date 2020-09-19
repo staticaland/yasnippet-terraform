@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cam_role_policy_attachments
+# key: d_tencentcloud_cam_role_policy_attachments
+# --
+
+data "tencentcloud_cam_role_policy_attachments" "${1:this}" {
+    role_id = "${2:role_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_factor
+# key: r_okta_factor
+# --
+
+resource "okta_factor" "${1:this}" {
+    provider_id = "${2:provider_id}"
+}

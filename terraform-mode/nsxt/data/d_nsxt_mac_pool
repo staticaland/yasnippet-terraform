@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_mac_pool
+# key: d_nsxt_mac_pool
+# --
+
+data "nsxt_mac_pool" "${1:this}" {
+}

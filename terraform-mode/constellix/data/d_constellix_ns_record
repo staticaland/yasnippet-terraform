@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_constellix_ns_record
+# key: d_constellix_ns_record
+# --
+
+data "constellix_ns_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    name = "${3:name}"
+    source_type = "${4:source_type}"
+}

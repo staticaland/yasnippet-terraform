@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_logical_router_centralized_service_port
+# key: r_nsxt_logical_router_centralized_service_port
+# --
+
+resource "nsxt_logical_router_centralized_service_port" "${1:this}" {
+    ip_address = "${2:ip_address}"
+    linked_logical_switch_port_id = "${3:linked_logical_switch_port_id}"
+    logical_router_id = "${4:logical_router_id}"
+}

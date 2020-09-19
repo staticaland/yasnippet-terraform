@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_datascience_project
+# key: d_oci_datascience_project
+# --
+
+data "oci_datascience_project" "${1:this}" {
+    project_id = "${2:project_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontroller_region
+# key: r_fortios_wirelesscontroller_region
+# --
+
+resource "fortios_wirelesscontroller_region" "${1:this}" {
+}

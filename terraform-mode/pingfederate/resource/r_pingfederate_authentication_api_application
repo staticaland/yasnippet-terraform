@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_authentication_api_application
+# key: r_pingfederate_authentication_api_application
+# --
+
+resource "pingfederate_authentication_api_application" "${1:this}" {
+    name = "${2:name}"
+    url = "${3:url}"
+}

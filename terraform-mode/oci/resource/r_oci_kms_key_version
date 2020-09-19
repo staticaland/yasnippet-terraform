@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_kms_key_version
+# key: r_oci_kms_key_version
+# --
+
+resource "oci_kms_key_version" "${1:this}" {
+    key_id = "${2:key_id}"
+    management_endpoint = "${3:management_endpoint}"
+}

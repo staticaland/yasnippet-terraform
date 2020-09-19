@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vultr_ssh_key
+# key: r_vultr_ssh_key
+# --
+
+resource "vultr_ssh_key" "${1:this}" {
+    name = "${2:name}"
+    ssh_key = "${3:ssh_key}"
+}

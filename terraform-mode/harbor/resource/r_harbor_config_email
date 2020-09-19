@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_harbor_config_email
+# key: r_harbor_config_email
+# --
+
+resource "harbor_config_email" "${1:this}" {
+    email_from = "${2:email_from}"
+    email_host = "${3:email_host}"
+    email_port = "${4:email_port}"
+}

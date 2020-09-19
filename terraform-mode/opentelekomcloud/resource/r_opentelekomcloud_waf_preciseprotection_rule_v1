@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_waf_preciseprotection_rule_v1
+# key: r_opentelekomcloud_waf_preciseprotection_rule_v1
+# --
+
+resource "opentelekomcloud_waf_preciseprotection_rule_v1" "${1:this}" {
+    action_category = "${2:action_category}"
+    name = "${3:name}"
+    policy_id = "${4:policy_id}"
+}

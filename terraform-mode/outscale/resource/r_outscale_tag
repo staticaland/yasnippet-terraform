@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_tag
+# key: r_outscale_tag
+# --
+
+resource "outscale_tag" "${1:this}" {
+}

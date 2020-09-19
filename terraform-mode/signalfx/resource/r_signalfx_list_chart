@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_list_chart
+# key: r_signalfx_list_chart
+# --
+
+resource "signalfx_list_chart" "${1:this}" {
+    name = "${2:name}"
+    program_text = "${3:program_text}"
+}

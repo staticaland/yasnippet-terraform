@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_purestorage_host
+# key: r_purestorage_host
+# --
+
+resource "purestorage_host" "${1:this}" {
+    name = "${2:name}"
+}

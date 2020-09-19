@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_managed_account
+# key: r_snowflake_managed_account
+# --
+
+resource "snowflake_managed_account" "${1:this}" {
+    admin_name = "${2:admin_name}"
+    admin_password = "${3:admin_password}"
+    name = "${4:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_app_domain_private
+# key: r_ibm_app_domain_private
+# --
+
+resource "ibm_app_domain_private" "${1:this}" {
+    name = "${2:name}"
+    org_guid = "${3:org_guid}"
+}

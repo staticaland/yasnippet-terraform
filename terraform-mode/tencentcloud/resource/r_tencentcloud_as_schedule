@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_as_schedule
+# key: r_tencentcloud_as_schedule
+# --
+
+resource "tencentcloud_as_schedule" "${1:this}" {
+    desired_capacity = "${2:desired_capacity}"
+    max_size = "${3:max_size}"
+    min_size = "${4:min_size}"
+    scaling_group_id = "${5:scaling_group_id}"
+    schedule_action_name = "${6:schedule_action_name}"
+    start_time = "${7:start_time}"
+}

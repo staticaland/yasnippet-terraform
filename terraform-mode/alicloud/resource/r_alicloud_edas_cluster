@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_cluster
+# key: r_alicloud_edas_cluster
+# --
+
+resource "alicloud_edas_cluster" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    cluster_type = "${3:cluster_type}"
+    network_mode = "${4:network_mode}"
+}

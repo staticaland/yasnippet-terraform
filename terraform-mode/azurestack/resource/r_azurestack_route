@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_route
+# key: r_azurestack_route
+# --
+
+resource "azurestack_route" "${1:this}" {
+    address_prefix = "${2:address_prefix}"
+    name = "${3:name}"
+    next_hop_type = "${4:next_hop_type}"
+    resource_group_name = "${5:resource_group_name}"
+    route_table_name = "${6:route_table_name}"
+}

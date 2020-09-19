@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_database_connection_pool
+# key: r_digitalocean_database_connection_pool
+# --
+
+resource "digitalocean_database_connection_pool" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    db_name = "${3:db_name}"
+    mode = "${4:mode}"
+    name = "${5:name}"
+    size = "${6:size}"
+    user = "${7:user}"
+}

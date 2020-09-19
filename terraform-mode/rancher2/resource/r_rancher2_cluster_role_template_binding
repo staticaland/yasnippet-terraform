@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_cluster_role_template_binding
+# key: r_rancher2_cluster_role_template_binding
+# --
+
+resource "rancher2_cluster_role_template_binding" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+    role_template_id = "${4:role_template_id}"
+}

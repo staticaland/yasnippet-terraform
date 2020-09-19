@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_burrito_burrito
+# key: r_burrito_burrito
+# --
+
+resource "burrito_burrito" "${1:this}" {
+    ingredients = "${2:ingredients}"
+}

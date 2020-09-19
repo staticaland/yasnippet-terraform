@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_akamai_contract
+# key: d_akamai_contract
+# --
+
+data "akamai_contract" "${1:this}" {
+}

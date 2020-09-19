@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_kms_key_versions
+# key: d_alicloud_kms_key_versions
+# --
+
+data "alicloud_kms_key_versions" "${1:this}" {
+    key_id = "${2:key_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_composer_image_versions
+# key: d_google_composer_image_versions
+# --
+
+data "google_composer_image_versions" "${1:this}" {
+}

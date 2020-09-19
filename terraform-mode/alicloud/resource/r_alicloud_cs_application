@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cs_application
+# key: r_alicloud_cs_application
+# --
+
+resource "alicloud_cs_application" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    name = "${3:name}"
+    template = "${4:template}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_nosql_index
+# key: r_oci_nosql_index
+# --
+
+resource "oci_nosql_index" "${1:this}" {
+    name = "${2:name}"
+    table_name_or_id = "${3:table_name_or_id}"
+}

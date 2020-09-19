@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_node_types
+# key: d_google_compute_node_types
+# --
+
+data "google_compute_node_types" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_kubectl_manifest
+# key: r_kubectl_manifest
+# --
+
+resource "kubectl_manifest" "${1:this}" {
+    yaml_body = "${2:yaml_body}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingdom_user
+# key: r_pingdom_user
+# --
+
+resource "pingdom_user" "${1:this}" {
+    username = "${2:username}"
+}

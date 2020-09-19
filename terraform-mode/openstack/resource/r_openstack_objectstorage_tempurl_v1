@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_openstack_objectstorage_tempurl_v1
+# key: r_openstack_objectstorage_tempurl_v1
+# --
+
+resource "openstack_objectstorage_tempurl_v1" "${1:this}" {
+    container = "${2:container}"
+    object = "${3:object}"
+    ttl = "${4:ttl}"
+}

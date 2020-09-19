@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_setting_ntp
+# key: r_fortios_system_setting_ntp
+# --
+
+resource "fortios_system_setting_ntp" "${1:this}" {
+    type = "${2:type}"
+}

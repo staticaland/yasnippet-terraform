@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_spinnaker_pipeline
+# key: d_spinnaker_pipeline
+# --
+
+data "spinnaker_pipeline" "${1:this}" {
+    application = "${2:application}"
+    name = "${3:name}"
+}

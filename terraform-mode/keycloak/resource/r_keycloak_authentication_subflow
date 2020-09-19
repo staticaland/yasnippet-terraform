@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_authentication_subflow
+# key: r_keycloak_authentication_subflow
+# --
+
+resource "keycloak_authentication_subflow" "${1:this}" {
+    alias = "${2:alias}"
+    parent_flow_alias = "${3:parent_flow_alias}"
+    realm_id = "${4:realm_id}"
+}

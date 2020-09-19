@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_unlock_administrator
+# key: r_checkpoint_management_unlock_administrator
+# --
+
+resource "checkpoint_management_unlock_administrator" "${1:this}" {
+    name = "${2:name}"
+}

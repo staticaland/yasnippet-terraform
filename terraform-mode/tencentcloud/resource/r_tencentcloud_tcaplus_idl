@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_tcaplus_idl
+# key: r_tencentcloud_tcaplus_idl
+# --
+
+resource "tencentcloud_tcaplus_idl" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    file_content = "${3:file_content}"
+    file_ext_type = "${4:file_ext_type}"
+    file_name = "${5:file_name}"
+    file_type = "${6:file_type}"
+    tablegroup_id = "${7:tablegroup_id}"
+}

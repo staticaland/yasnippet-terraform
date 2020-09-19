@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_oci_objectstorage_replication_policy
+# key: d_oci_objectstorage_replication_policy
+# --
+
+data "oci_objectstorage_replication_policy" "${1:this}" {
+    bucket = "${2:bucket}"
+    namespace = "${3:namespace}"
+    replication_id = "${4:replication_id}"
+}

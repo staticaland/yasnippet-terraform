@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_token
+# key: r_rancher2_token
+# --
+
+resource "rancher2_token" "${1:this}" {
+}

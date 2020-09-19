@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ipv6neighborcache
+# key: r_fortios_system_ipv6neighborcache
+# --
+
+resource "fortios_system_ipv6neighborcache" "${1:this}" {
+    fosid = "${2:fosid}"
+    interface = "${3:interface}"
+    ipv6 = "${4:ipv6}"
+    mac = "${5:mac}"
+}

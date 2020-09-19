@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ess_scheduled_task
+# key: r_alicloud_ess_scheduled_task
+# --
+
+resource "alicloud_ess_scheduled_task" "${1:this}" {
+}

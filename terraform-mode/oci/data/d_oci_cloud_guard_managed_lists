@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_cloud_guard_managed_lists
+# key: d_oci_cloud_guard_managed_lists
+# --
+
+data "oci_cloud_guard_managed_lists" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

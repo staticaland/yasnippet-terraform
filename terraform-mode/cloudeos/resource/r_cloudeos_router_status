@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_router_status
+# key: r_cloudeos_router_status
+# --
+
+resource "cloudeos_router_status" "${1:this}" {
+    cloud_provider = "${2:cloud_provider}"
+    instance_type = "${3:instance_type}"
+    intf_id = "${4:intf_id}"
+    intf_name = "${5:intf_name}"
+    intf_private_ip = "${6:intf_private_ip}"
+    intf_subnet_id = "${7:intf_subnet_id}"
+    intf_type = "${8:intf_type}"
+    region = "${9:region}"
+    tf_id = "${10:tf_id}"
+}

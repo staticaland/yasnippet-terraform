@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ciscoasa_access_out_rules
+# key: r_ciscoasa_access_out_rules
+# --
+
+resource "ciscoasa_access_out_rules" "${1:this}" {
+    interface = "${2:interface}"
+}

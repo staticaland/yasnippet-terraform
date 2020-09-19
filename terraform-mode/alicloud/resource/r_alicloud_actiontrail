@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_actiontrail
+# key: r_alicloud_actiontrail
+# --
+
+resource "alicloud_actiontrail" "${1:this}" {
+}

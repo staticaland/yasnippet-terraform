@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_mysql_instance
+# key: d_tencentcloud_mysql_instance
+# --
+
+data "tencentcloud_mysql_instance" "${1:this}" {
+}

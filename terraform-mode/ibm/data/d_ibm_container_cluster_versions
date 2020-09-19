@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_container_cluster_versions
+# key: d_ibm_container_cluster_versions
+# --
+
+data "ibm_container_cluster_versions" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_bigquery_data_transfer_config
+# key: r_google_bigquery_data_transfer_config
+# --
+
+resource "google_bigquery_data_transfer_config" "${1:this}" {
+    data_source_id = "${2:data_source_id}"
+    destination_dataset_id = "${3:destination_dataset_id}"
+    display_name = "${4:display_name}"
+    params = "${5:params}"
+}

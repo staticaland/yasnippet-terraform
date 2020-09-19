@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_phpipam_vlan
+# key: r_phpipam_vlan
+# --
+
+resource "phpipam_vlan" "${1:this}" {
+    name = "${2:name}"
+    number = "${3:number}"
+}

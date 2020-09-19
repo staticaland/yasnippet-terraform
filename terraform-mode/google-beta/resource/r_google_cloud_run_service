@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_run_service
+# key: r_google_cloud_run_service
+# --
+
+resource "google_cloud_run_service" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+}

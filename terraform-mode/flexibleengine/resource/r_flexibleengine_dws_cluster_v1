@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_dws_cluster_v1
+# key: r_flexibleengine_dws_cluster_v1
+# --
+
+resource "flexibleengine_dws_cluster_v1" "${1:this}" {
+    name = "${2:name}"
+    node_type = "${3:node_type}"
+    number_of_node = "${4:number_of_node}"
+    security_group_id = "${5:security_group_id}"
+    subnet_id = "${6:subnet_id}"
+    user_name = "${7:user_name}"
+    user_pwd = "${8:user_pwd}"
+    vpc_id = "${9:vpc_id}"
+}

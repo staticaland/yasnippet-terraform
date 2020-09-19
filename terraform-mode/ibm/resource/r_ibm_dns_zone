@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dns_zone
+# key: r_ibm_dns_zone
+# --
+
+resource "ibm_dns_zone" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    name = "${3:name}"
+}

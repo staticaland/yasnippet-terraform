@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_kms_key_ring_iam_member
+# key: r_google_kms_key_ring_iam_member
+# --
+
+resource "google_kms_key_ring_iam_member" "${1:this}" {
+    key_ring_id = "${2:key_ring_id}"
+    member = "${3:member}"
+    role = "${4:role}"
+}

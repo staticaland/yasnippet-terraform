@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_gre_tunnel
+# key: r_panos_panorama_gre_tunnel
+# --
+
+resource "panos_panorama_gre_tunnel" "${1:this}" {
+    interface = "${2:interface}"
+    local_address_value = "${3:local_address_value}"
+    name = "${4:name}"
+    peer_address = "${5:peer_address}"
+    template = "${6:template}"
+    tunnel_interface = "${7:tunnel_interface}"
+}

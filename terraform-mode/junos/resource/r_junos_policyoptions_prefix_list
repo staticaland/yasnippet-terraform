@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_policyoptions_prefix_list
+# key: r_junos_policyoptions_prefix_list
+# --
+
+resource "junos_policyoptions_prefix_list" "${1:this}" {
+    name = "${2:name}"
+}

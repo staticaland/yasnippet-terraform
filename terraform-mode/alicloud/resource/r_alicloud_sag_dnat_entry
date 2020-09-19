@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_sag_dnat_entry
+# key: r_alicloud_sag_dnat_entry
+# --
+
+resource "alicloud_sag_dnat_entry" "${1:this}" {
+    external_port = "${2:external_port}"
+    internal_ip = "${3:internal_ip}"
+    internal_port = "${4:internal_port}"
+    ip_protocol = "${5:ip_protocol}"
+    sag_id = "${6:sag_id}"
+    type = "${7:type}"
+}

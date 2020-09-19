@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_vxlan
+# key: r_fortios_system_vxlan
+# --
+
+resource "fortios_system_vxlan" "${1:this}" {
+    interface = "${2:interface}"
+    ip_version = "${3:ip_version}"
+    vni = "${4:vni}"
+}

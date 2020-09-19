@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_external_vpn_gateway
+# key: r_google_compute_external_vpn_gateway
+# --
+
+resource "google_compute_external_vpn_gateway" "${1:this}" {
+    name = "${2:name}"
+}

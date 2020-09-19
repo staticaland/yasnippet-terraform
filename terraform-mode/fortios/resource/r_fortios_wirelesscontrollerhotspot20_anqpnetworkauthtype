@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontrollerhotspot20_anqpnetworkauthtype
+# key: r_fortios_wirelesscontrollerhotspot20_anqpnetworkauthtype
+# --
+
+resource "fortios_wirelesscontrollerhotspot20_anqpnetworkauthtype" "${1:this}" {
+}

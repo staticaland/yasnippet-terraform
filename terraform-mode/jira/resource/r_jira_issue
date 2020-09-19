@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_jira_issue
+# key: r_jira_issue
+# --
+
+resource "jira_issue" "${1:this}" {
+    issue_type = "${2:issue_type}"
+    project_key = "${3:project_key}"
+    summary = "${4:summary}"
+}

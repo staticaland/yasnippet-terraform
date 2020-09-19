@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_l7rule_v2
+# key: r_huaweicloud_lb_l7rule_v2
+# --
+
+resource "huaweicloud_lb_l7rule_v2" "${1:this}" {
+    compare_type = "${2:compare_type}"
+    l7policy_id = "${3:l7policy_id}"
+    type = "${4:type}"
+    value = "${5:value}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_maas_task
+# key: r_huaweicloud_maas_task
+# --
+
+resource "huaweicloud_maas_task" "${1:this}" {
+    enable_kms = "${2:enable_kms}"
+    thread_num = "${3:thread_num}"
+}

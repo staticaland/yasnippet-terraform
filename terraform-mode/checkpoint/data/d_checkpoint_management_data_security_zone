@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_security_zone
+# key: d_checkpoint_management_data_security_zone
+# --
+
+data "checkpoint_management_data_security_zone" "${1:this}" {
+}

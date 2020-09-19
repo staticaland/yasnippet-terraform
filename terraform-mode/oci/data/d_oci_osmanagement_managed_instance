@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_osmanagement_managed_instance
+# key: d_oci_osmanagement_managed_instance
+# --
+
+data "oci_osmanagement_managed_instance" "${1:this}" {
+    managed_instance_id = "${2:managed_instance_id}"
+}

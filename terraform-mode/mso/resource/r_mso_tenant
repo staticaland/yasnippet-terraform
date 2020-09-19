@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mso_tenant
+# key: r_mso_tenant
+# --
+
+resource "mso_tenant" "${1:this}" {
+    display_name = "${2:display_name}"
+    name = "${3:name}"
+}

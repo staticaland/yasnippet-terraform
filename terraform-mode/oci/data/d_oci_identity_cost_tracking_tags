@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_cost_tracking_tags
+# key: d_oci_identity_cost_tracking_tags
+# --
+
+data "oci_identity_cost_tracking_tags" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

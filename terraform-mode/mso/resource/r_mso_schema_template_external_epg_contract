@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_external_epg_contract
+# key: r_mso_schema_template_external_epg_contract
+# --
+
+resource "mso_schema_template_external_epg_contract" "${1:this}" {
+    contract_name = "${2:contract_name}"
+    external_epg_name = "${3:external_epg_name}"
+    relationship_type = "${4:relationship_type}"
+    schema_id = "${5:schema_id}"
+    template_name = "${6:template_name}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_rule_falco
+# key: r_sysdig_secure_rule_falco
+# --
+
+resource "sysdig_secure_rule_falco" "${1:this}" {
+    condition = "${2:condition}"
+    description = "${3:description}"
+    name = "${4:name}"
+    output = "${5:output}"
+    priority = "${6:priority}"
+    source = "${7:source}"
+}

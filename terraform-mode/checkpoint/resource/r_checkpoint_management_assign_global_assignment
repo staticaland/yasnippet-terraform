@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_assign_global_assignment
+# key: r_checkpoint_management_assign_global_assignment
+# --
+
+resource "checkpoint_management_assign_global_assignment" "${1:this}" {
+}

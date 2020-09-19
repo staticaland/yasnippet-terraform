@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ad_computer
+# key: r_ad_computer
+# --
+
+resource "ad_computer" "${1:this}" {
+    name = "${2:name}"
+}

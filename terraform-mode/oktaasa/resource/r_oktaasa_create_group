@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oktaasa_create_group
+# key: r_oktaasa_create_group
+# --
+
+resource "oktaasa_create_group" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_nacquar
+# key: r_fortios_systemreplacemsg_nacquar
+# --
+
+resource "fortios_systemreplacemsg_nacquar" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

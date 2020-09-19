@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_nat_service
+# key: r_outscale_nat_service
+# --
+
+resource "outscale_nat_service" "${1:this}" {
+    public_ip_id = "${2:public_ip_id}"
+    subnet_id = "${3:subnet_id}"
+}

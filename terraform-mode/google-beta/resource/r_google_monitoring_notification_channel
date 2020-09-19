@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_monitoring_notification_channel
+# key: r_google_monitoring_notification_channel
+# --
+
+resource "google_monitoring_notification_channel" "${1:this}" {
+    type = "${2:type}"
+}

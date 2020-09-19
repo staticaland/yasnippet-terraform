@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_eip_association
+# key: r_alicloud_eip_association
+# --
+
+resource "alicloud_eip_association" "${1:this}" {
+    allocation_id = "${2:allocation_id}"
+    instance_id = "${3:instance_id}"
+}

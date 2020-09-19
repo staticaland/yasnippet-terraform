@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_civo_kubernetes_version
+# key: d_civo_kubernetes_version
+# --
+
+data "civo_kubernetes_version" "${1:this}" {
+}

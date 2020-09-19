@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_dns_mx_record_set
+# key: r_dns_mx_record_set
+# --
+
+resource "dns_mx_record_set" "${1:this}" {
+    zone = "${2:zone}"
+}

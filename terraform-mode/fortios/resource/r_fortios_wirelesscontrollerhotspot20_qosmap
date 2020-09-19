@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontrollerhotspot20_qosmap
+# key: r_fortios_wirelesscontrollerhotspot20_qosmap
+# --
+
+resource "fortios_wirelesscontrollerhotspot20_qosmap" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_aiven_connection_pool
+# key: d_aiven_connection_pool
+# --
+
+data "aiven_connection_pool" "${1:this}" {
+    pool_name = "${2:pool_name}"
+    project = "${3:project}"
+    service_name = "${4:service_name}"
+}

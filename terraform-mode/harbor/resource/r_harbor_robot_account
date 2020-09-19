@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_harbor_robot_account
+# key: r_harbor_robot_account
+# --
+
+resource "harbor_robot_account" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

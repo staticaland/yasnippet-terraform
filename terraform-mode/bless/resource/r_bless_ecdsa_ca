@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_bless_ecdsa_ca
+# key: r_bless_ecdsa_ca
+# --
+
+resource "bless_ecdsa_ca" "${1:this}" {
+    kms_key_id = "${2:kms_key_id}"
+}

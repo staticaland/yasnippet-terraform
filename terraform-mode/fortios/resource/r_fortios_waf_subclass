@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_waf_subclass
+# key: r_fortios_waf_subclass
+# --
+
+resource "fortios_waf_subclass" "${1:this}" {
+}

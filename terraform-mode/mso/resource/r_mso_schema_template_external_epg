@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_external_epg
+# key: r_mso_schema_template_external_epg
+# --
+
+resource "mso_schema_template_external_epg" "${1:this}" {
+    display_name = "${2:display_name}"
+    external_epg_name = "${3:external_epg_name}"
+    schema_id = "${4:schema_id}"
+    template_name = "${5:template_name}"
+    vrf_name = "${6:vrf_name}"
+}

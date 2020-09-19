@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_opendistro_roles_mapping
+# key: r_elasticsearch_opendistro_roles_mapping
+# --
+
+resource "elasticsearch_opendistro_roles_mapping" "${1:this}" {
+    role_name = "${2:role_name}"
+}

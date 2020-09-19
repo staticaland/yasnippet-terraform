@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_access_group_members
+# key: r_ibm_iam_access_group_members
+# --
+
+resource "ibm_iam_access_group_members" "${1:this}" {
+    access_group_id = "${2:access_group_id}"
+}

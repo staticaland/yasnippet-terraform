@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_identity_policy
+# key: r_oci_identity_policy
+# --
+
+resource "oci_identity_policy" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    description = "${3:description}"
+    name = "${4:name}"
+    statements = "${5:statements}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_cloudinit_config
+# key: d_cloudinit_config
+# --
+
+data "cloudinit_config" "${1:this}" {
+}

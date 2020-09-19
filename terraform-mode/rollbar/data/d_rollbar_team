@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rollbar_team
+# key: d_rollbar_team
+# --
+
+data "rollbar_team" "${1:this}" {
+    id = "${2:id}"
+}

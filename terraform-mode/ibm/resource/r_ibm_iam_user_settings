@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_user_settings
+# key: r_ibm_iam_user_settings
+# --
+
+resource "ibm_iam_user_settings" "${1:this}" {
+    iam_id = "${2:iam_id}"
+}

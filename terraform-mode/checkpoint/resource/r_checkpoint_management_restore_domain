@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_restore_domain
+# key: r_checkpoint_management_restore_domain
+# --
+
+resource "checkpoint_management_restore_domain" "${1:this}" {
+    domain_ip_address = "${2:domain_ip_address}"
+    domain_name = "${3:domain_name}"
+    domain_server_name = "${4:domain_server_name}"
+    file_path = "${5:file_path}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_dme_failover
+# key: r_dme_failover
+# --
+
+resource "dme_failover" "${1:this}" {
+    port = "${2:port}"
+    record_id = "${3:record_id}"
+    sensitivity = "${4:sensitivity}"
+}

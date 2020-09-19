@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_volume_attachment
+# key: r_oci_core_volume_attachment
+# --
+
+resource "oci_core_volume_attachment" "${1:this}" {
+    attachment_type = "${2:attachment_type}"
+    instance_id = "${3:instance_id}"
+    volume_id = "${4:volume_id}"
+}

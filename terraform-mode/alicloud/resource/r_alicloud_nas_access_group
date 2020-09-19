@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_nas_access_group
+# key: r_alicloud_nas_access_group
+# --
+
+resource "alicloud_nas_access_group" "${1:this}" {
+}

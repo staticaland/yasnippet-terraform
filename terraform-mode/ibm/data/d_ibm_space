@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_space
+# key: d_ibm_space
+# --
+
+data "ibm_space" "${1:this}" {
+    org = "${2:org}"
+}

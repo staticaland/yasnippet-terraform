@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_ip_pool_allocation_ip_address
+# key: r_nsxt_ip_pool_allocation_ip_address
+# --
+
+resource "nsxt_ip_pool_allocation_ip_address" "${1:this}" {
+    ip_pool_id = "${2:ip_pool_id}"
+}

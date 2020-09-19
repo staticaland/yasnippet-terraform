@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_alert_policy
+# key: r_opsgenie_alert_policy
+# --
+
+resource "opsgenie_alert_policy" "${1:this}" {
+    message = "${2:message}"
+    name = "${3:name}"
+}

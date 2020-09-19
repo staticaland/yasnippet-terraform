@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_exadata_infrastructure_shapes
+# key: d_oci_database_autonomous_exadata_infrastructure_shapes
+# --
+
+data "oci_database_autonomous_exadata_infrastructure_shapes" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    compartment_id = "${3:compartment_id}"
+}

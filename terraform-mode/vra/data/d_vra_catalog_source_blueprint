@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_catalog_source_blueprint
+# key: d_vra_catalog_source_blueprint
+# --
+
+data "vra_catalog_source_blueprint" "${1:this}" {
+}

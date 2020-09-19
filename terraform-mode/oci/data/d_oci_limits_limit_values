@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_limits_limit_values
+# key: d_oci_limits_limit_values
+# --
+
+data "oci_limits_limit_values" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    service_name = "${3:service_name}"
+}

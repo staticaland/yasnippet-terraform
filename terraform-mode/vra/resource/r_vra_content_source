@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_vra_content_source
+# key: r_vra_content_source
+# --
+
+resource "vra_content_source" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+    sync_enabled = "${4:sync_enabled}"
+    type_id = "${5:type_id}"
+}

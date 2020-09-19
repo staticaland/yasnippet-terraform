@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_freeipa_host
+# key: r_freeipa_host
+# --
+
+resource "freeipa_host" "${1:this}" {
+    fqdn = "${2:fqdn}"
+}

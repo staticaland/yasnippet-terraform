@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_console_history
+# key: r_oci_core_console_history
+# --
+
+resource "oci_core_console_history" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

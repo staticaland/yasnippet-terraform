@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_anp_epg
+# key: d_mso_schema_template_anp_epg
+# --
+
+data "mso_schema_template_anp_epg" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    name = "${3:name}"
+    schema_id = "${4:schema_id}"
+    template_name = "${5:template_name}"
+}

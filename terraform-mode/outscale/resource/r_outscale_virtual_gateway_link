@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_virtual_gateway_link
+# key: r_outscale_virtual_gateway_link
+# --
+
+resource "outscale_virtual_gateway_link" "${1:this}" {
+    net_id = "${2:net_id}"
+    virtual_gateway_id = "${3:virtual_gateway_id}"
+}

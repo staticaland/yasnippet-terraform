@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_ip_block
+# key: r_nsxt_policy_ip_block
+# --
+
+resource "nsxt_policy_ip_block" "${1:this}" {
+    cidr = "${2:cidr}"
+    display_name = "${3:display_name}"
+}

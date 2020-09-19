@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_hcloud_ssh_keys
+# key: d_hcloud_ssh_keys
+# --
+
+data "hcloud_ssh_keys" "${1:this}" {
+}

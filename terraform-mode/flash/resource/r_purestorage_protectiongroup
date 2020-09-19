@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_purestorage_protectiongroup
+# key: r_purestorage_protectiongroup
+# --
+
+resource "purestorage_protectiongroup" "${1:this}" {
+    name = "${2:name}"
+}

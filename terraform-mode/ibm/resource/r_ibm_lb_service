@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb_service
+# key: r_ibm_lb_service
+# --
+
+resource "ibm_lb_service" "${1:this}" {
+    enabled = "${2:enabled}"
+    health_check_type = "${3:health_check_type}"
+    ip_address_id = "${4:ip_address_id}"
+    port = "${5:port}"
+    service_group_id = "${6:service_group_id}"
+    weight = "${7:weight}"
+}

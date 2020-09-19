@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_tcaplus_table
+# key: r_tencentcloud_tcaplus_table
+# --
+
+resource "tencentcloud_tcaplus_table" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    idl_id = "${3:idl_id}"
+    reserved_read_cu = "${4:reserved_read_cu}"
+    reserved_volume = "${5:reserved_volume}"
+    reserved_write_cu = "${6:reserved_write_cu}"
+    table_idl_type = "${7:table_idl_type}"
+    table_name = "${8:table_name}"
+    table_type = "${9:table_type}"
+    tablegroup_id = "${10:tablegroup_id}"
+}

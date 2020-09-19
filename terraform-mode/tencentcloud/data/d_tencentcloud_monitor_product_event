@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_monitor_product_event
+# key: d_tencentcloud_monitor_product_event
+# --
+
+data "tencentcloud_monitor_product_event" "${1:this}" {
+}

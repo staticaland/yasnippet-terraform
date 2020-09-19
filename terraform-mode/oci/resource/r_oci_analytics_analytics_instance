@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_analytics_analytics_instance
+# key: r_oci_analytics_analytics_instance
+# --
+
+resource "oci_analytics_analytics_instance" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    feature_set = "${3:feature_set}"
+    license_type = "${4:license_type}"
+    name = "${5:name}"
+}

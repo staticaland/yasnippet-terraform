@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_app_dynamics
+# key: r_wavefront_cloud_integration_app_dynamics
+# --
+
+resource "wavefront_cloud_integration_app_dynamics" "${1:this}" {
+    controller_name = "${2:controller_name}"
+    encrypted_password = "${3:encrypted_password}"
+    name = "${4:name}"
+    user_name = "${5:user_name}"
+}

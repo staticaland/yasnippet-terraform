@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_sshkey
+# key: r_gridscale_sshkey
+# --
+
+resource "gridscale_sshkey" "${1:this}" {
+    name = "${2:name}"
+    sshkey = "${3:sshkey}"
+}

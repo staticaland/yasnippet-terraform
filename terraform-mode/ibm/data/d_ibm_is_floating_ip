@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_floating_ip
+# key: d_ibm_is_floating_ip
+# --
+
+data "ibm_is_floating_ip" "${1:this}" {
+    name = "${2:name}"
+}

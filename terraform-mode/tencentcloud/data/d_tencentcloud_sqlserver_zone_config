@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_sqlserver_zone_config
+# key: d_tencentcloud_sqlserver_zone_config
+# --
+
+data "tencentcloud_sqlserver_zone_config" "${1:this}" {
+}

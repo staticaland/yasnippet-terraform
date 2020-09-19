@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_threat_indicator
+# key: r_checkpoint_management_threat_indicator
+# --
+
+resource "checkpoint_management_threat_indicator" "${1:this}" {
+    name = "${2:name}"
+}

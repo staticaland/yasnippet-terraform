@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vra_machine
+# key: r_vra_machine
+# --
+
+resource "vra_machine" "${1:this}" {
+    flavor = "${2:flavor}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+}

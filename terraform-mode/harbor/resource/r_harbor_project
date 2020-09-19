@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_harbor_project
+# key: r_harbor_project
+# --
+
+resource "harbor_project" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_notebooks_environment
+# key: r_google_notebooks_environment
+# --
+
+resource "google_notebooks_environment" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+}

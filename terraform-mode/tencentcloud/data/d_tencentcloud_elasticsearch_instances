@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_elasticsearch_instances
+# key: d_tencentcloud_elasticsearch_instances
+# --
+
+data "tencentcloud_elasticsearch_instances" "${1:this}" {
+}

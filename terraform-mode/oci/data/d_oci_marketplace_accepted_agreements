@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_marketplace_accepted_agreements
+# key: d_oci_marketplace_accepted_agreements
+# --
+
+data "oci_marketplace_accepted_agreements" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_vpc_static
+# key: r_qingcloud_vpc_static
+# --
+
+resource "qingcloud_vpc_static" "${1:this}" {
+    type = "${2:type}"
+    val1 = "${3:val1}"
+    vpc_id = "${4:vpc_id}"
+}

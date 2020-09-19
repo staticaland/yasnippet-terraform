@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_application_scale
+# key: r_alicloud_edas_application_scale
+# --
+
+resource "alicloud_edas_application_scale" "${1:this}" {
+    app_id = "${2:app_id}"
+    deploy_group = "${3:deploy_group}"
+    ecu_info = "${4:ecu_info}"
+}

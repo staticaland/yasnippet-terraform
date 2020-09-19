@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_loadbalancer
+# key: r_gridscale_loadbalancer
+# --
+
+resource "gridscale_loadbalancer" "${1:this}" {
+    algorithm = "${2:algorithm}"
+    listen_ipv4_uuid = "${3:listen_ipv4_uuid}"
+    listen_ipv6_uuid = "${4:listen_ipv6_uuid}"
+    name = "${5:name}"
+    redirect_http_to_https = "${6:redirect_http_to_https}"
+}

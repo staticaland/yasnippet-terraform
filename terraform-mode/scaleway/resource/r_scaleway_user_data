@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_user_data
+# key: r_scaleway_user_data
+# --
+
+resource "scaleway_user_data" "${1:this}" {
+    key = "${2:key}"
+    server = "${3:server}"
+    value = "${4:value}"
+}

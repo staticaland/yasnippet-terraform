@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_api_gateway_endpoint_subscription
+# key: r_ibm_api_gateway_endpoint_subscription
+# --
+
+resource "ibm_api_gateway_endpoint_subscription" "${1:this}" {
+    artifact_id = "${2:artifact_id}"
+    name = "${3:name}"
+    type = "${4:type}"
+}

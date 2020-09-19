@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_identity_dynamic_group
+# key: r_oci_identity_dynamic_group
+# --
+
+resource "oci_identity_dynamic_group" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    description = "${3:description}"
+    matching_rule = "${4:matching_rule}"
+    name = "${5:name}"
+}

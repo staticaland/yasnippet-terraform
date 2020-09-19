@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_firebase_web_app
+# key: r_google_firebase_web_app
+# --
+
+resource "google_firebase_web_app" "${1:this}" {
+    display_name = "${2:display_name}"
+}

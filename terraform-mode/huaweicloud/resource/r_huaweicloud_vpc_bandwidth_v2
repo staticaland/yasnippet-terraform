@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_vpc_bandwidth_v2
+# key: r_huaweicloud_vpc_bandwidth_v2
+# --
+
+resource "huaweicloud_vpc_bandwidth_v2" "${1:this}" {
+    name = "${2:name}"
+    size = "${3:size}"
+}

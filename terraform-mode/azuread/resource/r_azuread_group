@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_azuread_group
+# key: r_azuread_group
+# --
+
+resource "azuread_group" "${1:this}" {
+    name = "${2:name}"
+}

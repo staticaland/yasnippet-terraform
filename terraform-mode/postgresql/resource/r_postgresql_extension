@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_postgresql_extension
+# key: r_postgresql_extension
+# --
+
+resource "postgresql_extension" "${1:this}" {
+    name = "${2:name}"
+}

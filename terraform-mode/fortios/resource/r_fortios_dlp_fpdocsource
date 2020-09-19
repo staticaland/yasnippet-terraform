@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_dlp_fpdocsource
+# key: r_fortios_dlp_fpdocsource
+# --
+
+resource "fortios_dlp_fpdocsource" "${1:this}" {
+    server = "${2:server}"
+    server_type = "${3:server_type}"
+    username = "${4:username}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_service_usage_consumer_quota_override
+# key: r_google_service_usage_consumer_quota_override
+# --
+
+resource "google_service_usage_consumer_quota_override" "${1:this}" {
+    limit = "${2:limit}"
+    metric = "${3:metric}"
+    override_value = "${4:override_value}"
+    service = "${5:service}"
+}

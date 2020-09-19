@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_ipsurlfiltercachesetting
+# key: r_fortios_webfilter_ipsurlfiltercachesetting
+# --
+
+resource "fortios_webfilter_ipsurlfiltercachesetting" "${1:this}" {
+}

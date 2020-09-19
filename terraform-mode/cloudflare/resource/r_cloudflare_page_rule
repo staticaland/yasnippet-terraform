@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_page_rule
+# key: r_cloudflare_page_rule
+# --
+
+resource "cloudflare_page_rule" "${1:this}" {
+    target = "${2:target}"
+    zone_id = "${3:zone_id}"
+}

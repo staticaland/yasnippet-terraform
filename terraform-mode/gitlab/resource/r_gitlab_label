@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_label
+# key: r_gitlab_label
+# --
+
+resource "gitlab_label" "${1:this}" {
+    color = "${2:color}"
+    name = "${3:name}"
+    project = "${4:project}"
+}

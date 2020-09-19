@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_pipeline_schedule
+# key: r_gitlab_pipeline_schedule
+# --
+
+resource "gitlab_pipeline_schedule" "${1:this}" {
+    cron = "${2:cron}"
+    description = "${3:description}"
+    project = "${4:project}"
+    ref = "${5:ref}"
+}

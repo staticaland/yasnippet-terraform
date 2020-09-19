@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_oci_monitoring_alarm
+# key: r_oci_monitoring_alarm
+# --
+
+resource "oci_monitoring_alarm" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    destinations = "${3:destinations}"
+    display_name = "${4:display_name}"
+    is_enabled = "${5:is_enabled}"
+    metric_compartment_id = "${6:metric_compartment_id}"
+    namespace = "${7:namespace}"
+    query = "${8:query}"
+    severity = "${9:severity}"
+}

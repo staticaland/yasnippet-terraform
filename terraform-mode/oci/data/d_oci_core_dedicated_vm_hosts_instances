@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_dedicated_vm_hosts_instances
+# key: d_oci_core_dedicated_vm_hosts_instances
+# --
+
+data "oci_core_dedicated_vm_hosts_instances" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    dedicated_vm_host_id = "${3:dedicated_vm_host_id}"
+}

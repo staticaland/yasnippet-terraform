@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_event_rule
+# key: r_pagerduty_event_rule
+# --
+
+resource "pagerduty_event_rule" "${1:this}" {
+    action_json = "${2:action_json}"
+    condition_json = "${3:condition_json}"
+}

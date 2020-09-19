@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_log_eventfilter
+# key: r_fortios_log_eventfilter
+# --
+
+resource "fortios_log_eventfilter" "${1:this}" {
+}

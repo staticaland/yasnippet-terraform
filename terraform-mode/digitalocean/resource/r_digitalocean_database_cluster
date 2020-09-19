@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_database_cluster
+# key: r_digitalocean_database_cluster
+# --
+
+resource "digitalocean_database_cluster" "${1:this}" {
+    engine = "${2:engine}"
+    name = "${3:name}"
+    node_count = "${4:node_count}"
+    region = "${5:region}"
+    size = "${6:size}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dli_queue_v1
+# key: r_huaweicloud_dli_queue_v1
+# --
+
+resource "huaweicloud_dli_queue_v1" "${1:this}" {
+    cu_count = "${2:cu_count}"
+    name = "${3:name}"
+}

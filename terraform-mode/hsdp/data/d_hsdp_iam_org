@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hsdp_iam_org
+# key: d_hsdp_iam_org
+# --
+
+data "hsdp_iam_org" "${1:this}" {
+    organization_id = "${2:organization_id}"
+}

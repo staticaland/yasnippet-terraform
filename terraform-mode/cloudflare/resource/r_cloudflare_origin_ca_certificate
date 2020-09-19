@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_origin_ca_certificate
+# key: r_cloudflare_origin_ca_certificate
+# --
+
+resource "cloudflare_origin_ca_certificate" "${1:this}" {
+    csr = "${2:csr}"
+    hostnames = "${3:hostnames}"
+    request_type = "${4:request_type}"
+}

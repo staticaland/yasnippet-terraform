@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_sag_snat_entry
+# key: r_alicloud_sag_snat_entry
+# --
+
+resource "alicloud_sag_snat_entry" "${1:this}" {
+    cidr_block = "${2:cidr_block}"
+    sag_id = "${3:sag_id}"
+    snat_ip = "${4:snat_ip}"
+}

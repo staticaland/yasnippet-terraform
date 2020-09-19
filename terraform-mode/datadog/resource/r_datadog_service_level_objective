@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_service_level_objective
+# key: r_datadog_service_level_objective
+# --
+
+resource "datadog_service_level_objective" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

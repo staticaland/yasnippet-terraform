@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_infoblox_network_view
+# key: d_infoblox_network_view
+# --
+
+data "infoblox_network_view" "${1:this}" {
+    network_view_name = "${2:network_view_name}"
+}

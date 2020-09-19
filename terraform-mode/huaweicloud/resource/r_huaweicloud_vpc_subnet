@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_vpc_subnet
+# key: r_huaweicloud_vpc_subnet
+# --
+
+resource "huaweicloud_vpc_subnet" "${1:this}" {
+    cidr = "${2:cidr}"
+    gateway_ip = "${3:gateway_ip}"
+    name = "${4:name}"
+    vpc_id = "${5:vpc_id}"
+}

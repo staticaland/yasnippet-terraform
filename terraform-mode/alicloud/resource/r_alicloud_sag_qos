@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_sag_qos
+# key: r_alicloud_sag_qos
+# --
+
+resource "alicloud_sag_qos" "${1:this}" {
+    name = "${2:name}"
+}

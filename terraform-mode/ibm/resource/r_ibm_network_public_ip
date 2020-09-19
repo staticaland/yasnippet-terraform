@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_network_public_ip
+# key: r_ibm_network_public_ip
+# --
+
+resource "ibm_network_public_ip" "${1:this}" {
+    routes_to = "${2:routes_to}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_db_node_console_connections
+# key: d_oci_database_db_node_console_connections
+# --
+
+data "oci_database_db_node_console_connections" "${1:this}" {
+    db_node_id = "${2:db_node_id}"
+}

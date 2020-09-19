@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_s3_bucket_object
+# key: r_huaweicloud_s3_bucket_object
+# --
+
+resource "huaweicloud_s3_bucket_object" "${1:this}" {
+    bucket = "${2:bucket}"
+    key = "${3:key}"
+}

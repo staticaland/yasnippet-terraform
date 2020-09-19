@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_virtualwanlink
+# key: r_fortios_system_virtualwanlink
+# --
+
+resource "fortios_system_virtualwanlink" "${1:this}" {
+}

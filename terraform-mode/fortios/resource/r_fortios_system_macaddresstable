@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_macaddresstable
+# key: r_fortios_system_macaddresstable
+# --
+
+resource "fortios_system_macaddresstable" "${1:this}" {
+    interface = "${2:interface}"
+    mac = "${3:mac}"
+}

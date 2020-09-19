@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_vpn_user_accelerator
+# key: r_aviatrix_vpn_user_accelerator
+# --
+
+resource "aviatrix_vpn_user_accelerator" "${1:this}" {
+    elb_name = "${2:elb_name}"
+}

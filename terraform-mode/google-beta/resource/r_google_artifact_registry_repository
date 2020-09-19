@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_artifact_registry_repository
+# key: r_google_artifact_registry_repository
+# --
+
+resource "google_artifact_registry_repository" "${1:this}" {
+    format = "${2:format}"
+    repository_id = "${3:repository_id}"
+}

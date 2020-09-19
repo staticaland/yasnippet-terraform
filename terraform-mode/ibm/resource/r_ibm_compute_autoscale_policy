@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_autoscale_policy
+# key: r_ibm_compute_autoscale_policy
+# --
+
+resource "ibm_compute_autoscale_policy" "${1:this}" {
+    name = "${2:name}"
+    scale_amount = "${3:scale_amount}"
+    scale_group_id = "${4:scale_group_id}"
+    scale_type = "${5:scale_type}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_generic_client_protocol_mapper
+# key: r_keycloak_generic_client_protocol_mapper
+# --
+
+resource "keycloak_generic_client_protocol_mapper" "${1:this}" {
+    config = "${2:config}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+    protocol_mapper = "${5:protocol_mapper}"
+    realm_id = "${6:realm_id}"
+}

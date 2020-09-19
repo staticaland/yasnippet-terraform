@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_compute_ssh_key
+# key: d_ibm_compute_ssh_key
+# --
+
+data "ibm_compute_ssh_key" "${1:this}" {
+    label = "${2:label}"
+}

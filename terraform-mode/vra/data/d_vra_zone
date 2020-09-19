@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_zone
+# key: d_vra_zone
+# --
+
+data "vra_zone" "${1:this}" {
+}

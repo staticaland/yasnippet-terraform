@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortiadc_loadbalance_virtual_server
+# key: r_fortiadc_loadbalance_virtual_server
+# --
+
+resource "fortiadc_loadbalance_virtual_server" "${1:this}" {
+    address = "${2:address}"
+    name = "${3:name}"
+    pool = "${4:pool}"
+    port = "${5:port}"
+}

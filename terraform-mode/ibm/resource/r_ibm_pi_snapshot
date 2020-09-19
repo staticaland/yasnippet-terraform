@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_snapshot
+# key: r_ibm_pi_snapshot
+# --
+
+resource "ibm_pi_snapshot" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+    pi_snap_shot_name = "${4:pi_snap_shot_name}"
+}

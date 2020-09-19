@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_function_namespace
+# key: d_ibm_function_namespace
+# --
+
+data "ibm_function_namespace" "${1:this}" {
+    name = "${2:name}"
+}

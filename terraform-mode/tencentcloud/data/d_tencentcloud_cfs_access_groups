@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cfs_access_groups
+# key: d_tencentcloud_cfs_access_groups
+# --
+
+data "tencentcloud_cfs_access_groups" "${1:this}" {
+}

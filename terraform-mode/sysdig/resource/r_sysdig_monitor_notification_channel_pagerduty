@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_notification_channel_pagerduty
+# key: r_sysdig_monitor_notification_channel_pagerduty
+# --
+
+resource "sysdig_monitor_notification_channel_pagerduty" "${1:this}" {
+    account = "${2:account}"
+    name = "${3:name}"
+    service_key = "${4:service_key}"
+    service_name = "${5:service_name}"
+}

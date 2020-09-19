@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gsuite_group_members
+# key: r_gsuite_group_members
+# --
+
+resource "gsuite_group_members" "${1:this}" {
+    group_email = "${2:group_email}"
+}

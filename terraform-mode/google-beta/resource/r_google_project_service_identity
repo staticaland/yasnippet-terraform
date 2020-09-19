@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_project_service_identity
+# key: r_google_project_service_identity
+# --
+
+resource "google_project_service_identity" "${1:this}" {
+    service = "${2:service}"
+}

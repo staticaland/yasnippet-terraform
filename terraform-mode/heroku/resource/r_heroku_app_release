@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_app_release
+# key: r_heroku_app_release
+# --
+
+resource "heroku_app_release" "${1:this}" {
+    app = "${2:app}"
+    slug_id = "${3:slug_id}"
+}

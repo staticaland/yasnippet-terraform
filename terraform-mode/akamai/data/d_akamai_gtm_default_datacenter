@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_akamai_gtm_default_datacenter
+# key: d_akamai_gtm_default_datacenter
+# --
+
+data "akamai_gtm_default_datacenter" "${1:this}" {
+    domain = "${2:domain}"
+}

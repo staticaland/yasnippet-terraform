@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_pop3
+# key: r_fortios_user_pop3
+# --
+
+resource "fortios_user_pop3" "${1:this}" {
+    server = "${2:server}"
+}

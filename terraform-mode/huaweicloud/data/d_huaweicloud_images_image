@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_images_image
+# key: d_huaweicloud_images_image
+# --
+
+data "huaweicloud_images_image" "${1:this}" {
+}

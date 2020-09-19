@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_consul_acl_role
+# key: r_consul_acl_role
+# --
+
+resource "consul_acl_role" "${1:this}" {
+    name = "${2:name}"
+}

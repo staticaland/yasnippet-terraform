@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitops_file
+# key: r_gitops_file
+# --
+
+resource "gitops_file" "${1:this}" {
+    checkout = "${2:checkout}"
+    contents = "${3:contents}"
+    path = "${4:path}"
+}

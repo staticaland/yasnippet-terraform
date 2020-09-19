@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_vpc
+# key: r_ncloud_vpc
+# --
+
+resource "ncloud_vpc" "${1:this}" {
+    ipv4_cidr_block = "${2:ipv4_cidr_block}"
+    name = "${3:name}"
+}

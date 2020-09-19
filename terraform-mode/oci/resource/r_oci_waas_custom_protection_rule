@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_waas_custom_protection_rule
+# key: r_oci_waas_custom_protection_rule
+# --
+
+resource "oci_waas_custom_protection_rule" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    template = "${4:template}"
+}

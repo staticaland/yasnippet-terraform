@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_volume
+# key: r_ibm_is_volume
+# --
+
+resource "ibm_is_volume" "${1:this}" {
+    name = "${2:name}"
+    profile = "${3:profile}"
+    zone = "${4:zone}"
+}

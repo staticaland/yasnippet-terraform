@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_newrelic_account
+# key: d_newrelic_account
+# --
+
+data "newrelic_account" "${1:this}" {
+}

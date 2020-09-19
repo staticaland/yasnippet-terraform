@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opc_lbaas_certificate
+# key: r_opc_lbaas_certificate
+# --
+
+resource "opc_lbaas_certificate" "${1:this}" {
+    certificate_body = "${2:certificate_body}"
+    name = "${3:name}"
+    type = "${4:type}"
+}

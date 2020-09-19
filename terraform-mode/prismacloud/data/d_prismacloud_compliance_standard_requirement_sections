@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_compliance_standard_requirement_sections
+# key: d_prismacloud_compliance_standard_requirement_sections
+# --
+
+data "prismacloud_compliance_standard_requirement_sections" "${1:this}" {
+    csr_id = "${2:csr_id}"
+}

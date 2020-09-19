@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_load_balancer_network
+# key: r_hcloud_load_balancer_network
+# --
+
+resource "hcloud_load_balancer_network" "${1:this}" {
+    load_balancer_id = "${2:load_balancer_id}"
+}

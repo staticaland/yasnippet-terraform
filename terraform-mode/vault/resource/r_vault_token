@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_vault_token
+# key: r_vault_token
+# --
+
+resource "vault_token" "${1:this}" {
+}

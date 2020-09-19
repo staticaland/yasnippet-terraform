@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_edas_applications
+# key: d_alicloud_edas_applications
+# --
+
+data "alicloud_edas_applications" "${1:this}" {
+}

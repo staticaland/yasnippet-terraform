@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_sch_service_connector
+# key: d_oci_sch_service_connector
+# --
+
+data "oci_sch_service_connector" "${1:this}" {
+    service_connector_id = "${2:service_connector_id}"
+}

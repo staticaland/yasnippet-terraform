@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_consul_autopilot_config
+# key: r_consul_autopilot_config
+# --
+
+resource "consul_autopilot_config" "${1:this}" {
+}

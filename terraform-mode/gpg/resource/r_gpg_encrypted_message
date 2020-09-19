@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gpg_encrypted_message
+# key: r_gpg_encrypted_message
+# --
+
+resource "gpg_encrypted_message" "${1:this}" {
+    content = "${2:content}"
+    public_keys = "${3:public_keys}"
+}

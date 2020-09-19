@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_asset_project_feed
+# key: r_google_cloud_asset_project_feed
+# --
+
+resource "google_cloud_asset_project_feed" "${1:this}" {
+    feed_id = "${2:feed_id}"
+}

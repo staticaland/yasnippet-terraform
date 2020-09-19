@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gsuite_group
+# key: r_gsuite_group
+# --
+
+resource "gsuite_group" "${1:this}" {
+    email = "${2:email}"
+}

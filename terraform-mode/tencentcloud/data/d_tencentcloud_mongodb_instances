@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_mongodb_instances
+# key: d_tencentcloud_mongodb_instances
+# --
+
+data "tencentcloud_mongodb_instances" "${1:this}" {
+}

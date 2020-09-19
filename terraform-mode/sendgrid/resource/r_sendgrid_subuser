@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sendgrid_subuser
+# key: r_sendgrid_subuser
+# --
+
+resource "sendgrid_subuser" "${1:this}" {
+    email = "${2:email}"
+    ips = "${3:ips}"
+    password = "${4:password}"
+    username = "${5:username}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_splunk_global_http_event_collector
+# key: r_splunk_global_http_event_collector
+# --
+
+resource "splunk_global_http_event_collector" "${1:this}" {
+}

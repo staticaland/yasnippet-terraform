@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_virtual_circuit
+# key: r_oci_core_virtual_circuit
+# --
+
+resource "oci_core_virtual_circuit" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    type = "${3:type}"
+}

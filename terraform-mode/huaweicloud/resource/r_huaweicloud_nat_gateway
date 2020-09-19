@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_nat_gateway
+# key: r_huaweicloud_nat_gateway
+# --
+
+resource "huaweicloud_nat_gateway" "${1:this}" {
+    internal_network_id = "${2:internal_network_id}"
+    name = "${3:name}"
+    router_id = "${4:router_id}"
+    spec = "${5:spec}"
+}

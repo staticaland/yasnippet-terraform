@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_mongodb_sharding_instance
+# key: r_alicloud_mongodb_sharding_instance
+# --
+
+resource "alicloud_mongodb_sharding_instance" "${1:this}" {
+    engine_version = "${2:engine_version}"
+}

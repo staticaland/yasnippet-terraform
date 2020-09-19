@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aws_config_remediation_configuration
+# key: r_aws_config_remediation_configuration
+# --
+
+resource "aws_config_remediation_configuration" "${1:this}" {
+    config_rule_name = "${2:config_rule_name}"
+    target_id = "${3:target_id}"
+    target_type = "${4:target_type}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_waf_datamasking_rule_v1
+# key: r_opentelekomcloud_waf_datamasking_rule_v1
+# --
+
+resource "opentelekomcloud_waf_datamasking_rule_v1" "${1:this}" {
+    category = "${2:category}"
+    index = "${3:index}"
+    policy_id = "${4:policy_id}"
+    url = "${5:url}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tfe_ssh_key
+# key: d_tfe_ssh_key
+# --
+
+data "tfe_ssh_key" "${1:this}" {
+    name = "${2:name}"
+    organization = "${3:organization}"
+}

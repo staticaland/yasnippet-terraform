@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_domain_record
+# key: r_exoscale_domain_record
+# --
+
+resource "exoscale_domain_record" "${1:this}" {
+    content = "${2:content}"
+    domain = "${3:domain}"
+    name = "${4:name}"
+    record_type = "${5:record_type}"
+}

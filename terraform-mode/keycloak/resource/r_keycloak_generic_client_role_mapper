@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_generic_client_role_mapper
+# key: r_keycloak_generic_client_role_mapper
+# --
+
+resource "keycloak_generic_client_role_mapper" "${1:this}" {
+    realm_id = "${2:realm_id}"
+    role_id = "${3:role_id}"
+}

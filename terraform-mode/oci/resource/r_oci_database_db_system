@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_db_system
+# key: r_oci_database_db_system
+# --
+
+resource "oci_database_db_system" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    compartment_id = "${3:compartment_id}"
+    hostname = "${4:hostname}"
+    shape = "${5:shape}"
+    ssh_public_keys = "${6:ssh_public_keys}"
+    subnet_id = "${7:subnet_id}"
+}

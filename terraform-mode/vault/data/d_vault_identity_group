@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vault_identity_group
+# key: d_vault_identity_group
+# --
+
+data "vault_identity_group" "${1:this}" {
+}

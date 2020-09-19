@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_application_resource
+# key: r_pingaccess_application_resource
+# --
+
+resource "pingaccess_application_resource" "${1:this}" {
+    application_id = "${2:application_id}"
+    methods = "${3:methods}"
+    name = "${4:name}"
+}

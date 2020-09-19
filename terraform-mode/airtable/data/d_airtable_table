@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_airtable_table
+# key: d_airtable_table
+# --
+
+data "airtable_table" "${1:this}" {
+    table = "${2:table}"
+    workspace_id = "${3:workspace_id}"
+}

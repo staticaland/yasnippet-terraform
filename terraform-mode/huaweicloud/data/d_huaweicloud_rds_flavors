@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_rds_flavors
+# key: d_huaweicloud_rds_flavors
+# --
+
+data "huaweicloud_rds_flavors" "${1:this}" {
+    db_type = "${2:db_type}"
+    db_version = "${3:db_version}"
+    instance_mode = "${4:instance_mode}"
+}

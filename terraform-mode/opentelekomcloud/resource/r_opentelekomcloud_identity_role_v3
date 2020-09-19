@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_identity_role_v3
+# key: r_opentelekomcloud_identity_role_v3
+# --
+
+resource "opentelekomcloud_identity_role_v3" "${1:this}" {
+    description = "${2:description}"
+    display_layer = "${3:display_layer}"
+    display_name = "${4:display_name}"
+}

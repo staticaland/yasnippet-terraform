@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_datadog_synthetics_test
+# key: r_datadog_synthetics_test
+# --
+
+resource "datadog_synthetics_test" "${1:this}" {
+    locations = "${2:locations}"
+    name = "${3:name}"
+    request = "${4:request}"
+    status = "${5:status}"
+    tags = "${6:tags}"
+    type = "${7:type}"
+}

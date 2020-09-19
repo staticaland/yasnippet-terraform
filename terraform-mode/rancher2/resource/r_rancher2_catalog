@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_catalog
+# key: r_rancher2_catalog
+# --
+
+resource "rancher2_catalog" "${1:this}" {
+    name = "${2:name}"
+    url = "${3:url}"
+}

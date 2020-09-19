@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_geo_filter
+# key: d_constellix_geo_filter
+# --
+
+data "constellix_geo_filter" "${1:this}" {
+    name = "${2:name}"
+}

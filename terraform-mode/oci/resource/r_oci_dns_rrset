@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_dns_rrset
+# key: r_oci_dns_rrset
+# --
+
+resource "oci_dns_rrset" "${1:this}" {
+    domain = "${2:domain}"
+    rtype = "${3:rtype}"
+    zone_name_or_id = "${4:zone_name_or_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_packet_project
+# key: d_packet_project
+# --
+
+data "packet_project" "${1:this}" {
+}

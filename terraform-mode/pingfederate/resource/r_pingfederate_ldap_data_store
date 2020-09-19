@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_ldap_data_store
+# key: r_pingfederate_ldap_data_store
+# --
+
+resource "pingfederate_ldap_data_store" "${1:this}" {
+    ldap_type = "${2:ldap_type}"
+}

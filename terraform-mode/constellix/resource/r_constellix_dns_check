@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_constellix_dns_check
+# key: r_constellix_dns_check
+# --
+
+resource "constellix_dns_check" "${1:this}" {
+    check_sites = "${2:check_sites}"
+    fqdn = "${3:fqdn}"
+    resolver = "${4:resolver}"
+}

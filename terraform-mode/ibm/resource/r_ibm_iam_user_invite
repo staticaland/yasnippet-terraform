@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_user_invite
+# key: r_ibm_iam_user_invite
+# --
+
+resource "ibm_iam_user_invite" "${1:this}" {
+    users = "${2:users}"
+}

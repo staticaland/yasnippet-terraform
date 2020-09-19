@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_region
+# key: d_ibm_is_region
+# --
+
+data "ibm_is_region" "${1:this}" {
+    name = "${2:name}"
+}

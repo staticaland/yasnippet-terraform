@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_service_jira
+# key: r_gitlab_service_jira
+# --
+
+resource "gitlab_service_jira" "${1:this}" {
+    password = "${2:password}"
+    project = "${3:project}"
+    url = "${4:url}"
+    username = "${5:username}"
+}

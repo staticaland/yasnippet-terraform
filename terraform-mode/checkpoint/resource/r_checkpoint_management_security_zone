@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_security_zone
+# key: r_checkpoint_management_security_zone
+# --
+
+resource "checkpoint_management_security_zone" "${1:this}" {
+    name = "${2:name}"
+}

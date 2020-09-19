@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_app
+# key: r_cloudfoundry_app
+# --
+
+resource "cloudfoundry_app" "${1:this}" {
+    name = "${2:name}"
+    space = "${3:space}"
+}

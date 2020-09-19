@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_ippool6
+# key: r_fortios_firewall_ippool6
+# --
+
+resource "fortios_firewall_ippool6" "${1:this}" {
+    endip = "${2:endip}"
+    startip = "${3:startip}"
+}

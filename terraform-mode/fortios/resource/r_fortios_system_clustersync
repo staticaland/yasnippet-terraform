@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_clustersync
+# key: r_fortios_system_clustersync
+# --
+
+resource "fortios_system_clustersync" "${1:this}" {
+}

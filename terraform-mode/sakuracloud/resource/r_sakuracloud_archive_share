@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_archive_share
+# key: r_sakuracloud_archive_share
+# --
+
+resource "sakuracloud_archive_share" "${1:this}" {
+    archive_id = "${2:archive_id}"
+}

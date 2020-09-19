@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_as_attachment
+# key: r_tencentcloud_as_attachment
+# --
+
+resource "tencentcloud_as_attachment" "${1:this}" {
+    instance_ids = "${2:instance_ids}"
+    scaling_group_id = "${3:scaling_group_id}"
+}

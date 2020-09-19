@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mikrotik_dhcp_lease
+# key: r_mikrotik_dhcp_lease
+# --
+
+resource "mikrotik_dhcp_lease" "${1:this}" {
+    address = "${2:address}"
+    macaddress = "${3:macaddress}"
+}

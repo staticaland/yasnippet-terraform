@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_security_policy
+# key: r_fortios_firewall_security_policy
+# --
+
+resource "fortios_firewall_security_policy" "${1:this}" {
+    action = "${2:action}"
+    dstaddr = "${3:dstaddr}"
+    dstintf = "${4:dstintf}"
+    name = "${5:name}"
+    schedule = "${6:schedule}"
+    service = "${7:service}"
+    srcaddr = "${8:srcaddr}"
+    srcintf = "${9:srcintf}"
+}

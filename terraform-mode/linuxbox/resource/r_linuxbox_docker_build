@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_docker_build
+# key: r_linuxbox_docker_build
+# --
+
+resource "linuxbox_docker_build" "${1:this}" {
+    source_dir = "${2:source_dir}"
+    source_hash = "${3:source_hash}"
+}

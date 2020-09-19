@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_events_rule
+# key: r_oci_events_rule
+# --
+
+resource "oci_events_rule" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    condition = "${3:condition}"
+    display_name = "${4:display_name}"
+    is_enabled = "${5:is_enabled}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cam_policies
+# key: d_tencentcloud_cam_policies
+# --
+
+data "tencentcloud_cam_policies" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_msgraph_group
+# key: r_msgraph_group
+# --
+
+resource "msgraph_group" "${1:this}" {
+    display_name = "${2:display_name}"
+    mail_nickname = "${3:mail_nickname}"
+}

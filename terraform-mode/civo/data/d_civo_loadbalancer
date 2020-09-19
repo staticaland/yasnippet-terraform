@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_civo_loadbalancer
+# key: d_civo_loadbalancer
+# --
+
+data "civo_loadbalancer" "${1:this}" {
+}

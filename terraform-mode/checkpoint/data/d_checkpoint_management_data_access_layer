@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_access_layer
+# key: d_checkpoint_management_data_access_layer
+# --
+
+data "checkpoint_management_data_access_layer" "${1:this}" {
+}

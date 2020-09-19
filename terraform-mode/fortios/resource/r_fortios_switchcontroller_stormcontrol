@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_stormcontrol
+# key: r_fortios_switchcontroller_stormcontrol
+# --
+
+resource "fortios_switchcontroller_stormcontrol" "${1:this}" {
+}

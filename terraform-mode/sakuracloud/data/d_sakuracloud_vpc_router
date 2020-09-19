@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_vpc_router
+# key: d_sakuracloud_vpc_router
+# --
+
+data "sakuracloud_vpc_router" "${1:this}" {
+}

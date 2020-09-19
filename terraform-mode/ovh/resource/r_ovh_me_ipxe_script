@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_me_ipxe_script
+# key: r_ovh_me_ipxe_script
+# --
+
+resource "ovh_me_ipxe_script" "${1:this}" {
+    name = "${2:name}"
+    script = "${3:script}"
+}

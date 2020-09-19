@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_isilon_quota_v2
+# key: r_isilon_quota_v2
+# --
+
+resource "isilon_quota_v2" "${1:this}" {
+    path = "${2:path}"
+}

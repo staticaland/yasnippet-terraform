@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_googlecalendar_event
+# key: r_googlecalendar_event
+# --
+
+resource "googlecalendar_event" "${1:this}" {
+    end = "${2:end}"
+    start = "${3:start}"
+    summary = "${4:summary}"
+}

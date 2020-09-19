@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_notification_channel_sns
+# key: r_sysdig_monitor_notification_channel_sns
+# --
+
+resource "sysdig_monitor_notification_channel_sns" "${1:this}" {
+    name = "${2:name}"
+    topics = "${3:topics}"
+}

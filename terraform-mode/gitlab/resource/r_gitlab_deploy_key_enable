@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_deploy_key_enable
+# key: r_gitlab_deploy_key_enable
+# --
+
+resource "gitlab_deploy_key_enable" "${1:this}" {
+    key_id = "${2:key_id}"
+    project = "${3:project}"
+}

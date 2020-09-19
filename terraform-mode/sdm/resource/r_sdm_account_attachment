@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sdm_account_attachment
+# key: r_sdm_account_attachment
+# --
+
+resource "sdm_account_attachment" "${1:this}" {
+    account_id = "${2:account_id}"
+    role_id = "${3:role_id}"
+}

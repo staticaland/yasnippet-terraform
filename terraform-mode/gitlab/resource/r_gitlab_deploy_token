@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_deploy_token
+# key: r_gitlab_deploy_token
+# --
+
+resource "gitlab_deploy_token" "${1:this}" {
+    name = "${2:name}"
+    scopes = "${3:scopes}"
+}

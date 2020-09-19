@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_loadbalancer_backend
+# key: r_qingcloud_loadbalancer_backend
+# --
+
+resource "qingcloud_loadbalancer_backend" "${1:this}" {
+    loadbalancer_listener_id = "${2:loadbalancer_listener_id}"
+    port = "${3:port}"
+    resource_id = "${4:resource_id}"
+}

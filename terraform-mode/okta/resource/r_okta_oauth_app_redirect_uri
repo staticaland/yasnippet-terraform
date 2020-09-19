@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_oauth_app_redirect_uri
+# key: r_okta_oauth_app_redirect_uri
+# --
+
+resource "okta_oauth_app_redirect_uri" "${1:this}" {
+    app_id = "${2:app_id}"
+    uri = "${3:uri}"
+}

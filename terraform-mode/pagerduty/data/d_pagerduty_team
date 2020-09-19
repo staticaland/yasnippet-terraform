@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pagerduty_team
+# key: d_pagerduty_team
+# --
+
+data "pagerduty_team" "${1:this}" {
+    name = "${2:name}"
+}

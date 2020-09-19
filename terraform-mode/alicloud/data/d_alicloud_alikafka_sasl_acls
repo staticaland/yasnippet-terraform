@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_alikafka_sasl_acls
+# key: d_alicloud_alikafka_sasl_acls
+# --
+
+data "alicloud_alikafka_sasl_acls" "${1:this}" {
+    acl_resource_name = "${2:acl_resource_name}"
+    acl_resource_type = "${3:acl_resource_type}"
+    instance_id = "${4:instance_id}"
+    username = "${5:username}"
+}

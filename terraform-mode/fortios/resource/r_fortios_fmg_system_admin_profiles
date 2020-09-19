@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_admin_profiles
+# key: r_fortios_fmg_system_admin_profiles
+# --
+
+resource "fortios_fmg_system_admin_profiles" "${1:this}" {
+    profileid = "${2:profileid}"
+}

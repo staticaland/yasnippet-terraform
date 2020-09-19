@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_nat_gateway_v2
+# key: r_flexibleengine_nat_gateway_v2
+# --
+
+resource "flexibleengine_nat_gateway_v2" "${1:this}" {
+    internal_network_id = "${2:internal_network_id}"
+    name = "${3:name}"
+    router_id = "${4:router_id}"
+    spec = "${5:spec}"
+}

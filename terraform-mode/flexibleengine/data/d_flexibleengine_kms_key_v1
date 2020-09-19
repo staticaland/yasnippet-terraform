@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_flexibleengine_kms_key_v1
+# key: d_flexibleengine_kms_key_v1
+# --
+
+data "flexibleengine_kms_key_v1" "${1:this}" {
+}

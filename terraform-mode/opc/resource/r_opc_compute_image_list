@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_image_list
+# key: r_opc_compute_image_list
+# --
+
+resource "opc_compute_image_list" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

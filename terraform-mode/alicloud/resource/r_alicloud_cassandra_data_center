@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cassandra_data_center
+# key: r_alicloud_cassandra_data_center
+# --
+
+resource "alicloud_cassandra_data_center" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    instance_type = "${3:instance_type}"
+    node_count = "${4:node_count}"
+    pay_type = "${5:pay_type}"
+    vswitch_id = "${6:vswitch_id}"
+}

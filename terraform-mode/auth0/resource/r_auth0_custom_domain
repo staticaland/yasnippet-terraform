@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_auth0_custom_domain
+# key: r_auth0_custom_domain
+# --
+
+resource "auth0_custom_domain" "${1:this}" {
+    domain = "${2:domain}"
+    type = "${3:type}"
+    verification_method = "${4:verification_method}"
+}

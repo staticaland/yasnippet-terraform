@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_tcp_monitor
+# key: r_nsxt_lb_tcp_monitor
+# --
+
+resource "nsxt_lb_tcp_monitor" "${1:this}" {
+}

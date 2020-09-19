@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linodex_instance_ips
+# key: d_linodex_instance_ips
+# --
+
+data "linodex_instance_ips" "${1:this}" {
+    id = "${2:id}"
+}

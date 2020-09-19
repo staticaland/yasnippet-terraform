@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_packet_device
+# key: d_packet_device
+# --
+
+data "packet_device" "${1:this}" {
+}

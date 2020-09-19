@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_webhook_integration
+# key: r_signalfx_webhook_integration
+# --
+
+resource "signalfx_webhook_integration" "${1:this}" {
+    enabled = "${2:enabled}"
+    name = "${3:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mso_rest
+# key: r_mso_rest
+# --
+
+resource "mso_rest" "${1:this}" {
+    path = "${2:path}"
+    payload = "${3:payload}"
+}

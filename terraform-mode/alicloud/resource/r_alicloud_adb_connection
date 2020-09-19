@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_adb_connection
+# key: r_alicloud_adb_connection
+# --
+
+resource "alicloud_adb_connection" "${1:this}" {
+    db_cluster_id = "${2:db_cluster_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_image_profile
+# key: d_vra_image_profile
+# --
+
+data "vra_image_profile" "${1:this}" {
+}

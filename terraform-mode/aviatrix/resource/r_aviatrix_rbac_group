@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_rbac_group
+# key: r_aviatrix_rbac_group
+# --
+
+resource "aviatrix_rbac_group" "${1:this}" {
+    group_name = "${2:group_name}"
+}

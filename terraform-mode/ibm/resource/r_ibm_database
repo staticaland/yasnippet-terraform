@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_database
+# key: r_ibm_database
+# --
+
+resource "ibm_database" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    plan = "${4:plan}"
+    service = "${5:service}"
+}

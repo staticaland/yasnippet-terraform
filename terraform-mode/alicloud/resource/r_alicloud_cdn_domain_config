@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cdn_domain_config
+# key: r_alicloud_cdn_domain_config
+# --
+
+resource "alicloud_cdn_domain_config" "${1:this}" {
+    domain_name = "${2:domain_name}"
+    function_name = "${3:function_name}"
+}

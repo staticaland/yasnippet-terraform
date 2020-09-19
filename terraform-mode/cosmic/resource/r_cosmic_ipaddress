@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_ipaddress
+# key: r_cosmic_ipaddress
+# --
+
+resource "cosmic_ipaddress" "${1:this}" {
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_oci_objectstorage_replication_policy
+# key: r_oci_objectstorage_replication_policy
+# --
+
+resource "oci_objectstorage_replication_policy" "${1:this}" {
+    bucket = "${2:bucket}"
+    destination_bucket_name = "${3:destination_bucket_name}"
+    destination_region_name = "${4:destination_region_name}"
+    name = "${5:name}"
+    namespace = "${6:namespace}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_server_network
+# key: r_hcloud_server_network
+# --
+
+resource "hcloud_server_network" "${1:this}" {
+    server_id = "${2:server_id}"
+}

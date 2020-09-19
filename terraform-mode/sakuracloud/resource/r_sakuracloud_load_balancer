@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_load_balancer
+# key: r_sakuracloud_load_balancer
+# --
+
+resource "sakuracloud_load_balancer" "${1:this}" {
+    name = "${2:name}"
+}

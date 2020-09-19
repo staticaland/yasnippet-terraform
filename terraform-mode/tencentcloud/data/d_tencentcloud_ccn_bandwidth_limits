@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_ccn_bandwidth_limits
+# key: d_tencentcloud_ccn_bandwidth_limits
+# --
+
+data "tencentcloud_ccn_bandwidth_limits" "${1:this}" {
+    ccn_id = "${2:ccn_id}"
+}

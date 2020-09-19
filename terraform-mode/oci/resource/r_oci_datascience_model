@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_datascience_model
+# key: r_oci_datascience_model
+# --
+
+resource "oci_datascience_model" "${1:this}" {
+    artifact_content_length = "${2:artifact_content_length}"
+    compartment_id = "${3:compartment_id}"
+    model_artifact = "${4:model_artifact}"
+    project_id = "${5:project_id}"
+}

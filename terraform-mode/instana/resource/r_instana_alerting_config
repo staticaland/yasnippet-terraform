@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_config
+# key: r_instana_alerting_config
+# --
+
+resource "instana_alerting_config" "${1:this}" {
+    alert_name = "${2:alert_name}"
+    integration_ids = "${3:integration_ids}"
+}

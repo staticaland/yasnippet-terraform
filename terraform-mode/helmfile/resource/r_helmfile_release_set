@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_helmfile_release_set
+# key: r_helmfile_release_set
+# --
+
+resource "helmfile_release_set" "${1:this}" {
+}

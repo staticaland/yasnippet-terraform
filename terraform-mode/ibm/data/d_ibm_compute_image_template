@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_compute_image_template
+# key: d_ibm_compute_image_template
+# --
+
+data "ibm_compute_image_template" "${1:this}" {
+    name = "${2:name}"
+}

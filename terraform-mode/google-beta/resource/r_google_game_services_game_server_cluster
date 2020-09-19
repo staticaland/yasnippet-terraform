@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_game_services_game_server_cluster
+# key: r_google_game_services_game_server_cluster
+# --
+
+resource "google_game_services_game_server_cluster" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    realm_id = "${3:realm_id}"
+}

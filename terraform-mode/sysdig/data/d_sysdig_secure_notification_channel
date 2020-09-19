@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sysdig_secure_notification_channel
+# key: d_sysdig_secure_notification_channel
+# --
+
+data "sysdig_secure_notification_channel" "${1:this}" {
+    name = "${2:name}"
+}

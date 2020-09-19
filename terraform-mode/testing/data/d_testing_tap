@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_testing_tap
+# key: d_testing_tap
+# --
+
+data "testing_tap" "${1:this}" {
+    program = "${2:program}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cis_rate_limit
+# key: r_ibm_cis_rate_limit
+# --
+
+resource "ibm_cis_rate_limit" "${1:this}" {
+    cis_id = "${2:cis_id}"
+    domain_id = "${3:domain_id}"
+    period = "${4:period}"
+    threshold = "${5:threshold}"
+}

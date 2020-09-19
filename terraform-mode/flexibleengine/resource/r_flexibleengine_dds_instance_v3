@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_dds_instance_v3
+# key: r_flexibleengine_dds_instance_v3
+# --
+
+resource "flexibleengine_dds_instance_v3" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    mode = "${3:mode}"
+    name = "${4:name}"
+    password = "${5:password}"
+    security_group_id = "${6:security_group_id}"
+    subnet_id = "${7:subnet_id}"
+    vpc_id = "${8:vpc_id}"
+}

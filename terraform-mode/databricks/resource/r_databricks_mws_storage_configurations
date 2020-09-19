@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_databricks_mws_storage_configurations
+# key: r_databricks_mws_storage_configurations
+# --
+
+resource "databricks_mws_storage_configurations" "${1:this}" {
+    account_id = "${2:account_id}"
+    bucket_name = "${3:bucket_name}"
+    storage_configuration_name = "${4:storage_configuration_name}"
+}

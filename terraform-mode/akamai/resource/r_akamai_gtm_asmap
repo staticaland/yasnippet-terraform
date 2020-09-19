@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_akamai_gtm_asmap
+# key: r_akamai_gtm_asmap
+# --
+
+resource "akamai_gtm_asmap" "${1:this}" {
+    default_datacenter = "${2:default_datacenter}"
+    domain = "${3:domain}"
+    name = "${4:name}"
+}

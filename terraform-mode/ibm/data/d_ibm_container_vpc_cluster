@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_container_vpc_cluster
+# key: d_ibm_container_vpc_cluster
+# --
+
+data "ibm_container_vpc_cluster" "${1:this}" {
+}

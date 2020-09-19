@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_bigip_net_selfip
+# key: r_bigip_net_selfip
+# --
+
+resource "bigip_net_selfip" "${1:this}" {
+    ip = "${2:ip}"
+    name = "${3:name}"
+    vlan = "${4:vlan}"
+}

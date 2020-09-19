@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cr_ee_namespaces
+# key: d_alicloud_cr_ee_namespaces
+# --
+
+data "alicloud_cr_ee_namespaces" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

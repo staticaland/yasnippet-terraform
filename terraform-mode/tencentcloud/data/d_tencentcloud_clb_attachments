@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_clb_attachments
+# key: d_tencentcloud_clb_attachments
+# --
+
+data "tencentcloud_clb_attachments" "${1:this}" {
+    clb_id = "${2:clb_id}"
+    listener_id = "${3:listener_id}"
+}

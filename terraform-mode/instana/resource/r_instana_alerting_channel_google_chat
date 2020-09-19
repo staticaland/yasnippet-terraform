@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_google_chat
+# key: r_instana_alerting_channel_google_chat
+# --
+
+resource "instana_alerting_channel_google_chat" "${1:this}" {
+    name = "${2:name}"
+    webhook_url = "${3:webhook_url}"
+}

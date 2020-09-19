@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_management_agent_management_agent_plugins
+# key: d_oci_management_agent_management_agent_plugins
+# --
+
+data "oci_management_agent_management_agent_plugins" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

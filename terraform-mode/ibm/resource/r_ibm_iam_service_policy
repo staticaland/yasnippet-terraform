@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_service_policy
+# key: r_ibm_iam_service_policy
+# --
+
+resource "ibm_iam_service_policy" "${1:this}" {
+    iam_service_id = "${2:iam_service_id}"
+    roles = "${3:roles}"
+}

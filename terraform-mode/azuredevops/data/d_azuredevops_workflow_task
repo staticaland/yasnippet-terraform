@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_azuredevops_workflow_task
+# key: d_azuredevops_workflow_task
+# --
+
+data "azuredevops_workflow_task" "${1:this}" {
+    name = "${2:name}"
+}

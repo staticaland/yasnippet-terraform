@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_put_file
+# key: r_checkpoint_management_put_file
+# --
+
+resource "checkpoint_management_put_file" "${1:this}" {
+    targets = "${2:targets}"
+}

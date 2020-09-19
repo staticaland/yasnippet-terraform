@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_circonus_overlay_set
+# key: r_circonus_overlay_set
+# --
+
+resource "circonus_overlay_set" "${1:this}" {
+    graph_cid = "${2:graph_cid}"
+    title = "${3:title}"
+}

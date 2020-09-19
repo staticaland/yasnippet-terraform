@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_schedule_rotation
+# key: r_opsgenie_schedule_rotation
+# --
+
+resource "opsgenie_schedule_rotation" "${1:this}" {
+    schedule_id = "${2:schedule_id}"
+    start_date = "${3:start_date}"
+    type = "${4:type}"
+}

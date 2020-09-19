@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sensu_entity
+# key: d_sensu_entity
+# --
+
+data "sensu_entity" "${1:this}" {
+    name = "${2:name}"
+}

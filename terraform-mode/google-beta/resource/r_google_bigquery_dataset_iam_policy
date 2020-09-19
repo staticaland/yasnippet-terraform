@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_bigquery_dataset_iam_policy
+# key: r_google_bigquery_dataset_iam_policy
+# --
+
+resource "google_bigquery_dataset_iam_policy" "${1:this}" {
+    dataset_id = "${2:dataset_id}"
+    policy_data = "${3:policy_data}"
+}

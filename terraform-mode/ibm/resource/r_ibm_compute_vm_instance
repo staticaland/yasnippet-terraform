@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_vm_instance
+# key: r_ibm_compute_vm_instance
+# --
+
+resource "ibm_compute_vm_instance" "${1:this}" {
+}

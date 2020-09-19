@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_internet_service
+# key: r_outscale_internet_service
+# --
+
+resource "outscale_internet_service" "${1:this}" {
+}

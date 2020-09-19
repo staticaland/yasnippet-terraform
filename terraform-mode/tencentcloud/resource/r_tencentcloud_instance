@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_instance
+# key: r_tencentcloud_instance
+# --
+
+resource "tencentcloud_instance" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    image_id = "${3:image_id}"
+}

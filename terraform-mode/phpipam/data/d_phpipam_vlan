@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_phpipam_vlan
+# key: d_phpipam_vlan
+# --
+
+data "phpipam_vlan" "${1:this}" {
+}

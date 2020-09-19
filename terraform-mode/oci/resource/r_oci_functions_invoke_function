@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_functions_invoke_function
+# key: r_oci_functions_invoke_function
+# --
+
+resource "oci_functions_invoke_function" "${1:this}" {
+    function_id = "${2:function_id}"
+}

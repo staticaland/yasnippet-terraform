@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_internet_service
+# key: d_outscale_internet_service
+# --
+
+data "outscale_internet_service" "${1:this}" {
+}

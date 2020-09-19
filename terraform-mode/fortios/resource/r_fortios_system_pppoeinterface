@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_pppoeinterface
+# key: r_fortios_system_pppoeinterface
+# --
+
+resource "fortios_system_pppoeinterface" "${1:this}" {
+    device = "${2:device}"
+}

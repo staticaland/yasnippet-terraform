@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_data_loss_prevention_job_trigger
+# key: r_google_data_loss_prevention_job_trigger
+# --
+
+resource "google_data_loss_prevention_job_trigger" "${1:this}" {
+    parent = "${2:parent}"
+}

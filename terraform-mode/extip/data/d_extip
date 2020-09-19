@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_extip
+# key: d_extip
+# --
+
+data "extip" "${1:this}" {
+}

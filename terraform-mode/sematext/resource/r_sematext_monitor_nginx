@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sematext_monitor_nginx
+# key: r_sematext_monitor_nginx
+# --
+
+resource "sematext_monitor_nginx" "${1:this}" {
+    billing_plan_id = "${2:billing_plan_id}"
+    name = "${3:name}"
+}

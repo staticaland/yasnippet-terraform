@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_graylog_ldap_setting
+# key: r_graylog_ldap_setting
+# --
+
+resource "graylog_ldap_setting" "${1:this}" {
+    default_group = "${2:default_group}"
+    display_name_attribute = "${3:display_name_attribute}"
+    ldap_uri = "${4:ldap_uri}"
+    search_base = "${5:search_base}"
+    search_pattern = "${6:search_pattern}"
+    system_username = "${7:system_username}"
+}

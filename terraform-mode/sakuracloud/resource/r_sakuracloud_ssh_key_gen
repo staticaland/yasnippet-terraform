@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_ssh_key_gen
+# key: r_sakuracloud_ssh_key_gen
+# --
+
+resource "sakuracloud_ssh_key_gen" "${1:this}" {
+    name = "${2:name}"
+}

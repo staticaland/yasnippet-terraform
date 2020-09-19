@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_csf
+# key: r_fortios_system_csf
+# --
+
+resource "fortios_system_csf" "${1:this}" {
+    status = "${2:status}"
+}

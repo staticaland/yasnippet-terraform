@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_argocd_project_token
+# key: r_argocd_project_token
+# --
+
+resource "argocd_project_token" "${1:this}" {
+    project = "${2:project}"
+    role = "${3:role}"
+}

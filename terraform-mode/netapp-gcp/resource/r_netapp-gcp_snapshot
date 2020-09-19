@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_netapp-gcp_snapshot
+# key: r_netapp-gcp_snapshot
+# --
+
+resource "netapp-gcp_snapshot" "${1:this}" {
+    name = "${2:name}"
+    region = "${3:region}"
+}

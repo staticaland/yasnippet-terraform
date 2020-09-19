@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_testing_assertions
+# key: d_testing_assertions
+# --
+
+data "testing_assertions" "${1:this}" {
+}

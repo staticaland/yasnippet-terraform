@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_consul_key_prefix
+# key: r_consul_key_prefix
+# --
+
+resource "consul_key_prefix" "${1:this}" {
+    path_prefix = "${2:path_prefix}"
+}

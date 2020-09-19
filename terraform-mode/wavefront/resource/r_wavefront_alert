@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_alert
+# key: r_wavefront_alert
+# --
+
+resource "wavefront_alert" "${1:this}" {
+    minutes = "${2:minutes}"
+    name = "${3:name}"
+    tags = "${4:tags}"
+}

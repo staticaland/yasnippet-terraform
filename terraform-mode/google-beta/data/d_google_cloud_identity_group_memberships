@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_cloud_identity_group_memberships
+# key: d_google_cloud_identity_group_memberships
+# --
+
+data "google_cloud_identity_group_memberships" "${1:this}" {
+    group = "${2:group}"
+}

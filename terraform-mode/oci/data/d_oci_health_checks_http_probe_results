@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_health_checks_http_probe_results
+# key: d_oci_health_checks_http_probe_results
+# --
+
+data "oci_health_checks_http_probe_results" "${1:this}" {
+    probe_configuration_id = "${2:probe_configuration_id}"
+}

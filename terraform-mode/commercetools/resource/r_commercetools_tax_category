@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_tax_category
+# key: r_commercetools_tax_category
+# --
+
+resource "commercetools_tax_category" "${1:this}" {
+    name = "${2:name}"
+}

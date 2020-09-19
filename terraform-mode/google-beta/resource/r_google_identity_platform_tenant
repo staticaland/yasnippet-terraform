@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_identity_platform_tenant
+# key: r_google_identity_platform_tenant
+# --
+
+resource "google_identity_platform_tenant" "${1:this}" {
+    display_name = "${2:display_name}"
+}

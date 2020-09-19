@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_integration_aws
+# key: r_datadog_integration_aws
+# --
+
+resource "datadog_integration_aws" "${1:this}" {
+    account_id = "${2:account_id}"
+    role_name = "${3:role_name}"
+}

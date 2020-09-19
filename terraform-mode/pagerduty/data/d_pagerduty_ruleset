@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pagerduty_ruleset
+# key: d_pagerduty_ruleset
+# --
+
+data "pagerduty_ruleset" "${1:this}" {
+    name = "${2:name}"
+}

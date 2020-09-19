@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_azure_peer
+# key: r_aviatrix_azure_peer
+# --
+
+resource "aviatrix_azure_peer" "${1:this}" {
+    account_name1 = "${2:account_name1}"
+    account_name2 = "${3:account_name2}"
+    vnet_name_resource_group1 = "${4:vnet_name_resource_group1}"
+    vnet_name_resource_group2 = "${5:vnet_name_resource_group2}"
+    vnet_reg1 = "${6:vnet_reg1}"
+    vnet_reg2 = "${7:vnet_reg2}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_ibm_cis_firewall
+# key: d_ibm_cis_firewall
+# --
+
+data "ibm_cis_firewall" "${1:this}" {
+    cis_id = "${2:cis_id}"
+    domain_id = "${3:domain_id}"
+    firewall_type = "${4:firewall_type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_saml_idp_signing_key
+# key: r_okta_saml_idp_signing_key
+# --
+
+resource "okta_saml_idp_signing_key" "${1:this}" {
+    x5c = "${2:x5c}"
+}

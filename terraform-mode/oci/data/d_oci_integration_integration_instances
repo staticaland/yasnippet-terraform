@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_integration_integration_instances
+# key: d_oci_integration_integration_instances
+# --
+
+data "oci_integration_integration_instances" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

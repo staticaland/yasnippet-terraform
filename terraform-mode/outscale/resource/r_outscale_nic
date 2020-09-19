@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_nic
+# key: r_outscale_nic
+# --
+
+resource "outscale_nic" "${1:this}" {
+    subnet_id = "${2:subnet_id}"
+}

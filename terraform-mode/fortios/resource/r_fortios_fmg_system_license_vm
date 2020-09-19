@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_license_vm
+# key: r_fortios_fmg_system_license_vm
+# --
+
+resource "fortios_fmg_system_license_vm" "${1:this}" {
+    file_content = "${2:file_content}"
+    target = "${3:target}"
+}

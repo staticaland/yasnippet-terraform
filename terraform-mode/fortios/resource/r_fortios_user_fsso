@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_fsso
+# key: r_fortios_user_fsso
+# --
+
+resource "fortios_user_fsso" "${1:this}" {
+    name = "${2:name}"
+    port = "${3:port}"
+    server = "${4:server}"
+}

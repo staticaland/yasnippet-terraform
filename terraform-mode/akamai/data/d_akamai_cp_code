@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_akamai_cp_code
+# key: d_akamai_cp_code
+# --
+
+data "akamai_cp_code" "${1:this}" {
+    contract = "${2:contract}"
+    group = "${3:group}"
+    name = "${4:name}"
+}

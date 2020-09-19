@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_opc_lbaas_listener
+# key: r_opc_lbaas_listener
+# --
+
+resource "opc_lbaas_listener" "${1:this}" {
+    balancer_protocol = "${2:balancer_protocol}"
+    load_balancer = "${3:load_balancer}"
+    name = "${4:name}"
+    port = "${5:port}"
+    server_protocol = "${6:server_protocol}"
+}

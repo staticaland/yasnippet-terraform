@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_selectel_vpc_token_v2
+# key: r_selectel_vpc_token_v2
+# --
+
+resource "selectel_vpc_token_v2" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_lb_app_profile
+# key: d_nsxt_policy_lb_app_profile
+# --
+
+data "nsxt_policy_lb_app_profile" "${1:this}" {
+}

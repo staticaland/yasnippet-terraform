@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_hsm_provider
+# key: r_pingaccess_hsm_provider
+# --
+
+resource "pingaccess_hsm_provider" "${1:this}" {
+    class_name = "${2:class_name}"
+    configuration = "${3:configuration}"
+    name = "${4:name}"
+}

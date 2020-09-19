@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_monitor
+# key: r_sumologic_monitor
+# --
+
+resource "sumologic_monitor" "${1:this}" {
+    description = "${2:description}"
+    monitor_type = "${3:monitor_type}"
+    name = "${4:name}"
+}

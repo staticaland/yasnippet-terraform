@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_vpn_gateway
+# key: r_cosmic_vpn_gateway
+# --
+
+resource "cosmic_vpn_gateway" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

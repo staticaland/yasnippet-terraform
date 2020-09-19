@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_virtual_machine_scale_set
+# key: r_azurestack_virtual_machine_scale_set
+# --
+
+resource "azurestack_virtual_machine_scale_set" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    upgrade_policy_mode = "${5:upgrade_policy_mode}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_data_fusion_instance
+# key: r_google_data_fusion_instance
+# --
+
+resource "google_data_fusion_instance" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

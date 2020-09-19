@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_container_cluster_feature
+# key: r_ibm_container_cluster_feature
+# --
+
+resource "ibm_container_cluster_feature" "${1:this}" {
+    cluster = "${2:cluster}"
+}

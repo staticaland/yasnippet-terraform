@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ovh_vps
+# key: d_ovh_vps
+# --
+
+data "ovh_vps" "${1:this}" {
+    service_name = "${2:service_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_s3_bucket_policy
+# key: r_opentelekomcloud_s3_bucket_policy
+# --
+
+resource "opentelekomcloud_s3_bucket_policy" "${1:this}" {
+    bucket = "${2:bucket}"
+    policy = "${3:policy}"
+}

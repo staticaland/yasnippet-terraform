@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_api_keys
+# key: d_oci_identity_api_keys
+# --
+
+data "oci_identity_api_keys" "${1:this}" {
+    user_id = "${2:user_id}"
+}

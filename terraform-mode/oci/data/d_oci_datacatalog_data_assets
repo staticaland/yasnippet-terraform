@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_datacatalog_data_assets
+# key: d_oci_datacatalog_data_assets
+# --
+
+data "oci_datacatalog_data_assets" "${1:this}" {
+    catalog_id = "${2:catalog_id}"
+}

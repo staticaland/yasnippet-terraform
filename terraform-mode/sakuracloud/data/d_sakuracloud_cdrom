@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_cdrom
+# key: d_sakuracloud_cdrom
+# --
+
+data "sakuracloud_cdrom" "${1:this}" {
+}

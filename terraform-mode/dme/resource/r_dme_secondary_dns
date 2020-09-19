@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_dme_secondary_dns
+# key: r_dme_secondary_dns
+# --
+
+resource "dme_secondary_dns" "${1:this}" {
+    ipset_id = "${2:ipset_id}"
+    name = "${3:name}"
+}

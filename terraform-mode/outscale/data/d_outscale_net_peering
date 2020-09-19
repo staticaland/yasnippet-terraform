@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_net_peering
+# key: d_outscale_net_peering
+# --
+
+data "outscale_net_peering" "${1:this}" {
+}

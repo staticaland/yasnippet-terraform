@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_net_peering
+# key: r_outscale_net_peering
+# --
+
+resource "outscale_net_peering" "${1:this}" {
+    accepter_net_id = "${2:accepter_net_id}"
+    source_net_id = "${3:source_net_id}"
+}

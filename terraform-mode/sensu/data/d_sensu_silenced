@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_sensu_silenced
+# key: d_sensu_silenced
+# --
+
+data "sensu_silenced" "${1:this}" {
+    check = "${2:check}"
+    subscription = "${3:subscription}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_cross_connect_port_speed_shapes
+# key: d_oci_core_cross_connect_port_speed_shapes
+# --
+
+data "oci_core_cross_connect_port_speed_shapes" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

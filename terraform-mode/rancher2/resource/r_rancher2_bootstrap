@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_bootstrap
+# key: r_rancher2_bootstrap
+# --
+
+resource "rancher2_bootstrap" "${1:this}" {
+}

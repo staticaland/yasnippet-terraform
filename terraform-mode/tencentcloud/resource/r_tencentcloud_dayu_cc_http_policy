@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dayu_cc_http_policy
+# key: r_tencentcloud_dayu_cc_http_policy
+# --
+
+resource "tencentcloud_dayu_cc_http_policy" "${1:this}" {
+    name = "${2:name}"
+    resource_id = "${3:resource_id}"
+    resource_type = "${4:resource_type}"
+}

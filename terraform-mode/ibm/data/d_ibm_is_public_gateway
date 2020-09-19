@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_public_gateway
+# key: d_ibm_is_public_gateway
+# --
+
+data "ibm_is_public_gateway" "${1:this}" {
+    name = "${2:name}"
+}

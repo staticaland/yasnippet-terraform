@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_nat_gateways
+# key: d_oci_core_nat_gateways
+# --
+
+data "oci_core_nat_gateways" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

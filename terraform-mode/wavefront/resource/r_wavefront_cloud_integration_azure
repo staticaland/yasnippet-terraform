@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_azure
+# key: r_wavefront_cloud_integration_azure
+# --
+
+resource "wavefront_cloud_integration_azure" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret = "${3:client_secret}"
+    name = "${4:name}"
+    tenant = "${5:tenant}"
+}

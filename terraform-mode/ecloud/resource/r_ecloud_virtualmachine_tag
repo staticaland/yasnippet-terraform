@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ecloud_virtualmachine_tag
+# key: r_ecloud_virtualmachine_tag
+# --
+
+resource "ecloud_virtualmachine_tag" "${1:this}" {
+    key = "${2:key}"
+    value = "${3:value}"
+    virtualmachine_id = "${4:virtualmachine_id}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_autoscale_group
+# key: r_ibm_compute_autoscale_group
+# --
+
+resource "ibm_compute_autoscale_group" "${1:this}" {
+    cooldown = "${2:cooldown}"
+    maximum_member_count = "${3:maximum_member_count}"
+    minimum_member_count = "${4:minimum_member_count}"
+    name = "${5:name}"
+    regional_group = "${6:regional_group}"
+    termination_policy = "${7:termination_policy}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_packet_device_network_type
+# key: r_packet_device_network_type
+# --
+
+resource "packet_device_network_type" "${1:this}" {
+    device_id = "${2:device_id}"
+    type = "${3:type}"
+}

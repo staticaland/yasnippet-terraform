@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webproxy_debugurl
+# key: r_fortios_webproxy_debugurl
+# --
+
+resource "fortios_webproxy_debugurl" "${1:this}" {
+    url_pattern = "${2:url_pattern}"
+}

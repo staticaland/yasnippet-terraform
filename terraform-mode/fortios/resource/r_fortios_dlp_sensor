@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_dlp_sensor
+# key: r_fortios_dlp_sensor
+# --
+
+resource "fortios_dlp_sensor" "${1:this}" {
+    name = "${2:name}"
+}

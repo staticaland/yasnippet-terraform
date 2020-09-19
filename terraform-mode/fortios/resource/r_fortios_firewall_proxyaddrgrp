@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_proxyaddrgrp
+# key: r_fortios_firewall_proxyaddrgrp
+# --
+
+resource "fortios_firewall_proxyaddrgrp" "${1:this}" {
+}

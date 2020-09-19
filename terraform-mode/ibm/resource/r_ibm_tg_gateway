@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_tg_gateway
+# key: r_ibm_tg_gateway
+# --
+
+resource "ibm_tg_gateway" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+}

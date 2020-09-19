@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_tunnel
+# key: r_aviatrix_tunnel
+# --
+
+resource "aviatrix_tunnel" "${1:this}" {
+    gw_name1 = "${2:gw_name1}"
+    gw_name2 = "${3:gw_name2}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_kafka_topic
+# key: r_kafka_topic
+# --
+
+resource "kafka_topic" "${1:this}" {
+    name = "${2:name}"
+    partitions = "${3:partitions}"
+    replication_factor = "${4:replication_factor}"
+}

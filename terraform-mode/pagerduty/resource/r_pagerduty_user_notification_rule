@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_user_notification_rule
+# key: r_pagerduty_user_notification_rule
+# --
+
+resource "pagerduty_user_notification_rule" "${1:this}" {
+    contact_method = "${2:contact_method}"
+    start_delay_in_minutes = "${3:start_delay_in_minutes}"
+    urgency = "${4:urgency}"
+    user_id = "${5:user_id}"
+}

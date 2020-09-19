@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_space_users
+# key: r_cloudfoundry_space_users
+# --
+
+resource "cloudfoundry_space_users" "${1:this}" {
+    space = "${2:space}"
+}

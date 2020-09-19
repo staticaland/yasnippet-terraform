@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_virtual_network
+# key: r_azurestack_virtual_network
+# --
+
+resource "azurestack_virtual_network" "${1:this}" {
+    address_space = "${2:address_space}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+}

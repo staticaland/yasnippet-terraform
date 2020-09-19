@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_proxyarp
+# key: r_fortios_system_proxyarp
+# --
+
+resource "fortios_system_proxyarp" "${1:this}" {
+    fosid = "${2:fosid}"
+    interface = "${3:interface}"
+    ip = "${4:ip}"
+}

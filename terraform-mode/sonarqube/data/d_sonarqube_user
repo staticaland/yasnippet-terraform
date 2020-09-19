@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sonarqube_user
+# key: d_sonarqube_user
+# --
+
+data "sonarqube_user" "${1:this}" {
+    email = "${2:email}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_dns_domain_attachment
+# key: r_alicloud_dns_domain_attachment
+# --
+
+resource "alicloud_dns_domain_attachment" "${1:this}" {
+    domain_names = "${2:domain_names}"
+    instance_id = "${3:instance_id}"
+}

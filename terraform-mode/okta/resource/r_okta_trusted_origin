@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_okta_trusted_origin
+# key: r_okta_trusted_origin
+# --
+
+resource "okta_trusted_origin" "${1:this}" {
+    name = "${2:name}"
+    origin = "${3:origin}"
+    scopes = "${4:scopes}"
+}

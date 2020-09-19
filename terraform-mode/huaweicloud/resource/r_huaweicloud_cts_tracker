@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cts_tracker
+# key: r_huaweicloud_cts_tracker
+# --
+
+resource "huaweicloud_cts_tracker" "${1:this}" {
+    bucket_name = "${2:bucket_name}"
+    is_send_all_key_operation = "${3:is_send_all_key_operation}"
+    is_support_smn = "${4:is_support_smn}"
+    operations = "${5:operations}"
+    topic_id = "${6:topic_id}"
+}

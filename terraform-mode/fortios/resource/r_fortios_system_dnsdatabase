@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_dnsdatabase
+# key: r_fortios_system_dnsdatabase
+# --
+
+resource "fortios_system_dnsdatabase" "${1:this}" {
+    authoritative = "${2:authoritative}"
+    domain = "${3:domain}"
+    name = "${4:name}"
+    ttl = "${5:ttl}"
+    type = "${6:type}"
+    view = "${7:view}"
+}

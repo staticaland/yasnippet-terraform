@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_civo_dns_domain_name
+# key: d_civo_dns_domain_name
+# --
+
+data "civo_dns_domain_name" "${1:this}" {
+}

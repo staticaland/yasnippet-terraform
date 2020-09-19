@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_compute_image_capability_schema
+# key: r_oci_core_compute_image_capability_schema
+# --
+
+resource "oci_core_compute_image_capability_schema" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    compute_global_image_capability_schema_version_name = "${3:compute_global_image_capability_schema_version_name}"
+    image_id = "${4:image_id}"
+    schema_data = "${5:schema_data}"
+}

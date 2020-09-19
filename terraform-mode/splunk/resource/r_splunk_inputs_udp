@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_udp
+# key: r_splunk_inputs_udp
+# --
+
+resource "splunk_inputs_udp" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_nic
+# key: r_cosmic_nic
+# --
+
+resource "cosmic_nic" "${1:this}" {
+    network_id = "${2:network_id}"
+    virtual_machine_id = "${3:virtual_machine_id}"
+}

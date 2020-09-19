@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_databricks_job
+# key: r_databricks_job
+# --
+
+resource "databricks_job" "${1:this}" {
+}

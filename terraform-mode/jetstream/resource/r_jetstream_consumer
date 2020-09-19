@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jetstream_consumer
+# key: r_jetstream_consumer
+# --
+
+resource "jetstream_consumer" "${1:this}" {
+    durable_name = "${2:durable_name}"
+    stream_id = "${3:stream_id}"
+}

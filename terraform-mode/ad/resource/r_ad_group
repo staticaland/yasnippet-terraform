@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ad_group
+# key: r_ad_group
+# --
+
+resource "ad_group" "${1:this}" {
+    container = "${2:container}"
+    name = "${3:name}"
+    sam_account_name = "${4:sam_account_name}"
+}

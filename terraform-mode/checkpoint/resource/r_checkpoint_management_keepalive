@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_keepalive
+# key: r_checkpoint_management_keepalive
+# --
+
+resource "checkpoint_management_keepalive" "${1:this}" {
+}

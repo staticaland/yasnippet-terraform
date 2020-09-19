@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_databricks_group
+# key: r_databricks_group
+# --
+
+resource "databricks_group" "${1:this}" {
+    display_name = "${2:display_name}"
+}

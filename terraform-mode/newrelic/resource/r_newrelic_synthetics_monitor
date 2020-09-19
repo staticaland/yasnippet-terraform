@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_synthetics_monitor
+# key: r_newrelic_synthetics_monitor
+# --
+
+resource "newrelic_synthetics_monitor" "${1:this}" {
+    frequency = "${2:frequency}"
+    locations = "${3:locations}"
+    name = "${4:name}"
+    status = "${5:status}"
+    type = "${6:type}"
+}

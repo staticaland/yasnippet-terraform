@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_shape_management
+# key: r_oci_core_shape_management
+# --
+
+resource "oci_core_shape_management" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    image_id = "${3:image_id}"
+    shape_name = "${4:shape_name}"
+}

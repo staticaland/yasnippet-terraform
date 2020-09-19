@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_container_vpc_alb
+# key: r_ibm_container_vpc_alb
+# --
+
+resource "ibm_container_vpc_alb" "${1:this}" {
+    alb_id = "${2:alb_id}"
+}

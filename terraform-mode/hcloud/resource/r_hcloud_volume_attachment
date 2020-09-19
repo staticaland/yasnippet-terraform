@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_volume_attachment
+# key: r_hcloud_volume_attachment
+# --
+
+resource "hcloud_volume_attachment" "${1:this}" {
+    server_id = "${2:server_id}"
+    volume_id = "${3:volume_id}"
+}

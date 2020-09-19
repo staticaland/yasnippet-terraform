@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_phpipam_address
+# key: d_phpipam_address
+# --
+
+data "phpipam_address" "${1:this}" {
+}

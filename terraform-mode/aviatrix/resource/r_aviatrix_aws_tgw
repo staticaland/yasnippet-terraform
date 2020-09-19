@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw
+# key: r_aviatrix_aws_tgw
+# --
+
+resource "aviatrix_aws_tgw" "${1:this}" {
+    account_name = "${2:account_name}"
+    aws_side_as_number = "${3:aws_side_as_number}"
+    region = "${4:region}"
+    tgw_name = "${5:tgw_name}"
+}

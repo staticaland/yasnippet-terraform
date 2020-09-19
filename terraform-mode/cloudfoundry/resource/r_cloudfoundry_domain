@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_domain
+# key: r_cloudfoundry_domain
+# --
+
+resource "cloudfoundry_domain" "${1:this}" {
+}

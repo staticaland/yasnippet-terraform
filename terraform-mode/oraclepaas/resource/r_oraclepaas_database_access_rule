@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_oraclepaas_database_access_rule
+# key: r_oraclepaas_database_access_rule
+# --
+
+resource "oraclepaas_database_access_rule" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+    ports = "${4:ports}"
+    service_instance_id = "${5:service_instance_id}"
+    source = "${6:source}"
+}

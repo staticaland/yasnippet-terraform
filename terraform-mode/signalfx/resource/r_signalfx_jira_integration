@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_jira_integration
+# key: r_signalfx_jira_integration
+# --
+
+resource "signalfx_jira_integration" "${1:this}" {
+    assignee_name = "${2:assignee_name}"
+    auth_method = "${3:auth_method}"
+    base_url = "${4:base_url}"
+    enabled = "${5:enabled}"
+    issue_type = "${6:issue_type}"
+    name = "${7:name}"
+    project_key = "${8:project_key}"
+}

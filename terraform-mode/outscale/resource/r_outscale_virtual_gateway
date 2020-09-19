@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_virtual_gateway
+# key: r_outscale_virtual_gateway
+# --
+
+resource "outscale_virtual_gateway" "${1:this}" {
+    connection_type = "${2:connection_type}"
+}

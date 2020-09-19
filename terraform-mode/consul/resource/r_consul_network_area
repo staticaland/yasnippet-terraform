@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_consul_network_area
+# key: r_consul_network_area
+# --
+
+resource "consul_network_area" "${1:this}" {
+    peer_datacenter = "${2:peer_datacenter}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_rbac_group_permission_attachment
+# key: r_aviatrix_rbac_group_permission_attachment
+# --
+
+resource "aviatrix_rbac_group_permission_attachment" "${1:this}" {
+    group_name = "${2:group_name}"
+    permission_name = "${3:permission_name}"
+}

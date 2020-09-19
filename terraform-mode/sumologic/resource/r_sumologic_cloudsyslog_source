@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_cloudsyslog_source
+# key: r_sumologic_cloudsyslog_source
+# --
+
+resource "sumologic_cloudsyslog_source" "${1:this}" {
+    collector_id = "${2:collector_id}"
+    name = "${3:name}"
+}

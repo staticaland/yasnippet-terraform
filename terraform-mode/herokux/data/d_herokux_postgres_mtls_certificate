@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_herokux_postgres_mtls_certificate
+# key: d_herokux_postgres_mtls_certificate
+# --
+
+data "herokux_postgres_mtls_certificate" "${1:this}" {
+    cert_id = "${2:cert_id}"
+    database_name = "${3:database_name}"
+}

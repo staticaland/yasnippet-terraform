@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lbaas
+# key: r_ibm_lbaas
+# --
+
+resource "ibm_lbaas" "${1:this}" {
+    name = "${2:name}"
+    subnets = "${3:subnets}"
+}

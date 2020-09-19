@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_as_scaling_policy
+# key: r_tencentcloud_as_scaling_policy
+# --
+
+resource "tencentcloud_as_scaling_policy" "${1:this}" {
+    adjustment_type = "${2:adjustment_type}"
+    adjustment_value = "${3:adjustment_value}"
+    comparison_operator = "${4:comparison_operator}"
+    continuous_time = "${5:continuous_time}"
+    metric_name = "${6:metric_name}"
+    period = "${7:period}"
+    policy_name = "${8:policy_name}"
+    scaling_group_id = "${9:scaling_group_id}"
+    threshold = "${10:threshold}"
+}

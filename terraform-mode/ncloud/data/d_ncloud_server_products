@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_server_products
+# key: d_ncloud_server_products
+# --
+
+data "ncloud_server_products" "${1:this}" {
+    server_image_product_code = "${2:server_image_product_code}"
+}

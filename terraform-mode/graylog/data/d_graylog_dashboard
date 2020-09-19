@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_graylog_dashboard
+# key: d_graylog_dashboard
+# --
+
+data "graylog_dashboard" "${1:this}" {
+}

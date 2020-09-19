@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_akamai_dns_record_set
+# key: d_akamai_dns_record_set
+# --
+
+data "akamai_dns_record_set" "${1:this}" {
+    host = "${2:host}"
+    record_type = "${3:record_type}"
+    zone = "${4:zone}"
+}

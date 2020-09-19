@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_isolation_segment_entitlement
+# key: r_cloudfoundry_isolation_segment_entitlement
+# --
+
+resource "cloudfoundry_isolation_segment_entitlement" "${1:this}" {
+    orgs = "${2:orgs}"
+    segment = "${3:segment}"
+}

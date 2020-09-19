@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_compute_interface_attach
+# key: r_huaweicloud_compute_interface_attach
+# --
+
+resource "huaweicloud_compute_interface_attach" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

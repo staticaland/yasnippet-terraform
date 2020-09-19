@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_mongodb_standby_instance
+# key: r_tencentcloud_mongodb_standby_instance
+# --
+
+resource "tencentcloud_mongodb_standby_instance" "${1:this}" {
+    available_zone = "${2:available_zone}"
+    father_instance_id = "${3:father_instance_id}"
+    father_instance_region = "${4:father_instance_region}"
+    instance_name = "${5:instance_name}"
+    memory = "${6:memory}"
+    volume = "${7:volume}"
+}

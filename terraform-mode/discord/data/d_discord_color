@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_discord_color
+# key: d_discord_color
+# --
+
+data "discord_color" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_victorops_contact
+# key: r_victorops_contact
+# --
+
+resource "victorops_contact" "${1:this}" {
+    label = "${2:label}"
+    type = "${3:type}"
+    user_name = "${4:user_name}"
+    value = "${5:value}"
+}

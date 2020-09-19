@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_network_acl
+# key: r_flexibleengine_network_acl
+# --
+
+resource "flexibleengine_network_acl" "${1:this}" {
+    name = "${2:name}"
+}

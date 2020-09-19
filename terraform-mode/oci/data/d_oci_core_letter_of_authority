@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_letter_of_authority
+# key: d_oci_core_letter_of_authority
+# --
+
+data "oci_core_letter_of_authority" "${1:this}" {
+    cross_connect_id = "${2:cross_connect_id}"
+}

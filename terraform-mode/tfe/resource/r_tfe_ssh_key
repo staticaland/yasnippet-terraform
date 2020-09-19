@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tfe_ssh_key
+# key: r_tfe_ssh_key
+# --
+
+resource "tfe_ssh_key" "${1:this}" {
+    key = "${2:key}"
+    name = "${3:name}"
+    organization = "${4:organization}"
+}

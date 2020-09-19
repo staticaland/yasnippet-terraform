@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_set_global_domain
+# key: r_checkpoint_management_set_global_domain
+# --
+
+resource "checkpoint_management_set_global_domain" "${1:this}" {
+    name = "${2:name}"
+}

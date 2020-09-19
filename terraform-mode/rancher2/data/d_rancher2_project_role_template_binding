@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_project_role_template_binding
+# key: d_rancher2_project_role_template_binding
+# --
+
+data "rancher2_project_role_template_binding" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

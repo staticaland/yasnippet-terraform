@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_graylog_event_notification
+# key: r_graylog_event_notification
+# --
+
+resource "graylog_event_notification" "${1:this}" {
+    config = "${2:config}"
+    title = "${3:title}"
+}

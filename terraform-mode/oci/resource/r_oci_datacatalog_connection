@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_oci_datacatalog_connection
+# key: r_oci_datacatalog_connection
+# --
+
+resource "oci_datacatalog_connection" "${1:this}" {
+    catalog_id = "${2:catalog_id}"
+    data_asset_key = "${3:data_asset_key}"
+    display_name = "${4:display_name}"
+    properties = "${5:properties}"
+    type_key = "${6:type_key}"
+}

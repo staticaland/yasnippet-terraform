@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_network_peering
+# key: d_mongodbatlas_network_peering
+# --
+
+data "mongodbatlas_network_peering" "${1:this}" {
+    peering_id = "${2:peering_id}"
+    project_id = "${3:project_id}"
+}

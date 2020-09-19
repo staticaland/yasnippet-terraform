@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_api_gateway
+# key: d_ibm_api_gateway
+# --
+
+data "ibm_api_gateway" "${1:this}" {
+    service_instance_crn = "${2:service_instance_crn}"
+}

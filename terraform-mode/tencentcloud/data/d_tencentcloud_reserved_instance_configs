@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_reserved_instance_configs
+# key: d_tencentcloud_reserved_instance_configs
+# --
+
+data "tencentcloud_reserved_instance_configs" "${1:this}" {
+}

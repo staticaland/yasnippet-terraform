@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_gaap_proxies
+# key: d_tencentcloud_gaap_proxies
+# --
+
+data "tencentcloud_gaap_proxies" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_log_syslog_setting
+# key: r_fortios_log_syslog_setting
+# --
+
+resource "fortios_log_syslog_setting" "${1:this}" {
+    status = "${2:status}"
+}

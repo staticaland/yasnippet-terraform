@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_edas_deploy_groups
+# key: d_alicloud_edas_deploy_groups
+# --
+
+data "alicloud_edas_deploy_groups" "${1:this}" {
+    app_id = "${2:app_id}"
+}

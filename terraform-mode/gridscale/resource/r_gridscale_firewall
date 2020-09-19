@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_firewall
+# key: r_gridscale_firewall
+# --
+
+resource "gridscale_firewall" "${1:this}" {
+    name = "${2:name}"
+}

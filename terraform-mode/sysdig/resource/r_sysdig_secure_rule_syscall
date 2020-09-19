@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_rule_syscall
+# key: r_sysdig_secure_rule_syscall
+# --
+
+resource "sysdig_secure_rule_syscall" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

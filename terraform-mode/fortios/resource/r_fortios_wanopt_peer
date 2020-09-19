@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_peer
+# key: r_fortios_wanopt_peer
+# --
+
+resource "fortios_wanopt_peer" "${1:this}" {
+}

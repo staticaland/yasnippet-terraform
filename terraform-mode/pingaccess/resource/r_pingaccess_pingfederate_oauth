@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_pingfederate_oauth
+# key: r_pingaccess_pingfederate_oauth
+# --
+
+resource "pingaccess_pingfederate_oauth" "${1:this}" {
+    client_id = "${2:client_id}"
+    subject_attribute_name = "${3:subject_attribute_name}"
+}

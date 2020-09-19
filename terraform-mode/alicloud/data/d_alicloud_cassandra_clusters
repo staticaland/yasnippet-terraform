@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cassandra_clusters
+# key: d_alicloud_cassandra_clusters
+# --
+
+data "alicloud_cassandra_clusters" "${1:this}" {
+}

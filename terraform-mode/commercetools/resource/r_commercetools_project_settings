@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_project_settings
+# key: r_commercetools_project_settings
+# --
+
+resource "commercetools_project_settings" "${1:this}" {
+}

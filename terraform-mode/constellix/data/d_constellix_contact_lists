@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_contact_lists
+# key: d_constellix_contact_lists
+# --
+
+data "constellix_contact_lists" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_trusted_certificate_group
+# key: r_pingaccess_trusted_certificate_group
+# --
+
+resource "pingaccess_trusted_certificate_group" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_evg
+# key: r_cloudfoundry_evg
+# --
+
+resource "cloudfoundry_evg" "${1:this}" {
+    name = "${2:name}"
+    variables = "${3:variables}"
+}

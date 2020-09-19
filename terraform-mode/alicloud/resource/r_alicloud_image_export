@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_image_export
+# key: r_alicloud_image_export
+# --
+
+resource "alicloud_image_export" "${1:this}" {
+    image_id = "${2:image_id}"
+    oss_bucket = "${3:oss_bucket}"
+}

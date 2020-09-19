@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_storage_attachment
+# key: r_opc_compute_storage_attachment
+# --
+
+resource "opc_compute_storage_attachment" "${1:this}" {
+    index = "${2:index}"
+    instance = "${3:instance}"
+    storage_volume = "${4:storage_volume}"
+}

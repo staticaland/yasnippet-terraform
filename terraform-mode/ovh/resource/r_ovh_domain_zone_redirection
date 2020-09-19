@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_domain_zone_redirection
+# key: r_ovh_domain_zone_redirection
+# --
+
+resource "ovh_domain_zone_redirection" "${1:this}" {
+    target = "${2:target}"
+    type = "${3:type}"
+    zone = "${4:zone}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_datadog_logs_custom_pipeline
+# key: r_datadog_logs_custom_pipeline
+# --
+
+resource "datadog_logs_custom_pipeline" "${1:this}" {
+    name = "${2:name}"
+}

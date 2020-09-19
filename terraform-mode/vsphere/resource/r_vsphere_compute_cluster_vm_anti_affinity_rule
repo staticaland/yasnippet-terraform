@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_compute_cluster_vm_anti_affinity_rule
+# key: r_vsphere_compute_cluster_vm_anti_affinity_rule
+# --
+
+resource "vsphere_compute_cluster_vm_anti_affinity_rule" "${1:this}" {
+    compute_cluster_id = "${2:compute_cluster_id}"
+    name = "${3:name}"
+    virtual_machine_ids = "${4:virtual_machine_ids}"
+}

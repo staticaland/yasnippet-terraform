@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_tags
+# key: d_digitalocean_tags
+# --
+
+data "digitalocean_tags" "${1:this}" {
+}

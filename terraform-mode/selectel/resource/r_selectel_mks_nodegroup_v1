@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_selectel_mks_nodegroup_v1
+# key: r_selectel_mks_nodegroup_v1
+# --
+
+resource "selectel_mks_nodegroup_v1" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    cluster_id = "${3:cluster_id}"
+    nodes_count = "${4:nodes_count}"
+    project_id = "${5:project_id}"
+    region = "${6:region}"
+}

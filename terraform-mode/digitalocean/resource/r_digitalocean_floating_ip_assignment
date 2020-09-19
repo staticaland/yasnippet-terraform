@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_floating_ip_assignment
+# key: r_digitalocean_floating_ip_assignment
+# --
+
+resource "digitalocean_floating_ip_assignment" "${1:this}" {
+    droplet_id = "${2:droplet_id}"
+    ip_address = "${3:ip_address}"
+}

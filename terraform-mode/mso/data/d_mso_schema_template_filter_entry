@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_filter_entry
+# key: d_mso_schema_template_filter_entry
+# --
+
+data "mso_schema_template_filter_entry" "${1:this}" {
+    entry_name = "${2:entry_name}"
+    name = "${3:name}"
+    schema_id = "${4:schema_id}"
+    template_name = "${5:template_name}"
+}

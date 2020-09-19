@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_objectstorage_namespace_metadata
+# key: r_oci_objectstorage_namespace_metadata
+# --
+
+resource "oci_objectstorage_namespace_metadata" "${1:this}" {
+    namespace = "${2:namespace}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_data_catalog_tag
+# key: r_google_data_catalog_tag
+# --
+
+resource "google_data_catalog_tag" "${1:this}" {
+    template = "${2:template}"
+}

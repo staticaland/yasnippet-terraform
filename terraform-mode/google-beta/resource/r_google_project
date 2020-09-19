@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_project
+# key: r_google_project
+# --
+
+resource "google_project" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

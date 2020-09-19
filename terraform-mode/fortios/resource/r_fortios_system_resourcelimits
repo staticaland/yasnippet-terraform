@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_resourcelimits
+# key: r_fortios_system_resourcelimits
+# --
+
+resource "fortios_system_resourcelimits" "${1:this}" {
+}

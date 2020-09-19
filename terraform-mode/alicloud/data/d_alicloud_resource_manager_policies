@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_resource_manager_policies
+# key: d_alicloud_resource_manager_policies
+# --
+
+data "alicloud_resource_manager_policies" "${1:this}" {
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_dns_a_record
+# key: r_azurestack_dns_a_record
+# --
+
+resource "azurestack_dns_a_record" "${1:this}" {
+    name = "${2:name}"
+    records = "${3:records}"
+    resource_group_name = "${4:resource_group_name}"
+    ttl = "${5:ttl}"
+    zone_name = "${6:zone_name}"
+}

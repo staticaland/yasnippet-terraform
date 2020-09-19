@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opc_lbaas_server_pool
+# key: r_opc_lbaas_server_pool
+# --
+
+resource "opc_lbaas_server_pool" "${1:this}" {
+    load_balancer = "${2:load_balancer}"
+    name = "${3:name}"
+    servers = "${4:servers}"
+}

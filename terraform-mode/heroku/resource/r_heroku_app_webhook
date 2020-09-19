@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_heroku_app_webhook
+# key: r_heroku_app_webhook
+# --
+
+resource "heroku_app_webhook" "${1:this}" {
+    app_id = "${2:app_id}"
+    include = "${3:include}"
+    level = "${4:level}"
+    url = "${5:url}"
+}

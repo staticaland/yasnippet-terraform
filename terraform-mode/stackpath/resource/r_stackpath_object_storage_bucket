@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_stackpath_object_storage_bucket
+# key: r_stackpath_object_storage_bucket
+# --
+
+resource "stackpath_object_storage_bucket" "${1:this}" {
+    label = "${2:label}"
+    region = "${3:region}"
+}

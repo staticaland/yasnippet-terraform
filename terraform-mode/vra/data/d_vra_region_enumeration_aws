@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vra_region_enumeration_aws
+# key: d_vra_region_enumeration_aws
+# --
+
+data "vra_region_enumeration_aws" "${1:this}" {
+    secret_key = "${2:secret_key}"
+}

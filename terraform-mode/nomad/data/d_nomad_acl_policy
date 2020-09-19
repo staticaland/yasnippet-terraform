@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_nomad_acl_policy
+# key: d_nomad_acl_policy
+# --
+
+data "nomad_acl_policy" "${1:this}" {
+    name = "${2:name}"
+}

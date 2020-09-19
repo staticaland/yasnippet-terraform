@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_user_property_protocol_mapper
+# key: r_keycloak_openid_user_property_protocol_mapper
+# --
+
+resource "keycloak_openid_user_property_protocol_mapper" "${1:this}" {
+    claim_name = "${2:claim_name}"
+    name = "${3:name}"
+    realm_id = "${4:realm_id}"
+    user_property = "${5:user_property}"
+}

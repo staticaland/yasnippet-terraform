@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_constellix_http_check
+# key: r_constellix_http_check
+# --
+
+resource "constellix_http_check" "${1:this}" {
+    check_sites = "${2:check_sites}"
+    host = "${3:host}"
+    ip_version = "${4:ip_version}"
+    port = "${5:port}"
+    protocol_type = "${6:protocol_type}"
+}

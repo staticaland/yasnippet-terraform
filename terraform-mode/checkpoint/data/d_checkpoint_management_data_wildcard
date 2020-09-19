@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_wildcard
+# key: d_checkpoint_management_data_wildcard
+# --
+
+data "checkpoint_management_data_wildcard" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_xpack_role_mapping
+# key: r_elasticsearch_xpack_role_mapping
+# --
+
+resource "elasticsearch_xpack_role_mapping" "${1:this}" {
+    role_mapping_name = "${2:role_mapping_name}"
+    roles = "${3:roles}"
+    rules = "${4:rules}"
+}

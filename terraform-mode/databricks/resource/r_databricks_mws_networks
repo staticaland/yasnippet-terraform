@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_databricks_mws_networks
+# key: r_databricks_mws_networks
+# --
+
+resource "databricks_mws_networks" "${1:this}" {
+    account_id = "${2:account_id}"
+    network_name = "${3:network_name}"
+    security_group_ids = "${4:security_group_ids}"
+    subnet_ids = "${5:subnet_ids}"
+    vpc_id = "${6:vpc_id}"
+}

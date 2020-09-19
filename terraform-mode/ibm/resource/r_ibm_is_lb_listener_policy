@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_lb_listener_policy
+# key: r_ibm_is_lb_listener_policy
+# --
+
+resource "ibm_is_lb_listener_policy" "${1:this}" {
+    action = "${2:action}"
+    lb = "${3:lb}"
+    listener = "${4:listener}"
+    priority = "${5:priority}"
+}

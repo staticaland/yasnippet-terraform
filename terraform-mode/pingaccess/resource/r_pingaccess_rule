@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_rule
+# key: r_pingaccess_rule
+# --
+
+resource "pingaccess_rule" "${1:this}" {
+    class_name = "${2:class_name}"
+    configuration = "${3:configuration}"
+    name = "${4:name}"
+}

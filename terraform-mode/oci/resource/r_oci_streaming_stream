@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_streaming_stream
+# key: r_oci_streaming_stream
+# --
+
+resource "oci_streaming_stream" "${1:this}" {
+    name = "${2:name}"
+    partitions = "${3:partitions}"
+}

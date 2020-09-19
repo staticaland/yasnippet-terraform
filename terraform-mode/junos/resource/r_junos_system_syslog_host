@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_system_syslog_host
+# key: r_junos_system_syslog_host
+# --
+
+resource "junos_system_syslog_host" "${1:this}" {
+    host = "${2:host}"
+}

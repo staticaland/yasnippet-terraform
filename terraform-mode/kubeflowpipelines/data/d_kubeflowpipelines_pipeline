@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_kubeflowpipelines_pipeline
+# key: d_kubeflowpipelines_pipeline
+# --
+
+data "kubeflowpipelines_pipeline" "${1:this}" {
+}

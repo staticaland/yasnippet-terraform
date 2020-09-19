@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sdm_account_grant
+# key: d_sdm_account_grant
+# --
+
+data "sdm_account_grant" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logmemory_globalsetting
+# key: r_fortios_logmemory_globalsetting
+# --
+
+resource "fortios_logmemory_globalsetting" "${1:this}" {
+}

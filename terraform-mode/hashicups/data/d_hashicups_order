@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hashicups_order
+# key: d_hashicups_order
+# --
+
+data "hashicups_order" "${1:this}" {
+    id = "${2:id}"
+}

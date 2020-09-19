@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_civo_snapshot
+# key: r_civo_snapshot
+# --
+
+resource "civo_snapshot" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    name = "${3:name}"
+}

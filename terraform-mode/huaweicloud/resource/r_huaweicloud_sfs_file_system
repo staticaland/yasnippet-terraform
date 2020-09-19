@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_sfs_file_system
+# key: r_huaweicloud_sfs_file_system
+# --
+
+resource "huaweicloud_sfs_file_system" "${1:this}" {
+    size = "${2:size}"
+}

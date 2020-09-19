@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linode_stackscript
+# key: d_linode_stackscript
+# --
+
+data "linode_stackscript" "${1:this}" {
+    id = "${2:id}"
+}

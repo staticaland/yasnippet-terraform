@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_statuscake_ssl
+# key: r_statuscake_ssl
+# --
+
+resource "statuscake_ssl" "${1:this}" {
+    alert_at = "${2:alert_at}"
+    alert_broken = "${3:alert_broken}"
+    alert_expiry = "${4:alert_expiry}"
+    alert_mixed = "${5:alert_mixed}"
+    alert_reminder = "${6:alert_reminder}"
+    checkrate = "${7:checkrate}"
+    domain = "${8:domain}"
+}

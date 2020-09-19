@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_antivirus_heuristic
+# key: r_fortios_antivirus_heuristic
+# --
+
+resource "fortios_antivirus_heuristic" "${1:this}" {
+}

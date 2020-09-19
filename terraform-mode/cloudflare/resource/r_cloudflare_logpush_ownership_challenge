@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_logpush_ownership_challenge
+# key: r_cloudflare_logpush_ownership_challenge
+# --
+
+resource "cloudflare_logpush_ownership_challenge" "${1:this}" {
+    destination_conf = "${2:destination_conf}"
+    zone_id = "${3:zone_id}"
+}

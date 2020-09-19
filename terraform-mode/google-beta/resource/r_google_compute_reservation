@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_reservation
+# key: r_google_compute_reservation
+# --
+
+resource "google_compute_reservation" "${1:this}" {
+    name = "${2:name}"
+    zone = "${3:zone}"
+}

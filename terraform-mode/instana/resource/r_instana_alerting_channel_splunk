@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_splunk
+# key: r_instana_alerting_channel_splunk
+# --
+
+resource "instana_alerting_channel_splunk" "${1:this}" {
+    name = "${2:name}"
+    token = "${3:token}"
+    url = "${4:url}"
+}

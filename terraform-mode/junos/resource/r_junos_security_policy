@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_policy
+# key: r_junos_security_policy
+# --
+
+resource "junos_security_policy" "${1:this}" {
+    from_zone = "${2:from_zone}"
+    to_zone = "${3:to_zone}"
+}

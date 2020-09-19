@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_gcp_billing
+# key: r_wavefront_cloud_integration_gcp_billing
+# --
+
+resource "wavefront_cloud_integration_gcp_billing" "${1:this}" {
+    api_key = "${2:api_key}"
+    json_key = "${3:json_key}"
+    name = "${4:name}"
+    project_id = "${5:project_id}"
+}

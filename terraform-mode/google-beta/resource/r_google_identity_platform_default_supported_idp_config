@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_identity_platform_default_supported_idp_config
+# key: r_google_identity_platform_default_supported_idp_config
+# --
+
+resource "google_identity_platform_default_supported_idp_config" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret = "${3:client_secret}"
+    idp_id = "${4:idp_id}"
+}

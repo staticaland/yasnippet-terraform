@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_x509_authentication_database_user
+# key: r_mongodbatlas_x509_authentication_database_user
+# --
+
+resource "mongodbatlas_x509_authentication_database_user" "${1:this}" {
+    project_id = "${2:project_id}"
+}

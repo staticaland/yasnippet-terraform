@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_postgresql_specinfos
+# key: d_tencentcloud_postgresql_specinfos
+# --
+
+data "tencentcloud_postgresql_specinfos" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+}

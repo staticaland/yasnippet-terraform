@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_cis_ip_addresses
+# key: d_ibm_cis_ip_addresses
+# --
+
+data "ibm_cis_ip_addresses" "${1:this}" {
+}

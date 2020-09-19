@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_kubectl_file_documents
+# key: d_kubectl_file_documents
+# --
+
+data "kubectl_file_documents" "${1:this}" {
+    content = "${2:content}"
+}

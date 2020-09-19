@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_scf_function
+# key: r_tencentcloud_scf_function
+# --
+
+resource "tencentcloud_scf_function" "${1:this}" {
+    handler = "${2:handler}"
+    name = "${3:name}"
+    runtime = "${4:runtime}"
+}

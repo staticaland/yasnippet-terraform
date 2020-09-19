@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_clb_instances
+# key: d_tencentcloud_clb_instances
+# --
+
+data "tencentcloud_clb_instances" "${1:this}" {
+}

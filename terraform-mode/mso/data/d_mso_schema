@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema
+# key: d_mso_schema
+# --
+
+data "mso_schema" "${1:this}" {
+    name = "${2:name}"
+}

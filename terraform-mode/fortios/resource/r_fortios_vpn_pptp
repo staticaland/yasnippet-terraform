@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpn_pptp
+# key: r_fortios_vpn_pptp
+# --
+
+resource "fortios_vpn_pptp" "${1:this}" {
+    status = "${2:status}"
+}

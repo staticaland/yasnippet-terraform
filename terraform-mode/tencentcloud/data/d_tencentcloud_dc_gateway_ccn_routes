@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_dc_gateway_ccn_routes
+# key: d_tencentcloud_dc_gateway_ccn_routes
+# --
+
+data "tencentcloud_dc_gateway_ccn_routes" "${1:this}" {
+    dcg_id = "${2:dcg_id}"
+}

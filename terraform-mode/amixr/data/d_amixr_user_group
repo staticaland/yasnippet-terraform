@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_amixr_user_group
+# key: d_amixr_user_group
+# --
+
+data "amixr_user_group" "${1:this}" {
+    slack_handle = "${2:slack_handle}"
+}

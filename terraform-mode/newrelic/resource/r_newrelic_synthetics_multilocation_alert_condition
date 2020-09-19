@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_synthetics_multilocation_alert_condition
+# key: r_newrelic_synthetics_multilocation_alert_condition
+# --
+
+resource "newrelic_synthetics_multilocation_alert_condition" "${1:this}" {
+    entities = "${2:entities}"
+    name = "${3:name}"
+    policy_id = "${4:policy_id}"
+    violation_time_limit_seconds = "${5:violation_time_limit_seconds}"
+}

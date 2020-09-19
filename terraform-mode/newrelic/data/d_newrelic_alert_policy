@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_newrelic_alert_policy
+# key: d_newrelic_alert_policy
+# --
+
+data "newrelic_alert_policy" "${1:this}" {
+    name = "${2:name}"
+}

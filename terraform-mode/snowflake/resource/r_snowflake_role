@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_role
+# key: r_snowflake_role
+# --
+
+resource "snowflake_role" "${1:this}" {
+    name = "${2:name}"
+}

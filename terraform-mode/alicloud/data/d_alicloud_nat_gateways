@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_nat_gateways
+# key: d_alicloud_nat_gateways
+# --
+
+data "alicloud_nat_gateways" "${1:this}" {
+}

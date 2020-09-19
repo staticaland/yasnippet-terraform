@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_log_audit
+# key: r_alicloud_log_audit
+# --
+
+resource "alicloud_log_audit" "${1:this}" {
+    aliuid = "${2:aliuid}"
+    display_name = "${3:display_name}"
+}

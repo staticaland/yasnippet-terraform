@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_dns_tsig_key
+# key: d_oci_dns_tsig_key
+# --
+
+data "oci_dns_tsig_key" "${1:this}" {
+    tsig_key_id = "${2:tsig_key_id}"
+}

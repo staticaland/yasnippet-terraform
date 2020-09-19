@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_hdns_record
+# key: r_hdns_record
+# --
+
+resource "hdns_record" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+    value = "${4:value}"
+    zone_id = "${5:zone_id}"
+}

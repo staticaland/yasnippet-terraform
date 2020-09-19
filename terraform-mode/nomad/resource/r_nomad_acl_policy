@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nomad_acl_policy
+# key: r_nomad_acl_policy
+# --
+
+resource "nomad_acl_policy" "${1:this}" {
+    name = "${2:name}"
+    rules_hcl = "${3:rules_hcl}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_global_role_binding
+# key: d_rancher2_global_role_binding
+# --
+
+data "rancher2_global_role_binding" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_authgroup
+# key: r_fortios_wanopt_authgroup
+# --
+
+resource "fortios_wanopt_authgroup" "${1:this}" {
+    cert = "${2:cert}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_kms_vault
+# key: d_oci_kms_vault
+# --
+
+data "oci_kms_vault" "${1:this}" {
+    vault_id = "${2:vault_id}"
+}

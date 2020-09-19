@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_k8s_pool_beta
+# key: r_scaleway_k8s_pool_beta
+# --
+
+resource "scaleway_k8s_pool_beta" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+    node_type = "${4:node_type}"
+    size = "${5:size}"
+}

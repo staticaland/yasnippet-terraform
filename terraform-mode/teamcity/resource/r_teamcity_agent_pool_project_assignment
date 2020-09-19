@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_agent_pool_project_assignment
+# key: r_teamcity_agent_pool_project_assignment
+# --
+
+resource "teamcity_agent_pool_project_assignment" "${1:this}" {
+    agent_pool_id = "${2:agent_pool_id}"
+    project_id = "${3:project_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_network_security_group_security_rule
+# key: r_oci_core_network_security_group_security_rule
+# --
+
+resource "oci_core_network_security_group_security_rule" "${1:this}" {
+    direction = "${2:direction}"
+    network_security_group_id = "${3:network_security_group_id}"
+    protocol = "${4:protocol}"
+}

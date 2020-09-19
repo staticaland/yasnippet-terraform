@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_policies
+# key: d_oci_identity_policies
+# --
+
+data "oci_identity_policies" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

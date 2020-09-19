@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_org
+# key: d_ibm_org
+# --
+
+data "ibm_org" "${1:this}" {
+}

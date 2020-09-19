@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_function_namespace
+# key: r_ibm_function_namespace
+# --
+
+resource "ibm_function_namespace" "${1:this}" {
+    name = "${2:name}"
+    resource_group_id = "${3:resource_group_id}"
+}

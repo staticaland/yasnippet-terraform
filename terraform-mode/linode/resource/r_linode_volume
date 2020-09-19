@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_linode_volume
+# key: r_linode_volume
+# --
+
+resource "linode_volume" "${1:this}" {
+    label = "${2:label}"
+    region = "${3:region}"
+}

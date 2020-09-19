@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logfortiguard_filter
+# key: r_fortios_logfortiguard_filter
+# --
+
+resource "fortios_logfortiguard_filter" "${1:this}" {
+}

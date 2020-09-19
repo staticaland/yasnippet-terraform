@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opnsense_firewall_alias_util
+# key: r_opnsense_firewall_alias_util
+# --
+
+resource "opnsense_firewall_alias_util" "${1:this}" {
+    address = "${2:address}"
+    name = "${3:name}"
+}

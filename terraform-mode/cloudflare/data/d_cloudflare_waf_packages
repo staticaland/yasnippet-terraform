@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudflare_waf_packages
+# key: d_cloudflare_waf_packages
+# --
+
+data "cloudflare_waf_packages" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

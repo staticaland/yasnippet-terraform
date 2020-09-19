@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_mrs_cluster_v1
+# key: r_huaweicloud_mrs_cluster_v1
+# --
+
+resource "huaweicloud_mrs_cluster_v1" "${1:this}" {
+    available_zone_id = "${2:available_zone_id}"
+    billing_type = "${3:billing_type}"
+    cluster_name = "${4:cluster_name}"
+    core_node_num = "${5:core_node_num}"
+    core_node_size = "${6:core_node_size}"
+    master_node_num = "${7:master_node_num}"
+    master_node_size = "${8:master_node_size}"
+    node_public_cert_name = "${9:node_public_cert_name}"
+    safe_mode = "${10:safe_mode}"
+    subnet_id = "${11:subnet_id}"
+    volume_size = "${12:volume_size}"
+    volume_type = "${13:volume_type}"
+    vpc_id = "${14:vpc_id}"
+}

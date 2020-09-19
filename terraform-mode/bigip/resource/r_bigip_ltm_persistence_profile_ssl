@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_persistence_profile_ssl
+# key: r_bigip_ltm_persistence_profile_ssl
+# --
+
+resource "bigip_ltm_persistence_profile_ssl" "${1:this}" {
+    defaults_from = "${2:defaults_from}"
+    name = "${3:name}"
+}

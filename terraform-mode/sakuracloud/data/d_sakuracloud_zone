@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_zone
+# key: d_sakuracloud_zone
+# --
+
+data "sakuracloud_zone" "${1:this}" {
+}

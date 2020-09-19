@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_victorops_team
+# key: r_victorops_team
+# --
+
+resource "victorops_team" "${1:this}" {
+    name = "${2:name}"
+}

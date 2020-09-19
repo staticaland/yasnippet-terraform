@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_application_custom
+# key: r_fortios_application_custom
+# --
+
+resource "fortios_application_custom" "${1:this}" {
+    category = "${2:category}"
+}

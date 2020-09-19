@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_user_federation
+# key: r_keycloak_ldap_user_federation
+# --
+
+resource "keycloak_ldap_user_federation" "${1:this}" {
+    connection_url = "${2:connection_url}"
+    name = "${3:name}"
+    rdn_ldap_attribute = "${4:rdn_ldap_attribute}"
+    realm_id = "${5:realm_id}"
+    user_object_classes = "${6:user_object_classes}"
+    username_ldap_attribute = "${7:username_ldap_attribute}"
+    users_dn = "${8:users_dn}"
+    uuid_ldap_attribute = "${9:uuid_ldap_attribute}"
+}

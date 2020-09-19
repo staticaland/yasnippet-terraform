@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_shell_script
+# key: r_shell_script
+# --
+
+resource "shell_script" "${1:this}" {
+}

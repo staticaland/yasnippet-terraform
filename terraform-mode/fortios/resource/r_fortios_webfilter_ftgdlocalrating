@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_ftgdlocalrating
+# key: r_fortios_webfilter_ftgdlocalrating
+# --
+
+resource "fortios_webfilter_ftgdlocalrating" "${1:this}" {
+    rating = "${2:rating}"
+}

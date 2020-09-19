@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_databricks_token
+# key: r_databricks_token
+# --
+
+resource "databricks_token" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_cacheservice
+# key: r_fortios_wanopt_cacheservice
+# --
+
+resource "fortios_wanopt_cacheservice" "${1:this}" {
+}

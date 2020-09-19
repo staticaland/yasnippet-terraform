@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_resource_manager_handshakes
+# key: d_alicloud_resource_manager_handshakes
+# --
+
+data "alicloud_resource_manager_handshakes" "${1:this}" {
+}

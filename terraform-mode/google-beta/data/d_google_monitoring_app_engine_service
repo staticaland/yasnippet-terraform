@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_monitoring_app_engine_service
+# key: d_google_monitoring_app_engine_service
+# --
+
+data "google_monitoring_app_engine_service" "${1:this}" {
+    module_id = "${2:module_id}"
+}

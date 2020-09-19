@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_azuredevops_source_repository
+# key: d_azuredevops_source_repository
+# --
+
+data "azuredevops_source_repository" "${1:this}" {
+    org_name = "${2:org_name}"
+    project_id = "${3:project_id}"
+    repo_name = "${4:repo_name}"
+    service_endpoint_id = "${5:service_endpoint_id}"
+    type = "${6:type}"
+}

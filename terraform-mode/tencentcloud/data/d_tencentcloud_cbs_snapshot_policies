@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cbs_snapshot_policies
+# key: d_tencentcloud_cbs_snapshot_policies
+# --
+
+data "tencentcloud_cbs_snapshot_policies" "${1:this}" {
+}

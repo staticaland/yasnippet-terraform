@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_synthetics_canary
+# key: r_synthetics_canary
+# --
+
+resource "synthetics_canary" "${1:this}" {
+    artifact_s3_location = "${2:artifact_s3_location}"
+    execution_role_arn = "${3:execution_role_arn}"
+    handler = "${4:handler}"
+    name = "${5:name}"
+}

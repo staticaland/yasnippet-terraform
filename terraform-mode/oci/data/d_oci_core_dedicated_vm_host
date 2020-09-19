@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_dedicated_vm_host
+# key: d_oci_core_dedicated_vm_host
+# --
+
+data "oci_core_dedicated_vm_host" "${1:this}" {
+    dedicated_vm_host_id = "${2:dedicated_vm_host_id}"
+}

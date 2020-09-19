@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_event_streams_topic
+# key: d_ibm_event_streams_topic
+# --
+
+data "ibm_event_streams_topic" "${1:this}" {
+    name = "${2:name}"
+    resource_instance_id = "${3:resource_instance_id}"
+}

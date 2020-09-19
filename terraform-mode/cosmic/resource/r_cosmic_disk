@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_disk
+# key: r_cosmic_disk
+# --
+
+resource "cosmic_disk" "${1:this}" {
+    disk_offering = "${2:disk_offering}"
+    name = "${3:name}"
+}

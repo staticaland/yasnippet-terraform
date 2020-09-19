@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aiven_kafka_acl
+# key: r_aiven_kafka_acl
+# --
+
+resource "aiven_kafka_acl" "${1:this}" {
+    permission = "${2:permission}"
+    project = "${3:project}"
+    service_name = "${4:service_name}"
+    topic = "${5:topic}"
+    username = "${6:username}"
+}

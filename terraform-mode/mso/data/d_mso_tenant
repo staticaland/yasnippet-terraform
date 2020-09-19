@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mso_tenant
+# key: d_mso_tenant
+# --
+
+data "mso_tenant" "${1:this}" {
+    display_name = "${2:display_name}"
+    name = "${3:name}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_hardcoded_role_mapper
+# key: r_keycloak_ldap_hardcoded_role_mapper
+# --
+
+resource "keycloak_ldap_hardcoded_role_mapper" "${1:this}" {
+    ldap_user_federation_id = "${2:ldap_user_federation_id}"
+    name = "${3:name}"
+    realm_id = "${4:realm_id}"
+    role = "${5:role}"
+}

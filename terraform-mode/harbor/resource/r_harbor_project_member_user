@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_harbor_project_member_user
+# key: r_harbor_project_member_user
+# --
+
+resource "harbor_project_member_user" "${1:this}" {
+    project_id = "${2:project_id}"
+    role = "${3:role}"
+    user_name = "${4:user_name}"
+}

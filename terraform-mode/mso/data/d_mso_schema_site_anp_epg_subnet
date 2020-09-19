@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_site_anp_epg_subnet
+# key: d_mso_schema_site_anp_epg_subnet
+# --
+
+data "mso_schema_site_anp_epg_subnet" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    epg_name = "${3:epg_name}"
+    ip = "${4:ip}"
+    schema_id = "${5:schema_id}"
+    site_id = "${6:site_id}"
+    template_name = "${7:template_name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_trans_peer
+# key: r_aviatrix_trans_peer
+# --
+
+resource "aviatrix_trans_peer" "${1:this}" {
+    nexthop = "${2:nexthop}"
+    reachable_cidr = "${3:reachable_cidr}"
+    source = "${4:source}"
+}

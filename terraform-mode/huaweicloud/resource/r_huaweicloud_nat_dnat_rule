@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_nat_dnat_rule
+# key: r_huaweicloud_nat_dnat_rule
+# --
+
+resource "huaweicloud_nat_dnat_rule" "${1:this}" {
+    external_service_port = "${2:external_service_port}"
+    floating_ip_id = "${3:floating_ip_id}"
+    internal_service_port = "${4:internal_service_port}"
+    nat_gateway_id = "${5:nat_gateway_id}"
+    protocol = "${6:protocol}"
+}

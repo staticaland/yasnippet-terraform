@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_puppetdb_node
+# key: r_puppetdb_node
+# --
+
+resource "puppetdb_node" "${1:this}" {
+    certname = "${2:certname}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_user
+# key: r_wavefront_user
+# --
+
+resource "wavefront_user" "${1:this}" {
+    email = "${2:email}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_google_identity_platform_tenant_oauth_idp_config
+# key: r_google_identity_platform_tenant_oauth_idp_config
+# --
+
+resource "google_identity_platform_tenant_oauth_idp_config" "${1:this}" {
+    client_id = "${2:client_id}"
+    display_name = "${3:display_name}"
+    issuer = "${4:issuer}"
+    name = "${5:name}"
+    tenant = "${6:tenant}"
+}

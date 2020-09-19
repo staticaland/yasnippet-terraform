@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_monitoring_alarm_statuses
+# key: d_oci_monitoring_alarm_statuses
+# --
+
+data "oci_monitoring_alarm_statuses" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

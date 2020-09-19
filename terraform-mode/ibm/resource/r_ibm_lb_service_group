@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb_service_group
+# key: r_ibm_lb_service_group
+# --
+
+resource "ibm_lb_service_group" "${1:this}" {
+    allocation = "${2:allocation}"
+    load_balancer_id = "${3:load_balancer_id}"
+    port = "${4:port}"
+    routing_method = "${5:routing_method}"
+    routing_type = "${6:routing_type}"
+}

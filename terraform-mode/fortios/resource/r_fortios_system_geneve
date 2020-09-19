@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_geneve
+# key: r_fortios_system_geneve
+# --
+
+resource "fortios_system_geneve" "${1:this}" {
+    interface = "${2:interface}"
+    ip_version = "${3:ip_version}"
+    remote_ip = "${4:remote_ip}"
+    vni = "${5:vni}"
+}

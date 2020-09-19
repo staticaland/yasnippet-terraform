@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_security_group_rule
+# key: r_outscale_security_group_rule
+# --
+
+resource "outscale_security_group_rule" "${1:this}" {
+    flow = "${2:flow}"
+    security_group_id = "${3:security_group_id}"
+}

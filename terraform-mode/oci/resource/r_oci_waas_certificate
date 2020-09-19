@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_waas_certificate
+# key: r_oci_waas_certificate
+# --
+
+resource "oci_waas_certificate" "${1:this}" {
+    certificate_data = "${2:certificate_data}"
+    compartment_id = "${3:compartment_id}"
+    private_key_data = "${4:private_key_data}"
+}

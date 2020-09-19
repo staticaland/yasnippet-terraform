@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_azure_spoke_native_peering
+# key: r_aviatrix_azure_spoke_native_peering
+# --
+
+resource "aviatrix_azure_spoke_native_peering" "${1:this}" {
+    spoke_account_name = "${2:spoke_account_name}"
+    spoke_region = "${3:spoke_region}"
+    spoke_vpc_id = "${4:spoke_vpc_id}"
+    transit_gateway_name = "${5:transit_gateway_name}"
+}

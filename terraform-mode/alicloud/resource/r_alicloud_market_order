@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_market_order
+# key: r_alicloud_market_order
+# --
+
+resource "alicloud_market_order" "${1:this}" {
+    package_version = "${2:package_version}"
+    pricing_cycle = "${3:pricing_cycle}"
+    product_code = "${4:product_code}"
+}

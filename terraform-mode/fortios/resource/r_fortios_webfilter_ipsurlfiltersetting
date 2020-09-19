@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_ipsurlfiltersetting
+# key: r_fortios_webfilter_ipsurlfiltersetting
+# --
+
+resource "fortios_webfilter_ipsurlfiltersetting" "${1:this}" {
+}

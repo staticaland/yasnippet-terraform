@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_project_logging
+# key: r_rancher2_project_logging
+# --
+
+resource "rancher2_project_logging" "${1:this}" {
+    kind = "${2:kind}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+}

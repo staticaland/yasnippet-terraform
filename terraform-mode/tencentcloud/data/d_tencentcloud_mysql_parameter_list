@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_mysql_parameter_list
+# key: d_tencentcloud_mysql_parameter_list
+# --
+
+data "tencentcloud_mysql_parameter_list" "${1:this}" {
+}

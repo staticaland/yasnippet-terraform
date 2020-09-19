@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_graylog_alert_condition
+# key: r_graylog_alert_condition
+# --
+
+resource "graylog_alert_condition" "${1:this}" {
+    parameters = "${2:parameters}"
+    stream_id = "${3:stream_id}"
+    title = "${4:title}"
+    type = "${5:type}"
+}

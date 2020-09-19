@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_watch
+# key: r_elasticsearch_watch
+# --
+
+resource "elasticsearch_watch" "${1:this}" {
+    body = "${2:body}"
+    watch_id = "${3:watch_id}"
+}

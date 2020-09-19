@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_tg_gateway
+# key: d_ibm_tg_gateway
+# --
+
+data "ibm_tg_gateway" "${1:this}" {
+    name = "${2:name}"
+}

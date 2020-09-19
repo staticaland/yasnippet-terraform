@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_set_api_settings
+# key: r_checkpoint_management_set_api_settings
+# --
+
+resource "checkpoint_management_set_api_settings" "${1:this}" {
+}

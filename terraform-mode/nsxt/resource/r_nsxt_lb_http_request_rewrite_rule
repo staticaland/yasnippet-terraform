@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_http_request_rewrite_rule
+# key: r_nsxt_lb_http_request_rewrite_rule
+# --
+
+resource "nsxt_lb_http_request_rewrite_rule" "${1:this}" {
+}

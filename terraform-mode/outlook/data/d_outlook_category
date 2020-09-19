@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_outlook_category
+# key: d_outlook_category
+# --
+
+data "outlook_category" "${1:this}" {
+    name = "${2:name}"
+}

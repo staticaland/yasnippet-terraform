@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_service_dce_rpc
+# key: r_checkpoint_management_service_dce_rpc
+# --
+
+resource "checkpoint_management_service_dce_rpc" "${1:this}" {
+    name = "${2:name}"
+}

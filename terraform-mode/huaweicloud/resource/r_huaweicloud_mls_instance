@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_mls_instance
+# key: r_huaweicloud_mls_instance
+# --
+
+resource "huaweicloud_mls_instance" "${1:this}" {
+    flavor = "${2:flavor}"
+    name = "${3:name}"
+    version = "${4:version}"
+}

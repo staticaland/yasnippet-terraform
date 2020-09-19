@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_template
+# key: r_cosmic_template
+# --
+
+resource "cosmic_template" "${1:this}" {
+    format = "${2:format}"
+    hypervisor = "${3:hypervisor}"
+    name = "${4:name}"
+    os_type = "${5:os_type}"
+    url = "${6:url}"
+}

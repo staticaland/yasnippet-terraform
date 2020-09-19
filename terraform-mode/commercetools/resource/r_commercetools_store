@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_store
+# key: r_commercetools_store
+# --
+
+resource "commercetools_store" "${1:this}" {
+    key = "${2:key}"
+}

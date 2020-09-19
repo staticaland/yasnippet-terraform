@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_heroku_config
+# key: r_heroku_config
+# --
+
+resource "heroku_config" "${1:this}" {
+}

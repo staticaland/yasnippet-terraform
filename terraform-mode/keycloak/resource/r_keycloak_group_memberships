@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_group_memberships
+# key: r_keycloak_group_memberships
+# --
+
+resource "keycloak_group_memberships" "${1:this}" {
+    members = "${2:members}"
+    realm_id = "${3:realm_id}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ovh_me_installation_template_partition_scheme_hardware_raid
+# key: r_ovh_me_installation_template_partition_scheme_hardware_raid
+# --
+
+resource "ovh_me_installation_template_partition_scheme_hardware_raid" "${1:this}" {
+    disks = "${2:disks}"
+    mode = "${3:mode}"
+    name = "${4:name}"
+    scheme_name = "${5:scheme_name}"
+    step = "${6:step}"
+    template_name = "${7:template_name}"
+}

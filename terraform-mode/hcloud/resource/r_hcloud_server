@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_server
+# key: r_hcloud_server
+# --
+
+resource "hcloud_server" "${1:this}" {
+    image = "${2:image}"
+    name = "${3:name}"
+    server_type = "${4:server_type}"
+}

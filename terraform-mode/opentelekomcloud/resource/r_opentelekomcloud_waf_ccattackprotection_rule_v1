@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_waf_ccattackprotection_rule_v1
+# key: r_opentelekomcloud_waf_ccattackprotection_rule_v1
+# --
+
+resource "opentelekomcloud_waf_ccattackprotection_rule_v1" "${1:this}" {
+    action_category = "${2:action_category}"
+    limit_num = "${3:limit_num}"
+    limit_period = "${4:limit_period}"
+    policy_id = "${5:policy_id}"
+    tag_type = "${6:tag_type}"
+    url = "${7:url}"
+}

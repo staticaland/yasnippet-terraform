@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_grid5000_deployment
+# key: r_grid5000_deployment
+# --
+
+resource "grid5000_deployment" "${1:this}" {
+    environment = "${2:environment}"
+    nodes = "${3:nodes}"
+    site = "${4:site}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_reserved_instance
+# key: r_tencentcloud_reserved_instance
+# --
+
+resource "tencentcloud_reserved_instance" "${1:this}" {
+    config_id = "${2:config_id}"
+    instance_count = "${3:instance_count}"
+}

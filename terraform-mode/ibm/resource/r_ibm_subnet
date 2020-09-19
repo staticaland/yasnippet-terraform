@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_subnet
+# key: r_ibm_subnet
+# --
+
+resource "ibm_subnet" "${1:this}" {
+    capacity = "${2:capacity}"
+    type = "${3:type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_integration_grant
+# key: r_snowflake_integration_grant
+# --
+
+resource "snowflake_integration_grant" "${1:this}" {
+    integration_name = "${2:integration_name}"
+}

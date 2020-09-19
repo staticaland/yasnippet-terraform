@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_storage_integration
+# key: r_snowflake_storage_integration
+# --
+
+resource "snowflake_storage_integration" "${1:this}" {
+    name = "${2:name}"
+    storage_allowed_locations = "${3:storage_allowed_locations}"
+    storage_provider = "${4:storage_provider}"
+}

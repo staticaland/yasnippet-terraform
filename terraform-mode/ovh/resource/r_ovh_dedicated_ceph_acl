@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_dedicated_ceph_acl
+# key: r_ovh_dedicated_ceph_acl
+# --
+
+resource "ovh_dedicated_ceph_acl" "${1:this}" {
+    netmask = "${2:netmask}"
+    network = "${3:network}"
+    service_name = "${4:service_name}"
+}

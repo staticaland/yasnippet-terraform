@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_ovh_me_installation_template_partition_scheme_partition
+# key: r_ovh_me_installation_template_partition_scheme_partition
+# --
+
+resource "ovh_me_installation_template_partition_scheme_partition" "${1:this}" {
+    filesystem = "${2:filesystem}"
+    mountpoint = "${3:mountpoint}"
+    order = "${4:order}"
+    scheme_name = "${5:scheme_name}"
+    size = "${6:size}"
+    template_name = "${7:template_name}"
+    type = "${8:type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_lognulldevice_setting
+# key: r_fortios_lognulldevice_setting
+# --
+
+resource "fortios_lognulldevice_setting" "${1:this}" {
+    status = "${2:status}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_maintenance_run
+# key: d_oci_database_maintenance_run
+# --
+
+data "oci_database_maintenance_run" "${1:this}" {
+    maintenance_run_id = "${2:maintenance_run_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_triton_snapshot
+# key: r_triton_snapshot
+# --
+
+resource "triton_snapshot" "${1:this}" {
+    machine_id = "${2:machine_id}"
+    name = "${3:name}"
+}

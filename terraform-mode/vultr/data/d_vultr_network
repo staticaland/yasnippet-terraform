@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_network
+# key: d_vultr_network
+# --
+
+data "vultr_network" "${1:this}" {
+}

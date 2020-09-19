@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw_transit_gateway_attachment
+# key: r_aviatrix_aws_tgw_transit_gateway_attachment
+# --
+
+resource "aviatrix_aws_tgw_transit_gateway_attachment" "${1:this}" {
+    region = "${2:region}"
+    tgw_name = "${3:tgw_name}"
+    transit_gateway_name = "${4:transit_gateway_name}"
+    vpc_account_name = "${5:vpc_account_name}"
+    vpc_id = "${6:vpc_id}"
+}

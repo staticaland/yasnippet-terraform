@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_router_nat
+# key: r_google_compute_router_nat
+# --
+
+resource "google_compute_router_nat" "${1:this}" {
+    name = "${2:name}"
+    nat_ip_allocate_option = "${3:nat_ip_allocate_option}"
+    router = "${4:router}"
+    source_subnetwork_ip_ranges_to_nat = "${5:source_subnetwork_ip_ranges_to_nat}"
+}

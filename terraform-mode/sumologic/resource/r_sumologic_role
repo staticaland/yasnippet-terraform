@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_role
+# key: r_sumologic_role
+# --
+
+resource "sumologic_role" "${1:this}" {
+    name = "${2:name}"
+}

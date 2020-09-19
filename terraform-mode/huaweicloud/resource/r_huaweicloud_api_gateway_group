@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_api_gateway_group
+# key: r_huaweicloud_api_gateway_group
+# --
+
+resource "huaweicloud_api_gateway_group" "${1:this}" {
+    name = "${2:name}"
+}

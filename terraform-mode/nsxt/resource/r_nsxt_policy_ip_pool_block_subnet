@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_ip_pool_block_subnet
+# key: r_nsxt_policy_ip_pool_block_subnet
+# --
+
+resource "nsxt_policy_ip_pool_block_subnet" "${1:this}" {
+    block_path = "${2:block_path}"
+    display_name = "${3:display_name}"
+    pool_path = "${4:pool_path}"
+    size = "${5:size}"
+}

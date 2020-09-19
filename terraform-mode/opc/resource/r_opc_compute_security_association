@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_security_association
+# key: r_opc_compute_security_association
+# --
+
+resource "opc_compute_security_association" "${1:this}" {
+    seclist = "${2:seclist}"
+    vcable = "${3:vcable}"
+}

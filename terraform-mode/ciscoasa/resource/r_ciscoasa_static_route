@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ciscoasa_static_route
+# key: r_ciscoasa_static_route
+# --
+
+resource "ciscoasa_static_route" "${1:this}" {
+    gateway = "${2:gateway}"
+    interface = "${3:interface}"
+    network = "${4:network}"
+}

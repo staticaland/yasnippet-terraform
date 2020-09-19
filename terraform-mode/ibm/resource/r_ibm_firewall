@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_firewall
+# key: r_ibm_firewall
+# --
+
+resource "ibm_firewall" "${1:this}" {
+    public_vlan_id = "${2:public_vlan_id}"
+}

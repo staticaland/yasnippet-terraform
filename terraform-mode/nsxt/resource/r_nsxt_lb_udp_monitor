@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_udp_monitor
+# key: r_nsxt_lb_udp_monitor
+# --
+
+resource "nsxt_lb_udp_monitor" "${1:this}" {
+    receive = "${2:receive}"
+    send = "${3:send}"
+}

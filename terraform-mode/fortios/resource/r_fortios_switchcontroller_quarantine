@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_quarantine
+# key: r_fortios_switchcontroller_quarantine
+# --
+
+resource "fortios_switchcontroller_quarantine" "${1:this}" {
+}

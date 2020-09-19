@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_idp_saml_key
+# key: r_okta_idp_saml_key
+# --
+
+resource "okta_idp_saml_key" "${1:this}" {
+    x5c = "${2:x5c}"
+}

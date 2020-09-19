@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_hardcoded_group_mapper
+# key: r_keycloak_ldap_hardcoded_group_mapper
+# --
+
+resource "keycloak_ldap_hardcoded_group_mapper" "${1:this}" {
+    group = "${2:group}"
+    ldap_user_federation_id = "${3:ldap_user_federation_id}"
+    name = "${4:name}"
+    realm_id = "${5:realm_id}"
+}

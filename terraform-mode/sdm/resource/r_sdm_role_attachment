@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sdm_role_attachment
+# key: r_sdm_role_attachment
+# --
+
+resource "sdm_role_attachment" "${1:this}" {
+    attached_role_id = "${2:attached_role_id}"
+    composite_role_id = "${3:composite_role_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_rke_cluster
+# key: r_rke_cluster
+# --
+
+resource "rke_cluster" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_packet_filter
+# key: d_sakuracloud_packet_filter
+# --
+
+data "sakuracloud_packet_filter" "${1:this}" {
+}

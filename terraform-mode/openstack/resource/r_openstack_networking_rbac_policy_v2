@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_openstack_networking_rbac_policy_v2
+# key: r_openstack_networking_rbac_policy_v2
+# --
+
+resource "openstack_networking_rbac_policy_v2" "${1:this}" {
+    action = "${2:action}"
+    object_id = "${3:object_id}"
+    object_type = "${4:object_type}"
+    target_tenant = "${5:target_tenant}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudflare_waf_groups
+# key: d_cloudflare_waf_groups
+# --
+
+data "cloudflare_waf_groups" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

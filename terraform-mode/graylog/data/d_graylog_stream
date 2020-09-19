@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_graylog_stream
+# key: d_graylog_stream
+# --
+
+data "graylog_stream" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_network_acl_rule
+# key: r_cosmic_network_acl_rule
+# --
+
+resource "cosmic_network_acl_rule" "${1:this}" {
+    acl_id = "${2:acl_id}"
+}

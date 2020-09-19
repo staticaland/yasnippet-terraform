@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_phpipam_subnets
+# key: d_phpipam_subnets
+# --
+
+data "phpipam_subnets" "${1:this}" {
+    section_id = "${2:section_id}"
+}

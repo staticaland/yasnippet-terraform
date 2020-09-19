@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ovh_iploadbalancing_tcp_farm_server
+# key: r_ovh_iploadbalancing_tcp_farm_server
+# --
+
+resource "ovh_iploadbalancing_tcp_farm_server" "${1:this}" {
+    address = "${2:address}"
+    farm_id = "${3:farm_id}"
+    service_name = "${4:service_name}"
+    status = "${5:status}"
+}

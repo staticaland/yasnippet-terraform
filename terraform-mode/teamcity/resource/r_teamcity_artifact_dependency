@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_artifact_dependency
+# key: r_teamcity_artifact_dependency
+# --
+
+resource "teamcity_artifact_dependency" "${1:this}" {
+    build_config_id = "${2:build_config_id}"
+    path_rules = "${3:path_rules}"
+    source_build_config_id = "${4:source_build_config_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_localinpolicy6
+# key: r_fortios_firewall_localinpolicy6
+# --
+
+resource "fortios_firewall_localinpolicy6" "${1:this}" {
+    intf = "${2:intf}"
+    schedule = "${3:schedule}"
+}

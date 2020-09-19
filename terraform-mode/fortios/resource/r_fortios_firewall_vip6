@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_vip6
+# key: r_fortios_firewall_vip6
+# --
+
+resource "fortios_firewall_vip6" "${1:this}" {
+    extip = "${2:extip}"
+    mappedip = "${3:mappedip}"
+}

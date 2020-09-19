@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_oos_execution
+# key: r_alicloud_oos_execution
+# --
+
+resource "alicloud_oos_execution" "${1:this}" {
+    template_name = "${2:template_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_account_ssh_key
+# key: r_scaleway_account_ssh_key
+# --
+
+resource "scaleway_account_ssh_key" "${1:this}" {
+    public_key = "${2:public_key}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_custom_db_roles
+# key: d_mongodbatlas_custom_db_roles
+# --
+
+data "mongodbatlas_custom_db_roles" "${1:this}" {
+    project_id = "${2:project_id}"
+}

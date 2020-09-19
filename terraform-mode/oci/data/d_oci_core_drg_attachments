@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_drg_attachments
+# key: d_oci_core_drg_attachments
+# --
+
+data "oci_core_drg_attachments" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

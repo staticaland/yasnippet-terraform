@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_service_instance
+# key: r_cloudfoundry_service_instance
+# --
+
+resource "cloudfoundry_service_instance" "${1:this}" {
+    name = "${2:name}"
+    service_plan = "${3:service_plan}"
+    space = "${4:space}"
+}

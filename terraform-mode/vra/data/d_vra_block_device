@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_block_device
+# key: d_vra_block_device
+# --
+
+data "vra_block_device" "${1:this}" {
+}

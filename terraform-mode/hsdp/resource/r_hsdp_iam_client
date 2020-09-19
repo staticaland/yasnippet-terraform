@@ -1,0 +1,18 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_iam_client
+# key: r_hsdp_iam_client
+# --
+
+resource "hsdp_iam_client" "${1:this}" {
+    application_id = "${2:application_id}"
+    client_id = "${3:client_id}"
+    default_scopes = "${4:default_scopes}"
+    description = "${5:description}"
+    global_reference_id = "${6:global_reference_id}"
+    name = "${7:name}"
+    password = "${8:password}"
+    redirection_uris = "${9:redirection_uris}"
+    response_types = "${10:response_types}"
+    scopes = "${11:scopes}"
+    type = "${12:type}"
+}

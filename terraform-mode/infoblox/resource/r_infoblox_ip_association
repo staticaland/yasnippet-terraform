@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_infoblox_ip_association
+# key: r_infoblox_ip_association
+# --
+
+resource "infoblox_ip_association" "${1:this}" {
+    cidr = "${2:cidr}"
+    ip_addr = "${3:ip_addr}"
+    mac_addr = "${4:mac_addr}"
+    tenant_id = "${5:tenant_id}"
+}

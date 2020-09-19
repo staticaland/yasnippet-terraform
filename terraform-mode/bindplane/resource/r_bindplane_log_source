@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_bindplane_log_source
+# key: r_bindplane_log_source
+# --
+
+resource "bindplane_log_source" "${1:this}" {
+    configuration = "${2:configuration}"
+    name = "${3:name}"
+    source_type_id = "${4:source_type_id}"
+    source_version = "${5:source_version}"
+}

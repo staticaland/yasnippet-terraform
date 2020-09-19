@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_service_object
+# key: r_panos_panorama_service_object
+# --
+
+resource "panos_panorama_service_object" "${1:this}" {
+    destination_port = "${2:destination_port}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+}

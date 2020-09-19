@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_outscale_client_gateway
+# key: r_outscale_client_gateway
+# --
+
+resource "outscale_client_gateway" "${1:this}" {
+    bgp_asn = "${2:bgp_asn}"
+    connection_type = "${3:connection_type}"
+    public_ip = "${4:public_ip}"
+}

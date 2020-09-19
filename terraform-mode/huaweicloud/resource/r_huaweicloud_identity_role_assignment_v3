@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_identity_role_assignment_v3
+# key: r_huaweicloud_identity_role_assignment_v3
+# --
+
+resource "huaweicloud_identity_role_assignment_v3" "${1:this}" {
+    group_id = "${2:group_id}"
+    role_id = "${3:role_id}"
+}

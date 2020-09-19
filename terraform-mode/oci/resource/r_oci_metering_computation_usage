@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_metering_computation_usage
+# key: r_oci_metering_computation_usage
+# --
+
+resource "oci_metering_computation_usage" "${1:this}" {
+    granularity = "${2:granularity}"
+    tenant_id = "${3:tenant_id}"
+    time_usage_ended = "${4:time_usage_ended}"
+    time_usage_started = "${5:time_usage_started}"
+}

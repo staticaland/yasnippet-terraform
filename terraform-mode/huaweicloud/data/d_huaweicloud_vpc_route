@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_vpc_route
+# key: d_huaweicloud_vpc_route
+# --
+
+data "huaweicloud_vpc_route" "${1:this}" {
+}

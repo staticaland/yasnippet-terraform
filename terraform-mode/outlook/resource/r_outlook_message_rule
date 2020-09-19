@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outlook_message_rule
+# key: r_outlook_message_rule
+# --
+
+resource "outlook_message_rule" "${1:this}" {
+    name = "${2:name}"
+}

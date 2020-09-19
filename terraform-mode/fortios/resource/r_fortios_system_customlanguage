@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_customlanguage
+# key: r_fortios_system_customlanguage
+# --
+
+resource "fortios_system_customlanguage" "${1:this}" {
+    filename = "${2:filename}"
+    name = "${3:name}"
+}

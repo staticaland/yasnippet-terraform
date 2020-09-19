@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_oci_integration_integration_instance
+# key: r_oci_integration_integration_instance
+# --
+
+resource "oci_integration_integration_instance" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    integration_instance_type = "${4:integration_instance_type}"
+    is_byol = "${5:is_byol}"
+    message_packs = "${6:message_packs}"
+}

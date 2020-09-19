@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_audit
+# key: r_tencentcloud_audit
+# --
+
+resource "tencentcloud_audit" "${1:this}" {
+    audit_switch = "${2:audit_switch}"
+    cos_bucket = "${3:cos_bucket}"
+    cos_region = "${4:cos_region}"
+    name = "${5:name}"
+    read_write_attribute = "${6:read_write_attribute}"
+}

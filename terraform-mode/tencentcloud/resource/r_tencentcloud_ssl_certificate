@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ssl_certificate
+# key: r_tencentcloud_ssl_certificate
+# --
+
+resource "tencentcloud_ssl_certificate" "${1:this}" {
+    cert = "${2:cert}"
+    type = "${3:type}"
+}

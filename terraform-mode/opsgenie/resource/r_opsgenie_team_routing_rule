@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_team_routing_rule
+# key: r_opsgenie_team_routing_rule
+# --
+
+resource "opsgenie_team_routing_rule" "${1:this}" {
+    team_id = "${2:team_id}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_google_active_directory_domain_trust
+# key: r_google_active_directory_domain_trust
+# --
+
+resource "google_active_directory_domain_trust" "${1:this}" {
+    domain = "${2:domain}"
+    target_dns_ip_addresses = "${3:target_dns_ip_addresses}"
+    target_domain_name = "${4:target_domain_name}"
+    trust_direction = "${5:trust_direction}"
+    trust_handshake_secret = "${6:trust_handshake_secret}"
+    trust_type = "${7:trust_type}"
+}

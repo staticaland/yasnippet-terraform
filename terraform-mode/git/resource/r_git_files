@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_git_files
+# key: r_git_files
+# --
+
+resource "git_files" "${1:this}" {
+    author = "${2:author}"
+    branch = "${3:branch}"
+    hostname = "${4:hostname}"
+    organization = "${5:organization}"
+    repository = "${6:repository}"
+}

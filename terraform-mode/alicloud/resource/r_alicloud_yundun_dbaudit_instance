@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_yundun_dbaudit_instance
+# key: r_alicloud_yundun_dbaudit_instance
+# --
+
+resource "alicloud_yundun_dbaudit_instance" "${1:this}" {
+    description = "${2:description}"
+    plan_code = "${3:plan_code}"
+    vswitch_id = "${4:vswitch_id}"
+}

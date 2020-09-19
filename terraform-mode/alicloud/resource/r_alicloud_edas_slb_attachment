@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_slb_attachment
+# key: r_alicloud_edas_slb_attachment
+# --
+
+resource "alicloud_edas_slb_attachment" "${1:this}" {
+    app_id = "${2:app_id}"
+    slb_id = "${3:slb_id}"
+    slb_ip = "${4:slb_ip}"
+    type = "${5:type}"
+}

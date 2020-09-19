@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_dds_flavors
+# key: d_huaweicloud_dds_flavors
+# --
+
+data "huaweicloud_dds_flavors" "${1:this}" {
+    engine_name = "${2:engine_name}"
+}

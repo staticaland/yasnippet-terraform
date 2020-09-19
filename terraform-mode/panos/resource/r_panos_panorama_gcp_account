@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_gcp_account
+# key: r_panos_panorama_gcp_account
+# --
+
+resource "panos_panorama_gcp_account" "${1:this}" {
+    credential_file = "${2:credential_file}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+}

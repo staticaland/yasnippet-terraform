@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_vpc
+# key: r_cosmic_vpc
+# --
+
+resource "cosmic_vpc" "${1:this}" {
+    cidr = "${2:cidr}"
+    name = "${3:name}"
+    vpc_offering = "${4:vpc_offering}"
+}

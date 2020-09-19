@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_member_server_image
+# key: d_ncloud_member_server_image
+# --
+
+data "ncloud_member_server_image" "${1:this}" {
+}

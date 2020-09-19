@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_oauth_auth_server_settings
+# key: r_pingfederate_oauth_auth_server_settings
+# --
+
+resource "pingfederate_oauth_auth_server_settings" "${1:this}" {
+    authorization_code_entropy = "${2:authorization_code_entropy}"
+    authorization_code_timeout = "${3:authorization_code_timeout}"
+    default_scope_description = "${4:default_scope_description}"
+    refresh_rolling_interval = "${5:refresh_rolling_interval}"
+    refresh_token_length = "${6:refresh_token_length}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aiven_redis
+# key: r_aiven_redis
+# --
+
+resource "aiven_redis" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

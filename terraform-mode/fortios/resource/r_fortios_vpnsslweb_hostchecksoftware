@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnsslweb_hostchecksoftware
+# key: r_fortios_vpnsslweb_hostchecksoftware
+# --
+
+resource "fortios_vpnsslweb_hostchecksoftware" "${1:this}" {
+}

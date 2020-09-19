@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_waf_override
+# key: r_cloudflare_waf_override
+# --
+
+resource "cloudflare_waf_override" "${1:this}" {
+    rules = "${2:rules}"
+    urls = "${3:urls}"
+    zone_id = "${4:zone_id}"
+}

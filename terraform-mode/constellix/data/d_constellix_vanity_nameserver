@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_vanity_nameserver
+# key: d_constellix_vanity_nameserver
+# --
+
+data "constellix_vanity_nameserver" "${1:this}" {
+    name = "${2:name}"
+}

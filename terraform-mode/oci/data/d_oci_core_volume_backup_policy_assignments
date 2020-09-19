@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_volume_backup_policy_assignments
+# key: d_oci_core_volume_backup_policy_assignments
+# --
+
+data "oci_core_volume_backup_policy_assignments" "${1:this}" {
+    asset_id = "${2:asset_id}"
+}

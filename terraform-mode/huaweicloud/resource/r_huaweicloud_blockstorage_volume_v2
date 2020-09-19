@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_blockstorage_volume_v2
+# key: r_huaweicloud_blockstorage_volume_v2
+# --
+
+resource "huaweicloud_blockstorage_volume_v2" "${1:this}" {
+    size = "${2:size}"
+}

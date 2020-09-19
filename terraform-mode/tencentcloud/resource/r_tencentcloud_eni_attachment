@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_eni_attachment
+# key: r_tencentcloud_eni_attachment
+# --
+
+resource "tencentcloud_eni_attachment" "${1:this}" {
+    eni_id = "${2:eni_id}"
+    instance_id = "${3:instance_id}"
+}

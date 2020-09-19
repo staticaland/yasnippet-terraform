@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_databricks_default_user_roles
+# key: d_databricks_default_user_roles
+# --
+
+data "databricks_default_user_roles" "${1:this}" {
+    default_username = "${2:default_username}"
+}

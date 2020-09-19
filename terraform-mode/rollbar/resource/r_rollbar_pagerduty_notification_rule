@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_rollbar_pagerduty_notification_rule
+# key: r_rollbar_pagerduty_notification_rule
+# --
+
+resource "rollbar_pagerduty_notification_rule" "${1:this}" {
+}

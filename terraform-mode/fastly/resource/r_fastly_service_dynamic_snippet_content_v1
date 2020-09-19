@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fastly_service_dynamic_snippet_content_v1
+# key: r_fastly_service_dynamic_snippet_content_v1
+# --
+
+resource "fastly_service_dynamic_snippet_content_v1" "${1:this}" {
+    content = "${2:content}"
+    service_id = "${3:service_id}"
+    snippet_id = "${4:snippet_id}"
+}

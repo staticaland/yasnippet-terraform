@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_run_setup
+# key: r_linuxbox_run_setup
+# --
+
+resource "linuxbox_run_setup" "${1:this}" {
+    host_address = "${2:host_address}"
+    setup = "${3:setup}"
+    ssh_key = "${4:ssh_key}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_certificate
+# key: r_digitalocean_certificate
+# --
+
+resource "digitalocean_certificate" "${1:this}" {
+    name = "${2:name}"
+}

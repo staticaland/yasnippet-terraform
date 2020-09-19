@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_netbox_sites
+# key: d_netbox_sites
+# --
+
+data "netbox_sites" "${1:this}" {
+    name = "${2:name}"
+}

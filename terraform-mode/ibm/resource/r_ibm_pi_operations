@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_operations
+# key: r_ibm_pi_operations
+# --
+
+resource "ibm_pi_operations" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+    pi_operation = "${4:pi_operation}"
+}

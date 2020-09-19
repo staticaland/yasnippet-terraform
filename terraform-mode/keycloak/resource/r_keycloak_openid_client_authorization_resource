@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_client_authorization_resource
+# key: r_keycloak_openid_client_authorization_resource
+# --
+
+resource "keycloak_openid_client_authorization_resource" "${1:this}" {
+    name = "${2:name}"
+    realm_id = "${3:realm_id}"
+    resource_server_id = "${4:resource_server_id}"
+}

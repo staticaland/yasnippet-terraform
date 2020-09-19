@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_network_peering
+# key: r_google_compute_network_peering
+# --
+
+resource "google_compute_network_peering" "${1:this}" {
+    name = "${2:name}"
+    network = "${3:network}"
+    peer_network = "${4:peer_network}"
+}

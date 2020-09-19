@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_project_push_rules
+# key: r_gitlab_project_push_rules
+# --
+
+resource "gitlab_project_push_rules" "${1:this}" {
+    project = "${2:project}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_fqdn_pass_through
+# key: r_aviatrix_fqdn_pass_through
+# --
+
+resource "aviatrix_fqdn_pass_through" "${1:this}" {
+    gw_name = "${2:gw_name}"
+    pass_through_cidrs = "${3:pass_through_cidrs}"
+}

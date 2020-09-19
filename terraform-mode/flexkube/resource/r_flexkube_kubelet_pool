@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_kubelet_pool
+# key: r_flexkube_kubelet_pool
+# --
+
+resource "flexkube_kubelet_pool" "${1:this}" {
+}

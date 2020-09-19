@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_compute_image_capability_schema
+# key: d_oci_core_compute_image_capability_schema
+# --
+
+data "oci_core_compute_image_capability_schema" "${1:this}" {
+    compute_image_capability_schema_id = "${2:compute_image_capability_schema_id}"
+}

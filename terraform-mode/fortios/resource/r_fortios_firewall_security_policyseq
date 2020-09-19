@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_security_policyseq
+# key: r_fortios_firewall_security_policyseq
+# --
+
+resource "fortios_firewall_security_policyseq" "${1:this}" {
+    alter_position = "${2:alter_position}"
+    policy_dst_id = "${3:policy_dst_id}"
+    policy_src_id = "${4:policy_src_id}"
+}

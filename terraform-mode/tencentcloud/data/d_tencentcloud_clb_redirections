@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_clb_redirections
+# key: d_tencentcloud_clb_redirections
+# --
+
+data "tencentcloud_clb_redirections" "${1:this}" {
+    clb_id = "${2:clb_id}"
+    source_listener_id = "${3:source_listener_id}"
+    source_rule_id = "${4:source_rule_id}"
+}

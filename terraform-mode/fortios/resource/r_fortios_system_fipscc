@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_fipscc
+# key: r_fortios_system_fipscc
+# --
+
+resource "fortios_system_fipscc" "${1:this}" {
+}

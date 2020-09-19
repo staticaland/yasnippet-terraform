@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_cloudfoundry_app
+# key: d_cloudfoundry_app
+# --
+
+data "cloudfoundry_app" "${1:this}" {
+    name_or_id = "${2:name_or_id}"
+    space = "${3:space}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_deploy_key
+# key: r_gitlab_deploy_key
+# --
+
+resource "gitlab_deploy_key" "${1:this}" {
+    key = "${2:key}"
+    project = "${3:project}"
+    title = "${4:title}"
+}

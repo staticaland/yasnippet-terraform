@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_iam_agency
+# key: r_huaweicloud_iam_agency
+# --
+
+resource "huaweicloud_iam_agency" "${1:this}" {
+    delegated_domain_name = "${2:delegated_domain_name}"
+    name = "${3:name}"
+}

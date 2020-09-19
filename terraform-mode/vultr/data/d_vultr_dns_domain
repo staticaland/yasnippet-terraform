@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vultr_dns_domain
+# key: d_vultr_dns_domain
+# --
+
+data "vultr_dns_domain" "${1:this}" {
+    domain = "${2:domain}"
+}

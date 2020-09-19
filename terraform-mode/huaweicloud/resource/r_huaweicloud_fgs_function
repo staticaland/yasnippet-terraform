@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_fgs_function
+# key: r_huaweicloud_fgs_function
+# --
+
+resource "huaweicloud_fgs_function" "${1:this}" {
+    code_type = "${2:code_type}"
+    func_code = "${3:func_code}"
+    handler = "${4:handler}"
+    memory_size = "${5:memory_size}"
+    name = "${6:name}"
+    package = "${7:package}"
+    runtime = "${8:runtime}"
+    timeout = "${9:timeout}"
+}

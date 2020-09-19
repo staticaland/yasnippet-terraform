@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_affinityinterrupt
+# key: r_fortios_system_affinityinterrupt
+# --
+
+resource "fortios_system_affinityinterrupt" "${1:this}" {
+    affinity_cpumask = "${2:affinity_cpumask}"
+    fosid = "${3:fosid}"
+    interrupt = "${4:interrupt}"
+}

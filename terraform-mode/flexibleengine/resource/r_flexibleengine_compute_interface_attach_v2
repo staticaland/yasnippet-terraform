@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_compute_interface_attach_v2
+# key: r_flexibleengine_compute_interface_attach_v2
+# --
+
+resource "flexibleengine_compute_interface_attach_v2" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

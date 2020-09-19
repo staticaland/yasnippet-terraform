@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_composer_environment
+# key: r_google_composer_environment
+# --
+
+resource "google_composer_environment" "${1:this}" {
+    name = "${2:name}"
+}

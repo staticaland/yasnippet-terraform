@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_team
+# key: r_signalfx_team
+# --
+
+resource "signalfx_team" "${1:this}" {
+    name = "${2:name}"
+}

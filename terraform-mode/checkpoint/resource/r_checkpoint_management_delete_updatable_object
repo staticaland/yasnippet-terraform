@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_delete_updatable_object
+# key: r_checkpoint_management_delete_updatable_object
+# --
+
+resource "checkpoint_management_delete_updatable_object" "${1:this}" {
+    name = "${2:name}"
+}

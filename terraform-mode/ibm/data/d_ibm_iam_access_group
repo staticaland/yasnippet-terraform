@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_access_group
+# key: d_ibm_iam_access_group
+# --
+
+data "ibm_iam_access_group" "${1:this}" {
+}

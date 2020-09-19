@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_k8s_cluster_beta
+# key: r_scaleway_k8s_cluster_beta
+# --
+
+resource "scaleway_k8s_cluster_beta" "${1:this}" {
+    cni = "${2:cni}"
+    name = "${3:name}"
+    version = "${4:version}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_certificate_local
+# key: r_fortios_certificate_local
+# --
+
+resource "fortios_certificate_local" "${1:this}" {
+    name = "${2:name}"
+    private_key = "${3:private_key}"
+}

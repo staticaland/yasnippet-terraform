@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_log_threatweight
+# key: r_fortios_log_threatweight
+# --
+
+resource "fortios_log_threatweight" "${1:this}" {
+}

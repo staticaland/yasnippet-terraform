@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_subnets
+# key: d_ibm_is_subnets
+# --
+
+data "ibm_is_subnets" "${1:this}" {
+}

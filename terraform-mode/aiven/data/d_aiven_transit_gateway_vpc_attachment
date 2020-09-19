@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_aiven_transit_gateway_vpc_attachment
+# key: d_aiven_transit_gateway_vpc_attachment
+# --
+
+data "aiven_transit_gateway_vpc_attachment" "${1:this}" {
+    peer_cloud_account = "${2:peer_cloud_account}"
+    peer_vpc = "${3:peer_vpc}"
+    vpc_id = "${4:vpc_id}"
+}

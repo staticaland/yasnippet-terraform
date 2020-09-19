@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_panos_layer3_subinterface
+# key: r_panos_layer3_subinterface
+# --
+
+resource "panos_layer3_subinterface" "${1:this}" {
+    name = "${2:name}"
+    parent_interface = "${3:parent_interface}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_catalog_item
+# key: d_vra_catalog_item
+# --
+
+data "vra_catalog_item" "${1:this}" {
+}

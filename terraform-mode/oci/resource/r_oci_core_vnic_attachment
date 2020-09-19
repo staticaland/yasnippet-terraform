@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_vnic_attachment
+# key: r_oci_core_vnic_attachment
+# --
+
+resource "oci_core_vnic_attachment" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_ether_type_ns_service
+# key: r_nsxt_ether_type_ns_service
+# --
+
+resource "nsxt_ether_type_ns_service" "${1:this}" {
+    ether_type = "${2:ether_type}"
+}

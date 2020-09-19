@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_vpc_route_tables
+# key: d_tencentcloud_vpc_route_tables
+# --
+
+data "tencentcloud_vpc_route_tables" "${1:this}" {
+}

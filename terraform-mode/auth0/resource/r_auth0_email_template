@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_auth0_email_template
+# key: r_auth0_email_template
+# --
+
+resource "auth0_email_template" "${1:this}" {
+    body = "${2:body}"
+    enabled = "${3:enabled}"
+    from = "${4:from}"
+    subject = "${5:subject}"
+    syntax = "${6:syntax}"
+    template = "${7:template}"
+}

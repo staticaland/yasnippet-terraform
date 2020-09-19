@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_dedicated_server_reboot_task
+# key: r_ovh_dedicated_server_reboot_task
+# --
+
+resource "ovh_dedicated_server_reboot_task" "${1:this}" {
+    keepers = "${2:keepers}"
+    service_name = "${3:service_name}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_network_peering_routes_config
+# key: r_google_compute_network_peering_routes_config
+# --
+
+resource "google_compute_network_peering_routes_config" "${1:this}" {
+    export_custom_routes = "${2:export_custom_routes}"
+    import_custom_routes = "${3:import_custom_routes}"
+    network = "${4:network}"
+    peering = "${5:peering}"
+}

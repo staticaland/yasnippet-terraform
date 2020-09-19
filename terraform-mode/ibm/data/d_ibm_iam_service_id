@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_service_id
+# key: d_ibm_iam_service_id
+# --
+
+data "ibm_iam_service_id" "${1:this}" {
+    name = "${2:name}"
+}

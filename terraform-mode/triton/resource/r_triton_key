@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_triton_key
+# key: r_triton_key
+# --
+
+resource "triton_key" "${1:this}" {
+    key = "${2:key}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_whitelist
+# key: r_huaweicloud_lb_whitelist
+# --
+
+resource "huaweicloud_lb_whitelist" "${1:this}" {
+    listener_id = "${2:listener_id}"
+}

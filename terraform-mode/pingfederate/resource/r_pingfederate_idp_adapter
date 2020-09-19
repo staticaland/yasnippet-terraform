@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_idp_adapter
+# key: r_pingfederate_idp_adapter
+# --
+
+resource "pingfederate_idp_adapter" "${1:this}" {
+    name = "${2:name}"
+}

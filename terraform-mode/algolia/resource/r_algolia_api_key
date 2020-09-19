@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_algolia_api_key
+# key: r_algolia_api_key
+# --
+
+resource "algolia_api_key" "${1:this}" {
+    acl = "${2:acl}"
+    description = "${3:description}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_vra_region_enumeration_vmc
+# key: d_vra_region_enumeration_vmc
+# --
+
+data "vra_region_enumeration_vmc" "${1:this}" {
+    api_token = "${2:api_token}"
+    sddc_name = "${3:sddc_name}"
+    vcenter_hostname = "${4:vcenter_hostname}"
+    vcenter_password = "${5:vcenter_password}"
+    vcenter_username = "${6:vcenter_username}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_router_interface
+# key: r_alicloud_router_interface
+# --
+
+resource "alicloud_router_interface" "${1:this}" {
+    opposite_region = "${2:opposite_region}"
+    role = "${3:role}"
+    router_id = "${4:router_id}"
+    router_type = "${5:router_type}"
+}

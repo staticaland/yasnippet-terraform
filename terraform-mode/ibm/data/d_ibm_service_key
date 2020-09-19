@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_ibm_service_key
+# key: d_ibm_service_key
+# --
+
+data "ibm_service_key" "${1:this}" {
+    name = "${2:name}"
+    service_instance_name = "${3:service_instance_name}"
+    space_guid = "${4:space_guid}"
+}

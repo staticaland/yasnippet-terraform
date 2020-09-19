@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_me_installation_template_partition_scheme
+# key: r_ovh_me_installation_template_partition_scheme
+# --
+
+resource "ovh_me_installation_template_partition_scheme" "${1:this}" {
+    name = "${2:name}"
+    priority = "${3:priority}"
+    template_name = "${4:template_name}"
+}

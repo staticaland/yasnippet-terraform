@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_entity_tags
+# key: r_newrelic_entity_tags
+# --
+
+resource "newrelic_entity_tags" "${1:this}" {
+    guid = "${2:guid}"
+}

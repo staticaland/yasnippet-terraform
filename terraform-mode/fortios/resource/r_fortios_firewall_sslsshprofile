@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_sslsshprofile
+# key: r_fortios_firewall_sslsshprofile
+# --
+
+resource "fortios_firewall_sslsshprofile" "${1:this}" {
+    name = "${2:name}"
+}

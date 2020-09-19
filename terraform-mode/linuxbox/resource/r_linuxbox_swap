@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_swap
+# key: r_linuxbox_swap
+# --
+
+resource "linuxbox_swap" "${1:this}" {
+    host_address = "${2:host_address}"
+    ssh_key = "${3:ssh_key}"
+    swap_size = "${4:swap_size}"
+}

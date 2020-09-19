@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_vlan
+# key: r_junos_vlan
+# --
+
+resource "junos_vlan" "${1:this}" {
+    name = "${2:name}"
+}

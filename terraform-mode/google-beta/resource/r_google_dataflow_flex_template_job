@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_dataflow_flex_template_job
+# key: r_google_dataflow_flex_template_job
+# --
+
+resource "google_dataflow_flex_template_job" "${1:this}" {
+    container_spec_gcs_path = "${2:container_spec_gcs_path}"
+    name = "${3:name}"
+}

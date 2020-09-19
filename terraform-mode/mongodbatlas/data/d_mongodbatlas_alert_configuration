@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_alert_configuration
+# key: d_mongodbatlas_alert_configuration
+# --
+
+data "mongodbatlas_alert_configuration" "${1:this}" {
+    alert_configuration_id = "${2:alert_configuration_id}"
+    project_id = "${3:project_id}"
+}

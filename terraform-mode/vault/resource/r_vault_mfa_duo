@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_vault_mfa_duo
+# key: r_vault_mfa_duo
+# --
+
+resource "vault_mfa_duo" "${1:this}" {
+    api_hostname = "${2:api_hostname}"
+    integration_key = "${3:integration_key}"
+    mount_accessor = "${4:mount_accessor}"
+    name = "${5:name}"
+    secret_key = "${6:secret_key}"
+}

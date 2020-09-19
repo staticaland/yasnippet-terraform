@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_kvstore_backup_policy
+# key: r_alicloud_kvstore_backup_policy
+# --
+
+resource "alicloud_kvstore_backup_policy" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

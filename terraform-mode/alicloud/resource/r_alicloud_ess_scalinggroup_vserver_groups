@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ess_scalinggroup_vserver_groups
+# key: r_alicloud_ess_scalinggroup_vserver_groups
+# --
+
+resource "alicloud_ess_scalinggroup_vserver_groups" "${1:this}" {
+    scaling_group_id = "${2:scaling_group_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_service_plan
+# key: d_ibm_service_plan
+# --
+
+data "ibm_service_plan" "${1:this}" {
+    plan = "${2:plan}"
+    service = "${3:service}"
+}

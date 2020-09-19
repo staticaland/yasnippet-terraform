@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_network_security_rule
+# key: r_azurestack_network_security_rule
+# --
+
+resource "azurestack_network_security_rule" "${1:this}" {
+    access = "${2:access}"
+    direction = "${3:direction}"
+    name = "${4:name}"
+    network_security_group_name = "${5:network_security_group_name}"
+    priority = "${6:priority}"
+    protocol = "${7:protocol}"
+    resource_group_name = "${8:resource_group_name}"
+}

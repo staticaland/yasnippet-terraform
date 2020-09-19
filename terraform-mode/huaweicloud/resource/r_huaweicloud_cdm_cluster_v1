@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cdm_cluster_v1
+# key: r_huaweicloud_cdm_cluster_v1
+# --
+
+resource "huaweicloud_cdm_cluster_v1" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    flavor_id = "${3:flavor_id}"
+    name = "${4:name}"
+    security_group_id = "${5:security_group_id}"
+    subnet_id = "${6:subnet_id}"
+    version = "${7:version}"
+    vpc_id = "${8:vpc_id}"
+}

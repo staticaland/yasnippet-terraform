@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_group_ldap_link
+# key: r_gitlab_group_ldap_link
+# --
+
+resource "gitlab_group_ldap_link" "${1:this}" {
+    access_level = "${2:access_level}"
+    cn = "${3:cn}"
+    group_id = "${4:group_id}"
+    ldap_provider = "${5:ldap_provider}"
+}

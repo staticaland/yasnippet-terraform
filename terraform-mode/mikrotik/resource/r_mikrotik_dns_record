@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mikrotik_dns_record
+# key: r_mikrotik_dns_record
+# --
+
+resource "mikrotik_dns_record" "${1:this}" {
+    address = "${2:address}"
+    name = "${3:name}"
+}

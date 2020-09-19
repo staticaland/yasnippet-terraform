@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_group_cluster
+# key: r_gitlab_group_cluster
+# --
+
+resource "gitlab_group_cluster" "${1:this}" {
+    group = "${2:group}"
+    kubernetes_api_url = "${3:kubernetes_api_url}"
+    kubernetes_token = "${4:kubernetes_token}"
+    name = "${5:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_pingfederate_admin
+# key: r_pingaccess_pingfederate_admin
+# --
+
+resource "pingaccess_pingfederate_admin" "${1:this}" {
+    admin_username = "${2:admin_username}"
+    host = "${3:host}"
+    port = "${4:port}"
+}

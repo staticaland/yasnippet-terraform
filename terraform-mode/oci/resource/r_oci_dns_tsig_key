@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_dns_tsig_key
+# key: r_oci_dns_tsig_key
+# --
+
+resource "oci_dns_tsig_key" "${1:this}" {
+    algorithm = "${2:algorithm}"
+    compartment_id = "${3:compartment_id}"
+    name = "${4:name}"
+    secret = "${5:secret}"
+}

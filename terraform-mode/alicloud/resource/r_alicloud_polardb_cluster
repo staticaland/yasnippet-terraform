@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_polardb_cluster
+# key: r_alicloud_polardb_cluster
+# --
+
+resource "alicloud_polardb_cluster" "${1:this}" {
+    db_node_class = "${2:db_node_class}"
+    db_type = "${3:db_type}"
+    db_version = "${4:db_version}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_matchbox_group
+# key: r_matchbox_group
+# --
+
+resource "matchbox_group" "${1:this}" {
+    name = "${2:name}"
+    profile = "${3:profile}"
+}

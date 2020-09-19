@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_pipe
+# key: r_snowflake_pipe
+# --
+
+resource "snowflake_pipe" "${1:this}" {
+    copy_statement = "${2:copy_statement}"
+    database = "${3:database}"
+    name = "${4:name}"
+    schema = "${5:schema}"
+}

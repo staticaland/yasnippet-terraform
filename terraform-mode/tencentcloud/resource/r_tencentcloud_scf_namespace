@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_scf_namespace
+# key: r_tencentcloud_scf_namespace
+# --
+
+resource "tencentcloud_scf_namespace" "${1:this}" {
+    namespace = "${2:namespace}"
+}

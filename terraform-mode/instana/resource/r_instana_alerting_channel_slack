@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_slack
+# key: r_instana_alerting_channel_slack
+# --
+
+resource "instana_alerting_channel_slack" "${1:this}" {
+    name = "${2:name}"
+    webhook_url = "${3:webhook_url}"
+}

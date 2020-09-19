@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_gpdb_connection
+# key: r_alicloud_gpdb_connection
+# --
+
+resource "alicloud_gpdb_connection" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

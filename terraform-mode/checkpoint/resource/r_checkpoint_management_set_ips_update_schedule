@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_set_ips_update_schedule
+# key: r_checkpoint_management_set_ips_update_schedule
+# --
+
+resource "checkpoint_management_set_ips_update_schedule" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_vipgrp
+# key: r_fortios_firewall_vipgrp
+# --
+
+resource "fortios_firewall_vipgrp" "${1:this}" {
+    interface = "${2:interface}"
+}

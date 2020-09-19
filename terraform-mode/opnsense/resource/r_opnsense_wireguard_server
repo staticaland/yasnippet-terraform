@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_opnsense_wireguard_server
+# key: r_opnsense_wireguard_server
+# --
+
+resource "opnsense_wireguard_server" "${1:this}" {
+    disable_routes = "${2:disable_routes}"
+    dns = "${3:dns}"
+    enabled = "${4:enabled}"
+    name = "${5:name}"
+    peers = "${6:peers}"
+    port = "${7:port}"
+    tunnel_address = "${8:tunnel_address}"
+}

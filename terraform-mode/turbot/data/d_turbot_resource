@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_turbot_resource
+# key: d_turbot_resource
+# --
+
+data "turbot_resource" "${1:this}" {
+    id = "${2:id}"
+}

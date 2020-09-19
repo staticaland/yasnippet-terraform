@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_appliance
+# key: d_ecloud_appliance
+# --
+
+data "ecloud_appliance" "${1:this}" {
+    name = "${2:name}"
+}

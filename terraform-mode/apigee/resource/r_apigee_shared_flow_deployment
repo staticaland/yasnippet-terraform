@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_apigee_shared_flow_deployment
+# key: r_apigee_shared_flow_deployment
+# --
+
+resource "apigee_shared_flow_deployment" "${1:this}" {
+    env = "${2:env}"
+    org = "${3:org}"
+    revision = "${4:revision}"
+    shared_flow_name = "${5:shared_flow_name}"
+}

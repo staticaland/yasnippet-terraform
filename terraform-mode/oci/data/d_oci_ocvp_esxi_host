@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_ocvp_esxi_host
+# key: d_oci_ocvp_esxi_host
+# --
+
+data "oci_ocvp_esxi_host" "${1:this}" {
+    esxi_host_id = "${2:esxi_host_id}"
+}

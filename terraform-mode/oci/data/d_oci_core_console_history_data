@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_console_history_data
+# key: d_oci_core_console_history_data
+# --
+
+data "oci_core_console_history_data" "${1:this}" {
+    console_history_id = "${2:console_history_id}"
+}

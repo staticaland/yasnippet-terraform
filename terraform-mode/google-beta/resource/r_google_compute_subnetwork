@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_subnetwork
+# key: r_google_compute_subnetwork
+# --
+
+resource "google_compute_subnetwork" "${1:this}" {
+    ip_cidr_range = "${2:ip_cidr_range}"
+    name = "${3:name}"
+    network = "${4:network}"
+}

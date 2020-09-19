@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_discord_role
+# key: r_discord_role
+# --
+
+resource "discord_role" "${1:this}" {
+    name = "${2:name}"
+    server_id = "${3:server_id}"
+}

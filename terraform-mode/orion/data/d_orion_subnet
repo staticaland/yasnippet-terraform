@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_orion_subnet
+# key: d_orion_subnet
+# --
+
+data "orion_subnet" "${1:this}" {
+    vlan = "${2:vlan}"
+}

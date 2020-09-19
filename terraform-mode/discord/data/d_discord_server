@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_discord_server
+# key: d_discord_server
+# --
+
+data "discord_server" "${1:this}" {
+}

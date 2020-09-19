@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outlook_mail_folder
+# key: d_outlook_mail_folder
+# --
+
+data "outlook_mail_folder" "${1:this}" {
+}

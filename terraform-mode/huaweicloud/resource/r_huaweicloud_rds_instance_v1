@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_rds_instance_v1
+# key: r_huaweicloud_rds_instance_v1
+# --
+
+resource "huaweicloud_rds_instance_v1" "${1:this}" {
+    availabilityzone = "${2:availabilityzone}"
+    dbrtpd = "${3:dbrtpd}"
+    flavorref = "${4:flavorref}"
+    vpc = "${5:vpc}"
+}

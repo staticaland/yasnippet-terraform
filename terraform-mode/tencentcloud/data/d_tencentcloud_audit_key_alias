@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_audit_key_alias
+# key: d_tencentcloud_audit_key_alias
+# --
+
+data "tencentcloud_audit_key_alias" "${1:this}" {
+    region = "${2:region}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ess_notifications
+# key: d_alicloud_ess_notifications
+# --
+
+data "alicloud_ess_notifications" "${1:this}" {
+    scaling_group_id = "${2:scaling_group_id}"
+}

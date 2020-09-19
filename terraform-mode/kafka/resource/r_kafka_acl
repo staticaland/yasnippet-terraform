@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_kafka_acl
+# key: r_kafka_acl
+# --
+
+resource "kafka_acl" "${1:this}" {
+    acl_host = "${2:acl_host}"
+    acl_operation = "${3:acl_operation}"
+    acl_permission_type = "${4:acl_permission_type}"
+    acl_principal = "${5:acl_principal}"
+    resource_name = "${6:resource_name}"
+    resource_type = "${7:resource_type}"
+}

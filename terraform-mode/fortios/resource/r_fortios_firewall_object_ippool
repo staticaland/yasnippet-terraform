@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_object_ippool
+# key: r_fortios_firewall_object_ippool
+# --
+
+resource "fortios_firewall_object_ippool" "${1:this}" {
+    endip = "${2:endip}"
+    name = "${3:name}"
+    startip = "${4:startip}"
+    type = "${5:type}"
+}

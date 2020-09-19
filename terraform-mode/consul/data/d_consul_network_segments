@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_consul_network_segments
+# key: d_consul_network_segments
+# --
+
+data "consul_network_segments" "${1:this}" {
+}

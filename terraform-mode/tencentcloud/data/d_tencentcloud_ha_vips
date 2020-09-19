@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_ha_vips
+# key: d_tencentcloud_ha_vips
+# --
+
+data "tencentcloud_ha_vips" "${1:this}" {
+}

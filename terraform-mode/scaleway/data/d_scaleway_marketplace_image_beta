@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_marketplace_image_beta
+# key: d_scaleway_marketplace_image_beta
+# --
+
+data "scaleway_marketplace_image_beta" "${1:this}" {
+    label = "${2:label}"
+}

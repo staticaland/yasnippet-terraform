@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_bgp_redist_rule
+# key: r_panos_panorama_bgp_redist_rule
+# --
+
+resource "panos_panorama_bgp_redist_rule" "${1:this}" {
+    name = "${2:name}"
+    virtual_router = "${3:virtual_router}"
+}

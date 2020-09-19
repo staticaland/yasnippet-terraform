@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_slb_listener
+# key: r_alicloud_slb_listener
+# --
+
+resource "alicloud_slb_listener" "${1:this}" {
+    frontend_port = "${2:frontend_port}"
+    load_balancer_id = "${3:load_balancer_id}"
+    protocol = "${4:protocol}"
+}

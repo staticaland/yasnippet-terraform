@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_harbor_user
+# key: r_harbor_user
+# --
+
+resource "harbor_user" "${1:this}" {
+    email = "${2:email}"
+    full_name = "${3:full_name}"
+    password = "${4:password}"
+    username = "${5:username}"
+}

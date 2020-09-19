@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_mackerel_service_monitor
+# key: r_mackerel_service_monitor
+# --
+
+resource "mackerel_service_monitor" "${1:this}" {
+    critical = "${2:critical}"
+    duration = "${3:duration}"
+    metric = "${4:metric}"
+    name = "${5:name}"
+    operator = "${6:operator}"
+    service = "${7:service}"
+    warning = "${8:warning}"
+}

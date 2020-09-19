@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_db_read_write_splitting_connection
+# key: r_alicloud_db_read_write_splitting_connection
+# --
+
+resource "alicloud_db_read_write_splitting_connection" "${1:this}" {
+    distribution_type = "${2:distribution_type}"
+    instance_id = "${3:instance_id}"
+}

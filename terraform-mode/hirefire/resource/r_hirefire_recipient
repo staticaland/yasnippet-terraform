@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hirefire_recipient
+# key: r_hirefire_recipient
+# --
+
+resource "hirefire_recipient" "${1:this}" {
+    application_id = "${2:application_id}"
+    email = "${3:email}"
+}

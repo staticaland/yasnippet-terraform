@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_worker_script
+# key: r_cloudflare_worker_script
+# --
+
+resource "cloudflare_worker_script" "${1:this}" {
+    content = "${2:content}"
+    name = "${3:name}"
+}

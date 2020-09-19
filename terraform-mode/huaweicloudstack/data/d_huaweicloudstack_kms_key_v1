@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloudstack_kms_key_v1
+# key: d_huaweicloudstack_kms_key_v1
+# --
+
+data "huaweicloudstack_kms_key_v1" "${1:this}" {
+}

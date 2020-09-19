@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_static_nat
+# key: r_cosmic_static_nat
+# --
+
+resource "cosmic_static_nat" "${1:this}" {
+    ip_address_id = "${2:ip_address_id}"
+    virtual_machine_id = "${3:virtual_machine_id}"
+}

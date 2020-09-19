@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_vpc_subnet_v1
+# key: r_opentelekomcloud_vpc_subnet_v1
+# --
+
+resource "opentelekomcloud_vpc_subnet_v1" "${1:this}" {
+    cidr = "${2:cidr}"
+    gateway_ip = "${3:gateway_ip}"
+    name = "${4:name}"
+    vpc_id = "${5:vpc_id}"
+}

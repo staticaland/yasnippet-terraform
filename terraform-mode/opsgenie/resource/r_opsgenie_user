@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_user
+# key: r_opsgenie_user
+# --
+
+resource "opsgenie_user" "${1:this}" {
+    full_name = "${2:full_name}"
+    role = "${3:role}"
+    username = "${4:username}"
+}

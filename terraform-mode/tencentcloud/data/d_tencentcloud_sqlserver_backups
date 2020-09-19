@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_sqlserver_backups
+# key: d_tencentcloud_sqlserver_backups
+# --
+
+data "tencentcloud_sqlserver_backups" "${1:this}" {
+    end_time = "${2:end_time}"
+    instance_id = "${3:instance_id}"
+    start_time = "${4:start_time}"
+}

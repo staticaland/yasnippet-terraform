@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_panos_bgp_conditional_adv_advertise_filter
+# key: r_panos_bgp_conditional_adv_advertise_filter
+# --
+
+resource "panos_bgp_conditional_adv_advertise_filter" "${1:this}" {
+    address_prefixes = "${2:address_prefixes}"
+    bgp_conditional_adv = "${3:bgp_conditional_adv}"
+    name = "${4:name}"
+    virtual_router = "${5:virtual_router}"
+}

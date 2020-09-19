@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cs_route
+# key: r_huaweicloud_cs_route
+# --
+
+resource "huaweicloud_cs_route" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    destination = "${3:destination}"
+    peering_id = "${4:peering_id}"
+}

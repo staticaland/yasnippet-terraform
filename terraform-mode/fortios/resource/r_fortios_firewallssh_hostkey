@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallssh_hostkey
+# key: r_fortios_firewallssh_hostkey
+# --
+
+resource "fortios_firewallssh_hostkey" "${1:this}" {
+}

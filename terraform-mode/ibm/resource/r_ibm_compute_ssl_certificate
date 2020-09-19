@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_ssl_certificate
+# key: r_ibm_compute_ssl_certificate
+# --
+
+resource "ibm_compute_ssl_certificate" "${1:this}" {
+    certificate = "${2:certificate}"
+    private_key = "${3:private_key}"
+}

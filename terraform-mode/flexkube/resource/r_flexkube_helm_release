@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_helm_release
+# key: r_flexkube_helm_release
+# --
+
+resource "flexkube_helm_release" "${1:this}" {
+    chart = "${2:chart}"
+    kubeconfig = "${3:kubeconfig}"
+    name = "${4:name}"
+    namespace = "${5:namespace}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_application_settings
+# key: r_newrelic_application_settings
+# --
+
+resource "newrelic_application_settings" "${1:this}" {
+    app_apdex_threshold = "${2:app_apdex_threshold}"
+    enable_real_user_monitoring = "${3:enable_real_user_monitoring}"
+    end_user_apdex_threshold = "${4:end_user_apdex_threshold}"
+    name = "${5:name}"
+}

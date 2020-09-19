@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_sentry_rule
+# key: r_sentry_rule
+# --
+
+resource "sentry_rule" "${1:this}" {
+    actions = "${2:actions}"
+    conditions = "${3:conditions}"
+    name = "${4:name}"
+    organization = "${5:organization}"
+    project = "${6:project}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_route_table_link
+# key: r_outscale_route_table_link
+# --
+
+resource "outscale_route_table_link" "${1:this}" {
+    route_table_id = "${2:route_table_id}"
+    subnet_id = "${3:subnet_id}"
+}

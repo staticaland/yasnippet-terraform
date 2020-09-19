@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallssh_setting
+# key: r_fortios_firewallssh_setting
+# --
+
+resource "fortios_firewallssh_setting" "${1:this}" {
+}

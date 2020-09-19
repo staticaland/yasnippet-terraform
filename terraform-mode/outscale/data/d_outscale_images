@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_images
+# key: d_outscale_images
+# --
+
+data "outscale_images" "${1:this}" {
+}

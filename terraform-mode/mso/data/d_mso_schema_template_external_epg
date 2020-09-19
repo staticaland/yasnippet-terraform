@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_external_epg
+# key: d_mso_schema_template_external_epg
+# --
+
+data "mso_schema_template_external_epg" "${1:this}" {
+    external_epg_name = "${2:external_epg_name}"
+    schema_id = "${3:schema_id}"
+    template_name = "${4:template_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_configs_conf
+# key: r_splunk_configs_conf
+# --
+
+resource "splunk_configs_conf" "${1:this}" {
+    name = "${2:name}"
+}

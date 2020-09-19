@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_system_radius_server
+# key: r_junos_system_radius_server
+# --
+
+resource "junos_system_radius_server" "${1:this}" {
+    address = "${2:address}"
+    secret = "${3:secret}"
+}

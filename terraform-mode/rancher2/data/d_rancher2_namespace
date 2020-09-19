@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_namespace
+# key: d_rancher2_namespace
+# --
+
+data "rancher2_namespace" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

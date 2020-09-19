@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitops_symlink
+# key: r_gitops_symlink
+# --
+
+resource "gitops_symlink" "${1:this}" {
+    checkout = "${2:checkout}"
+    path = "${3:path}"
+    target = "${4:target}"
+}

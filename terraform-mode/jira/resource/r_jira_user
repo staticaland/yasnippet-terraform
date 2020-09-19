@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jira_user
+# key: r_jira_user
+# --
+
+resource "jira_user" "${1:this}" {
+    email = "${2:email}"
+    name = "${3:name}"
+}

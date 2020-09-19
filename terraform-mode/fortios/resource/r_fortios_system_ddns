@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ddns
+# key: r_fortios_system_ddns
+# --
+
+resource "fortios_system_ddns" "${1:this}" {
+    ddns_server = "${2:ddns_server}"
+}

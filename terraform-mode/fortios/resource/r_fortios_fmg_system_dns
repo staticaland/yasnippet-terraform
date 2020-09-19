@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_dns
+# key: r_fortios_fmg_system_dns
+# --
+
+resource "fortios_fmg_system_dns" "${1:this}" {
+}

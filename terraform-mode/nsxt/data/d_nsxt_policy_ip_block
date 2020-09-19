@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_ip_block
+# key: d_nsxt_policy_ip_block
+# --
+
+data "nsxt_policy_ip_block" "${1:this}" {
+}

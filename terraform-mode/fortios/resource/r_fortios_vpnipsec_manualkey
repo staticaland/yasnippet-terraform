@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnipsec_manualkey
+# key: r_fortios_vpnipsec_manualkey
+# --
+
+resource "fortios_vpnipsec_manualkey" "${1:this}" {
+    authentication = "${2:authentication}"
+    encryption = "${3:encryption}"
+    interface = "${4:interface}"
+    remote_gw = "${5:remote_gw}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_volume_backup_policy
+# key: r_oci_core_volume_backup_policy
+# --
+
+resource "oci_core_volume_backup_policy" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

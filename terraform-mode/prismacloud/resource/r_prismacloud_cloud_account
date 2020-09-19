@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_prismacloud_cloud_account
+# key: r_prismacloud_cloud_account
+# --
+
+resource "prismacloud_cloud_account" "${1:this}" {
+}

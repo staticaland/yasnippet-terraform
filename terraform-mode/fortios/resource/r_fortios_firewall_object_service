@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_object_service
+# key: r_fortios_firewall_object_service
+# --
+
+resource "fortios_firewall_object_service" "${1:this}" {
+    category = "${2:category}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+}

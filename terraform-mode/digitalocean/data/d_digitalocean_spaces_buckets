@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_spaces_buckets
+# key: d_digitalocean_spaces_buckets
+# --
+
+data "digitalocean_spaces_buckets" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_discord_member
+# key: d_discord_member
+# --
+
+data "discord_member" "${1:this}" {
+    server_id = "${2:server_id}"
+}

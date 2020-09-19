@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ovh_dedicated_servers
+# key: d_ovh_dedicated_servers
+# --
+
+data "ovh_dedicated_servers" "${1:this}" {
+}

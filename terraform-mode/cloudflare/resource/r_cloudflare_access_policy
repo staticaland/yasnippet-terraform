@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_access_policy
+# key: r_cloudflare_access_policy
+# --
+
+resource "cloudflare_access_policy" "${1:this}" {
+    application_id = "${2:application_id}"
+    decision = "${3:decision}"
+    name = "${4:name}"
+}

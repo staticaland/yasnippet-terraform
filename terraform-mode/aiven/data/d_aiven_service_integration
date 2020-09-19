@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_aiven_service_integration
+# key: d_aiven_service_integration
+# --
+
+data "aiven_service_integration" "${1:this}" {
+    destination_service_name = "${2:destination_service_name}"
+    integration_type = "${3:integration_type}"
+    project = "${4:project}"
+    source_service_name = "${5:source_service_name}"
+}

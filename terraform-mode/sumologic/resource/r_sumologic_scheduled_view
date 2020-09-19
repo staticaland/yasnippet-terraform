@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_scheduled_view
+# key: r_sumologic_scheduled_view
+# --
+
+resource "sumologic_scheduled_view" "${1:this}" {
+    index_name = "${2:index_name}"
+    query = "${3:query}"
+    start_time = "${4:start_time}"
+}

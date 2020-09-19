@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_alidns_instance
+# key: r_alicloud_alidns_instance
+# --
+
+resource "alicloud_alidns_instance" "${1:this}" {
+    dns_security = "${2:dns_security}"
+    domain_numbers = "${3:domain_numbers}"
+    version_code = "${4:version_code}"
+}

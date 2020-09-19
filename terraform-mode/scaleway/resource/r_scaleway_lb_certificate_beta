@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_lb_certificate_beta
+# key: r_scaleway_lb_certificate_beta
+# --
+
+resource "scaleway_lb_certificate_beta" "${1:this}" {
+    lb_id = "${2:lb_id}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_akamai_cp_code
+# key: r_akamai_cp_code
+# --
+
+resource "akamai_cp_code" "${1:this}" {
+    contract = "${2:contract}"
+    group = "${3:group}"
+    name = "${4:name}"
+    product = "${5:product}"
+}

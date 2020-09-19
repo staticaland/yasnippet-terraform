@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_service_integration
+# key: r_pagerduty_service_integration
+# --
+
+resource "pagerduty_service_integration" "${1:this}" {
+    service = "${2:service}"
+}

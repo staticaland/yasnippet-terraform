@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_vpn_community_star
+# key: d_checkpoint_management_data_vpn_community_star
+# --
+
+data "checkpoint_management_data_vpn_community_star" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_http_event_collector
+# key: r_splunk_inputs_http_event_collector
+# --
+
+resource "splunk_inputs_http_event_collector" "${1:this}" {
+    name = "${2:name}"
+}

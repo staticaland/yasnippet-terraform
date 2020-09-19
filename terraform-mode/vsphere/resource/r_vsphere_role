@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_role
+# key: r_vsphere_role
+# --
+
+resource "vsphere_role" "${1:this}" {
+    name = "${2:name}"
+}

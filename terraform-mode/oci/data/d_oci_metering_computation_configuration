@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_metering_computation_configuration
+# key: d_oci_metering_computation_configuration
+# --
+
+data "oci_metering_computation_configuration" "${1:this}" {
+    tenant_id = "${2:tenant_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_compute_keypair
+# key: r_huaweicloud_compute_keypair
+# --
+
+resource "huaweicloud_compute_keypair" "${1:this}" {
+    name = "${2:name}"
+}

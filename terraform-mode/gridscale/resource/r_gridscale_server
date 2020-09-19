@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_server
+# key: r_gridscale_server
+# --
+
+resource "gridscale_server" "${1:this}" {
+    cores = "${2:cores}"
+    memory = "${3:memory}"
+    name = "${4:name}"
+}

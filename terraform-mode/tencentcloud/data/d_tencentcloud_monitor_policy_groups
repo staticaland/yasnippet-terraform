@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_monitor_policy_groups
+# key: d_tencentcloud_monitor_policy_groups
+# --
+
+data "tencentcloud_monitor_policy_groups" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_template
+# key: r_gridscale_template
+# --
+
+resource "gridscale_template" "${1:this}" {
+    name = "${2:name}"
+    snapshot_uuid = "${3:snapshot_uuid}"
+}

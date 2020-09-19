@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_pool
+# key: r_nsxt_lb_pool
+# --
+
+resource "nsxt_lb_pool" "${1:this}" {
+}

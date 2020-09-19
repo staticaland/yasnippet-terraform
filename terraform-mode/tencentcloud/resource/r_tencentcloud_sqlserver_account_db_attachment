@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_sqlserver_account_db_attachment
+# key: r_tencentcloud_sqlserver_account_db_attachment
+# --
+
+resource "tencentcloud_sqlserver_account_db_attachment" "${1:this}" {
+    account_name = "${2:account_name}"
+    db_name = "${3:db_name}"
+    instance_id = "${4:instance_id}"
+    privilege = "${5:privilege}"
+}

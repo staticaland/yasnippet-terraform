@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_authentication_policies_settings
+# key: r_pingfederate_authentication_policies_settings
+# --
+
+resource "pingfederate_authentication_policies_settings" "${1:this}" {
+}

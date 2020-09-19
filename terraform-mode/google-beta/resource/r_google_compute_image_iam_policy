@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_image_iam_policy
+# key: r_google_compute_image_iam_policy
+# --
+
+resource "google_compute_image_iam_policy" "${1:this}" {
+    image = "${2:image}"
+    policy_data = "${3:policy_data}"
+}

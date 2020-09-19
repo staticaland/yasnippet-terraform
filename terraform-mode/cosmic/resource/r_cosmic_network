@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_network
+# key: r_cosmic_network
+# --
+
+resource "cosmic_network" "${1:this}" {
+    cidr = "${2:cidr}"
+    name = "${3:name}"
+    network_offering = "${4:network_offering}"
+}

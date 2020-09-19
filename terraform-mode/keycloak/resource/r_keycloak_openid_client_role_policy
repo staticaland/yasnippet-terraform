@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_client_role_policy
+# key: r_keycloak_openid_client_role_policy
+# --
+
+resource "keycloak_openid_client_role_policy" "${1:this}" {
+    name = "${2:name}"
+    realm_id = "${3:realm_id}"
+    resource_server_id = "${4:resource_server_id}"
+    type = "${5:type}"
+}

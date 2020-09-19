@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovm_vd
+# key: r_ovm_vd
+# --
+
+resource "ovm_vd" "${1:this}" {
+    repositoryid = "${2:repositoryid}"
+    size = "${3:size}"
+    sparse = "${4:sparse}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_install_software_package
+# key: r_checkpoint_management_install_software_package
+# --
+
+resource "checkpoint_management_install_software_package" "${1:this}" {
+    name = "${2:name}"
+    targets = "${3:targets}"
+}

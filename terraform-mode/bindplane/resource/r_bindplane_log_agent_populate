@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bindplane_log_agent_populate
+# key: r_bindplane_log_agent_populate
+# --
+
+resource "bindplane_log_agent_populate" "${1:this}" {
+    name = "${2:name}"
+    provisioning_timeout = "${3:provisioning_timeout}"
+}

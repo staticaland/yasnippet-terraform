@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mysql_tables
+# key: d_mysql_tables
+# --
+
+data "mysql_tables" "${1:this}" {
+    database = "${2:database}"
+}

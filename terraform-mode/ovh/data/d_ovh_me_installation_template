@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ovh_me_installation_template
+# key: d_ovh_me_installation_template
+# --
+
+data "ovh_me_installation_template" "${1:this}" {
+    template_name = "${2:template_name}"
+}

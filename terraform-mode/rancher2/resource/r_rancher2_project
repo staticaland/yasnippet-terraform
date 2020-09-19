@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_project
+# key: r_rancher2_project
+# --
+
+resource "rancher2_project" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+}

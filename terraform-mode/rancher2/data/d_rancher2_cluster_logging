@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_cluster_logging
+# key: d_rancher2_cluster_logging
+# --
+
+data "rancher2_cluster_logging" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

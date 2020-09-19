@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_escalation
+# key: r_opsgenie_escalation
+# --
+
+resource "opsgenie_escalation" "${1:this}" {
+    name = "${2:name}"
+}

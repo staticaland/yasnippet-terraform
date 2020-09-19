@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_azurecaf_name
+# key: r_azurecaf_name
+# --
+
+resource "azurecaf_name" "${1:this}" {
+}

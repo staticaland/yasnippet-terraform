@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_vpc_peering_connection
+# key: d_huaweicloud_vpc_peering_connection
+# --
+
+data "huaweicloud_vpc_peering_connection" "${1:this}" {
+}

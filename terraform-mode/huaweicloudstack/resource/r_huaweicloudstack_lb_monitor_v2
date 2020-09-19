@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloudstack_lb_monitor_v2
+# key: r_huaweicloudstack_lb_monitor_v2
+# --
+
+resource "huaweicloudstack_lb_monitor_v2" "${1:this}" {
+    delay = "${2:delay}"
+    max_retries = "${3:max_retries}"
+    pool_id = "${4:pool_id}"
+    timeout = "${5:timeout}"
+    type = "${6:type}"
+}

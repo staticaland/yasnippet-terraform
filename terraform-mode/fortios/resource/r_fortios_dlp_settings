@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_dlp_settings
+# key: r_fortios_dlp_settings
+# --
+
+resource "fortios_dlp_settings" "${1:this}" {
+}

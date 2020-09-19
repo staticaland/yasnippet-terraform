@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_vm_clusters
+# key: d_oci_database_autonomous_vm_clusters
+# --
+
+data "oci_database_autonomous_vm_clusters" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

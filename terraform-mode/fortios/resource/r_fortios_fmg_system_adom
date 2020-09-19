@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_adom
+# key: r_fortios_fmg_system_adom
+# --
+
+resource "fortios_fmg_system_adom" "${1:this}" {
+    name = "${2:name}"
+}

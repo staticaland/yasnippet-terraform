@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_notification_channel_sns
+# key: r_sysdig_secure_notification_channel_sns
+# --
+
+resource "sysdig_secure_notification_channel_sns" "${1:this}" {
+    enabled = "${2:enabled}"
+    name = "${3:name}"
+    notify_when_ok = "${4:notify_when_ok}"
+    notify_when_resolved = "${5:notify_when_resolved}"
+    topics = "${6:topics}"
+}

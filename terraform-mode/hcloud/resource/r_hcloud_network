@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_network
+# key: r_hcloud_network
+# --
+
+resource "hcloud_network" "${1:this}" {
+    ip_range = "${2:ip_range}"
+    name = "${3:name}"
+}

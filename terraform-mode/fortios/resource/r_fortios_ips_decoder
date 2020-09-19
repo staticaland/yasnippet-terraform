@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_ips_decoder
+# key: r_fortios_ips_decoder
+# --
+
+resource "fortios_ips_decoder" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_pool
+# key: r_huaweicloud_lb_pool
+# --
+
+resource "huaweicloud_lb_pool" "${1:this}" {
+    lb_method = "${2:lb_method}"
+    protocol = "${3:protocol}"
+}

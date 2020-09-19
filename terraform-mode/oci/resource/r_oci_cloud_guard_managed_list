@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_cloud_guard_managed_list
+# key: r_oci_cloud_guard_managed_list
+# --
+
+resource "oci_cloud_guard_managed_list" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vault_kubernetes_auth_backend_config
+# key: r_vault_kubernetes_auth_backend_config
+# --
+
+resource "vault_kubernetes_auth_backend_config" "${1:this}" {
+    kubernetes_host = "${2:kubernetes_host}"
+}

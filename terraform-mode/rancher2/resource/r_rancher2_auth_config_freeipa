@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_auth_config_freeipa
+# key: r_rancher2_auth_config_freeipa
+# --
+
+resource "rancher2_auth_config_freeipa" "${1:this}" {
+    servers = "${2:servers}"
+    service_account_distinguished_name = "${3:service_account_distinguished_name}"
+    service_account_password = "${4:service_account_password}"
+    user_search_base = "${5:user_search_base}"
+}

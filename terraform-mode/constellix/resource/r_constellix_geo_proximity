@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_constellix_geo_proximity
+# key: r_constellix_geo_proximity
+# --
+
+resource "constellix_geo_proximity" "${1:this}" {
+}

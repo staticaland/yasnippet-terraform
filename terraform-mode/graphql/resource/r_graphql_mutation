@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_graphql_mutation
+# key: r_graphql_mutation
+# --
+
+resource "graphql_mutation" "${1:this}" {
+    compute_mutation_keys = "${2:compute_mutation_keys}"
+    create_mutation = "${3:create_mutation}"
+    delete_mutation = "${4:delete_mutation}"
+    mutation_variables = "${5:mutation_variables}"
+    read_query = "${6:read_query}"
+    update_mutation = "${7:update_mutation}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_azuread_application_app_role
+# key: r_azuread_application_app_role
+# --
+
+resource "azuread_application_app_role" "${1:this}" {
+    allowed_member_types = "${2:allowed_member_types}"
+    application_object_id = "${3:application_object_id}"
+    description = "${4:description}"
+    display_name = "${5:display_name}"
+}

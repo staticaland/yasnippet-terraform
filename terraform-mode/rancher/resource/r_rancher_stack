@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_rancher_stack
+# key: r_rancher_stack
+# --
+
+resource "rancher_stack" "${1:this}" {
+    environment_id = "${2:environment_id}"
+    name = "${3:name}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_storage_account
+# key: r_azurestack_storage_account
+# --
+
+resource "azurestack_storage_account" "${1:this}" {
+    account_replication_type = "${2:account_replication_type}"
+    account_tier = "${3:account_tier}"
+    location = "${4:location}"
+    name = "${5:name}"
+    resource_group_name = "${6:resource_group_name}"
+}

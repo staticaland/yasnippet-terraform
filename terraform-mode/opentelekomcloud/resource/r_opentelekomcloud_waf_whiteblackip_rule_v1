@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_waf_whiteblackip_rule_v1
+# key: r_opentelekomcloud_waf_whiteblackip_rule_v1
+# --
+
+resource "opentelekomcloud_waf_whiteblackip_rule_v1" "${1:this}" {
+    addr = "${2:addr}"
+    policy_id = "${3:policy_id}"
+}

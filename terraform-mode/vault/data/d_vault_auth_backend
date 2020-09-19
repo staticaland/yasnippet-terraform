@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vault_auth_backend
+# key: d_vault_auth_backend
+# --
+
+data "vault_auth_backend" "${1:this}" {
+    path = "${2:path}"
+}

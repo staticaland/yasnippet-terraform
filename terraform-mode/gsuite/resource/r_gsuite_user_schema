@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gsuite_user_schema
+# key: r_gsuite_user_schema
+# --
+
+resource "gsuite_user_schema" "${1:this}" {
+    schema_name = "${2:schema_name}"
+}

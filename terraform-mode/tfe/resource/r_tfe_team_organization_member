@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tfe_team_organization_member
+# key: r_tfe_team_organization_member
+# --
+
+resource "tfe_team_organization_member" "${1:this}" {
+    organization_membership_id = "${2:organization_membership_id}"
+    team_id = "${3:team_id}"
+}

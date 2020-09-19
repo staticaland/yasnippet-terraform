@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_startup_script
+# key: d_vultr_startup_script
+# --
+
+data "vultr_startup_script" "${1:this}" {
+}

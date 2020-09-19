@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_graylog_input_static_fields
+# key: r_graylog_input_static_fields
+# --
+
+resource "graylog_input_static_fields" "${1:this}" {
+    input_id = "${2:input_id}"
+}

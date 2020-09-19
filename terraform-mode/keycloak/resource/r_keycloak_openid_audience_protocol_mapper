@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_audience_protocol_mapper
+# key: r_keycloak_openid_audience_protocol_mapper
+# --
+
+resource "keycloak_openid_audience_protocol_mapper" "${1:this}" {
+    name = "${2:name}"
+    realm_id = "${3:realm_id}"
+}

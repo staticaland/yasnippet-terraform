@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_load_balancer_ssl_cipher_suites
+# key: d_oci_load_balancer_ssl_cipher_suites
+# --
+
+data "oci_load_balancer_ssl_cipher_suites" "${1:this}" {
+}

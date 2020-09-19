@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cr_ee_repo
+# key: r_alicloud_cr_ee_repo
+# --
+
+resource "alicloud_cr_ee_repo" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    name = "${3:name}"
+    namespace = "${4:namespace}"
+    repo_type = "${5:repo_type}"
+    summary = "${6:summary}"
+}

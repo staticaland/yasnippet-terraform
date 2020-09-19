@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_load_balancer_ssl_cipher_suite
+# key: r_oci_load_balancer_ssl_cipher_suite
+# --
+
+resource "oci_load_balancer_ssl_cipher_suite" "${1:this}" {
+    ciphers = "${2:ciphers}"
+    name = "${3:name}"
+}

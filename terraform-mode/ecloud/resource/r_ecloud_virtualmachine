@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ecloud_virtualmachine
+# key: r_ecloud_virtualmachine
+# --
+
+resource "ecloud_virtualmachine" "${1:this}" {
+    cpu = "${2:cpu}"
+    environment = "${3:environment}"
+    ram = "${4:ram}"
+}

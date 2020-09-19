@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontrollerqos_queuepolicy
+# key: r_fortios_switchcontrollerqos_queuepolicy
+# --
+
+resource "fortios_switchcontrollerqos_queuepolicy" "${1:this}" {
+    name = "${2:name}"
+    rate_by = "${3:rate_by}"
+    schedule = "${4:schedule}"
+}

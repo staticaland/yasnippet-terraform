@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_forward_entries
+# key: d_alicloud_forward_entries
+# --
+
+data "alicloud_forward_entries" "${1:this}" {
+    forward_table_id = "${2:forward_table_id}"
+}

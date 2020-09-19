@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_waf_domain
+# key: r_alicloud_waf_domain
+# --
+
+resource "alicloud_waf_domain" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    is_access_product = "${3:is_access_product}"
+    source_ips = "${4:source_ips}"
+}

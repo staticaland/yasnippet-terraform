@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_instance
+# key: r_ibm_is_instance
+# --
+
+resource "ibm_is_instance" "${1:this}" {
+    image = "${2:image}"
+    keys = "${3:keys}"
+    name = "${4:name}"
+    profile = "${5:profile}"
+    vpc = "${6:vpc}"
+    zone = "${7:zone}"
+}

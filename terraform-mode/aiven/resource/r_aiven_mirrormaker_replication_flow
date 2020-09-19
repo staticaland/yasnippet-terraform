@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aiven_mirrormaker_replication_flow
+# key: r_aiven_mirrormaker_replication_flow
+# --
+
+resource "aiven_mirrormaker_replication_flow" "${1:this}" {
+    enable = "${2:enable}"
+    project = "${3:project}"
+    service_name = "${4:service_name}"
+    source_cluster = "${5:source_cluster}"
+    target_cluster = "${6:target_cluster}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_node_driver
+# key: d_rancher2_node_driver
+# --
+
+data "rancher2_node_driver" "${1:this}" {
+    name = "${2:name}"
+}

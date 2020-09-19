@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_custom_role
+# key: r_ibm_iam_custom_role
+# --
+
+resource "ibm_iam_custom_role" "${1:this}" {
+    actions = "${2:actions}"
+    display_name = "${3:display_name}"
+    name = "${4:name}"
+    service = "${5:service}"
+}

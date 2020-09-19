@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_security_group_rule
+# key: r_ibm_is_security_group_rule
+# --
+
+resource "ibm_is_security_group_rule" "${1:this}" {
+    direction = "${2:direction}"
+    group = "${3:group}"
+}

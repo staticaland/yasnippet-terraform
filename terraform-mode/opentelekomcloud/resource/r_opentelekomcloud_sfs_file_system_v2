@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_sfs_file_system_v2
+# key: r_opentelekomcloud_sfs_file_system_v2
+# --
+
+resource "opentelekomcloud_sfs_file_system_v2" "${1:this}" {
+    access_level = "${2:access_level}"
+    access_to = "${3:access_to}"
+    size = "${4:size}"
+}

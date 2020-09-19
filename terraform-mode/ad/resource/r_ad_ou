@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ad_ou
+# key: r_ad_ou
+# --
+
+resource "ad_ou" "${1:this}" {
+    name = "${2:name}"
+}

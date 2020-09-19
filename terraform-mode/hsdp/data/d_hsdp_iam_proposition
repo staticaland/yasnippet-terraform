@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_hsdp_iam_proposition
+# key: d_hsdp_iam_proposition
+# --
+
+data "hsdp_iam_proposition" "${1:this}" {
+    name = "${2:name}"
+    organization_id = "${3:organization_id}"
+}

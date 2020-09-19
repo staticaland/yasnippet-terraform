@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_confluentcloud_environment
+# key: r_confluentcloud_environment
+# --
+
+resource "confluentcloud_environment" "${1:this}" {
+    name = "${2:name}"
+}

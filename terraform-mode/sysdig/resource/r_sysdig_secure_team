@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_team
+# key: r_sysdig_secure_team
+# --
+
+resource "sysdig_secure_team" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_azurestack_network_security_group
+# key: d_azurestack_network_security_group
+# --
+
+data "azurestack_network_security_group" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

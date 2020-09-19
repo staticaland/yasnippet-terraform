@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aptible_environment
+# key: d_aptible_environment
+# --
+
+data "aptible_environment" "${1:this}" {
+    handle = "${2:handle}"
+}

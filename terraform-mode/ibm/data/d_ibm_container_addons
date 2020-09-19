@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_container_addons
+# key: d_ibm_container_addons
+# --
+
+data "ibm_container_addons" "${1:this}" {
+    cluster = "${2:cluster}"
+}

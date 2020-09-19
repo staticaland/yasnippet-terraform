@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ciscoasa_network_service_group
+# key: r_ciscoasa_network_service_group
+# --
+
+resource "ciscoasa_network_service_group" "${1:this}" {
+    members = "${2:members}"
+    name = "${3:name}"
+}

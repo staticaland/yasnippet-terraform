@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_game_services_realm
+# key: r_google_game_services_realm
+# --
+
+resource "google_game_services_realm" "${1:this}" {
+    realm_id = "${2:realm_id}"
+    time_zone = "${3:time_zone}"
+}

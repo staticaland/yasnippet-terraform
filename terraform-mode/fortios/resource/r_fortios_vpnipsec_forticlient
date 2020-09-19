@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnipsec_forticlient
+# key: r_fortios_vpnipsec_forticlient
+# --
+
+resource "fortios_vpnipsec_forticlient" "${1:this}" {
+    phase2name = "${2:phase2name}"
+    usergroupname = "${3:usergroupname}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_mysql_backup_list
+# key: d_tencentcloud_mysql_backup_list
+# --
+
+data "tencentcloud_mysql_backup_list" "${1:this}" {
+    mysql_id = "${2:mysql_id}"
+}

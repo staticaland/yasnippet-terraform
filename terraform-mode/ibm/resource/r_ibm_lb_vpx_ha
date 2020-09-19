@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb_vpx_ha
+# key: r_ibm_lb_vpx_ha
+# --
+
+resource "ibm_lb_vpx_ha" "${1:this}" {
+    primary_id = "${2:primary_id}"
+    secondary_id = "${3:secondary_id}"
+}

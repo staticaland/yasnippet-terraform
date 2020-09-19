@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_functions_function
+# key: r_oci_functions_function
+# --
+
+resource "oci_functions_function" "${1:this}" {
+    application_id = "${2:application_id}"
+    display_name = "${3:display_name}"
+    image = "${4:image}"
+    memory_in_mbs = "${5:memory_in_mbs}"
+}

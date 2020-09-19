@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_dashboard
+# key: r_wavefront_dashboard
+# --
+
+resource "wavefront_dashboard" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+    tags = "${4:tags}"
+    url = "${5:url}"
+}

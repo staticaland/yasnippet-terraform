@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_security_group_rule
+# key: r_exoscale_security_group_rule
+# --
+
+resource "exoscale_security_group_rule" "${1:this}" {
+    type = "${2:type}"
+}

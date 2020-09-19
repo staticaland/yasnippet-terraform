@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_docker_auth
+# key: r_linuxbox_docker_auth
+# --
+
+resource "linuxbox_docker_auth" "${1:this}" {
+    host_address = "${2:host_address}"
+    password = "${3:password}"
+    registry_address = "${4:registry_address}"
+    ssh_key = "${5:ssh_key}"
+    username = "${6:username}"
+}

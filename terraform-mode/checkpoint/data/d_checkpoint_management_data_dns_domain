@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_dns_domain
+# key: d_checkpoint_management_data_dns_domain
+# --
+
+data "checkpoint_management_data_dns_domain" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_keypair
+# key: r_pingaccess_keypair
+# --
+
+resource "pingaccess_keypair" "${1:this}" {
+    alias = "${2:alias}"
+}

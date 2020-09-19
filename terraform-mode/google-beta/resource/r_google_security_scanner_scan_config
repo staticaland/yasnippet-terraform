@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_security_scanner_scan_config
+# key: r_google_security_scanner_scan_config
+# --
+
+resource "google_security_scanner_scan_config" "${1:this}" {
+    display_name = "${2:display_name}"
+    starting_urls = "${3:starting_urls}"
+}

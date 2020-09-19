@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hashicups_ingredients
+# key: d_hashicups_ingredients
+# --
+
+data "hashicups_ingredients" "${1:this}" {
+    coffee_id = "${2:coffee_id}"
+}

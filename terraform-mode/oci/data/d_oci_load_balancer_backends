@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_load_balancer_backends
+# key: d_oci_load_balancer_backends
+# --
+
+data "oci_load_balancer_backends" "${1:this}" {
+    backendset_name = "${2:backendset_name}"
+    load_balancer_id = "${3:load_balancer_id}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_netapp-gcp_active_directory
+# key: r_netapp-gcp_active_directory
+# --
+
+resource "netapp-gcp_active_directory" "${1:this}" {
+    dns_server = "${2:dns_server}"
+    domain = "${3:domain}"
+    net_bios = "${4:net_bios}"
+    password = "${5:password}"
+    region = "${6:region}"
+    username = "${7:username}"
+}

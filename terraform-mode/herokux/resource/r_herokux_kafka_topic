@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_herokux_kafka_topic
+# key: r_herokux_kafka_topic
+# --
+
+resource "herokux_kafka_topic" "${1:this}" {
+    kafka_id = "${2:kafka_id}"
+    name = "${3:name}"
+    partitions = "${4:partitions}"
+}

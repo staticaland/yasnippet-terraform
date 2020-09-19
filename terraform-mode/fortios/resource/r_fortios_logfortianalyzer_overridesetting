@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logfortianalyzer_overridesetting
+# key: r_fortios_logfortianalyzer_overridesetting
+# --
+
+resource "fortios_logfortianalyzer_overridesetting" "${1:this}" {
+}

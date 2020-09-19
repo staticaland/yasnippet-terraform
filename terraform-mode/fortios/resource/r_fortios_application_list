@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_application_list
+# key: r_fortios_application_list
+# --
+
+resource "fortios_application_list" "${1:this}" {
+    name = "${2:name}"
+}

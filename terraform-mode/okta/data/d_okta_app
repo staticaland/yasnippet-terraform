@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_okta_app
+# key: d_okta_app
+# --
+
+data "okta_app" "${1:this}" {
+}

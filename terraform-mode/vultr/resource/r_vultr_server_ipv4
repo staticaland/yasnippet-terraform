@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_server_ipv4
+# key: r_vultr_server_ipv4
+# --
+
+resource "vultr_server_ipv4" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_dns_ptr_record
+# key: r_dns_ptr_record
+# --
+
+resource "dns_ptr_record" "${1:this}" {
+    ptr = "${2:ptr}"
+    zone = "${3:zone}"
+}

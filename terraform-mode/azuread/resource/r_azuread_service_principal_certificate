@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azuread_service_principal_certificate
+# key: r_azuread_service_principal_certificate
+# --
+
+resource "azuread_service_principal_certificate" "${1:this}" {
+    service_principal_id = "${2:service_principal_id}"
+    value = "${3:value}"
+}

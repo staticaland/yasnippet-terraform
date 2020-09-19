@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cbs_storages
+# key: d_tencentcloud_cbs_storages
+# --
+
+data "tencentcloud_cbs_storages" "${1:this}" {
+}

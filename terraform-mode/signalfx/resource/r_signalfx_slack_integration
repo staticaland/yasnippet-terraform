@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_slack_integration
+# key: r_signalfx_slack_integration
+# --
+
+resource "signalfx_slack_integration" "${1:this}" {
+    enabled = "${2:enabled}"
+    name = "${3:name}"
+    webhook_url = "${4:webhook_url}"
+}

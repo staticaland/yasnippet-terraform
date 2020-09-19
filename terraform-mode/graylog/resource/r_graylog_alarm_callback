@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_graylog_alarm_callback
+# key: r_graylog_alarm_callback
+# --
+
+resource "graylog_alarm_callback" "${1:this}" {
+    configuration = "${2:configuration}"
+    stream_id = "${3:stream_id}"
+    title = "${4:title}"
+    type = "${5:type}"
+}

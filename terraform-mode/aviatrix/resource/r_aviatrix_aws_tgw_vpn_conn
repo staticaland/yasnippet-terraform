@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw_vpn_conn
+# key: r_aviatrix_aws_tgw_vpn_conn
+# --
+
+resource "aviatrix_aws_tgw_vpn_conn" "${1:this}" {
+    connection_name = "${2:connection_name}"
+    public_ip = "${3:public_ip}"
+    route_domain_name = "${4:route_domain_name}"
+    tgw_name = "${5:tgw_name}"
+}

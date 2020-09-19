@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_oci_marketplace_accepted_agreement
+# key: r_oci_marketplace_accepted_agreement
+# --
+
+resource "oci_marketplace_accepted_agreement" "${1:this}" {
+    agreement_id = "${2:agreement_id}"
+    compartment_id = "${3:compartment_id}"
+    listing_id = "${4:listing_id}"
+    package_version = "${5:package_version}"
+    signature = "${6:signature}"
+}

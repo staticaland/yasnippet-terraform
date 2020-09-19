@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_gaap_realserver
+# key: r_tencentcloud_gaap_realserver
+# --
+
+resource "tencentcloud_gaap_realserver" "${1:this}" {
+    name = "${2:name}"
+}

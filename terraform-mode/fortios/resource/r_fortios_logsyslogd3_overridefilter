@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logsyslogd3_overridefilter
+# key: r_fortios_logsyslogd3_overridefilter
+# --
+
+resource "fortios_logsyslogd3_overridefilter" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_run_script
+# key: r_checkpoint_management_run_script
+# --
+
+resource "checkpoint_management_run_script" "${1:this}" {
+    script = "${2:script}"
+    script_name = "${3:script_name}"
+    targets = "${4:targets}"
+}

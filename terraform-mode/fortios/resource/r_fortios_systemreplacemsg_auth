@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_auth
+# key: r_fortios_systemreplacemsg_auth
+# --
+
+resource "fortios_systemreplacemsg_auth" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gsuite_group
+# key: d_gsuite_group
+# --
+
+data "gsuite_group" "${1:this}" {
+    email = "${2:email}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azuredevops_service_endpoint
+# key: r_azuredevops_service_endpoint
+# --
+
+resource "azuredevops_service_endpoint" "${1:this}" {
+    name = "${2:name}"
+    owner = "${3:owner}"
+    project_id = "${4:project_id}"
+    type = "${5:type}"
+    url = "${6:url}"
+}

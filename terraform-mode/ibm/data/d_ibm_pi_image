@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_pi_image
+# key: d_ibm_pi_image
+# --
+
+data "ibm_pi_image" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_image_name = "${3:pi_image_name}"
+}

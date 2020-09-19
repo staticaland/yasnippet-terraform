@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_certificate
+# key: r_rancher2_certificate
+# --
+
+resource "rancher2_certificate" "${1:this}" {
+    certs = "${2:certs}"
+    key = "${3:key}"
+    project_id = "${4:project_id}"
+}

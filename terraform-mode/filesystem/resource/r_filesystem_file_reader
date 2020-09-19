@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_filesystem_file_reader
+# key: r_filesystem_file_reader
+# --
+
+resource "filesystem_file_reader" "${1:this}" {
+    path = "${2:path}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_email_integration
+# key: r_opsgenie_email_integration
+# --
+
+resource "opsgenie_email_integration" "${1:this}" {
+    email_username = "${2:email_username}"
+    name = "${3:name}"
+}

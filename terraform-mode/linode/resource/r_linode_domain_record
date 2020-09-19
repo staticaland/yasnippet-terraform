@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linode_domain_record
+# key: r_linode_domain_record
+# --
+
+resource "linode_domain_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    record_type = "${3:record_type}"
+    target = "${4:target}"
+}

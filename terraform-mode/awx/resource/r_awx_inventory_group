@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_awx_inventory_group
+# key: r_awx_inventory_group
+# --
+
+resource "awx_inventory_group" "${1:this}" {
+    name = "${2:name}"
+}

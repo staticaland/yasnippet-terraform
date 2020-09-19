@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_openstack_networking_qos_dscp_marking_rule_v2
+# key: d_openstack_networking_qos_dscp_marking_rule_v2
+# --
+
+data "openstack_networking_qos_dscp_marking_rule_v2" "${1:this}" {
+    qos_policy_id = "${2:qos_policy_id}"
+}

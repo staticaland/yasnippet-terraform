@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_compute_instance_v2
+# key: r_huaweicloud_compute_instance_v2
+# --
+
+resource "huaweicloud_compute_instance_v2" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    name = "${3:name}"
+}

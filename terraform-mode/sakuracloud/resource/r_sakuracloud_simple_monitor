@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_simple_monitor
+# key: r_sakuracloud_simple_monitor
+# --
+
+resource "sakuracloud_simple_monitor" "${1:this}" {
+    target = "${2:target}"
+}

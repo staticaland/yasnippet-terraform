@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_site_anp_epg_static_leaf
+# key: d_mso_schema_site_anp_epg_static_leaf
+# --
+
+data "mso_schema_site_anp_epg_static_leaf" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    epg_name = "${3:epg_name}"
+    path = "${4:path}"
+    schema_id = "${5:schema_id}"
+    site_id = "${6:site_id}"
+}

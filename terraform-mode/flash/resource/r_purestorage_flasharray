@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_purestorage_flasharray
+# key: r_purestorage_flasharray
+# --
+
+resource "purestorage_flasharray" "${1:this}" {
+}

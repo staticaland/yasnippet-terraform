@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pingdom_user
+# key: d_pingdom_user
+# --
+
+data "pingdom_user" "${1:this}" {
+    username = "${2:username}"
+}

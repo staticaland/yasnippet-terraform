@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_loadbalancer
+# key: d_gridscale_loadbalancer
+# --
+
+data "gridscale_loadbalancer" "${1:this}" {
+    resource_id = "${2:resource_id}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_text_file
+# key: r_linuxbox_text_file
+# --
+
+resource "linuxbox_text_file" "${1:this}" {
+    content = "${2:content}"
+    host_address = "${3:host_address}"
+    path = "${4:path}"
+    ssh_key = "${5:ssh_key}"
+}

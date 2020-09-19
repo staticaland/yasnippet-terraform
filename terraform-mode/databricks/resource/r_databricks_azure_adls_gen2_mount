@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_databricks_azure_adls_gen2_mount
+# key: r_databricks_azure_adls_gen2_mount
+# --
+
+resource "databricks_azure_adls_gen2_mount" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret_key = "${3:client_secret_key}"
+    client_secret_scope = "${4:client_secret_scope}"
+    container_name = "${5:container_name}"
+    initialize_file_system = "${6:initialize_file_system}"
+    mount_name = "${7:mount_name}"
+    storage_account_name = "${8:storage_account_name}"
+    tenant_id = "${9:tenant_id}"
+}

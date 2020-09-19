@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_njalla_record_cname
+# key: r_njalla_record_cname
+# --
+
+resource "njalla_record_cname" "${1:this}" {
+    content = "${2:content}"
+    domain = "${3:domain}"
+    ttl = "${4:ttl}"
+}

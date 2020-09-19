@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bindplane_log_destination_google
+# key: r_bindplane_log_destination_google
+# --
+
+resource "bindplane_log_destination_google" "${1:this}" {
+    credentials = "${2:credentials}"
+    name = "${3:name}"
+}

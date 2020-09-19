@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_sdrs_protectedinstance_v1
+# key: r_flexibleengine_sdrs_protectedinstance_v1
+# --
+
+resource "flexibleengine_sdrs_protectedinstance_v1" "${1:this}" {
+    group_id = "${2:group_id}"
+    name = "${3:name}"
+    server_id = "${4:server_id}"
+}

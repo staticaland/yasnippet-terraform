@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dns_record
+# key: r_ibm_dns_record
+# --
+
+resource "ibm_dns_record" "${1:this}" {
+    data = "${2:data}"
+    domain_id = "${3:domain_id}"
+    host = "${4:host}"
+    type = "${5:type}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_webhook
+# key: r_fusionauth_webhook
+# --
+
+resource "fusionauth_webhook" "${1:this}" {
+    connect_timeout = "${2:connect_timeout}"
+    read_timeout = "${3:read_timeout}"
+    url = "${4:url}"
+}

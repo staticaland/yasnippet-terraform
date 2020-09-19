@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dc_gateway
+# key: r_tencentcloud_dc_gateway
+# --
+
+resource "tencentcloud_dc_gateway" "${1:this}" {
+    name = "${2:name}"
+    network_instance_id = "${3:network_instance_id}"
+    network_type = "${4:network_type}"
+}

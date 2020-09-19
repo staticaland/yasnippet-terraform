@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_gpdb_instances
+# key: d_alicloud_gpdb_instances
+# --
+
+data "alicloud_gpdb_instances" "${1:this}" {
+}

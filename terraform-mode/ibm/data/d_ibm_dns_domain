@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dns_domain
+# key: d_ibm_dns_domain
+# --
+
+data "ibm_dns_domain" "${1:this}" {
+    name = "${2:name}"
+}

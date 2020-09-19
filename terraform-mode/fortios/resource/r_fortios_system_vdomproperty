@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_vdomproperty
+# key: r_fortios_system_vdomproperty
+# --
+
+resource "fortios_system_vdomproperty" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_api_key
+# key: r_artifactory_api_key
+# --
+
+resource "artifactory_api_key" "${1:this}" {
+}

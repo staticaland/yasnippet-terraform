@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_service_directory_namespace
+# key: r_google_service_directory_namespace
+# --
+
+resource "google_service_directory_namespace" "${1:this}" {
+    location = "${2:location}"
+    namespace_id = "${3:namespace_id}"
+}

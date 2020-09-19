@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_auth_config_azuread
+# key: r_rancher2_auth_config_azuread
+# --
+
+resource "rancher2_auth_config_azuread" "${1:this}" {
+    application_id = "${2:application_id}"
+    application_secret = "${3:application_secret}"
+    auth_endpoint = "${4:auth_endpoint}"
+    graph_endpoint = "${5:graph_endpoint}"
+    rancher_url = "${6:rancher_url}"
+    tenant_id = "${7:tenant_id}"
+    token_endpoint = "${8:token_endpoint}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_pod
+# key: d_ecloud_pod
+# --
+
+data "ecloud_pod" "${1:this}" {
+    name = "${2:name}"
+}

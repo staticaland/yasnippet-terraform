@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_isoimage
+# key: r_gridscale_isoimage
+# --
+
+resource "gridscale_isoimage" "${1:this}" {
+    name = "${2:name}"
+    source_url = "${3:source_url}"
+}

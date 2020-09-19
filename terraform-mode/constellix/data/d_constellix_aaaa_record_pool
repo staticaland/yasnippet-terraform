@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_aaaa_record_pool
+# key: d_constellix_aaaa_record_pool
+# --
+
+data "constellix_aaaa_record_pool" "${1:this}" {
+    name = "${2:name}"
+}

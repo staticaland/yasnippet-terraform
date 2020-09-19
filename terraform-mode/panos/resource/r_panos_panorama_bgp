@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_bgp
+# key: r_panos_panorama_bgp
+# --
+
+resource "panos_panorama_bgp" "${1:this}" {
+    virtual_router = "${2:virtual_router}"
+}

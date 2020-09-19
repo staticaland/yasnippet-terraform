@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pingaccess_certificate
+# key: d_pingaccess_certificate
+# --
+
+data "pingaccess_certificate" "${1:this}" {
+    alias = "${2:alias}"
+}

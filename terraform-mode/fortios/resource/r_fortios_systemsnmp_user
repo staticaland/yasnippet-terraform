@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemsnmp_user
+# key: r_fortios_systemsnmp_user
+# --
+
+resource "fortios_systemsnmp_user" "${1:this}" {
+    name = "${2:name}"
+}

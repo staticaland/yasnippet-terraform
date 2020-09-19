@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_user_group
+# key: r_wavefront_user_group
+# --
+
+resource "wavefront_user_group" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

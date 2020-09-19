@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemdhcp_server
+# key: r_fortios_systemdhcp_server
+# --
+
+resource "fortios_systemdhcp_server" "${1:this}" {
+    fosid = "${2:fosid}"
+    interface = "${3:interface}"
+    netmask = "${4:netmask}"
+}

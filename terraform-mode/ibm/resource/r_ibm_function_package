@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_function_package
+# key: r_ibm_function_package
+# --
+
+resource "ibm_function_package" "${1:this}" {
+    name = "${2:name}"
+    namespace = "${3:namespace}"
+}

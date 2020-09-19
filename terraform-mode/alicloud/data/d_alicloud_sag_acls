@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_sag_acls
+# key: d_alicloud_sag_acls
+# --
+
+data "alicloud_sag_acls" "${1:this}" {
+}

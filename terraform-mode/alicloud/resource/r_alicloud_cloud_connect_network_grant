@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cloud_connect_network_grant
+# key: r_alicloud_cloud_connect_network_grant
+# --
+
+resource "alicloud_cloud_connect_network_grant" "${1:this}" {
+    ccn_id = "${2:ccn_id}"
+    cen_id = "${3:cen_id}"
+    cen_uid = "${4:cen_uid}"
+}

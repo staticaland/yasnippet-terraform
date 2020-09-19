@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_virtual_machine
+# key: r_vsphere_virtual_machine
+# --
+
+resource "vsphere_virtual_machine" "${1:this}" {
+    name = "${2:name}"
+    resource_pool_id = "${3:resource_pool_id}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_log_alert
+# key: r_alicloud_log_alert
+# --
+
+resource "alicloud_log_alert" "${1:this}" {
+    alert_displayname = "${2:alert_displayname}"
+    alert_name = "${3:alert_name}"
+    condition = "${4:condition}"
+    dashboard = "${5:dashboard}"
+    project_name = "${6:project_name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_dns_steering_policy
+# key: r_oci_dns_steering_policy
+# --
+
+resource "oci_dns_steering_policy" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    template = "${4:template}"
+}

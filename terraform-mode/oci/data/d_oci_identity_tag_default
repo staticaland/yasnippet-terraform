@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_tag_default
+# key: d_oci_identity_tag_default
+# --
+
+data "oci_identity_tag_default" "${1:this}" {
+    tag_default_id = "${2:tag_default_id}"
+}

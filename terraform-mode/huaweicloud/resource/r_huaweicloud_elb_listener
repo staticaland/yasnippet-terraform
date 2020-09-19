@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_elb_listener
+# key: r_huaweicloud_elb_listener
+# --
+
+resource "huaweicloud_elb_listener" "${1:this}" {
+    backend_port = "${2:backend_port}"
+    backend_protocol = "${3:backend_protocol}"
+    lb_algorithm = "${4:lb_algorithm}"
+    loadbalancer_id = "${5:loadbalancer_id}"
+    name = "${6:name}"
+    port = "${7:port}"
+    protocol = "${8:protocol}"
+}

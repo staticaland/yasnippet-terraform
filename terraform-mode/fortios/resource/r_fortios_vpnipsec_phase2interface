@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnipsec_phase2interface
+# key: r_fortios_vpnipsec_phase2interface
+# --
+
+resource "fortios_vpnipsec_phase2interface" "${1:this}" {
+    phase1name = "${2:phase1name}"
+    proposal = "${3:proposal}"
+}

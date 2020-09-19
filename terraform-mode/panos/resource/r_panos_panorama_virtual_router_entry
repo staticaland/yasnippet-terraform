@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_virtual_router_entry
+# key: r_panos_panorama_virtual_router_entry
+# --
+
+resource "panos_panorama_virtual_router_entry" "${1:this}" {
+    interface = "${2:interface}"
+    template = "${3:template}"
+    virtual_router = "${4:virtual_router}"
+}

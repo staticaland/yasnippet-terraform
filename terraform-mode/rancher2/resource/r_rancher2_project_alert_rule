@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_project_alert_rule
+# key: r_rancher2_project_alert_rule
+# --
+
+resource "rancher2_project_alert_rule" "${1:this}" {
+    group_id = "${2:group_id}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_group
+# key: d_oci_identity_group
+# --
+
+data "oci_identity_group" "${1:this}" {
+    group_id = "${2:group_id}"
+}

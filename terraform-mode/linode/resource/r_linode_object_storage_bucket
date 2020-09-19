@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_linode_object_storage_bucket
+# key: r_linode_object_storage_bucket
+# --
+
+resource "linode_object_storage_bucket" "${1:this}" {
+    cluster = "${2:cluster}"
+    label = "${3:label}"
+}

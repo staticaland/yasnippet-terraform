@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_mysql_account_privilege
+# key: r_tencentcloud_mysql_account_privilege
+# --
+
+resource "tencentcloud_mysql_account_privilege" "${1:this}" {
+    account_name = "${2:account_name}"
+    database_names = "${3:database_names}"
+    mysql_id = "${4:mysql_id}"
+}

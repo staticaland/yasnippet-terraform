@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_mobiletunnel
+# key: r_fortios_system_mobiletunnel
+# --
+
+resource "fortios_system_mobiletunnel" "${1:this}" {
+    hash_algorithm = "${2:hash_algorithm}"
+    home_agent = "${3:home_agent}"
+    lifetime = "${4:lifetime}"
+    n_mhae_key_type = "${5:n_mhae_key_type}"
+    n_mhae_spi = "${6:n_mhae_spi}"
+    reg_interval = "${7:reg_interval}"
+    reg_retry = "${8:reg_retry}"
+    renew_interval = "${9:renew_interval}"
+    roaming_interface = "${10:roaming_interface}"
+    tunnel_mode = "${11:tunnel_mode}"
+}

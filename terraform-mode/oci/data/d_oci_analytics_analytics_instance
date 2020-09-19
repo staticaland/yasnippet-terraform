@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_analytics_analytics_instance
+# key: d_oci_analytics_analytics_instance
+# --
+
+data "oci_analytics_analytics_instance" "${1:this}" {
+    analytics_instance_id = "${2:analytics_instance_id}"
+}

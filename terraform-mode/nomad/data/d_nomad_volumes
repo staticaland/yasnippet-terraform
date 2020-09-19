@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nomad_volumes
+# key: d_nomad_volumes
+# --
+
+data "nomad_volumes" "${1:this}" {
+}

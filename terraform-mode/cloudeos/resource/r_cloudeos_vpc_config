@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_vpc_config
+# key: r_cloudeos_vpc_config
+# --
+
+resource "cloudeos_vpc_config" "${1:this}" {
+    cloud_provider = "${2:cloud_provider}"
+    cnps = "${3:cnps}"
+    region = "${4:region}"
+    role = "${5:role}"
+    topology_name = "${6:topology_name}"
+}

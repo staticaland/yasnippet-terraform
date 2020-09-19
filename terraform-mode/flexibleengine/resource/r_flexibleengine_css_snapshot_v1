@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_css_snapshot_v1
+# key: r_flexibleengine_css_snapshot_v1
+# --
+
+resource "flexibleengine_css_snapshot_v1" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+}

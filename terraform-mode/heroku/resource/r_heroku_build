@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_build
+# key: r_heroku_build
+# --
+
+resource "heroku_build" "${1:this}" {
+    app = "${2:app}"
+    source = "${3:source}"
+}

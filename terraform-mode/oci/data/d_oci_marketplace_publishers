@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_marketplace_publishers
+# key: d_oci_marketplace_publishers
+# --
+
+data "oci_marketplace_publishers" "${1:this}" {
+}

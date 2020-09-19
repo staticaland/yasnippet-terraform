@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_linode_firewall
+# key: r_linode_firewall
+# --
+
+resource "linode_firewall" "${1:this}" {
+    linodes = "${2:linodes}"
+}

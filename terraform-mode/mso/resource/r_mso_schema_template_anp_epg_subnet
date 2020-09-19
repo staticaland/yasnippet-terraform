@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_anp_epg_subnet
+# key: r_mso_schema_template_anp_epg_subnet
+# --
+
+resource "mso_schema_template_anp_epg_subnet" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    epg_name = "${3:epg_name}"
+    ip = "${4:ip}"
+    schema_id = "${5:schema_id}"
+    template = "${6:template}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_network_vlan
+# key: r_ibm_network_vlan
+# --
+
+resource "ibm_network_vlan" "${1:this}" {
+    datacenter = "${2:datacenter}"
+    type = "${3:type}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_worker_route
+# key: r_cloudflare_worker_route
+# --
+
+resource "cloudflare_worker_route" "${1:this}" {
+    pattern = "${2:pattern}"
+    zone_id = "${3:zone_id}"
+}

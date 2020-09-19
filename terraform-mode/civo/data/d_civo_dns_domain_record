@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_civo_dns_domain_record
+# key: d_civo_dns_domain_record
+# --
+
+data "civo_dns_domain_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    name = "${3:name}"
+}

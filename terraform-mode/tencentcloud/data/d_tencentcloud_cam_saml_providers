@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cam_saml_providers
+# key: d_tencentcloud_cam_saml_providers
+# --
+
+data "tencentcloud_cam_saml_providers" "${1:this}" {
+}

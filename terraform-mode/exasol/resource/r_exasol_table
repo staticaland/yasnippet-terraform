@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_exasol_table
+# key: r_exasol_table
+# --
+
+resource "exasol_table" "${1:this}" {
+    name = "${2:name}"
+    schema = "${3:schema}"
+}

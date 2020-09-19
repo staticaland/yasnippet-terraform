@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_monitor
+# key: r_ibm_compute_monitor
+# --
+
+resource "ibm_compute_monitor" "${1:this}" {
+    guest_id = "${2:guest_id}"
+    query_type_id = "${3:query_type_id}"
+    response_action_id = "${4:response_action_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_backup_destination
+# key: d_oci_database_backup_destination
+# --
+
+data "oci_database_backup_destination" "${1:this}" {
+    backup_destination_id = "${2:backup_destination_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_resource_manager_resource_directory
+# key: r_alicloud_resource_manager_resource_directory
+# --
+
+resource "alicloud_resource_manager_resource_directory" "${1:this}" {
+}

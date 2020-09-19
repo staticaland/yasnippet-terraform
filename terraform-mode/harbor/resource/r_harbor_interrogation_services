@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_harbor_interrogation_services
+# key: r_harbor_interrogation_services
+# --
+
+resource "harbor_interrogation_services" "${1:this}" {
+    vulnerability_scan_policy = "${2:vulnerability_scan_policy}"
+}

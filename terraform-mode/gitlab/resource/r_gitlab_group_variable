@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_group_variable
+# key: r_gitlab_group_variable
+# --
+
+resource "gitlab_group_variable" "${1:this}" {
+    group = "${2:group}"
+    key = "${3:key}"
+    value = "${4:value}"
+}

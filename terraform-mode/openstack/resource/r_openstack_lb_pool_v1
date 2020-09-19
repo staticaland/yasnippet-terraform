@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_openstack_lb_pool_v1
+# key: r_openstack_lb_pool_v1
+# --
+
+resource "openstack_lb_pool_v1" "${1:this}" {
+    lb_method = "${2:lb_method}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+    subnet_id = "${5:subnet_id}"
+}

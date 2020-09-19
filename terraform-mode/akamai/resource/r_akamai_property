@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_akamai_property
+# key: r_akamai_property
+# --
+
+resource "akamai_property" "${1:this}" {
+    contact = "${2:contact}"
+    hostnames = "${3:hostnames}"
+    name = "${4:name}"
+}

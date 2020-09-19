@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mso_user
+# key: d_mso_user
+# --
+
+data "mso_user" "${1:this}" {
+    username = "${2:username}"
+}

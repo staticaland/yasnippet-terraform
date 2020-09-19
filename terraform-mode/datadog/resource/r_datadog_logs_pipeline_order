@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_logs_pipeline_order
+# key: r_datadog_logs_pipeline_order
+# --
+
+resource "datadog_logs_pipeline_order" "${1:this}" {
+    name = "${2:name}"
+    pipelines = "${3:pipelines}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_snapshot
+# key: r_opc_compute_snapshot
+# --
+
+resource "opc_compute_snapshot" "${1:this}" {
+    instance = "${2:instance}"
+}

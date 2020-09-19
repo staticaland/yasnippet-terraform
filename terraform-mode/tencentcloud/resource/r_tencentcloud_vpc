@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_vpc
+# key: r_tencentcloud_vpc
+# --
+
+resource "tencentcloud_vpc" "${1:this}" {
+    cidr_block = "${2:cidr_block}"
+    name = "${3:name}"
+}

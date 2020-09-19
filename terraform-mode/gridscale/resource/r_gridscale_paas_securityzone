@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_paas_securityzone
+# key: r_gridscale_paas_securityzone
+# --
+
+resource "gridscale_paas_securityzone" "${1:this}" {
+    name = "${2:name}"
+}

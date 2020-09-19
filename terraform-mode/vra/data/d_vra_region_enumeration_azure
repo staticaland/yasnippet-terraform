@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_vra_region_enumeration_azure
+# key: d_vra_region_enumeration_azure
+# --
+
+data "vra_region_enumeration_azure" "${1:this}" {
+    application_id = "${2:application_id}"
+    application_key = "${3:application_key}"
+    subscription_id = "${4:subscription_id}"
+    tenant_id = "${5:tenant_id}"
+}

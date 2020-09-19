@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_gaap_security_policies
+# key: d_tencentcloud_gaap_security_policies
+# --
+
+data "tencentcloud_gaap_security_policies" "${1:this}" {
+    id = "${2:id}"
+}

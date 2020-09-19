@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mso_site
+# key: r_mso_site
+# --
+
+resource "mso_site" "${1:this}" {
+    apic_site_id = "${2:apic_site_id}"
+    name = "${3:name}"
+    password = "${4:password}"
+    urls = "${5:urls}"
+    username = "${6:username}"
+}

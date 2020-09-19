@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemdhcp6_server
+# key: r_fortios_systemdhcp6_server
+# --
+
+resource "fortios_systemdhcp6_server" "${1:this}" {
+    fosid = "${2:fosid}"
+    interface = "${3:interface}"
+    subnet = "${4:subnet}"
+}

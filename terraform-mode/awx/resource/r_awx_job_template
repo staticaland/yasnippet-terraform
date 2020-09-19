@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_awx_job_template
+# key: r_awx_job_template
+# --
+
+resource "awx_job_template" "${1:this}" {
+    inventory_id = "${2:inventory_id}"
+    job_type = "${3:job_type}"
+    name = "${4:name}"
+    project_id = "${5:project_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_vpn_tunnel
+# key: r_google_compute_vpn_tunnel
+# --
+
+resource "google_compute_vpn_tunnel" "${1:this}" {
+    name = "${2:name}"
+    shared_secret = "${3:shared_secret}"
+}

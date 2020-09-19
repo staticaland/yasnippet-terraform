@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_report_chart
+# key: r_fortios_report_chart
+# --
+
+resource "fortios_report_chart" "${1:this}" {
+    comments = "${2:comments}"
+    dataset = "${3:dataset}"
+    name = "${4:name}"
+}

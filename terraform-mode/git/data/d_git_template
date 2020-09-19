@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_git_template
+# key: d_git_template
+# --
+
+data "git_template" "${1:this}" {
+    template = "${2:template}"
+}

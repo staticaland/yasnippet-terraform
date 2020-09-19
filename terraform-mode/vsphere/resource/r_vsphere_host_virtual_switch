@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_host_virtual_switch
+# key: r_vsphere_host_virtual_switch
+# --
+
+resource "vsphere_host_virtual_switch" "${1:this}" {
+    active_nics = "${2:active_nics}"
+    host_system_id = "${3:host_system_id}"
+    name = "${4:name}"
+    network_adapters = "${5:network_adapters}"
+    standby_nics = "${6:standby_nics}"
+}

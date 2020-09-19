@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_junos_interface
+# key: d_junos_interface
+# --
+
+data "junos_interface" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_dataintegration_workspaces
+# key: d_oci_dataintegration_workspaces
+# --
+
+data "oci_dataintegration_workspaces" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

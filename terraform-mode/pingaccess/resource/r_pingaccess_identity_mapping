@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_identity_mapping
+# key: r_pingaccess_identity_mapping
+# --
+
+resource "pingaccess_identity_mapping" "${1:this}" {
+    class_name = "${2:class_name}"
+    configuration = "${3:configuration}"
+    name = "${4:name}"
+}

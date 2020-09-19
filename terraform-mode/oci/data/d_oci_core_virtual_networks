@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_virtual_networks
+# key: d_oci_core_virtual_networks
+# --
+
+data "oci_core_virtual_networks" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

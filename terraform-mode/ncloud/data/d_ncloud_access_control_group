@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_access_control_group
+# key: d_ncloud_access_control_group
+# --
+
+data "ncloud_access_control_group" "${1:this}" {
+}

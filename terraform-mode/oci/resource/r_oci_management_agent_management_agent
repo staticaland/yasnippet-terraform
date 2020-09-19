@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_management_agent_management_agent
+# key: r_oci_management_agent_management_agent
+# --
+
+resource "oci_management_agent_management_agent" "${1:this}" {
+    managed_agent_id = "${2:managed_agent_id}"
+}

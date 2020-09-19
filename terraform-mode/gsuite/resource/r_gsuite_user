@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gsuite_user
+# key: r_gsuite_user
+# --
+
+resource "gsuite_user" "${1:this}" {
+    name = "${2:name}"
+    primary_email = "${3:primary_email}"
+}

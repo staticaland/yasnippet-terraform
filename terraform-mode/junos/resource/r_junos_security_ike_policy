@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_ike_policy
+# key: r_junos_security_ike_policy
+# --
+
+resource "junos_security_ike_policy" "${1:this}" {
+    name = "${2:name}"
+    proposals = "${3:proposals}"
+}

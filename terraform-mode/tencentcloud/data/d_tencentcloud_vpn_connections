@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_vpn_connections
+# key: d_tencentcloud_vpn_connections
+# --
+
+data "tencentcloud_vpn_connections" "${1:this}" {
+}

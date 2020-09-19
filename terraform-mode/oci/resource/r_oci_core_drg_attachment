@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_drg_attachment
+# key: r_oci_core_drg_attachment
+# --
+
+resource "oci_core_drg_attachment" "${1:this}" {
+    drg_id = "${2:drg_id}"
+    vcn_id = "${3:vcn_id}"
+}

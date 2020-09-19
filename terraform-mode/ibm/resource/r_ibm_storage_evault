@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_storage_evault
+# key: r_ibm_storage_evault
+# --
+
+resource "ibm_storage_evault" "${1:this}" {
+    capacity = "${2:capacity}"
+    datacenter = "${3:datacenter}"
+}

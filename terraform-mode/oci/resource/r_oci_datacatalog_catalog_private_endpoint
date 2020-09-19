@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_datacatalog_catalog_private_endpoint
+# key: r_oci_datacatalog_catalog_private_endpoint
+# --
+
+resource "oci_datacatalog_catalog_private_endpoint" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    dns_zones = "${3:dns_zones}"
+    subnet_id = "${4:subnet_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_dme_template_record
+# key: d_dme_template_record
+# --
+
+data "dme_template_record" "${1:this}" {
+    name = "${2:name}"
+    template_id = "${3:template_id}"
+    type = "${4:type}"
+}

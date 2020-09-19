@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_azurerm_synapse_sql_pool
+# key: r_azurerm_synapse_sql_pool
+# --
+
+resource "azurerm_synapse_sql_pool" "${1:this}" {
+    name = "${2:name}"
+    sku_name = "${3:sku_name}"
+    synapse_workspace_id = "${4:synapse_workspace_id}"
+}

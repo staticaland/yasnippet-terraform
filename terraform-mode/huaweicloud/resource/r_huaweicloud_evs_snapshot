@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_evs_snapshot
+# key: r_huaweicloud_evs_snapshot
+# --
+
+resource "huaweicloud_evs_snapshot" "${1:this}" {
+    name = "${2:name}"
+    volume_id = "${3:volume_id}"
+}

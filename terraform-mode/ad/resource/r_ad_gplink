@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ad_gplink
+# key: r_ad_gplink
+# --
+
+resource "ad_gplink" "${1:this}" {
+    gpo_guid = "${2:gpo_guid}"
+    target_dn = "${3:target_dn}"
+}

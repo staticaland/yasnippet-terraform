@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_autonomous_exadata_infrastructure
+# key: r_oci_database_autonomous_exadata_infrastructure
+# --
+
+resource "oci_database_autonomous_exadata_infrastructure" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    compartment_id = "${3:compartment_id}"
+    shape = "${4:shape}"
+    subnet_id = "${5:subnet_id}"
+}

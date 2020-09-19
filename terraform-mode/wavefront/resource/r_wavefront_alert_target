@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_alert_target
+# key: r_wavefront_alert_target
+# --
+
+resource "wavefront_alert_target" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+    recipient = "${4:recipient}"
+    template = "${5:template}"
+    triggers = "${6:triggers}"
+}

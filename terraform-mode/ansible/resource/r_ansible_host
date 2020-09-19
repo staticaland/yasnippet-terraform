@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ansible_host
+# key: r_ansible_host
+# --
+
+resource "ansible_host" "${1:this}" {
+    inventory_hostname = "${2:inventory_hostname}"
+}

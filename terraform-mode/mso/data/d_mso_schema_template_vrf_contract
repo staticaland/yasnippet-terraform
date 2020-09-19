@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_vrf_contract
+# key: d_mso_schema_template_vrf_contract
+# --
+
+data "mso_schema_template_vrf_contract" "${1:this}" {
+    contract_name = "${2:contract_name}"
+    relationship_type = "${3:relationship_type}"
+    schema_id = "${4:schema_id}"
+    template_name = "${5:template_name}"
+    vrf_name = "${6:vrf_name}"
+}

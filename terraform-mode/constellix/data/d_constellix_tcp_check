@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_tcp_check
+# key: d_constellix_tcp_check
+# --
+
+data "constellix_tcp_check" "${1:this}" {
+    name = "${2:name}"
+}

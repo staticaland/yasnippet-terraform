@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ots_table
+# key: r_alicloud_ots_table
+# --
+
+resource "alicloud_ots_table" "${1:this}" {
+    instance_name = "${2:instance_name}"
+    max_version = "${3:max_version}"
+    table_name = "${4:table_name}"
+    time_to_live = "${5:time_to_live}"
+}

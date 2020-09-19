@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_apigateway_gateway
+# key: r_oci_apigateway_gateway
+# --
+
+resource "oci_apigateway_gateway" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    endpoint_type = "${3:endpoint_type}"
+    subnet_id = "${4:subnet_id}"
+}

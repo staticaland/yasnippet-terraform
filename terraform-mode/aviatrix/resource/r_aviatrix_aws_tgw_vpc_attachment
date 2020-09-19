@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw_vpc_attachment
+# key: r_aviatrix_aws_tgw_vpc_attachment
+# --
+
+resource "aviatrix_aws_tgw_vpc_attachment" "${1:this}" {
+    region = "${2:region}"
+    security_domain_name = "${3:security_domain_name}"
+    tgw_name = "${4:tgw_name}"
+    vpc_account_name = "${5:vpc_account_name}"
+    vpc_id = "${6:vpc_id}"
+}

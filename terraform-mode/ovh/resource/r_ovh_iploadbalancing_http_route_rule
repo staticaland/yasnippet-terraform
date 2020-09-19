@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ovh_iploadbalancing_http_route_rule
+# key: r_ovh_iploadbalancing_http_route_rule
+# --
+
+resource "ovh_iploadbalancing_http_route_rule" "${1:this}" {
+    field = "${2:field}"
+    match = "${3:match}"
+    route_id = "${4:route_id}"
+    service_name = "${5:service_name}"
+}

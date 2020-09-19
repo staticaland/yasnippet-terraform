@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_json_generic_api
+# key: r_fortios_json_generic_api
+# --
+
+resource "fortios_json_generic_api" "${1:this}" {
+    method = "${2:method}"
+    path = "${3:path}"
+}

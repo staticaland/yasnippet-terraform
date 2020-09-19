@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_exadata_infrastructure
+# key: r_oci_database_exadata_infrastructure
+# --
+
+resource "oci_database_exadata_infrastructure" "${1:this}" {
+    admin_network_cidr = "${2:admin_network_cidr}"
+    cloud_control_plane_server1 = "${3:cloud_control_plane_server1}"
+    cloud_control_plane_server2 = "${4:cloud_control_plane_server2}"
+    compartment_id = "${5:compartment_id}"
+    display_name = "${6:display_name}"
+    dns_server = "${7:dns_server}"
+    gateway = "${8:gateway}"
+    infini_band_network_cidr = "${9:infini_band_network_cidr}"
+    netmask = "${10:netmask}"
+    ntp_server = "${11:ntp_server}"
+    shape = "${12:shape}"
+    time_zone = "${13:time_zone}"
+}

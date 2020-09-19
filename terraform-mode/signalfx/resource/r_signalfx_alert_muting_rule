@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_alert_muting_rule
+# key: r_signalfx_alert_muting_rule
+# --
+
+resource "signalfx_alert_muting_rule" "${1:this}" {
+    description = "${2:description}"
+    start_time = "${3:start_time}"
+}

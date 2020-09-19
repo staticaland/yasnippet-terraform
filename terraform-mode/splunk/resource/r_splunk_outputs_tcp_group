@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_splunk_outputs_tcp_group
+# key: r_splunk_outputs_tcp_group
+# --
+
+resource "splunk_outputs_tcp_group" "${1:this}" {
+    name = "${2:name}"
+    servers = "${3:servers}"
+}

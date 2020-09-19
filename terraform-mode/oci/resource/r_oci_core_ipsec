@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_ipsec
+# key: r_oci_core_ipsec
+# --
+
+resource "oci_core_ipsec" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    cpe_id = "${3:cpe_id}"
+    drg_id = "${4:drg_id}"
+    static_routes = "${5:static_routes}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_pingaccess_pingfederate_runtime_metadata
+# key: d_pingaccess_pingfederate_runtime_metadata
+# --
+
+data "pingaccess_pingfederate_runtime_metadata" "${1:this}" {
+}

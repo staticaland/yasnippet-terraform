@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azurerm_mssql_server_extended_auditing_policy
+# key: r_azurerm_mssql_server_extended_auditing_policy
+# --
+
+resource "azurerm_mssql_server_extended_auditing_policy" "${1:this}" {
+    server_id = "${2:server_id}"
+    storage_endpoint = "${3:storage_endpoint}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_containers
+# key: r_flexkube_containers
+# --
+
+resource "flexkube_containers" "${1:this}" {
+}

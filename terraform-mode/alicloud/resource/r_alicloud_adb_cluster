@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_adb_cluster
+# key: r_alicloud_adb_cluster
+# --
+
+resource "alicloud_adb_cluster" "${1:this}" {
+    db_cluster_category = "${2:db_cluster_category}"
+    db_node_class = "${3:db_node_class}"
+    db_node_count = "${4:db_node_count}"
+    db_node_storage = "${5:db_node_storage}"
+    vswitch_id = "${6:vswitch_id}"
+}

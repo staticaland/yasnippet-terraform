@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_circonus_graph
+# key: r_circonus_graph
+# --
+
+resource "circonus_graph" "${1:this}" {
+    name = "${2:name}"
+}

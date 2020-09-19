@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_postgresql_instances
+# key: d_tencentcloud_postgresql_instances
+# --
+
+data "tencentcloud_postgresql_instances" "${1:this}" {
+}

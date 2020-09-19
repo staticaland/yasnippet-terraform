@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_access_group_policy
+# key: r_ibm_iam_access_group_policy
+# --
+
+resource "ibm_iam_access_group_policy" "${1:this}" {
+    access_group_id = "${2:access_group_id}"
+    roles = "${3:roles}"
+}

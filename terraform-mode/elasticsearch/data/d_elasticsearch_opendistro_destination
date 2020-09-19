@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_elasticsearch_opendistro_destination
+# key: d_elasticsearch_opendistro_destination
+# --
+
+data "elasticsearch_opendistro_destination" "${1:this}" {
+    name = "${2:name}"
+}

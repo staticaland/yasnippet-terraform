@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_auto_backup
+# key: r_sakuracloud_auto_backup
+# --
+
+resource "sakuracloud_auto_backup" "${1:this}" {
+    disk_id = "${2:disk_id}"
+    name = "${3:name}"
+    weekdays = "${4:weekdays}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sensu_hook
+# key: d_sensu_hook
+# --
+
+data "sensu_hook" "${1:this}" {
+    name = "${2:name}"
+}

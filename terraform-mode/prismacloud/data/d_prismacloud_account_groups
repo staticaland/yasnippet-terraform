@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_account_groups
+# key: d_prismacloud_account_groups
+# --
+
+data "prismacloud_account_groups" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_streaming_stream_pool
+# key: r_oci_streaming_stream_pool
+# --
+
+resource "oci_streaming_stream_pool" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    name = "${3:name}"
+}

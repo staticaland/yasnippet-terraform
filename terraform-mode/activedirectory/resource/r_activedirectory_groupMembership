@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_activedirectory_groupMembership
+# key: r_activedirectory_groupMembership
+# --
+
+resource "activedirectory_groupMembership" "${1:this}" {
+    group_name = "${2:group_name}"
+    object_class = "${3:object_class}"
+    object_name = "${4:object_name}"
+}

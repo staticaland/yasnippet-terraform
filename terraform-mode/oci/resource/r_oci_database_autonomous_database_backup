@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_autonomous_database_backup
+# key: r_oci_database_autonomous_database_backup
+# --
+
+resource "oci_database_autonomous_database_backup" "${1:this}" {
+    autonomous_database_id = "${2:autonomous_database_id}"
+    display_name = "${3:display_name}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_subnet
+# key: r_cloudeos_subnet
+# --
+
+resource "cloudeos_subnet" "${1:this}" {
+    cidr_block = "${2:cidr_block}"
+    cloud_provider = "${3:cloud_provider}"
+    subnet_id = "${4:subnet_id}"
+    subnet_name = "${5:subnet_name}"
+    vpc_id = "${6:vpc_id}"
+}

@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cci_network
+# key: r_huaweicloud_cci_network
+# --
+
+resource "huaweicloud_cci_network" "${1:this}" {
+    available_zone = "${2:available_zone}"
+    domain_id = "${3:domain_id}"
+    name = "${4:name}"
+    namespace = "${5:namespace}"
+    network_id = "${6:network_id}"
+    project_id = "${7:project_id}"
+    security_group = "${8:security_group}"
+    subnet_id = "${9:subnet_id}"
+    vpc_id = "${10:vpc_id}"
+}

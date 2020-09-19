@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_circonus_dashboard
+# key: r_circonus_dashboard
+# --
+
+resource "circonus_dashboard" "${1:this}" {
+    grid_layout = "${2:grid_layout}"
+    title = "${3:title}"
+}

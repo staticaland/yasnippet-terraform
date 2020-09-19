@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_jetstream_stream_template
+# key: r_jetstream_stream_template
+# --
+
+resource "jetstream_stream_template" "${1:this}" {
+    max_streams = "${2:max_streams}"
+    name = "${3:name}"
+    subjects = "${4:subjects}"
+}

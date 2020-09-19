@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_tacacs
+# key: r_fortios_user_tacacs
+# --
+
+resource "fortios_user_tacacs" "${1:this}" {
+}

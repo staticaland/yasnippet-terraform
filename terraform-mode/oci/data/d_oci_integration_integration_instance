@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_integration_integration_instance
+# key: d_oci_integration_integration_instance
+# --
+
+data "oci_integration_integration_instance" "${1:this}" {
+    integration_instance_id = "${2:integration_instance_id}"
+}

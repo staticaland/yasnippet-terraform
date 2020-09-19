@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jira_webhook
+# key: r_jira_webhook
+# --
+
+resource "jira_webhook" "${1:this}" {
+    name = "${2:name}"
+    url = "${3:url}"
+}

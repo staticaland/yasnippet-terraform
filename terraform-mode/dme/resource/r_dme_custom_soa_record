@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_dme_custom_soa_record
+# key: r_dme_custom_soa_record
+# --
+
+resource "dme_custom_soa_record" "${1:this}" {
+    comp = "${2:comp}"
+    email = "${3:email}"
+    expire = "${4:expire}"
+    name = "${5:name}"
+    negative_cache = "${6:negative_cache}"
+    refresh = "${7:refresh}"
+    retry = "${8:retry}"
+    serial = "${9:serial}"
+    ttl = "${10:ttl}"
+}

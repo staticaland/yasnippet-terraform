@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_stripe_coupon
+# key: r_stripe_coupon
+# --
+
+resource "stripe_coupon" "${1:this}" {
+    code = "${2:code}"
+    duration = "${3:duration}"
+}

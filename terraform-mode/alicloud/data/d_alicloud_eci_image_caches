@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_eci_image_caches
+# key: d_alicloud_eci_image_caches
+# --
+
+data "alicloud_eci_image_caches" "${1:this}" {
+}

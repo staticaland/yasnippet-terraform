@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_civo_volume
+# key: r_civo_volume
+# --
+
+resource "civo_volume" "${1:this}" {
+    bootable = "${2:bootable}"
+    name = "${3:name}"
+    size_gb = "${4:size_gb}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_ipsec_vpn
+# key: r_ibm_ipsec_vpn
+# --
+
+resource "ibm_ipsec_vpn" "${1:this}" {
+    datacenter = "${2:datacenter}"
+}

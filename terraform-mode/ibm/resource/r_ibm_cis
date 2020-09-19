@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cis
+# key: r_ibm_cis
+# --
+
+resource "ibm_cis" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    plan = "${4:plan}"
+}

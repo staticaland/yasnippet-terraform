@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_azure_activity_log
+# key: r_wavefront_cloud_integration_azure_activity_log
+# --
+
+resource "wavefront_cloud_integration_azure_activity_log" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret = "${3:client_secret}"
+    name = "${4:name}"
+    tenant = "${5:tenant}"
+}

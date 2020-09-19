@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oraclepaas_database_service_instance
+# key: d_oraclepaas_database_service_instance
+# --
+
+data "oraclepaas_database_service_instance" "${1:this}" {
+    name = "${2:name}"
+}

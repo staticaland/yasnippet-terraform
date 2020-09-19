@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_https_section
+# key: d_checkpoint_management_data_https_section
+# --
+
+data "checkpoint_management_data_https_section" "${1:this}" {
+    layer = "${2:layer}"
+}

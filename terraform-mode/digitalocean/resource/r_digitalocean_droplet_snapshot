@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_droplet_snapshot
+# key: r_digitalocean_droplet_snapshot
+# --
+
+resource "digitalocean_droplet_snapshot" "${1:this}" {
+    droplet_id = "${2:droplet_id}"
+    name = "${3:name}"
+}

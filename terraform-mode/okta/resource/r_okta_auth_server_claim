@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_okta_auth_server_claim
+# key: r_okta_auth_server_claim
+# --
+
+resource "okta_auth_server_claim" "${1:this}" {
+    auth_server_id = "${2:auth_server_id}"
+    claim_type = "${3:claim_type}"
+    name = "${4:name}"
+    value = "${5:value}"
+}

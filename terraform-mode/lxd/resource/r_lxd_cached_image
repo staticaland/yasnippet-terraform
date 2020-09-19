@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_lxd_cached_image
+# key: r_lxd_cached_image
+# --
+
+resource "lxd_cached_image" "${1:this}" {
+    source_image = "${2:source_image}"
+    source_remote = "${3:source_remote}"
+}

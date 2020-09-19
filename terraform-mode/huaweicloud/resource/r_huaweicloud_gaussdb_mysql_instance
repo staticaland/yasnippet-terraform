@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_gaussdb_mysql_instance
+# key: r_huaweicloud_gaussdb_mysql_instance
+# --
+
+resource "huaweicloud_gaussdb_mysql_instance" "${1:this}" {
+    flavor = "${2:flavor}"
+    name = "${3:name}"
+    password = "${4:password}"
+    subnet_id = "${5:subnet_id}"
+    vpc_id = "${6:vpc_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_lb_monitor
+# key: d_nsxt_policy_lb_monitor
+# --
+
+data "nsxt_policy_lb_monitor" "${1:this}" {
+}

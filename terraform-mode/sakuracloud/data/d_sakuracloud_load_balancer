@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_load_balancer
+# key: d_sakuracloud_load_balancer
+# --
+
+data "sakuracloud_load_balancer" "${1:this}" {
+}

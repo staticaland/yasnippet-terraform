@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_rule_network
+# key: r_sysdig_secure_rule_network
+# --
+
+resource "sysdig_secure_rule_network" "${1:this}" {
+    block_inbound = "${2:block_inbound}"
+    block_outbound = "${3:block_outbound}"
+    description = "${4:description}"
+    name = "${5:name}"
+}

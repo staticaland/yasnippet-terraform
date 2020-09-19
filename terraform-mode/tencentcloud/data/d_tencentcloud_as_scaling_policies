@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_as_scaling_policies
+# key: d_tencentcloud_as_scaling_policies
+# --
+
+data "tencentcloud_as_scaling_policies" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_authentication_selector
+# key: r_pingfederate_authentication_selector
+# --
+
+resource "pingfederate_authentication_selector" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_eksctl_courier_alb
+# key: r_eksctl_courier_alb
+# --
+
+resource "eksctl_courier_alb" "${1:this}" {
+    listener_arn = "${2:listener_arn}"
+    step_interval = "${3:step_interval}"
+    step_weight = "${4:step_weight}"
+}

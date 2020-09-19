@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_stripe_product
+# key: r_stripe_product
+# --
+
+resource "stripe_product" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

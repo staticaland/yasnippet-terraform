@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_dme_secondary_ip_set
+# key: r_dme_secondary_ip_set
+# --
+
+resource "dme_secondary_ip_set" "${1:this}" {
+    ips = "${2:ips}"
+    name = "${3:name}"
+}

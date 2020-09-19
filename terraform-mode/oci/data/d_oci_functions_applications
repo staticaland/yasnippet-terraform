@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_functions_applications
+# key: d_oci_functions_applications
+# --
+
+data "oci_functions_applications" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

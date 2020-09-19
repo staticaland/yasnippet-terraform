@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_azuredevops_service_hook
+# key: r_azuredevops_service_hook
+# --
+
+resource "azuredevops_service_hook" "${1:this}" {
+    event_type = "${2:event_type}"
+}

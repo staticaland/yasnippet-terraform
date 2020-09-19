@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_logtail_attachment
+# key: r_alicloud_logtail_attachment
+# --
+
+resource "alicloud_logtail_attachment" "${1:this}" {
+    logtail_config_name = "${2:logtail_config_name}"
+    machine_group_name = "${3:machine_group_name}"
+    project = "${4:project}"
+}

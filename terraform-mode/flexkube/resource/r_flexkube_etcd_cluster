@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_etcd_cluster
+# key: r_flexkube_etcd_cluster
+# --
+
+resource "flexkube_etcd_cluster" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_logging_folder_sink
+# key: r_google_logging_folder_sink
+# --
+
+resource "google_logging_folder_sink" "${1:this}" {
+    destination = "${2:destination}"
+    folder = "${3:folder}"
+    name = "${4:name}"
+}

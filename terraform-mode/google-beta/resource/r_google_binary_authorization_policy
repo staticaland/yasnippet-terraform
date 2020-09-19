@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_binary_authorization_policy
+# key: r_google_binary_authorization_policy
+# --
+
+resource "google_binary_authorization_policy" "${1:this}" {
+}

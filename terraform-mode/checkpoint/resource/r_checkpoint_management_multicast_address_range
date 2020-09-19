@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_multicast_address_range
+# key: r_checkpoint_management_multicast_address_range
+# --
+
+resource "checkpoint_management_multicast_address_range" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_lb_nat_rule
+# key: r_azurestack_lb_nat_rule
+# --
+
+resource "azurestack_lb_nat_rule" "${1:this}" {
+    backend_port = "${2:backend_port}"
+    frontend_ip_configuration_name = "${3:frontend_ip_configuration_name}"
+    frontend_port = "${4:frontend_port}"
+    loadbalancer_id = "${5:loadbalancer_id}"
+    name = "${6:name}"
+    protocol = "${7:protocol}"
+    resource_group_name = "${8:resource_group_name}"
+}

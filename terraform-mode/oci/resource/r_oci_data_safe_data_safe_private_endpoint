@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_data_safe_data_safe_private_endpoint
+# key: r_oci_data_safe_data_safe_private_endpoint
+# --
+
+resource "oci_data_safe_data_safe_private_endpoint" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    subnet_id = "${4:subnet_id}"
+    vcn_id = "${5:vcn_id}"
+}

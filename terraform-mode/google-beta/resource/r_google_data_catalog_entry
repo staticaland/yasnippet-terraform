@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_data_catalog_entry
+# key: r_google_data_catalog_entry
+# --
+
+resource "google_data_catalog_entry" "${1:this}" {
+    entry_group = "${2:entry_group}"
+    entry_id = "${3:entry_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_binary_authorization_attestor_iam_member
+# key: r_google_binary_authorization_attestor_iam_member
+# --
+
+resource "google_binary_authorization_attestor_iam_member" "${1:this}" {
+    attestor = "${2:attestor}"
+    member = "${3:member}"
+    role = "${4:role}"
+}

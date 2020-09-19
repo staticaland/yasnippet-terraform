@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_subnet
+# key: r_sakuracloud_subnet
+# --
+
+resource "sakuracloud_subnet" "${1:this}" {
+    internet_id = "${2:internet_id}"
+    next_hop = "${3:next_hop}"
+}

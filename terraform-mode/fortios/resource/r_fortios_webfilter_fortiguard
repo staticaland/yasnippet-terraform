@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_fortiguard
+# key: r_fortios_webfilter_fortiguard
+# --
+
+resource "fortios_webfilter_fortiguard" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_yundun_dbaudit_instance
+# key: d_alicloud_yundun_dbaudit_instance
+# --
+
+data "alicloud_yundun_dbaudit_instance" "${1:this}" {
+}

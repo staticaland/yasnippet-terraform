@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_project
+# key: r_teamcity_project
+# --
+
+resource "teamcity_project" "${1:this}" {
+    name = "${2:name}"
+}

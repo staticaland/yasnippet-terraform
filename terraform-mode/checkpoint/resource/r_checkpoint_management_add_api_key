@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_add_api_key
+# key: r_checkpoint_management_add_api_key
+# --
+
+resource "checkpoint_management_add_api_key" "${1:this}" {
+}

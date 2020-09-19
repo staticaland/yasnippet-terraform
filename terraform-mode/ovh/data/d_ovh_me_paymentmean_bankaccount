@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ovh_me_paymentmean_bankaccount
+# key: d_ovh_me_paymentmean_bankaccount
+# --
+
+data "ovh_me_paymentmean_bankaccount" "${1:this}" {
+}

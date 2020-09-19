@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_bare_metal_server
+# key: d_vultr_bare_metal_server
+# --
+
+data "vultr_bare_metal_server" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_key
+# key: r_ibm_pi_key
+# --
+
+resource "ibm_pi_key" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_key_name = "${3:pi_key_name}"
+    pi_ssh_key = "${4:pi_ssh_key}"
+}

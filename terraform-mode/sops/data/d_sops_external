@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_sops_external
+# key: d_sops_external
+# --
+
+data "sops_external" "${1:this}" {
+    input_type = "${2:input_type}"
+    source = "${3:source}"
+}

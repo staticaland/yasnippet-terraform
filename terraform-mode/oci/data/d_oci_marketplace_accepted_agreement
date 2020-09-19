@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_marketplace_accepted_agreement
+# key: d_oci_marketplace_accepted_agreement
+# --
+
+data "oci_marketplace_accepted_agreement" "${1:this}" {
+    accepted_agreement_id = "${2:accepted_agreement_id}"
+}

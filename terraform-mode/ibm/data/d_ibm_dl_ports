@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dl_ports
+# key: d_ibm_dl_ports
+# --
+
+data "ibm_dl_ports" "${1:this}" {
+}

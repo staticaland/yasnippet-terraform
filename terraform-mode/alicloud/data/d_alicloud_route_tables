@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_route_tables
+# key: d_alicloud_route_tables
+# --
+
+data "alicloud_route_tables" "${1:this}" {
+}

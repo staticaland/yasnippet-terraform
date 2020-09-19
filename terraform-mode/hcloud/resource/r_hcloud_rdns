@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_rdns
+# key: r_hcloud_rdns
+# --
+
+resource "hcloud_rdns" "${1:this}" {
+    dns_ptr = "${2:dns_ptr}"
+    ip_address = "${3:ip_address}"
+}

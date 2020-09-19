@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_dcs_az
+# key: d_huaweicloud_dcs_az
+# --
+
+data "huaweicloud_dcs_az" "${1:this}" {
+}

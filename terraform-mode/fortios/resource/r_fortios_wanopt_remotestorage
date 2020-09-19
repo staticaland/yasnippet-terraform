@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_remotestorage
+# key: r_fortios_wanopt_remotestorage
+# --
+
+resource "fortios_wanopt_remotestorage" "${1:this}" {
+}

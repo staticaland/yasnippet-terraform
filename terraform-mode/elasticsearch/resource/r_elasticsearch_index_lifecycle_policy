@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_index_lifecycle_policy
+# key: r_elasticsearch_index_lifecycle_policy
+# --
+
+resource "elasticsearch_index_lifecycle_policy" "${1:this}" {
+    body = "${2:body}"
+    name = "${3:name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_vpnaas_ike_policy
+# key: r_huaweicloud_vpnaas_ike_policy
+# --
+
+resource "huaweicloud_vpnaas_ike_policy" "${1:this}" {
+}

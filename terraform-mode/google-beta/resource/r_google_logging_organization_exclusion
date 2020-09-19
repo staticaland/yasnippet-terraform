@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_logging_organization_exclusion
+# key: r_google_logging_organization_exclusion
+# --
+
+resource "google_logging_organization_exclusion" "${1:this}" {
+    filter = "${2:filter}"
+    name = "${3:name}"
+    org_id = "${4:org_id}"
+}

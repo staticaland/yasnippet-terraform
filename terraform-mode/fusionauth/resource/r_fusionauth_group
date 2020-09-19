@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_group
+# key: r_fusionauth_group
+# --
+
+resource "fusionauth_group" "${1:this}" {
+    name = "${2:name}"
+    tenant_id = "${3:tenant_id}"
+}

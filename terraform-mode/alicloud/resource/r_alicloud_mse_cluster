@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_mse_cluster
+# key: r_alicloud_mse_cluster
+# --
+
+resource "alicloud_mse_cluster" "${1:this}" {
+    cluster_specification = "${2:cluster_specification}"
+    cluster_type = "${3:cluster_type}"
+    cluster_version = "${4:cluster_version}"
+    instance_count = "${5:instance_count}"
+    net_type = "${6:net_type}"
+}

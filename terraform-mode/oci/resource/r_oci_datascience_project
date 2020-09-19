@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_datascience_project
+# key: r_oci_datascience_project
+# --
+
+resource "oci_datascience_project" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

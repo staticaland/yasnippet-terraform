@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_host
+# key: r_vsphere_host
+# --
+
+resource "vsphere_host" "${1:this}" {
+    hostname = "${2:hostname}"
+    password = "${3:password}"
+    username = "${4:username}"
+}

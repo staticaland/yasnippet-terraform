@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_auth_config_ping
+# key: r_rancher2_auth_config_ping
+# --
+
+resource "rancher2_auth_config_ping" "${1:this}" {
+    display_name_field = "${2:display_name_field}"
+    groups_field = "${3:groups_field}"
+    idp_metadata_content = "${4:idp_metadata_content}"
+    rancher_api_host = "${5:rancher_api_host}"
+    sp_cert = "${6:sp_cert}"
+    sp_key = "${7:sp_key}"
+    uid_field = "${8:uid_field}"
+    user_name_field = "${9:user_name_field}"
+}

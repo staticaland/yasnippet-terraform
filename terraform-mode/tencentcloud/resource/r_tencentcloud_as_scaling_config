@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_as_scaling_config
+# key: r_tencentcloud_as_scaling_config
+# --
+
+resource "tencentcloud_as_scaling_config" "${1:this}" {
+    configuration_name = "${2:configuration_name}"
+    image_id = "${3:image_id}"
+    instance_types = "${4:instance_types}"
+}

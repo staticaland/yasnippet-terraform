@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_network_endpoint_group
+# key: d_google_compute_network_endpoint_group
+# --
+
+data "google_compute_network_endpoint_group" "${1:this}" {
+}

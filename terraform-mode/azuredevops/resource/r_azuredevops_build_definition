@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azuredevops_build_definition
+# key: r_azuredevops_build_definition
+# --
+
+resource "azuredevops_build_definition" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

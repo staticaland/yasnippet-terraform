@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dms_group
+# key: r_huaweicloud_dms_group
+# --
+
+resource "huaweicloud_dms_group" "${1:this}" {
+    name = "${2:name}"
+    queue_id = "${3:queue_id}"
+}

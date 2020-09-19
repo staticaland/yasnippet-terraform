@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_edge_node
+# key: d_nsxt_policy_edge_node
+# --
+
+data "nsxt_policy_edge_node" "${1:this}" {
+    edge_cluster_path = "${2:edge_cluster_path}"
+}

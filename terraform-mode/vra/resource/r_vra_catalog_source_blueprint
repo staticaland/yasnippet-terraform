@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vra_catalog_source_blueprint
+# key: r_vra_catalog_source_blueprint
+# --
+
+resource "vra_catalog_source_blueprint" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

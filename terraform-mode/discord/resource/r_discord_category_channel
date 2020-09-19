@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_discord_category_channel
+# key: r_discord_category_channel
+# --
+
+resource "discord_category_channel" "${1:this}" {
+    name = "${2:name}"
+    server_id = "${3:server_id}"
+}

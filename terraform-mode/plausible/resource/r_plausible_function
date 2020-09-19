@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_plausible_function
+# key: r_plausible_function
+# --
+
+resource "plausible_function" "${1:this}" {
+    source = "${2:source}"
+}

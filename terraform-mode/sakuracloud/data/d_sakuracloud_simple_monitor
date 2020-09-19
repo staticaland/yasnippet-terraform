@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_simple_monitor
+# key: d_sakuracloud_simple_monitor
+# --
+
+data "sakuracloud_simple_monitor" "${1:this}" {
+}

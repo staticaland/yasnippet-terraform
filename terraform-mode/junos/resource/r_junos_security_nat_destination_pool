@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_nat_destination_pool
+# key: r_junos_security_nat_destination_pool
+# --
+
+resource "junos_security_nat_destination_pool" "${1:this}" {
+    address = "${2:address}"
+    name = "${3:name}"
+}

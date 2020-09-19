@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_default_groups
+# key: r_keycloak_default_groups
+# --
+
+resource "keycloak_default_groups" "${1:this}" {
+    group_ids = "${2:group_ids}"
+    realm_id = "${3:realm_id}"
+}

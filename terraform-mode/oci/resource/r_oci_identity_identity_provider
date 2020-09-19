@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_oci_identity_identity_provider
+# key: r_oci_identity_identity_provider
+# --
+
+resource "oci_identity_identity_provider" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    description = "${3:description}"
+    metadata = "${4:metadata}"
+    metadata_url = "${5:metadata_url}"
+    name = "${6:name}"
+    product_type = "${7:product_type}"
+    protocol = "${8:protocol}"
+}

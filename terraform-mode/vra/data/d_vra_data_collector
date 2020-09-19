@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vra_data_collector
+# key: d_vra_data_collector
+# --
+
+data "vra_data_collector" "${1:this}" {
+    name = "${2:name}"
+}

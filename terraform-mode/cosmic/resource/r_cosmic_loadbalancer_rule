@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_loadbalancer_rule
+# key: r_cosmic_loadbalancer_rule
+# --
+
+resource "cosmic_loadbalancer_rule" "${1:this}" {
+    algorithm = "${2:algorithm}"
+    ip_address_id = "${3:ip_address_id}"
+    member_ids = "${4:member_ids}"
+    name = "${5:name}"
+    private_port = "${6:private_port}"
+    public_port = "${7:public_port}"
+}

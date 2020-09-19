@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_bigip_command
+# key: r_bigip_command
+# --
+
+resource "bigip_command" "${1:this}" {
+    commands = "${2:commands}"
+}

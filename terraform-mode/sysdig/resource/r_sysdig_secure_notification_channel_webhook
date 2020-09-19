@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_notification_channel_webhook
+# key: r_sysdig_secure_notification_channel_webhook
+# --
+
+resource "sysdig_secure_notification_channel_webhook" "${1:this}" {
+    enabled = "${2:enabled}"
+    name = "${3:name}"
+    notify_when_ok = "${4:notify_when_ok}"
+    notify_when_resolved = "${5:notify_when_resolved}"
+    url = "${6:url}"
+}

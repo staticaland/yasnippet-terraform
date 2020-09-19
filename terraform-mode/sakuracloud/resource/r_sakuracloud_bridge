@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_bridge
+# key: r_sakuracloud_bridge
+# --
+
+resource "sakuracloud_bridge" "${1:this}" {
+    name = "${2:name}"
+}

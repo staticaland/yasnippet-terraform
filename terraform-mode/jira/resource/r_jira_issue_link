@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_jira_issue_link
+# key: r_jira_issue_link
+# --
+
+resource "jira_issue_link" "${1:this}" {
+    inward_key = "${2:inward_key}"
+    link_type = "${3:link_type}"
+    outward_key = "${4:outward_key}"
+}

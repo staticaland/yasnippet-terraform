@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_cloud_guard_cloud_guard_configuration
+# key: r_oci_cloud_guard_cloud_guard_configuration
+# --
+
+resource "oci_cloud_guard_cloud_guard_configuration" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    reporting_region = "${3:reporting_region}"
+    status = "${4:status}"
+}

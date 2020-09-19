@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_compute_eip_associate
+# key: r_huaweicloud_compute_eip_associate
+# --
+
+resource "huaweicloud_compute_eip_associate" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_irule
+# key: r_bigip_ltm_irule
+# --
+
+resource "bigip_ltm_irule" "${1:this}" {
+    irule = "${2:irule}"
+    name = "${3:name}"
+}

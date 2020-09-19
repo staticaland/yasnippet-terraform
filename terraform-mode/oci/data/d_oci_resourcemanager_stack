@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_resourcemanager_stack
+# key: d_oci_resourcemanager_stack
+# --
+
+data "oci_resourcemanager_stack" "${1:this}" {
+    stack_id = "${2:stack_id}"
+}

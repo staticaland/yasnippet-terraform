@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_dns_resolution_lines
+# key: d_alicloud_dns_resolution_lines
+# --
+
+data "alicloud_dns_resolution_lines" "${1:this}" {
+}

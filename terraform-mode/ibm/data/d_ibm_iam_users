@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_users
+# key: d_ibm_iam_users
+# --
+
+data "ibm_iam_users" "${1:this}" {
+}

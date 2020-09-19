@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_tcaplus_idls
+# key: d_tencentcloud_tcaplus_idls
+# --
+
+data "tencentcloud_tcaplus_idls" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

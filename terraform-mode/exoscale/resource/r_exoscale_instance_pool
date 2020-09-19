@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_instance_pool
+# key: r_exoscale_instance_pool
+# --
+
+resource "exoscale_instance_pool" "${1:this}" {
+    name = "${2:name}"
+    service_offering = "${3:service_offering}"
+    size = "${4:size}"
+    template_id = "${5:template_id}"
+    zone = "${6:zone}"
+}

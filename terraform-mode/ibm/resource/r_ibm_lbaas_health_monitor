@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lbaas_health_monitor
+# key: r_ibm_lbaas_health_monitor
+# --
+
+resource "ibm_lbaas_health_monitor" "${1:this}" {
+    lbaas_id = "${2:lbaas_id}"
+    monitor_id = "${3:monitor_id}"
+    port = "${4:port}"
+    protocol = "${5:protocol}"
+}

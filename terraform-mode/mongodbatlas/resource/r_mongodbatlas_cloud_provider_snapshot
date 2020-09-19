@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_cloud_provider_snapshot
+# key: r_mongodbatlas_cloud_provider_snapshot
+# --
+
+resource "mongodbatlas_cloud_provider_snapshot" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    description = "${3:description}"
+    project_id = "${4:project_id}"
+    retention_in_days = "${5:retention_in_days}"
+}

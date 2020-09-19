@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_securityexemptlist
+# key: r_fortios_user_securityexemptlist
+# --
+
+resource "fortios_user_securityexemptlist" "${1:this}" {
+}

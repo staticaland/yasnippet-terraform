@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_datascience_model
+# key: d_oci_datascience_model
+# --
+
+data "oci_datascience_model" "${1:this}" {
+    model_id = "${2:model_id}"
+}

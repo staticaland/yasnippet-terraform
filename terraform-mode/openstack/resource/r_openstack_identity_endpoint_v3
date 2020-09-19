@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_openstack_identity_endpoint_v3
+# key: r_openstack_identity_endpoint_v3
+# --
+
+resource "openstack_identity_endpoint_v3" "${1:this}" {
+    endpoint_region = "${2:endpoint_region}"
+    service_id = "${3:service_id}"
+    url = "${4:url}"
+}

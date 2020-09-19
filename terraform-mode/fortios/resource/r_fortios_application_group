@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_application_group
+# key: r_fortios_application_group
+# --
+
+resource "fortios_application_group" "${1:this}" {
+}

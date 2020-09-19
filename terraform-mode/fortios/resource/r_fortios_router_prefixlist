@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_prefixlist
+# key: r_fortios_router_prefixlist
+# --
+
+resource "fortios_router_prefixlist" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_endpoints_service_iam_member
+# key: r_google_endpoints_service_iam_member
+# --
+
+resource "google_endpoints_service_iam_member" "${1:this}" {
+    member = "${2:member}"
+    role = "${3:role}"
+    service_name = "${4:service_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_template
+# key: d_gridscale_template
+# --
+
+data "gridscale_template" "${1:this}" {
+    name = "${2:name}"
+}

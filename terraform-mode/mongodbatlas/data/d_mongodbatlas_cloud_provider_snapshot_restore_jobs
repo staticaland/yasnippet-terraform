@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_cloud_provider_snapshot_restore_jobs
+# key: d_mongodbatlas_cloud_provider_snapshot_restore_jobs
+# --
+
+data "mongodbatlas_cloud_provider_snapshot_restore_jobs" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    project_id = "${3:project_id}"
+}

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dayu_l7_rule
+# key: r_tencentcloud_dayu_l7_rule
+# --
+
+resource "tencentcloud_dayu_l7_rule" "${1:this}" {
+    domain = "${2:domain}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+    resource_id = "${5:resource_id}"
+    resource_type = "${6:resource_type}"
+    source_list = "${7:source_list}"
+    source_type = "${8:source_type}"
+    switch = "${9:switch}"
+}

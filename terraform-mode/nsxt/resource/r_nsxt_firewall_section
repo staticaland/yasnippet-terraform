@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_firewall_section
+# key: r_nsxt_firewall_section
+# --
+
+resource "nsxt_firewall_section" "${1:this}" {
+    section_type = "${2:section_type}"
+    stateful = "${3:stateful}"
+}

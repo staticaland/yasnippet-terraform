@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cam_roles
+# key: d_tencentcloud_cam_roles
+# --
+
+data "tencentcloud_cam_roles" "${1:this}" {
+}

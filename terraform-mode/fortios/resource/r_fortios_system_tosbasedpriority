@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_tosbasedpriority
+# key: r_fortios_system_tosbasedpriority
+# --
+
+resource "fortios_system_tosbasedpriority" "${1:this}" {
+}

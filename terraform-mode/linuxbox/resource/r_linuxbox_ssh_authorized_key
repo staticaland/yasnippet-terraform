@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_ssh_authorized_key
+# key: r_linuxbox_ssh_authorized_key
+# --
+
+resource "linuxbox_ssh_authorized_key" "${1:this}" {
+    host_address = "${2:host_address}"
+    key_to_add = "${3:key_to_add}"
+    ssh_key = "${4:ssh_key}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_email
+# key: r_instana_alerting_channel_email
+# --
+
+resource "instana_alerting_channel_email" "${1:this}" {
+    emails = "${2:emails}"
+    name = "${3:name}"
+}

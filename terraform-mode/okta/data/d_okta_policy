@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_okta_policy
+# key: d_okta_policy
+# --
+
+data "okta_policy" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

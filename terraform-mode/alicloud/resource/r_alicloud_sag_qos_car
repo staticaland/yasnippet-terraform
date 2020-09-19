@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_sag_qos_car
+# key: r_alicloud_sag_qos_car
+# --
+
+resource "alicloud_sag_qos_car" "${1:this}" {
+    limit_type = "${2:limit_type}"
+    priority = "${3:priority}"
+    qos_id = "${4:qos_id}"
+}

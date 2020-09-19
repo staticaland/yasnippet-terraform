@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_gaap_certificate
+# key: r_tencentcloud_gaap_certificate
+# --
+
+resource "tencentcloud_gaap_certificate" "${1:this}" {
+    content = "${2:content}"
+    type = "${3:type}"
+}

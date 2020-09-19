@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_isis
+# key: r_fortios_router_isis
+# --
+
+resource "fortios_router_isis" "${1:this}" {
+}

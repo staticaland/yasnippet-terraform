@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_app_engine_application
+# key: r_google_app_engine_application
+# --
+
+resource "google_app_engine_application" "${1:this}" {
+    location_id = "${2:location_id}"
+}

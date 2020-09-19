@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_integration_aws_lambda_arn
+# key: r_datadog_integration_aws_lambda_arn
+# --
+
+resource "datadog_integration_aws_lambda_arn" "${1:this}" {
+    account_id = "${2:account_id}"
+    lambda_arn = "${3:lambda_arn}"
+}

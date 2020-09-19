@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_content
+# key: r_fortios_webfilter_content
+# --
+
+resource "fortios_webfilter_content" "${1:this}" {
+    fosid = "${2:fosid}"
+    name = "${3:name}"
+}

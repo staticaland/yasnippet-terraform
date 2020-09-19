@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_vpn_gateway
+# key: d_google_compute_vpn_gateway
+# --
+
+data "google_compute_vpn_gateway" "${1:this}" {
+    name = "${2:name}"
+}

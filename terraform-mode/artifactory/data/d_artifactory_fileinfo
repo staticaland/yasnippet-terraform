@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_artifactory_fileinfo
+# key: d_artifactory_fileinfo
+# --
+
+data "artifactory_fileinfo" "${1:this}" {
+    path = "${2:path}"
+    repository = "${3:repository}"
+}

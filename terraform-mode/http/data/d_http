@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_http
+# key: d_http
+# --
+
+data "http" "${1:this}" {
+    url = "${2:url}"
+}

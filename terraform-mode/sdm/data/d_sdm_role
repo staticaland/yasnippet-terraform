@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sdm_role
+# key: d_sdm_role
+# --
+
+data "sdm_role" "${1:this}" {
+}

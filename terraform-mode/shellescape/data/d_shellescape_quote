@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_shellescape_quote
+# key: d_shellescape_quote
+# --
+
+data "shellescape_quote" "${1:this}" {
+    string = "${2:string}"
+}

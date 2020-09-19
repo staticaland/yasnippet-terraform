@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_realm
+# key: r_keycloak_realm
+# --
+
+resource "keycloak_realm" "${1:this}" {
+    realm = "${2:realm}"
+}

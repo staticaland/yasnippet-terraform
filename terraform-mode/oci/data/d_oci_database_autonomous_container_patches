@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_container_patches
+# key: d_oci_database_autonomous_container_patches
+# --
+
+data "oci_database_autonomous_container_patches" "${1:this}" {
+    autonomous_container_database_id = "${2:autonomous_container_database_id}"
+    compartment_id = "${3:compartment_id}"
+}

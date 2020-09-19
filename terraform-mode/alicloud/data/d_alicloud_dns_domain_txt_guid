@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_dns_domain_txt_guid
+# key: d_alicloud_dns_domain_txt_guid
+# --
+
+data "alicloud_dns_domain_txt_guid" "${1:this}" {
+    domain_name = "${2:domain_name}"
+    type = "${3:type}"
+}

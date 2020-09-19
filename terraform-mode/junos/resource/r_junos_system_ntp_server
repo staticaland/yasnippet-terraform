@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_system_ntp_server
+# key: r_junos_system_ntp_server
+# --
+
+resource "junos_system_ntp_server" "${1:this}" {
+    address = "${2:address}"
+}

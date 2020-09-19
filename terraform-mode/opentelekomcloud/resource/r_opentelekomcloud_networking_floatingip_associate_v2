@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_networking_floatingip_associate_v2
+# key: r_opentelekomcloud_networking_floatingip_associate_v2
+# --
+
+resource "opentelekomcloud_networking_floatingip_associate_v2" "${1:this}" {
+    floating_ip = "${2:floating_ip}"
+    port_id = "${3:port_id}"
+}

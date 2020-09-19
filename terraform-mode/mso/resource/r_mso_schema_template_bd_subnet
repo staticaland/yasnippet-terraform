@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_bd_subnet
+# key: r_mso_schema_template_bd_subnet
+# --
+
+resource "mso_schema_template_bd_subnet" "${1:this}" {
+    bd_name = "${2:bd_name}"
+    ip = "${3:ip}"
+    schema_id = "${4:schema_id}"
+    scope = "${5:scope}"
+    shared = "${6:shared}"
+    template_name = "${7:template_name}"
+}

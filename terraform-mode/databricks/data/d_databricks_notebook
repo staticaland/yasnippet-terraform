@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_databricks_notebook
+# key: d_databricks_notebook
+# --
+
+data "databricks_notebook" "${1:this}" {
+    format = "${2:format}"
+    path = "${3:path}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_yundun_bastionhost_instances
+# key: d_alicloud_yundun_bastionhost_instances
+# --
+
+data "alicloud_yundun_bastionhost_instances" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_fastly_waf_rules
+# key: d_fastly_waf_rules
+# --
+
+data "fastly_waf_rules" "${1:this}" {
+}

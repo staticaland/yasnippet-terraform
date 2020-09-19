@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_add_data_center_object
+# key: r_checkpoint_management_add_data_center_object
+# --
+
+resource "checkpoint_management_add_data_center_object" "${1:this}" {
+}

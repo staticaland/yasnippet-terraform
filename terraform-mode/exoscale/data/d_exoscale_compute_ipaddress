@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_exoscale_compute_ipaddress
+# key: d_exoscale_compute_ipaddress
+# --
+
+data "exoscale_compute_ipaddress" "${1:this}" {
+    zone = "${2:zone}"
+}

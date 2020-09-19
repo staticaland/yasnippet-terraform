@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hirefire_organization
+# key: r_hirefire_organization
+# --
+
+resource "hirefire_organization" "${1:this}" {
+    name = "${2:name}"
+    time_zone = "${3:time_zone}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudsmith_namespace
+# key: d_cloudsmith_namespace
+# --
+
+data "cloudsmith_namespace" "${1:this}" {
+    slug = "${2:slug}"
+}

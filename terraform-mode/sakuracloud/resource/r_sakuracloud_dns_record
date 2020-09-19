@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_dns_record
+# key: r_sakuracloud_dns_record
+# --
+
+resource "sakuracloud_dns_record" "${1:this}" {
+    dns_id = "${2:dns_id}"
+    name = "${3:name}"
+    type = "${4:type}"
+    value = "${5:value}"
+}

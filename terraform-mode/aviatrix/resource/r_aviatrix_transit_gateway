@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_transit_gateway
+# key: r_aviatrix_transit_gateway
+# --
+
+resource "aviatrix_transit_gateway" "${1:this}" {
+    account_name = "${2:account_name}"
+    cloud_type = "${3:cloud_type}"
+    gw_name = "${4:gw_name}"
+    gw_size = "${5:gw_size}"
+    subnet = "${6:subnet}"
+    vpc_id = "${7:vpc_id}"
+    vpc_reg = "${8:vpc_reg}"
+}

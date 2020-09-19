@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_amixr_escalation
+# key: r_amixr_escalation
+# --
+
+resource "amixr_escalation" "${1:this}" {
+    position = "${2:position}"
+    route_id = "${3:route_id}"
+}

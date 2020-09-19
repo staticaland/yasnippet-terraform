@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_instance
+# key: r_qingcloud_instance
+# --
+
+resource "qingcloud_instance" "${1:this}" {
+    image_id = "${2:image_id}"
+}

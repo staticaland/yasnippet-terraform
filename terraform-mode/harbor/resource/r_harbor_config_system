@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_harbor_config_system
+# key: r_harbor_config_system
+# --
+
+resource "harbor_config_system" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_dns
+# key: r_sakuracloud_dns
+# --
+
+resource "sakuracloud_dns" "${1:this}" {
+    zone = "${2:zone}"
+}

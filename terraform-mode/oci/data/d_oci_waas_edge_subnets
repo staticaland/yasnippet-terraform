@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_edge_subnets
+# key: d_oci_waas_edge_subnets
+# --
+
+data "oci_waas_edge_subnets" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallipmacbinding_table
+# key: r_fortios_firewallipmacbinding_table
+# --
+
+resource "fortios_firewallipmacbinding_table" "${1:this}" {
+    ip = "${2:ip}"
+}

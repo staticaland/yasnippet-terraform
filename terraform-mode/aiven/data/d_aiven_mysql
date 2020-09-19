@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_mysql
+# key: d_aiven_mysql
+# --
+
+data "aiven_mysql" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

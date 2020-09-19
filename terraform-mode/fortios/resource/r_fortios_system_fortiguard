@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_fortiguard
+# key: r_fortios_system_fortiguard
+# --
+
+resource "fortios_system_fortiguard" "${1:this}" {
+    antispam_timeout = "${2:antispam_timeout}"
+    outbreak_prevention_timeout = "${3:outbreak_prevention_timeout}"
+    webfilter_timeout = "${4:webfilter_timeout}"
+}

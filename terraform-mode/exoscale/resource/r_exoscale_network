@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_network
+# key: r_exoscale_network
+# --
+
+resource "exoscale_network" "${1:this}" {
+    name = "${2:name}"
+    zone = "${3:zone}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ecloud_solution_tag
+# key: r_ecloud_solution_tag
+# --
+
+resource "ecloud_solution_tag" "${1:this}" {
+    key = "${2:key}"
+    solution_id = "${3:solution_id}"
+    value = "${4:value}"
+}

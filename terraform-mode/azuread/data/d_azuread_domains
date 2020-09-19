@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_azuread_domains
+# key: d_azuread_domains
+# --
+
+data "azuread_domains" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_packet_volume
+# key: r_packet_volume
+# --
+
+resource "packet_volume" "${1:this}" {
+    facility = "${2:facility}"
+    plan = "${3:plan}"
+    project_id = "${4:project_id}"
+    size = "${5:size}"
+}

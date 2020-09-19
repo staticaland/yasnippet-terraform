@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_iptranslation
+# key: r_fortios_firewall_iptranslation
+# --
+
+resource "fortios_firewall_iptranslation" "${1:this}" {
+    endip = "${2:endip}"
+    map_startip = "${3:map_startip}"
+    startip = "${4:startip}"
+}

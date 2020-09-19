@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_region
+# key: d_vultr_region
+# --
+
+data "vultr_region" "${1:this}" {
+}

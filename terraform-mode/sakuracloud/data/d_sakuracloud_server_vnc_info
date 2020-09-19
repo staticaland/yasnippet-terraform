@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_server_vnc_info
+# key: d_sakuracloud_server_vnc_info
+# --
+
+data "sakuracloud_server_vnc_info" "${1:this}" {
+    server_id = "${2:server_id}"
+}

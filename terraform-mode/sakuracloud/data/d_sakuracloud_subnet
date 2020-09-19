@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_subnet
+# key: d_sakuracloud_subnet
+# --
+
+data "sakuracloud_subnet" "${1:this}" {
+    index = "${2:index}"
+    internet_id = "${3:internet_id}"
+}

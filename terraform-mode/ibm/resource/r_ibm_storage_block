@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_storage_block
+# key: r_ibm_storage_block
+# --
+
+resource "ibm_storage_block" "${1:this}" {
+    capacity = "${2:capacity}"
+    datacenter = "${3:datacenter}"
+    iops = "${4:iops}"
+    os_format_type = "${5:os_format_type}"
+    type = "${6:type}"
+}

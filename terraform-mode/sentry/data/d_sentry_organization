@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sentry_organization
+# key: d_sentry_organization
+# --
+
+data "sentry_organization" "${1:this}" {
+    slug = "${2:slug}"
+}

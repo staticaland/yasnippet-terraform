@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_run_threat_emulation_file_types_offline_update
+# key: r_checkpoint_management_run_threat_emulation_file_types_offline_update
+# --
+
+resource "checkpoint_management_run_threat_emulation_file_types_offline_update" "${1:this}" {
+    file_path = "${2:file_path}"
+    file_raw_data = "${3:file_raw_data}"
+}

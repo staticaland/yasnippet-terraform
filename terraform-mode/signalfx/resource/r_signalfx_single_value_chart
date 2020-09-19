@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_single_value_chart
+# key: r_signalfx_single_value_chart
+# --
+
+resource "signalfx_single_value_chart" "${1:this}" {
+    name = "${2:name}"
+    program_text = "${3:program_text}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_project_role_template_binding
+# key: r_rancher2_project_role_template_binding
+# --
+
+resource "rancher2_project_role_template_binding" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+    role_template_id = "${4:role_template_id}"
+}

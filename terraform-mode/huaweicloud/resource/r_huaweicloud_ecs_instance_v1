@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_ecs_instance_v1
+# key: r_huaweicloud_ecs_instance_v1
+# --
+
+resource "huaweicloud_ecs_instance_v1" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    flavor = "${3:flavor}"
+    image_id = "${4:image_id}"
+    name = "${5:name}"
+    vpc_id = "${6:vpc_id}"
+}

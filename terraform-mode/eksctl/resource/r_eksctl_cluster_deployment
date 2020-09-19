@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_eksctl_cluster_deployment
+# key: r_eksctl_cluster_deployment
+# --
+
+resource "eksctl_cluster_deployment" "${1:this}" {
+    name = "${2:name}"
+    region = "${3:region}"
+    spec = "${4:spec}"
+}

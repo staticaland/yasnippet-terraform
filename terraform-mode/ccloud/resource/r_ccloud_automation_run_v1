@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ccloud_automation_run_v1
+# key: r_ccloud_automation_run_v1
+# --
+
+resource "ccloud_automation_run_v1" "${1:this}" {
+    automation_id = "${2:automation_id}"
+    selector = "${3:selector}"
+}

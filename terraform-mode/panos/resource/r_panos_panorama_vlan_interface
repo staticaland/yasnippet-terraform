@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_vlan_interface
+# key: r_panos_panorama_vlan_interface
+# --
+
+resource "panos_panorama_vlan_interface" "${1:this}" {
+    name = "${2:name}"
+    template = "${3:template}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ckafka_topic
+# key: r_tencentcloud_ckafka_topic
+# --
+
+resource "tencentcloud_ckafka_topic" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    partition_num = "${3:partition_num}"
+    replica_num = "${4:replica_num}"
+    topic_name = "${5:topic_name}"
+}

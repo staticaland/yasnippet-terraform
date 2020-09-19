@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sensu_filter
+# key: d_sensu_filter
+# --
+
+data "sensu_filter" "${1:this}" {
+    name = "${2:name}"
+}

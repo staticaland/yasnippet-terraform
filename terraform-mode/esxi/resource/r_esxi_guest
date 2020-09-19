@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_esxi_guest
+# key: r_esxi_guest
+# --
+
+resource "esxi_guest" "${1:this}" {
+}

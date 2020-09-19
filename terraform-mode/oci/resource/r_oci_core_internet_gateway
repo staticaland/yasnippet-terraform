@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_internet_gateway
+# key: r_oci_core_internet_gateway
+# --
+
+resource "oci_core_internet_gateway" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    vcn_id = "${3:vcn_id}"
+}

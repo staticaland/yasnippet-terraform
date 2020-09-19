@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_custom_ssl
+# key: r_cloudflare_custom_ssl
+# --
+
+resource "cloudflare_custom_ssl" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

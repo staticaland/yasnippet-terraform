@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_file_storage_export
+# key: r_oci_file_storage_export
+# --
+
+resource "oci_file_storage_export" "${1:this}" {
+    export_set_id = "${2:export_set_id}"
+    file_system_id = "${3:file_system_id}"
+    path = "${4:path}"
+}

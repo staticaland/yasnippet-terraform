@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_vpc_peering_connection_v2
+# key: r_flexibleengine_vpc_peering_connection_v2
+# --
+
+resource "flexibleengine_vpc_peering_connection_v2" "${1:this}" {
+    name = "${2:name}"
+    peer_vpc_id = "${3:peer_vpc_id}"
+    vpc_id = "${4:vpc_id}"
+}

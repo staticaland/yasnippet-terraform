@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_switchinterfacetag
+# key: r_fortios_switchcontroller_switchinterfacetag
+# --
+
+resource "fortios_switchcontroller_switchinterfacetag" "${1:this}" {
+}

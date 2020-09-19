@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sensu_hook
+# key: r_sensu_hook
+# --
+
+resource "sensu_hook" "${1:this}" {
+    command = "${2:command}"
+    name = "${3:name}"
+}

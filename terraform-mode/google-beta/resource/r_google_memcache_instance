@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_memcache_instance
+# key: r_google_memcache_instance
+# --
+
+resource "google_memcache_instance" "${1:this}" {
+    name = "${2:name}"
+    node_count = "${3:node_count}"
+    region = "${4:region}"
+}

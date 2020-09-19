@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_constellix_a_record_pool
+# key: r_constellix_a_record_pool
+# --
+
+resource "constellix_a_record_pool" "${1:this}" {
+    min_available_failover = "${2:min_available_failover}"
+    name = "${3:name}"
+    num_return = "${4:num_return}"
+}

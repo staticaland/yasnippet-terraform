@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortiadc_loadbalance_content_routing
+# key: r_fortiadc_loadbalance_content_routing
+# --
+
+resource "fortiadc_loadbalance_content_routing" "${1:this}" {
+    name = "${2:name}"
+    pool = "${3:pool}"
+}

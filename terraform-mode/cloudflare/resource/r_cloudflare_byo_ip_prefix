@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_byo_ip_prefix
+# key: r_cloudflare_byo_ip_prefix
+# --
+
+resource "cloudflare_byo_ip_prefix" "${1:this}" {
+    prefix_id = "${2:prefix_id}"
+}

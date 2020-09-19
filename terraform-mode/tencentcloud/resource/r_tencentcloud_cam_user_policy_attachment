@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cam_user_policy_attachment
+# key: r_tencentcloud_cam_user_policy_attachment
+# --
+
+resource "tencentcloud_cam_user_policy_attachment" "${1:this}" {
+    policy_id = "${2:policy_id}"
+    user_id = "${3:user_id}"
+}

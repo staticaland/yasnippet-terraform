@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_provisioning_hook
+# key: r_ibm_compute_provisioning_hook
+# --
+
+resource "ibm_compute_provisioning_hook" "${1:this}" {
+    name = "${2:name}"
+    uri = "${3:uri}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_turbot_grant
+# key: r_turbot_grant
+# --
+
+resource "turbot_grant" "${1:this}" {
+    identity = "${2:identity}"
+    level = "${3:level}"
+    resource = "${4:resource}"
+    type = "${5:type}"
+}

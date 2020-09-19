@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_notification_channel_slack
+# key: r_sysdig_monitor_notification_channel_slack
+# --
+
+resource "sysdig_monitor_notification_channel_slack" "${1:this}" {
+    channel = "${2:channel}"
+    name = "${3:name}"
+    url = "${4:url}"
+}

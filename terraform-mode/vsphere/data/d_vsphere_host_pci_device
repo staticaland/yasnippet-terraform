@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_host_pci_device
+# key: d_vsphere_host_pci_device
+# --
+
+data "vsphere_host_pci_device" "${1:this}" {
+    host_id = "${2:host_id}"
+}

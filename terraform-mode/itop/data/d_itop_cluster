@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_itop_cluster
+# key: d_itop_cluster
+# --
+
+data "itop_cluster" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_lxd_profile
+# key: r_lxd_profile
+# --
+
+resource "lxd_profile" "${1:this}" {
+    name = "${2:name}"
+}

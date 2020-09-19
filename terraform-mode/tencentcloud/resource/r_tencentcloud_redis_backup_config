@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_redis_backup_config
+# key: r_tencentcloud_redis_backup_config
+# --
+
+resource "tencentcloud_redis_backup_config" "${1:this}" {
+    backup_period = "${2:backup_period}"
+    backup_time = "${3:backup_time}"
+    redis_id = "${4:redis_id}"
+}

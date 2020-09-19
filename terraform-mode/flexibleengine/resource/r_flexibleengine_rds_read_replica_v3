@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_rds_read_replica_v3
+# key: r_flexibleengine_rds_read_replica_v3
+# --
+
+resource "flexibleengine_rds_read_replica_v3" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    flavor = "${3:flavor}"
+    name = "${4:name}"
+    replica_of_id = "${5:replica_of_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_identity_group
+# key: r_google_cloud_identity_group
+# --
+
+resource "google_cloud_identity_group" "${1:this}" {
+    labels = "${2:labels}"
+    parent = "${3:parent}"
+}

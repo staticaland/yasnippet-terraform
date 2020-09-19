@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_domain_zone_record
+# key: r_ovh_domain_zone_record
+# --
+
+resource "ovh_domain_zone_record" "${1:this}" {
+    fieldtype = "${2:fieldtype}"
+    target = "${3:target}"
+    zone = "${4:zone}"
+}

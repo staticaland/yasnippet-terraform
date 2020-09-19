@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_management_agent_management_agent_install_key
+# key: d_oci_management_agent_management_agent_install_key
+# --
+
+data "oci_management_agent_management_agent_install_key" "${1:this}" {
+    management_agent_install_key_id = "${2:management_agent_install_key_id}"
+}

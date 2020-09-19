@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_topology
+# key: r_cloudeos_topology
+# --
+
+resource "cloudeos_topology" "${1:this}" {
+    bgp_asn = "${2:bgp_asn}"
+    dps_controlplane_cidr = "${3:dps_controlplane_cidr}"
+    terminattr_ip_cidr = "${4:terminattr_ip_cidr}"
+    topology_name = "${5:topology_name}"
+    vtep_ip_cidr = "${6:vtep_ip_cidr}"
+}

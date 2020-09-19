@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cfs_file_system
+# key: r_tencentcloud_cfs_file_system
+# --
+
+resource "tencentcloud_cfs_file_system" "${1:this}" {
+    access_group_id = "${2:access_group_id}"
+    availability_zone = "${3:availability_zone}"
+    subnet_id = "${4:subnet_id}"
+    vpc_id = "${5:vpc_id}"
+}

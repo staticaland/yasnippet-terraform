@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudfoundry_route
+# key: d_cloudfoundry_route
+# --
+
+data "cloudfoundry_route" "${1:this}" {
+    domain = "${2:domain}"
+}

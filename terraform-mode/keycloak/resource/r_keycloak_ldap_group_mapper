@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_group_mapper
+# key: r_keycloak_ldap_group_mapper
+# --
+
+resource "keycloak_ldap_group_mapper" "${1:this}" {
+    group_name_ldap_attribute = "${2:group_name_ldap_attribute}"
+    group_object_classes = "${3:group_object_classes}"
+    ldap_groups_dn = "${4:ldap_groups_dn}"
+    ldap_user_federation_id = "${5:ldap_user_federation_id}"
+    membership_ldap_attribute = "${6:membership_ldap_attribute}"
+    membership_user_ldap_attribute = "${7:membership_user_ldap_attribute}"
+    name = "${8:name}"
+    realm_id = "${9:realm_id}"
+}

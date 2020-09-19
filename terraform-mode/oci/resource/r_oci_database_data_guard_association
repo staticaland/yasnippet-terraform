@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_data_guard_association
+# key: r_oci_database_data_guard_association
+# --
+
+resource "oci_database_data_guard_association" "${1:this}" {
+    creation_type = "${2:creation_type}"
+    database_admin_password = "${3:database_admin_password}"
+    database_id = "${4:database_id}"
+    delete_standby_db_home_on_delete = "${5:delete_standby_db_home_on_delete}"
+    protection_mode = "${6:protection_mode}"
+    transport_type = "${7:transport_type}"
+}

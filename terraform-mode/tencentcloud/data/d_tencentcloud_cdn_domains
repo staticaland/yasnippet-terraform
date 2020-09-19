@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cdn_domains
+# key: d_tencentcloud_cdn_domains
+# --
+
+data "tencentcloud_cdn_domains" "${1:this}" {
+}

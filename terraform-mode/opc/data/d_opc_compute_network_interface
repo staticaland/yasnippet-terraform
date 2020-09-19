@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_opc_compute_network_interface
+# key: d_opc_compute_network_interface
+# --
+
+data "opc_compute_network_interface" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    instance_name = "${3:instance_name}"
+    interface = "${4:interface}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_civo_kubernetes_cluster
+# key: d_civo_kubernetes_cluster
+# --
+
+data "civo_kubernetes_cluster" "${1:this}" {
+}

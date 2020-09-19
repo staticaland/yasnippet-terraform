@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_lxd_container_file
+# key: r_lxd_container_file
+# --
+
+resource "lxd_container_file" "${1:this}" {
+    container_name = "${2:container_name}"
+    target_file = "${3:target_file}"
+}

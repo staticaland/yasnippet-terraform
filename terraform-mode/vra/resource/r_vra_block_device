@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vra_block_device
+# key: r_vra_block_device
+# --
+
+resource "vra_block_device" "${1:this}" {
+    capacity_in_gb = "${2:capacity_in_gb}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+}

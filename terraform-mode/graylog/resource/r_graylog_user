@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_graylog_user
+# key: r_graylog_user
+# --
+
+resource "graylog_user" "${1:this}" {
+    email = "${2:email}"
+    full_name = "${3:full_name}"
+    username = "${4:username}"
+}

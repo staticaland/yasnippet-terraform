@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_exoscale_compute
+# key: d_exoscale_compute
+# --
+
+data "exoscale_compute" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_ttlpolicy
+# key: r_fortios_firewall_ttlpolicy
+# --
+
+resource "fortios_firewall_ttlpolicy" "${1:this}" {
+    fosid = "${2:fosid}"
+    schedule = "${3:schedule}"
+    srcintf = "${4:srcintf}"
+    ttl = "${5:ttl}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_herokux_postgres_mtls
+# key: r_herokux_postgres_mtls
+# --
+
+resource "herokux_postgres_mtls" "${1:this}" {
+    database_name = "${2:database_name}"
+}

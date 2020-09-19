@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_instance_configurations
+# key: d_oci_core_instance_configurations
+# --
+
+data "oci_core_instance_configurations" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

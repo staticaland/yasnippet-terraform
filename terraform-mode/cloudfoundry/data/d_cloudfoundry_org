@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudfoundry_org
+# key: d_cloudfoundry_org
+# --
+
+data "cloudfoundry_org" "${1:this}" {
+    name = "${2:name}"
+}

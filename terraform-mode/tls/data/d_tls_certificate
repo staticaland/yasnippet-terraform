@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tls_certificate
+# key: d_tls_certificate
+# --
+
+data "tls_certificate" "${1:this}" {
+    url = "${2:url}"
+}

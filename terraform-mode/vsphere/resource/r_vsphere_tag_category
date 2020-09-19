@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_tag_category
+# key: r_vsphere_tag_category
+# --
+
+resource "vsphere_tag_category" "${1:this}" {
+    associable_types = "${2:associable_types}"
+    cardinality = "${3:cardinality}"
+    name = "${4:name}"
+}

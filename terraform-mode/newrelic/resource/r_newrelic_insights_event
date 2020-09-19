@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_insights_event
+# key: r_newrelic_insights_event
+# --
+
+resource "newrelic_insights_event" "${1:this}" {
+}

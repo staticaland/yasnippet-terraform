@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_apiloadbalancer_pool
+# key: r_flexkube_apiloadbalancer_pool
+# --
+
+resource "flexkube_apiloadbalancer_pool" "${1:this}" {
+}

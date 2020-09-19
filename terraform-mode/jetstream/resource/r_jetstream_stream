@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jetstream_stream
+# key: r_jetstream_stream
+# --
+
+resource "jetstream_stream" "${1:this}" {
+    name = "${2:name}"
+    subjects = "${3:subjects}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_agent_pool
+# key: r_teamcity_agent_pool
+# --
+
+resource "teamcity_agent_pool" "${1:this}" {
+    name = "${2:name}"
+}

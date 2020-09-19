@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_hirefire_time_range
+# key: r_hirefire_time_range
+# --
+
+resource "hirefire_time_range" "${1:this}" {
+    from_minute = "${2:from_minute}"
+    manager_id = "${3:manager_id}"
+    maximum = "${4:maximum}"
+    minimum = "${5:minimum}"
+    until_minute = "${6:until_minute}"
+}

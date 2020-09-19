@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_contentdeliverynetworkrule
+# key: r_fortios_wanopt_contentdeliverynetworkrule
+# --
+
+resource "fortios_wanopt_contentdeliverynetworkrule" "${1:this}" {
+}

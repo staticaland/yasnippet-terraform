@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_honeycombio_query
+# key: d_honeycombio_query
+# --
+
+data "honeycombio_query" "${1:this}" {
+}

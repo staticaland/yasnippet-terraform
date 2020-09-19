@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_org_quota
+# key: d_ibm_org_quota
+# --
+
+data "ibm_org_quota" "${1:this}" {
+    name = "${2:name}"
+}

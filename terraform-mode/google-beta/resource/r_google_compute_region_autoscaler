@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_region_autoscaler
+# key: r_google_compute_region_autoscaler
+# --
+
+resource "google_compute_region_autoscaler" "${1:this}" {
+    name = "${2:name}"
+    target = "${3:target}"
+}

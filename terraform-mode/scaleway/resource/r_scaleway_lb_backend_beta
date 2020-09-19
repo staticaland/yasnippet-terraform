@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_lb_backend_beta
+# key: r_scaleway_lb_backend_beta
+# --
+
+resource "scaleway_lb_backend_beta" "${1:this}" {
+    forward_port = "${2:forward_port}"
+    forward_protocol = "${3:forward_protocol}"
+    lb_id = "${4:lb_id}"
+}

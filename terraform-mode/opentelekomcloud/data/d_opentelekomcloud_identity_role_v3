@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_opentelekomcloud_identity_role_v3
+# key: d_opentelekomcloud_identity_role_v3
+# --
+
+data "opentelekomcloud_identity_role_v3" "${1:this}" {
+    name = "${2:name}"
+}

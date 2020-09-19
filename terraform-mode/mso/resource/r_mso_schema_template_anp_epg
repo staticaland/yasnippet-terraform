@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_anp_epg
+# key: r_mso_schema_template_anp_epg
+# --
+
+resource "mso_schema_template_anp_epg" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    bd_name = "${3:bd_name}"
+    name = "${4:name}"
+    schema_id = "${5:schema_id}"
+    template_name = "${6:template_name}"
+    vrf_name = "${7:vrf_name}"
+}

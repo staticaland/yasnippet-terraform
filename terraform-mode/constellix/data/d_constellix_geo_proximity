@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_geo_proximity
+# key: d_constellix_geo_proximity
+# --
+
+data "constellix_geo_proximity" "${1:this}" {
+    name = "${2:name}"
+}

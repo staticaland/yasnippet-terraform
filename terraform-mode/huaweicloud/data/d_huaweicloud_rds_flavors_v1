@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_rds_flavors_v1
+# key: d_huaweicloud_rds_flavors_v1
+# --
+
+data "huaweicloud_rds_flavors_v1" "${1:this}" {
+    datastore_name = "${2:datastore_name}"
+    datastore_version = "${3:datastore_version}"
+}

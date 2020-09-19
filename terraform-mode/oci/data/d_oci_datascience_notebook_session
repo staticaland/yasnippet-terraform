@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_datascience_notebook_session
+# key: d_oci_datascience_notebook_session
+# --
+
+data "oci_datascience_notebook_session" "${1:this}" {
+    notebook_session_id = "${2:notebook_session_id}"
+}

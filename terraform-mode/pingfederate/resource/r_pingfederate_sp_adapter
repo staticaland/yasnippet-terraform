@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_sp_adapter
+# key: r_pingfederate_sp_adapter
+# --
+
+resource "pingfederate_sp_adapter" "${1:this}" {
+    name = "${2:name}"
+    sp_adapter_id = "${3:sp_adapter_id}"
+}

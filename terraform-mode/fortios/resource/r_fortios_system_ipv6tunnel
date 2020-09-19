@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ipv6tunnel
+# key: r_fortios_system_ipv6tunnel
+# --
+
+resource "fortios_system_ipv6tunnel" "${1:this}" {
+    destination = "${2:destination}"
+}

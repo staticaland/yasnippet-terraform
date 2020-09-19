@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_datadog_monitor
+# key: r_datadog_monitor
+# --
+
+resource "datadog_monitor" "${1:this}" {
+    message = "${2:message}"
+    name = "${3:name}"
+    query = "${4:query}"
+    type = "${5:type}"
+}

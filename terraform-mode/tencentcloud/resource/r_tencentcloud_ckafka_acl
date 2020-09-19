@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ckafka_acl
+# key: r_tencentcloud_ckafka_acl
+# --
+
+resource "tencentcloud_ckafka_acl" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    operation_type = "${3:operation_type}"
+    resource_name = "${4:resource_name}"
+}

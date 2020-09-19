@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_packet_filter
+# key: r_sakuracloud_packet_filter
+# --
+
+resource "sakuracloud_packet_filter" "${1:this}" {
+    name = "${2:name}"
+}

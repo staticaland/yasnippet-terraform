@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontrollersecuritypolicy_captiveportal
+# key: r_fortios_switchcontrollersecuritypolicy_captiveportal
+# --
+
+resource "fortios_switchcontrollersecuritypolicy_captiveportal" "${1:this}" {
+}

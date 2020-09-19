@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_realm_events
+# key: r_keycloak_realm_events
+# --
+
+resource "keycloak_realm_events" "${1:this}" {
+    realm_id = "${2:realm_id}"
+}

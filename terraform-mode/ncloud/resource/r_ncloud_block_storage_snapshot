@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_block_storage_snapshot
+# key: r_ncloud_block_storage_snapshot
+# --
+
+resource "ncloud_block_storage_snapshot" "${1:this}" {
+    block_storage_instance_no = "${2:block_storage_instance_no}"
+}

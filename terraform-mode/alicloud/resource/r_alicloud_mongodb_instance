@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_mongodb_instance
+# key: r_alicloud_mongodb_instance
+# --
+
+resource "alicloud_mongodb_instance" "${1:this}" {
+    db_instance_class = "${2:db_instance_class}"
+    db_instance_storage = "${3:db_instance_storage}"
+    engine_version = "${4:engine_version}"
+}

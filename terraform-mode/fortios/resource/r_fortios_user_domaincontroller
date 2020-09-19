@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_domaincontroller
+# key: r_fortios_user_domaincontroller
+# --
+
+resource "fortios_user_domaincontroller" "${1:this}" {
+    ip_address = "${2:ip_address}"
+    ldap_server = "${3:ldap_server}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_logging_log
+# key: r_oci_logging_log
+# --
+
+resource "oci_logging_log" "${1:this}" {
+    display_name = "${2:display_name}"
+    log_group_id = "${3:log_group_id}"
+    log_type = "${4:log_type}"
+}

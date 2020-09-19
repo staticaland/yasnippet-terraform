@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_certificate
+# key: d_oci_waas_certificate
+# --
+
+data "oci_waas_certificate" "${1:this}" {
+    certificate_id = "${2:certificate_id}"
+}

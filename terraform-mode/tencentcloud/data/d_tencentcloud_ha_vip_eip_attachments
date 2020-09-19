@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_ha_vip_eip_attachments
+# key: d_tencentcloud_ha_vip_eip_attachments
+# --
+
+data "tencentcloud_ha_vip_eip_attachments" "${1:this}" {
+    havip_id = "${2:havip_id}"
+}

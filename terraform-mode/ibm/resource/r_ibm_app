@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_app
+# key: r_ibm_app
+# --
+
+resource "ibm_app" "${1:this}" {
+    app_path = "${2:app_path}"
+    name = "${3:name}"
+    space_guid = "${4:space_guid}"
+}

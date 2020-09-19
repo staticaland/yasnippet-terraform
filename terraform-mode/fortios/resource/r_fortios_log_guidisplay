@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_log_guidisplay
+# key: r_fortios_log_guidisplay
+# --
+
+resource "fortios_log_guidisplay" "${1:this}" {
+}

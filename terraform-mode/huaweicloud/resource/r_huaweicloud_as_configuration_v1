@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_as_configuration_v1
+# key: r_huaweicloud_as_configuration_v1
+# --
+
+resource "huaweicloud_as_configuration_v1" "${1:this}" {
+    scaling_configuration_name = "${2:scaling_configuration_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_dis_partition
+# key: d_huaweicloud_dis_partition
+# --
+
+data "huaweicloud_dis_partition" "${1:this}" {
+    stream_name = "${2:stream_name}"
+}

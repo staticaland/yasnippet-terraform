@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_fssopolling
+# key: r_fortios_user_fssopolling
+# --
+
+resource "fortios_user_fssopolling" "${1:this}" {
+    ldap_server = "${2:ldap_server}"
+    server = "${3:server}"
+    user = "${4:user}"
+}

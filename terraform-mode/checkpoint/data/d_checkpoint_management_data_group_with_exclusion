@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_group_with_exclusion
+# key: d_checkpoint_management_data_group_with_exclusion
+# --
+
+data "checkpoint_management_data_group_with_exclusion" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_elb_loadbalancer
+# key: r_huaweicloud_elb_loadbalancer
+# --
+
+resource "huaweicloud_elb_loadbalancer" "${1:this}" {
+    admin_state_up = "${2:admin_state_up}"
+    name = "${3:name}"
+    type = "${4:type}"
+    vpc_id = "${5:vpc_id}"
+}

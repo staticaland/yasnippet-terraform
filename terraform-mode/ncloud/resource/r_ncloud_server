@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_server
+# key: r_ncloud_server
+# --
+
+resource "ncloud_server" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_qingcloud_vpn_cert
+# key: d_qingcloud_vpn_cert
+# --
+
+data "qingcloud_vpn_cert" "${1:this}" {
+    router_id = "${2:router_id}"
+}

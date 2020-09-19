@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_storage_object_access_control
+# key: r_google_storage_object_access_control
+# --
+
+resource "google_storage_object_access_control" "${1:this}" {
+    bucket = "${2:bucket}"
+    entity = "${3:entity}"
+    object = "${4:object}"
+    role = "${5:role}"
+}

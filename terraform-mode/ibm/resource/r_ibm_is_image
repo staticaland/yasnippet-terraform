@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_image
+# key: r_ibm_is_image
+# --
+
+resource "ibm_is_image" "${1:this}" {
+    href = "${2:href}"
+    name = "${3:name}"
+    operating_system = "${4:operating_system}"
+}

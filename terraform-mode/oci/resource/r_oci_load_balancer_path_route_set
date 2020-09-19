@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_load_balancer_path_route_set
+# key: r_oci_load_balancer_path_route_set
+# --
+
+resource "oci_load_balancer_path_route_set" "${1:this}" {
+    load_balancer_id = "${2:load_balancer_id}"
+    name = "${3:name}"
+}

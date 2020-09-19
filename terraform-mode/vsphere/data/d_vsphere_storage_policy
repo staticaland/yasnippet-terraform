@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_storage_policy
+# key: d_vsphere_storage_policy
+# --
+
+data "vsphere_storage_policy" "${1:this}" {
+    name = "${2:name}"
+}

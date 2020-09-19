@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_firewall_tag
+# key: r_aviatrix_firewall_tag
+# --
+
+resource "aviatrix_firewall_tag" "${1:this}" {
+    firewall_tag = "${2:firewall_tag}"
+}

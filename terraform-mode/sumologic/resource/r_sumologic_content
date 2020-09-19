@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_content
+# key: r_sumologic_content
+# --
+
+resource "sumologic_content" "${1:this}" {
+    config = "${2:config}"
+    parent_id = "${3:parent_id}"
+}

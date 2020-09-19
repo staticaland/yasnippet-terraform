@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_saml
+# key: r_fortios_system_saml
+# --
+
+resource "fortios_system_saml" "${1:this}" {
+    default_profile = "${2:default_profile}"
+}

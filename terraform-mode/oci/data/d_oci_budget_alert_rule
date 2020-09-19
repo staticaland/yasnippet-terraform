@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_budget_alert_rule
+# key: d_oci_budget_alert_rule
+# --
+
+data "oci_budget_alert_rule" "${1:this}" {
+    alert_rule_id = "${2:alert_rule_id}"
+    budget_id = "${3:budget_id}"
+}

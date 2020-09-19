@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_datadog_screenboard
+# key: r_datadog_screenboard
+# --
+
+resource "datadog_screenboard" "${1:this}" {
+    title = "${2:title}"
+}

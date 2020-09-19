@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ansiblevault_path
+# key: d_ansiblevault_path
+# --
+
+data "ansiblevault_path" "${1:this}" {
+    path = "${2:path}"
+}

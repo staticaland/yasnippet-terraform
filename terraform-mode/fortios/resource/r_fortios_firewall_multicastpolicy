@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_multicastpolicy
+# key: r_fortios_firewall_multicastpolicy
+# --
+
+resource "fortios_firewall_multicastpolicy" "${1:this}" {
+    dstintf = "${2:dstintf}"
+    srcintf = "${3:srcintf}"
+}

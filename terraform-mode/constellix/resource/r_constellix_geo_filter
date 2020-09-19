@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_constellix_geo_filter
+# key: r_constellix_geo_filter
+# --
+
+resource "constellix_geo_filter" "${1:this}" {
+    geoip_continents = "${2:geoip_continents}"
+    name = "${3:name}"
+}

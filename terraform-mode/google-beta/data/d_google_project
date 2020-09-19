@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_project
+# key: d_google_project
+# --
+
+data "google_project" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_databricks_scim_user
+# key: r_databricks_scim_user
+# --
+
+resource "databricks_scim_user" "${1:this}" {
+    default_roles = "${2:default_roles}"
+    user_name = "${3:user_name}"
+}

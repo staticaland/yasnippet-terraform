@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_exadata_infrastructure_download_config_file
+# key: d_oci_database_exadata_infrastructure_download_config_file
+# --
+
+data "oci_database_exadata_infrastructure_download_config_file" "${1:this}" {
+    exadata_infrastructure_id = "${2:exadata_infrastructure_id}"
+}

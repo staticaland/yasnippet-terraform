@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ansible_group_var
+# key: r_ansible_group_var
+# --
+
+resource "ansible_group_var" "${1:this}" {
+    inventory_group_name = "${2:inventory_group_name}"
+    key = "${3:key}"
+    value = "${4:value}"
+}

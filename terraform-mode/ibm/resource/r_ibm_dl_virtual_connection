@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dl_virtual_connection
+# key: r_ibm_dl_virtual_connection
+# --
+
+resource "ibm_dl_virtual_connection" "${1:this}" {
+    gateway = "${2:gateway}"
+    name = "${3:name}"
+    type = "${4:type}"
+}

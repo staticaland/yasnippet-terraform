@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_vpc_route_ids
+# key: d_huaweicloud_vpc_route_ids
+# --
+
+data "huaweicloud_vpc_route_ids" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

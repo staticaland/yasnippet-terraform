@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_file_storage_export_sets
+# key: d_oci_file_storage_export_sets
+# --
+
+data "oci_file_storage_export_sets" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    compartment_id = "${3:compartment_id}"
+}

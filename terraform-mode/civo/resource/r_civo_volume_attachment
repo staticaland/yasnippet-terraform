@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_civo_volume_attachment
+# key: r_civo_volume_attachment
+# --
+
+resource "civo_volume_attachment" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    volume_id = "${3:volume_id}"
+}

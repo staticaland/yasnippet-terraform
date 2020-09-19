@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_plausible_object_store
+# key: r_plausible_object_store
+# --
+
+resource "plausible_object_store" "${1:this}" {
+}

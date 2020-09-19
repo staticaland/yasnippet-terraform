@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vault_ldap_auth_backend
+# key: r_vault_ldap_auth_backend
+# --
+
+resource "vault_ldap_auth_backend" "${1:this}" {
+    url = "${2:url}"
+}

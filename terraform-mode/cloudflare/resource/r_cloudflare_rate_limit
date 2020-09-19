@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_rate_limit
+# key: r_cloudflare_rate_limit
+# --
+
+resource "cloudflare_rate_limit" "${1:this}" {
+    period = "${2:period}"
+    threshold = "${3:threshold}"
+    zone_id = "${4:zone_id}"
+}

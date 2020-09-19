@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_databricks_instance_profile
+# key: r_databricks_instance_profile
+# --
+
+resource "databricks_instance_profile" "${1:this}" {
+    instance_profile_arn = "${2:instance_profile_arn}"
+    skip_validation = "${3:skip_validation}"
+}

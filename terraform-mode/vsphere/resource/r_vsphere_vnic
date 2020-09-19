@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_vnic
+# key: r_vsphere_vnic
+# --
+
+resource "vsphere_vnic" "${1:this}" {
+    host = "${2:host}"
+}

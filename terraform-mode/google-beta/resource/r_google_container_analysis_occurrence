@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_container_analysis_occurrence
+# key: r_google_container_analysis_occurrence
+# --
+
+resource "google_container_analysis_occurrence" "${1:this}" {
+    note_name = "${2:note_name}"
+    resource_uri = "${3:resource_uri}"
+}

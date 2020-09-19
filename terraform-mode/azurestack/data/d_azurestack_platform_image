@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_azurestack_platform_image
+# key: d_azurestack_platform_image
+# --
+
+data "azurestack_platform_image" "${1:this}" {
+    location = "${2:location}"
+    offer = "${3:offer}"
+    publisher = "${4:publisher}"
+    sku = "${5:sku}"
+}

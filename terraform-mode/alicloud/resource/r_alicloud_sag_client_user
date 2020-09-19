@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_sag_client_user
+# key: r_alicloud_sag_client_user
+# --
+
+resource "alicloud_sag_client_user" "${1:this}" {
+    bandwidth = "${2:bandwidth}"
+    sag_id = "${3:sag_id}"
+    user_mail = "${4:user_mail}"
+}

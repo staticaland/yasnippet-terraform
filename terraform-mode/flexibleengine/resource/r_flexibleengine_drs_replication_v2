@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_drs_replication_v2
+# key: r_flexibleengine_drs_replication_v2
+# --
+
+resource "flexibleengine_drs_replication_v2" "${1:this}" {
+    priority_station = "${2:priority_station}"
+    volume_ids = "${3:volume_ids}"
+}

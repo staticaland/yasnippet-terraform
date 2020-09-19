@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pagerduty_priority
+# key: d_pagerduty_priority
+# --
+
+data "pagerduty_priority" "${1:this}" {
+    name = "${2:name}"
+}

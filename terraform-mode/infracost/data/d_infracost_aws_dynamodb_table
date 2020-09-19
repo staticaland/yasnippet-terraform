@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_infracost_aws_dynamodb_table
+# key: d_infracost_aws_dynamodb_table
+# --
+
+data "infracost_aws_dynamodb_table" "${1:this}" {
+    resources = "${2:resources}"
+}

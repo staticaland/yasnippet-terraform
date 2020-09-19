@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_iploadbalancing_refresh
+# key: r_ovh_iploadbalancing_refresh
+# --
+
+resource "ovh_iploadbalancing_refresh" "${1:this}" {
+    keepers = "${2:keepers}"
+    service_name = "${3:service_name}"
+}

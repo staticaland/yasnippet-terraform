@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_kubernetes_scale_worker
+# key: r_tencentcloud_kubernetes_scale_worker
+# --
+
+resource "tencentcloud_kubernetes_scale_worker" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_icinga2_checkcommand
+# key: r_icinga2_checkcommand
+# --
+
+resource "icinga2_checkcommand" "${1:this}" {
+    command = "${2:command}"
+    name = "${3:name}"
+    templates = "${4:templates}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_yundun_bastionhost_instance
+# key: r_alicloud_yundun_bastionhost_instance
+# --
+
+resource "alicloud_yundun_bastionhost_instance" "${1:this}" {
+    description = "${2:description}"
+    license_code = "${3:license_code}"
+    security_group_ids = "${4:security_group_ids}"
+    vswitch_id = "${5:vswitch_id}"
+}

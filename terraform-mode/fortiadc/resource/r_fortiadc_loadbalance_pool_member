@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortiadc_loadbalance_pool_member
+# key: r_fortiadc_loadbalance_pool_member
+# --
+
+resource "fortiadc_loadbalance_pool_member" "${1:this}" {
+    name = "${2:name}"
+    pool = "${3:pool}"
+    port = "${4:port}"
+}

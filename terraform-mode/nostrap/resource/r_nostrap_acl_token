@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nostrap_acl_token
+# key: r_nostrap_acl_token
+# --
+
+resource "nostrap_acl_token" "${1:this}" {
+    address = "${2:address}"
+    aws_region = "${3:aws_region}"
+    ssm_prefix = "${4:ssm_prefix}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontrollersecuritypolicy_8021X
+# key: r_fortios_switchcontrollersecuritypolicy_8021X
+# --
+
+resource "fortios_switchcontrollersecuritypolicy_8021X" "${1:this}" {
+}

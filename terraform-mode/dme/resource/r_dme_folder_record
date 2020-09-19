@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_dme_folder_record
+# key: r_dme_folder_record
+# --
+
+resource "dme_folder_record" "${1:this}" {
+    name = "${2:name}"
+}

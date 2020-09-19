@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_user_attribute_mapper
+# key: r_keycloak_ldap_user_attribute_mapper
+# --
+
+resource "keycloak_ldap_user_attribute_mapper" "${1:this}" {
+    ldap_attribute = "${2:ldap_attribute}"
+    ldap_user_federation_id = "${3:ldap_user_federation_id}"
+    name = "${4:name}"
+    realm_id = "${5:realm_id}"
+    user_model_attribute = "${6:user_model_attribute}"
+}

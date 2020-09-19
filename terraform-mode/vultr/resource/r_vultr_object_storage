@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_object_storage
+# key: r_vultr_object_storage
+# --
+
+resource "vultr_object_storage" "${1:this}" {
+    object_storage_cluster_id = "${2:object_storage_cluster_id}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_budget_alert_rule
+# key: r_oci_budget_alert_rule
+# --
+
+resource "oci_budget_alert_rule" "${1:this}" {
+    budget_id = "${2:budget_id}"
+    threshold = "${3:threshold}"
+    threshold_type = "${4:threshold_type}"
+    type = "${5:type}"
+}

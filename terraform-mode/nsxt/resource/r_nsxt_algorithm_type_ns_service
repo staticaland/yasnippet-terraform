@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_algorithm_type_ns_service
+# key: r_nsxt_algorithm_type_ns_service
+# --
+
+resource "nsxt_algorithm_type_ns_service" "${1:this}" {
+    algorithm = "${2:algorithm}"
+    destination_port = "${3:destination_port}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_honeycombio_marker
+# key: r_honeycombio_marker
+# --
+
+resource "honeycombio_marker" "${1:this}" {
+    dataset = "${2:dataset}"
+}

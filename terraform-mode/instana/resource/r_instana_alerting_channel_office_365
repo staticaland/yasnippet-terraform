@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_office_365
+# key: r_instana_alerting_channel_office_365
+# --
+
+resource "instana_alerting_channel_office_365" "${1:this}" {
+    name = "${2:name}"
+    webhook_url = "${3:webhook_url}"
+}

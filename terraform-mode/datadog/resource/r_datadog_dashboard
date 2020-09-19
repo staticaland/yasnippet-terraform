@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_dashboard
+# key: r_datadog_dashboard
+# --
+
+resource "datadog_dashboard" "${1:this}" {
+    layout_type = "${2:layout_type}"
+    title = "${3:title}"
+}

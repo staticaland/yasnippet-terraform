@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_custom_protection_rules
+# key: d_oci_waas_custom_protection_rules
+# --
+
+data "oci_waas_custom_protection_rules" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

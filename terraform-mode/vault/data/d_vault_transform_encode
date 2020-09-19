@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_vault_transform_encode
+# key: d_vault_transform_encode
+# --
+
+data "vault_transform_encode" "${1:this}" {
+    path = "${2:path}"
+    role_name = "${3:role_name}"
+}

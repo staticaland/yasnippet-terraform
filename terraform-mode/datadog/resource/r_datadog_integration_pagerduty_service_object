@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_integration_pagerduty_service_object
+# key: r_datadog_integration_pagerduty_service_object
+# --
+
+resource "datadog_integration_pagerduty_service_object" "${1:this}" {
+    service_key = "${2:service_key}"
+    service_name = "${3:service_name}"
+}

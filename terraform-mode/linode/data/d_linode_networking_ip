@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linode_networking_ip
+# key: d_linode_networking_ip
+# --
+
+data "linode_networking_ip" "${1:this}" {
+    address = "${2:address}"
+}

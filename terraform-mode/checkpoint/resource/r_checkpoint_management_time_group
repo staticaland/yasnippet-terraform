@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_time_group
+# key: r_checkpoint_management_time_group
+# --
+
+resource "checkpoint_management_time_group" "${1:this}" {
+    name = "${2:name}"
+}

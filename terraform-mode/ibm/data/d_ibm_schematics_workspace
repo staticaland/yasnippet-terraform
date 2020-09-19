@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_schematics_workspace
+# key: d_ibm_schematics_workspace
+# --
+
+data "ibm_schematics_workspace" "${1:this}" {
+    workspace_id = "${2:workspace_id}"
+}

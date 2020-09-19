@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_tg_locations
+# key: d_ibm_tg_locations
+# --
+
+data "ibm_tg_locations" "${1:this}" {
+}

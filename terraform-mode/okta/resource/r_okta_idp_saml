@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_okta_idp_saml
+# key: r_okta_idp_saml
+# --
+
+resource "okta_idp_saml" "${1:this}" {
+    acs_binding = "${2:acs_binding}"
+    issuer = "${3:issuer}"
+    kid = "${4:kid}"
+    name = "${5:name}"
+    sso_url = "${6:sso_url}"
+}

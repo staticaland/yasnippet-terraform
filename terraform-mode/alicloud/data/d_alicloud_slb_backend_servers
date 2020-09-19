@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_slb_backend_servers
+# key: d_alicloud_slb_backend_servers
+# --
+
+data "alicloud_slb_backend_servers" "${1:this}" {
+    load_balancer_id = "${2:load_balancer_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_helmfile_embedding_example
+# key: r_helmfile_embedding_example
+# --
+
+resource "helmfile_embedding_example" "${1:this}" {
+}

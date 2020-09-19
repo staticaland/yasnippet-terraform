@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_instance_pool_load_balancer_attachment
+# key: d_oci_core_instance_pool_load_balancer_attachment
+# --
+
+data "oci_core_instance_pool_load_balancer_attachment" "${1:this}" {
+    instance_pool_id = "${2:instance_pool_id}"
+    instance_pool_load_balancer_attachment_id = "${3:instance_pool_load_balancer_attachment_id}"
+}

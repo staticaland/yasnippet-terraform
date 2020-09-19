@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_bigip_common_license_manage_bigiq
+# key: r_bigip_common_license_manage_bigiq
+# --
+
+resource "bigip_common_license_manage_bigiq" "${1:this}" {
+    assignment_type = "${2:assignment_type}"
+    bigiq_address = "${3:bigiq_address}"
+    bigiq_password = "${4:bigiq_password}"
+    bigiq_user = "${5:bigiq_user}"
+    license_poolname = "${6:license_poolname}"
+}

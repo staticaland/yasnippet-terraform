@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_tcaplus_cluster
+# key: r_tencentcloud_tcaplus_cluster
+# --
+
+resource "tencentcloud_tcaplus_cluster" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    idl_type = "${3:idl_type}"
+    password = "${4:password}"
+    subnet_id = "${5:subnet_id}"
+    vpc_id = "${6:vpc_id}"
+}

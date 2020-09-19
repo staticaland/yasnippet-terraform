@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_keypair
+# key: r_outscale_keypair
+# --
+
+resource "outscale_keypair" "${1:this}" {
+}

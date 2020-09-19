@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_lb_pool_member
+# key: r_ibm_is_lb_pool_member
+# --
+
+resource "ibm_is_lb_pool_member" "${1:this}" {
+    lb = "${2:lb}"
+    pool = "${3:pool}"
+    port = "${4:port}"
+    target_address = "${5:target_address}"
+}

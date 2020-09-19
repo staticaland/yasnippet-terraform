@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dayu_ddos_policy
+# key: r_tencentcloud_dayu_ddos_policy
+# --
+
+resource "tencentcloud_dayu_ddos_policy" "${1:this}" {
+    name = "${2:name}"
+    resource_type = "${3:resource_type}"
+}

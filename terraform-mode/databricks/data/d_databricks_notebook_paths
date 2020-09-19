@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_databricks_notebook_paths
+# key: d_databricks_notebook_paths
+# --
+
+data "databricks_notebook_paths" "${1:this}" {
+    path = "${2:path}"
+    recursive = "${3:recursive}"
+}

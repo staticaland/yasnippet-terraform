@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_content_library_item
+# key: r_vsphere_content_library_item
+# --
+
+resource "vsphere_content_library_item" "${1:this}" {
+    library_id = "${2:library_id}"
+    name = "${3:name}"
+}

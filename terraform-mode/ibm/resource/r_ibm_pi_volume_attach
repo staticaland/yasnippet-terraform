@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_volume_attach
+# key: r_ibm_pi_volume_attach
+# --
+
+resource "ibm_pi_volume_attach" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+    pi_volume_attach_name = "${4:pi_volume_attach_name}"
+}

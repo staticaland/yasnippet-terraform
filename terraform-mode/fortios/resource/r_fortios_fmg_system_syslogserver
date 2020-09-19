@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_syslogserver
+# key: r_fortios_fmg_system_syslogserver
+# --
+
+resource "fortios_fmg_system_syslogserver" "${1:this}" {
+    name = "${2:name}"
+}

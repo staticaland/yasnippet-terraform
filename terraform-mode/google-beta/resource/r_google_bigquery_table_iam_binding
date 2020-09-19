@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_bigquery_table_iam_binding
+# key: r_google_bigquery_table_iam_binding
+# --
+
+resource "google_bigquery_table_iam_binding" "${1:this}" {
+    dataset_id = "${2:dataset_id}"
+    members = "${3:members}"
+    role = "${4:role}"
+    table_id = "${5:table_id}"
+}

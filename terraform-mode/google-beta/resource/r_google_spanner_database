@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_spanner_database
+# key: r_google_spanner_database
+# --
+
+resource "google_spanner_database" "${1:this}" {
+    instance = "${2:instance}"
+    name = "${3:name}"
+}

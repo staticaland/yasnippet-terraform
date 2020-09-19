@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_databricks_mws_workspaces
+# key: r_databricks_mws_workspaces
+# --
+
+resource "databricks_mws_workspaces" "${1:this}" {
+    account_id = "${2:account_id}"
+    aws_region = "${3:aws_region}"
+    credentials_id = "${4:credentials_id}"
+    deployment_name = "${5:deployment_name}"
+    storage_configuration_id = "${6:storage_configuration_id}"
+    verify_workspace_runnning = "${7:verify_workspace_runnning}"
+    workspace_name = "${8:workspace_name}"
+}

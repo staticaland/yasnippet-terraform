@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_azuredevops_release_tasks
+# key: d_azuredevops_release_tasks
+# --
+
+data "azuredevops_release_tasks" "${1:this}" {
+    definition_id = "${2:definition_id}"
+    job_rank = "${3:job_rank}"
+    project_id = "${4:project_id}"
+    stage_name = "${5:stage_name}"
+}

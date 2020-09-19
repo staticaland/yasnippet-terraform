@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_datacatalog_catalog_type
+# key: d_oci_datacatalog_catalog_type
+# --
+
+data "oci_datacatalog_catalog_type" "${1:this}" {
+    catalog_id = "${2:catalog_id}"
+    type_key = "${3:type_key}"
+}

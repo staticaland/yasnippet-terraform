@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_public_ip
+# key: r_ncloud_public_ip
+# --
+
+resource "ncloud_public_ip" "${1:this}" {
+}

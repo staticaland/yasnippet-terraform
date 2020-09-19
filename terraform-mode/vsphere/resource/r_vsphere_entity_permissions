@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_entity_permissions
+# key: r_vsphere_entity_permissions
+# --
+
+resource "vsphere_entity_permissions" "${1:this}" {
+    entity_id = "${2:entity_id}"
+    entity_type = "${3:entity_type}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_instance_pool
+# key: r_oci_core_instance_pool
+# --
+
+resource "oci_core_instance_pool" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    instance_configuration_id = "${3:instance_configuration_id}"
+    size = "${4:size}"
+}

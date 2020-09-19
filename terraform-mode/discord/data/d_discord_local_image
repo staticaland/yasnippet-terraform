@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_discord_local_image
+# key: d_discord_local_image
+# --
+
+data "discord_local_image" "${1:this}" {
+    file = "${2:file}"
+}

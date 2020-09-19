@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_maintenance_window
+# key: r_mongodbatlas_maintenance_window
+# --
+
+resource "mongodbatlas_maintenance_window" "${1:this}" {
+    project_id = "${2:project_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gsuite_domain
+# key: r_gsuite_domain
+# --
+
+resource "gsuite_domain" "${1:this}" {
+    domain_name = "${2:domain_name}"
+}

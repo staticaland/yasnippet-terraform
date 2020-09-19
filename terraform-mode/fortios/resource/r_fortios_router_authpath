@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_authpath
+# key: r_fortios_router_authpath
+# --
+
+resource "fortios_router_authpath" "${1:this}" {
+    device = "${2:device}"
+    name = "${3:name}"
+}

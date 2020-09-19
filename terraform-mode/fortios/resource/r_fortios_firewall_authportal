@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_authportal
+# key: r_fortios_firewall_authportal
+# --
+
+resource "fortios_firewall_authportal" "${1:this}" {
+}

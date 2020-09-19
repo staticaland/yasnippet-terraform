@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_service_broker
+# key: r_cloudfoundry_service_broker
+# --
+
+resource "cloudfoundry_service_broker" "${1:this}" {
+    name = "${2:name}"
+    password = "${3:password}"
+    url = "${4:url}"
+    username = "${5:username}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_security_groups
+# key: d_outscale_security_groups
+# --
+
+data "outscale_security_groups" "${1:this}" {
+}

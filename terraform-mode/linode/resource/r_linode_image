@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linode_image
+# key: r_linode_image
+# --
+
+resource "linode_image" "${1:this}" {
+    disk_id = "${2:disk_id}"
+    label = "${3:label}"
+    linode_id = "${4:linode_id}"
+}

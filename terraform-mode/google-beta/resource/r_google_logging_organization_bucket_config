@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_logging_organization_bucket_config
+# key: r_google_logging_organization_bucket_config
+# --
+
+resource "google_logging_organization_bucket_config" "${1:this}" {
+    bucket_id = "${2:bucket_id}"
+    location = "${3:location}"
+    organization = "${4:organization}"
+}

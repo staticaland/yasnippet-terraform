@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_azuredevops_project
+# key: d_azuredevops_project
+# --
+
+data "azuredevops_project" "${1:this}" {
+    project_id = "${2:project_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cen_instance_grant
+# key: r_alicloud_cen_instance_grant
+# --
+
+resource "alicloud_cen_instance_grant" "${1:this}" {
+    cen_id = "${2:cen_id}"
+    cen_owner_id = "${3:cen_owner_id}"
+    child_instance_id = "${4:child_instance_id}"
+}

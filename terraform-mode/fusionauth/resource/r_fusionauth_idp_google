@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_idp_google
+# key: r_fusionauth_idp_google
+# --
+
+resource "fusionauth_idp_google" "${1:this}" {
+    button_text = "${2:button_text}"
+    client_id = "${3:client_id}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cr_repo
+# key: r_alicloud_cr_repo
+# --
+
+resource "alicloud_cr_repo" "${1:this}" {
+    name = "${2:name}"
+    namespace = "${3:namespace}"
+    repo_type = "${4:repo_type}"
+    summary = "${5:summary}"
+}

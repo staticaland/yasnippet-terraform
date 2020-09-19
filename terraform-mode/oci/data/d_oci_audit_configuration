@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_audit_configuration
+# key: d_oci_audit_configuration
+# --
+
+data "oci_audit_configuration" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

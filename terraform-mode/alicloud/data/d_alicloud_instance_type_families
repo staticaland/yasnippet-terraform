@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_instance_type_families
+# key: d_alicloud_instance_type_families
+# --
+
+data "alicloud_instance_type_families" "${1:this}" {
+}

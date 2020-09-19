@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sensu_entity
+# key: r_sensu_entity
+# --
+
+resource "sensu_entity" "${1:this}" {
+    class = "${2:class}"
+    name = "${3:name}"
+}

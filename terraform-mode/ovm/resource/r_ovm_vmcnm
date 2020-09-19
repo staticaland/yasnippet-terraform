@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ovm_vmcnm
+# key: r_ovm_vmcnm
+# --
+
+resource "ovm_vmcnm" "${1:this}" {
+    name = "${2:name}"
+    networkid = "${3:networkid}"
+    virtualnicid = "${4:virtualnicid}"
+    vmclonedefinitionid = "${5:vmclonedefinitionid}"
+}

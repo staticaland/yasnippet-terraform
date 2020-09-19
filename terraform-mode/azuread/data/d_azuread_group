@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_azuread_group
+# key: d_azuread_group
+# --
+
+data "azuread_group" "${1:this}" {
+}

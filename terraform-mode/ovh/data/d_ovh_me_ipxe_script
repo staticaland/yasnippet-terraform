@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ovh_me_ipxe_script
+# key: d_ovh_me_ipxe_script
+# --
+
+data "ovh_me_ipxe_script" "${1:this}" {
+    name = "${2:name}"
+}

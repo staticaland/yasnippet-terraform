@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_consul_config_entry
+# key: r_consul_config_entry
+# --
+
+resource "consul_config_entry" "${1:this}" {
+    kind = "${2:kind}"
+    name = "${3:name}"
+}

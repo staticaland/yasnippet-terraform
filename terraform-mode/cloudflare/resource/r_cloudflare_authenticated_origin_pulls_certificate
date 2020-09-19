@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_authenticated_origin_pulls_certificate
+# key: r_cloudflare_authenticated_origin_pulls_certificate
+# --
+
+resource "cloudflare_authenticated_origin_pulls_certificate" "${1:this}" {
+    certificate = "${2:certificate}"
+    private_key = "${3:private_key}"
+    type = "${4:type}"
+    zone_id = "${5:zone_id}"
+}

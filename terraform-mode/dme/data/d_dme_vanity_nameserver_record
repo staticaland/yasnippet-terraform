@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_dme_vanity_nameserver_record
+# key: d_dme_vanity_nameserver_record
+# --
+
+data "dme_vanity_nameserver_record" "${1:this}" {
+    name = "${2:name}"
+}

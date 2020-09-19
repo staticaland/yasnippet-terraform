@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_swa_app
+# key: r_okta_swa_app
+# --
+
+resource "okta_swa_app" "${1:this}" {
+    label = "${2:label}"
+}

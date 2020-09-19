@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_postgresql_default_privileges
+# key: r_postgresql_default_privileges
+# --
+
+resource "postgresql_default_privileges" "${1:this}" {
+    database = "${2:database}"
+    object_type = "${3:object_type}"
+    owner = "${4:owner}"
+    privileges = "${5:privileges}"
+    role = "${6:role}"
+    schema = "${7:schema}"
+}

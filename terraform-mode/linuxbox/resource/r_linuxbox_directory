@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_directory
+# key: r_linuxbox_directory
+# --
+
+resource "linuxbox_directory" "${1:this}" {
+    host_address = "${2:host_address}"
+    path = "${3:path}"
+    ssh_key = "${4:ssh_key}"
+}

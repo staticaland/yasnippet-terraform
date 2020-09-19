@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_vipgrp64
+# key: r_fortios_firewall_vipgrp64
+# --
+
+resource "fortios_firewall_vipgrp64" "${1:this}" {
+}

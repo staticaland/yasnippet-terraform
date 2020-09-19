@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logwebtrends_filter
+# key: r_fortios_logwebtrends_filter
+# --
+
+resource "fortios_logwebtrends_filter" "${1:this}" {
+}

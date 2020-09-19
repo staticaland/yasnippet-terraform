@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_license_vdom
+# key: r_fortios_system_license_vdom
+# --
+
+resource "fortios_system_license_vdom" "${1:this}" {
+    license = "${2:license}"
+}

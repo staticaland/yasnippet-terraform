@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_client_group_policy
+# key: r_keycloak_openid_client_group_policy
+# --
+
+resource "keycloak_openid_client_group_policy" "${1:this}" {
+    decision_strategy = "${2:decision_strategy}"
+    name = "${3:name}"
+    realm_id = "${4:realm_id}"
+    resource_server_id = "${5:resource_server_id}"
+}

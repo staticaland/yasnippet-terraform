@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_datadog_logs_integration_pipeline
+# key: r_datadog_logs_integration_pipeline
+# --
+
+resource "datadog_logs_integration_pipeline" "${1:this}" {
+}

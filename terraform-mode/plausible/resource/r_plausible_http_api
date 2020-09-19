@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_plausible_http_api
+# key: r_plausible_http_api
+# --
+
+resource "plausible_http_api" "${1:this}" {
+    spec_file = "${2:spec_file}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_rancher_certificate
+# key: d_rancher_certificate
+# --
+
+data "rancher_certificate" "${1:this}" {
+    environment_id = "${2:environment_id}"
+    name = "${3:name}"
+}

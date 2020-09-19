@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ad_gpo_security
+# key: r_ad_gpo_security
+# --
+
+resource "ad_gpo_security" "${1:this}" {
+    gpo_container = "${2:gpo_container}"
+}

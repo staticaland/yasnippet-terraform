@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_awx_inventory_group
+# key: d_awx_inventory_group
+# --
+
+data "awx_inventory_group" "${1:this}" {
+    inventory_id = "${2:inventory_id}"
+}

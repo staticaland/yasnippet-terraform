@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_outscale_nic_link
+# key: r_outscale_nic_link
+# --
+
+resource "outscale_nic_link" "${1:this}" {
+    device_number = "${2:device_number}"
+    nic_id = "${3:nic_id}"
+    vm_id = "${4:vm_id}"
+}

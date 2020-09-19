@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_fc_function
+# key: r_alicloud_fc_function
+# --
+
+resource "alicloud_fc_function" "${1:this}" {
+    handler = "${2:handler}"
+    runtime = "${3:runtime}"
+    service = "${4:service}"
+}

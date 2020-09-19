@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_nat_services
+# key: d_outscale_nat_services
+# --
+
+data "outscale_nat_services" "${1:this}" {
+}

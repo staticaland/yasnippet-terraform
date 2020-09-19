@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_oci_data_safe_data_safe_configuration
+# key: r_oci_data_safe_data_safe_configuration
+# --
+
+resource "oci_data_safe_data_safe_configuration" "${1:this}" {
+}

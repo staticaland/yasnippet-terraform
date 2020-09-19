@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_volume
+# key: r_qingcloud_volume
+# --
+
+resource "qingcloud_volume" "${1:this}" {
+    size = "${2:size}"
+}

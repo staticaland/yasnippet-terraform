@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_private_gateway
+# key: r_cosmic_private_gateway
+# --
+
+resource "cosmic_private_gateway" "${1:this}" {
+    acl_id = "${2:acl_id}"
+    ip_address = "${3:ip_address}"
+    network_id = "${4:network_id}"
+    vpc_id = "${5:vpc_id}"
+}

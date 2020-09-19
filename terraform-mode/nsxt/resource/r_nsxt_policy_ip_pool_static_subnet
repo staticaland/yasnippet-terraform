@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_ip_pool_static_subnet
+# key: r_nsxt_policy_ip_pool_static_subnet
+# --
+
+resource "nsxt_policy_ip_pool_static_subnet" "${1:this}" {
+    cidr = "${2:cidr}"
+    display_name = "${3:display_name}"
+    pool_path = "${4:pool_path}"
+}

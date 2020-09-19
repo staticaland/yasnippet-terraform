@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_utm_policy
+# key: r_junos_security_utm_policy
+# --
+
+resource "junos_security_utm_policy" "${1:this}" {
+    name = "${2:name}"
+}

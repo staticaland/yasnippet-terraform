@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_turbot_local_directory_user
+# key: r_turbot_local_directory_user
+# --
+
+resource "turbot_local_directory_user" "${1:this}" {
+    display_name = "${2:display_name}"
+    email = "${3:email}"
+    parent = "${4:parent}"
+    title = "${5:title}"
+}

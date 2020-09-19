@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sentry_organization
+# key: r_sentry_organization
+# --
+
+resource "sentry_organization" "${1:this}" {
+    agree_terms = "${2:agree_terms}"
+    name = "${3:name}"
+}

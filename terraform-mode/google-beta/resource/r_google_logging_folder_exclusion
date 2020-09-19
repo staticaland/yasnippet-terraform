@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_logging_folder_exclusion
+# key: r_google_logging_folder_exclusion
+# --
+
+resource "google_logging_folder_exclusion" "${1:this}" {
+    filter = "${2:filter}"
+    folder = "${3:folder}"
+    name = "${4:name}"
+}

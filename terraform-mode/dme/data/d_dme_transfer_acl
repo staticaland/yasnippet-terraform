@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_dme_transfer_acl
+# key: d_dme_transfer_acl
+# --
+
+data "dme_transfer_acl" "${1:this}" {
+    name = "${2:name}"
+}

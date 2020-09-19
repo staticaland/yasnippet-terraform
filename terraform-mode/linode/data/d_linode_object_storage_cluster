@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linode_object_storage_cluster
+# key: d_linode_object_storage_cluster
+# --
+
+data "linode_object_storage_cluster" "${1:this}" {
+    id = "${2:id}"
+}

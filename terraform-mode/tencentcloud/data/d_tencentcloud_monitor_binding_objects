@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_monitor_binding_objects
+# key: d_tencentcloud_monitor_binding_objects
+# --
+
+data "tencentcloud_monitor_binding_objects" "${1:this}" {
+    group_id = "${2:group_id}"
+}

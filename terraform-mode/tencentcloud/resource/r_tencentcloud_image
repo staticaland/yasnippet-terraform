@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_image
+# key: r_tencentcloud_image
+# --
+
+resource "tencentcloud_image" "${1:this}" {
+    image_name = "${2:image_name}"
+}

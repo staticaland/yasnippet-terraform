@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_pod_security_policy_template
+# key: d_rancher2_pod_security_policy_template
+# --
+
+data "rancher2_pod_security_policy_template" "${1:this}" {
+    name = "${2:name}"
+}

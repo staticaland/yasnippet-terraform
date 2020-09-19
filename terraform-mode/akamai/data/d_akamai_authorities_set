@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_akamai_authorities_set
+# key: d_akamai_authorities_set
+# --
+
+data "akamai_authorities_set" "${1:this}" {
+    contract = "${2:contract}"
+}

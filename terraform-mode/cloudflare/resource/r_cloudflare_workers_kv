@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_workers_kv
+# key: r_cloudflare_workers_kv
+# --
+
+resource "cloudflare_workers_kv" "${1:this}" {
+    key = "${2:key}"
+    namespace_id = "${3:namespace_id}"
+    value = "${4:value}"
+}

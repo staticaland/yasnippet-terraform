@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_databricks_aws_bucket_policy
+# key: d_databricks_aws_bucket_policy
+# --
+
+data "databricks_aws_bucket_policy" "${1:this}" {
+    bucket = "${2:bucket}"
+}

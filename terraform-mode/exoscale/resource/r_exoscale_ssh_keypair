@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_ssh_keypair
+# key: r_exoscale_ssh_keypair
+# --
+
+resource "exoscale_ssh_keypair" "${1:this}" {
+    name = "${2:name}"
+}

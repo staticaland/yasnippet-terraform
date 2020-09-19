@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_firewall
+# key: d_aviatrix_firewall
+# --
+
+data "aviatrix_firewall" "${1:this}" {
+    gw_name = "${2:gw_name}"
+}

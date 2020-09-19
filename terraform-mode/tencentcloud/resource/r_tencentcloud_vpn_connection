@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_vpn_connection
+# key: r_tencentcloud_vpn_connection
+# --
+
+resource "tencentcloud_vpn_connection" "${1:this}" {
+    customer_gateway_id = "${2:customer_gateway_id}"
+    name = "${3:name}"
+    pre_share_key = "${4:pre_share_key}"
+    vpn_gateway_id = "${5:vpn_gateway_id}"
+}

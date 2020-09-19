@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_pingaccess_acme_default
+# key: d_pingaccess_acme_default
+# --
+
+data "pingaccess_acme_default" "${1:this}" {
+}

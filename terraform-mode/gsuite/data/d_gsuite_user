@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gsuite_user
+# key: d_gsuite_user
+# --
+
+data "gsuite_user" "${1:this}" {
+    primary_email = "${2:primary_email}"
+}

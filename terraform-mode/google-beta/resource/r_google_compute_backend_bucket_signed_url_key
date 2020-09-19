@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_backend_bucket_signed_url_key
+# key: r_google_compute_backend_bucket_signed_url_key
+# --
+
+resource "google_compute_backend_bucket_signed_url_key" "${1:this}" {
+    backend_bucket = "${2:backend_bucket}"
+    key_value = "${3:key_value}"
+    name = "${4:name}"
+}

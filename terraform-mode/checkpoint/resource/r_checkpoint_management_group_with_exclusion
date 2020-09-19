@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_group_with_exclusion
+# key: r_checkpoint_management_group_with_exclusion
+# --
+
+resource "checkpoint_management_group_with_exclusion" "${1:this}" {
+    name = "${2:name}"
+}

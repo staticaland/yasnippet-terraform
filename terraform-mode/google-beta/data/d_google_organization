@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_organization
+# key: d_google_organization
+# --
+
+data "google_organization" "${1:this}" {
+}

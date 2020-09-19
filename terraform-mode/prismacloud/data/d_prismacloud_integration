@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_integration
+# key: d_prismacloud_integration
+# --
+
+data "prismacloud_integration" "${1:this}" {
+}

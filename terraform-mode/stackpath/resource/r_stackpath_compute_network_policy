@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_stackpath_compute_network_policy
+# key: r_stackpath_compute_network_policy
+# --
+
+resource "stackpath_compute_network_policy" "${1:this}" {
+    name = "${2:name}"
+    policy_types = "${3:policy_types}"
+    priority = "${4:priority}"
+    slug = "${5:slug}"
+}

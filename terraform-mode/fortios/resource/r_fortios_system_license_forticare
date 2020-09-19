@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_license_forticare
+# key: r_fortios_system_license_forticare
+# --
+
+resource "fortios_system_license_forticare" "${1:this}" {
+    registration_code = "${2:registration_code}"
+}

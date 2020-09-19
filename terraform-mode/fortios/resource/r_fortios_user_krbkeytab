@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_krbkeytab
+# key: r_fortios_user_krbkeytab
+# --
+
+resource "fortios_user_krbkeytab" "${1:this}" {
+    keytab = "${2:keytab}"
+    ldap_server = "${3:ldap_server}"
+    principal = "${4:principal}"
+}

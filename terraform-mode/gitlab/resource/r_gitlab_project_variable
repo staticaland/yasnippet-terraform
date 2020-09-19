@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_project_variable
+# key: r_gitlab_project_variable
+# --
+
+resource "gitlab_project_variable" "${1:this}" {
+    key = "${2:key}"
+    project = "${3:project}"
+    value = "${4:value}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cis_origin_pool
+# key: r_ibm_cis_origin_pool
+# --
+
+resource "ibm_cis_origin_pool" "${1:this}" {
+    check_regions = "${2:check_regions}"
+    cis_id = "${3:cis_id}"
+    enabled = "${4:enabled}"
+    name = "${5:name}"
+}

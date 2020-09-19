@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_vapp_entity
+# key: r_vsphere_vapp_entity
+# --
+
+resource "vsphere_vapp_entity" "${1:this}" {
+    container_id = "${2:container_id}"
+    target_id = "${3:target_id}"
+}

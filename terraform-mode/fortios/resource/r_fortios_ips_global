@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_ips_global
+# key: r_fortios_ips_global
+# --
+
+resource "fortios_ips_global" "${1:this}" {
+}

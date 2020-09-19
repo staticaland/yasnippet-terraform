@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_anp_epg_useg_attr
+# key: r_mso_schema_template_anp_epg_useg_attr
+# --
+
+resource "mso_schema_template_anp_epg_useg_attr" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    epg_name = "${3:epg_name}"
+    name = "${4:name}"
+    schema_id = "${5:schema_id}"
+    template_name = "${6:template_name}"
+    useg_type = "${7:useg_type}"
+    value = "${8:value}"
+}

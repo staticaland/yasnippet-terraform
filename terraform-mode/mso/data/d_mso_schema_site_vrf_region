@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_site_vrf_region
+# key: d_mso_schema_site_vrf_region
+# --
+
+data "mso_schema_site_vrf_region" "${1:this}" {
+    region_name = "${2:region_name}"
+    schema_id = "${3:schema_id}"
+    site_id = "${4:site_id}"
+    vrf_name = "${5:vrf_name}"
+}

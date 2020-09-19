@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_access_layer
+# key: r_checkpoint_management_access_layer
+# --
+
+resource "checkpoint_management_access_layer" "${1:this}" {
+    name = "${2:name}"
+}

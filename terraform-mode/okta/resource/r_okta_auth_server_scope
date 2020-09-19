@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_auth_server_scope
+# key: r_okta_auth_server_scope
+# --
+
+resource "okta_auth_server_scope" "${1:this}" {
+    auth_server_id = "${2:auth_server_id}"
+    name = "${3:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_outscale_virtual_gateway_route_propagation
+# key: r_outscale_virtual_gateway_route_propagation
+# --
+
+resource "outscale_virtual_gateway_route_propagation" "${1:this}" {
+    enable = "${2:enable}"
+    route_table_id = "${3:route_table_id}"
+    virtual_gateway_id = "${4:virtual_gateway_id}"
+}

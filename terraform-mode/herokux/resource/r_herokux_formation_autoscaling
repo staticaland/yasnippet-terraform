@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_herokux_formation_autoscaling
+# key: r_herokux_formation_autoscaling
+# --
+
+resource "herokux_formation_autoscaling" "${1:this}" {
+    app_id = "${2:app_id}"
+    desired_p95_response_time = "${3:desired_p95_response_time}"
+    formation_name = "${4:formation_name}"
+    is_active = "${5:is_active}"
+    max_quantity = "${6:max_quantity}"
+    min_quantity = "${7:min_quantity}"
+}

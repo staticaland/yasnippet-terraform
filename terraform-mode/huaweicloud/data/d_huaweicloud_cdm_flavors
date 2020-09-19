@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_cdm_flavors
+# key: d_huaweicloud_cdm_flavors
+# --
+
+data "huaweicloud_cdm_flavors" "${1:this}" {
+}

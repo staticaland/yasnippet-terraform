@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_dhcp_server_profile
+# key: r_nsxt_dhcp_server_profile
+# --
+
+resource "nsxt_dhcp_server_profile" "${1:this}" {
+    edge_cluster_id = "${2:edge_cluster_id}"
+}

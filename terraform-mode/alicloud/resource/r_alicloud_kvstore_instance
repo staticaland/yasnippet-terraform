@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_kvstore_instance
+# key: r_alicloud_kvstore_instance
+# --
+
+resource "alicloud_kvstore_instance" "${1:this}" {
+    instance_class = "${2:instance_class}"
+}

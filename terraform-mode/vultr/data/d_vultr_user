@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_user
+# key: d_vultr_user
+# --
+
+data "vultr_user" "${1:this}" {
+}

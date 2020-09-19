@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_network
+# key: d_vsphere_network
+# --
+
+data "vsphere_network" "${1:this}" {
+    name = "${2:name}"
+}

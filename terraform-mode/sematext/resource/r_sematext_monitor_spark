@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sematext_monitor_spark
+# key: r_sematext_monitor_spark
+# --
+
+resource "sematext_monitor_spark" "${1:this}" {
+    billing_plan_id = "${2:billing_plan_id}"
+    name = "${3:name}"
+}

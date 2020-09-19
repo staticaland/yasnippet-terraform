@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_exoscale_security_group
+# key: d_exoscale_security_group
+# --
+
+data "exoscale_security_group" "${1:this}" {
+}

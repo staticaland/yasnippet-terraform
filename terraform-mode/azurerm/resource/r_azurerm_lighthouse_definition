@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_azurerm_lighthouse_definition
+# key: r_azurerm_lighthouse_definition
+# --
+
+resource "azurerm_lighthouse_definition" "${1:this}" {
+    managing_tenant_id = "${2:managing_tenant_id}"
+    name = "${3:name}"
+    scope = "${4:scope}"
+}

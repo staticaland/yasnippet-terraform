@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_replacemsgimage
+# key: r_fortios_system_replacemsgimage
+# --
+
+resource "fortios_system_replacemsgimage" "${1:this}" {
+}

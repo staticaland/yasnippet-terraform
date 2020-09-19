@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_alidns_record
+# key: r_alicloud_alidns_record
+# --
+
+resource "alicloud_alidns_record" "${1:this}" {
+    domain_name = "${2:domain_name}"
+    rr = "${3:rr}"
+    type = "${4:type}"
+    value = "${5:value}"
+}

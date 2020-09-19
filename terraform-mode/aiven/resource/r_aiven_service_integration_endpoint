@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aiven_service_integration_endpoint
+# key: r_aiven_service_integration_endpoint
+# --
+
+resource "aiven_service_integration_endpoint" "${1:this}" {
+    endpoint_name = "${2:endpoint_name}"
+    endpoint_type = "${3:endpoint_type}"
+    project = "${4:project}"
+}

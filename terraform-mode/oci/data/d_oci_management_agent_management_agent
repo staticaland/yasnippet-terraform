@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_management_agent_management_agent
+# key: d_oci_management_agent_management_agent
+# --
+
+data "oci_management_agent_management_agent" "${1:this}" {
+    management_agent_id = "${2:management_agent_id}"
+}

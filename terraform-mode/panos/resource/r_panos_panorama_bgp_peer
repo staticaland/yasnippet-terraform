@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_bgp_peer
+# key: r_panos_panorama_bgp_peer
+# --
+
+resource "panos_panorama_bgp_peer" "${1:this}" {
+    bgp_peer_group = "${2:bgp_peer_group}"
+    local_address_interface = "${3:local_address_interface}"
+    name = "${4:name}"
+    peer_address_ip = "${5:peer_address_ip}"
+    virtual_router = "${6:virtual_router}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_healthcare_dataset_iam_binding
+# key: r_google_healthcare_dataset_iam_binding
+# --
+
+resource "google_healthcare_dataset_iam_binding" "${1:this}" {
+    dataset_id = "${2:dataset_id}"
+    members = "${3:members}"
+    role = "${4:role}"
+}

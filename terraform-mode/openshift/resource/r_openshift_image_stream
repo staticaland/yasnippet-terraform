@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_openshift_image_stream
+# key: r_openshift_image_stream
+# --
+
+resource "openshift_image_stream" "${1:this}" {
+}

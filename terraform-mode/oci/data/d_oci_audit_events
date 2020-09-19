@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_oci_audit_events
+# key: d_oci_audit_events
+# --
+
+data "oci_audit_events" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    end_time = "${3:end_time}"
+    start_time = "${4:start_time}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_tcp_cooked
+# key: r_splunk_inputs_tcp_cooked
+# --
+
+resource "splunk_inputs_tcp_cooked" "${1:this}" {
+    name = "${2:name}"
+}

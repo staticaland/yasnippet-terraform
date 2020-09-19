@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_selectel_mks_cluster_v1
+# key: r_selectel_mks_cluster_v1
+# --
+
+resource "selectel_mks_cluster_v1" "${1:this}" {
+    kube_version = "${2:kube_version}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+    region = "${5:region}"
+}

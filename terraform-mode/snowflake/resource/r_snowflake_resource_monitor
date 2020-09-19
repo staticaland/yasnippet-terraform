@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_resource_monitor
+# key: r_snowflake_resource_monitor
+# --
+
+resource "snowflake_resource_monitor" "${1:this}" {
+    name = "${2:name}"
+}

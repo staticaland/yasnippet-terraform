@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_archive
+# key: d_sakuracloud_archive
+# --
+
+data "sakuracloud_archive" "${1:this}" {
+}

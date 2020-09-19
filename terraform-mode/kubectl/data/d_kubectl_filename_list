@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_kubectl_filename_list
+# key: d_kubectl_filename_list
+# --
+
+data "kubectl_filename_list" "${1:this}" {
+    pattern = "${2:pattern}"
+}

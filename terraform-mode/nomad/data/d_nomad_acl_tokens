@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nomad_acl_tokens
+# key: d_nomad_acl_tokens
+# --
+
+data "nomad_acl_tokens" "${1:this}" {
+}

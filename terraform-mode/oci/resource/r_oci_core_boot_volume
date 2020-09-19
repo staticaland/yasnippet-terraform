@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_boot_volume
+# key: r_oci_core_boot_volume
+# --
+
+resource "oci_core_boot_volume" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    compartment_id = "${3:compartment_id}"
+}

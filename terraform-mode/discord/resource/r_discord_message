@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_discord_message
+# key: r_discord_message
+# --
+
+resource "discord_message" "${1:this}" {
+    channel_id = "${2:channel_id}"
+}

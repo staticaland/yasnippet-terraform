@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_honeycombio_trigger_recipient
+# key: d_honeycombio_trigger_recipient
+# --
+
+data "honeycombio_trigger_recipient" "${1:this}" {
+    dataset = "${2:dataset}"
+    type = "${3:type}"
+}

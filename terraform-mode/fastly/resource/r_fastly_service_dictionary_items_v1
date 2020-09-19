@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fastly_service_dictionary_items_v1
+# key: r_fastly_service_dictionary_items_v1
+# --
+
+resource "fastly_service_dictionary_items_v1" "${1:this}" {
+    dictionary_id = "${2:dictionary_id}"
+    service_id = "${3:service_id}"
+}

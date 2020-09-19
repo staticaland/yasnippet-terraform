@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_endpointcontrol_client
+# key: r_fortios_endpointcontrol_client
+# --
+
+resource "fortios_endpointcontrol_client" "${1:this}" {
+}

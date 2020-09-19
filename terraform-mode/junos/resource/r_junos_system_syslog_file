@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_system_syslog_file
+# key: r_junos_system_syslog_file
+# --
+
+resource "junos_system_syslog_file" "${1:this}" {
+    filename = "${2:filename}"
+}

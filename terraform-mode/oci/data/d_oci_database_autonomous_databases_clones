@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_databases_clones
+# key: d_oci_database_autonomous_databases_clones
+# --
+
+data "oci_database_autonomous_databases_clones" "${1:this}" {
+    autonomous_database_id = "${2:autonomous_database_id}"
+    compartment_id = "${3:compartment_id}"
+}

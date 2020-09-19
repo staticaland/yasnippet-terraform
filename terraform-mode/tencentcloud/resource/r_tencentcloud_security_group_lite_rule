@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_security_group_lite_rule
+# key: r_tencentcloud_security_group_lite_rule
+# --
+
+resource "tencentcloud_security_group_lite_rule" "${1:this}" {
+    security_group_id = "${2:security_group_id}"
+}

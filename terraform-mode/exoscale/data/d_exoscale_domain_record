@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_exoscale_domain_record
+# key: d_exoscale_domain_record
+# --
+
+data "exoscale_domain_record" "${1:this}" {
+    domain = "${2:domain}"
+}

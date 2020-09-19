@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_vlan
+# key: r_fortios_switchcontroller_vlan
+# --
+
+resource "fortios_switchcontroller_vlan" "${1:this}" {
+}

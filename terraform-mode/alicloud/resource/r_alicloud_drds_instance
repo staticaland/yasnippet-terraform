@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_drds_instance
+# key: r_alicloud_drds_instance
+# --
+
+resource "alicloud_drds_instance" "${1:this}" {
+    description = "${2:description}"
+    instance_series = "${3:instance_series}"
+    specification = "${4:specification}"
+    vswitch_id = "${5:vswitch_id}"
+    zone_id = "${6:zone_id}"
+}

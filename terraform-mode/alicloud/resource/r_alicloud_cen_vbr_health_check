@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cen_vbr_health_check
+# key: r_alicloud_cen_vbr_health_check
+# --
+
+resource "alicloud_cen_vbr_health_check" "${1:this}" {
+    cen_id = "${2:cen_id}"
+    health_check_target_ip = "${3:health_check_target_ip}"
+    vbr_instance_id = "${4:vbr_instance_id}"
+    vbr_instance_region_id = "${5:vbr_instance_region_id}"
+}

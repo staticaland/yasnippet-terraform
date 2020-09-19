@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_log_dashboard
+# key: r_alicloud_log_dashboard
+# --
+
+resource "alicloud_log_dashboard" "${1:this}" {
+    char_list = "${2:char_list}"
+    dashboard_name = "${3:dashboard_name}"
+    project_name = "${4:project_name}"
+}

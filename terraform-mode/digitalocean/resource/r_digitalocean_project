@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_project
+# key: r_digitalocean_project
+# --
+
+resource "digitalocean_project" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_opsec_application
+# key: d_checkpoint_management_data_opsec_application
+# --
+
+data "checkpoint_management_data_opsec_application" "${1:this}" {
+}

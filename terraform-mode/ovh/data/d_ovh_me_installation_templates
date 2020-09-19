@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ovh_me_installation_templates
+# key: d_ovh_me_installation_templates
+# --
+
+data "ovh_me_installation_templates" "${1:this}" {
+}

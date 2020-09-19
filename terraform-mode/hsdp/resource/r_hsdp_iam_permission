@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_iam_permission
+# key: r_hsdp_iam_permission
+# --
+
+resource "hsdp_iam_permission" "${1:this}" {
+    category = "${2:category}"
+    description = "${3:description}"
+    name = "${4:name}"
+    type = "${5:type}"
+}

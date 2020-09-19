@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ad_gpo
+# key: d_ad_gpo
+# --
+
+data "ad_gpo" "${1:this}" {
+}

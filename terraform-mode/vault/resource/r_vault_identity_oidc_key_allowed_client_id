@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vault_identity_oidc_key_allowed_client_id
+# key: r_vault_identity_oidc_key_allowed_client_id
+# --
+
+resource "vault_identity_oidc_key_allowed_client_id" "${1:this}" {
+    allowed_client_id = "${2:allowed_client_id}"
+    key_name = "${3:key_name}"
+}

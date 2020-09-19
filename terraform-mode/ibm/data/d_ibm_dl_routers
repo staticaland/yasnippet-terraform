@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dl_routers
+# key: d_ibm_dl_routers
+# --
+
+data "ibm_dl_routers" "${1:this}" {
+    location_name = "${2:location_name}"
+    offering_type = "${3:offering_type}"
+}

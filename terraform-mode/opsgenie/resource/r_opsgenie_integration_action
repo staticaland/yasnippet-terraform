@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_integration_action
+# key: r_opsgenie_integration_action
+# --
+
+resource "opsgenie_integration_action" "${1:this}" {
+    integration_id = "${2:integration_id}"
+}

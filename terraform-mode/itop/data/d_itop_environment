@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_itop_environment
+# key: d_itop_environment
+# --
+
+data "itop_environment" "${1:this}" {
+    name = "${2:name}"
+}

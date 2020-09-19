@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_nat_rule
+# key: r_nsxt_policy_nat_rule
+# --
+
+resource "nsxt_policy_nat_rule" "${1:this}" {
+    action = "${2:action}"
+    display_name = "${3:display_name}"
+    gateway_path = "${4:gateway_path}"
+    translated_networks = "${5:translated_networks}"
+}

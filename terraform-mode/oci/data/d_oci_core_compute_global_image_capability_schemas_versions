@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_compute_global_image_capability_schemas_versions
+# key: d_oci_core_compute_global_image_capability_schemas_versions
+# --
+
+data "oci_core_compute_global_image_capability_schemas_versions" "${1:this}" {
+    compute_global_image_capability_schema_id = "${2:compute_global_image_capability_schema_id}"
+}

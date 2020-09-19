@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_elasticsearch_destination
+# key: d_elasticsearch_destination
+# --
+
+data "elasticsearch_destination" "${1:this}" {
+    name = "${2:name}"
+}

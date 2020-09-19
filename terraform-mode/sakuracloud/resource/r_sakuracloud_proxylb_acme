@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_proxylb_acme
+# key: r_sakuracloud_proxylb_acme
+# --
+
+resource "sakuracloud_proxylb_acme" "${1:this}" {
+    accept_tos = "${2:accept_tos}"
+    common_name = "${3:common_name}"
+    proxylb_id = "${4:proxylb_id}"
+}

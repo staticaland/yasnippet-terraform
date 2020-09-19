@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_run_ips_update
+# key: r_checkpoint_management_run_ips_update
+# --
+
+resource "checkpoint_management_run_ips_update" "${1:this}" {
+}

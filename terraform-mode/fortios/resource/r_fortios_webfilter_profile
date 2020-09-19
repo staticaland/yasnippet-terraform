@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_profile
+# key: r_fortios_webfilter_profile
+# --
+
+resource "fortios_webfilter_profile" "${1:this}" {
+    name = "${2:name}"
+}

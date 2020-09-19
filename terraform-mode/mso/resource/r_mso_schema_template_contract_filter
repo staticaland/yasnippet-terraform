@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_contract_filter
+# key: r_mso_schema_template_contract_filter
+# --
+
+resource "mso_schema_template_contract_filter" "${1:this}" {
+    contract_name = "${2:contract_name}"
+    directives = "${3:directives}"
+    filter_name = "${4:filter_name}"
+    filter_type = "${5:filter_type}"
+    schema_id = "${6:schema_id}"
+    template_name = "${7:template_name}"
+}

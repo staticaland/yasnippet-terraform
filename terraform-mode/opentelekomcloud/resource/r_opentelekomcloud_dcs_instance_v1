@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_dcs_instance_v1
+# key: r_opentelekomcloud_dcs_instance_v1
+# --
+
+resource "opentelekomcloud_dcs_instance_v1" "${1:this}" {
+    available_zones = "${2:available_zones}"
+    backup_at = "${3:backup_at}"
+    backup_type = "${4:backup_type}"
+    begin_at = "${5:begin_at}"
+    capacity = "${6:capacity}"
+    engine = "${7:engine}"
+    engine_version = "${8:engine_version}"
+    name = "${9:name}"
+    password = "${10:password}"
+    period_type = "${11:period_type}"
+    product_id = "${12:product_id}"
+    save_days = "${13:save_days}"
+    security_group_id = "${14:security_group_id}"
+    subnet_id = "${15:subnet_id}"
+    vpc_id = "${16:vpc_id}"
+}

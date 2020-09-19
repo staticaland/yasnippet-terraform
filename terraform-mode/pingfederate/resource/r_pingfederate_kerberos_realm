@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_kerberos_realm
+# key: r_pingfederate_kerberos_realm
+# --
+
+resource "pingfederate_kerberos_realm" "${1:this}" {
+    kerberos_realm_name = "${2:kerberos_realm_name}"
+    kerberos_username = "${3:kerberos_username}"
+}

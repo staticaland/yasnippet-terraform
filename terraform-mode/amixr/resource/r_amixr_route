@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_amixr_route
+# key: r_amixr_route
+# --
+
+resource "amixr_route" "${1:this}" {
+    integration_id = "${2:integration_id}"
+    position = "${3:position}"
+    routing_regex = "${4:routing_regex}"
+}

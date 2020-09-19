@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_civo_loadbalancer
+# key: r_civo_loadbalancer
+# --
+
+resource "civo_loadbalancer" "${1:this}" {
+    fail_timeout = "${2:fail_timeout}"
+    hostname = "${3:hostname}"
+    max_conns = "${4:max_conns}"
+    max_request_size = "${5:max_request_size}"
+    policy = "${6:policy}"
+    port = "${7:port}"
+    protocol = "${8:protocol}"
+}

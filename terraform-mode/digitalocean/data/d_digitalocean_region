@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_region
+# key: d_digitalocean_region
+# --
+
+data "digitalocean_region" "${1:this}" {
+    slug = "${2:slug}"
+}

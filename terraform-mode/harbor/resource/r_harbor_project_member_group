@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_harbor_project_member_group
+# key: r_harbor_project_member_group
+# --
+
+resource "harbor_project_member_group" "${1:this}" {
+    group_name = "${2:group_name}"
+    project_id = "${3:project_id}"
+    role = "${4:role}"
+    type = "${5:type}"
+}

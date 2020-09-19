@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tfe_workspace
+# key: r_tfe_workspace
+# --
+
+resource "tfe_workspace" "${1:this}" {
+    name = "${2:name}"
+    organization = "${3:organization}"
+}

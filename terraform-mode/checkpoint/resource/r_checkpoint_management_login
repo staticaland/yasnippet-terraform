@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_login
+# key: r_checkpoint_management_login
+# --
+
+resource "checkpoint_management_login" "${1:this}" {
+    password = "${2:password}"
+    user = "${3:user}"
+}

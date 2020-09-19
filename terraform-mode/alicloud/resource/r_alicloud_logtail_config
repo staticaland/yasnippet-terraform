@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_logtail_config
+# key: r_alicloud_logtail_config
+# --
+
+resource "alicloud_logtail_config" "${1:this}" {
+    input_detail = "${2:input_detail}"
+    input_type = "${3:input_type}"
+    logstore = "${4:logstore}"
+    name = "${5:name}"
+    output_type = "${6:output_type}"
+    project = "${7:project}"
+}

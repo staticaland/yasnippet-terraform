@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_shapingprofile
+# key: r_fortios_firewall_shapingprofile
+# --
+
+resource "fortios_firewall_shapingprofile" "${1:this}" {
+    default_class_id = "${2:default_class_id}"
+    profile_name = "${3:profile_name}"
+}

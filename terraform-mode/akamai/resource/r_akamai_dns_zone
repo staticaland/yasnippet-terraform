@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_akamai_dns_zone
+# key: r_akamai_dns_zone
+# --
+
+resource "akamai_dns_zone" "${1:this}" {
+    contract = "${2:contract}"
+    group = "${3:group}"
+    type = "${4:type}"
+    zone = "${5:zone}"
+}

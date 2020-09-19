@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_certificate_pack
+# key: r_cloudflare_certificate_pack
+# --
+
+resource "cloudflare_certificate_pack" "${1:this}" {
+    hosts = "${2:hosts}"
+    type = "${3:type}"
+    zone_id = "${4:zone_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_me_ssh_key
+# key: r_ovh_me_ssh_key
+# --
+
+resource "ovh_me_ssh_key" "${1:this}" {
+    key = "${2:key}"
+    key_name = "${3:key_name}"
+}

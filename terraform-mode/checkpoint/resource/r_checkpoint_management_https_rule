@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_https_rule
+# key: r_checkpoint_management_https_rule
+# --
+
+resource "checkpoint_management_https_rule" "${1:this}" {
+    layer = "${2:layer}"
+    position = "${3:position}"
+}

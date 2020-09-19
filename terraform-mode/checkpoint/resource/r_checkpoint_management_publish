@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_publish
+# key: r_checkpoint_management_publish
+# --
+
+resource "checkpoint_management_publish" "${1:this}" {
+}

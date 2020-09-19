@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_openshift_build_config
+# key: r_openshift_build_config
+# --
+
+resource "openshift_build_config" "${1:this}" {
+}

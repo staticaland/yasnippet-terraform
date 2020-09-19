@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_itop_backup
+# key: d_itop_backup
+# --
+
+data "itop_backup" "${1:this}" {
+    name = "${2:name}"
+}

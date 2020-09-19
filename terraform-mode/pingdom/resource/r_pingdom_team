@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingdom_team
+# key: r_pingdom_team
+# --
+
+resource "pingdom_team" "${1:this}" {
+    name = "${2:name}"
+}

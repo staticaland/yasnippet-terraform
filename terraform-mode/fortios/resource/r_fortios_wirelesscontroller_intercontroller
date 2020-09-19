@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontroller_intercontroller
+# key: r_fortios_wirelesscontroller_intercontroller
+# --
+
+resource "fortios_wirelesscontroller_intercontroller" "${1:this}" {
+}

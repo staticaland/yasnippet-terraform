@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_datadog_integration_pagerduty
+# key: r_datadog_integration_pagerduty
+# --
+
+resource "datadog_integration_pagerduty" "${1:this}" {
+    subdomain = "${2:subdomain}"
+}

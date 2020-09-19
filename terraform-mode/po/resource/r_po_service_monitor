@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_po_service_monitor
+# key: r_po_service_monitor
+# --
+
+resource "po_service_monitor" "${1:this}" {
+}

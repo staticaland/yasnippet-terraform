@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_instance_group_named_port
+# key: r_google_compute_instance_group_named_port
+# --
+
+resource "google_compute_instance_group_named_port" "${1:this}" {
+    group = "${2:group}"
+    name = "${3:name}"
+    port = "${4:port}"
+}

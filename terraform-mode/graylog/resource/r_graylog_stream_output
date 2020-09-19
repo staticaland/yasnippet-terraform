@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_graylog_stream_output
+# key: r_graylog_stream_output
+# --
+
+resource "graylog_stream_output" "${1:this}" {
+    output_ids = "${2:output_ids}"
+    stream_id = "${3:stream_id}"
+}

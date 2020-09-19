@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_alikafka_instance
+# key: r_alicloud_alikafka_instance
+# --
+
+resource "alicloud_alikafka_instance" "${1:this}" {
+    deploy_type = "${2:deploy_type}"
+    disk_size = "${3:disk_size}"
+    disk_type = "${4:disk_type}"
+    io_max = "${5:io_max}"
+    topic_quota = "${6:topic_quota}"
+    vswitch_id = "${7:vswitch_id}"
+}

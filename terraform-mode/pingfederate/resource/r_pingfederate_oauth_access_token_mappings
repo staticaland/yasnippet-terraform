@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_oauth_access_token_mappings
+# key: r_pingfederate_oauth_access_token_mappings
+# --
+
+resource "pingfederate_oauth_access_token_mappings" "${1:this}" {
+}

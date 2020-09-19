@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_account_member
+# key: r_cloudflare_account_member
+# --
+
+resource "cloudflare_account_member" "${1:this}" {
+    email_address = "${2:email_address}"
+    role_ids = "${3:role_ids}"
+}

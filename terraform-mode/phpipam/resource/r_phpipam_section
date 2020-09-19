@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_phpipam_section
+# key: r_phpipam_section
+# --
+
+resource "phpipam_section" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_stdlib_base64decodehash
+# key: d_stdlib_base64decodehash
+# --
+
+data "stdlib_base64decodehash" "${1:this}" {
+    data = "${2:data}"
+}

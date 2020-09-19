@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_notification_channel_slack
+# key: r_sysdig_secure_notification_channel_slack
+# --
+
+resource "sysdig_secure_notification_channel_slack" "${1:this}" {
+    channel = "${2:channel}"
+    enabled = "${3:enabled}"
+    name = "${4:name}"
+    notify_when_ok = "${5:notify_when_ok}"
+    notify_when_resolved = "${6:notify_when_resolved}"
+    url = "${7:url}"
+}

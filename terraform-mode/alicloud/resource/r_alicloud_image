@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_image
+# key: r_alicloud_image
+# --
+
+resource "alicloud_image" "${1:this}" {
+}

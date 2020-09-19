@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_service_instance
+# key: r_ibm_service_instance
+# --
+
+resource "ibm_service_instance" "${1:this}" {
+    name = "${2:name}"
+    plan = "${3:plan}"
+    service = "${4:service}"
+    space_guid = "${5:space_guid}"
+}

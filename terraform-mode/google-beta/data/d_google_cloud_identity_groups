@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_cloud_identity_groups
+# key: d_google_cloud_identity_groups
+# --
+
+data "google_cloud_identity_groups" "${1:this}" {
+    parent = "${2:parent}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_iam_user
+# key: r_hsdp_iam_user
+# --
+
+resource "hsdp_iam_user" "${1:this}" {
+    email = "${2:email}"
+    first_name = "${3:first_name}"
+    last_name = "${4:last_name}"
+    login = "${5:login}"
+    organization_id = "${6:organization_id}"
+}

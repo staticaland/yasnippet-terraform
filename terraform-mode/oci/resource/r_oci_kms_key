@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_kms_key
+# key: r_oci_kms_key
+# --
+
+resource "oci_kms_key" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    management_endpoint = "${4:management_endpoint}"
+}

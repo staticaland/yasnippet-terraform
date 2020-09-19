@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_maintenance_window
+# key: r_pagerduty_maintenance_window
+# --
+
+resource "pagerduty_maintenance_window" "${1:this}" {
+    end_time = "${2:end_time}"
+    services = "${3:services}"
+    start_time = "${4:start_time}"
+}

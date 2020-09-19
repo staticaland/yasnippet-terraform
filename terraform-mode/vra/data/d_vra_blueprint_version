@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_vra_blueprint_version
+# key: d_vra_blueprint_version
+# --
+
+data "vra_blueprint_version" "${1:this}" {
+    blueprint_id = "${2:blueprint_id}"
+    id = "${3:id}"
+}

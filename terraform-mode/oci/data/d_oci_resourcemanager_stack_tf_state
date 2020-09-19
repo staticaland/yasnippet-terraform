@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_resourcemanager_stack_tf_state
+# key: d_oci_resourcemanager_stack_tf_state
+# --
+
+data "oci_resourcemanager_stack_tf_state" "${1:this}" {
+    local_path = "${2:local_path}"
+    stack_id = "${3:stack_id}"
+}

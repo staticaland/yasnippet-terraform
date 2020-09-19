@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemsnmp_community
+# key: r_fortios_systemsnmp_community
+# --
+
+resource "fortios_systemsnmp_community" "${1:this}" {
+    fosid = "${2:fosid}"
+    name = "${3:name}"
+}

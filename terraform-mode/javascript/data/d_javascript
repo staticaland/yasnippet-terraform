@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_javascript
+# key: d_javascript
+# --
+
+data "javascript" "${1:this}" {
+    source = "${2:source}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_dhcp_server_ip_pool
+# key: r_nsxt_dhcp_server_ip_pool
+# --
+
+resource "nsxt_dhcp_server_ip_pool" "${1:this}" {
+    logical_dhcp_server_id = "${2:logical_dhcp_server_id}"
+}

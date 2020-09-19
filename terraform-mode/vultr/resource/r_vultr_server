@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vultr_server
+# key: r_vultr_server
+# --
+
+resource "vultr_server" "${1:this}" {
+    plan_id = "${2:plan_id}"
+    region_id = "${3:region_id}"
+}

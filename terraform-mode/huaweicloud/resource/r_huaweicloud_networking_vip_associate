@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_networking_vip_associate
+# key: r_huaweicloud_networking_vip_associate
+# --
+
+resource "huaweicloud_networking_vip_associate" "${1:this}" {
+    port_ids = "${2:port_ids}"
+    vip_id = "${3:vip_id}"
+}

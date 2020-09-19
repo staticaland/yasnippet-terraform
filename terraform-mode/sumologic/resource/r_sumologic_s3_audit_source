@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_s3_audit_source
+# key: r_sumologic_s3_audit_source
+# --
+
+resource "sumologic_s3_audit_source" "${1:this}" {
+    collector_id = "${2:collector_id}"
+    content_type = "${3:content_type}"
+    name = "${4:name}"
+    paused = "${5:paused}"
+    scan_interval = "${6:scan_interval}"
+}

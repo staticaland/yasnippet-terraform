@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_netbox_available_prefix
+# key: r_netbox_available_prefix
+# --
+
+resource "netbox_available_prefix" "${1:this}" {
+    parent_prefix_id = "${2:parent_prefix_id}"
+    prefix_length = "${3:prefix_length}"
+}

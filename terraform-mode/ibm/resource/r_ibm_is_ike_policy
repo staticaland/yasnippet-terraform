@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_ike_policy
+# key: r_ibm_is_ike_policy
+# --
+
+resource "ibm_is_ike_policy" "${1:this}" {
+    authentication_algorithm = "${2:authentication_algorithm}"
+    dh_group = "${3:dh_group}"
+    encryption_algorithm = "${4:encryption_algorithm}"
+    name = "${5:name}"
+}

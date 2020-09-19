@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovm_vdm
+# key: r_ovm_vdm
+# --
+
+resource "ovm_vdm" "${1:this}" {
+    slot = "${2:slot}"
+    vdid = "${3:vdid}"
+    vmid = "${4:vmid}"
+}

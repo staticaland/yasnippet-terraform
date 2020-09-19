@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_vra_region_enumeration_vsphere
+# key: d_vra_region_enumeration_vsphere
+# --
+
+data "vra_region_enumeration_vsphere" "${1:this}" {
+    hostname = "${2:hostname}"
+    password = "${3:password}"
+    username = "${4:username}"
+}

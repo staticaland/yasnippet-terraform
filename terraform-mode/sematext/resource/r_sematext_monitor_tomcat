@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sematext_monitor_tomcat
+# key: r_sematext_monitor_tomcat
+# --
+
+resource "sematext_monitor_tomcat" "${1:this}" {
+    billing_plan_id = "${2:billing_plan_id}"
+    name = "${3:name}"
+}

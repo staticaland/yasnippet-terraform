@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_ipv4_ptr
+# key: r_sakuracloud_ipv4_ptr
+# --
+
+resource "sakuracloud_ipv4_ptr" "${1:this}" {
+    hostname = "${2:hostname}"
+    ip_address = "${3:ip_address}"
+}

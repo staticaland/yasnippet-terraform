@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_authentication_execution
+# key: r_keycloak_authentication_execution
+# --
+
+resource "keycloak_authentication_execution" "${1:this}" {
+    authenticator = "${2:authenticator}"
+    parent_flow_alias = "${3:parent_flow_alias}"
+    realm_id = "${4:realm_id}"
+}

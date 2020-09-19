@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_http_application_profile
+# key: r_nsxt_lb_http_application_profile
+# --
+
+resource "nsxt_lb_http_application_profile" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_image_shapes
+# key: d_oci_core_image_shapes
+# --
+
+data "oci_core_image_shapes" "${1:this}" {
+    image_id = "${2:image_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_log_forwarding_profile
+# key: r_panos_panorama_log_forwarding_profile
+# --
+
+resource "panos_panorama_log_forwarding_profile" "${1:this}" {
+    name = "${2:name}"
+}

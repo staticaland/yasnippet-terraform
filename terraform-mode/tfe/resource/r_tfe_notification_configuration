@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tfe_notification_configuration
+# key: r_tfe_notification_configuration
+# --
+
+resource "tfe_notification_configuration" "${1:this}" {
+    destination_type = "${2:destination_type}"
+    name = "${3:name}"
+}

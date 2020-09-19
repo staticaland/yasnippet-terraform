@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_activedirectory_ouMapping
+# key: r_activedirectory_ouMapping
+# --
+
+resource "activedirectory_ouMapping" "${1:this}" {
+    object_class = "${2:object_class}"
+    object_name = "${3:object_name}"
+    target_path = "${4:target_path}"
+}

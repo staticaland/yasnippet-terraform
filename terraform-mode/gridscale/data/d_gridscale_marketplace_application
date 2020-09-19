@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_marketplace_application
+# key: d_gridscale_marketplace_application
+# --
+
+data "gridscale_marketplace_application" "${1:this}" {
+    resource_id = "${2:resource_id}"
+}

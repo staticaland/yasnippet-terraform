@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_static
+# key: r_fortios_router_static
+# --
+
+resource "fortios_router_static" "${1:this}" {
+    device = "${2:device}"
+    dst = "${3:dst}"
+}

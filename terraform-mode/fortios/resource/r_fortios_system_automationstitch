@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_automationstitch
+# key: r_fortios_system_automationstitch
+# --
+
+resource "fortios_system_automationstitch" "${1:this}" {
+    status = "${2:status}"
+    trigger = "${3:trigger}"
+}

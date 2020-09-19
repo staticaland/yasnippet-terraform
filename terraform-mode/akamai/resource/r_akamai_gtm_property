@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_akamai_gtm_property
+# key: r_akamai_gtm_property
+# --
+
+resource "akamai_gtm_property" "${1:this}" {
+    domain = "${2:domain}"
+    handout_limit = "${3:handout_limit}"
+    handout_mode = "${4:handout_mode}"
+    name = "${5:name}"
+    score_aggregation_type = "${6:score_aggregation_type}"
+    type = "${7:type}"
+}

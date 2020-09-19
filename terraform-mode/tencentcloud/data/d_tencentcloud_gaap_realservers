@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_gaap_realservers
+# key: d_tencentcloud_gaap_realservers
+# --
+
+data "tencentcloud_gaap_realservers" "${1:this}" {
+}

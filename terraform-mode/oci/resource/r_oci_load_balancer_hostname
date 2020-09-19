@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_load_balancer_hostname
+# key: r_oci_load_balancer_hostname
+# --
+
+resource "oci_load_balancer_hostname" "${1:this}" {
+    hostname = "${2:hostname}"
+    load_balancer_id = "${3:load_balancer_id}"
+    name = "${4:name}"
+}

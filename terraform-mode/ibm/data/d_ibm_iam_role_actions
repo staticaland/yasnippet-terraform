@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_role_actions
+# key: d_ibm_iam_role_actions
+# --
+
+data "ibm_iam_role_actions" "${1:this}" {
+    service = "${2:service}"
+}

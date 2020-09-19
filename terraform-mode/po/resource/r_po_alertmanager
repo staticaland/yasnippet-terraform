@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_po_alertmanager
+# key: r_po_alertmanager
+# --
+
+resource "po_alertmanager" "${1:this}" {
+}

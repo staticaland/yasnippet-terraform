@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_account_ssh_key
+# key: d_scaleway_account_ssh_key
+# --
+
+data "scaleway_account_ssh_key" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_slb_server_group
+# key: r_alicloud_slb_server_group
+# --
+
+resource "alicloud_slb_server_group" "${1:this}" {
+    load_balancer_id = "${2:load_balancer_id}"
+}

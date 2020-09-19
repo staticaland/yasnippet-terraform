@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_log_project
+# key: r_alicloud_log_project
+# --
+
+resource "alicloud_log_project" "${1:this}" {
+    name = "${2:name}"
+}

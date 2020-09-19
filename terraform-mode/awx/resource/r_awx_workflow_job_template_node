@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_awx_workflow_job_template_node
+# key: r_awx_workflow_job_template_node
+# --
+
+resource "awx_workflow_job_template_node" "${1:this}" {
+    identifier = "${2:identifier}"
+    unified_job_template_id = "${3:unified_job_template_id}"
+    workflow_job_template_id = "${4:workflow_job_template_id}"
+}

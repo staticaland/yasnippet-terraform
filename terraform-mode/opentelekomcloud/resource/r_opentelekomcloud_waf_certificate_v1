@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_waf_certificate_v1
+# key: r_opentelekomcloud_waf_certificate_v1
+# --
+
+resource "opentelekomcloud_waf_certificate_v1" "${1:this}" {
+    content = "${2:content}"
+    key = "${3:key}"
+    name = "${4:name}"
+}

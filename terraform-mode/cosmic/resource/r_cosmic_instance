@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_instance
+# key: r_cosmic_instance
+# --
+
+resource "cosmic_instance" "${1:this}" {
+    service_offering = "${2:service_offering}"
+    template = "${3:template}"
+}

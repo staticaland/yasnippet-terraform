@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_ssh_key
+# key: r_digitalocean_ssh_key
+# --
+
+resource "digitalocean_ssh_key" "${1:this}" {
+    name = "${2:name}"
+    public_key = "${3:public_key}"
+}

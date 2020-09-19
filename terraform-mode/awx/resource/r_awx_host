@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_awx_host
+# key: r_awx_host
+# --
+
+resource "awx_host" "${1:this}" {
+    inventory_id = "${2:inventory_id}"
+    name = "${3:name}"
+}

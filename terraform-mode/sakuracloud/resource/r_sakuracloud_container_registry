@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_container_registry
+# key: r_sakuracloud_container_registry
+# --
+
+resource "sakuracloud_container_registry" "${1:this}" {
+    access_level = "${2:access_level}"
+    name = "${3:name}"
+    subdomain_label = "${4:subdomain_label}"
+}

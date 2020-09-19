@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sensu_role_binding
+# key: r_sensu_role_binding
+# --
+
+resource "sensu_role_binding" "${1:this}" {
+    binding_type = "${2:binding_type}"
+    name = "${3:name}"
+    role = "${4:role}"
+}

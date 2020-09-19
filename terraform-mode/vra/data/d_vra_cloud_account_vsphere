@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_cloud_account_vsphere
+# key: d_vra_cloud_account_vsphere
+# --
+
+data "vra_cloud_account_vsphere" "${1:this}" {
+}

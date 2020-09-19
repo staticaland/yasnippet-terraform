@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_vcn
+# key: d_oci_core_vcn
+# --
+
+data "oci_core_vcn" "${1:this}" {
+    vcn_id = "${2:vcn_id}"
+}

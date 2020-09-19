@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_dashboard_json
+# key: r_wavefront_dashboard_json
+# --
+
+resource "wavefront_dashboard_json" "${1:this}" {
+    dashboard_json = "${2:dashboard_json}"
+}

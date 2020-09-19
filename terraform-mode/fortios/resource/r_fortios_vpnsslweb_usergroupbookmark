@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnsslweb_usergroupbookmark
+# key: r_fortios_vpnsslweb_usergroupbookmark
+# --
+
+resource "fortios_vpnsslweb_usergroupbookmark" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ovh_iploadbalancing_vrack_network
+# key: d_ovh_iploadbalancing_vrack_network
+# --
+
+data "ovh_iploadbalancing_vrack_network" "${1:this}" {
+    service_name = "${2:service_name}"
+    vrack_network_id = "${3:vrack_network_id}"
+}

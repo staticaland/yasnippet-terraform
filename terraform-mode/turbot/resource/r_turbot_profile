@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_turbot_profile
+# key: r_turbot_profile
+# --
+
+resource "turbot_profile" "${1:this}" {
+    display_name = "${2:display_name}"
+    email = "${3:email}"
+    family_name = "${4:family_name}"
+    given_name = "${5:given_name}"
+    parent = "${6:parent}"
+    profile_id = "${7:profile_id}"
+    title = "${8:title}"
+}

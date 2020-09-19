@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortiadc_loadbalance_content_routing_condition
+# key: r_fortiadc_loadbalance_content_routing_condition
+# --
+
+resource "fortiadc_loadbalance_content_routing_condition" "${1:this}" {
+    content = "${2:content}"
+    content_routing = "${3:content_routing}"
+    object = "${4:object}"
+    type = "${5:type}"
+}

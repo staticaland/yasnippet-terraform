@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_antiddos
+# key: d_huaweicloud_antiddos
+# --
+
+data "huaweicloud_antiddos" "${1:this}" {
+}

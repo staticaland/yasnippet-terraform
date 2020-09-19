@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_network
+# key: d_ecloud_network
+# --
+
+data "ecloud_network" "${1:this}" {
+    name = "${2:name}"
+    solution_id = "${3:solution_id}"
+}

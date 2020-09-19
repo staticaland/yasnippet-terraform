@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_kms_crypto_key_iam_policy
+# key: r_google_kms_crypto_key_iam_policy
+# --
+
+resource "google_kms_crypto_key_iam_policy" "${1:this}" {
+    crypto_key_id = "${2:crypto_key_id}"
+    policy_data = "${3:policy_data}"
+}

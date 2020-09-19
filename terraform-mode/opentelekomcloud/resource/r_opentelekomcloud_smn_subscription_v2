@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_smn_subscription_v2
+# key: r_opentelekomcloud_smn_subscription_v2
+# --
+
+resource "opentelekomcloud_smn_subscription_v2" "${1:this}" {
+    endpoint = "${2:endpoint}"
+    protocol = "${3:protocol}"
+    topic_urn = "${4:topic_urn}"
+}

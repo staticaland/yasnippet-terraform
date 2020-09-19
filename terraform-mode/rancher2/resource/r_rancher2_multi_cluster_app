@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_multi_cluster_app
+# key: r_rancher2_multi_cluster_app
+# --
+
+resource "rancher2_multi_cluster_app" "${1:this}" {
+    catalog_name = "${2:catalog_name}"
+    name = "${3:name}"
+    roles = "${4:roles}"
+    template_name = "${5:template_name}"
+}

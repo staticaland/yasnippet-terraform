@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cs_serverless_kubernetes
+# key: r_alicloud_cs_serverless_kubernetes
+# --
+
+resource "alicloud_cs_serverless_kubernetes" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

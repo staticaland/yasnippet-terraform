@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_shipping_zone_rate
+# key: r_commercetools_shipping_zone_rate
+# --
+
+resource "commercetools_shipping_zone_rate" "${1:this}" {
+    shipping_method_id = "${2:shipping_method_id}"
+    shipping_zone_id = "${3:shipping_zone_id}"
+}

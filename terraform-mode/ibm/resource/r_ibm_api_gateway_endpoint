@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_api_gateway_endpoint
+# key: r_ibm_api_gateway_endpoint
+# --
+
+resource "ibm_api_gateway_endpoint" "${1:this}" {
+    name = "${2:name}"
+    open_api_doc_name = "${3:open_api_doc_name}"
+    service_instance_crn = "${4:service_instance_crn}"
+}

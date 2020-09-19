@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_auditing
+# key: r_mongodbatlas_auditing
+# --
+
+resource "mongodbatlas_auditing" "${1:this}" {
+    project_id = "${2:project_id}"
+}

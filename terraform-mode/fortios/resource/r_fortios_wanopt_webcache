@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_webcache
+# key: r_fortios_wanopt_webcache
+# --
+
+resource "fortios_wanopt_webcache" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_dynamic_object
+# key: r_checkpoint_management_dynamic_object
+# --
+
+resource "checkpoint_management_dynamic_object" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cloudtable_cluster
+# key: r_huaweicloud_cloudtable_cluster
+# --
+
+resource "huaweicloud_cloudtable_cluster" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    name = "${3:name}"
+    rs_num = "${4:rs_num}"
+    security_group_id = "${5:security_group_id}"
+    storage_type = "${6:storage_type}"
+    subnet_id = "${7:subnet_id}"
+    vpc_id = "${8:vpc_id}"
+}

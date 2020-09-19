@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_puppetca_certificate
+# key: r_puppetca_certificate
+# --
+
+resource "puppetca_certificate" "${1:this}" {
+    name = "${2:name}"
+}

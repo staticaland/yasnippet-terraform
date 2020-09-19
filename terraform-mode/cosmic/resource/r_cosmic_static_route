@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_static_route
+# key: r_cosmic_static_route
+# --
+
+resource "cosmic_static_route" "${1:this}" {
+    cidr = "${2:cidr}"
+    nexthop = "${3:nexthop}"
+    vpc_id = "${4:vpc_id}"
+}

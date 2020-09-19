@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ess_alarm
+# key: r_alicloud_ess_alarm
+# --
+
+resource "alicloud_ess_alarm" "${1:this}" {
+    alarm_actions = "${2:alarm_actions}"
+    metric_name = "${3:metric_name}"
+    scaling_group_id = "${4:scaling_group_id}"
+    threshold = "${5:threshold}"
+}

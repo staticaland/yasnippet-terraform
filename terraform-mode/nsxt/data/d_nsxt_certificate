@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_certificate
+# key: d_nsxt_certificate
+# --
+
+data "nsxt_certificate" "${1:this}" {
+}

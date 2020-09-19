@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_admin_administrator
+# key: r_fortios_system_admin_administrator
+# --
+
+resource "fortios_system_admin_administrator" "${1:this}" {
+    accprofile = "${2:accprofile}"
+    name = "${3:name}"
+    password = "${4:password}"
+}

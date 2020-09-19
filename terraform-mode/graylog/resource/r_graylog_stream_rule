@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_graylog_stream_rule
+# key: r_graylog_stream_rule
+# --
+
+resource "graylog_stream_rule" "${1:this}" {
+    field = "${2:field}"
+    stream_id = "${3:stream_id}"
+    type = "${4:type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_encryption_at_rest
+# key: r_mongodbatlas_encryption_at_rest
+# --
+
+resource "mongodbatlas_encryption_at_rest" "${1:this}" {
+    project_id = "${2:project_id}"
+}

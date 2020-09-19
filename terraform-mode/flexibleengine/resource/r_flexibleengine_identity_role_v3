@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_identity_role_v3
+# key: r_flexibleengine_identity_role_v3
+# --
+
+resource "flexibleengine_identity_role_v3" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+    scope = "${4:scope}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_kp_key
+# key: d_ibm_kp_key
+# --
+
+data "ibm_kp_key" "${1:this}" {
+    key_protect_id = "${2:key_protect_id}"
+}

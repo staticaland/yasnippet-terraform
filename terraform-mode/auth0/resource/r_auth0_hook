@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_auth0_hook
+# key: r_auth0_hook
+# --
+
+resource "auth0_hook" "${1:this}" {
+    name = "${2:name}"
+    script = "${3:script}"
+    trigger_id = "${4:trigger_id}"
+}

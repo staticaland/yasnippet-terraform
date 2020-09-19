@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_po_prometheus
+# key: r_po_prometheus
+# --
+
+resource "po_prometheus" "${1:this}" {
+}

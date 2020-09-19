@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_ops_genie
+# key: r_instana_alerting_channel_ops_genie
+# --
+
+resource "instana_alerting_channel_ops_genie" "${1:this}" {
+    api_key = "${2:api_key}"
+    name = "${3:name}"
+    region = "${4:region}"
+    tags = "${5:tags}"
+}

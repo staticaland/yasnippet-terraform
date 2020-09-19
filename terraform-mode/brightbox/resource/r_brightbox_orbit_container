@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_brightbox_orbit_container
+# key: r_brightbox_orbit_container
+# --
+
+resource "brightbox_orbit_container" "${1:this}" {
+    name = "${2:name}"
+}

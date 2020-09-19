@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ssl_vpn_client_certs
+# key: d_alicloud_ssl_vpn_client_certs
+# --
+
+data "alicloud_ssl_vpn_client_certs" "${1:this}" {
+}

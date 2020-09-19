@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingdom_contact
+# key: r_pingdom_contact
+# --
+
+resource "pingdom_contact" "${1:this}" {
+    severity_level = "${2:severity_level}"
+    user_id = "${3:user_id}"
+}

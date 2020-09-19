@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_certificates_ca
+# key: r_pingfederate_certificates_ca
+# --
+
+resource "pingfederate_certificates_ca" "${1:this}" {
+    file_data = "${2:file_data}"
+}

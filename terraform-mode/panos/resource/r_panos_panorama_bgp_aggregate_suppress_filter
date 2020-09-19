@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_bgp_aggregate_suppress_filter
+# key: r_panos_panorama_bgp_aggregate_suppress_filter
+# --
+
+resource "panos_panorama_bgp_aggregate_suppress_filter" "${1:this}" {
+    bgp_aggregate = "${2:bgp_aggregate}"
+    name = "${3:name}"
+    virtual_router = "${4:virtual_router}"
+}

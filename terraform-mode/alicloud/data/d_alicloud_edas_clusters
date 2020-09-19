@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_edas_clusters
+# key: d_alicloud_edas_clusters
+# --
+
+data "alicloud_edas_clusters" "${1:this}" {
+    logical_region_id = "${2:logical_region_id}"
+}

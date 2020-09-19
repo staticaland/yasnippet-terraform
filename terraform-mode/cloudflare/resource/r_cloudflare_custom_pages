@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_custom_pages
+# key: r_cloudflare_custom_pages
+# --
+
+resource "cloudflare_custom_pages" "${1:this}" {
+    type = "${2:type}"
+    url = "${3:url}"
+}

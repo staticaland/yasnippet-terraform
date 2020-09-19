@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aiven_kafka_connect
+# key: r_aiven_kafka_connect
+# --
+
+resource "aiven_kafka_connect" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

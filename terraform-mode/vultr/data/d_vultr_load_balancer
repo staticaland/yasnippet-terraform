@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_load_balancer
+# key: d_vultr_load_balancer
+# --
+
+data "vultr_load_balancer" "${1:this}" {
+}

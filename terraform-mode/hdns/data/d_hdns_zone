@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hdns_zone
+# key: d_hdns_zone
+# --
+
+data "hdns_zone" "${1:this}" {
+    id = "${2:id}"
+}

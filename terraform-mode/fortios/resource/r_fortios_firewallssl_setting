@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallssl_setting
+# key: r_fortios_firewallssl_setting
+# --
+
+resource "fortios_firewallssl_setting" "${1:this}" {
+    cert_cache_capacity = "${2:cert_cache_capacity}"
+    cert_cache_timeout = "${3:cert_cache_timeout}"
+    no_matching_cipher_action = "${4:no_matching_cipher_action}"
+    proxy_connect_timeout = "${5:proxy_connect_timeout}"
+    session_cache_capacity = "${6:session_cache_capacity}"
+    session_cache_timeout = "${7:session_cache_timeout}"
+    ssl_dh_bits = "${8:ssl_dh_bits}"
+    ssl_send_empty_frags = "${9:ssl_send_empty_frags}"
+}

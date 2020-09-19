@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_autoscaling_auto_scaling_configurations
+# key: d_oci_autoscaling_auto_scaling_configurations
+# --
+
+data "oci_autoscaling_auto_scaling_configurations" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

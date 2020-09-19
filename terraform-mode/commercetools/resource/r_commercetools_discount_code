@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_discount_code
+# key: r_commercetools_discount_code
+# --
+
+resource "commercetools_discount_code" "${1:this}" {
+    cart_discounts = "${2:cart_discounts}"
+    code = "${3:code}"
+}

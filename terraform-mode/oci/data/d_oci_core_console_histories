@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_console_histories
+# key: d_oci_core_console_histories
+# --
+
+data "oci_core_console_histories" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

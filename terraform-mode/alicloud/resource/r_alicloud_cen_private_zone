@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cen_private_zone
+# key: r_alicloud_cen_private_zone
+# --
+
+resource "alicloud_cen_private_zone" "${1:this}" {
+    access_region_id = "${2:access_region_id}"
+    cen_id = "${3:cen_id}"
+    host_region_id = "${4:host_region_id}"
+    host_vpc_id = "${5:host_vpc_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_application
+# key: r_alicloud_edas_application
+# --
+
+resource "alicloud_edas_application" "${1:this}" {
+    application_name = "${2:application_name}"
+    cluster_id = "${3:cluster_id}"
+    package_type = "${4:package_type}"
+}

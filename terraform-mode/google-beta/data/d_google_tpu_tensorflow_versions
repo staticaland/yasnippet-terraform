@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_tpu_tensorflow_versions
+# key: d_google_tpu_tensorflow_versions
+# --
+
+data "google_tpu_tensorflow_versions" "${1:this}" {
+}

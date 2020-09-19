@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_prismacloud_compliance_standard_requirement
+# key: r_prismacloud_compliance_standard_requirement
+# --
+
+resource "prismacloud_compliance_standard_requirement" "${1:this}" {
+    cs_id = "${2:cs_id}"
+    name = "${3:name}"
+}

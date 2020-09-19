@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wanopt_profile
+# key: r_fortios_wanopt_profile
+# --
+
+resource "fortios_wanopt_profile" "${1:this}" {
+}

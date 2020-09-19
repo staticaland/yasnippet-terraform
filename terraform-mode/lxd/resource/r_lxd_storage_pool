@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_lxd_storage_pool
+# key: r_lxd_storage_pool
+# --
+
+resource "lxd_storage_pool" "${1:this}" {
+    config = "${2:config}"
+    driver = "${3:driver}"
+    name = "${4:name}"
+}

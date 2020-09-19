@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_route_service_binding
+# key: r_cloudfoundry_route_service_binding
+# --
+
+resource "cloudfoundry_route_service_binding" "${1:this}" {
+    route = "${2:route}"
+    service_instance = "${3:service_instance}"
+}

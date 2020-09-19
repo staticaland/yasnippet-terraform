@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_awx_organization
+# key: r_awx_organization
+# --
+
+resource "awx_organization" "${1:this}" {
+    name = "${2:name}"
+}

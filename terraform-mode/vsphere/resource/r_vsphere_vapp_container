@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_vapp_container
+# key: r_vsphere_vapp_container
+# --
+
+resource "vsphere_vapp_container" "${1:this}" {
+    name = "${2:name}"
+    parent_resource_pool_id = "${3:parent_resource_pool_id}"
+}

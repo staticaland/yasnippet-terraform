@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_network_vlan_spanning
+# key: r_ibm_network_vlan_spanning
+# --
+
+resource "ibm_network_vlan_spanning" "${1:this}" {
+    vlan_spanning = "${2:vlan_spanning}"
+}

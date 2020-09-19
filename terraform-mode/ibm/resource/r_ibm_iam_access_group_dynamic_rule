@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_access_group_dynamic_rule
+# key: r_ibm_iam_access_group_dynamic_rule
+# --
+
+resource "ibm_iam_access_group_dynamic_rule" "${1:this}" {
+    access_group_id = "${2:access_group_id}"
+    expiration = "${3:expiration}"
+    identity_provider = "${4:identity_provider}"
+    name = "${5:name}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_cluster_driver
+# key: r_rancher2_cluster_driver
+# --
+
+resource "rancher2_cluster_driver" "${1:this}" {
+    active = "${2:active}"
+    builtin = "${3:builtin}"
+    name = "${4:name}"
+    url = "${5:url}"
+}

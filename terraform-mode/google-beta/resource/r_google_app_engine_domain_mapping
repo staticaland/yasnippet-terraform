@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_app_engine_domain_mapping
+# key: r_google_app_engine_domain_mapping
+# --
+
+resource "google_app_engine_domain_mapping" "${1:this}" {
+    domain_name = "${2:domain_name}"
+}

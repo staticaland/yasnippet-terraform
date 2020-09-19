@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_route_table
+# key: d_outscale_route_table
+# --
+
+data "outscale_route_table" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_kubeflowpipelines_run
+# key: r_kubeflowpipelines_run
+# --
+
+resource "kubeflowpipelines_run" "${1:this}" {
+    name = "${2:name}"
+}

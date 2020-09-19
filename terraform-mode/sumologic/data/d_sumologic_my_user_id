@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sumologic_my_user_id
+# key: d_sumologic_my_user_id
+# --
+
+data "sumologic_my_user_id" "${1:this}" {
+}

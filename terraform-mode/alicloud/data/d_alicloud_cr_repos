@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cr_repos
+# key: d_alicloud_cr_repos
+# --
+
+data "alicloud_cr_repos" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_nat_static
+# key: r_junos_security_nat_static
+# --
+
+resource "junos_security_nat_static" "${1:this}" {
+    name = "${2:name}"
+}

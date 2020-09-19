@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_graylog_output
+# key: r_graylog_output
+# --
+
+resource "graylog_output" "${1:this}" {
+    configuration = "${2:configuration}"
+    title = "${3:title}"
+    type = "${4:type}"
+}

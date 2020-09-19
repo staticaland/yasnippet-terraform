@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_iam_role
+# key: d_huaweicloud_iam_role
+# --
+
+data "huaweicloud_iam_role" "${1:this}" {
+}

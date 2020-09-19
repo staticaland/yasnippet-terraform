@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azuredevops_task_group
+# key: r_azuredevops_task_group
+# --
+
+resource "azuredevops_task_group" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_firewall_section
+# key: d_nsxt_firewall_section
+# --
+
+data "nsxt_firewall_section" "${1:this}" {
+}

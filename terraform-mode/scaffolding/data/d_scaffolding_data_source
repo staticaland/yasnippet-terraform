@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_scaffolding_data_source
+# key: d_scaffolding_data_source
+# --
+
+data "scaffolding_data_source" "${1:this}" {
+    sample_attribute = "${2:sample_attribute}"
+}

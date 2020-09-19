@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemautoupdate_pushupdate
+# key: r_fortios_systemautoupdate_pushupdate
+# --
+
+resource "fortios_systemautoupdate_pushupdate" "${1:this}" {
+    address = "${2:address}"
+    override = "${3:override}"
+    port = "${4:port}"
+    status = "${5:status}"
+}

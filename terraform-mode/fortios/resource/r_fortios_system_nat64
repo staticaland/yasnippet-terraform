@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_nat64
+# key: r_fortios_system_nat64
+# --
+
+resource "fortios_system_nat64" "${1:this}" {
+    nat64_prefix = "${2:nat64_prefix}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_obs_bucket
+# key: r_flexibleengine_obs_bucket
+# --
+
+resource "flexibleengine_obs_bucket" "${1:this}" {
+    bucket = "${2:bucket}"
+}

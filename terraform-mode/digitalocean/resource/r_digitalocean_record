@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_record
+# key: r_digitalocean_record
+# --
+
+resource "digitalocean_record" "${1:this}" {
+    domain = "${2:domain}"
+    name = "${3:name}"
+    type = "${4:type}"
+    value = "${5:value}"
+}

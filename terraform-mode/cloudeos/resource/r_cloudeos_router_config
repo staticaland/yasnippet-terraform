@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_router_config
+# key: r_cloudeos_router_config
+# --
+
+resource "cloudeos_router_config" "${1:this}" {
+    cloud_provider = "${2:cloud_provider}"
+    intf_name = "${3:intf_name}"
+    intf_private_ip = "${4:intf_private_ip}"
+    intf_type = "${5:intf_type}"
+    region = "${6:region}"
+    topology_name = "${7:topology_name}"
+    vpc_id = "${8:vpc_id}"
+}

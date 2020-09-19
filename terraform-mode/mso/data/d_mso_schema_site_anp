@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_site_anp
+# key: d_mso_schema_site_anp
+# --
+
+data "mso_schema_site_anp" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    schema_id = "${3:schema_id}"
+    site_id = "${4:site_id}"
+}

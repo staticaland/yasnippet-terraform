@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_newrelic_plugin
+# key: d_newrelic_plugin
+# --
+
+data "newrelic_plugin" "${1:this}" {
+    guid = "${2:guid}"
+}

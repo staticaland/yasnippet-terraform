@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_sfs_access_rule_v2
+# key: r_flexibleengine_sfs_access_rule_v2
+# --
+
+resource "flexibleengine_sfs_access_rule_v2" "${1:this}" {
+    access_to = "${2:access_to}"
+    sfs_id = "${3:sfs_id}"
+}

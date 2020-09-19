@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_consul_namespace
+# key: r_consul_namespace
+# --
+
+resource "consul_namespace" "${1:this}" {
+    name = "${2:name}"
+}

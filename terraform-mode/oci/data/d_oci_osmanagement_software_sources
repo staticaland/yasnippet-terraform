@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_osmanagement_software_sources
+# key: d_oci_osmanagement_software_sources
+# --
+
+data "oci_osmanagement_software_sources" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

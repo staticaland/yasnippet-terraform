@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_streaming_stream_pool
+# key: d_oci_streaming_stream_pool
+# --
+
+data "oci_streaming_stream_pool" "${1:this}" {
+    stream_pool_id = "${2:stream_pool_id}"
+}

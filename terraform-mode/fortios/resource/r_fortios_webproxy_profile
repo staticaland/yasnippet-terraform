@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webproxy_profile
+# key: r_fortios_webproxy_profile
+# --
+
+resource "fortios_webproxy_profile" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_ibm_pi_instance_ip
+# key: d_ibm_pi_instance_ip
+# --
+
+data "ibm_pi_instance_ip" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+    pi_network_name = "${4:pi_network_name}"
+}

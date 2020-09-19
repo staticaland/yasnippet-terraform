@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_vpn_community_meshed
+# key: r_checkpoint_management_vpn_community_meshed
+# --
+
+resource "checkpoint_management_vpn_community_meshed" "${1:this}" {
+    name = "${2:name}"
+}

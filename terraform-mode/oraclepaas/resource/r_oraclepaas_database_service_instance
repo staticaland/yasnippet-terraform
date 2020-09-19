@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_oraclepaas_database_service_instance
+# key: r_oraclepaas_database_service_instance
+# --
+
+resource "oraclepaas_database_service_instance" "${1:this}" {
+    edition = "${2:edition}"
+    name = "${3:name}"
+    shape = "${4:shape}"
+    ssh_public_key = "${5:ssh_public_key}"
+    subscription_type = "${6:subscription_type}"
+    version = "${7:version}"
+}

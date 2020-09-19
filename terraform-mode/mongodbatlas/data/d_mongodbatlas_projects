@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_projects
+# key: d_mongodbatlas_projects
+# --
+
+data "mongodbatlas_projects" "${1:this}" {
+}

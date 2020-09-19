@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_user_profile
+# key: d_ibm_iam_user_profile
+# --
+
+data "ibm_iam_user_profile" "${1:this}" {
+    iam_id = "${2:iam_id}"
+}

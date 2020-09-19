@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_vra_cloud_account_vsphere
+# key: r_vra_cloud_account_vsphere
+# --
+
+resource "vra_cloud_account_vsphere" "${1:this}" {
+    hostname = "${2:hostname}"
+    name = "${3:name}"
+    password = "${4:password}"
+    regions = "${5:regions}"
+    username = "${6:username}"
+}

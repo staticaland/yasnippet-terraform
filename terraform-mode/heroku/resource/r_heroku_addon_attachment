@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_addon_attachment
+# key: r_heroku_addon_attachment
+# --
+
+resource "heroku_addon_attachment" "${1:this}" {
+    addon_id = "${2:addon_id}"
+    app_id = "${3:app_id}"
+}

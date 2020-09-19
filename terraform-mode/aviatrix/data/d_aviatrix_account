@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_account
+# key: d_aviatrix_account
+# --
+
+data "aviatrix_account" "${1:this}" {
+    account_name = "${2:account_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_project_logging
+# key: d_rancher2_project_logging
+# --
+
+data "rancher2_project_logging" "${1:this}" {
+    project_id = "${2:project_id}"
+}

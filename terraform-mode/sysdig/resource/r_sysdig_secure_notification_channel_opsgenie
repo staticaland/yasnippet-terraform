@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_notification_channel_opsgenie
+# key: r_sysdig_secure_notification_channel_opsgenie
+# --
+
+resource "sysdig_secure_notification_channel_opsgenie" "${1:this}" {
+    api_key = "${2:api_key}"
+    enabled = "${3:enabled}"
+    name = "${4:name}"
+    notify_when_ok = "${5:notify_when_ok}"
+    notify_when_resolved = "${6:notify_when_resolved}"
+}

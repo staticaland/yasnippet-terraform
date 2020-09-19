@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_akamai_property_variables
+# key: r_akamai_property_variables
+# --
+
+resource "akamai_property_variables" "${1:this}" {
+}

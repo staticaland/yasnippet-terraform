@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_sessionhelper
+# key: r_fortios_system_sessionhelper
+# --
+
+resource "fortios_system_sessionhelper" "${1:this}" {
+    name = "${2:name}"
+    port = "${3:port}"
+    protocol = "${4:protocol}"
+}

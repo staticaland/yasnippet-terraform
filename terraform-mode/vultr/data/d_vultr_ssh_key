@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_ssh_key
+# key: d_vultr_ssh_key
+# --
+
+data "vultr_ssh_key" "${1:this}" {
+}

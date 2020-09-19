@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_team
+# key: r_sysdig_monitor_team
+# --
+
+resource "sysdig_monitor_team" "${1:this}" {
+    name = "${2:name}"
+}

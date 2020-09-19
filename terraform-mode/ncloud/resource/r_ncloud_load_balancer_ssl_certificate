@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_load_balancer_ssl_certificate
+# key: r_ncloud_load_balancer_ssl_certificate
+# --
+
+resource "ncloud_load_balancer_ssl_certificate" "${1:this}" {
+    certificate_name = "${2:certificate_name}"
+    privatekey = "${3:privatekey}"
+    publickey_certificate = "${4:publickey_certificate}"
+}

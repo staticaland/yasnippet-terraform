@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_site2cloud
+# key: r_aviatrix_site2cloud
+# --
+
+resource "aviatrix_site2cloud" "${1:this}" {
+    connection_name = "${2:connection_name}"
+    connection_type = "${3:connection_type}"
+    primary_cloud_gateway_name = "${4:primary_cloud_gateway_name}"
+    remote_gateway_ip = "${5:remote_gateway_ip}"
+    remote_gateway_type = "${6:remote_gateway_type}"
+    remote_subnet_cidr = "${7:remote_subnet_cidr}"
+    tunnel_type = "${8:tunnel_type}"
+    vpc_id = "${9:vpc_id}"
+}

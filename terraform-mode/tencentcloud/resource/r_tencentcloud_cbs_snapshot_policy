@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cbs_snapshot_policy
+# key: r_tencentcloud_cbs_snapshot_policy
+# --
+
+resource "tencentcloud_cbs_snapshot_policy" "${1:this}" {
+    repeat_hours = "${2:repeat_hours}"
+    repeat_weekdays = "${3:repeat_weekdays}"
+    snapshot_policy_name = "${4:snapshot_policy_name}"
+}

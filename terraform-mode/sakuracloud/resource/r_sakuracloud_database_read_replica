@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_database_read_replica
+# key: r_sakuracloud_database_read_replica
+# --
+
+resource "sakuracloud_database_read_replica" "${1:this}" {
+    master_id = "${2:master_id}"
+    name = "${3:name}"
+}

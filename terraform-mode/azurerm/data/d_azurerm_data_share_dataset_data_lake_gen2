@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_azurerm_data_share_dataset_data_lake_gen2
+# key: d_azurerm_data_share_dataset_data_lake_gen2
+# --
+
+data "azurerm_data_share_dataset_data_lake_gen2" "${1:this}" {
+    name = "${2:name}"
+    share_id = "${3:share_id}"
+}

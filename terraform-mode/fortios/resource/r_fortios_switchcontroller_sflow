@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_sflow
+# key: r_fortios_switchcontroller_sflow
+# --
+
+resource "fortios_switchcontroller_sflow" "${1:this}" {
+    collector_ip = "${2:collector_ip}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_scf_functions
+# key: d_tencentcloud_scf_functions
+# --
+
+data "tencentcloud_scf_functions" "${1:this}" {
+}

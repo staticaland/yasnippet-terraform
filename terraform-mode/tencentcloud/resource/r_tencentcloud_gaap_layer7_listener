@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_gaap_layer7_listener
+# key: r_tencentcloud_gaap_layer7_listener
+# --
+
+resource "tencentcloud_gaap_layer7_listener" "${1:this}" {
+    name = "${2:name}"
+    port = "${3:port}"
+    protocol = "${4:protocol}"
+    proxy_id = "${5:proxy_id}"
+}

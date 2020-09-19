@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_nomad_job_parser
+# key: d_nomad_job_parser
+# --
+
+data "nomad_job_parser" "${1:this}" {
+    hcl = "${2:hcl}"
+}

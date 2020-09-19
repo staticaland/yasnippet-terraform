@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_okta_app_metadata_saml
+# key: d_okta_app_metadata_saml
+# --
+
+data "okta_app_metadata_saml" "${1:this}" {
+    app_id = "${2:app_id}"
+    key_id = "${3:key_id}"
+}

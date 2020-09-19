@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_ipsec_crypto_profile
+# key: r_panos_ipsec_crypto_profile
+# --
+
+resource "panos_ipsec_crypto_profile" "${1:this}" {
+    authentications = "${2:authentications}"
+    encryptions = "${3:encryptions}"
+    name = "${4:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_imagesync
+# key: r_imagesync
+# --
+
+resource "imagesync" "${1:this}" {
+    destination = "${2:destination}"
+    source = "${3:source}"
+}

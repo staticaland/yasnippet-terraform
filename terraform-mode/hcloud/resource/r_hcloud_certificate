@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_certificate
+# key: r_hcloud_certificate
+# --
+
+resource "hcloud_certificate" "${1:this}" {
+    certificate = "${2:certificate}"
+    name = "${3:name}"
+    private_key = "${4:private_key}"
+}

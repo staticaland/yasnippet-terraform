@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_required_action
+# key: r_keycloak_required_action
+# --
+
+resource "keycloak_required_action" "${1:this}" {
+    alias = "${2:alias}"
+    realm_id = "${3:realm_id}"
+}

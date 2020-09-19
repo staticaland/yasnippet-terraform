@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ansiblevault_string
+# key: d_ansiblevault_string
+# --
+
+data "ansiblevault_string" "${1:this}" {
+    encrypted = "${2:encrypted}"
+}

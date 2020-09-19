@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dns_ptrrecord
+# key: r_huaweicloud_dns_ptrrecord
+# --
+
+resource "huaweicloud_dns_ptrrecord" "${1:this}" {
+    floatingip_id = "${2:floatingip_id}"
+    name = "${3:name}"
+}

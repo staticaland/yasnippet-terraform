@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_turbot_smart_folder_attachment
+# key: r_turbot_smart_folder_attachment
+# --
+
+resource "turbot_smart_folder_attachment" "${1:this}" {
+    resource = "${2:resource}"
+    smart_folder = "${3:smart_folder}"
+}

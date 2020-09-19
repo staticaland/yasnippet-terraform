@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_kubernetes_manifest
+# key: r_kubernetes_manifest
+# --
+
+resource "kubernetes_manifest" "${1:this}" {
+    manifest = "${2:manifest}"
+}

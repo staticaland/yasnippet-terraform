@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_hdns_zone
+# key: r_hdns_zone
+# --
+
+resource "hdns_zone" "${1:this}" {
+    name = "${2:name}"
+}

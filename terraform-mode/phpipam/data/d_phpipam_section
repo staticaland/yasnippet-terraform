@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_phpipam_section
+# key: d_phpipam_section
+# --
+
+data "phpipam_section" "${1:this}" {
+}

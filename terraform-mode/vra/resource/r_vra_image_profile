@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vra_image_profile
+# key: r_vra_image_profile
+# --
+
+resource "vra_image_profile" "${1:this}" {
+    name = "${2:name}"
+    region_id = "${3:region_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_vpc_acls
+# key: d_tencentcloud_vpc_acls
+# --
+
+data "tencentcloud_vpc_acls" "${1:this}" {
+}

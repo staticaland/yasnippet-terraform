@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_errorcheck_is_valid
+# key: r_errorcheck_is_valid
+# --
+
+resource "errorcheck_is_valid" "${1:this}" {
+    name = "${2:name}"
+    test = "${3:test}"
+}

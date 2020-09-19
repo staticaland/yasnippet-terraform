@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cloud_connect_network
+# key: r_alicloud_cloud_connect_network
+# --
+
+resource "alicloud_cloud_connect_network" "${1:this}" {
+    is_default = "${2:is_default}"
+}

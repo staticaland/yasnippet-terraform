@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_sematext_monitor_awsec2
+# key: r_sematext_monitor_awsec2
+# --
+
+resource "sematext_monitor_awsec2" "${1:this}" {
+    aws_access_key = "${2:aws_access_key}"
+    aws_fetch_frequency = "${3:aws_fetch_frequency}"
+    aws_region = "${4:aws_region}"
+    aws_secret_key = "${5:aws_secret_key}"
+    billing_plan_id = "${6:billing_plan_id}"
+    name = "${7:name}"
+}

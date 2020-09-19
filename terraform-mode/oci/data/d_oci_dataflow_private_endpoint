@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_dataflow_private_endpoint
+# key: d_oci_dataflow_private_endpoint
+# --
+
+data "oci_dataflow_private_endpoint" "${1:this}" {
+    private_endpoint_id = "${2:private_endpoint_id}"
+}

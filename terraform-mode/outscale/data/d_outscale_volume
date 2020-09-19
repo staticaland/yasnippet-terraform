@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_volume
+# key: d_outscale_volume
+# --
+
+data "outscale_volume" "${1:this}" {
+}

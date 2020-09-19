@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_okta_user_base_schema
+# key: r_okta_user_base_schema
+# --
+
+resource "okta_user_base_schema" "${1:this}" {
+    index = "${2:index}"
+    title = "${3:title}"
+    type = "${4:type}"
+}

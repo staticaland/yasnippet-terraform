@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_load_balancer
+# key: r_oci_load_balancer
+# --
+
+resource "oci_load_balancer" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    shape = "${4:shape}"
+    subnet_ids = "${5:subnet_ids}"
+}

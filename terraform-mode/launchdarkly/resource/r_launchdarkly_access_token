@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_launchdarkly_access_token
+# key: r_launchdarkly_access_token
+# --
+
+resource "launchdarkly_access_token" "${1:this}" {
+    name = "${2:name}"
+}

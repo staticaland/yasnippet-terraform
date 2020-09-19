@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_images_image_v2
+# key: r_opentelekomcloud_images_image_v2
+# --
+
+resource "opentelekomcloud_images_image_v2" "${1:this}" {
+    container_format = "${2:container_format}"
+    disk_format = "${3:disk_format}"
+    name = "${4:name}"
+}

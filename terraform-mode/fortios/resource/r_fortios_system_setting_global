@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_setting_global
+# key: r_fortios_system_setting_global
+# --
+
+resource "fortios_system_setting_global" "${1:this}" {
+    hostname = "${2:hostname}"
+}

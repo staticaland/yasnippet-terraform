@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_onelogin_auth_servers
+# key: r_onelogin_auth_servers
+# --
+
+resource "onelogin_auth_servers" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_instance_group_manager
+# key: r_ibm_is_instance_group_manager
+# --
+
+resource "ibm_is_instance_group_manager" "${1:this}" {
+    instance_group = "${2:instance_group}"
+    max_membership_count = "${3:max_membership_count}"
+}

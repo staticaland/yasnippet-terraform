@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_management_agent_management_agent_images
+# key: d_oci_management_agent_management_agent_images
+# --
+
+data "oci_management_agent_management_agent_images" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

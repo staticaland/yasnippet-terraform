@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_vpn_gateways
+# key: d_tencentcloud_vpn_gateways
+# --
+
+data "tencentcloud_vpn_gateways" "${1:this}" {
+}

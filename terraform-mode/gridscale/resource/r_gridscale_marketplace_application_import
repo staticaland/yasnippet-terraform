@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_marketplace_application_import
+# key: r_gridscale_marketplace_application_import
+# --
+
+resource "gridscale_marketplace_application_import" "${1:this}" {
+    import_unique_hash = "${2:import_unique_hash}"
+}

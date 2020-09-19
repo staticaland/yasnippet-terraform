@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_consul_acl_token
+# key: r_consul_acl_token
+# --
+
+resource "consul_acl_token" "${1:this}" {
+}

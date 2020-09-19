@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_load_balancer_backendset
+# key: r_oci_load_balancer_backendset
+# --
+
+resource "oci_load_balancer_backendset" "${1:this}" {
+    load_balancer_id = "${2:load_balancer_id}"
+    name = "${3:name}"
+    policy = "${4:policy}"
+}

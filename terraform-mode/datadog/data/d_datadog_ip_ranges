@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_datadog_ip_ranges
+# key: d_datadog_ip_ranges
+# --
+
+data "datadog_ip_ranges" "${1:this}" {
+}

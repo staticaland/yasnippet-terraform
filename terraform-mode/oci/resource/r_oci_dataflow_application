@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_oci_dataflow_application
+# key: r_oci_dataflow_application
+# --
+
+resource "oci_dataflow_application" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    driver_shape = "${4:driver_shape}"
+    executor_shape = "${5:executor_shape}"
+    file_uri = "${6:file_uri}"
+    language = "${7:language}"
+    num_executors = "${8:num_executors}"
+    spark_version = "${9:spark_version}"
+}

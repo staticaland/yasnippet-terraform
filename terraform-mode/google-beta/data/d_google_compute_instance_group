@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_instance_group
+# key: d_google_compute_instance_group
+# --
+
+data "google_compute_instance_group" "${1:this}" {
+}

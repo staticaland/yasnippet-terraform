@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_group_roles
+# key: r_keycloak_group_roles
+# --
+
+resource "keycloak_group_roles" "${1:this}" {
+    group_id = "${2:group_id}"
+    realm_id = "${3:realm_id}"
+    role_ids = "${4:role_ids}"
+}

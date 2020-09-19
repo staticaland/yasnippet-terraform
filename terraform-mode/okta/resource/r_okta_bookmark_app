@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_bookmark_app
+# key: r_okta_bookmark_app
+# --
+
+resource "okta_bookmark_app" "${1:this}" {
+    label = "${2:label}"
+    url = "${3:url}"
+}

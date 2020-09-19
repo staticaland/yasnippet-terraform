@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_vrack_dedicated_server_interface
+# key: r_ovh_vrack_dedicated_server_interface
+# --
+
+resource "ovh_vrack_dedicated_server_interface" "${1:this}" {
+    interface_id = "${2:interface_id}"
+    vrack_id = "${3:vrack_id}"
+}

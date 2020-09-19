@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_instance_templates
+# key: d_ibm_is_instance_templates
+# --
+
+data "ibm_is_instance_templates" "${1:this}" {
+}

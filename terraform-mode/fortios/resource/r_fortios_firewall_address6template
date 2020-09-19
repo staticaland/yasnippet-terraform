@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_address6template
+# key: r_fortios_firewall_address6template
+# --
+
+resource "fortios_firewall_address6template" "${1:this}" {
+    ip6 = "${2:ip6}"
+    name = "${3:name}"
+    subnet_segment_count = "${4:subnet_segment_count}"
+}

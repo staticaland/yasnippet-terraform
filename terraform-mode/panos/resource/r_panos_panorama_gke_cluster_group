@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_gke_cluster_group
+# key: r_panos_panorama_gke_cluster_group
+# --
+
+resource "panos_panorama_gke_cluster_group" "${1:this}" {
+    device_group = "${2:device_group}"
+    gcp_project_credential = "${3:gcp_project_credential}"
+    name = "${4:name}"
+    template_stack = "${5:template_stack}"
+}

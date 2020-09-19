@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cronitor_heartbeat_monitor
+# key: r_cronitor_heartbeat_monitor
+# --
+
+resource "cronitor_heartbeat_monitor" "${1:this}" {
+    name = "${2:name}"
+}

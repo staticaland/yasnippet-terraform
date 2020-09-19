@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_notification_channel_pagerduty
+# key: r_sysdig_secure_notification_channel_pagerduty
+# --
+
+resource "sysdig_secure_notification_channel_pagerduty" "${1:this}" {
+    account = "${2:account}"
+    enabled = "${3:enabled}"
+    name = "${4:name}"
+    notify_when_ok = "${5:notify_when_ok}"
+    notify_when_resolved = "${6:notify_when_resolved}"
+    service_key = "${7:service_key}"
+    service_name = "${8:service_name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_networking_secgroup
+# key: d_huaweicloud_networking_secgroup
+# --
+
+data "huaweicloud_networking_secgroup" "${1:this}" {
+}

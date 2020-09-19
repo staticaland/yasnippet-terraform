@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sematext_monitor_mongodb
+# key: r_sematext_monitor_mongodb
+# --
+
+resource "sematext_monitor_mongodb" "${1:this}" {
+    billing_plan_id = "${2:billing_plan_id}"
+    name = "${3:name}"
+}

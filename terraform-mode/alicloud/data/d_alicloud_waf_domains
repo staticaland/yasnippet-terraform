@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_waf_domains
+# key: d_alicloud_waf_domains
+# --
+
+data "alicloud_waf_domains" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

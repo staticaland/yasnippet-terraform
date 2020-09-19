@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_network_endpoint_group
+# key: r_google_compute_network_endpoint_group
+# --
+
+resource "google_compute_network_endpoint_group" "${1:this}" {
+    name = "${2:name}"
+    network = "${3:network}"
+}

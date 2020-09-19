@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_dcs_maintainwindow
+# key: d_huaweicloud_dcs_maintainwindow
+# --
+
+data "huaweicloud_dcs_maintainwindow" "${1:this}" {
+}

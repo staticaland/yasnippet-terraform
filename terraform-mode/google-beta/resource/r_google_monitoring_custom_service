@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_monitoring_custom_service
+# key: r_google_monitoring_custom_service
+# --
+
+resource "google_monitoring_custom_service" "${1:this}" {
+}

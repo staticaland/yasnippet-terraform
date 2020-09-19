@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_volume_group_backup
+# key: r_oci_core_volume_group_backup
+# --
+
+resource "oci_core_volume_group_backup" "${1:this}" {
+    volume_group_id = "${2:volume_group_id}"
+}

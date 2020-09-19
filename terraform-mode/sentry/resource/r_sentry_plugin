@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sentry_plugin
+# key: r_sentry_plugin
+# --
+
+resource "sentry_plugin" "${1:this}" {
+    organization = "${2:organization}"
+    plugin = "${3:plugin}"
+    project = "${4:project}"
+}

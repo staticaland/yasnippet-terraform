@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_public_ip
+# key: d_ncloud_public_ip
+# --
+
+data "ncloud_public_ip" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_slb_rule
+# key: r_alicloud_slb_rule
+# --
+
+resource "alicloud_slb_rule" "${1:this}" {
+    frontend_port = "${2:frontend_port}"
+    load_balancer_id = "${3:load_balancer_id}"
+    server_group_id = "${4:server_group_id}"
+}

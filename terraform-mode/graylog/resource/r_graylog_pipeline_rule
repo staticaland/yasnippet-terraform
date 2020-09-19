@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_graylog_pipeline_rule
+# key: r_graylog_pipeline_rule
+# --
+
+resource "graylog_pipeline_rule" "${1:this}" {
+    source = "${2:source}"
+}

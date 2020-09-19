@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_kibana_object
+# key: r_elasticsearch_kibana_object
+# --
+
+resource "elasticsearch_kibana_object" "${1:this}" {
+    body = "${2:body}"
+}

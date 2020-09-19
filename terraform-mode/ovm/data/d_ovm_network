@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ovm_network
+# key: d_ovm_network
+# --
+
+data "ovm_network" "${1:this}" {
+    name = "${2:name}"
+}

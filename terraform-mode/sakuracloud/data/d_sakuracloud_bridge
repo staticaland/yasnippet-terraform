@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_bridge
+# key: d_sakuracloud_bridge
+# --
+
+data "sakuracloud_bridge" "${1:this}" {
+}

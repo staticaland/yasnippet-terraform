@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_vdomexception
+# key: r_fortios_system_vdomexception
+# --
+
+resource "fortios_system_vdomexception" "${1:this}" {
+    object = "${2:object}"
+}

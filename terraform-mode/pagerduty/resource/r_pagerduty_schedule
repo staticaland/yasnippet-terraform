@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_schedule
+# key: r_pagerduty_schedule
+# --
+
+resource "pagerduty_schedule" "${1:this}" {
+    time_zone = "${2:time_zone}"
+}

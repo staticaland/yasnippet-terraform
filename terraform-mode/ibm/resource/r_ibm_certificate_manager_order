@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_certificate_manager_order
+# key: r_ibm_certificate_manager_order
+# --
+
+resource "ibm_certificate_manager_order" "${1:this}" {
+    certificate_manager_instance_id = "${2:certificate_manager_instance_id}"
+    domains = "${3:domains}"
+    name = "${4:name}"
+}

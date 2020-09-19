@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_triton_instance_template
+# key: r_triton_instance_template
+# --
+
+resource "triton_instance_template" "${1:this}" {
+    image = "${2:image}"
+    package = "${3:package}"
+    template_name = "${4:template_name}"
+}

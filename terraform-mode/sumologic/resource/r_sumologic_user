@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_user
+# key: r_sumologic_user
+# --
+
+resource "sumologic_user" "${1:this}" {
+    email = "${2:email}"
+    first_name = "${3:first_name}"
+    last_name = "${4:last_name}"
+    role_ids = "${5:role_ids}"
+    transfer_to = "${6:transfer_to}"
+}

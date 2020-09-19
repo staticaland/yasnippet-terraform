@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_authn_req_list
+# key: r_pingaccess_authn_req_list
+# --
+
+resource "pingaccess_authn_req_list" "${1:this}" {
+    authn_reqs = "${2:authn_reqs}"
+    name = "${3:name}"
+}

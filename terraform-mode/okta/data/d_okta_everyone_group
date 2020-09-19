@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_okta_everyone_group
+# key: d_okta_everyone_group
+# --
+
+data "okta_everyone_group" "${1:this}" {
+}

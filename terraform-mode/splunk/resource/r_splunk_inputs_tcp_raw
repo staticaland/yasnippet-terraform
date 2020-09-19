@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_tcp_raw
+# key: r_splunk_inputs_tcp_raw
+# --
+
+resource "splunk_inputs_tcp_raw" "${1:this}" {
+    name = "${2:name}"
+}

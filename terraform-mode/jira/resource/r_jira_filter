@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jira_filter
+# key: r_jira_filter
+# --
+
+resource "jira_filter" "${1:this}" {
+    jql = "${2:jql}"
+    name = "${3:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_ipsec_connections
+# key: d_oci_core_ipsec_connections
+# --
+
+data "oci_core_ipsec_connections" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

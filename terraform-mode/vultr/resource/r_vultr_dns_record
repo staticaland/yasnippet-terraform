@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_vultr_dns_record
+# key: r_vultr_dns_record
+# --
+
+resource "vultr_dns_record" "${1:this}" {
+    data = "${2:data}"
+    domain = "${3:domain}"
+    name = "${4:name}"
+    type = "${5:type}"
+}

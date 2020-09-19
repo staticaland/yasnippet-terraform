@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ots_tables
+# key: d_alicloud_ots_tables
+# --
+
+data "alicloud_ots_tables" "${1:this}" {
+    instance_name = "${2:instance_name}"
+}

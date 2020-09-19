@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_storage_clone
+# key: r_gridscale_storage_clone
+# --
+
+resource "gridscale_storage_clone" "${1:this}" {
+    source_storage_id = "${2:source_storage_id}"
+}

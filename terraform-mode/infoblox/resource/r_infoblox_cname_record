@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_infoblox_cname_record
+# key: r_infoblox_cname_record
+# --
+
+resource "infoblox_cname_record" "${1:this}" {
+    alias = "${2:alias}"
+    canonical = "${3:canonical}"
+    tenant_id = "${4:tenant_id}"
+    zone = "${5:zone}"
+}

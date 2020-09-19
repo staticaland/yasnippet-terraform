@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_circleci_environment_variable
+# key: r_circleci_environment_variable
+# --
+
+resource "circleci_environment_variable" "${1:this}" {
+    name = "${2:name}"
+    project = "${3:project}"
+    value = "${4:value}"
+}

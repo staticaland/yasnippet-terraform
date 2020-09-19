@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_marketplace_listing_package_agreement
+# key: r_oci_marketplace_listing_package_agreement
+# --
+
+resource "oci_marketplace_listing_package_agreement" "${1:this}" {
+    agreement_id = "${2:agreement_id}"
+    listing_id = "${3:listing_id}"
+    package_version = "${4:package_version}"
+}

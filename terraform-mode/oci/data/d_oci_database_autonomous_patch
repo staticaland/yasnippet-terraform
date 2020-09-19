@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_patch
+# key: d_oci_database_autonomous_patch
+# --
+
+data "oci_database_autonomous_patch" "${1:this}" {
+    autonomous_patch_id = "${2:autonomous_patch_id}"
+}

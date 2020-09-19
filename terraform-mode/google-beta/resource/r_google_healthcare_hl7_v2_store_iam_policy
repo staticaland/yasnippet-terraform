@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_healthcare_hl7_v2_store_iam_policy
+# key: r_google_healthcare_hl7_v2_store_iam_policy
+# --
+
+resource "google_healthcare_hl7_v2_store_iam_policy" "${1:this}" {
+    hl7_v2_store_id = "${2:hl7_v2_store_id}"
+    policy_data = "${3:policy_data}"
+}

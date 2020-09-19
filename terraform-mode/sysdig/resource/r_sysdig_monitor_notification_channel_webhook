@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_notification_channel_webhook
+# key: r_sysdig_monitor_notification_channel_webhook
+# --
+
+resource "sysdig_monitor_notification_channel_webhook" "${1:this}" {
+    name = "${2:name}"
+    url = "${3:url}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_dns_cname_record
+# key: r_dns_cname_record
+# --
+
+resource "dns_cname_record" "${1:this}" {
+    cname = "${2:cname}"
+    name = "${3:name}"
+    zone = "${4:zone}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_email_senders
+# key: d_oci_email_senders
+# --
+
+data "oci_email_senders" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

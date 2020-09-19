@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_graylog_dashboard_widget
+# key: r_graylog_dashboard_widget
+# --
+
+resource "graylog_dashboard_widget" "${1:this}" {
+    config = "${2:config}"
+    dashboard_id = "${3:dashboard_id}"
+    description = "${4:description}"
+    type = "${5:type}"
+}

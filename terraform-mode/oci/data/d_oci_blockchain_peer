@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_blockchain_peer
+# key: d_oci_blockchain_peer
+# --
+
+data "oci_blockchain_peer" "${1:this}" {
+    blockchain_platform_id = "${2:blockchain_platform_id}"
+    peer_id = "${3:peer_id}"
+}

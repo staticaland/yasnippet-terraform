@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_database_replica
+# key: r_digitalocean_database_replica
+# --
+
+resource "digitalocean_database_replica" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+}

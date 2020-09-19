@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_firewall_object_service
+# key: r_fortios_fmg_firewall_object_service
+# --
+
+resource "fortios_fmg_firewall_object_service" "${1:this}" {
+    name = "${2:name}"
+}

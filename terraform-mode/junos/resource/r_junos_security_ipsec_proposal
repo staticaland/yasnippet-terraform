@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_ipsec_proposal
+# key: r_junos_security_ipsec_proposal
+# --
+
+resource "junos_security_ipsec_proposal" "${1:this}" {
+    name = "${2:name}"
+}

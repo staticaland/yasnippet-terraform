@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_nas_volume
+# key: r_ncloud_nas_volume
+# --
+
+resource "ncloud_nas_volume" "${1:this}" {
+    volume_allotment_protocol_type = "${2:volume_allotment_protocol_type}"
+    volume_name_postfix = "${3:volume_name_postfix}"
+    volume_size = "${4:volume_size}"
+}

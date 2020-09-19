@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_http_check
+# key: d_constellix_http_check
+# --
+
+data "constellix_http_check" "${1:this}" {
+    name = "${2:name}"
+}

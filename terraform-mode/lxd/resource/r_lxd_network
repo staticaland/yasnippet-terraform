@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_lxd_network
+# key: r_lxd_network
+# --
+
+resource "lxd_network" "${1:this}" {
+    config = "${2:config}"
+    name = "${3:name}"
+}

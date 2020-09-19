@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_static_route
+# key: r_nsxt_policy_static_route
+# --
+
+resource "nsxt_policy_static_route" "${1:this}" {
+    display_name = "${2:display_name}"
+    gateway_path = "${3:gateway_path}"
+    network = "${4:network}"
+}

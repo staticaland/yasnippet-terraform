@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_site_vrf_region
+# key: r_mso_schema_site_vrf_region
+# --
+
+resource "mso_schema_site_vrf_region" "${1:this}" {
+    region_name = "${2:region_name}"
+    schema_id = "${3:schema_id}"
+    site_id = "${4:site_id}"
+    template_name = "${5:template_name}"
+    vrf_name = "${6:vrf_name}"
+}

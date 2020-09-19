@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_copy_image
+# key: r_alicloud_copy_image
+# --
+
+resource "alicloud_copy_image" "${1:this}" {
+    source_image_id = "${2:source_image_id}"
+    source_region_id = "${3:source_region_id}"
+}

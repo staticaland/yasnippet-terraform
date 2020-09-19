@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_vpc_subnets
+# key: d_tencentcloud_vpc_subnets
+# --
+
+data "tencentcloud_vpc_subnets" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_cloudinit_config
+# key: r_cloudinit_config
+# --
+
+resource "cloudinit_config" "${1:this}" {
+}

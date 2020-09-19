@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_external_epg_selector
+# key: r_mso_schema_template_external_epg_selector
+# --
+
+resource "mso_schema_template_external_epg_selector" "${1:this}" {
+    external_epg_name = "${2:external_epg_name}"
+    name = "${3:name}"
+    schema_id = "${4:schema_id}"
+    template_name = "${5:template_name}"
+}

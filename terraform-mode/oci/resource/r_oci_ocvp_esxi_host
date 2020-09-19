@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_ocvp_esxi_host
+# key: r_oci_ocvp_esxi_host
+# --
+
+resource "oci_ocvp_esxi_host" "${1:this}" {
+    sddc_id = "${2:sddc_id}"
+}

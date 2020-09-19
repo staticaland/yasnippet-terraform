@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_sim
+# key: r_sakuracloud_sim
+# --
+
+resource "sakuracloud_sim" "${1:this}" {
+    carrier = "${2:carrier}"
+    iccid = "${3:iccid}"
+    name = "${4:name}"
+    passcode = "${5:passcode}"
+}

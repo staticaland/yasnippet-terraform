@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_vpc_route
+# key: r_ibm_is_vpc_route
+# --
+
+resource "ibm_is_vpc_route" "${1:this}" {
+    destination = "${2:destination}"
+    name = "${3:name}"
+    next_hop = "${4:next_hop}"
+    vpc = "${5:vpc}"
+    zone = "${6:zone}"
+}

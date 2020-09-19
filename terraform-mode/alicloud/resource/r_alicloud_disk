@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_disk
+# key: r_alicloud_disk
+# --
+
+resource "alicloud_disk" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    size = "${3:size}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_vcs_root_git
+# key: r_teamcity_vcs_root_git
+# --
+
+resource "teamcity_vcs_root_git" "${1:this}" {
+    default_branch = "${2:default_branch}"
+    fetch_url = "${3:fetch_url}"
+    name = "${4:name}"
+    project_id = "${5:project_id}"
+}

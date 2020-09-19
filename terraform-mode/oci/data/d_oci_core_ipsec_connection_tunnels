@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_ipsec_connection_tunnels
+# key: d_oci_core_ipsec_connection_tunnels
+# --
+
+data "oci_core_ipsec_connection_tunnels" "${1:this}" {
+    ipsec_id = "${2:ipsec_id}"
+}

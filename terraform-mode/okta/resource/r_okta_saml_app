@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_saml_app
+# key: r_okta_saml_app
+# --
+
+resource "okta_saml_app" "${1:this}" {
+    label = "${2:label}"
+}

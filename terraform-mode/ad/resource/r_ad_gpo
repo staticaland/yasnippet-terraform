@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ad_gpo
+# key: r_ad_gpo
+# --
+
+resource "ad_gpo" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_dns_steering_policy_attachment
+# key: d_oci_dns_steering_policy_attachment
+# --
+
+data "oci_dns_steering_policy_attachment" "${1:this}" {
+    steering_policy_attachment_id = "${2:steering_policy_attachment_id}"
+}

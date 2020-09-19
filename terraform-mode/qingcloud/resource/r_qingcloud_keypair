@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_keypair
+# key: r_qingcloud_keypair
+# --
+
+resource "qingcloud_keypair" "${1:this}" {
+    public_key = "${2:public_key}"
+}

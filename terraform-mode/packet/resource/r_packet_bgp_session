@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_packet_bgp_session
+# key: r_packet_bgp_session
+# --
+
+resource "packet_bgp_session" "${1:this}" {
+    address_family = "${2:address_family}"
+    device_id = "${3:device_id}"
+}

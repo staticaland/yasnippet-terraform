@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_ip_reservation
+# key: r_opc_compute_ip_reservation
+# --
+
+resource "opc_compute_ip_reservation" "${1:this}" {
+    permanent = "${2:permanent}"
+}

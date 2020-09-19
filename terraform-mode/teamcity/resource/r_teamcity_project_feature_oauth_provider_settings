@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_project_feature_oauth_provider_settings
+# key: r_teamcity_project_feature_oauth_provider_settings
+# --
+
+resource "teamcity_project_feature_oauth_provider_settings" "${1:this}" {
+    display_name = "${2:display_name}"
+    endpoint = "${3:endpoint}"
+    project_id = "${4:project_id}"
+    provider_type = "${5:provider_type}"
+    role_id = "${6:role_id}"
+    secret_id = "${7:secret_id}"
+    url = "${8:url}"
+}

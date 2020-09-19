@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_csbs_backup
+# key: d_huaweicloud_csbs_backup
+# --
+
+data "huaweicloud_csbs_backup" "${1:this}" {
+}

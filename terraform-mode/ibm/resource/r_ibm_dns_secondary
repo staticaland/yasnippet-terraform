@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dns_secondary
+# key: r_ibm_dns_secondary
+# --
+
+resource "ibm_dns_secondary" "${1:this}" {
+    master_ip_address = "${2:master_ip_address}"
+    transfer_frequency = "${3:transfer_frequency}"
+    zone_name = "${4:zone_name}"
+}

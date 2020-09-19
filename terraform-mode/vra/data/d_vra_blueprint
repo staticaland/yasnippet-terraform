@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_blueprint
+# key: d_vra_blueprint
+# --
+
+data "vra_blueprint" "${1:this}" {
+}

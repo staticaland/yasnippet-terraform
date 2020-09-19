@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_network_interface
+# key: r_fortios_fmg_system_network_interface
+# --
+
+resource "fortios_fmg_system_network_interface" "${1:this}" {
+    name = "${2:name}"
+}

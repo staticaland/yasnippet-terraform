@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemautoupdate_tunneling
+# key: r_fortios_systemautoupdate_tunneling
+# --
+
+resource "fortios_systemautoupdate_tunneling" "${1:this}" {
+}

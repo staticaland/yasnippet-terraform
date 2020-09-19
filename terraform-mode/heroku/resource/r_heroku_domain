@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_domain
+# key: r_heroku_domain
+# --
+
+resource "heroku_domain" "${1:this}" {
+    app = "${2:app}"
+    hostname = "${3:hostname}"
+}

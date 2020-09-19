@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aiven_service_user
+# key: r_aiven_service_user
+# --
+
+resource "aiven_service_user" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+    username = "${4:username}"
+}

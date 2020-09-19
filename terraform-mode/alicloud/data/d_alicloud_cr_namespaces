@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cr_namespaces
+# key: d_alicloud_cr_namespaces
+# --
+
+data "alicloud_cr_namespaces" "${1:this}" {
+}

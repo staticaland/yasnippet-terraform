@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_outputs_tcp_syslog
+# key: r_splunk_outputs_tcp_syslog
+# --
+
+resource "splunk_outputs_tcp_syslog" "${1:this}" {
+    name = "${2:name}"
+}

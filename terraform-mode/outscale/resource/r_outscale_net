@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_net
+# key: r_outscale_net
+# --
+
+resource "outscale_net" "${1:this}" {
+    ip_range = "${2:ip_range}"
+}

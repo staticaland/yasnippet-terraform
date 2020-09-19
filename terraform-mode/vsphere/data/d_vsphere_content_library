@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_content_library
+# key: d_vsphere_content_library
+# --
+
+data "vsphere_content_library" "${1:this}" {
+    name = "${2:name}"
+}

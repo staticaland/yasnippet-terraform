@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_placement_groups
+# key: d_tencentcloud_placement_groups
+# --
+
+data "tencentcloud_placement_groups" "${1:this}" {
+}

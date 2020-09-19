@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_panos_panorama_plugin
+# key: d_panos_panorama_plugin
+# --
+
+data "panos_panorama_plugin" "${1:this}" {
+}

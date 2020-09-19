@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_compliance_standard
+# key: d_prismacloud_compliance_standard
+# --
+
+data "prismacloud_compliance_standard" "${1:this}" {
+}

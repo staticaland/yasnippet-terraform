@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sdm_account
+# key: d_sdm_account
+# --
+
+data "sdm_account" "${1:this}" {
+}

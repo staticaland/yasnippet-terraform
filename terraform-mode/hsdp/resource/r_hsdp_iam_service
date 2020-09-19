@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_iam_service
+# key: r_hsdp_iam_service
+# --
+
+resource "hsdp_iam_service" "${1:this}" {
+    application_id = "${2:application_id}"
+    default_scopes = "${3:default_scopes}"
+    description = "${4:description}"
+    name = "${5:name}"
+    scopes = "${6:scopes}"
+}

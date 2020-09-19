@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_sshcommand_command
+# key: d_sshcommand_command
+# --
+
+data "sshcommand_command" "${1:this}" {
+    command = "${2:command}"
+    host = "${3:host}"
+    private_key = "${4:private_key}"
+}

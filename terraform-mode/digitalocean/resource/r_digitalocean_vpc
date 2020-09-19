@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_vpc
+# key: r_digitalocean_vpc
+# --
+
+resource "digitalocean_vpc" "${1:this}" {
+    name = "${2:name}"
+    region = "${3:region}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_esxi_resource_pool
+# key: r_esxi_resource_pool
+# --
+
+resource "esxi_resource_pool" "${1:this}" {
+    resource_pool_name = "${2:resource_pool_name}"
+}

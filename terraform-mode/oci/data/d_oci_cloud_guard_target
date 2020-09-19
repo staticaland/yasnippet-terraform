@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_cloud_guard_target
+# key: d_oci_cloud_guard_target
+# --
+
+data "oci_cloud_guard_target" "${1:this}" {
+    target_id = "${2:target_id}"
+}

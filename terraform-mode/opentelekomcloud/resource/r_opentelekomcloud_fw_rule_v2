@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_fw_rule_v2
+# key: r_opentelekomcloud_fw_rule_v2
+# --
+
+resource "opentelekomcloud_fw_rule_v2" "${1:this}" {
+    action = "${2:action}"
+    protocol = "${3:protocol}"
+}

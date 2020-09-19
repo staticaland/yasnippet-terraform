@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_sittunnel
+# key: r_fortios_system_sittunnel
+# --
+
+resource "fortios_system_sittunnel" "${1:this}" {
+    destination = "${2:destination}"
+}

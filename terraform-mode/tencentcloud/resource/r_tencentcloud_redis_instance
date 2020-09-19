@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_redis_instance
+# key: r_tencentcloud_redis_instance
+# --
+
+resource "tencentcloud_redis_instance" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    mem_size = "${3:mem_size}"
+    password = "${4:password}"
+}

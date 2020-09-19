@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_apigee_api_proxy_deployment
+# key: r_apigee_api_proxy_deployment
+# --
+
+resource "apigee_api_proxy_deployment" "${1:this}" {
+    env = "${2:env}"
+    proxy_name = "${3:proxy_name}"
+    revision = "${4:revision}"
+}

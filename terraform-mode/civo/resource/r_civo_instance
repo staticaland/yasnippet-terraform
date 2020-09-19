@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_civo_instance
+# key: r_civo_instance
+# --
+
+resource "civo_instance" "${1:this}" {
+    hostname = "${2:hostname}"
+}

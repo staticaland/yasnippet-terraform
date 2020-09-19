@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_file_crc64_checksum
+# key: d_alicloud_file_crc64_checksum
+# --
+
+data "alicloud_file_crc64_checksum" "${1:this}" {
+    filename = "${2:filename}"
+}

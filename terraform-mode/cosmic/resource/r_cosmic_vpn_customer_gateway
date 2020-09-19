@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_vpn_customer_gateway
+# key: r_cosmic_vpn_customer_gateway
+# --
+
+resource "cosmic_vpn_customer_gateway" "${1:this}" {
+    cidr_list = "${2:cidr_list}"
+    esp_policy = "${3:esp_policy}"
+    gateway = "${4:gateway}"
+    ike_policy = "${5:ike_policy}"
+    ipsec_psk = "${6:ipsec_psk}"
+    name = "${7:name}"
+}

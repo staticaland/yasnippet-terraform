@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_discord_permission
+# key: d_discord_permission
+# --
+
+data "discord_permission" "${1:this}" {
+}

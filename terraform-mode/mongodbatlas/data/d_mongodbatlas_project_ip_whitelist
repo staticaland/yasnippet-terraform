@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_project_ip_whitelist
+# key: d_mongodbatlas_project_ip_whitelist
+# --
+
+data "mongodbatlas_project_ip_whitelist" "${1:this}" {
+    project_id = "${2:project_id}"
+}

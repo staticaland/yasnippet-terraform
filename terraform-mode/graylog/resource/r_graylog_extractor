@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_graylog_extractor
+# key: r_graylog_extractor
+# --
+
+resource "graylog_extractor" "${1:this}" {
+    condition_type = "${2:condition_type}"
+    cursor_strategy = "${3:cursor_strategy}"
+    extractor_config = "${4:extractor_config}"
+    input_id = "${5:input_id}"
+    source_field = "${6:source_field}"
+    title = "${7:title}"
+    type = "${8:type}"
+}

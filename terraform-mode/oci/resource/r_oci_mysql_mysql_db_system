@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_oci_mysql_mysql_db_system
+# key: r_oci_mysql_mysql_db_system
+# --
+
+resource "oci_mysql_mysql_db_system" "${1:this}" {
+    admin_password = "${2:admin_password}"
+    admin_username = "${3:admin_username}"
+    availability_domain = "${4:availability_domain}"
+    compartment_id = "${5:compartment_id}"
+    configuration_id = "${6:configuration_id}"
+    shape_name = "${7:shape_name}"
+    subnet_id = "${8:subnet_id}"
+}

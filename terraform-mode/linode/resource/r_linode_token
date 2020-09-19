@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_linode_token
+# key: r_linode_token
+# --
+
+resource "linode_token" "${1:this}" {
+    scopes = "${2:scopes}"
+}

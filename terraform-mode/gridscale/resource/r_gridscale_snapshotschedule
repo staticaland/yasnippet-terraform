@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_snapshotschedule
+# key: r_gridscale_snapshotschedule
+# --
+
+resource "gridscale_snapshotschedule" "${1:this}" {
+    keep_snapshots = "${2:keep_snapshots}"
+    name = "${3:name}"
+    run_interval = "${4:run_interval}"
+    storage_uuid = "${5:storage_uuid}"
+}

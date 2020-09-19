@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_icinga2_notification
+# key: r_icinga2_notification
+# --
+
+resource "icinga2_notification" "${1:this}" {
+    command = "${2:command}"
+    hostname = "${3:hostname}"
+}

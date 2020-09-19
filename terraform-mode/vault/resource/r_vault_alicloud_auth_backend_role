@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vault_alicloud_auth_backend_role
+# key: r_vault_alicloud_auth_backend_role
+# --
+
+resource "vault_alicloud_auth_backend_role" "${1:this}" {
+    arn = "${2:arn}"
+    role = "${3:role}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_vpn_endpoint_v2
+# key: r_opc_compute_vpn_endpoint_v2
+# --
+
+resource "opc_compute_vpn_endpoint_v2" "${1:this}" {
+    customer_vpn_gateway = "${2:customer_vpn_gateway}"
+    ip_network = "${3:ip_network}"
+    name = "${4:name}"
+    pre_shared_key = "${5:pre_shared_key}"
+    reachable_routes = "${6:reachable_routes}"
+    vnic_sets = "${7:vnic_sets}"
+}

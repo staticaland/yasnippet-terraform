@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_icmp_monitor
+# key: r_nsxt_lb_icmp_monitor
+# --
+
+resource "nsxt_lb_icmp_monitor" "${1:this}" {
+}

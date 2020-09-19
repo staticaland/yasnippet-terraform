@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_civo_template
+# key: r_civo_template
+# --
+
+resource "civo_template" "${1:this}" {
+    code = "${2:code}"
+    name = "${3:name}"
+}

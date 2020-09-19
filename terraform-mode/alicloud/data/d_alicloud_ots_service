@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ots_service
+# key: d_alicloud_ots_service
+# --
+
+data "alicloud_ots_service" "${1:this}" {
+}

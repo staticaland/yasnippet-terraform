@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_backupschedule
+# key: r_gridscale_backupschedule
+# --
+
+resource "gridscale_backupschedule" "${1:this}" {
+    active = "${2:active}"
+    keep_backups = "${3:keep_backups}"
+    name = "${4:name}"
+    next_runtime = "${5:next_runtime}"
+    run_interval = "${6:run_interval}"
+    storage_uuid = "${7:storage_uuid}"
+}

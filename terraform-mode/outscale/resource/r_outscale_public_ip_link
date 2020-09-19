@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_public_ip_link
+# key: r_outscale_public_ip_link
+# --
+
+resource "outscale_public_ip_link" "${1:this}" {
+}

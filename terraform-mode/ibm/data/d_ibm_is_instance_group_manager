@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_instance_group_manager
+# key: d_ibm_is_instance_group_manager
+# --
+
+data "ibm_is_instance_group_manager" "${1:this}" {
+    instance_group = "${2:instance_group}"
+    name = "${3:name}"
+}

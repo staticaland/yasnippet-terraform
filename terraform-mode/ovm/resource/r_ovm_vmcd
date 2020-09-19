@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovm_vmcd
+# key: r_ovm_vmcd
+# --
+
+resource "ovm_vmcd" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+    vmid = "${4:vmid}"
+}

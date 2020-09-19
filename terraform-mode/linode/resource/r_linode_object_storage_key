@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_linode_object_storage_key
+# key: r_linode_object_storage_key
+# --
+
+resource "linode_object_storage_key" "${1:this}" {
+    label = "${2:label}"
+}

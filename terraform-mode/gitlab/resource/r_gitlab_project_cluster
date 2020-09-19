@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_project_cluster
+# key: r_gitlab_project_cluster
+# --
+
+resource "gitlab_project_cluster" "${1:this}" {
+    kubernetes_api_url = "${2:kubernetes_api_url}"
+    kubernetes_token = "${3:kubernetes_token}"
+    name = "${4:name}"
+    project = "${5:project}"
+}

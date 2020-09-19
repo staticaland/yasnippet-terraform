@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_emr_cluster
+# key: r_alicloud_emr_cluster
+# --
+
+resource "alicloud_emr_cluster" "${1:this}" {
+    cluster_type = "${2:cluster_type}"
+    emr_ver = "${3:emr_ver}"
+    name = "${4:name}"
+    zone_id = "${5:zone_id}"
+}

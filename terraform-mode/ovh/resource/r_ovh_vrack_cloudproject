@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_ovh_vrack_cloudproject
+# key: r_ovh_vrack_cloudproject
+# --
+
+resource "ovh_vrack_cloudproject" "${1:this}" {
+}

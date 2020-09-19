@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cam_saml_provider
+# key: r_tencentcloud_cam_saml_provider
+# --
+
+resource "tencentcloud_cam_saml_provider" "${1:this}" {
+    description = "${2:description}"
+    meta_data = "${3:meta_data}"
+    name = "${4:name}"
+}

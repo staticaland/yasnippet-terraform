@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_sdrs_drill_v1
+# key: r_flexibleengine_sdrs_drill_v1
+# --
+
+resource "flexibleengine_sdrs_drill_v1" "${1:this}" {
+    drill_vpc_id = "${2:drill_vpc_id}"
+    group_id = "${3:group_id}"
+    name = "${4:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_auth0_client_grant
+# key: r_auth0_client_grant
+# --
+
+resource "auth0_client_grant" "${1:this}" {
+    audience = "${2:audience}"
+    client_id = "${3:client_id}"
+    scope = "${4:scope}"
+}

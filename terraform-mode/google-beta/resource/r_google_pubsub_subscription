@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_pubsub_subscription
+# key: r_google_pubsub_subscription
+# --
+
+resource "google_pubsub_subscription" "${1:this}" {
+    name = "${2:name}"
+    topic = "${3:topic}"
+}

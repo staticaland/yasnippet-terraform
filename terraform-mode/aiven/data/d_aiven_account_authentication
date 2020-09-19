@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_account_authentication
+# key: d_aiven_account_authentication
+# --
+
+data "aiven_account_authentication" "${1:this}" {
+    account_id = "${2:account_id}"
+    name = "${3:name}"
+}

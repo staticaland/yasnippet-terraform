@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_logical_tier1_router
+# key: d_nsxt_logical_tier1_router
+# --
+
+data "nsxt_logical_tier1_router" "${1:this}" {
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_loadbalancer_listener
+# key: r_qingcloud_loadbalancer_listener
+# --
+
+resource "qingcloud_loadbalancer_listener" "${1:this}" {
+    listener_port = "${2:listener_port}"
+    listener_protocol = "${3:listener_protocol}"
+    load_balancer_id = "${4:load_balancer_id}"
+}

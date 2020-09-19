@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_instance
+# key: d_ibm_is_instance
+# --
+
+data "ibm_is_instance" "${1:this}" {
+    name = "${2:name}"
+}

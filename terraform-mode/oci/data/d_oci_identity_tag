@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_tag
+# key: d_oci_identity_tag
+# --
+
+data "oci_identity_tag" "${1:this}" {
+    tag_name = "${2:tag_name}"
+    tag_namespace_id = "${3:tag_namespace_id}"
+}

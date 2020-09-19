@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_snapshot
+# key: r_outscale_snapshot
+# --
+
+resource "outscale_snapshot" "${1:this}" {
+}

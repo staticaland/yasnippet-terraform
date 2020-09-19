@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_ibm_cos_bucket
+# key: d_ibm_cos_bucket
+# --
+
+data "ibm_cos_bucket" "${1:this}" {
+    bucket_name = "${2:bucket_name}"
+    bucket_region = "${3:bucket_region}"
+    bucket_type = "${4:bucket_type}"
+    resource_instance_id = "${5:resource_instance_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_okta_user
+# key: d_okta_user
+# --
+
+data "okta_user" "${1:this}" {
+}

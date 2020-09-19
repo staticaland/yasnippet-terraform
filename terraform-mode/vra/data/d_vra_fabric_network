@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vra_fabric_network
+# key: d_vra_fabric_network
+# --
+
+data "vra_fabric_network" "${1:this}" {
+    filter = "${2:filter}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_cloud_provider_snapshot_backup_policy
+# key: r_mongodbatlas_cloud_provider_snapshot_backup_policy
+# --
+
+resource "mongodbatlas_cloud_provider_snapshot_backup_policy" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    project_id = "${3:project_id}"
+}

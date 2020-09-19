@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_ons_subscription
+# key: d_oci_ons_subscription
+# --
+
+data "oci_ons_subscription" "${1:this}" {
+    subscription_id = "${2:subscription_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_graylog_input
+# key: r_graylog_input
+# --
+
+resource "graylog_input" "${1:this}" {
+    attributes = "${2:attributes}"
+    title = "${3:title}"
+    type = "${4:type}"
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dl_gateway
+# key: r_ibm_dl_gateway
+# --
+
+resource "ibm_dl_gateway" "${1:this}" {
+    bgp_asn = "${2:bgp_asn}"
+    bgp_base_cidr = "${3:bgp_base_cidr}"
+    global = "${4:global}"
+    metered = "${5:metered}"
+    name = "${6:name}"
+    speed_mbps = "${7:speed_mbps}"
+    type = "${8:type}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_derived_metric
+# key: r_wavefront_derived_metric
+# --
+
+resource "wavefront_derived_metric" "${1:this}" {
+    minutes = "${2:minutes}"
+    name = "${3:name}"
+    query = "${4:query}"
+}

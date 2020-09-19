@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ccloud_arc_job_v1
+# key: d_ccloud_arc_job_v1
+# --
+
+data "ccloud_arc_job_v1" "${1:this}" {
+}

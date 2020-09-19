@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_mysql_instance
+# key: r_tencentcloud_mysql_instance
+# --
+
+resource "tencentcloud_mysql_instance" "${1:this}" {
+    instance_name = "${2:instance_name}"
+    mem_size = "${3:mem_size}"
+    root_password = "${4:root_password}"
+    volume_size = "${5:volume_size}"
+}

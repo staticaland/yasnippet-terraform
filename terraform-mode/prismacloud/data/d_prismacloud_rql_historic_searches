@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_rql_historic_searches
+# key: d_prismacloud_rql_historic_searches
+# --
+
+data "prismacloud_rql_historic_searches" "${1:this}" {
+}

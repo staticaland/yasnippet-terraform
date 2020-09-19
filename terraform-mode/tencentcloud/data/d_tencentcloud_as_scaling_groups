@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_as_scaling_groups
+# key: d_tencentcloud_as_scaling_groups
+# --
+
+data "tencentcloud_as_scaling_groups" "${1:this}" {
+}

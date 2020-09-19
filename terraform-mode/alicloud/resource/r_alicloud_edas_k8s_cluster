@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_k8s_cluster
+# key: r_alicloud_edas_k8s_cluster
+# --
+
+resource "alicloud_edas_k8s_cluster" "${1:this}" {
+    cs_cluster_id = "${2:cs_cluster_id}"
+}

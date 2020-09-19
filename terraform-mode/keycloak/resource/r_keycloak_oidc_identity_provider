@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_oidc_identity_provider
+# key: r_keycloak_oidc_identity_provider
+# --
+
+resource "keycloak_oidc_identity_provider" "${1:this}" {
+    alias = "${2:alias}"
+    authorization_url = "${3:authorization_url}"
+    client_id = "${4:client_id}"
+    client_secret = "${5:client_secret}"
+    realm = "${6:realm}"
+    token_url = "${7:token_url}"
+}

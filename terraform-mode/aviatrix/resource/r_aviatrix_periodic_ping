@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_periodic_ping
+# key: r_aviatrix_periodic_ping
+# --
+
+resource "aviatrix_periodic_ping" "${1:this}" {
+    gw_name = "${2:gw_name}"
+    interval = "${3:interval}"
+    ip_address = "${4:ip_address}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_container_worker_pool
+# key: d_ibm_container_worker_pool
+# --
+
+data "ibm_container_worker_pool" "${1:this}" {
+    cluster = "${2:cluster}"
+    worker_pool_name = "${3:worker_pool_name}"
+}

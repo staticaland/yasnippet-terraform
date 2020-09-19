@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_compute_global_image_capability_schemas
+# key: d_oci_core_compute_global_image_capability_schemas
+# --
+
+data "oci_core_compute_global_image_capability_schemas" "${1:this}" {
+}

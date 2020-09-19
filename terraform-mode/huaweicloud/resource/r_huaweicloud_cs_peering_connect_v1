@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cs_peering_connect_v1
+# key: r_huaweicloud_cs_peering_connect_v1
+# --
+
+resource "huaweicloud_cs_peering_connect_v1" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+}

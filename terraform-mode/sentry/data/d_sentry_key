@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_sentry_key
+# key: d_sentry_key
+# --
+
+data "sentry_key" "${1:this}" {
+    organization = "${2:organization}"
+    project = "${3:project}"
+}

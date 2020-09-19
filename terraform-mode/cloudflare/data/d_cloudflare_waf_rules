@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudflare_waf_rules
+# key: d_cloudflare_waf_rules
+# --
+
+data "cloudflare_waf_rules" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

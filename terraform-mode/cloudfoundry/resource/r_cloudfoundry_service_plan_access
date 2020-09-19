@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_service_plan_access
+# key: r_cloudfoundry_service_plan_access
+# --
+
+resource "cloudfoundry_service_plan_access" "${1:this}" {
+    plan = "${2:plan}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_network_port_attach
+# key: r_ibm_pi_network_port_attach
+# --
+
+resource "ibm_pi_network_port_attach" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+    pi_network_name = "${4:pi_network_name}"
+    port_id = "${5:port_id}"
+}

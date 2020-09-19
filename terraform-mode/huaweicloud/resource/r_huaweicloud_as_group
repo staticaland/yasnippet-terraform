@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_as_group
+# key: r_huaweicloud_as_group
+# --
+
+resource "huaweicloud_as_group" "${1:this}" {
+    scaling_group_name = "${2:scaling_group_name}"
+    vpc_id = "${3:vpc_id}"
+}

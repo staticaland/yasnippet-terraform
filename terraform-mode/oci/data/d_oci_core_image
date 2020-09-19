@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_image
+# key: d_oci_core_image
+# --
+
+data "oci_core_image" "${1:this}" {
+    image_id = "${2:image_id}"
+}

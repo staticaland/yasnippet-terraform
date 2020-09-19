@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_site_anp_epg_static_port
+# key: d_mso_schema_site_anp_epg_static_port
+# --
+
+data "mso_schema_site_anp_epg_static_port" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    epg_name = "${3:epg_name}"
+    leaf = "${4:leaf}"
+    path = "${5:path}"
+    path_type = "${6:path_type}"
+    pod = "${7:pod}"
+    schema_id = "${8:schema_id}"
+    site_id = "${9:site_id}"
+    template_name = "${10:template_name}"
+}

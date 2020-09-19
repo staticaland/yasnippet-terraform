@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_lognulldevice_filter
+# key: r_fortios_lognulldevice_filter
+# --
+
+resource "fortios_lognulldevice_filter" "${1:this}" {
+}

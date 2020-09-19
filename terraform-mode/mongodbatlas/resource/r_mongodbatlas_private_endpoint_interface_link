@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_private_endpoint_interface_link
+# key: r_mongodbatlas_private_endpoint_interface_link
+# --
+
+resource "mongodbatlas_private_endpoint_interface_link" "${1:this}" {
+    interface_endpoint_id = "${2:interface_endpoint_id}"
+    private_link_id = "${3:private_link_id}"
+    project_id = "${4:project_id}"
+}

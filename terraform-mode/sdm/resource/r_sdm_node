@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_sdm_node
+# key: r_sdm_node
+# --
+
+resource "sdm_node" "${1:this}" {
+}

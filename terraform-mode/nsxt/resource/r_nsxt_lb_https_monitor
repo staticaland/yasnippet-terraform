@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_https_monitor
+# key: r_nsxt_lb_https_monitor
+# --
+
+resource "nsxt_lb_https_monitor" "${1:this}" {
+}

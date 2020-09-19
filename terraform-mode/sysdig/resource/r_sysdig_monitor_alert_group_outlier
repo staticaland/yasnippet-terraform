@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_alert_group_outlier
+# key: r_sysdig_monitor_alert_group_outlier
+# --
+
+resource "sysdig_monitor_alert_group_outlier" "${1:this}" {
+    monitor = "${2:monitor}"
+    name = "${3:name}"
+    trigger_after_minutes = "${4:trigger_after_minutes}"
+}

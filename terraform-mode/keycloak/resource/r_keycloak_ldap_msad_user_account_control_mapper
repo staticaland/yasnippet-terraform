@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_msad_user_account_control_mapper
+# key: r_keycloak_ldap_msad_user_account_control_mapper
+# --
+
+resource "keycloak_ldap_msad_user_account_control_mapper" "${1:this}" {
+    ldap_user_federation_id = "${2:ldap_user_federation_id}"
+    name = "${3:name}"
+    realm_id = "${4:realm_id}"
+}

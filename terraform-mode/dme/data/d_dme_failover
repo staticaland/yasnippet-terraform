@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_dme_failover
+# key: d_dme_failover
+# --
+
+data "dme_failover" "${1:this}" {
+    record_id = "${2:record_id}"
+}

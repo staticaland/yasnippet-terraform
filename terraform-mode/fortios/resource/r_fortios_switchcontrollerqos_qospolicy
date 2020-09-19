@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontrollerqos_qospolicy
+# key: r_fortios_switchcontrollerqos_qospolicy
+# --
+
+resource "fortios_switchcontrollerqos_qospolicy" "${1:this}" {
+    default_cos = "${2:default_cos}"
+    name = "${3:name}"
+}

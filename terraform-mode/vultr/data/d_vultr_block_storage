@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_block_storage
+# key: d_vultr_block_storage
+# --
+
+data "vultr_block_storage" "${1:this}" {
+}

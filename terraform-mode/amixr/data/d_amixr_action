@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_amixr_action
+# key: d_amixr_action
+# --
+
+data "amixr_action" "${1:this}" {
+    integration_id = "${2:integration_id}"
+    name = "${3:name}"
+}

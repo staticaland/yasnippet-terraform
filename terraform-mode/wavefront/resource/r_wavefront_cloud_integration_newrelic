@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_newrelic
+# key: r_wavefront_cloud_integration_newrelic
+# --
+
+resource "wavefront_cloud_integration_newrelic" "${1:this}" {
+    api_key = "${2:api_key}"
+    name = "${3:name}"
+}

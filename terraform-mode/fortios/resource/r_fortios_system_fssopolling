@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_fssopolling
+# key: r_fortios_system_fssopolling
+# --
+
+resource "fortios_system_fssopolling" "${1:this}" {
+}

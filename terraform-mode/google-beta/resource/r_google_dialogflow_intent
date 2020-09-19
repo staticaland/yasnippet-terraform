@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_dialogflow_intent
+# key: r_google_dialogflow_intent
+# --
+
+resource "google_dialogflow_intent" "${1:this}" {
+    display_name = "${2:display_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_okta_default_policies
+# key: d_okta_default_policies
+# --
+
+data "okta_default_policies" "${1:this}" {
+    type = "${2:type}"
+}

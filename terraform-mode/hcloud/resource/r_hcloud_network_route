@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_network_route
+# key: r_hcloud_network_route
+# --
+
+resource "hcloud_network_route" "${1:this}" {
+    destination = "${2:destination}"
+    gateway = "${3:gateway}"
+    network_id = "${4:network_id}"
+}

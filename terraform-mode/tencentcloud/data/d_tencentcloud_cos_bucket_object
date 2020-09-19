@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cos_bucket_object
+# key: d_tencentcloud_cos_bucket_object
+# --
+
+data "tencentcloud_cos_bucket_object" "${1:this}" {
+    bucket = "${2:bucket}"
+    key = "${3:key}"
+}

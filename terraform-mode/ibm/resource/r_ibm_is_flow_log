@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_flow_log
+# key: r_ibm_is_flow_log
+# --
+
+resource "ibm_is_flow_log" "${1:this}" {
+    name = "${2:name}"
+    storage_bucket = "${3:storage_bucket}"
+    target = "${4:target}"
+}

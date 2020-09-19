@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_panos_bgp_conditional_adv
+# key: r_panos_bgp_conditional_adv
+# --
+
+resource "panos_bgp_conditional_adv" "${1:this}" {
+    name = "${2:name}"
+    virtual_router = "${3:virtual_router}"
+}

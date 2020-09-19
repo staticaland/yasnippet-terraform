@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cen_flowlog
+# key: r_alicloud_cen_flowlog
+# --
+
+resource "alicloud_cen_flowlog" "${1:this}" {
+    cen_id = "${2:cen_id}"
+    log_store_name = "${3:log_store_name}"
+    project_name = "${4:project_name}"
+}

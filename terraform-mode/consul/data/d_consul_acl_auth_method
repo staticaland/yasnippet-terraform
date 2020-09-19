@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_consul_acl_auth_method
+# key: d_consul_acl_auth_method
+# --
+
+data "consul_acl_auth_method" "${1:this}" {
+    name = "${2:name}"
+}

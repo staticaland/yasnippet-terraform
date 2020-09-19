@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rollbar_project_access_tokens
+# key: d_rollbar_project_access_tokens
+# --
+
+data "rollbar_project_access_tokens" "${1:this}" {
+    project_id = "${2:project_id}"
+}

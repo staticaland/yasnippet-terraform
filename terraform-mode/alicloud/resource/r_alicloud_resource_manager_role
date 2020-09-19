@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_resource_manager_role
+# key: r_alicloud_resource_manager_role
+# --
+
+resource "alicloud_resource_manager_role" "${1:this}" {
+    assume_role_policy_document = "${2:assume_role_policy_document}"
+    role_name = "${3:role_name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_lambda
+# key: r_fusionauth_lambda
+# --
+
+resource "fusionauth_lambda" "${1:this}" {
+    body = "${2:body}"
+    name = "${3:name}"
+    type = "${4:type}"
+}

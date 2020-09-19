@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_instance_server
+# key: r_scaleway_instance_server
+# --
+
+resource "scaleway_instance_server" "${1:this}" {
+    image = "${2:image}"
+    type = "${3:type}"
+}

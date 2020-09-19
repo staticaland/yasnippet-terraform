@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_packet_vlan
+# key: r_packet_vlan
+# --
+
+resource "packet_vlan" "${1:this}" {
+    facility = "${2:facility}"
+    project_id = "${3:project_id}"
+}

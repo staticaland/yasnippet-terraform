@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sensu_check
+# key: d_sensu_check
+# --
+
+data "sensu_check" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_project_user
+# key: d_aiven_project_user
+# --
+
+data "aiven_project_user" "${1:this}" {
+    email = "${2:email}"
+    project = "${3:project}"
+}

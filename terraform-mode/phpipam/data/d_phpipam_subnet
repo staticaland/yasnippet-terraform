@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_phpipam_subnet
+# key: d_phpipam_subnet
+# --
+
+data "phpipam_subnet" "${1:this}" {
+}

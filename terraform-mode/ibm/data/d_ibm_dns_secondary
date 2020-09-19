@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dns_secondary
+# key: d_ibm_dns_secondary
+# --
+
+data "ibm_dns_secondary" "${1:this}" {
+    zone_name = "${2:zone_name}"
+}

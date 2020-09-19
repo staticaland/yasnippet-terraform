@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_project_vpc
+# key: d_aiven_project_vpc
+# --
+
+data "aiven_project_vpc" "${1:this}" {
+    cloud_name = "${2:cloud_name}"
+    project = "${3:project}"
+}

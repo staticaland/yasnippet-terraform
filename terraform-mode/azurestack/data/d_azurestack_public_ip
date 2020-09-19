@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_azurestack_public_ip
+# key: d_azurestack_public_ip
+# --
+
+data "azurestack_public_ip" "${1:this}" {
+    name = "${2:name}"
+    resource_group_name = "${3:resource_group_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_onelogin_apps
+# key: r_onelogin_apps
+# --
+
+resource "onelogin_apps" "${1:this}" {
+    connector_id = "${2:connector_id}"
+    name = "${3:name}"
+}

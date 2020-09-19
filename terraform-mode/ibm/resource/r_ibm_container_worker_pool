@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_container_worker_pool
+# key: r_ibm_container_worker_pool
+# --
+
+resource "ibm_container_worker_pool" "${1:this}" {
+    cluster = "${2:cluster}"
+    machine_type = "${3:machine_type}"
+    size_per_zone = "${4:size_per_zone}"
+    worker_pool_name = "${5:worker_pool_name}"
+}

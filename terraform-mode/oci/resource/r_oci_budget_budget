@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_budget_budget
+# key: r_oci_budget_budget
+# --
+
+resource "oci_budget_budget" "${1:this}" {
+    amount = "${2:amount}"
+    compartment_id = "${3:compartment_id}"
+    reset_period = "${4:reset_period}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_linode_domain
+# key: d_linode_domain
+# --
+
+data "linode_domain" "${1:this}" {
+}

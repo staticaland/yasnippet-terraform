@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_networking_router_interface_v2
+# key: r_huaweicloud_networking_router_interface_v2
+# --
+
+resource "huaweicloud_networking_router_interface_v2" "${1:this}" {
+    router_id = "${2:router_id}"
+}

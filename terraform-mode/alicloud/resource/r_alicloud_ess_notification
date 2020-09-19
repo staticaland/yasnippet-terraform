@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ess_notification
+# key: r_alicloud_ess_notification
+# --
+
+resource "alicloud_ess_notification" "${1:this}" {
+    notification_arn = "${2:notification_arn}"
+    notification_types = "${3:notification_types}"
+    scaling_group_id = "${4:scaling_group_id}"
+}

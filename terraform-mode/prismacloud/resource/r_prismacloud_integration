@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_prismacloud_integration
+# key: r_prismacloud_integration
+# --
+
+resource "prismacloud_integration" "${1:this}" {
+    integration_type = "${2:integration_type}"
+    name = "${3:name}"
+}

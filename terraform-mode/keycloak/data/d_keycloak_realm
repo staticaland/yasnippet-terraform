@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_keycloak_realm
+# key: d_keycloak_realm
+# --
+
+data "keycloak_realm" "${1:this}" {
+    realm = "${2:realm}"
+}

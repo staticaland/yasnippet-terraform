@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_cluster_alert_rule
+# key: r_rancher2_cluster_alert_rule
+# --
+
+resource "rancher2_cluster_alert_rule" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    group_id = "${3:group_id}"
+    name = "${4:name}"
+}

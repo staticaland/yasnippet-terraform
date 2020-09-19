@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_opsgenie_schedule
+# key: d_opsgenie_schedule
+# --
+
+data "opsgenie_schedule" "${1:this}" {
+    name = "${2:name}"
+}

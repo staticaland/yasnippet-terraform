@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ochk_gateway_policy
+# key: d_ochk_gateway_policy
+# --
+
+data "ochk_gateway_policy" "${1:this}" {
+    display_name = "${2:display_name}"
+}

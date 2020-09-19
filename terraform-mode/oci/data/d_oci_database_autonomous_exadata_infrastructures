@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_exadata_infrastructures
+# key: d_oci_database_autonomous_exadata_infrastructures
+# --
+
+data "oci_database_autonomous_exadata_infrastructures" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

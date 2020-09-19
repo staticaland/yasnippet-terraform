@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_cluster_network
+# key: d_oci_core_cluster_network
+# --
+
+data "oci_core_cluster_network" "${1:this}" {
+    cluster_network_id = "${2:cluster_network_id}"
+}

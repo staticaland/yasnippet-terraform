@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cfs_file_systems
+# key: d_tencentcloud_cfs_file_systems
+# --
+
+data "tencentcloud_cfs_file_systems" "${1:this}" {
+}

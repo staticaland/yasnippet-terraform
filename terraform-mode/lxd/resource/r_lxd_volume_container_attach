@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_lxd_volume_container_attach
+# key: r_lxd_volume_container_attach
+# --
+
+resource "lxd_volume_container_attach" "${1:this}" {
+    container_name = "${2:container_name}"
+    path = "${3:path}"
+    pool = "${4:pool}"
+    volume_name = "${5:volume_name}"
+}

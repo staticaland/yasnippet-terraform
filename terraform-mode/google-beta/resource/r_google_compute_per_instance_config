@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_per_instance_config
+# key: r_google_compute_per_instance_config
+# --
+
+resource "google_compute_per_instance_config" "${1:this}" {
+    instance_group_manager = "${2:instance_group_manager}"
+    name = "${3:name}"
+    zone = "${4:zone}"
+}

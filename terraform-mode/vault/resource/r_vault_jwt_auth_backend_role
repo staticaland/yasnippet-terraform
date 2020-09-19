@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vault_jwt_auth_backend_role
+# key: r_vault_jwt_auth_backend_role
+# --
+
+resource "vault_jwt_auth_backend_role" "${1:this}" {
+    role_name = "${2:role_name}"
+    user_claim = "${3:user_claim}"
+}

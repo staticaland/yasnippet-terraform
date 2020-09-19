@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_org
+# key: r_ibm_org
+# --
+
+resource "ibm_org" "${1:this}" {
+    name = "${2:name}"
+}

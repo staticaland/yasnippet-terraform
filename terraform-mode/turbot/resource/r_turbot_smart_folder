@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_turbot_smart_folder
+# key: r_turbot_smart_folder
+# --
+
+resource "turbot_smart_folder" "${1:this}" {
+    parent = "${2:parent}"
+    title = "${3:title}"
+}

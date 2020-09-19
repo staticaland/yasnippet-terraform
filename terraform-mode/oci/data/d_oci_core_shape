@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_shape
+# key: d_oci_core_shape
+# --
+
+data "oci_core_shape" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

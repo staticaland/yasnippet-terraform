@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_app_catalog_listing_resource_version
+# key: d_oci_core_app_catalog_listing_resource_version
+# --
+
+data "oci_core_app_catalog_listing_resource_version" "${1:this}" {
+    listing_id = "${2:listing_id}"
+    resource_version = "${3:resource_version}"
+}

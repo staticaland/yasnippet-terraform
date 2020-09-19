@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mackerel_external_monitor
+# key: r_mackerel_external_monitor
+# --
+
+resource "mackerel_external_monitor" "${1:this}" {
+    name = "${2:name}"
+    url = "${3:url}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cbs_storage
+# key: r_tencentcloud_cbs_storage
+# --
+
+resource "tencentcloud_cbs_storage" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    storage_name = "${3:storage_name}"
+    storage_size = "${4:storage_size}"
+    storage_type = "${5:storage_type}"
+}

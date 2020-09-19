@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_auth_token_management
+# key: r_pingaccess_auth_token_management
+# --
+
+resource "pingaccess_auth_token_management" "${1:this}" {
+}

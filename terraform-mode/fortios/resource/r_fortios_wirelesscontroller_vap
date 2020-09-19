@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontroller_vap
+# key: r_fortios_wirelesscontroller_vap
+# --
+
+resource "fortios_wirelesscontroller_vap" "${1:this}" {
+    name = "${2:name}"
+}

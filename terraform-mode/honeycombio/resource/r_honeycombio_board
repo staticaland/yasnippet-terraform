@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_honeycombio_board
+# key: r_honeycombio_board
+# --
+
+resource "honeycombio_board" "${1:this}" {
+    name = "${2:name}"
+}

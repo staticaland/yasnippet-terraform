@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_circonus_rule_set_group
+# key: r_circonus_rule_set_group
+# --
+
+resource "circonus_rule_set_group" "${1:this}" {
+    name = "${2:name}"
+}

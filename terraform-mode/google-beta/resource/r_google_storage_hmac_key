@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_storage_hmac_key
+# key: r_google_storage_hmac_key
+# --
+
+resource "google_storage_hmac_key" "${1:this}" {
+    service_account_email = "${2:service_account_email}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_purestorage_flasharray
+# key: d_purestorage_flasharray
+# --
+
+data "purestorage_flasharray" "${1:this}" {
+}

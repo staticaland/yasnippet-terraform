@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_firebase_web_app_config
+# key: d_google_firebase_web_app_config
+# --
+
+data "google_firebase_web_app_config" "${1:this}" {
+    web_app_id = "${2:web_app_id}"
+}

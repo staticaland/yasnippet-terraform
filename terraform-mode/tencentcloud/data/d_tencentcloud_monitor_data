@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_monitor_data
+# key: d_tencentcloud_monitor_data
+# --
+
+data "tencentcloud_monitor_data" "${1:this}" {
+    end_time = "${2:end_time}"
+    metric_name = "${3:metric_name}"
+    namespace = "${4:namespace}"
+    start_time = "${5:start_time}"
+}

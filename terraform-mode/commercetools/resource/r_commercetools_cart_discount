@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_cart_discount
+# key: r_commercetools_cart_discount
+# --
+
+resource "commercetools_cart_discount" "${1:this}" {
+    name = "${2:name}"
+    predicate = "${3:predicate}"
+    sort_order = "${4:sort_order}"
+}

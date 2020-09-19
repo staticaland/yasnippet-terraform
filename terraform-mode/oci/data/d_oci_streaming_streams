@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_streaming_streams
+# key: d_oci_streaming_streams
+# --
+
+data "oci_streaming_streams" "${1:this}" {
+}

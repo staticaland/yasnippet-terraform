@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_baremetal_server
+# key: r_scaleway_baremetal_server
+# --
+
+resource "scaleway_baremetal_server" "${1:this}" {
+    offer = "${2:offer}"
+    os = "${3:os}"
+    ssh_key_ids = "${4:ssh_key_ids}"
+}

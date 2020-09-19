@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_utm_profile_web_filtering_websense_redirect
+# key: r_junos_security_utm_profile_web_filtering_websense_redirect
+# --
+
+resource "junos_security_utm_profile_web_filtering_websense_redirect" "${1:this}" {
+    name = "${2:name}"
+}

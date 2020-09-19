@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_service_github
+# key: r_gitlab_service_github
+# --
+
+resource "gitlab_service_github" "${1:this}" {
+    project = "${2:project}"
+    repository_url = "${3:repository_url}"
+    token = "${4:token}"
+}

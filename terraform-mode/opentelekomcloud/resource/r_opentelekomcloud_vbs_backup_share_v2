@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_vbs_backup_share_v2
+# key: r_opentelekomcloud_vbs_backup_share_v2
+# --
+
+resource "opentelekomcloud_vbs_backup_share_v2" "${1:this}" {
+    backup_id = "${2:backup_id}"
+    to_project_ids = "${3:to_project_ids}"
+}

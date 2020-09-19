@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_vpc
+# key: d_digitalocean_vpc
+# --
+
+data "digitalocean_vpc" "${1:this}" {
+}

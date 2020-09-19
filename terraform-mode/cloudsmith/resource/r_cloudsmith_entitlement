@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudsmith_entitlement
+# key: r_cloudsmith_entitlement
+# --
+
+resource "cloudsmith_entitlement" "${1:this}" {
+    name = "${2:name}"
+    namespace = "${3:namespace}"
+    repository = "${4:repository}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_buildpack
+# key: r_cloudfoundry_buildpack
+# --
+
+resource "cloudfoundry_buildpack" "${1:this}" {
+    name = "${2:name}"
+    path = "${3:path}"
+}

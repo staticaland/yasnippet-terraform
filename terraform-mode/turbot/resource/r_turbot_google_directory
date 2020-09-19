@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_turbot_google_directory
+# key: r_turbot_google_directory
+# --
+
+resource "turbot_google_directory" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret = "${3:client_secret}"
+    parent = "${4:parent}"
+    profile_id_template = "${5:profile_id_template}"
+    title = "${6:title}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_limits_quotas
+# key: d_oci_limits_quotas
+# --
+
+data "oci_limits_quotas" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

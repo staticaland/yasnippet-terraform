@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hirefire_membership
+# key: r_hirefire_membership
+# --
+
+resource "hirefire_membership" "${1:this}" {
+    organization_id = "${2:organization_id}"
+    user_id = "${3:user_id}"
+}

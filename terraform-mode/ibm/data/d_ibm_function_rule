@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_function_rule
+# key: d_ibm_function_rule
+# --
+
+data "ibm_function_rule" "${1:this}" {
+    name = "${2:name}"
+    namespace = "${3:namespace}"
+}

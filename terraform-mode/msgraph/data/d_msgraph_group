@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_msgraph_group
+# key: d_msgraph_group
+# --
+
+data "msgraph_group" "${1:this}" {
+}

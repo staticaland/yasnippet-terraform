@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_user
+# key: r_artifactory_user
+# --
+
+resource "artifactory_user" "${1:this}" {
+    email = "${2:email}"
+    name = "${3:name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_snapshot
+# key: d_vultr_snapshot
+# --
+
+data "vultr_snapshot" "${1:this}" {
+}

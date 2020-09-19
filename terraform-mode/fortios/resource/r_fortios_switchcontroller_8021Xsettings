@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_8021Xsettings
+# key: r_fortios_switchcontroller_8021Xsettings
+# --
+
+resource "fortios_switchcontroller_8021Xsettings" "${1:this}" {
+}

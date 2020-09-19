@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_akamai_gtm_domain
+# key: r_akamai_gtm_domain
+# --
+
+resource "akamai_gtm_domain" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

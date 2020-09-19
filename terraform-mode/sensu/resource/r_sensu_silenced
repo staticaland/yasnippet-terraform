@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sensu_silenced
+# key: r_sensu_silenced
+# --
+
+resource "sensu_silenced" "${1:this}" {
+    check = "${2:check}"
+    subscription = "${3:subscription}"
+}

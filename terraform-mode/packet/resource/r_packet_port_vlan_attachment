@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_packet_port_vlan_attachment
+# key: r_packet_port_vlan_attachment
+# --
+
+resource "packet_port_vlan_attachment" "${1:this}" {
+    device_id = "${2:device_id}"
+    port_name = "${3:port_name}"
+    vlan_vnid = "${4:vlan_vnid}"
+}

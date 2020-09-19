@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_kms_crypto_key_version
+# key: d_google_kms_crypto_key_version
+# --
+
+data "google_kms_crypto_key_version" "${1:this}" {
+    crypto_key = "${2:crypto_key}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_spanner_instance
+# key: r_google_spanner_instance
+# --
+
+resource "google_spanner_instance" "${1:this}" {
+    config = "${2:config}"
+    display_name = "${3:display_name}"
+}

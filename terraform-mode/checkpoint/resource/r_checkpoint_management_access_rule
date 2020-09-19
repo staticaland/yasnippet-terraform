@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_access_rule
+# key: r_checkpoint_management_access_rule
+# --
+
+resource "checkpoint_management_access_rule" "${1:this}" {
+    layer = "${2:layer}"
+    name = "${3:name}"
+    position = "${4:position}"
+}

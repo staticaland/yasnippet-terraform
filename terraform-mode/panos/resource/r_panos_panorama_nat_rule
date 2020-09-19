@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_nat_rule
+# key: r_panos_panorama_nat_rule
+# --
+
+resource "panos_panorama_nat_rule" "${1:this}" {
+    destination_addresses = "${2:destination_addresses}"
+    destination_zone = "${3:destination_zone}"
+    name = "${4:name}"
+    source_addresses = "${5:source_addresses}"
+    source_zones = "${6:source_zones}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_graylog_sidecar
+# key: d_graylog_sidecar
+# --
+
+data "graylog_sidecar" "${1:this}" {
+}

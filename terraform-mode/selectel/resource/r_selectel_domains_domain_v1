@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_selectel_domains_domain_v1
+# key: r_selectel_domains_domain_v1
+# --
+
+resource "selectel_domains_domain_v1" "${1:this}" {
+    name = "${2:name}"
+}

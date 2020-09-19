@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_brightbox_api_client
+# key: r_brightbox_api_client
+# --
+
+resource "brightbox_api_client" "${1:this}" {
+}

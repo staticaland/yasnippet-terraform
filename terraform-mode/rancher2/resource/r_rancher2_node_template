@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_node_template
+# key: r_rancher2_node_template
+# --
+
+resource "rancher2_node_template" "${1:this}" {
+    name = "${2:name}"
+}

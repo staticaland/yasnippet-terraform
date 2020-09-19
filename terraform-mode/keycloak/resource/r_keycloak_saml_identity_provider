@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_saml_identity_provider
+# key: r_keycloak_saml_identity_provider
+# --
+
+resource "keycloak_saml_identity_provider" "${1:this}" {
+    alias = "${2:alias}"
+    realm = "${3:realm}"
+    single_sign_on_service_url = "${4:single_sign_on_service_url}"
+}

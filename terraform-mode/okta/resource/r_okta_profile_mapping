@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_profile_mapping
+# key: r_okta_profile_mapping
+# --
+
+resource "okta_profile_mapping" "${1:this}" {
+    source_id = "${2:source_id}"
+    target_id = "${3:target_id}"
+}

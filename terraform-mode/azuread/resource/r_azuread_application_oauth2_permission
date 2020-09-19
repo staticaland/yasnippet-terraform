@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_azuread_application_oauth2_permission
+# key: r_azuread_application_oauth2_permission
+# --
+
+resource "azuread_application_oauth2_permission" "${1:this}" {
+    admin_consent_description = "${2:admin_consent_description}"
+    admin_consent_display_name = "${3:admin_consent_display_name}"
+    application_object_id = "${4:application_object_id}"
+    type = "${5:type}"
+    user_consent_description = "${6:user_consent_description}"
+    user_consent_display_name = "${7:user_consent_display_name}"
+    value = "${8:value}"
+}

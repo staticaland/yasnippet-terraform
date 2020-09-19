@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_jdbc_data_store
+# key: r_pingfederate_jdbc_data_store
+# --
+
+resource "pingfederate_jdbc_data_store" "${1:this}" {
+    connection_url = "${2:connection_url}"
+    driver_class = "${3:driver_class}"
+    user_name = "${4:user_name}"
+}

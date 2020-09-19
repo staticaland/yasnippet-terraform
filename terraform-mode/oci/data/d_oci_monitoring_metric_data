@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_oci_monitoring_metric_data
+# key: d_oci_monitoring_metric_data
+# --
+
+data "oci_monitoring_metric_data" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    namespace = "${3:namespace}"
+    query = "${4:query}"
+}

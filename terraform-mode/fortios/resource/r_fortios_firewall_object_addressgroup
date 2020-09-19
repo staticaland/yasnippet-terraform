@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_object_addressgroup
+# key: r_fortios_firewall_object_addressgroup
+# --
+
+resource "fortios_firewall_object_addressgroup" "${1:this}" {
+    member = "${2:member}"
+    name = "${3:name}"
+}

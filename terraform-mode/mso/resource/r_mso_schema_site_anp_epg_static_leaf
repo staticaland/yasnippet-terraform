@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_site_anp_epg_static_leaf
+# key: r_mso_schema_site_anp_epg_static_leaf
+# --
+
+resource "mso_schema_site_anp_epg_static_leaf" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    epg_name = "${3:epg_name}"
+    path = "${4:path}"
+    port_encap_vlan = "${5:port_encap_vlan}"
+    schema_id = "${6:schema_id}"
+    site_id = "${7:site_id}"
+    template_name = "${8:template_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_policy_rule_mfa
+# key: r_okta_policy_rule_mfa
+# --
+
+resource "okta_policy_rule_mfa" "${1:this}" {
+    name = "${2:name}"
+    policyid = "${3:policyid}"
+}

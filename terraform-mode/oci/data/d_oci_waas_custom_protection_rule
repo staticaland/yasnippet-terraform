@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_custom_protection_rule
+# key: d_oci_waas_custom_protection_rule
+# --
+
+data "oci_waas_custom_protection_rule" "${1:this}" {
+    custom_protection_rule_id = "${2:custom_protection_rule_id}"
+}

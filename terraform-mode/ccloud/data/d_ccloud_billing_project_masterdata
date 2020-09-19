@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ccloud_billing_project_masterdata
+# key: d_ccloud_billing_project_masterdata
+# --
+
+data "ccloud_billing_project_masterdata" "${1:this}" {
+}

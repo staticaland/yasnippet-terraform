@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_xpack_user
+# key: r_elasticsearch_xpack_user
+# --
+
+resource "elasticsearch_xpack_user" "${1:this}" {
+    roles = "${2:roles}"
+    username = "${3:username}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_turbot_turbot_directory
+# key: r_turbot_turbot_directory
+# --
+
+resource "turbot_turbot_directory" "${1:this}" {
+    parent = "${2:parent}"
+    profile_id_template = "${3:profile_id_template}"
+    server = "${4:server}"
+    title = "${5:title}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_auth0_resource_server
+# key: r_auth0_resource_server
+# --
+
+resource "auth0_resource_server" "${1:this}" {
+}

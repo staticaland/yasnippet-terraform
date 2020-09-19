@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dayu_ddos_policy_case
+# key: r_tencentcloud_dayu_ddos_policy_case
+# --
+
+resource "tencentcloud_dayu_ddos_policy_case" "${1:this}" {
+    app_protocols = "${2:app_protocols}"
+    app_type = "${3:app_type}"
+    has_abroad = "${4:has_abroad}"
+    has_initiate_tcp = "${5:has_initiate_tcp}"
+    name = "${6:name}"
+    platform_types = "${7:platform_types}"
+    resource_type = "${8:resource_type}"
+    tcp_end_port = "${9:tcp_end_port}"
+    tcp_start_port = "${10:tcp_start_port}"
+    udp_end_port = "${11:udp_end_port}"
+    udp_start_port = "${12:udp_start_port}"
+    web_api_urls = "${13:web_api_urls}"
+}

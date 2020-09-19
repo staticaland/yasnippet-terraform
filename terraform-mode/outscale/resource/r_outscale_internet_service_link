@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_internet_service_link
+# key: r_outscale_internet_service_link
+# --
+
+resource "outscale_internet_service_link" "${1:this}" {
+    internet_service_id = "${2:internet_service_id}"
+    net_id = "${3:net_id}"
+}

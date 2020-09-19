@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_l7policy
+# key: r_huaweicloud_lb_l7policy
+# --
+
+resource "huaweicloud_lb_l7policy" "${1:this}" {
+    action = "${2:action}"
+    listener_id = "${3:listener_id}"
+}

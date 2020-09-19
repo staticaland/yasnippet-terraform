@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_exasol_connection
+# key: d_exasol_connection
+# --
+
+data "exasol_connection" "${1:this}" {
+    name = "${2:name}"
+}

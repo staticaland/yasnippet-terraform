@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_infoblox_ip_allocation
+# key: r_infoblox_ip_allocation
+# --
+
+resource "infoblox_ip_allocation" "${1:this}" {
+    cidr = "${2:cidr}"
+    tenant_id = "${3:tenant_id}"
+    vm_name = "${4:vm_name}"
+}

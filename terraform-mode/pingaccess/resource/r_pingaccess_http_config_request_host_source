@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_http_config_request_host_source
+# key: r_pingaccess_http_config_request_host_source
+# --
+
+resource "pingaccess_http_config_request_host_source" "${1:this}" {
+    header_name_list = "${2:header_name_list}"
+    list_value_location = "${3:list_value_location}"
+}

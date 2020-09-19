@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_route
+# key: r_outscale_route
+# --
+
+resource "outscale_route" "${1:this}" {
+    destination_ip_range = "${2:destination_ip_range}"
+    route_table_id = "${3:route_table_id}"
+}

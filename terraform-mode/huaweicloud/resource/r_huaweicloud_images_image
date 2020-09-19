@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_images_image
+# key: r_huaweicloud_images_image
+# --
+
+resource "huaweicloud_images_image" "${1:this}" {
+    container_format = "${2:container_format}"
+    disk_format = "${3:disk_format}"
+    name = "${4:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_image
+# key: r_outscale_image
+# --
+
+resource "outscale_image" "${1:this}" {
+    image_name = "${2:image_name}"
+}

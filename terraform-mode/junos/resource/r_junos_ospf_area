@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_ospf_area
+# key: r_junos_ospf_area
+# --
+
+resource "junos_ospf_area" "${1:this}" {
+    area_id = "${2:area_id}"
+}

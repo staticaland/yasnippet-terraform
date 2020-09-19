@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_icap_server
+# key: r_fortios_icap_server
+# --
+
+resource "fortios_icap_server" "${1:this}" {
+}

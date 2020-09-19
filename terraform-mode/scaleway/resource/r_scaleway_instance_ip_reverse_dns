@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_instance_ip_reverse_dns
+# key: r_scaleway_instance_ip_reverse_dns
+# --
+
+resource "scaleway_instance_ip_reverse_dns" "${1:this}" {
+    ip_id = "${2:ip_id}"
+    reverse = "${3:reverse}"
+}

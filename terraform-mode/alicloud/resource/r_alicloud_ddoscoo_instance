@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ddoscoo_instance
+# key: r_alicloud_ddoscoo_instance
+# --
+
+resource "alicloud_ddoscoo_instance" "${1:this}" {
+    bandwidth = "${2:bandwidth}"
+    base_bandwidth = "${3:base_bandwidth}"
+    domain_count = "${4:domain_count}"
+    name = "${5:name}"
+    port_count = "${6:port_count}"
+    service_bandwidth = "${7:service_bandwidth}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_launchdarkly_team_member
+# key: r_launchdarkly_team_member
+# --
+
+resource "launchdarkly_team_member" "${1:this}" {
+    email = "${2:email}"
+}

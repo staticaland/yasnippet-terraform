@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb_vpx_vip
+# key: r_ibm_lb_vpx_vip
+# --
+
+resource "ibm_lb_vpx_vip" "${1:this}" {
+    load_balancing_method = "${2:load_balancing_method}"
+    nad_controller_id = "${3:nad_controller_id}"
+    name = "${4:name}"
+    source_port = "${5:source_port}"
+    type = "${6:type}"
+    virtual_ip_address = "${7:virtual_ip_address}"
+}

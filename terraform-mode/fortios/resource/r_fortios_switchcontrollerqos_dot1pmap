@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontrollerqos_dot1pmap
+# key: r_fortios_switchcontrollerqos_dot1pmap
+# --
+
+resource "fortios_switchcontrollerqos_dot1pmap" "${1:this}" {
+    name = "${2:name}"
+}

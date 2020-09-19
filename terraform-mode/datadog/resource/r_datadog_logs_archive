@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_logs_archive
+# key: r_datadog_logs_archive
+# --
+
+resource "datadog_logs_archive" "${1:this}" {
+    name = "${2:name}"
+    query = "${3:query}"
+}

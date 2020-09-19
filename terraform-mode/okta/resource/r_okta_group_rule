@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_okta_group_rule
+# key: r_okta_group_rule
+# --
+
+resource "okta_group_rule" "${1:this}" {
+    expression_value = "${2:expression_value}"
+    group_assignments = "${3:group_assignments}"
+    name = "${4:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_adb_account
+# key: r_alicloud_adb_account
+# --
+
+resource "alicloud_adb_account" "${1:this}" {
+    account_name = "${2:account_name}"
+    db_cluster_id = "${3:db_cluster_id}"
+}

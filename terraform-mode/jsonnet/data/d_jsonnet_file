@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_jsonnet_file
+# key: d_jsonnet_file
+# --
+
+data "jsonnet_file" "${1:this}" {
+    source = "${2:source}"
+}

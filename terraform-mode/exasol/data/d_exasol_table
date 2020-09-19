@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_exasol_table
+# key: d_exasol_table
+# --
+
+data "exasol_table" "${1:this}" {
+    name = "${2:name}"
+    schema = "${3:schema}"
+}

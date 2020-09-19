@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_policy6
+# key: r_fortios_router_policy6
+# --
+
+resource "fortios_router_policy6" "${1:this}" {
+    input_device = "${2:input_device}"
+}

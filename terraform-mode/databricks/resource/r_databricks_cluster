@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_databricks_cluster
+# key: r_databricks_cluster
+# --
+
+resource "databricks_cluster" "${1:this}" {
+    spark_version = "${2:spark_version}"
+}

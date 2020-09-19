@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_limits_quota
+# key: d_oci_limits_quota
+# --
+
+data "oci_limits_quota" "${1:this}" {
+    quota_id = "${2:quota_id}"
+}

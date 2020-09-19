@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_vm_cluster_patch_history_entry
+# key: d_oci_database_vm_cluster_patch_history_entry
+# --
+
+data "oci_database_vm_cluster_patch_history_entry" "${1:this}" {
+    patch_history_entry_id = "${2:patch_history_entry_id}"
+    vm_cluster_id = "${3:vm_cluster_id}"
+}

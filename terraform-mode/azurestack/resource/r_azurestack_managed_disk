@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_managed_disk
+# key: r_azurestack_managed_disk
+# --
+
+resource "azurestack_managed_disk" "${1:this}" {
+    create_option = "${2:create_option}"
+    location = "${3:location}"
+    name = "${4:name}"
+    resource_group_name = "${5:resource_group_name}"
+    storage_account_type = "${6:storage_account_type}"
+}

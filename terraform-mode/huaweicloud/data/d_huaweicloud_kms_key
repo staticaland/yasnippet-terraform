@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_kms_key
+# key: d_huaweicloud_kms_key
+# --
+
+data "huaweicloud_kms_key" "${1:this}" {
+}

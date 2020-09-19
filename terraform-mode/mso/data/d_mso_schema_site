@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_site
+# key: d_mso_schema_site
+# --
+
+data "mso_schema_site" "${1:this}" {
+    name = "${2:name}"
+    schema_id = "${3:schema_id}"
+}

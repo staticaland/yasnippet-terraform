@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_pypi_package_file
+# key: d_pypi_package_file
+# --
+
+data "pypi_package_file" "${1:this}" {
+    name = "${2:name}"
+    output_dir = "${3:output_dir}"
+}

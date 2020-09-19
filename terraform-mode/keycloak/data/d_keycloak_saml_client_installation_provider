@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_keycloak_saml_client_installation_provider
+# key: d_keycloak_saml_client_installation_provider
+# --
+
+data "keycloak_saml_client_installation_provider" "${1:this}" {
+    client_id = "${2:client_id}"
+    provider_id = "${3:provider_id}"
+    realm_id = "${4:realm_id}"
+}

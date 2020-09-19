@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_statuspage_component
+# key: r_statuspage_component
+# --
+
+resource "statuspage_component" "${1:this}" {
+    name = "${2:name}"
+    page_id = "${3:page_id}"
+}

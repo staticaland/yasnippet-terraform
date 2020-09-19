@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_user
+# key: r_ibm_compute_user
+# --
+
+resource "ibm_compute_user" "${1:this}" {
+    address1 = "${2:address1}"
+    city = "${3:city}"
+    company_name = "${4:company_name}"
+    country = "${5:country}"
+    email = "${6:email}"
+    first_name = "${7:first_name}"
+    last_name = "${8:last_name}"
+    state = "${9:state}"
+    timezone = "${10:timezone}"
+}

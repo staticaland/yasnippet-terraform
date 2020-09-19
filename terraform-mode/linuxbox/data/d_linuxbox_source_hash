@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linuxbox_source_hash
+# key: d_linuxbox_source_hash
+# --
+
+data "linuxbox_source_hash" "${1:this}" {
+    sources = "${2:sources}"
+}

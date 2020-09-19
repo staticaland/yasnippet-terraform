@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_oci_limits_resource_availability
+# key: d_oci_limits_resource_availability
+# --
+
+data "oci_limits_resource_availability" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    limit_name = "${3:limit_name}"
+    service_name = "${4:service_name}"
+}

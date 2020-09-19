@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_anp_epg_contract
+# key: d_mso_schema_template_anp_epg_contract
+# --
+
+data "mso_schema_template_anp_epg_contract" "${1:this}" {
+    anp_name = "${2:anp_name}"
+    contract_name = "${3:contract_name}"
+    epg_name = "${4:epg_name}"
+    schema_id = "${5:schema_id}"
+    template_name = "${6:template_name}"
+}

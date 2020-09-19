@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_random_integer
+# key: r_random_integer
+# --
+
+resource "random_integer" "${1:this}" {
+    max = "${2:max}"
+    min = "${3:min}"
+}

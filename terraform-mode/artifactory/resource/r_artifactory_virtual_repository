@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_virtual_repository
+# key: r_artifactory_virtual_repository
+# --
+
+resource "artifactory_virtual_repository" "${1:this}" {
+    key = "${2:key}"
+    package_type = "${3:package_type}"
+    repositories = "${4:repositories}"
+}

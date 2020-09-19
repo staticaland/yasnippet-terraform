@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_isilon_export_v2
+# key: r_isilon_export_v2
+# --
+
+resource "isilon_export_v2" "${1:this}" {
+    paths = "${2:paths}"
+}

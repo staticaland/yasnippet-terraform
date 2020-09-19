@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_mysql_mysql_backup
+# key: d_oci_mysql_mysql_backup
+# --
+
+data "oci_mysql_mysql_backup" "${1:this}" {
+    backup_id = "${2:backup_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_schematics_state
+# key: d_ibm_schematics_state
+# --
+
+data "ibm_schematics_state" "${1:this}" {
+    template_id = "${2:template_id}"
+    workspace_id = "${3:workspace_id}"
+}

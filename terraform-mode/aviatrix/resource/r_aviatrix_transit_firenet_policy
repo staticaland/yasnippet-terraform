@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_transit_firenet_policy
+# key: r_aviatrix_transit_firenet_policy
+# --
+
+resource "aviatrix_transit_firenet_policy" "${1:this}" {
+    inspected_resource_name = "${2:inspected_resource_name}"
+    transit_firenet_gateway_name = "${3:transit_firenet_gateway_name}"
+}

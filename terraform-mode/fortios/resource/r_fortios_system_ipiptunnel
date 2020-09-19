@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ipiptunnel
+# key: r_fortios_system_ipiptunnel
+# --
+
+resource "fortios_system_ipiptunnel" "${1:this}" {
+    interface = "${2:interface}"
+    local_gw = "${3:local_gw}"
+    remote_gw = "${4:remote_gw}"
+}

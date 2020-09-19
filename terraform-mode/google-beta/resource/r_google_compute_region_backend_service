@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_region_backend_service
+# key: r_google_compute_region_backend_service
+# --
+
+resource "google_compute_region_backend_service" "${1:this}" {
+    health_checks = "${2:health_checks}"
+    name = "${3:name}"
+}

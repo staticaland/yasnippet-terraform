@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logdisk_setting
+# key: r_fortios_logdisk_setting
+# --
+
+resource "fortios_logdisk_setting" "${1:this}" {
+    status = "${2:status}"
+}

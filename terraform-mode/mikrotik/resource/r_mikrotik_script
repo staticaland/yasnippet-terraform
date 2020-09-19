@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_mikrotik_script
+# key: r_mikrotik_script
+# --
+
+resource "mikrotik_script" "${1:this}" {
+    name = "${2:name}"
+    owner = "${3:owner}"
+    policy = "${4:policy}"
+    source = "${5:source}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_constellix_contact_lists
+# key: r_constellix_contact_lists
+# --
+
+resource "constellix_contact_lists" "${1:this}" {
+    email_addresses = "${2:email_addresses}"
+    name = "${3:name}"
+}

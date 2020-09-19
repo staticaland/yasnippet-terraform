@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_feature_commit_status_publisher
+# key: r_teamcity_feature_commit_status_publisher
+# --
+
+resource "teamcity_feature_commit_status_publisher" "${1:this}" {
+    build_config_id = "${2:build_config_id}"
+    publisher = "${3:publisher}"
+}

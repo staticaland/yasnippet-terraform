@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_compute_bare_metal
+# key: d_ibm_compute_bare_metal
+# --
+
+data "ibm_compute_bare_metal" "${1:this}" {
+}

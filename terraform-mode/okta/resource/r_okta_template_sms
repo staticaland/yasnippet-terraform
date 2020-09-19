@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_template_sms
+# key: r_okta_template_sms
+# --
+
+resource "okta_template_sms" "${1:this}" {
+    template = "${2:template}"
+    type = "${3:type}"
+}

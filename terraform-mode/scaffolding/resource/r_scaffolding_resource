@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_scaffolding_resource
+# key: r_scaffolding_resource
+# --
+
+resource "scaffolding_resource" "${1:this}" {
+}

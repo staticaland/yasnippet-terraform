@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_linode_instance
+# key: r_linode_instance
+# --
+
+resource "linode_instance" "${1:this}" {
+    region = "${2:region}"
+}

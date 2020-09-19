@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_macro
+# key: r_sysdig_secure_macro
+# --
+
+resource "sysdig_secure_macro" "${1:this}" {
+    condition = "${2:condition}"
+    name = "${3:name}"
+}

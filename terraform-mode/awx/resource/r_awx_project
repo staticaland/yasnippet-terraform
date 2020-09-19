@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_awx_project
+# key: r_awx_project
+# --
+
+resource "awx_project" "${1:this}" {
+    name = "${2:name}"
+    organisation_id = "${3:organisation_id}"
+    scm_type = "${4:scm_type}"
+}

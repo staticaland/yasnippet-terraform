@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hetznerdns_zone
+# key: r_hetznerdns_zone
+# --
+
+resource "hetznerdns_zone" "${1:this}" {
+    name = "${2:name}"
+    ttl = "${3:ttl}"
+}

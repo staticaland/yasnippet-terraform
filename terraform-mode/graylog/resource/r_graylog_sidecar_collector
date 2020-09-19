@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_graylog_sidecar_collector
+# key: r_graylog_sidecar_collector
+# --
+
+resource "graylog_sidecar_collector" "${1:this}" {
+    executable_path = "${2:executable_path}"
+    name = "${3:name}"
+    node_operating_system = "${4:node_operating_system}"
+    service_type = "${5:service_type}"
+}

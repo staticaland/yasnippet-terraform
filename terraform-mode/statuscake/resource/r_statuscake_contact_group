@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_statuscake_contact_group
+# key: r_statuscake_contact_group
+# --
+
+resource "statuscake_contact_group" "${1:this}" {
+    group_name = "${2:group_name}"
+}

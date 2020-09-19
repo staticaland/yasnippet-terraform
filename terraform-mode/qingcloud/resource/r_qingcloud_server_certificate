@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_server_certificate
+# key: r_qingcloud_server_certificate
+# --
+
+resource "qingcloud_server_certificate" "${1:this}" {
+}

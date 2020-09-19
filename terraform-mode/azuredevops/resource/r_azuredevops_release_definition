@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azuredevops_release_definition
+# key: r_azuredevops_release_definition
+# --
+
+resource "azuredevops_release_definition" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

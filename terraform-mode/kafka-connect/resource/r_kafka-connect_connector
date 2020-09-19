@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_kafka-connect_connector
+# key: r_kafka-connect_connector
+# --
+
+resource "kafka-connect_connector" "${1:this}" {
+    name = "${2:name}"
+}

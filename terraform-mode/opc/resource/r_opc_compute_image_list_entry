@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_image_list_entry
+# key: r_opc_compute_image_list_entry
+# --
+
+resource "opc_compute_image_list_entry" "${1:this}" {
+    machine_images = "${2:machine_images}"
+    name = "${3:name}"
+    version = "${4:version}"
+}

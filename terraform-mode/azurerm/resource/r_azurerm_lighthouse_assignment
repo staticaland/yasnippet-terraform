@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azurerm_lighthouse_assignment
+# key: r_azurerm_lighthouse_assignment
+# --
+
+resource "azurerm_lighthouse_assignment" "${1:this}" {
+    lighthouse_definition_id = "${2:lighthouse_definition_id}"
+    scope = "${3:scope}"
+}

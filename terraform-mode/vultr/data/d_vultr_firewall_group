@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_firewall_group
+# key: d_vultr_firewall_group
+# --
+
+data "vultr_firewall_group" "${1:this}" {
+}

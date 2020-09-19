@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_hirefire_manager
+# key: r_hirefire_manager
+# --
+
+resource "hirefire_manager" "${1:this}" {
+    application_id = "${2:application_id}"
+    enabled = "${3:enabled}"
+    maximum = "${4:maximum}"
+    minimum = "${5:minimum}"
+    name = "${6:name}"
+    type = "${7:type}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opc_storage_container
+# key: r_opc_storage_container
+# --
+
+resource "opc_storage_container" "${1:this}" {
+    name = "${2:name}"
+}

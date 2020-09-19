@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_tcaplus_clusters
+# key: d_tencentcloud_tcaplus_clusters
+# --
+
+data "tencentcloud_tcaplus_clusters" "${1:this}" {
+}

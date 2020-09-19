@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lts_group
+# key: r_huaweicloud_lts_group
+# --
+
+resource "huaweicloud_lts_group" "${1:this}" {
+    group_name = "${2:group_name}"
+    ttl_in_days = "${3:ttl_in_days}"
+}

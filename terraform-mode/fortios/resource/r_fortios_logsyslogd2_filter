@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logsyslogd2_filter
+# key: r_fortios_logsyslogd2_filter
+# --
+
+resource "fortios_logsyslogd2_filter" "${1:this}" {
+}

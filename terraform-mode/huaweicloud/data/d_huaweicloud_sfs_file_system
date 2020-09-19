@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_sfs_file_system
+# key: d_huaweicloud_sfs_file_system
+# --
+
+data "huaweicloud_sfs_file_system" "${1:this}" {
+}

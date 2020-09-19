@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_amixr_on_call_shift
+# key: r_amixr_on_call_shift
+# --
+
+resource "amixr_on_call_shift" "${1:this}" {
+    duration = "${2:duration}"
+    name = "${3:name}"
+    schedule_id = "${4:schedule_id}"
+    start = "${5:start}"
+    type = "${6:type}"
+}

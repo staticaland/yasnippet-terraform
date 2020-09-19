@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sensu_filter
+# key: r_sensu_filter
+# --
+
+resource "sensu_filter" "${1:this}" {
+    action = "${2:action}"
+    expressions = "${3:expressions}"
+    name = "${4:name}"
+}

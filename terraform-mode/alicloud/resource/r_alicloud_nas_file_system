@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_nas_file_system
+# key: r_alicloud_nas_file_system
+# --
+
+resource "alicloud_nas_file_system" "${1:this}" {
+    protocol_type = "${2:protocol_type}"
+    storage_type = "${3:storage_type}"
+}

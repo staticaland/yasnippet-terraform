@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_space_quota
+# key: r_cloudfoundry_space_quota
+# --
+
+resource "cloudfoundry_space_quota" "${1:this}" {
+    allow_paid_service_plans = "${2:allow_paid_service_plans}"
+    name = "${3:name}"
+    org = "${4:org}"
+    total_memory = "${5:total_memory}"
+    total_routes = "${6:total_routes}"
+    total_services = "${7:total_services}"
+}

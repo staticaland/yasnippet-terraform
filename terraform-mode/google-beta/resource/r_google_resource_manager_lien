@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_resource_manager_lien
+# key: r_google_resource_manager_lien
+# --
+
+resource "google_resource_manager_lien" "${1:this}" {
+    origin = "${2:origin}"
+    parent = "${3:parent}"
+    reason = "${4:reason}"
+    restrictions = "${5:restrictions}"
+}

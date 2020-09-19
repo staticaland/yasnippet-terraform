@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_floating_ip_assignment
+# key: r_hcloud_floating_ip_assignment
+# --
+
+resource "hcloud_floating_ip_assignment" "${1:this}" {
+    floating_ip_id = "${2:floating_ip_id}"
+    server_id = "${3:server_id}"
+}

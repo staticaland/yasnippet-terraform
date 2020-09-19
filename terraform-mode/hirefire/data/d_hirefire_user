@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hirefire_user
+# key: d_hirefire_user
+# --
+
+data "hirefire_user" "${1:this}" {
+    id = "${2:id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_bgp_neighbor
+# key: r_junos_bgp_neighbor
+# --
+
+resource "junos_bgp_neighbor" "${1:this}" {
+    group = "${2:group}"
+    ip = "${3:ip}"
+}

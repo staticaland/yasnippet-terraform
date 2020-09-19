@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_spectrum_application
+# key: r_cloudflare_spectrum_application
+# --
+
+resource "cloudflare_spectrum_application" "${1:this}" {
+    protocol = "${2:protocol}"
+    zone_id = "${3:zone_id}"
+}

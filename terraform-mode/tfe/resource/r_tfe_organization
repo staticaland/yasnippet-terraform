@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tfe_organization
+# key: r_tfe_organization
+# --
+
+resource "tfe_organization" "${1:this}" {
+    email = "${2:email}"
+    name = "${3:name}"
+}

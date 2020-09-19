@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vault_identity_oidc_key
+# key: r_vault_identity_oidc_key
+# --
+
+resource "vault_identity_oidc_key" "${1:this}" {
+    name = "${2:name}"
+}

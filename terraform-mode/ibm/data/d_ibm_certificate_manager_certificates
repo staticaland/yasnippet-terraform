@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_certificate_manager_certificates
+# key: d_ibm_certificate_manager_certificates
+# --
+
+data "ibm_certificate_manager_certificates" "${1:this}" {
+    certificate_manager_instance_id = "${2:certificate_manager_instance_id}"
+}

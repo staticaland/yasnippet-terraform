@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_api_gateway_api
+# key: r_alicloud_api_gateway_api
+# --
+
+resource "alicloud_api_gateway_api" "${1:this}" {
+    auth_type = "${2:auth_type}"
+    description = "${3:description}"
+    group_id = "${4:group_id}"
+    name = "${5:name}"
+    service_type = "${6:service_type}"
+}

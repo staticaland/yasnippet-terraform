@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_user
+# key: r_keycloak_user
+# --
+
+resource "keycloak_user" "${1:this}" {
+    realm_id = "${2:realm_id}"
+    username = "${3:username}"
+}

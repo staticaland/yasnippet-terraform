@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_streaming_connect_harnesses
+# key: d_oci_streaming_connect_harnesses
+# --
+
+data "oci_streaming_connect_harnesses" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

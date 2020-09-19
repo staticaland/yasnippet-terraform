@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_infoblox_ptr_record
+# key: r_infoblox_ptr_record
+# --
+
+resource "infoblox_ptr_record" "${1:this}" {
+    cidr = "${2:cidr}"
+    ip_addr = "${3:ip_addr}"
+    tenant_id = "${4:tenant_id}"
+    vm_name = "${5:vm_name}"
+    zone = "${6:zone}"
+}

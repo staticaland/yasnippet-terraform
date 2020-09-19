@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontrollerautoconfig_custom
+# key: r_fortios_switchcontrollerautoconfig_custom
+# --
+
+resource "fortios_switchcontrollerautoconfig_custom" "${1:this}" {
+    name = "${2:name}"
+}

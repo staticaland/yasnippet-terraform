@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudfoundry_router_group
+# key: d_cloudfoundry_router_group
+# --
+
+data "cloudfoundry_router_group" "${1:this}" {
+    name = "${2:name}"
+}

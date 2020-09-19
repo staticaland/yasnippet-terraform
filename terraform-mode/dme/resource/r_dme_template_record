@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_dme_template_record
+# key: r_dme_template_record
+# --
+
+resource "dme_template_record" "${1:this}" {
+    name = "${2:name}"
+    template_id = "${3:template_id}"
+    ttl = "${4:ttl}"
+    type = "${5:type}"
+    value = "${6:value}"
+}

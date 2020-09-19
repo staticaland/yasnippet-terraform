@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontrollerhotspot20_icon
+# key: r_fortios_wirelesscontrollerhotspot20_icon
+# --
+
+resource "fortios_wirelesscontrollerhotspot20_icon" "${1:this}" {
+}

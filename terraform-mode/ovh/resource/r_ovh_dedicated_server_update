@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ovh_dedicated_server_update
+# key: r_ovh_dedicated_server_update
+# --
+
+resource "ovh_dedicated_server_update" "${1:this}" {
+    service_name = "${2:service_name}"
+}

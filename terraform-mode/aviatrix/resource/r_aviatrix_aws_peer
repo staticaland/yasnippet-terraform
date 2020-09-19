@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_peer
+# key: r_aviatrix_aws_peer
+# --
+
+resource "aviatrix_aws_peer" "${1:this}" {
+    account_name1 = "${2:account_name1}"
+    account_name2 = "${3:account_name2}"
+    vpc_id1 = "${4:vpc_id1}"
+    vpc_id2 = "${5:vpc_id2}"
+    vpc_reg1 = "${6:vpc_reg1}"
+    vpc_reg2 = "${7:vpc_reg2}"
+}

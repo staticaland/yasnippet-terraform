@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_container_vpc_worker_pool
+# key: r_ibm_container_vpc_worker_pool
+# --
+
+resource "ibm_container_vpc_worker_pool" "${1:this}" {
+    cluster = "${2:cluster}"
+    flavor = "${3:flavor}"
+    vpc_id = "${4:vpc_id}"
+    worker_count = "${5:worker_count}"
+    worker_pool_name = "${6:worker_pool_name}"
+}

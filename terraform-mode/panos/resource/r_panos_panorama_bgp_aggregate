@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_bgp_aggregate
+# key: r_panos_panorama_bgp_aggregate
+# --
+
+resource "panos_panorama_bgp_aggregate" "${1:this}" {
+    name = "${2:name}"
+    prefix = "${3:prefix}"
+    virtual_router = "${4:virtual_router}"
+}

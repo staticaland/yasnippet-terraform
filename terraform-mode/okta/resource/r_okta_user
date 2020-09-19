@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_okta_user
+# key: r_okta_user
+# --
+
+resource "okta_user" "${1:this}" {
+    email = "${2:email}"
+    first_name = "${3:first_name}"
+    last_name = "${4:last_name}"
+    login = "${5:login}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_ipsec_connection_tunnel_management
+# key: r_oci_core_ipsec_connection_tunnel_management
+# --
+
+resource "oci_core_ipsec_connection_tunnel_management" "${1:this}" {
+    ipsec_id = "${2:ipsec_id}"
+    routing = "${3:routing}"
+    tunnel_id = "${4:tunnel_id}"
+}

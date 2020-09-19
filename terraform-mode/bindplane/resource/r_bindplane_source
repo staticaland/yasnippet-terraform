@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_bindplane_source
+# key: r_bindplane_source
+# --
+
+resource "bindplane_source" "${1:this}" {
+    collection_interval = "${2:collection_interval}"
+    collector_id = "${3:collector_id}"
+    configuration = "${4:configuration}"
+    credential_id = "${5:credential_id}"
+    name = "${6:name}"
+    provisioning_timeout = "${7:provisioning_timeout}"
+    source_type = "${8:source_type}"
+}

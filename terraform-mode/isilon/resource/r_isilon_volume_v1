@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_isilon_volume_v1
+# key: r_isilon_volume_v1
+# --
+
+resource "isilon_volume_v1" "${1:this}" {
+    path = "${2:path}"
+}

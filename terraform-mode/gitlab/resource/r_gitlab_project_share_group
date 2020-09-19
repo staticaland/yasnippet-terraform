@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_project_share_group
+# key: r_gitlab_project_share_group
+# --
+
+resource "gitlab_project_share_group" "${1:this}" {
+    access_level = "${2:access_level}"
+    group_id = "${3:group_id}"
+    project_id = "${4:project_id}"
+}

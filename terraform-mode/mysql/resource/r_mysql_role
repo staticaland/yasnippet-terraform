@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_mysql_role
+# key: r_mysql_role
+# --
+
+resource "mysql_role" "${1:this}" {
+    name = "${2:name}"
+}

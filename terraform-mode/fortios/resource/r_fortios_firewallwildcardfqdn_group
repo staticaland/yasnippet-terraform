@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallwildcardfqdn_group
+# key: r_fortios_firewallwildcardfqdn_group
+# --
+
+resource "fortios_firewallwildcardfqdn_group" "${1:this}" {
+}

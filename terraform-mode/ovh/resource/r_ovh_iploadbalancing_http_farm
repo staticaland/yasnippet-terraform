@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_iploadbalancing_http_farm
+# key: r_ovh_iploadbalancing_http_farm
+# --
+
+resource "ovh_iploadbalancing_http_farm" "${1:this}" {
+    service_name = "${2:service_name}"
+    zone = "${3:zone}"
+}

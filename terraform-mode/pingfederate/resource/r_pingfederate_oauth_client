@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_oauth_client
+# key: r_pingfederate_oauth_client
+# --
+
+resource "pingfederate_oauth_client" "${1:this}" {
+    client_id = "${2:client_id}"
+    grant_types = "${3:grant_types}"
+    name = "${4:name}"
+}

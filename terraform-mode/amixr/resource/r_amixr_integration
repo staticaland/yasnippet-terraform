@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_amixr_integration
+# key: r_amixr_integration
+# --
+
+resource "amixr_integration" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

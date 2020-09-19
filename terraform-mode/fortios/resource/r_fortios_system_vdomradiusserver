@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_vdomradiusserver
+# key: r_fortios_system_vdomradiusserver
+# --
+
+resource "fortios_system_vdomradiusserver" "${1:this}" {
+    radius_server_vdom = "${2:radius_server_vdom}"
+}

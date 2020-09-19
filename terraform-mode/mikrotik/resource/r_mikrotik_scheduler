@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mikrotik_scheduler
+# key: r_mikrotik_scheduler
+# --
+
+resource "mikrotik_scheduler" "${1:this}" {
+    name = "${2:name}"
+    on_event = "${3:on_event}"
+}

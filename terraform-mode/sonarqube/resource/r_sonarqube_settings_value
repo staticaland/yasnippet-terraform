@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sonarqube_settings_value
+# key: r_sonarqube_settings_value
+# --
+
+resource "sonarqube_settings_value" "${1:this}" {
+    key = "${2:key}"
+    value = "${3:value}"
+}

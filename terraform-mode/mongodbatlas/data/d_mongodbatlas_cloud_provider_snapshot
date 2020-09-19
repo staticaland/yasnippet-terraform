@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_cloud_provider_snapshot
+# key: d_mongodbatlas_cloud_provider_snapshot
+# --
+
+data "mongodbatlas_cloud_provider_snapshot" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    project_id = "${3:project_id}"
+    snapshot_id = "${4:snapshot_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sensu_cluster_role
+# key: r_sensu_cluster_role
+# --
+
+resource "sensu_cluster_role" "${1:this}" {
+    name = "${2:name}"
+}

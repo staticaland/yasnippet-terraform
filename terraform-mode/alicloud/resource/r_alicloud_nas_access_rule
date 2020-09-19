@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_nas_access_rule
+# key: r_alicloud_nas_access_rule
+# --
+
+resource "alicloud_nas_access_rule" "${1:this}" {
+    access_group_name = "${2:access_group_name}"
+    source_cidr_ip = "${3:source_cidr_ip}"
+}

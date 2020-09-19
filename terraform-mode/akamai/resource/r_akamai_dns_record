@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_akamai_dns_record
+# key: r_akamai_dns_record
+# --
+
+resource "akamai_dns_record" "${1:this}" {
+    name = "${2:name}"
+    recordtype = "${3:recordtype}"
+    ttl = "${4:ttl}"
+    zone = "${5:zone}"
+}

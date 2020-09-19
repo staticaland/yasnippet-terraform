@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_firewall_filter
+# key: r_junos_firewall_filter
+# --
+
+resource "junos_firewall_filter" "${1:this}" {
+    family = "${2:family}"
+    name = "${3:name}"
+}

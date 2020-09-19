@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_databricks_group_instance_profile
+# key: r_databricks_group_instance_profile
+# --
+
+resource "databricks_group_instance_profile" "${1:this}" {
+    group_id = "${2:group_id}"
+    instance_profile_id = "${3:instance_profile_id}"
+}

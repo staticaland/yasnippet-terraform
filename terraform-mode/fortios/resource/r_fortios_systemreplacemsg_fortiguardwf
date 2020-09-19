@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_fortiguardwf
+# key: r_fortios_systemreplacemsg_fortiguardwf
+# --
+
+resource "fortios_systemreplacemsg_fortiguardwf" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

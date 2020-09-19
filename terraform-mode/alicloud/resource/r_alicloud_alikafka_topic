@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_alikafka_topic
+# key: r_alicloud_alikafka_topic
+# --
+
+resource "alicloud_alikafka_topic" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    remark = "${3:remark}"
+    topic = "${4:topic}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_civo_volume
+# key: d_civo_volume
+# --
+
+data "civo_volume" "${1:this}" {
+}

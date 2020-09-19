@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_phpipam_addresses
+# key: d_phpipam_addresses
+# --
+
+data "phpipam_addresses" "${1:this}" {
+    subnet_id = "${2:subnet_id}"
+}

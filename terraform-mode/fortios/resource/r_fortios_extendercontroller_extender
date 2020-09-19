@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_extendercontroller_extender
+# key: r_fortios_extendercontroller_extender
+# --
+
+resource "fortios_extendercontroller_extender" "${1:this}" {
+    admin = "${2:admin}"
+    fosid = "${3:fosid}"
+    role = "${4:role}"
+}

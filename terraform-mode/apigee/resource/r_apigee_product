@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_apigee_product
+# key: r_apigee_product
+# --
+
+resource "apigee_product" "${1:this}" {
+    approval_type = "${2:approval_type}"
+    name = "${3:name}"
+}

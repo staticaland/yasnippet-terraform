@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_organization_iam_audit_config
+# key: r_google_organization_iam_audit_config
+# --
+
+resource "google_organization_iam_audit_config" "${1:this}" {
+    org_id = "${2:org_id}"
+    service = "${3:service}"
+}

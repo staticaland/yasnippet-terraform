@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_cloudfoundry_service_key
+# key: d_cloudfoundry_service_key
+# --
+
+data "cloudfoundry_service_key" "${1:this}" {
+    name = "${2:name}"
+    service_instance = "${3:service_instance}"
+}

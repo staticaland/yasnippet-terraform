@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_oci_oce_oce_instance
+# key: r_oci_oce_oce_instance
+# --
+
+resource "oci_oce_oce_instance" "${1:this}" {
+    admin_email = "${2:admin_email}"
+    compartment_id = "${3:compartment_id}"
+    idcs_access_token = "${4:idcs_access_token}"
+    name = "${5:name}"
+    object_storage_namespace = "${6:object_storage_namespace}"
+    tenancy_id = "${7:tenancy_id}"
+    tenancy_name = "${8:tenancy_name}"
+}

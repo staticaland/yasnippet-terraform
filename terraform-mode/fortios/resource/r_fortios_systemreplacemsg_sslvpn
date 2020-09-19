@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_sslvpn
+# key: r_fortios_systemreplacemsg_sslvpn
+# --
+
+resource "fortios_systemreplacemsg_sslvpn" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

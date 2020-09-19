@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sensu_user
+# key: r_sensu_user
+# --
+
+resource "sensu_user" "${1:this}" {
+    name = "${2:name}"
+    password = "${3:password}"
+}

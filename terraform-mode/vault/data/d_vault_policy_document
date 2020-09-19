@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vault_policy_document
+# key: d_vault_policy_document
+# --
+
+data "vault_policy_document" "${1:this}" {
+}

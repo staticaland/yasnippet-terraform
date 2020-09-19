@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_aiven_kafka_schema
+# key: r_aiven_kafka_schema
+# --
+
+resource "aiven_kafka_schema" "${1:this}" {
+    project = "${2:project}"
+    schema = "${3:schema}"
+    service_name = "${4:service_name}"
+    subject_name = "${5:subject_name}"
+}

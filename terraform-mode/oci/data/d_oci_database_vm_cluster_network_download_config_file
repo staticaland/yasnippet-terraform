@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_vm_cluster_network_download_config_file
+# key: d_oci_database_vm_cluster_network_download_config_file
+# --
+
+data "oci_database_vm_cluster_network_download_config_file" "${1:this}" {
+    exadata_infrastructure_id = "${2:exadata_infrastructure_id}"
+    vm_cluster_network_id = "${3:vm_cluster_network_id}"
+}

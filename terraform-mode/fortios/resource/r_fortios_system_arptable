@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_arptable
+# key: r_fortios_system_arptable
+# --
+
+resource "fortios_system_arptable" "${1:this}" {
+    fosid = "${2:fosid}"
+    interface = "${3:interface}"
+    ip = "${4:ip}"
+    mac = "${5:mac}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_openshift_project_request
+# key: r_openshift_project_request
+# --
+
+resource "openshift_project_request" "${1:this}" {
+}

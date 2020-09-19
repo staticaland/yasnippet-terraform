@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_constellix_a_record
+# key: r_constellix_a_record
+# --
+
+resource "constellix_a_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    source_type = "${3:source_type}"
+    ttl = "${4:ttl}"
+}

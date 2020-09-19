@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_okta_social_idp
+# key: r_okta_social_idp
+# --
+
+resource "okta_social_idp" "${1:this}" {
+    name = "${2:name}"
+    scopes = "${3:scopes}"
+    type = "${4:type}"
+}

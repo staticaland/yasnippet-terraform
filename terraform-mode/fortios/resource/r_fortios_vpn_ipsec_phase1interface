@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpn_ipsec_phase1interface
+# key: r_fortios_vpn_ipsec_phase1interface
+# --
+
+resource "fortios_vpn_ipsec_phase1interface" "${1:this}" {
+    interface = "${2:interface}"
+    name = "${3:name}"
+    psksecret = "${4:psksecret}"
+    remote_gw = "${5:remote_gw}"
+    type = "${6:type}"
+}

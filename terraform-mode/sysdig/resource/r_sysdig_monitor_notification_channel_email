@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_notification_channel_email
+# key: r_sysdig_monitor_notification_channel_email
+# --
+
+resource "sysdig_monitor_notification_channel_email" "${1:this}" {
+    name = "${2:name}"
+    recipients = "${3:recipients}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aiven_kafka_schema_configuration
+# key: r_aiven_kafka_schema_configuration
+# --
+
+resource "aiven_kafka_schema_configuration" "${1:this}" {
+    compatibility_level = "${2:compatibility_level}"
+    project = "${3:project}"
+    service_name = "${4:service_name}"
+}

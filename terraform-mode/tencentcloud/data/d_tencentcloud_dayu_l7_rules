@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_dayu_l7_rules
+# key: d_tencentcloud_dayu_l7_rules
+# --
+
+data "tencentcloud_dayu_l7_rules" "${1:this}" {
+    resource_id = "${2:resource_id}"
+    resource_type = "${3:resource_type}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_dme_transfer_acl
+# key: r_dme_transfer_acl
+# --
+
+resource "dme_transfer_acl" "${1:this}" {
+    ips = "${2:ips}"
+    name = "${3:name}"
+}

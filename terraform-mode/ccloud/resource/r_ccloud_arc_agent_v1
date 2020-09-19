@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_ccloud_arc_agent_v1
+# key: r_ccloud_arc_agent_v1
+# --
+
+resource "ccloud_arc_agent_v1" "${1:this}" {
+}

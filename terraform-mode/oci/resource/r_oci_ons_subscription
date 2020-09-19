@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_ons_subscription
+# key: r_oci_ons_subscription
+# --
+
+resource "oci_ons_subscription" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    endpoint = "${3:endpoint}"
+    protocol = "${4:protocol}"
+    topic_id = "${5:topic_id}"
+}

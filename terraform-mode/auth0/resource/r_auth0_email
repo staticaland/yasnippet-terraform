@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_auth0_email
+# key: r_auth0_email
+# --
+
+resource "auth0_email" "${1:this}" {
+    default_from_address = "${2:default_from_address}"
+    name = "${3:name}"
+}

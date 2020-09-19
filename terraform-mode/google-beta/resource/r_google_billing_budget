@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_billing_budget
+# key: r_google_billing_budget
+# --
+
+resource "google_billing_budget" "${1:this}" {
+    billing_account = "${2:billing_account}"
+}

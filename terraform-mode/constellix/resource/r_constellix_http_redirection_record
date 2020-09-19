@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_constellix_http_redirection_record
+# key: r_constellix_http_redirection_record
+# --
+
+resource "constellix_http_redirection_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    redirect_type_id = "${3:redirect_type_id}"
+    source_type = "${4:source_type}"
+    ttl = "${5:ttl}"
+    url = "${6:url}"
+}

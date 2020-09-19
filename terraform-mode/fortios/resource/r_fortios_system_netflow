@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_netflow
+# key: r_fortios_system_netflow
+# --
+
+resource "fortios_system_netflow" "${1:this}" {
+}

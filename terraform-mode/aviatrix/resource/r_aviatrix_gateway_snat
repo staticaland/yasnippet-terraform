@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_gateway_snat
+# key: r_aviatrix_gateway_snat
+# --
+
+resource "aviatrix_gateway_snat" "${1:this}" {
+    gw_name = "${2:gw_name}"
+}

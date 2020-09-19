@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_emr_main_versions
+# key: d_alicloud_emr_main_versions
+# --
+
+data "alicloud_emr_main_versions" "${1:this}" {
+}

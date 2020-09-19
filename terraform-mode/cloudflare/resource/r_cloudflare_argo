@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_argo
+# key: r_cloudflare_argo
+# --
+
+resource "cloudflare_argo" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

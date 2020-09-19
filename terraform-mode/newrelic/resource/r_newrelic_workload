@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_workload
+# key: r_newrelic_workload
+# --
+
+resource "newrelic_workload" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_server_settings
+# key: r_pingfederate_server_settings
+# --
+
+resource "pingfederate_server_settings" "${1:this}" {
+}

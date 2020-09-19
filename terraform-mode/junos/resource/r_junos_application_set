@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_junos_application_set
+# key: r_junos_application_set
+# --
+
+resource "junos_application_set" "${1:this}" {
+    applications = "${2:applications}"
+    name = "${3:name}"
+}

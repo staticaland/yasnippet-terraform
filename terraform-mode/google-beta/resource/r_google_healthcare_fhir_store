@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_healthcare_fhir_store
+# key: r_google_healthcare_fhir_store
+# --
+
+resource "google_healthcare_fhir_store" "${1:this}" {
+    dataset = "${2:dataset}"
+    name = "${3:name}"
+}

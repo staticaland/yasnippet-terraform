@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_transloadit_template
+# key: r_transloadit_template
+# --
+
+resource "transloadit_template" "${1:this}" {
+    name = "${2:name}"
+    template = "${3:template}"
+}

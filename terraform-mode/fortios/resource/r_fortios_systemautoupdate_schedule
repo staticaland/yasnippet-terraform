@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemautoupdate_schedule
+# key: r_fortios_systemautoupdate_schedule
+# --
+
+resource "fortios_systemautoupdate_schedule" "${1:this}" {
+    frequency = "${2:frequency}"
+    status = "${3:status}"
+    time = "${4:time}"
+}

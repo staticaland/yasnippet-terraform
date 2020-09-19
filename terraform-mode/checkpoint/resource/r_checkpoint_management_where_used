@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_where_used
+# key: r_checkpoint_management_where_used
+# --
+
+resource "checkpoint_management_where_used" "${1:this}" {
+    name = "${2:name}"
+}

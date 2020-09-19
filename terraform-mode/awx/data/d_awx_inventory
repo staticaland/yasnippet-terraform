@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_awx_inventory
+# key: d_awx_inventory
+# --
+
+data "awx_inventory" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_cluster_sync
+# key: r_rancher2_cluster_sync
+# --
+
+resource "rancher2_cluster_sync" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

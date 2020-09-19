@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_blockchain_osn
+# key: r_oci_blockchain_osn
+# --
+
+resource "oci_blockchain_osn" "${1:this}" {
+    ad = "${2:ad}"
+    blockchain_platform_id = "${3:blockchain_platform_id}"
+}

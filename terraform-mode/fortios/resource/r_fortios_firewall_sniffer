@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_sniffer
+# key: r_fortios_firewall_sniffer
+# --
+
+resource "fortios_firewall_sniffer" "${1:this}" {
+    interface = "${2:interface}"
+}

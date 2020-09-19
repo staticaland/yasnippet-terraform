@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_gitlab_group
+# key: d_gitlab_group
+# --
+
+data "gitlab_group" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_heroku_team
+# key: d_heroku_team
+# --
+
+data "heroku_team" "${1:this}" {
+    name = "${2:name}"
+}

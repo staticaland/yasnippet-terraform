@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_cheesecake_cheesecakes
+# key: d_cheesecake_cheesecakes
+# --
+
+data "cheesecake_cheesecakes" "${1:this}" {
+}

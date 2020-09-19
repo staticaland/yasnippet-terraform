@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_project_feature_versioned_settings
+# key: r_teamcity_project_feature_versioned_settings
+# --
+
+resource "teamcity_project_feature_versioned_settings" "${1:this}" {
+    build_settings = "${2:build_settings}"
+    format = "${3:format}"
+    project_id = "${4:project_id}"
+    vcs_root_id = "${5:vcs_root_id}"
+}

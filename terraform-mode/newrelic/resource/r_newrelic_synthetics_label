@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_synthetics_label
+# key: r_newrelic_synthetics_label
+# --
+
+resource "newrelic_synthetics_label" "${1:this}" {
+    monitor_id = "${2:monitor_id}"
+    type = "${3:type}"
+    value = "${4:value}"
+}

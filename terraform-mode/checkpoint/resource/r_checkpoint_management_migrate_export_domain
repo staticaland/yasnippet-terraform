@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_migrate_export_domain
+# key: r_checkpoint_management_migrate_export_domain
+# --
+
+resource "checkpoint_management_migrate_export_domain" "${1:this}" {
+    domain = "${2:domain}"
+}

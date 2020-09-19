@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallschedule_group
+# key: r_fortios_firewallschedule_group
+# --
+
+resource "fortios_firewallschedule_group" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vultr_user
+# key: r_vultr_user
+# --
+
+resource "vultr_user" "${1:this}" {
+    email = "${2:email}"
+    name = "${3:name}"
+    password = "${4:password}"
+}

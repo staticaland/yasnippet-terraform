@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_public_ip
+# key: r_azurestack_public_ip
+# --
+
+resource "azurestack_public_ip" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    public_ip_address_allocation = "${4:public_ip_address_allocation}"
+    resource_group_name = "${5:resource_group_name}"
+}

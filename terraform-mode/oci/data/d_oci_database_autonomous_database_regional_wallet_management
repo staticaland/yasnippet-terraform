@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_autonomous_database_regional_wallet_management
+# key: d_oci_database_autonomous_database_regional_wallet_management
+# --
+
+data "oci_database_autonomous_database_regional_wallet_management" "${1:this}" {
+}

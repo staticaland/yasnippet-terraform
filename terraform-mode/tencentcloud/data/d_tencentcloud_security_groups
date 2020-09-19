@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_security_groups
+# key: d_tencentcloud_security_groups
+# --
+
+data "tencentcloud_security_groups" "${1:this}" {
+}

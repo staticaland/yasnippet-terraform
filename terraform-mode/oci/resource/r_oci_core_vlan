@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_vlan
+# key: r_oci_core_vlan
+# --
+
+resource "oci_core_vlan" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    cidr_block = "${3:cidr_block}"
+    compartment_id = "${4:compartment_id}"
+    vcn_id = "${5:vcn_id}"
+}

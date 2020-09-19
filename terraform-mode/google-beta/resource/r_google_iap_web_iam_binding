@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_web_iam_binding
+# key: r_google_iap_web_iam_binding
+# --
+
+resource "google_iap_web_iam_binding" "${1:this}" {
+    members = "${2:members}"
+    role = "${3:role}"
+}

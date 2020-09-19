@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_stripe_price
+# key: r_stripe_price
+# --
+
+resource "stripe_price" "${1:this}" {
+    currency = "${2:currency}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_iso_private
+# key: d_vultr_iso_private
+# --
+
+data "vultr_iso_private" "${1:this}" {
+}

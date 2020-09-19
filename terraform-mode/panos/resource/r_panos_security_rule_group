@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_panos_security_rule_group
+# key: r_panos_security_rule_group
+# --
+
+resource "panos_security_rule_group" "${1:this}" {
+}

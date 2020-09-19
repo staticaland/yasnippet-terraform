@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_firenet_vendor_integration
+# key: d_aviatrix_firenet_vendor_integration
+# --
+
+data "aviatrix_firenet_vendor_integration" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    password = "${3:password}"
+    public_ip = "${4:public_ip}"
+    username = "${5:username}"
+    vendor_type = "${6:vendor_type}"
+    vpc_id = "${7:vpc_id}"
+}

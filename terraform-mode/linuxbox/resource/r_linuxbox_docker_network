@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linuxbox_docker_network
+# key: r_linuxbox_docker_network
+# --
+
+resource "linuxbox_docker_network" "${1:this}" {
+    host_address = "${2:host_address}"
+    name = "${3:name}"
+    ssh_key = "${4:ssh_key}"
+}

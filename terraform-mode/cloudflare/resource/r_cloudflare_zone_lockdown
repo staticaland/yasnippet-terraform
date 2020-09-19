@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_zone_lockdown
+# key: r_cloudflare_zone_lockdown
+# --
+
+resource "cloudflare_zone_lockdown" "${1:this}" {
+    urls = "${2:urls}"
+    zone_id = "${3:zone_id}"
+}

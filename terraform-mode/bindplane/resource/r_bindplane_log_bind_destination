@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bindplane_log_bind_destination
+# key: r_bindplane_log_bind_destination
+# --
+
+resource "bindplane_log_bind_destination" "${1:this}" {
+    agent_id = "${2:agent_id}"
+    destination_config_id = "${3:destination_config_id}"
+}

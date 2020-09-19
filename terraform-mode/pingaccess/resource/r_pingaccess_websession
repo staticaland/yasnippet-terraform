@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_websession
+# key: r_pingaccess_websession
+# --
+
+resource "pingaccess_websession" "${1:this}" {
+    audience = "${2:audience}"
+    name = "${3:name}"
+}

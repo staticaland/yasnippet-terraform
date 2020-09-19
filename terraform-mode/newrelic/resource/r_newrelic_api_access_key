@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_api_access_key
+# key: r_newrelic_api_access_key
+# --
+
+resource "newrelic_api_access_key" "${1:this}" {
+    account_id = "${2:account_id}"
+    key_type = "${3:key_type}"
+}

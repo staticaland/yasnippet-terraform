@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_notebooks_location
+# key: r_google_notebooks_location
+# --
+
+resource "google_notebooks_location" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontrollerhotspot20_anqpipaddresstype
+# key: r_fortios_wirelesscontrollerhotspot20_anqpipaddresstype
+# --
+
+resource "fortios_wirelesscontrollerhotspot20_anqpipaddresstype" "${1:this}" {
+}

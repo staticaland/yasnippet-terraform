@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_kafka_mirrormaker
+# key: d_aiven_kafka_mirrormaker
+# --
+
+data "aiven_kafka_mirrormaker" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

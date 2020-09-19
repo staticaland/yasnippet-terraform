@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_replication_config
+# key: r_artifactory_replication_config
+# --
+
+resource "artifactory_replication_config" "${1:this}" {
+    cron_exp = "${2:cron_exp}"
+    repo_key = "${3:repo_key}"
+}

@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_role_mapper
+# key: r_keycloak_ldap_role_mapper
+# --
+
+resource "keycloak_ldap_role_mapper" "${1:this}" {
+    ldap_roles_dn = "${2:ldap_roles_dn}"
+    ldap_user_federation_id = "${3:ldap_user_federation_id}"
+    membership_ldap_attribute = "${4:membership_ldap_attribute}"
+    membership_user_ldap_attribute = "${5:membership_user_ldap_attribute}"
+    name = "${6:name}"
+    realm_id = "${7:realm_id}"
+    role_name_ldap_attribute = "${8:role_name_ldap_attribute}"
+    role_object_classes = "${9:role_object_classes}"
+}

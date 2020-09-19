@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_network_vlan
+# key: d_ibm_network_vlan
+# --
+
+data "ibm_network_vlan" "${1:this}" {
+}

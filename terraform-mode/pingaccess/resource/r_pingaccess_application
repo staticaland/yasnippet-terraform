@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_application
+# key: r_pingaccess_application
+# --
+
+resource "pingaccess_application" "${1:this}" {
+    application_type = "${2:application_type}"
+    context_root = "${3:context_root}"
+    destination = "${4:destination}"
+    name = "${5:name}"
+    site_id = "${6:site_id}"
+    virtual_host_ids = "${7:virtual_host_ids}"
+}

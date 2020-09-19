@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_volume
+# key: r_scaleway_volume
+# --
+
+resource "scaleway_volume" "${1:this}" {
+    name = "${2:name}"
+    size_in_gb = "${3:size_in_gb}"
+    type = "${4:type}"
+}

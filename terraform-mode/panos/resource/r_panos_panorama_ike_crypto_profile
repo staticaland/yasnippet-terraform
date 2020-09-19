@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_ike_crypto_profile
+# key: r_panos_panorama_ike_crypto_profile
+# --
+
+resource "panos_panorama_ike_crypto_profile" "${1:this}" {
+    authentications = "${2:authentications}"
+    dh_groups = "${3:dh_groups}"
+    encryptions = "${4:encryptions}"
+    name = "${5:name}"
+}

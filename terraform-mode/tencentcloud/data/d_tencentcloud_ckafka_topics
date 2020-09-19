@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_ckafka_topics
+# key: d_tencentcloud_ckafka_topics
+# --
+
+data "tencentcloud_ckafka_topics" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

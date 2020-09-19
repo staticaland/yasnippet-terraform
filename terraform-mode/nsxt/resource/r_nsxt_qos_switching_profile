@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_qos_switching_profile
+# key: r_nsxt_qos_switching_profile
+# --
+
+resource "nsxt_qos_switching_profile" "${1:this}" {
+}

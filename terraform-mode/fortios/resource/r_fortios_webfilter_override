@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webfilter_override
+# key: r_fortios_webfilter_override
+# --
+
+resource "fortios_webfilter_override" "${1:this}" {
+    expires = "${2:expires}"
+    new_profile = "${3:new_profile}"
+    old_profile = "${4:old_profile}"
+    user = "${5:user}"
+}

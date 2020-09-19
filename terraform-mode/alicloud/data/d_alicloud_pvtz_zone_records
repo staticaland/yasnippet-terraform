@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_pvtz_zone_records
+# key: d_alicloud_pvtz_zone_records
+# --
+
+data "alicloud_pvtz_zone_records" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

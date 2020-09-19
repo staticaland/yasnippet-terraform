@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_gsuite_user_attributes
+# key: d_gsuite_user_attributes
+# --
+
+data "gsuite_user_attributes" "${1:this}" {
+}

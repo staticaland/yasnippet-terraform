@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_security_group
+# key: r_qingcloud_security_group
+# --
+
+resource "qingcloud_security_group" "${1:this}" {
+    name = "${2:name}"
+}

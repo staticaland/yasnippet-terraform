@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_compute_placement_group
+# key: d_ibm_compute_placement_group
+# --
+
+data "ibm_compute_placement_group" "${1:this}" {
+    name = "${2:name}"
+}

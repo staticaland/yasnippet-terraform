@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vra_storage_profile_azure
+# key: r_vra_storage_profile_azure
+# --
+
+resource "vra_storage_profile_azure" "${1:this}" {
+    default_item = "${2:default_item}"
+    name = "${3:name}"
+    region_id = "${4:region_id}"
+}

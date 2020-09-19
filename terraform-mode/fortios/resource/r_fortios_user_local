@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_local
+# key: r_fortios_user_local
+# --
+
+resource "fortios_user_local" "${1:this}" {
+    status = "${2:status}"
+    type = "${3:type}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_okta_idp_metadata_saml
+# key: d_okta_idp_metadata_saml
+# --
+
+data "okta_idp_metadata_saml" "${1:this}" {
+}

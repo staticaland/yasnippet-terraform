@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_phpipam_subnet
+# key: r_phpipam_subnet
+# --
+
+resource "phpipam_subnet" "${1:this}" {
+    section_id = "${2:section_id}"
+    subnet_address = "${3:subnet_address}"
+    subnet_mask = "${4:subnet_mask}"
+}

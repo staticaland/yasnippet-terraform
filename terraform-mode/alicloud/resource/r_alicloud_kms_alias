@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_kms_alias
+# key: r_alicloud_kms_alias
+# --
+
+resource "alicloud_kms_alias" "${1:this}" {
+    alias_name = "${2:alias_name}"
+    key_id = "${3:key_id}"
+}

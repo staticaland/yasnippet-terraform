@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_nosql_table
+# key: d_oci_nosql_table
+# --
+
+data "oci_nosql_table" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    table_name_or_id = "${3:table_name_or_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_access_service_token
+# key: r_cloudflare_access_service_token
+# --
+
+resource "cloudflare_access_service_token" "${1:this}" {
+    account_id = "${2:account_id}"
+    name = "${3:name}"
+}

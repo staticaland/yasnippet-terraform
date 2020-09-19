@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_dataproc_autoscaling_policy
+# key: r_google_dataproc_autoscaling_policy
+# --
+
+resource "google_dataproc_autoscaling_policy" "${1:this}" {
+    policy_id = "${2:policy_id}"
+}

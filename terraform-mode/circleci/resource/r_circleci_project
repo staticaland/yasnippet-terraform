@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_circleci_project
+# key: r_circleci_project
+# --
+
+resource "circleci_project" "${1:this}" {
+    name = "${2:name}"
+}

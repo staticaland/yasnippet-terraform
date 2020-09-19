@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_compute
+# key: r_exoscale_compute
+# --
+
+resource "exoscale_compute" "${1:this}" {
+    disk_size = "${2:disk_size}"
+    zone = "${3:zone}"
+}

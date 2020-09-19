@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_consul_acl_auth_method
+# key: r_consul_acl_auth_method
+# --
+
+resource "consul_acl_auth_method" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

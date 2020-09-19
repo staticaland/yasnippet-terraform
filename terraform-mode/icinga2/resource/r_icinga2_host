@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_icinga2_host
+# key: r_icinga2_host
+# --
+
+resource "icinga2_host" "${1:this}" {
+    address = "${2:address}"
+    check_command = "${3:check_command}"
+    hostname = "${4:hostname}"
+}

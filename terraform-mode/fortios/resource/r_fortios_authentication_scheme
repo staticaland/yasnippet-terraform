@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_authentication_scheme
+# key: r_fortios_authentication_scheme
+# --
+
+resource "fortios_authentication_scheme" "${1:this}" {
+    method = "${2:method}"
+}

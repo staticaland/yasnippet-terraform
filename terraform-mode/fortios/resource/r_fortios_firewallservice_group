@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallservice_group
+# key: r_fortios_firewallservice_group
+# --
+
+resource "fortios_firewallservice_group" "${1:this}" {
+    name = "${2:name}"
+}

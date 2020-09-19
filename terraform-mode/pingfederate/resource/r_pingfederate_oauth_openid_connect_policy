@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_oauth_openid_connect_policy
+# key: r_pingfederate_oauth_openid_connect_policy
+# --
+
+resource "pingfederate_oauth_openid_connect_policy" "${1:this}" {
+    name = "${2:name}"
+    policy_id = "${3:policy_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_wavefront_cloud_integration_aws_external_id
+# key: r_wavefront_cloud_integration_aws_external_id
+# --
+
+resource "wavefront_cloud_integration_aws_external_id" "${1:this}" {
+}

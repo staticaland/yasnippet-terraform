@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_filesystem_file_writer
+# key: r_filesystem_file_writer
+# --
+
+resource "filesystem_file_writer" "${1:this}" {
+    path = "${2:path}"
+}

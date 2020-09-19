@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: r_oci_ocvp_sddc
+# key: r_oci_ocvp_sddc
+# --
+
+resource "oci_ocvp_sddc" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    compute_availability_domain = "${3:compute_availability_domain}"
+    esxi_hosts_count = "${4:esxi_hosts_count}"
+    nsx_edge_uplink1vlan_id = "${5:nsx_edge_uplink1vlan_id}"
+    nsx_edge_uplink2vlan_id = "${6:nsx_edge_uplink2vlan_id}"
+    nsx_edge_vtep_vlan_id = "${7:nsx_edge_vtep_vlan_id}"
+    nsx_vtep_vlan_id = "${8:nsx_vtep_vlan_id}"
+    provisioning_subnet_id = "${9:provisioning_subnet_id}"
+    ssh_authorized_keys = "${10:ssh_authorized_keys}"
+    vmotion_vlan_id = "${11:vmotion_vlan_id}"
+    vmware_software_version = "${12:vmware_software_version}"
+    vsan_vlan_id = "${13:vsan_vlan_id}"
+    vsphere_vlan_id = "${14:vsphere_vlan_id}"
+}

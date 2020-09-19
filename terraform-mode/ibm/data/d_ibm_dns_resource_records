@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dns_resource_records
+# key: d_ibm_dns_resource_records
+# --
+
+data "ibm_dns_resource_records" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    zone_id = "${3:zone_id}"
+}

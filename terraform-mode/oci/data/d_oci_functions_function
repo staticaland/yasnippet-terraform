@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_functions_function
+# key: d_oci_functions_function
+# --
+
+data "oci_functions_function" "${1:this}" {
+    function_id = "${2:function_id}"
+}

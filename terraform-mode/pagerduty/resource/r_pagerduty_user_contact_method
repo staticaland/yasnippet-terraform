@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_user_contact_method
+# key: r_pagerduty_user_contact_method
+# --
+
+resource "pagerduty_user_contact_method" "${1:this}" {
+    address = "${2:address}"
+    label = "${3:label}"
+    type = "${4:type}"
+    user_id = "${5:user_id}"
+}

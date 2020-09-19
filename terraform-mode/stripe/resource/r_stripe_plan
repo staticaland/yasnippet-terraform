@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_stripe_plan
+# key: r_stripe_plan
+# --
+
+resource "stripe_plan" "${1:this}" {
+    currency = "${2:currency}"
+    interval = "${3:interval}"
+    product = "${4:product}"
+}

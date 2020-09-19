@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_packet_device_bgp_neighbors
+# key: d_packet_device_bgp_neighbors
+# --
+
+data "packet_device_bgp_neighbors" "${1:this}" {
+    device_id = "${2:device_id}"
+}

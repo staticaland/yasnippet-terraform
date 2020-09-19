@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_dms_enterprise_user
+# key: r_alicloud_dms_enterprise_user
+# --
+
+resource "alicloud_dms_enterprise_user" "${1:this}" {
+    uid = "${2:uid}"
+}

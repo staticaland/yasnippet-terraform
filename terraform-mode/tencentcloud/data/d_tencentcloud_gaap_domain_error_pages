@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_gaap_domain_error_pages
+# key: d_tencentcloud_gaap_domain_error_pages
+# --
+
+data "tencentcloud_gaap_domain_error_pages" "${1:this}" {
+    domain = "${2:domain}"
+    listener_id = "${3:listener_id}"
+}

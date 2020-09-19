@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_vpn_connections
+# key: d_outscale_vpn_connections
+# --
+
+data "outscale_vpn_connections" "${1:this}" {
+}

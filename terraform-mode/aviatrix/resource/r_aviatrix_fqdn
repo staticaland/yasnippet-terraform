@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_fqdn
+# key: r_aviatrix_fqdn
+# --
+
+resource "aviatrix_fqdn" "${1:this}" {
+    fqdn_tag = "${2:fqdn_tag}"
+}

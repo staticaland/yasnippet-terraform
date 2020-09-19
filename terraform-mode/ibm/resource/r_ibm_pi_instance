@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_instance
+# key: r_ibm_pi_instance
+# --
+
+resource "ibm_pi_instance" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_image_id = "${3:pi_image_id}"
+    pi_instance_name = "${4:pi_instance_name}"
+    pi_key_pair_name = "${5:pi_key_pair_name}"
+    pi_memory = "${6:pi_memory}"
+    pi_network_ids = "${7:pi_network_ids}"
+    pi_proc_type = "${8:pi_proc_type}"
+    pi_processors = "${9:pi_processors}"
+    pi_sys_type = "${10:pi_sys_type}"
+}

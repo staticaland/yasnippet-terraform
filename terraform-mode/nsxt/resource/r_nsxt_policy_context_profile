@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_context_profile
+# key: r_nsxt_policy_context_profile
+# --
+
+resource "nsxt_policy_context_profile" "${1:this}" {
+    display_name = "${2:display_name}"
+}

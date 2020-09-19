@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_rollbar_project
+# key: r_rollbar_project
+# --
+
+resource "rollbar_project" "${1:this}" {
+    name = "${2:name}"
+}

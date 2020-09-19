@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_api_extension
+# key: r_commercetools_api_extension
+# --
+
+resource "commercetools_api_extension" "${1:this}" {
+    destination = "${2:destination}"
+}

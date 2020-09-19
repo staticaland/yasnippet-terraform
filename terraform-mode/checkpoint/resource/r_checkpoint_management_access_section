@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_access_section
+# key: r_checkpoint_management_access_section
+# --
+
+resource "checkpoint_management_access_section" "${1:this}" {
+    layer = "${2:layer}"
+    name = "${3:name}"
+    position = "${4:position}"
+}

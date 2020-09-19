@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_packet_organization
+# key: d_packet_organization
+# --
+
+data "packet_organization" "${1:this}" {
+}

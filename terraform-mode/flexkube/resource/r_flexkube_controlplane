@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_controlplane
+# key: r_flexkube_controlplane
+# --
+
+resource "flexkube_controlplane" "${1:this}" {
+}

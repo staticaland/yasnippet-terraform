@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_vlan
+# key: d_oci_core_vlan
+# --
+
+data "oci_core_vlan" "${1:this}" {
+    vlan_id = "${2:vlan_id}"
+}

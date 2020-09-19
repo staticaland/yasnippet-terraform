@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_volume
+# key: r_hcloud_volume
+# --
+
+resource "hcloud_volume" "${1:this}" {
+    name = "${2:name}"
+    size = "${3:size}"
+}

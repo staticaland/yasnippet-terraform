@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_https_rule
+# key: d_checkpoint_management_data_https_rule
+# --
+
+data "checkpoint_management_data_https_rule" "${1:this}" {
+    layer = "${2:layer}"
+}

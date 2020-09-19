@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_vmfs_datastore
+# key: r_vsphere_vmfs_datastore
+# --
+
+resource "vsphere_vmfs_datastore" "${1:this}" {
+    disks = "${2:disks}"
+    host_system_id = "${3:host_system_id}"
+    name = "${4:name}"
+}

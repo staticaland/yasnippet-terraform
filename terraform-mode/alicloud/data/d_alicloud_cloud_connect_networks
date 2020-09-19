@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cloud_connect_networks
+# key: d_alicloud_cloud_connect_networks
+# --
+
+data "alicloud_cloud_connect_networks" "${1:this}" {
+}

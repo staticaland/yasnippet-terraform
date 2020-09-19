@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_bare_metal_plan
+# key: d_vultr_bare_metal_plan
+# --
+
+data "vultr_bare_metal_plan" "${1:this}" {
+}

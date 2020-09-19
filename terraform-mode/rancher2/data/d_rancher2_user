@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_user
+# key: d_rancher2_user
+# --
+
+data "rancher2_user" "${1:this}" {
+}

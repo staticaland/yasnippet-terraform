@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_devicemanager_device
+# key: r_fortios_fmg_devicemanager_device
+# --
+
+resource "fortios_fmg_devicemanager_device" "${1:this}" {
+    device_name = "${2:device_name}"
+    ipaddr = "${3:ipaddr}"
+    userid = "${4:userid}"
+}

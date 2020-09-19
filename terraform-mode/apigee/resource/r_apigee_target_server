@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_apigee_target_server
+# key: r_apigee_target_server
+# --
+
+resource "apigee_target_server" "${1:this}" {
+    enabled = "${2:enabled}"
+    env = "${3:env}"
+    host = "${4:host}"
+    name = "${5:name}"
+    port = "${6:port}"
+}

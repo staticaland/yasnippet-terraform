@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_vpc
+# key: d_aviatrix_vpc
+# --
+
+data "aviatrix_vpc" "${1:this}" {
+    name = "${2:name}"
+}

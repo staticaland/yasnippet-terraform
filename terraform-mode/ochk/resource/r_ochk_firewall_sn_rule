@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ochk_firewall_sn_rule
+# key: r_ochk_firewall_sn_rule
+# --
+
+resource "ochk_firewall_sn_rule" "${1:this}" {
+    display_name = "${2:display_name}"
+    gateway_policy_id = "${3:gateway_policy_id}"
+    scope = "${4:scope}"
+}

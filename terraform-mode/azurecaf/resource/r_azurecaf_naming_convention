@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_azurecaf_naming_convention
+# key: r_azurecaf_naming_convention
+# --
+
+resource "azurecaf_naming_convention" "${1:this}" {
+}

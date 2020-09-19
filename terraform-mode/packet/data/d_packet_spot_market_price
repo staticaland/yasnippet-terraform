@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_packet_spot_market_price
+# key: d_packet_spot_market_price
+# --
+
+data "packet_spot_market_price" "${1:this}" {
+    facility = "${2:facility}"
+    plan = "${3:plan}"
+}

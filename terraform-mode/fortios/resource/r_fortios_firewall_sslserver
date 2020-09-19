@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_sslserver
+# key: r_fortios_firewall_sslserver
+# --
+
+resource "fortios_firewall_sslserver" "${1:this}" {
+    ip = "${2:ip}"
+    port = "${3:port}"
+    ssl_cert = "${4:ssl_cert}"
+}

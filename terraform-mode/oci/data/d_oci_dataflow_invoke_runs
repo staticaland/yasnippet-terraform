@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_dataflow_invoke_runs
+# key: d_oci_dataflow_invoke_runs
+# --
+
+data "oci_dataflow_invoke_runs" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

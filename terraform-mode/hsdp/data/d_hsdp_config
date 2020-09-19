@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hsdp_config
+# key: d_hsdp_config
+# --
+
+data "hsdp_config" "${1:this}" {
+    service = "${2:service}"
+}

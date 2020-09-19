@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_databricks_instance_pool
+# key: r_databricks_instance_pool
+# --
+
+resource "databricks_instance_pool" "${1:this}" {
+    idle_instance_autotermination_minutes = "${2:idle_instance_autotermination_minutes}"
+    instance_pool_name = "${3:instance_pool_name}"
+    min_idle_instances = "${4:min_idle_instances}"
+    node_type_id = "${5:node_type_id}"
+}

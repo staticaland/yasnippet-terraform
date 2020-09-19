@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cis_global_load_balancer
+# key: r_ibm_cis_global_load_balancer
+# --
+
+resource "ibm_cis_global_load_balancer" "${1:this}" {
+    cis_id = "${2:cis_id}"
+    default_pool_ids = "${3:default_pool_ids}"
+    domain_id = "${4:domain_id}"
+    fallback_pool_id = "${5:fallback_pool_id}"
+    name = "${6:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_compute_bms_server_v2
+# key: r_opentelekomcloud_compute_bms_server_v2
+# --
+
+resource "opentelekomcloud_compute_bms_server_v2" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    name = "${3:name}"
+}

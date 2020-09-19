@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_opc_compute_vnic
+# key: d_opc_compute_vnic
+# --
+
+data "opc_compute_vnic" "${1:this}" {
+    name = "${2:name}"
+}

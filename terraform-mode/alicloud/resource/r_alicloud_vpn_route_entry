@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_vpn_route_entry
+# key: r_alicloud_vpn_route_entry
+# --
+
+resource "alicloud_vpn_route_entry" "${1:this}" {
+    next_hop = "${2:next_hop}"
+    publish_vpc = "${3:publish_vpc}"
+    route_dest = "${4:route_dest}"
+    vpn_gateway_id = "${5:vpn_gateway_id}"
+    weight = "${6:weight}"
+}

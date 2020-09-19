@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_access_application
+# key: r_cloudflare_access_application
+# --
+
+resource "cloudflare_access_application" "${1:this}" {
+    domain = "${2:domain}"
+    name = "${3:name}"
+}

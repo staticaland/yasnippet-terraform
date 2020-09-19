@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_account
+# key: d_ibm_account
+# --
+
+data "ibm_account" "${1:this}" {
+    org_guid = "${2:org_guid}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_nas_mount_targets
+# key: d_alicloud_nas_mount_targets
+# --
+
+data "alicloud_nas_mount_targets" "${1:this}" {
+    file_system_id = "${2:file_system_id}"
+}

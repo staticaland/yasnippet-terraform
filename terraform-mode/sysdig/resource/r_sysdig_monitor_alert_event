@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_alert_event
+# key: r_sysdig_monitor_alert_event
+# --
+
+resource "sysdig_monitor_alert_event" "${1:this}" {
+    event_count = "${2:event_count}"
+    event_name = "${3:event_name}"
+    event_rel = "${4:event_rel}"
+    name = "${5:name}"
+    source = "${6:source}"
+    trigger_after_minutes = "${7:trigger_after_minutes}"
+}

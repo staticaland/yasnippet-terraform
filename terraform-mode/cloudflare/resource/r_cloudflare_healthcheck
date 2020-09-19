@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_healthcheck
+# key: r_cloudflare_healthcheck
+# --
+
+resource "cloudflare_healthcheck" "${1:this}" {
+    address = "${2:address}"
+    name = "${3:name}"
+    type = "${4:type}"
+    zone_id = "${5:zone_id}"
+}

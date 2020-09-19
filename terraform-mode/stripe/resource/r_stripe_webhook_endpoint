@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_stripe_webhook_endpoint
+# key: r_stripe_webhook_endpoint
+# --
+
+resource "stripe_webhook_endpoint" "${1:this}" {
+    enabled_events = "${2:enabled_events}"
+    url = "${3:url}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_launchdarkly_feature_flag_environment
+# key: r_launchdarkly_feature_flag_environment
+# --
+
+resource "launchdarkly_feature_flag_environment" "${1:this}" {
+    env_key = "${2:env_key}"
+    flag_id = "${3:flag_id}"
+}

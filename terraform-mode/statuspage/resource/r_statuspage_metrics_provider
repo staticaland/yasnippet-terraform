@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_statuspage_metrics_provider
+# key: r_statuspage_metrics_provider
+# --
+
+resource "statuspage_metrics_provider" "${1:this}" {
+    page_id = "${2:page_id}"
+    type = "${3:type}"
+}

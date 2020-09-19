@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_time_offset
+# key: r_time_offset
+# --
+
+resource "time_offset" "${1:this}" {
+}

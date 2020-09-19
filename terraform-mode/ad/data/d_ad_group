@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ad_group
+# key: d_ad_group
+# --
+
+data "ad_group" "${1:this}" {
+    guid = "${2:guid}"
+}

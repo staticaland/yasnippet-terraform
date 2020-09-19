@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema
+# key: r_mso_schema
+# --
+
+resource "mso_schema" "${1:this}" {
+    name = "${2:name}"
+    template_name = "${3:template_name}"
+    tenant_id = "${4:tenant_id}"
+}

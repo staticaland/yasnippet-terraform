@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_report_dataset
+# key: r_fortios_report_dataset
+# --
+
+resource "fortios_report_dataset" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_mns_topic_subscription
+# key: r_alicloud_mns_topic_subscription
+# --
+
+resource "alicloud_mns_topic_subscription" "${1:this}" {
+    endpoint = "${2:endpoint}"
+    name = "${3:name}"
+    topic_name = "${4:topic_name}"
+}

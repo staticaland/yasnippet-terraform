@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_dme_dns_record
+# key: d_dme_dns_record
+# --
+
+data "dme_dns_record" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    name = "${3:name}"
+    type = "${4:type}"
+}

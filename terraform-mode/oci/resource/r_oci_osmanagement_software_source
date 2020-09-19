@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_osmanagement_software_source
+# key: r_oci_osmanagement_software_source
+# --
+
+resource "oci_osmanagement_software_source" "${1:this}" {
+    arch_type = "${2:arch_type}"
+    compartment_id = "${3:compartment_id}"
+    display_name = "${4:display_name}"
+}

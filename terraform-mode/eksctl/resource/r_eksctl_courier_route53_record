@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_eksctl_courier_route53_record
+# key: r_eksctl_courier_route53_record
+# --
+
+resource "eksctl_courier_route53_record" "${1:this}" {
+    name = "${2:name}"
+    step_interval = "${3:step_interval}"
+    step_weight = "${4:step_weight}"
+    zone_id = "${5:zone_id}"
+}

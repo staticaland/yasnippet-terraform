@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_service_incident_rule
+# key: r_opsgenie_service_incident_rule
+# --
+
+resource "opsgenie_service_incident_rule" "${1:this}" {
+    service_id = "${2:service_id}"
+}

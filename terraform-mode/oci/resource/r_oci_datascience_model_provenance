@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_datascience_model_provenance
+# key: r_oci_datascience_model_provenance
+# --
+
+resource "oci_datascience_model_provenance" "${1:this}" {
+    model_id = "${2:model_id}"
+}

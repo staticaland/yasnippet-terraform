@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cloud_connect_network_attachment
+# key: r_alicloud_cloud_connect_network_attachment
+# --
+
+resource "alicloud_cloud_connect_network_attachment" "${1:this}" {
+    ccn_id = "${2:ccn_id}"
+    sag_id = "${3:sag_id}"
+}

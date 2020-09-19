@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_monitor_policy_group
+# key: r_tencentcloud_monitor_policy_group
+# --
+
+resource "tencentcloud_monitor_policy_group" "${1:this}" {
+    group_name = "${2:group_name}"
+    policy_view_name = "${3:policy_view_name}"
+    remark = "${4:remark}"
+}

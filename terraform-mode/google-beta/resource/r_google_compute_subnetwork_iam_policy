@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_subnetwork_iam_policy
+# key: r_google_compute_subnetwork_iam_policy
+# --
+
+resource "google_compute_subnetwork_iam_policy" "${1:this}" {
+    policy_data = "${2:policy_data}"
+    subnetwork = "${3:subnetwork}"
+}

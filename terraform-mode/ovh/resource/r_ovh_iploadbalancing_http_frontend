@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_iploadbalancing_http_frontend
+# key: r_ovh_iploadbalancing_http_frontend
+# --
+
+resource "ovh_iploadbalancing_http_frontend" "${1:this}" {
+    port = "${2:port}"
+    service_name = "${3:service_name}"
+    zone = "${4:zone}"
+}

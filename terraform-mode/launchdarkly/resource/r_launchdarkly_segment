@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_launchdarkly_segment
+# key: r_launchdarkly_segment
+# --
+
+resource "launchdarkly_segment" "${1:this}" {
+    env_key = "${2:env_key}"
+    key = "${3:key}"
+    name = "${4:name}"
+}

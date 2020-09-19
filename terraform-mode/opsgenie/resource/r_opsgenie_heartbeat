@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_heartbeat
+# key: r_opsgenie_heartbeat
+# --
+
+resource "opsgenie_heartbeat" "${1:this}" {
+    enabled = "${2:enabled}"
+    interval = "${3:interval}"
+    interval_unit = "${4:interval_unit}"
+    name = "${5:name}"
+}

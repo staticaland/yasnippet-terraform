@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cfs_access_rules
+# key: d_tencentcloud_cfs_access_rules
+# --
+
+data "tencentcloud_cfs_access_rules" "${1:this}" {
+    access_group_id = "${2:access_group_id}"
+}

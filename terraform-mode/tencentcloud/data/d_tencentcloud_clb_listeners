@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_clb_listeners
+# key: d_tencentcloud_clb_listeners
+# --
+
+data "tencentcloud_clb_listeners" "${1:this}" {
+    clb_id = "${2:clb_id}"
+}

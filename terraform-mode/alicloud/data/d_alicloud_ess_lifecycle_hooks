@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ess_lifecycle_hooks
+# key: d_alicloud_ess_lifecycle_hooks
+# --
+
+data "alicloud_ess_lifecycle_hooks" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_app_domain_shared
+# key: d_ibm_app_domain_shared
+# --
+
+data "ibm_app_domain_shared" "${1:this}" {
+    name = "${2:name}"
+}

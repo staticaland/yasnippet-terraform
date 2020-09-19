@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cms_site_monitor
+# key: r_alicloud_cms_site_monitor
+# --
+
+resource "alicloud_cms_site_monitor" "${1:this}" {
+    address = "${2:address}"
+    task_name = "${3:task_name}"
+    task_type = "${4:task_type}"
+}

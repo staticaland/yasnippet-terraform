@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webproxy_forwardserver
+# key: r_fortios_webproxy_forwardserver
+# --
+
+resource "fortios_webproxy_forwardserver" "${1:this}" {
+}

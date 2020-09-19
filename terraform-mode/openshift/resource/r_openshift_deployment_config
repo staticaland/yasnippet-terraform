@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_openshift_deployment_config
+# key: r_openshift_deployment_config
+# --
+
+resource "openshift_deployment_config" "${1:this}" {
+}

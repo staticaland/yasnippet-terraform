@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_mongodb_instance
+# key: r_tencentcloud_mongodb_instance
+# --
+
+resource "tencentcloud_mongodb_instance" "${1:this}" {
+    available_zone = "${2:available_zone}"
+    engine_version = "${3:engine_version}"
+    instance_name = "${4:instance_name}"
+    machine_type = "${5:machine_type}"
+    memory = "${6:memory}"
+    password = "${7:password}"
+    volume = "${8:volume}"
+}

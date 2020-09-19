@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_client_aggregate_policy
+# key: r_keycloak_openid_client_aggregate_policy
+# --
+
+resource "keycloak_openid_client_aggregate_policy" "${1:this}" {
+    decision_strategy = "${2:decision_strategy}"
+    name = "${3:name}"
+    policies = "${4:policies}"
+    realm_id = "${5:realm_id}"
+    resource_server_id = "${6:resource_server_id}"
+}

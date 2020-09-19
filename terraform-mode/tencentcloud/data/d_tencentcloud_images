@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_images
+# key: d_tencentcloud_images
+# --
+
+data "tencentcloud_images" "${1:this}" {
+}

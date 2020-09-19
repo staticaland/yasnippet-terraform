@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_idm_host
+# key: r_idm_host
+# --
+
+resource "idm_host" "${1:this}" {
+    fqdn = "${2:fqdn}"
+}

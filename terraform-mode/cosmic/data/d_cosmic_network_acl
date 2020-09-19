@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_cosmic_network_acl
+# key: d_cosmic_network_acl
+# --
+
+data "cosmic_network_acl" "${1:this}" {
+}

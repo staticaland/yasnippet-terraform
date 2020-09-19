@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_vault_egp_policy
+# key: r_vault_egp_policy
+# --
+
+resource "vault_egp_policy" "${1:this}" {
+    enforcement_level = "${2:enforcement_level}"
+    name = "${3:name}"
+    paths = "${4:paths}"
+    policy = "${5:policy}"
+}

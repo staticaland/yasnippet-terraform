@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw_peering
+# key: r_aviatrix_aws_tgw_peering
+# --
+
+resource "aviatrix_aws_tgw_peering" "${1:this}" {
+    tgw_name1 = "${2:tgw_name1}"
+    tgw_name2 = "${3:tgw_name2}"
+}

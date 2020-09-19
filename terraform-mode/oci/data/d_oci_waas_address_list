@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_address_list
+# key: d_oci_waas_address_list
+# --
+
+data "oci_waas_address_list" "${1:this}" {
+    address_list_id = "${2:address_list_id}"
+}

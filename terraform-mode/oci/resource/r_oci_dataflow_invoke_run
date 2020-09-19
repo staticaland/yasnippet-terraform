@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_dataflow_invoke_run
+# key: r_oci_dataflow_invoke_run
+# --
+
+resource "oci_dataflow_invoke_run" "${1:this}" {
+    application_id = "${2:application_id}"
+    compartment_id = "${3:compartment_id}"
+    display_name = "${4:display_name}"
+}

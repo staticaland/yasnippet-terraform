@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_bgp_neighbor
+# key: r_nsxt_policy_bgp_neighbor
+# --
+
+resource "nsxt_policy_bgp_neighbor" "${1:this}" {
+    bgp_path = "${2:bgp_path}"
+    display_name = "${3:display_name}"
+    neighbor_address = "${4:neighbor_address}"
+    remote_as_num = "${5:remote_as_num}"
+}

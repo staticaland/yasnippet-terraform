@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_trafficpolicy
+# key: r_fortios_switchcontroller_trafficpolicy
+# --
+
+resource "fortios_switchcontroller_trafficpolicy" "${1:this}" {
+    name = "${2:name}"
+}

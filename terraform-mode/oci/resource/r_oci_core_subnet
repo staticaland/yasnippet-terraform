@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_subnet
+# key: r_oci_core_subnet
+# --
+
+resource "oci_core_subnet" "${1:this}" {
+    cidr_block = "${2:cidr_block}"
+    compartment_id = "${3:compartment_id}"
+    vcn_id = "${4:vcn_id}"
+}

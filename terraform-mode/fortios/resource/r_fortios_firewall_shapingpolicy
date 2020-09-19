@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_shapingpolicy
+# key: r_fortios_firewall_shapingpolicy
+# --
+
+resource "fortios_firewall_shapingpolicy" "${1:this}" {
+}

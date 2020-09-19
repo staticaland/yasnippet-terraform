@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dayu_cc_https_policy
+# key: r_tencentcloud_dayu_cc_https_policy
+# --
+
+resource "tencentcloud_dayu_cc_https_policy" "${1:this}" {
+    domain = "${2:domain}"
+    name = "${3:name}"
+    resource_id = "${4:resource_id}"
+    resource_type = "${5:resource_type}"
+    rule_id = "${6:rule_id}"
+}

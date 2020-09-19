@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_certificate
+# key: r_huaweicloud_lb_certificate
+# --
+
+resource "huaweicloud_lb_certificate" "${1:this}" {
+    certificate = "${2:certificate}"
+}

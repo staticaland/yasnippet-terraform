@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_cdn
+# key: r_digitalocean_cdn
+# --
+
+resource "digitalocean_cdn" "${1:this}" {
+    origin = "${2:origin}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_hcloud_load_balancer
+# key: d_hcloud_load_balancer
+# --
+
+data "hcloud_load_balancer" "${1:this}" {
+}

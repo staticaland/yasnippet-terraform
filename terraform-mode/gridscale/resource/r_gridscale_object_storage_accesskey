@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_object_storage_accesskey
+# key: r_gridscale_object_storage_accesskey
+# --
+
+resource "gridscale_object_storage_accesskey" "${1:this}" {
+}

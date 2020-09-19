@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jira_project_membership
+# key: r_jira_project_membership
+# --
+
+resource "jira_project_membership" "${1:this}" {
+    project_key = "${2:project_key}"
+    role_id = "${3:role_id}"
+}

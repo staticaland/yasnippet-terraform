@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_app
+# key: d_ibm_app
+# --
+
+data "ibm_app" "${1:this}" {
+    name = "${2:name}"
+    space_guid = "${3:space_guid}"
+}

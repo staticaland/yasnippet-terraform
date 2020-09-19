@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_msgraph_application
+# key: r_msgraph_application
+# --
+
+resource "msgraph_application" "${1:this}" {
+    display_name = "${2:display_name}"
+}

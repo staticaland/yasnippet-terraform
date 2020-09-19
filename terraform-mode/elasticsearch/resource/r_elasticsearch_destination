@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_destination
+# key: r_elasticsearch_destination
+# --
+
+resource "elasticsearch_destination" "${1:this}" {
+    body = "${2:body}"
+}

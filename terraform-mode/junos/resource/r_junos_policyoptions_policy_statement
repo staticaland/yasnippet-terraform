@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_policyoptions_policy_statement
+# key: r_junos_policyoptions_policy_statement
+# --
+
+resource "junos_policyoptions_policy_statement" "${1:this}" {
+    name = "${2:name}"
+}

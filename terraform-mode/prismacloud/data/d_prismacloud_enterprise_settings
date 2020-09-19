@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_enterprise_settings
+# key: d_prismacloud_enterprise_settings
+# --
+
+data "prismacloud_enterprise_settings" "${1:this}" {
+}

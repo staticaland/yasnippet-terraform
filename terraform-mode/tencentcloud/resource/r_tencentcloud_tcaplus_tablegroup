@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_tcaplus_tablegroup
+# key: r_tencentcloud_tcaplus_tablegroup
+# --
+
+resource "tencentcloud_tcaplus_tablegroup" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    tablegroup_name = "${3:tablegroup_name}"
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_api_gateway_api
+# key: r_huaweicloud_api_gateway_api
+# --
+
+resource "huaweicloud_api_gateway_api" "${1:this}" {
+    auth_type = "${2:auth_type}"
+    backend_type = "${3:backend_type}"
+    example_success_response = "${4:example_success_response}"
+    group_id = "${5:group_id}"
+    name = "${6:name}"
+    request_method = "${7:request_method}"
+    request_uri = "${8:request_uri}"
+}

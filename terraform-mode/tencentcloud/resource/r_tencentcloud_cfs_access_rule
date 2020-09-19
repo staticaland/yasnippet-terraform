@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cfs_access_rule
+# key: r_tencentcloud_cfs_access_rule
+# --
+
+resource "tencentcloud_cfs_access_rule" "${1:this}" {
+    access_group_id = "${2:access_group_id}"
+    auth_client_ip = "${3:auth_client_ip}"
+    priority = "${4:priority}"
+}

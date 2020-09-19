@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_partition
+# key: r_sumologic_partition
+# --
+
+resource "sumologic_partition" "${1:this}" {
+    is_compliant = "${2:is_compliant}"
+    name = "${3:name}"
+    routing_expression = "${4:routing_expression}"
+}

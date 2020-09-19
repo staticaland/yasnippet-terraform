@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_placement_group
+# key: r_ibm_compute_placement_group
+# --
+
+resource "ibm_compute_placement_group" "${1:this}" {
+    datacenter = "${2:datacenter}"
+    name = "${3:name}"
+    pod = "${4:pod}"
+}

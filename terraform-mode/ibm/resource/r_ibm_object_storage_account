@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_ibm_object_storage_account
+# key: r_ibm_object_storage_account
+# --
+
+resource "ibm_object_storage_account" "${1:this}" {
+}

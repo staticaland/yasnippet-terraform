@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_databricks_aws_assume_role_policy
+# key: d_databricks_aws_assume_role_policy
+# --
+
+data "databricks_aws_assume_role_policy" "${1:this}" {
+    external_id = "${2:external_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_azuredevops_release_stage_variables
+# key: d_azuredevops_release_stage_variables
+# --
+
+data "azuredevops_release_stage_variables" "${1:this}" {
+    definition_id = "${2:definition_id}"
+    project_id = "${3:project_id}"
+    stage_name = "${4:stage_name}"
+}

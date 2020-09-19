@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_datastore_index
+# key: r_google_datastore_index
+# --
+
+resource "google_datastore_index" "${1:this}" {
+    kind = "${2:kind}"
+}

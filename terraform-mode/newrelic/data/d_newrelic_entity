@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_newrelic_entity
+# key: d_newrelic_entity
+# --
+
+data "newrelic_entity" "${1:this}" {
+    name = "${2:name}"
+}

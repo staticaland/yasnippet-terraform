@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallssh_localca
+# key: r_fortios_firewallssh_localca
+# --
+
+resource "fortios_firewallssh_localca" "${1:this}" {
+    private_key = "${2:private_key}"
+    public_key = "${3:public_key}"
+}

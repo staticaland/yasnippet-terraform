@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortiadc_loadbalance_content_rewriting
+# key: r_fortiadc_loadbalance_content_rewriting
+# --
+
+resource "fortiadc_loadbalance_content_rewriting" "${1:this}" {
+    action = "${2:action}"
+    action_type = "${3:action_type}"
+    name = "${4:name}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_as_scaling_group
+# key: r_tencentcloud_as_scaling_group
+# --
+
+resource "tencentcloud_as_scaling_group" "${1:this}" {
+    configuration_id = "${2:configuration_id}"
+    max_size = "${3:max_size}"
+    min_size = "${4:min_size}"
+    scaling_group_name = "${5:scaling_group_name}"
+    vpc_id = "${6:vpc_id}"
+}

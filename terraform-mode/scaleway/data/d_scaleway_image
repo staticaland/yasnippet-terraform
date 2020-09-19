@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_image
+# key: d_scaleway_image
+# --
+
+data "scaleway_image" "${1:this}" {
+    architecture = "${2:architecture}"
+}

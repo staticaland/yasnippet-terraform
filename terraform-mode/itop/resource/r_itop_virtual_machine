@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_itop_virtual_machine
+# key: r_itop_virtual_machine
+# --
+
+resource "itop_virtual_machine" "${1:this}" {
+    env_id = "${2:env_id}"
+    name = "${3:name}"
+    org_id = "${4:org_id}"
+}

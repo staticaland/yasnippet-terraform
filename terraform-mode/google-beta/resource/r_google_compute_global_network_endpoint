@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_global_network_endpoint
+# key: r_google_compute_global_network_endpoint
+# --
+
+resource "google_compute_global_network_endpoint" "${1:this}" {
+    global_network_endpoint_group = "${2:global_network_endpoint_group}"
+    port = "${3:port}"
+}

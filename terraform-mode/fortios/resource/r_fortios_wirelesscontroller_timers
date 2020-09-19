@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontroller_timers
+# key: r_fortios_wirelesscontroller_timers
+# --
+
+resource "fortios_wirelesscontroller_timers" "${1:this}" {
+}

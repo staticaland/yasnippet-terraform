@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_packet_spot_market_request
+# key: r_packet_spot_market_request
+# --
+
+resource "packet_spot_market_request" "${1:this}" {
+    devices_max = "${2:devices_max}"
+    devices_min = "${3:devices_min}"
+    facilities = "${4:facilities}"
+    max_bid_price = "${5:max_bid_price}"
+    project_id = "${6:project_id}"
+}

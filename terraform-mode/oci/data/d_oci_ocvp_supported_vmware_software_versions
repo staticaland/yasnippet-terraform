@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_ocvp_supported_vmware_software_versions
+# key: d_oci_ocvp_supported_vmware_software_versions
+# --
+
+data "oci_ocvp_supported_vmware_software_versions" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

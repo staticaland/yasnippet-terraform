@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ess_scaling_rule
+# key: r_alicloud_ess_scaling_rule
+# --
+
+resource "alicloud_ess_scaling_rule" "${1:this}" {
+    scaling_group_id = "${2:scaling_group_id}"
+}

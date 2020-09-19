@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_content_library
+# key: r_vsphere_content_library
+# --
+
+resource "vsphere_content_library" "${1:this}" {
+    name = "${2:name}"
+    storage_backing = "${3:storage_backing}"
+}

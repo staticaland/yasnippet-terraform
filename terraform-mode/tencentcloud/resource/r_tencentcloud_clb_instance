@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_clb_instance
+# key: r_tencentcloud_clb_instance
+# --
+
+resource "tencentcloud_clb_instance" "${1:this}" {
+    clb_name = "${2:clb_name}"
+    network_type = "${3:network_type}"
+}

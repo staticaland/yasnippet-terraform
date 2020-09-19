@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_packet_volume
+# key: d_packet_volume
+# --
+
+data "packet_volume" "${1:this}" {
+}

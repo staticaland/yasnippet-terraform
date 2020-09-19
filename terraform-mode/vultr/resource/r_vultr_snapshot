@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_snapshot
+# key: r_vultr_snapshot
+# --
+
+resource "vultr_snapshot" "${1:this}" {
+    vps_id = "${2:vps_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_akamai_property
+# key: d_akamai_property
+# --
+
+data "akamai_property" "${1:this}" {
+    name = "${2:name}"
+}

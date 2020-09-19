@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_web_type_compute_iam_member
+# key: r_google_iap_web_type_compute_iam_member
+# --
+
+resource "google_iap_web_type_compute_iam_member" "${1:this}" {
+    member = "${2:member}"
+    role = "${3:role}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_databricks_azure_adls_gen1_mount
+# key: r_databricks_azure_adls_gen1_mount
+# --
+
+resource "databricks_azure_adls_gen1_mount" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret_key = "${3:client_secret_key}"
+    client_secret_scope = "${4:client_secret_scope}"
+    mount_name = "${5:mount_name}"
+    storage_resource_name = "${6:storage_resource_name}"
+    tenant_id = "${7:tenant_id}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_confluentcloud_kafka_cluster
+# key: r_confluentcloud_kafka_cluster
+# --
+
+resource "confluentcloud_kafka_cluster" "${1:this}" {
+    availability = "${2:availability}"
+    environment_id = "${3:environment_id}"
+    name = "${4:name}"
+    region = "${5:region}"
+    service_provider = "${6:service_provider}"
+}

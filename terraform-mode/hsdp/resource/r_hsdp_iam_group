@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_iam_group
+# key: r_hsdp_iam_group
+# --
+
+resource "hsdp_iam_group" "${1:this}" {
+    description = "${2:description}"
+    managing_organization = "${3:managing_organization}"
+    name = "${4:name}"
+    roles = "${5:roles}"
+}

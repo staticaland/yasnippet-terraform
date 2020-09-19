@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_user_policy
+# key: d_ibm_iam_user_policy
+# --
+
+data "ibm_iam_user_policy" "${1:this}" {
+    ibm_id = "${2:ibm_id}"
+}

@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_vgw_conn
+# key: r_aviatrix_vgw_conn
+# --
+
+resource "aviatrix_vgw_conn" "${1:this}" {
+    bgp_local_as_num = "${2:bgp_local_as_num}"
+    bgp_vgw_account = "${3:bgp_vgw_account}"
+    bgp_vgw_id = "${4:bgp_vgw_id}"
+    bgp_vgw_region = "${5:bgp_vgw_region}"
+    conn_name = "${6:conn_name}"
+    gw_name = "${7:gw_name}"
+    vpc_id = "${8:vpc_id}"
+}

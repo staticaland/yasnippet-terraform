@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_slug
+# key: r_heroku_slug
+# --
+
+resource "heroku_slug" "${1:this}" {
+    app = "${2:app}"
+    process_types = "${3:process_types}"
+}

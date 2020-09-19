@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_public_network
+# key: d_gridscale_public_network
+# --
+
+data "gridscale_public_network" "${1:this}" {
+}

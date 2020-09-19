@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_oss_bucket_object
+# key: r_alicloud_oss_bucket_object
+# --
+
+resource "alicloud_oss_bucket_object" "${1:this}" {
+    bucket = "${2:bucket}"
+    key = "${3:key}"
+}

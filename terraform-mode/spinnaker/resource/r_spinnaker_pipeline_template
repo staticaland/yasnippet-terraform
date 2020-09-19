@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_spinnaker_pipeline_template
+# key: r_spinnaker_pipeline_template
+# --
+
+resource "spinnaker_pipeline_template" "${1:this}" {
+    template = "${2:template}"
+}

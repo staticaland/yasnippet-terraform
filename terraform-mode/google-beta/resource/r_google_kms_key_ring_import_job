@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_kms_key_ring_import_job
+# key: r_google_kms_key_ring_import_job
+# --
+
+resource "google_kms_key_ring_import_job" "${1:this}" {
+    import_job_id = "${2:import_job_id}"
+    import_method = "${3:import_method}"
+    key_ring = "${4:key_ring}"
+    protection_level = "${5:protection_level}"
+}

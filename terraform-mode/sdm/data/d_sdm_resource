@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sdm_resource
+# key: d_sdm_resource
+# --
+
+data "sdm_resource" "${1:this}" {
+}

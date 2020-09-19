@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_oauth_server
+# key: r_pingaccess_oauth_server
+# --
+
+resource "pingaccess_oauth_server" "${1:this}" {
+    introspection_endpoint = "${2:introspection_endpoint}"
+    subject_attribute_name = "${3:subject_attribute_name}"
+    targets = "${4:targets}"
+    trusted_certificate_group_id = "${5:trusted_certificate_group_id}"
+}

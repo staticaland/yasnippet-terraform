@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_aiven_kafka_topic
+# key: d_aiven_kafka_topic
+# --
+
+data "aiven_kafka_topic" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+    topic_name = "${4:topic_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_vpc_acl_attachment
+# key: r_tencentcloud_vpc_acl_attachment
+# --
+
+resource "tencentcloud_vpc_acl_attachment" "${1:this}" {
+    acl_id = "${2:acl_id}"
+    subnet_id = "${3:subnet_id}"
+}

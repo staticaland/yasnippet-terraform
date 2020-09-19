@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_compute_cluster_vm_dependency_rule
+# key: r_vsphere_compute_cluster_vm_dependency_rule
+# --
+
+resource "vsphere_compute_cluster_vm_dependency_rule" "${1:this}" {
+    compute_cluster_id = "${2:compute_cluster_id}"
+    dependency_vm_group_name = "${3:dependency_vm_group_name}"
+    name = "${4:name}"
+    vm_group_name = "${5:vm_group_name}"
+}

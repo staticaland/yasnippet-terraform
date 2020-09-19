@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_user
+# key: r_sysdig_user
+# --
+
+resource "sysdig_user" "${1:this}" {
+    email = "${2:email}"
+}

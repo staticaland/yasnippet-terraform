@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_dns_ns_record_set
+# key: r_dns_ns_record_set
+# --
+
+resource "dns_ns_record_set" "${1:this}" {
+    name = "${2:name}"
+    nameservers = "${3:nameservers}"
+    zone = "${4:zone}"
+}

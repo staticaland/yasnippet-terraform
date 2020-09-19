@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_network_acl_rule
+# key: r_huaweicloud_network_acl_rule
+# --
+
+resource "huaweicloud_network_acl_rule" "${1:this}" {
+    action = "${2:action}"
+    protocol = "${3:protocol}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallschedule_onetime
+# key: r_fortios_firewallschedule_onetime
+# --
+
+resource "fortios_firewallschedule_onetime" "${1:this}" {
+    end = "${2:end}"
+    name = "${3:name}"
+    start = "${4:start}"
+}

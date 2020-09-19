@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_linode_lke_cluster
+# key: r_linode_lke_cluster
+# --
+
+resource "linode_lke_cluster" "${1:this}" {
+    k8s_version = "${2:k8s_version}"
+    label = "${3:label}"
+    region = "${4:region}"
+}

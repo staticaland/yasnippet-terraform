@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_oos_templates
+# key: d_alicloud_oos_templates
+# --
+
+data "alicloud_oos_templates" "${1:this}" {
+}

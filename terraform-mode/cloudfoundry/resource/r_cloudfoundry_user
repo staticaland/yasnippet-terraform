@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_user
+# key: r_cloudfoundry_user
+# --
+
+resource "cloudfoundry_user" "${1:this}" {
+    name = "${2:name}"
+}

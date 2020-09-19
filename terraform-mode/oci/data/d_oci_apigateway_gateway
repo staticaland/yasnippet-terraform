@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_apigateway_gateway
+# key: d_oci_apigateway_gateway
+# --
+
+data "oci_apigateway_gateway" "${1:this}" {
+    gateway_id = "${2:gateway_id}"
+}

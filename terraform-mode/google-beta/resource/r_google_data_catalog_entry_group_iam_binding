@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_data_catalog_entry_group_iam_binding
+# key: r_google_data_catalog_entry_group_iam_binding
+# --
+
+resource "google_data_catalog_entry_group_iam_binding" "${1:this}" {
+    entry_group = "${2:entry_group}"
+    members = "${3:members}"
+    role = "${4:role}"
+}

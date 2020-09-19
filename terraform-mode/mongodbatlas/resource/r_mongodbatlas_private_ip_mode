@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_private_ip_mode
+# key: r_mongodbatlas_private_ip_mode
+# --
+
+resource "mongodbatlas_private_ip_mode" "${1:this}" {
+    enabled = "${2:enabled}"
+    project_id = "${3:project_id}"
+}

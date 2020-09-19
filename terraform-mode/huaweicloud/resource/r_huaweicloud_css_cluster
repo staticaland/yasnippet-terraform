@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_css_cluster
+# key: r_huaweicloud_css_cluster
+# --
+
+resource "huaweicloud_css_cluster" "${1:this}" {
+    engine_version = "${2:engine_version}"
+    name = "${3:name}"
+}

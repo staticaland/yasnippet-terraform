@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_vlan_segment
+# key: r_nsxt_policy_vlan_segment
+# --
+
+resource "nsxt_policy_vlan_segment" "${1:this}" {
+    display_name = "${2:display_name}"
+    transport_zone_path = "${3:transport_zone_path}"
+    vlan_ids = "${4:vlan_ids}"
+}

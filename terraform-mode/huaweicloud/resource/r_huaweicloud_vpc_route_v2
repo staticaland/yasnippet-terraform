@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_vpc_route_v2
+# key: r_huaweicloud_vpc_route_v2
+# --
+
+resource "huaweicloud_vpc_route_v2" "${1:this}" {
+    destination = "${2:destination}"
+    nexthop = "${3:nexthop}"
+    type = "${4:type}"
+    vpc_id = "${5:vpc_id}"
+}

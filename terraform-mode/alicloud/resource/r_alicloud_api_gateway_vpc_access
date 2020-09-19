@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_api_gateway_vpc_access
+# key: r_alicloud_api_gateway_vpc_access
+# --
+
+resource "alicloud_api_gateway_vpc_access" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    name = "${3:name}"
+    port = "${4:port}"
+    vpc_id = "${5:vpc_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sshcommand_command
+# key: r_sshcommand_command
+# --
+
+resource "sshcommand_command" "${1:this}" {
+    command = "${2:command}"
+    host = "${3:host}"
+    private_key = "${4:private_key}"
+}

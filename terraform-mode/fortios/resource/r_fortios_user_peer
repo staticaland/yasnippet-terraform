@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_peer
+# key: r_fortios_user_peer
+# --
+
+resource "fortios_user_peer" "${1:this}" {
+}

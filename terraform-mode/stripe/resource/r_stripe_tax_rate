@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_stripe_tax_rate
+# key: r_stripe_tax_rate
+# --
+
+resource "stripe_tax_rate" "${1:this}" {
+    active = "${2:active}"
+    display_name = "${3:display_name}"
+    inclusive = "${4:inclusive}"
+    percentage = "${5:percentage}"
+}

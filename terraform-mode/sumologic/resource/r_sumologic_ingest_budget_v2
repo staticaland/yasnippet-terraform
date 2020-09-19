@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_ingest_budget_v2
+# key: r_sumologic_ingest_budget_v2
+# --
+
+resource "sumologic_ingest_budget_v2" "${1:this}" {
+    action = "${2:action}"
+    capacity_bytes = "${3:capacity_bytes}"
+    name = "${4:name}"
+    reset_time = "${5:reset_time}"
+    scope = "${6:scope}"
+    timezone = "${7:timezone}"
+}

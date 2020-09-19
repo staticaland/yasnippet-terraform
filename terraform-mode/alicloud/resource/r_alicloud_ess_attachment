@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ess_attachment
+# key: r_alicloud_ess_attachment
+# --
+
+resource "alicloud_ess_attachment" "${1:this}" {
+    instance_ids = "${2:instance_ids}"
+    scaling_group_id = "${3:scaling_group_id}"
+}

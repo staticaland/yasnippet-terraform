@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sentry_team
+# key: r_sentry_team
+# --
+
+resource "sentry_team" "${1:this}" {
+    name = "${2:name}"
+    organization = "${3:organization}"
+}

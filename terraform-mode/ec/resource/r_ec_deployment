@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ec_deployment
+# key: r_ec_deployment
+# --
+
+resource "ec_deployment" "${1:this}" {
+    deployment_template_id = "${2:deployment_template_id}"
+    region = "${3:region}"
+    version = "${4:version}"
+}

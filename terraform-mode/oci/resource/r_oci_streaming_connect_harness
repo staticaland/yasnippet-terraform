@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_streaming_connect_harness
+# key: r_oci_streaming_connect_harness
+# --
+
+resource "oci_streaming_connect_harness" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    name = "${3:name}"
+}

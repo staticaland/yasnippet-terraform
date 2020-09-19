@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_objecttagging
+# key: r_fortios_system_objecttagging
+# --
+
+resource "fortios_system_objecttagging" "${1:this}" {
+}

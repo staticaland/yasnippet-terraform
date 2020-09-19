@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovh_publiccloud_private_network
+# key: r_ovh_publiccloud_private_network
+# --
+
+resource "ovh_publiccloud_private_network" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

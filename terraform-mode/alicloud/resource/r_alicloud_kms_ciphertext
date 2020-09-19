@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_kms_ciphertext
+# key: r_alicloud_kms_ciphertext
+# --
+
+resource "alicloud_kms_ciphertext" "${1:this}" {
+    key_id = "${2:key_id}"
+    plaintext = "${3:plaintext}"
+}

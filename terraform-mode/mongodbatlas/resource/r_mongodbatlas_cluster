@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_cluster
+# key: r_mongodbatlas_cluster
+# --
+
+resource "mongodbatlas_cluster" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+    provider_instance_size_name = "${4:provider_instance_size_name}"
+    provider_name = "${5:provider_name}"
+}

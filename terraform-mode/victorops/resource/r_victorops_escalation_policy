@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_victorops_escalation_policy
+# key: r_victorops_escalation_policy
+# --
+
+resource "victorops_escalation_policy" "${1:this}" {
+    name = "${2:name}"
+    team_id = "${3:team_id}"
+}

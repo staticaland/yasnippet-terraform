@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_lb_virtual_server
+# key: r_nsxt_policy_lb_virtual_server
+# --
+
+resource "nsxt_policy_lb_virtual_server" "${1:this}" {
+    application_profile_path = "${2:application_profile_path}"
+    display_name = "${3:display_name}"
+    ip_address = "${4:ip_address}"
+    ports = "${5:ports}"
+}

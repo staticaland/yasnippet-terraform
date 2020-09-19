@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_hetznerdns_zone
+# key: d_hetznerdns_zone
+# --
+
+data "hetznerdns_zone" "${1:this}" {
+    name = "${2:name}"
+}

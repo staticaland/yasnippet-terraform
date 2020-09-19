@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dms_queue
+# key: r_huaweicloud_dms_queue
+# --
+
+resource "huaweicloud_dms_queue" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_managedswitch
+# key: r_fortios_switchcontroller_managedswitch
+# --
+
+resource "fortios_switchcontroller_managedswitch" "${1:this}" {
+    fsw_wan1_peer = "${2:fsw_wan1_peer}"
+    switch_id = "${3:switch_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nomad_plugins
+# key: d_nomad_plugins
+# --
+
+data "nomad_plugins" "${1:this}" {
+}

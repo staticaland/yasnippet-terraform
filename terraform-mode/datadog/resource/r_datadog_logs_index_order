@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_logs_index_order
+# key: r_datadog_logs_index_order
+# --
+
+resource "datadog_logs_index_order" "${1:this}" {
+    indexes = "${2:indexes}"
+    name = "${3:name}"
+}

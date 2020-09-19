@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_ipaddress
+# key: r_exoscale_ipaddress
+# --
+
+resource "exoscale_ipaddress" "${1:this}" {
+    zone = "${2:zone}"
+}

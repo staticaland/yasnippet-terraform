@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_nic_private_ip
+# key: r_outscale_nic_private_ip
+# --
+
+resource "outscale_nic_private_ip" "${1:this}" {
+    nic_id = "${2:nic_id}"
+}

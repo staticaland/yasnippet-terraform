@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_newrelic_synthetics_monitor_location
+# key: d_newrelic_synthetics_monitor_location
+# --
+
+data "newrelic_synthetics_monitor_location" "${1:this}" {
+    label = "${2:label}"
+}

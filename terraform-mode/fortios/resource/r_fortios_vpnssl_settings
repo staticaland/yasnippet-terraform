@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnssl_settings
+# key: r_fortios_vpnssl_settings
+# --
+
+resource "fortios_vpnssl_settings" "${1:this}" {
+}

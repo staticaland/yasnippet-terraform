@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_mrs_job_v1
+# key: r_huaweicloud_mrs_job_v1
+# --
+
+resource "huaweicloud_mrs_job_v1" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    jar_path = "${3:jar_path}"
+    job_name = "${4:job_name}"
+    job_type = "${5:job_type}"
+}

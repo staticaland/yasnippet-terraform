@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_netbox_prefix
+# key: d_netbox_prefix
+# --
+
+data "netbox_prefix" "${1:this}" {
+    cidr_notation = "${2:cidr_notation}"
+}

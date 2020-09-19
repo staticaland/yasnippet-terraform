@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mso_service_node_type
+# key: d_mso_service_node_type
+# --
+
+data "mso_service_node_type" "${1:this}" {
+    name = "${2:name}"
+}

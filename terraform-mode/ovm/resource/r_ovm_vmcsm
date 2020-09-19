@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ovm_vmcsm
+# key: r_ovm_vmcsm
+# --
+
+resource "ovm_vmcsm" "${1:this}" {
+    clonetype = "${2:clonetype}"
+    name = "${3:name}"
+    repositoryid = "${4:repositoryid}"
+    vmclonedefinitionid = "${5:vmclonedefinitionid}"
+    vmdiskmappingid = "${6:vmdiskmappingid}"
+}

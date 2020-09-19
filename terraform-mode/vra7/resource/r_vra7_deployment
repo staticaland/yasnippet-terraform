@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_vra7_deployment
+# key: r_vra7_deployment
+# --
+
+resource "vra7_deployment" "${1:this}" {
+}

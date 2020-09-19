@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_instance
+# key: r_oci_core_instance
+# --
+
+resource "oci_core_instance" "${1:this}" {
+    availability_domain = "${2:availability_domain}"
+    compartment_id = "${3:compartment_id}"
+    shape = "${4:shape}"
+}

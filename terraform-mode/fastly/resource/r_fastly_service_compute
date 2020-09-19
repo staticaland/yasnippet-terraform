@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fastly_service_compute
+# key: r_fastly_service_compute
+# --
+
+resource "fastly_service_compute" "${1:this}" {
+    name = "${2:name}"
+}

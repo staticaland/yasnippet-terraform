@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_account_user
+# key: r_aviatrix_account_user
+# --
+
+resource "aviatrix_account_user" "${1:this}" {
+    email = "${2:email}"
+    password = "${3:password}"
+    username = "${4:username}"
+}

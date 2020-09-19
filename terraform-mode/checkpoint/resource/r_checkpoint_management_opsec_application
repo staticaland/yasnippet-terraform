@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_opsec_application
+# key: r_checkpoint_management_opsec_application
+# --
+
+resource "checkpoint_management_opsec_application" "${1:this}" {
+    name = "${2:name}"
+}

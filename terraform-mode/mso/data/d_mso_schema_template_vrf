@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_vrf
+# key: d_mso_schema_template_vrf
+# --
+
+data "mso_schema_template_vrf" "${1:this}" {
+    name = "${2:name}"
+    schema_id = "${3:schema_id}"
+    template = "${4:template}"
+}

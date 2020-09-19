@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_client_gateways
+# key: d_outscale_client_gateways
+# --
+
+data "outscale_client_gateways" "${1:this}" {
+}

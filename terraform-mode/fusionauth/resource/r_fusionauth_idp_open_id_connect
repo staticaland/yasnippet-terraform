@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_idp_open_id_connect
+# key: r_fusionauth_idp_open_id_connect
+# --
+
+resource "fusionauth_idp_open_id_connect" "${1:this}" {
+    button_text = "${2:button_text}"
+    name = "${3:name}"
+    oauth2_client_id = "${4:oauth2_client_id}"
+}

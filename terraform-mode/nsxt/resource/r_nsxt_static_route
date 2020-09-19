@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_static_route
+# key: r_nsxt_static_route
+# --
+
+resource "nsxt_static_route" "${1:this}" {
+    logical_router_id = "${2:logical_router_id}"
+    network = "${3:network}"
+}

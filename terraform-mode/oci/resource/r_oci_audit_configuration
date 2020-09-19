@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_audit_configuration
+# key: r_oci_audit_configuration
+# --
+
+resource "oci_audit_configuration" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    retention_period_days = "${3:retention_period_days}"
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_app
+# key: r_rancher2_app
+# --
+
+resource "rancher2_app" "${1:this}" {
+    catalog_name = "${2:catalog_name}"
+    name = "${3:name}"
+    project_id = "${4:project_id}"
+    target_namespace = "${5:target_namespace}"
+    template_name = "${6:template_name}"
+}

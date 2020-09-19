@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_victorops_user
+# key: r_victorops_user
+# --
+
+resource "victorops_user" "${1:this}" {
+    email = "${2:email}"
+    first_name = "${3:first_name}"
+    is_admin = "${4:is_admin}"
+    last_name = "${5:last_name}"
+    user_name = "${6:user_name}"
+}

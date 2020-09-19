@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cen_route_map
+# key: r_alicloud_cen_route_map
+# --
+
+resource "alicloud_cen_route_map" "${1:this}" {
+    cen_id = "${2:cen_id}"
+    cen_region_id = "${3:cen_region_id}"
+    map_result = "${4:map_result}"
+    priority = "${5:priority}"
+    transmit_direction = "${6:transmit_direction}"
+}

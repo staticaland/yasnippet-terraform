@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_selectel_vpc_vrrp_subnet_v2
+# key: r_selectel_vpc_vrrp_subnet_v2
+# --
+
+resource "selectel_vpc_vrrp_subnet_v2" "${1:this}" {
+    master_region = "${2:master_region}"
+    project_id = "${3:project_id}"
+    slave_region = "${4:slave_region}"
+}

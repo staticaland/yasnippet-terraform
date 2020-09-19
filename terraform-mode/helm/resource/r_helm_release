@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_helm_release
+# key: r_helm_release
+# --
+
+resource "helm_release" "${1:this}" {
+    chart = "${2:chart}"
+    name = "${3:name}"
+}

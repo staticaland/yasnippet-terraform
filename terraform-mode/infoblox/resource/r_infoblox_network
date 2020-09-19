@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_infoblox_network
+# key: r_infoblox_network
+# --
+
+resource "infoblox_network" "${1:this}" {
+    cidr = "${2:cidr}"
+    tenant_id = "${3:tenant_id}"
+}

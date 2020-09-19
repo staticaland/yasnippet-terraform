@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_vra_region
+# key: d_vra_region
+# --
+
+data "vra_region" "${1:this}" {
+    cloud_account_id = "${2:cloud_account_id}"
+    region = "${3:region}"
+}

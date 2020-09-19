@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_fastly_acl_entries
+# key: d_fastly_acl_entries
+# --
+
+data "fastly_acl_entries" "${1:this}" {
+    acl = "${2:acl}"
+    service = "${3:service}"
+}

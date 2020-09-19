@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_bds_bds_instances
+# key: d_oci_bds_bds_instances
+# --
+
+data "oci_bds_bds_instances" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

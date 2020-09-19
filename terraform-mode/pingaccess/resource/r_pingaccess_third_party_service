@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_third_party_service
+# key: r_pingaccess_third_party_service
+# --
+
+resource "pingaccess_third_party_service" "${1:this}" {
+    name = "${2:name}"
+    targets = "${3:targets}"
+}

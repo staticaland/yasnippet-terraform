@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_snatpool
+# key: r_bigip_ltm_snatpool
+# --
+
+resource "bigip_ltm_snatpool" "${1:this}" {
+    members = "${2:members}"
+    name = "${3:name}"
+}

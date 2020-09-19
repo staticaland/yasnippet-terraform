@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_opnsense_firewall_alias
+# key: d_opnsense_firewall_alias
+# --
+
+data "opnsense_firewall_alias" "${1:this}" {
+    name = "${2:name}"
+}

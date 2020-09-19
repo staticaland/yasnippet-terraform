@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_service_rpc
+# key: d_checkpoint_management_data_service_rpc
+# --
+
+data "checkpoint_management_data_service_rpc" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_snapshot_from_url
+# key: r_vultr_snapshot_from_url
+# --
+
+resource "vultr_snapshot_from_url" "${1:this}" {
+    url = "${2:url}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_subnet
+# key: d_oci_core_subnet
+# --
+
+data "oci_core_subnet" "${1:this}" {
+    subnet_id = "${2:subnet_id}"
+}

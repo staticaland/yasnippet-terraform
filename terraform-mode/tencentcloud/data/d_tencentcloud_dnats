@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_dnats
+# key: d_tencentcloud_dnats
+# --
+
+data "tencentcloud_dnats" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ct_config
+# key: d_ct_config
+# --
+
+data "ct_config" "${1:this}" {
+    content = "${2:content}"
+}

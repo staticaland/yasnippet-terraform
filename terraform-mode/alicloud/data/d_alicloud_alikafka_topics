@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_alikafka_topics
+# key: d_alicloud_alikafka_topics
+# --
+
+data "alicloud_alikafka_topics" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

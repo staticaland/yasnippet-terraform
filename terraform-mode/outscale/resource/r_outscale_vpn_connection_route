@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_outscale_vpn_connection_route
+# key: r_outscale_vpn_connection_route
+# --
+
+resource "outscale_vpn_connection_route" "${1:this}" {
+    destination_ip_range = "${2:destination_ip_range}"
+    vpn_connection_id = "${3:vpn_connection_id}"
+}

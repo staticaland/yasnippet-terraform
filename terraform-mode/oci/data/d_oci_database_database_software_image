@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_database_software_image
+# key: d_oci_database_database_software_image
+# --
+
+data "oci_database_database_software_image" "${1:this}" {
+    database_software_image_id = "${2:database_software_image_id}"
+}

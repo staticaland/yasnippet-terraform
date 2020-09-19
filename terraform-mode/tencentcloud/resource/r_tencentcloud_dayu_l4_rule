@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dayu_l4_rule
+# key: r_tencentcloud_dayu_l4_rule
+# --
+
+resource "tencentcloud_dayu_l4_rule" "${1:this}" {
+    d_port = "${2:d_port}"
+    name = "${3:name}"
+    protocol = "${4:protocol}"
+    resource_id = "${5:resource_id}"
+    resource_type = "${6:resource_type}"
+    s_port = "${7:s_port}"
+    source_type = "${8:source_type}"
+}

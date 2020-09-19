@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_secure_rule_filesystem
+# key: r_sysdig_secure_rule_filesystem
+# --
+
+resource "sysdig_secure_rule_filesystem" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

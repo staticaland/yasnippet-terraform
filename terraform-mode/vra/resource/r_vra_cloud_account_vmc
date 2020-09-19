@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_vra_cloud_account_vmc
+# key: r_vra_cloud_account_vmc
+# --
+
+resource "vra_cloud_account_vmc" "${1:this}" {
+    api_token = "${2:api_token}"
+    name = "${3:name}"
+    nsx_hostname = "${4:nsx_hostname}"
+    regions = "${5:regions}"
+    sddc_name = "${6:sddc_name}"
+    vcenter_hostname = "${7:vcenter_hostname}"
+    vcenter_password = "${8:vcenter_password}"
+    vcenter_username = "${9:vcenter_username}"
+}

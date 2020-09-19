@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_devicemanager_script_execute
+# key: r_fortios_fmg_devicemanager_script_execute
+# --
+
+resource "fortios_fmg_devicemanager_script_execute" "${1:this}" {
+    script_name = "${2:script_name}"
+    target_devname = "${3:target_devname}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_organization_security_policy_association
+# key: r_google_compute_organization_security_policy_association
+# --
+
+resource "google_compute_organization_security_policy_association" "${1:this}" {
+    attachment_id = "${2:attachment_id}"
+    name = "${3:name}"
+    policy_id = "${4:policy_id}"
+}

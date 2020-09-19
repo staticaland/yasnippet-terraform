@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_project_default_network_tier
+# key: r_google_compute_project_default_network_tier
+# --
+
+resource "google_compute_project_default_network_tier" "${1:this}" {
+    network_tier = "${2:network_tier}"
+}

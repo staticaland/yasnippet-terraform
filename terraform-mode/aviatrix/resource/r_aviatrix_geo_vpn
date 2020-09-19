@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_geo_vpn
+# key: r_aviatrix_geo_vpn
+# --
+
+resource "aviatrix_geo_vpn" "${1:this}" {
+    account_name = "${2:account_name}"
+    cloud_type = "${3:cloud_type}"
+    domain_name = "${4:domain_name}"
+    elb_dns_names = "${5:elb_dns_names}"
+    service_name = "${6:service_name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_orion_ip_address
+# key: r_orion_ip_address
+# --
+
+resource "orion_ip_address" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_game_services_game_server_deployment_rollout
+# key: d_google_game_services_game_server_deployment_rollout
+# --
+
+data "google_game_services_game_server_deployment_rollout" "${1:this}" {
+    deployment_id = "${2:deployment_id}"
+}

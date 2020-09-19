@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_folder
+# key: d_vsphere_folder
+# --
+
+data "vsphere_folder" "${1:this}" {
+    path = "${2:path}"
+}

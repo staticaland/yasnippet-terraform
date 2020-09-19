@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_google_storage_object_signed_url
+# key: d_google_storage_object_signed_url
+# --
+
+data "google_storage_object_signed_url" "${1:this}" {
+    bucket = "${2:bucket}"
+    path = "${3:path}"
+}

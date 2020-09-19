@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_waas_http_redirect
+# key: d_oci_waas_http_redirect
+# --
+
+data "oci_waas_http_redirect" "${1:this}" {
+    http_redirect_id = "${2:http_redirect_id}"
+}

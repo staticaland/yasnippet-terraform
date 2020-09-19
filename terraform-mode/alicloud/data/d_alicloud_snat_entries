@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_snat_entries
+# key: d_alicloud_snat_entries
+# --
+
+data "alicloud_snat_entries" "${1:this}" {
+    snat_table_id = "${2:snat_table_id}"
+}

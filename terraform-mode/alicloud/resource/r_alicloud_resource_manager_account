@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_resource_manager_account
+# key: r_alicloud_resource_manager_account
+# --
+
+resource "alicloud_resource_manager_account" "${1:this}" {
+    display_name = "${2:display_name}"
+}

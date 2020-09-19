@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_nas_volume
+# key: d_ncloud_nas_volume
+# --
+
+data "ncloud_nas_volume" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_redis_instances
+# key: d_tencentcloud_redis_instances
+# --
+
+data "tencentcloud_redis_instances" "${1:this}" {
+}

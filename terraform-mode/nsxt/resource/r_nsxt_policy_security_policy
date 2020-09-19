@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_security_policy
+# key: r_nsxt_policy_security_policy
+# --
+
+resource "nsxt_policy_security_policy" "${1:this}" {
+    category = "${2:category}"
+    display_name = "${3:display_name}"
+}

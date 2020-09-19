@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_okta_three_field_app
+# key: r_okta_three_field_app
+# --
+
+resource "okta_three_field_app" "${1:this}" {
+    button_selector = "${2:button_selector}"
+    extra_field_selector = "${3:extra_field_selector}"
+    extra_field_value = "${4:extra_field_value}"
+    label = "${5:label}"
+    password_selector = "${6:password_selector}"
+    url = "${7:url}"
+    username_selector = "${8:username_selector}"
+}

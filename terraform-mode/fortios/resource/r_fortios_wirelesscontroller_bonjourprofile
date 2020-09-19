@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontroller_bonjourprofile
+# key: r_fortios_wirelesscontroller_bonjourprofile
+# --
+
+resource "fortios_wirelesscontroller_bonjourprofile" "${1:this}" {
+}

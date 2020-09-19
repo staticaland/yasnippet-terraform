@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_vpc_eip
+# key: r_huaweicloud_vpc_eip
+# --
+
+resource "huaweicloud_vpc_eip" "${1:this}" {
+}

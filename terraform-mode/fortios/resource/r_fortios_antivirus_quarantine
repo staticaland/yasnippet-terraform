@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_antivirus_quarantine
+# key: r_fortios_antivirus_quarantine
+# --
+
+resource "fortios_antivirus_quarantine" "${1:this}" {
+}

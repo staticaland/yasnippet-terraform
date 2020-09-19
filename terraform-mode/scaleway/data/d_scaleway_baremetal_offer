@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_baremetal_offer
+# key: d_scaleway_baremetal_offer
+# --
+
+data "scaleway_baremetal_offer" "${1:this}" {
+}

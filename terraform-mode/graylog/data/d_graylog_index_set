@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_graylog_index_set
+# key: d_graylog_index_set
+# --
+
+data "graylog_index_set" "${1:this}" {
+}

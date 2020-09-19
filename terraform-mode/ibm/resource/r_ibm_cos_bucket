@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cos_bucket
+# key: r_ibm_cos_bucket
+# --
+
+resource "ibm_cos_bucket" "${1:this}" {
+    bucket_name = "${2:bucket_name}"
+    resource_instance_id = "${3:resource_instance_id}"
+    storage_class = "${4:storage_class}"
+}

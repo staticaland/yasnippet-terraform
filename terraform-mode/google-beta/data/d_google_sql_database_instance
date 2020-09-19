@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_sql_database_instance
+# key: d_google_sql_database_instance
+# --
+
+data "google_sql_database_instance" "${1:this}" {
+    name = "${2:name}"
+}

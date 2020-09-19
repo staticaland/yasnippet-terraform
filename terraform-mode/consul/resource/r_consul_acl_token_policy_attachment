@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_consul_acl_token_policy_attachment
+# key: r_consul_acl_token_policy_attachment
+# --
+
+resource "consul_acl_token_policy_attachment" "${1:this}" {
+    policy = "${2:policy}"
+    token_id = "${3:token_id}"
+}

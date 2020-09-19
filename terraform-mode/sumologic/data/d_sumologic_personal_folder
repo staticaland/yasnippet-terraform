@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sumologic_personal_folder
+# key: d_sumologic_personal_folder
+# --
+
+data "sumologic_personal_folder" "${1:this}" {
+}

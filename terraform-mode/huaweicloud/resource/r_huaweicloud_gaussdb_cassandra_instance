@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_gaussdb_cassandra_instance
+# key: r_huaweicloud_gaussdb_cassandra_instance
+# --
+
+resource "huaweicloud_gaussdb_cassandra_instance" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    flavor = "${3:flavor}"
+    name = "${4:name}"
+    password = "${5:password}"
+    subnet_id = "${6:subnet_id}"
+    volume_size = "${7:volume_size}"
+    vpc_id = "${8:vpc_id}"
+}

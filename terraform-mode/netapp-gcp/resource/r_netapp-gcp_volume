@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_netapp-gcp_volume
+# key: r_netapp-gcp_volume
+# --
+
+resource "netapp-gcp_volume" "${1:this}" {
+    name = "${2:name}"
+    network = "${3:network}"
+    protocol_types = "${4:protocol_types}"
+    region = "${5:region}"
+    size = "${6:size}"
+}

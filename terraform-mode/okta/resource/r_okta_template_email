@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_template_email
+# key: r_okta_template_email
+# --
+
+resource "okta_template_email" "${1:this}" {
+    type = "${2:type}"
+}

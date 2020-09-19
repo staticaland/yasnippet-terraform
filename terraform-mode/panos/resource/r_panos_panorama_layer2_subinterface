@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_layer2_subinterface
+# key: r_panos_panorama_layer2_subinterface
+# --
+
+resource "panos_panorama_layer2_subinterface" "${1:this}" {
+    name = "${2:name}"
+    parent_interface = "${3:parent_interface}"
+    template = "${4:template}"
+}

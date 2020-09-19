@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: d_cloudknox_role_policy
+# key: d_cloudknox_role_policy
+# --
+
+data "cloudknox_role_policy" "${1:this}" {
+    auth_system_info = "${2:auth_system_info}"
+    identity_ids = "${3:identity_ids}"
+    identity_type = "${4:identity_type}"
+    name = "${5:name}"
+    output_path = "${6:output_path}"
+}

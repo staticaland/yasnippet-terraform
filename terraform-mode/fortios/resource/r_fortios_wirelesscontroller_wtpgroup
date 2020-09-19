@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontroller_wtpgroup
+# key: r_fortios_wirelesscontroller_wtpgroup
+# --
+
+resource "fortios_wirelesscontroller_wtpgroup" "${1:this}" {
+}

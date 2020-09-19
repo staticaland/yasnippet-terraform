@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_databricks_azure_blob_mount
+# key: r_databricks_azure_blob_mount
+# --
+
+resource "databricks_azure_blob_mount" "${1:this}" {
+    auth_type = "${2:auth_type}"
+    container_name = "${3:container_name}"
+    mount_name = "${4:mount_name}"
+    storage_account_name = "${5:storage_account_name}"
+    token_secret_key = "${6:token_secret_key}"
+    token_secret_scope = "${7:token_secret_scope}"
+}

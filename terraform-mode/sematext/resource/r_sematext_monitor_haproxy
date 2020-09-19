@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sematext_monitor_haproxy
+# key: r_sematext_monitor_haproxy
+# --
+
+resource "sematext_monitor_haproxy" "${1:this}" {
+    billing_plan_id = "${2:billing_plan_id}"
+    name = "${3:name}"
+}

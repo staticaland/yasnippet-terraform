@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_bigip_do
+# key: r_bigip_do
+# --
+
+resource "bigip_do" "${1:this}" {
+    do_json = "${2:do_json}"
+}

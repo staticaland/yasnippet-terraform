@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_apigee_developer_app
+# key: r_apigee_developer_app
+# --
+
+resource "apigee_developer_app" "${1:this}" {
+    developer_email = "${2:developer_email}"
+    name = "${3:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_tag_protection
+# key: r_gitlab_tag_protection
+# --
+
+resource "gitlab_tag_protection" "${1:this}" {
+    create_access_level = "${2:create_access_level}"
+    project = "${3:project}"
+    tag = "${4:tag}"
+}

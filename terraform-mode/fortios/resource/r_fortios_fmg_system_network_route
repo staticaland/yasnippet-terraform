@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_network_route
+# key: r_fortios_fmg_system_network_route
+# --
+
+resource "fortios_fmg_system_network_route" "${1:this}" {
+    destination = "${2:destination}"
+    device = "${3:device}"
+    gateway = "${4:gateway}"
+    route_id = "${5:route_id}"
+}

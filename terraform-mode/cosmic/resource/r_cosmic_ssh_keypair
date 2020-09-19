@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cosmic_ssh_keypair
+# key: r_cosmic_ssh_keypair
+# --
+
+resource "cosmic_ssh_keypair" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_put_file
+# key: r_checkpoint_put_file
+# --
+
+resource "checkpoint_put_file" "${1:this}" {
+    file_name = "${2:file_name}"
+    text_content = "${3:text_content}"
+}

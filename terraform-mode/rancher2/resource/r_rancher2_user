@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_user
+# key: r_rancher2_user
+# --
+
+resource "rancher2_user" "${1:this}" {
+    password = "${2:password}"
+    username = "${3:username}"
+}

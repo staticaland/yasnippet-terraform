@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vra_security_group
+# key: d_vra_security_group
+# --
+
+data "vra_security_group" "${1:this}" {
+    filter = "${2:filter}"
+}

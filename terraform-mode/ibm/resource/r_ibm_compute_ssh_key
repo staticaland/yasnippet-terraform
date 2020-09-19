@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_ssh_key
+# key: r_ibm_compute_ssh_key
+# --
+
+resource "ibm_compute_ssh_key" "${1:this}" {
+    label = "${2:label}"
+    public_key = "${3:public_key}"
+}

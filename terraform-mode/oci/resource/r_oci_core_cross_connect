@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_core_cross_connect
+# key: r_oci_core_cross_connect
+# --
+
+resource "oci_core_cross_connect" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    location_name = "${3:location_name}"
+    port_speed_shape_name = "${4:port_speed_shape_name}"
+}

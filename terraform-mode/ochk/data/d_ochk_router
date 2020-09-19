@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ochk_router
+# key: d_ochk_router
+# --
+
+data "ochk_router" "${1:this}" {
+    display_name = "${2:display_name}"
+}

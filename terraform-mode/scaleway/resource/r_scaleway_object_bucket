@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_object_bucket
+# key: r_scaleway_object_bucket
+# --
+
+resource "scaleway_object_bucket" "${1:this}" {
+    name = "${2:name}"
+}

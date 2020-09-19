@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_turbot_grant_activation
+# key: r_turbot_grant_activation
+# --
+
+resource "turbot_grant_activation" "${1:this}" {
+    grant = "${2:grant}"
+    resource = "${3:resource}"
+}

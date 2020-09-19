@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_incident_template
+# key: r_opsgenie_incident_template
+# --
+
+resource "opsgenie_incident_template" "${1:this}" {
+    message = "${2:message}"
+    name = "${3:name}"
+    priority = "${4:priority}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_virtualwirepair
+# key: r_fortios_system_virtualwirepair
+# --
+
+resource "fortios_system_virtualwirepair" "${1:this}" {
+}

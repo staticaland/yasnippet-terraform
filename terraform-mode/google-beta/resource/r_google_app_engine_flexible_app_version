@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_app_engine_flexible_app_version
+# key: r_google_app_engine_flexible_app_version
+# --
+
+resource "google_app_engine_flexible_app_version" "${1:this}" {
+    runtime = "${2:runtime}"
+    service = "${3:service}"
+}

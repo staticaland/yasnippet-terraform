@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_polardb_node_classes
+# key: d_alicloud_polardb_node_classes
+# --
+
+data "alicloud_polardb_node_classes" "${1:this}" {
+    pay_type = "${2:pay_type}"
+}

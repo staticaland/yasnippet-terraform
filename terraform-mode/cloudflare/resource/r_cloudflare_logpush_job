@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_logpush_job
+# key: r_cloudflare_logpush_job
+# --
+
+resource "cloudflare_logpush_job" "${1:this}" {
+    dataset = "${2:dataset}"
+    destination_conf = "${3:destination_conf}"
+    ownership_challenge = "${4:ownership_challenge}"
+    zone_id = "${5:zone_id}"
+}

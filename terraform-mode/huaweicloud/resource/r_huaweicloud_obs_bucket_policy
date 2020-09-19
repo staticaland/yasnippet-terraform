@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_obs_bucket_policy
+# key: r_huaweicloud_obs_bucket_policy
+# --
+
+resource "huaweicloud_obs_bucket_policy" "${1:this}" {
+    bucket = "${2:bucket}"
+    policy = "${3:policy}"
+}

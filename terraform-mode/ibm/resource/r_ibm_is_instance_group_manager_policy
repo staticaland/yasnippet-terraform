@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_instance_group_manager_policy
+# key: r_ibm_is_instance_group_manager_policy
+# --
+
+resource "ibm_is_instance_group_manager_policy" "${1:this}" {
+    instance_group = "${2:instance_group}"
+    instance_group_manager = "${3:instance_group_manager}"
+    metric_type = "${4:metric_type}"
+    metric_value = "${5:metric_value}"
+    policy_type = "${6:policy_type}"
+}

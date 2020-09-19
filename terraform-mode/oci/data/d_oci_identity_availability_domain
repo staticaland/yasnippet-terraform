@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_availability_domain
+# key: d_oci_identity_availability_domain
+# --
+
+data "oci_identity_availability_domain" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

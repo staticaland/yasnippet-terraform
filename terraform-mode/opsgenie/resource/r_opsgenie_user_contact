@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_user_contact
+# key: r_opsgenie_user_contact
+# --
+
+resource "opsgenie_user_contact" "${1:this}" {
+    method = "${2:method}"
+    to = "${3:to}"
+    username = "${4:username}"
+}

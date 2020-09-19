@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_petstore_pet
+# key: r_petstore_pet
+# --
+
+resource "petstore_pet" "${1:this}" {
+    age = "${2:age}"
+    species = "${3:species}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_logical_dhcp_server
+# key: r_nsxt_logical_dhcp_server
+# --
+
+resource "nsxt_logical_dhcp_server" "${1:this}" {
+    dhcp_profile_id = "${2:dhcp_profile_id}"
+    dhcp_server_ip = "${3:dhcp_server_ip}"
+}

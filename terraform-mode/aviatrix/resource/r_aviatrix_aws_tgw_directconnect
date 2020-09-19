@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw_directconnect
+# key: r_aviatrix_aws_tgw_directconnect
+# --
+
+resource "aviatrix_aws_tgw_directconnect" "${1:this}" {
+    allowed_prefix = "${2:allowed_prefix}"
+    directconnect_account_name = "${3:directconnect_account_name}"
+    dx_gateway_id = "${4:dx_gateway_id}"
+    security_domain_name = "${5:security_domain_name}"
+    tgw_name = "${6:tgw_name}"
+}

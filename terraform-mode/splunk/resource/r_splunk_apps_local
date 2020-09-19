@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_apps_local
+# key: r_splunk_apps_local
+# --
+
+resource "splunk_apps_local" "${1:this}" {
+    name = "${2:name}"
+}

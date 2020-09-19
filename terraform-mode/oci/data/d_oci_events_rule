@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_events_rule
+# key: d_oci_events_rule
+# --
+
+data "oci_events_rule" "${1:this}" {
+    rule_id = "${2:rule_id}"
+}

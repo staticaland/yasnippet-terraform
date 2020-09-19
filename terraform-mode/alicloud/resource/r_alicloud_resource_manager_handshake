@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_resource_manager_handshake
+# key: r_alicloud_resource_manager_handshake
+# --
+
+resource "alicloud_resource_manager_handshake" "${1:this}" {
+    target_entity = "${2:target_entity}"
+    target_type = "${3:target_type}"
+}

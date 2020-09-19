@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_pipeline_config_var
+# key: r_heroku_pipeline_config_var
+# --
+
+resource "heroku_pipeline_config_var" "${1:this}" {
+    pipeline_id = "${2:pipeline_id}"
+    pipeline_stage = "${3:pipeline_stage}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ovh_vracks
+# key: d_ovh_vracks
+# --
+
+data "ovh_vracks" "${1:this}" {
+}

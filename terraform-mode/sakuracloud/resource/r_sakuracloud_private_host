@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_private_host
+# key: r_sakuracloud_private_host
+# --
+
+resource "sakuracloud_private_host" "${1:this}" {
+    name = "${2:name}"
+}

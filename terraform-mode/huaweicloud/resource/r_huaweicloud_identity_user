@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_identity_user
+# key: r_huaweicloud_identity_user
+# --
+
+resource "huaweicloud_identity_user" "${1:this}" {
+    name = "${2:name}"
+}

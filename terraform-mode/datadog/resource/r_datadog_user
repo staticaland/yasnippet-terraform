@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_datadog_user
+# key: r_datadog_user
+# --
+
+resource "datadog_user" "${1:this}" {
+    email = "${2:email}"
+    handle = "${3:handle}"
+    name = "${4:name}"
+}

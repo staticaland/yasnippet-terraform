@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sensu_mutator
+# key: r_sensu_mutator
+# --
+
+resource "sensu_mutator" "${1:this}" {
+    command = "${2:command}"
+    name = "${3:name}"
+}

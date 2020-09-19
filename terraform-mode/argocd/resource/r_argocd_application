@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_argocd_application
+# key: r_argocd_application
+# --
+
+resource "argocd_application" "${1:this}" {
+}

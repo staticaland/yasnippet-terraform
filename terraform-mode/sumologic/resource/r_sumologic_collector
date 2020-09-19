@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_collector
+# key: r_sumologic_collector
+# --
+
+resource "sumologic_collector" "${1:this}" {
+    name = "${2:name}"
+}

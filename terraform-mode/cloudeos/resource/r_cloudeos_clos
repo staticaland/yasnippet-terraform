@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudeos_clos
+# key: r_cloudeos_clos
+# --
+
+resource "cloudeos_clos" "${1:this}" {
+    name = "${2:name}"
+    topology_name = "${3:topology_name}"
+}

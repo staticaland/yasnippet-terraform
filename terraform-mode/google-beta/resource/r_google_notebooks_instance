@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_notebooks_instance
+# key: r_google_notebooks_instance
+# --
+
+resource "google_notebooks_instance" "${1:this}" {
+    location = "${2:location}"
+    machine_type = "${3:machine_type}"
+    name = "${4:name}"
+}

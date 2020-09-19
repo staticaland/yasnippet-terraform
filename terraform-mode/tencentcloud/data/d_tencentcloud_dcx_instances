@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_dcx_instances
+# key: d_tencentcloud_dcx_instances
+# --
+
+data "tencentcloud_dcx_instances" "${1:this}" {
+}

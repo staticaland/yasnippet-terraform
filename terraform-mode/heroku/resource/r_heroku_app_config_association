@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_heroku_app_config_association
+# key: r_heroku_app_config_association
+# --
+
+resource "heroku_app_config_association" "${1:this}" {
+    app_id = "${2:app_id}"
+}

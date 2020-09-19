@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_private_endpoint
+# key: r_mongodbatlas_private_endpoint
+# --
+
+resource "mongodbatlas_private_endpoint" "${1:this}" {
+    project_id = "${2:project_id}"
+    provider_name = "${3:provider_name}"
+    region = "${4:region}"
+}

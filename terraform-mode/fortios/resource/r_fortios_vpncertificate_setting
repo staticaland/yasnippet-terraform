@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpncertificate_setting
+# key: r_fortios_vpncertificate_setting
+# --
+
+resource "fortios_vpncertificate_setting" "${1:this}" {
+    certname_dsa1024 = "${2:certname_dsa1024}"
+    certname_dsa2048 = "${3:certname_dsa2048}"
+    certname_ecdsa256 = "${4:certname_ecdsa256}"
+    certname_ecdsa384 = "${5:certname_ecdsa384}"
+    certname_rsa1024 = "${6:certname_rsa1024}"
+    certname_rsa2048 = "${7:certname_rsa2048}"
+}

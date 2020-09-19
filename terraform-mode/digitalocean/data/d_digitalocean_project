@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_project
+# key: d_digitalocean_project
+# --
+
+data "digitalocean_project" "${1:this}" {
+}

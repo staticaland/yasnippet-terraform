@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_civo_firewall
+# key: r_civo_firewall
+# --
+
+resource "civo_firewall" "${1:this}" {
+    name = "${2:name}"
+}

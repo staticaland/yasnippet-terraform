@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_okta_auth_server_policy_rule
+# key: r_okta_auth_server_policy_rule
+# --
+
+resource "okta_auth_server_policy_rule" "${1:this}" {
+    auth_server_id = "${2:auth_server_id}"
+    grant_type_whitelist = "${3:grant_type_whitelist}"
+    name = "${4:name}"
+    policy_id = "${5:policy_id}"
+    priority = "${6:priority}"
+}

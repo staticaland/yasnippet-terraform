@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_autoinstall
+# key: r_fortios_system_autoinstall
+# --
+
+resource "fortios_system_autoinstall" "${1:this}" {
+}

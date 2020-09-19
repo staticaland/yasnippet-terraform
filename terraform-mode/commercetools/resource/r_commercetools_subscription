@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_subscription
+# key: r_commercetools_subscription
+# --
+
+resource "commercetools_subscription" "${1:this}" {
+}

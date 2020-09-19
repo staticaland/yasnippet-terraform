@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_lb_loadbalancer_v2
+# key: r_huaweicloud_lb_loadbalancer_v2
+# --
+
+resource "huaweicloud_lb_loadbalancer_v2" "${1:this}" {
+    vip_subnet_id = "${2:vip_subnet_id}"
+}

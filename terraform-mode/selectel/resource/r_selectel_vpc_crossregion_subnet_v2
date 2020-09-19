@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_selectel_vpc_crossregion_subnet_v2
+# key: r_selectel_vpc_crossregion_subnet_v2
+# --
+
+resource "selectel_vpc_crossregion_subnet_v2" "${1:this}" {
+    cidr = "${2:cidr}"
+    project_id = "${3:project_id}"
+}

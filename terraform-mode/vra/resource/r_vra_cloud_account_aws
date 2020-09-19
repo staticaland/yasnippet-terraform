@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vra_cloud_account_aws
+# key: r_vra_cloud_account_aws
+# --
+
+resource "vra_cloud_account_aws" "${1:this}" {
+    access_key = "${2:access_key}"
+    name = "${3:name}"
+    secret_key = "${4:secret_key}"
+}

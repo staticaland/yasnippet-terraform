@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_apigee_api_proxy
+# key: r_apigee_api_proxy
+# --
+
+resource "apigee_api_proxy" "${1:this}" {
+    bundle = "${2:bundle}"
+    bundle_sha = "${3:bundle_sha}"
+    name = "${4:name}"
+}

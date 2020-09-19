@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_lb
+# key: r_tencentcloud_lb
+# --
+
+resource "tencentcloud_lb" "${1:this}" {
+    type = "${2:type}"
+}

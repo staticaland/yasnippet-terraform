@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_vpc_tracker
+# key: d_aviatrix_vpc_tracker
+# --
+
+data "aviatrix_vpc_tracker" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cis_healthcheck
+# key: r_ibm_cis_healthcheck
+# --
+
+resource "ibm_cis_healthcheck" "${1:this}" {
+    cis_id = "${2:cis_id}"
+}

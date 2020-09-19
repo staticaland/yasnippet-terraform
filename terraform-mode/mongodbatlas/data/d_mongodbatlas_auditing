@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_auditing
+# key: d_mongodbatlas_auditing
+# --
+
+data "mongodbatlas_auditing" "${1:this}" {
+    project_id = "${2:project_id}"
+}

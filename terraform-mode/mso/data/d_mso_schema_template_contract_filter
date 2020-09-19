@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_contract_filter
+# key: d_mso_schema_template_contract_filter
+# --
+
+data "mso_schema_template_contract_filter" "${1:this}" {
+    contract_name = "${2:contract_name}"
+    filter_name = "${3:filter_name}"
+    filter_schema_id = "${4:filter_schema_id}"
+    filter_template_name = "${5:filter_template_name}"
+    filter_type = "${6:filter_type}"
+    schema_id = "${7:schema_id}"
+    template_name = "${8:template_name}"
+}

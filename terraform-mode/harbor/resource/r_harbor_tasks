@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_harbor_tasks
+# key: r_harbor_tasks
+# --
+
+resource "harbor_tasks" "${1:this}" {
+    vulnerability_scan_policy = "${2:vulnerability_scan_policy}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_linkmonitor
+# key: r_fortios_system_linkmonitor
+# --
+
+resource "fortios_system_linkmonitor" "${1:this}" {
+}

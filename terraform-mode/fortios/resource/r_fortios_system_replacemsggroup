@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_replacemsggroup
+# key: r_fortios_system_replacemsggroup
+# --
+
+resource "fortios_system_replacemsggroup" "${1:this}" {
+    group_type = "${2:group_type}"
+}

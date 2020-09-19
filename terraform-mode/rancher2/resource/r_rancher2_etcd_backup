@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_etcd_backup
+# key: r_rancher2_etcd_backup
+# --
+
+resource "rancher2_etcd_backup" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

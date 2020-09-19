@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: r_okta_idp
+# key: r_okta_idp
+# --
+
+resource "okta_idp" "${1:this}" {
+    acs_binding = "${2:acs_binding}"
+    authorization_binding = "${3:authorization_binding}"
+    authorization_url = "${4:authorization_url}"
+    client_id = "${5:client_id}"
+    client_secret = "${6:client_secret}"
+    issuer_url = "${7:issuer_url}"
+    jwks_binding = "${8:jwks_binding}"
+    jwks_url = "${9:jwks_url}"
+    name = "${10:name}"
+    scopes = "${11:scopes}"
+    token_binding = "${12:token_binding}"
+    token_url = "${13:token_url}"
+}

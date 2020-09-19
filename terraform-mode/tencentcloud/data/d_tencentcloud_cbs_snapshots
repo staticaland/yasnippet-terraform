@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cbs_snapshots
+# key: d_tencentcloud_cbs_snapshots
+# --
+
+data "tencentcloud_cbs_snapshots" "${1:this}" {
+}

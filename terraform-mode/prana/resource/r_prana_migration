@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_prana_migration
+# key: r_prana_migration
+# --
+
+resource "prana_migration" "${1:this}" {
+    script_dir = "${2:script_dir}"
+}

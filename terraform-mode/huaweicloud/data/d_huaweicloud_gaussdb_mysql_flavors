@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_gaussdb_mysql_flavors
+# key: d_huaweicloud_gaussdb_mysql_flavors
+# --
+
+data "huaweicloud_gaussdb_mysql_flavors" "${1:this}" {
+}

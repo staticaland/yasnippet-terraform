@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_proxypolicy
+# key: r_fortios_firewall_proxypolicy
+# --
+
+resource "fortios_firewall_proxypolicy" "${1:this}" {
+    proxy = "${2:proxy}"
+    schedule = "${3:schedule}"
+}

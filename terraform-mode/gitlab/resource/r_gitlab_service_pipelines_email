@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_service_pipelines_email
+# key: r_gitlab_service_pipelines_email
+# --
+
+resource "gitlab_service_pipelines_email" "${1:this}" {
+    project = "${2:project}"
+    recipients = "${3:recipients}"
+}

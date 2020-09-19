@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_tier0_gateway_interface
+# key: r_nsxt_policy_tier0_gateway_interface
+# --
+
+resource "nsxt_policy_tier0_gateway_interface" "${1:this}" {
+    display_name = "${2:display_name}"
+    gateway_path = "${3:gateway_path}"
+    subnets = "${4:subnets}"
+}

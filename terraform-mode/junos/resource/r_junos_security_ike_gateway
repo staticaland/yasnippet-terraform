@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_ike_gateway
+# key: r_junos_security_ike_gateway
+# --
+
+resource "junos_security_ike_gateway" "${1:this}" {
+    address = "${2:address}"
+    external_interface = "${3:external_interface}"
+    name = "${4:name}"
+    policy = "${5:policy}"
+}

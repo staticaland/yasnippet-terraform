@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ncloud_port_forwarding_rule
+# key: r_ncloud_port_forwarding_rule
+# --
+
+resource "ncloud_port_forwarding_rule" "${1:this}" {
+    port_forwarding_external_port = "${2:port_forwarding_external_port}"
+    port_forwarding_internal_port = "${3:port_forwarding_internal_port}"
+    server_instance_no = "${4:server_instance_no}"
+}

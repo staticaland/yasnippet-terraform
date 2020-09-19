@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_template
+# key: d_ecloud_template
+# --
+
+data "ecloud_template" "${1:this}" {
+    name = "${2:name}"
+    pod_id = "${3:pod_id}"
+}

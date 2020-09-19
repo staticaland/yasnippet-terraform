@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_ha_vm_override
+# key: r_vsphere_ha_vm_override
+# --
+
+resource "vsphere_ha_vm_override" "${1:this}" {
+    compute_cluster_id = "${2:compute_cluster_id}"
+    virtual_machine_id = "${3:virtual_machine_id}"
+}

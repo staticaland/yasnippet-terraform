@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_panos_application_object
+# key: r_panos_application_object
+# --
+
+resource "panos_application_object" "${1:this}" {
+    category = "${2:category}"
+    name = "${3:name}"
+    subcategory = "${4:subcategory}"
+    technology = "${5:technology}"
+}

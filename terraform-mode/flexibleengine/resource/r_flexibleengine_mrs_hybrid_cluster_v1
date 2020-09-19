@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_mrs_hybrid_cluster_v1
+# key: r_flexibleengine_mrs_hybrid_cluster_v1
+# --
+
+resource "flexibleengine_mrs_hybrid_cluster_v1" "${1:this}" {
+    available_zone = "${2:available_zone}"
+    cluster_name = "${3:cluster_name}"
+    component_list = "${4:component_list}"
+    master_node_key_pair = "${5:master_node_key_pair}"
+    subnet_id = "${6:subnet_id}"
+    vpc_id = "${7:vpc_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webproxy_wisp
+# key: r_fortios_webproxy_wisp
+# --
+
+resource "fortios_webproxy_wisp" "${1:this}" {
+    name = "${2:name}"
+    server_ip = "${3:server_ip}"
+    server_port = "${4:server_port}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_local_router
+# key: d_sakuracloud_local_router
+# --
+
+data "sakuracloud_local_router" "${1:this}" {
+}

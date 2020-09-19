@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_customcommand
+# key: r_fortios_switchcontroller_customcommand
+# --
+
+resource "fortios_switchcontroller_customcommand" "${1:this}" {
+    command = "${2:command}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_hcloud_network_subnet
+# key: r_hcloud_network_subnet
+# --
+
+resource "hcloud_network_subnet" "${1:this}" {
+    ip_range = "${2:ip_range}"
+    network_id = "${3:network_id}"
+    network_zone = "${4:network_zone}"
+    type = "${5:type}"
+}

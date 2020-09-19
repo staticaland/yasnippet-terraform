@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_devicemanager_install_policypackage
+# key: r_fortios_fmg_devicemanager_install_policypackage
+# --
+
+resource "fortios_fmg_devicemanager_install_policypackage" "${1:this}" {
+    package_name = "${2:package_name}"
+}

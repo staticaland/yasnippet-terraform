@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_oci_waas_purge_cache
+# key: r_oci_waas_purge_cache
+# --
+
+resource "oci_waas_purge_cache" "${1:this}" {
+    waas_policy_id = "${2:waas_policy_id}"
+}

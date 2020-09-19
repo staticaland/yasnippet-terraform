@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_monitoring_alarm_history_collection
+# key: d_oci_monitoring_alarm_history_collection
+# --
+
+data "oci_monitoring_alarm_history_collection" "${1:this}" {
+    alarm_id = "${2:alarm_id}"
+}

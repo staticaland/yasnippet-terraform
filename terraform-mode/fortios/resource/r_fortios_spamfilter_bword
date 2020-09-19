@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_spamfilter_bword
+# key: r_fortios_spamfilter_bword
+# --
+
+resource "fortios_spamfilter_bword" "${1:this}" {
+    fosid = "${2:fosid}"
+    name = "${3:name}"
+}

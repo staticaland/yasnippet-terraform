@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_vlan_logical_switch
+# key: r_nsxt_vlan_logical_switch
+# --
+
+resource "nsxt_vlan_logical_switch" "${1:this}" {
+    transport_zone_id = "${2:transport_zone_id}"
+    vlan = "${3:vlan}"
+}

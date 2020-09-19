@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_nomad_namespace
+# key: d_nomad_namespace
+# --
+
+data "nomad_namespace" "${1:this}" {
+    name = "${2:name}"
+}

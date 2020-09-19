@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_databricks_permissions
+# key: r_databricks_permissions
+# --
+
+resource "databricks_permissions" "${1:this}" {
+    access_control = "${2:access_control}"
+}

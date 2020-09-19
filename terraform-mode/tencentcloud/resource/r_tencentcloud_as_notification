@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_as_notification
+# key: r_tencentcloud_as_notification
+# --
+
+resource "tencentcloud_as_notification" "${1:this}" {
+    notification_types = "${2:notification_types}"
+    notification_user_group_ids = "${3:notification_user_group_ids}"
+    scaling_group_id = "${4:scaling_group_id}"
+}

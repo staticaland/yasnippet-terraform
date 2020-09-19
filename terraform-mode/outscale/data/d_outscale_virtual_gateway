@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_virtual_gateway
+# key: d_outscale_virtual_gateway
+# --
+
+data "outscale_virtual_gateway" "${1:this}" {
+}

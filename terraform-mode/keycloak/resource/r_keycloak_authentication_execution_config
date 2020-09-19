@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_authentication_execution_config
+# key: r_keycloak_authentication_execution_config
+# --
+
+resource "keycloak_authentication_execution_config" "${1:this}" {
+    alias = "${2:alias}"
+    config = "${3:config}"
+    execution_id = "${4:execution_id}"
+    realm_id = "${5:realm_id}"
+}

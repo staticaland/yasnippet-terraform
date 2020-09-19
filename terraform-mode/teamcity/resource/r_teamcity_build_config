@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_build_config
+# key: r_teamcity_build_config
+# --
+
+resource "teamcity_build_config" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+}

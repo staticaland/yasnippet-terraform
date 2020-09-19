@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sensu_bonsai_asset
+# key: d_sensu_bonsai_asset
+# --
+
+data "sensu_bonsai_asset" "${1:this}" {
+    name = "${2:name}"
+}

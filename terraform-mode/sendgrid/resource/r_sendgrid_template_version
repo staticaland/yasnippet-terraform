@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sendgrid_template_version
+# key: r_sendgrid_template_version
+# --
+
+resource "sendgrid_template_version" "${1:this}" {
+    name = "${2:name}"
+    subject = "${3:subject}"
+    template_id = "${4:template_id}"
+}

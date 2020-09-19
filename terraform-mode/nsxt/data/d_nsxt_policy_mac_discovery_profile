@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_mac_discovery_profile
+# key: d_nsxt_policy_mac_discovery_profile
+# --
+
+data "nsxt_policy_mac_discovery_profile" "${1:this}" {
+}

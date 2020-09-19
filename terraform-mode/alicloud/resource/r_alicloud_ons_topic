@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ons_topic
+# key: r_alicloud_ons_topic
+# --
+
+resource "alicloud_ons_topic" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    message_type = "${3:message_type}"
+}

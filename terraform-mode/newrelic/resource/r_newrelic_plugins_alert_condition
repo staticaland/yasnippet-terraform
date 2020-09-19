@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_plugins_alert_condition
+# key: r_newrelic_plugins_alert_condition
+# --
+
+resource "newrelic_plugins_alert_condition" "${1:this}" {
+    entities = "${2:entities}"
+    metric = "${3:metric}"
+    metric_description = "${4:metric_description}"
+    name = "${5:name}"
+    plugin_guid = "${6:plugin_guid}"
+    plugin_id = "${7:plugin_id}"
+    policy_id = "${8:policy_id}"
+    value_function = "${9:value_function}"
+}

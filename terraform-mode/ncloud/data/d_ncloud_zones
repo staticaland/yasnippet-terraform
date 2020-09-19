@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_zones
+# key: d_ncloud_zones
+# --
+
+data "ncloud_zones" "${1:this}" {
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mso_schema_template_bd
+# key: r_mso_schema_template_bd
+# --
+
+resource "mso_schema_template_bd" "${1:this}" {
+    display_name = "${2:display_name}"
+    name = "${3:name}"
+    schema_id = "${4:schema_id}"
+    template_name = "${5:template_name}"
+    vrf_name = "${6:vrf_name}"
+}

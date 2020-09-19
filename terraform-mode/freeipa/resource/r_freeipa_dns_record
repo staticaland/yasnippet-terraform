@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_freeipa_dns_record
+# key: r_freeipa_dns_record
+# --
+
+resource "freeipa_dns_record" "${1:this}" {
+    dnszoneidnsname = "${2:dnszoneidnsname}"
+    idnsname = "${3:idnsname}"
+    records = "${4:records}"
+    type = "${5:type}"
+}

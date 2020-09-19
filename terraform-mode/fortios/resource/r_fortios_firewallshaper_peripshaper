@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewallshaper_peripshaper
+# key: r_fortios_firewallshaper_peripshaper
+# --
+
+resource "fortios_firewallshaper_peripshaper" "${1:this}" {
+}

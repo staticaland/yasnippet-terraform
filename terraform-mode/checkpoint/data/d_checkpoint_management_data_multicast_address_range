@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_multicast_address_range
+# key: d_checkpoint_management_data_multicast_address_range
+# --
+
+data "checkpoint_management_data_multicast_address_range" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_mysql_mysql_configuration
+# key: d_oci_mysql_mysql_configuration
+# --
+
+data "oci_mysql_mysql_configuration" "${1:this}" {
+    configuration_id = "${2:configuration_id}"
+}

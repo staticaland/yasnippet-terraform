@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_networkmonitorsettings
+# key: r_fortios_switchcontroller_networkmonitorsettings
+# --
+
+resource "fortios_switchcontroller_networkmonitorsettings" "${1:this}" {
+}

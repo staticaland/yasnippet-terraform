@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_fmg_system_ntp
+# key: r_fortios_fmg_system_ntp
+# --
+
+resource "fortios_fmg_system_ntp" "${1:this}" {
+    server = "${2:server}"
+}

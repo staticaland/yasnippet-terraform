@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_service_graph
+# key: d_mso_schema_template_service_graph
+# --
+
+data "mso_schema_template_service_graph" "${1:this}" {
+    node_index = "${2:node_index}"
+    schema_id = "${3:schema_id}"
+    service_graph_name = "${4:service_graph_name}"
+    template_name = "${5:template_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_template_dir
+# key: r_template_dir
+# --
+
+resource "template_dir" "${1:this}" {
+    destination_dir = "${2:destination_dir}"
+    source_dir = "${3:source_dir}"
+}

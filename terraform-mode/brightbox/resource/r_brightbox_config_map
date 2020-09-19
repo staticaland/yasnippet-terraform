@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_brightbox_config_map
+# key: r_brightbox_config_map
+# --
+
+resource "brightbox_config_map" "${1:this}" {
+    data = "${2:data}"
+}

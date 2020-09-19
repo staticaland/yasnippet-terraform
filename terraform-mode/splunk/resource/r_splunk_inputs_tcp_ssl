@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_tcp_ssl
+# key: r_splunk_inputs_tcp_ssl
+# --
+
+resource "splunk_inputs_tcp_ssl" "${1:this}" {
+}

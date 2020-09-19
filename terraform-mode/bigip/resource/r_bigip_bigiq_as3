@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_bigip_bigiq_as3
+# key: r_bigip_bigiq_as3
+# --
+
+resource "bigip_bigiq_as3" "${1:this}" {
+    as3_json = "${2:as3_json}"
+    bigiq_address = "${3:bigiq_address}"
+    bigiq_password = "${4:bigiq_password}"
+    bigiq_user = "${5:bigiq_user}"
+}

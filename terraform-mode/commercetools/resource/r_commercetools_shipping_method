@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_shipping_method
+# key: r_commercetools_shipping_method
+# --
+
+resource "commercetools_shipping_method" "${1:this}" {
+    name = "${2:name}"
+}

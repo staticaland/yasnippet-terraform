@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_azure_integration
+# key: r_signalfx_azure_integration
+# --
+
+resource "signalfx_azure_integration" "${1:this}" {
+    app_id = "${2:app_id}"
+    enabled = "${3:enabled}"
+    name = "${4:name}"
+    secret_key = "${5:secret_key}"
+    services = "${6:services}"
+    subscriptions = "${7:subscriptions}"
+    tenant_id = "${8:tenant_id}"
+}

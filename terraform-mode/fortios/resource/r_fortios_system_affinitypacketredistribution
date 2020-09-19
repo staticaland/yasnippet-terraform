@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_affinitypacketredistribution
+# key: r_fortios_system_affinitypacketredistribution
+# --
+
+resource "fortios_system_affinitypacketredistribution" "${1:this}" {
+    affinity_cpumask = "${2:affinity_cpumask}"
+    fosid = "${3:fosid}"
+    interface = "${4:interface}"
+    rxqid = "${5:rxqid}"
+}

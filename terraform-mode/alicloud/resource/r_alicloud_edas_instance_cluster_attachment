@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_edas_instance_cluster_attachment
+# key: r_alicloud_edas_instance_cluster_attachment
+# --
+
+resource "alicloud_edas_instance_cluster_attachment" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    instance_ids = "${3:instance_ids}"
+}

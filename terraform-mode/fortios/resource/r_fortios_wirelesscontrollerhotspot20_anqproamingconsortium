@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontrollerhotspot20_anqproamingconsortium
+# key: r_fortios_wirelesscontrollerhotspot20_anqproamingconsortium
+# --
+
+resource "fortios_wirelesscontrollerhotspot20_anqproamingconsortium" "${1:this}" {
+}

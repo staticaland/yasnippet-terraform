@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_dcx
+# key: r_tencentcloud_dcx
+# --
+
+resource "tencentcloud_dcx" "${1:this}" {
+    dc_id = "${2:dc_id}"
+    dcg_id = "${3:dcg_id}"
+    name = "${4:name}"
+    vpc_id = "${5:vpc_id}"
+}

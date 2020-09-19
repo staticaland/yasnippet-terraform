@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_database_firewall
+# key: r_digitalocean_database_firewall
+# --
+
+resource "digitalocean_database_firewall" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ansible_group
+# key: r_ansible_group
+# --
+
+resource "ansible_group" "${1:this}" {
+    inventory_group_name = "${2:inventory_group_name}"
+}

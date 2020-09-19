@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_limits_quota
+# key: r_oci_limits_quota
+# --
+
+resource "oci_limits_quota" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    description = "${3:description}"
+    name = "${4:name}"
+    statements = "${5:statements}"
+}

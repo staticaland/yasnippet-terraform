@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opsgenie_maintenance
+# key: r_opsgenie_maintenance
+# --
+
+resource "opsgenie_maintenance" "${1:this}" {
+    description = "${2:description}"
+}

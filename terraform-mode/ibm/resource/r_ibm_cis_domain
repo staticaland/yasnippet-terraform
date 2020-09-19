@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_cis_domain
+# key: r_ibm_cis_domain
+# --
+
+resource "ibm_cis_domain" "${1:this}" {
+    cis_id = "${2:cis_id}"
+    domain = "${3:domain}"
+}

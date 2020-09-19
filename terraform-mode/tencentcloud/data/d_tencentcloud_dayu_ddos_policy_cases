@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_dayu_ddos_policy_cases
+# key: d_tencentcloud_dayu_ddos_policy_cases
+# --
+
+data "tencentcloud_dayu_ddos_policy_cases" "${1:this}" {
+    resource_type = "${2:resource_type}"
+    scene_id = "${3:scene_id}"
+}

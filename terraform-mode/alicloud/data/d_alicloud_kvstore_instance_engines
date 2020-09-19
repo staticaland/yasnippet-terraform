@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_kvstore_instance_engines
+# key: d_alicloud_kvstore_instance_engines
+# --
+
+data "alicloud_kvstore_instance_engines" "${1:this}" {
+    zone_id = "${2:zone_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_databricks_zones
+# key: d_databricks_zones
+# --
+
+data "databricks_zones" "${1:this}" {
+}

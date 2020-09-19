@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_monitor
+# key: r_splunk_inputs_monitor
+# --
+
+resource "splunk_inputs_monitor" "${1:this}" {
+    name = "${2:name}"
+}

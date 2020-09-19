@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ad_user
+# key: d_ad_user
+# --
+
+data "ad_user" "${1:this}" {
+    guid = "${2:guid}"
+}

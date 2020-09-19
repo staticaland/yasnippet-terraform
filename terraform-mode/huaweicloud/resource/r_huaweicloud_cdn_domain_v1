@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_cdn_domain_v1
+# key: r_huaweicloud_cdn_domain_v1
+# --
+
+resource "huaweicloud_cdn_domain_v1" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

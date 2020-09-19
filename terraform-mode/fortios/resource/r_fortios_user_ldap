@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_ldap
+# key: r_fortios_user_ldap
+# --
+
+resource "fortios_user_ldap" "${1:this}" {
+    dn = "${2:dn}"
+    server = "${3:server}"
+}

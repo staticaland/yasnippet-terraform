@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_tier0_gateway_ha_vip_config
+# key: r_nsxt_policy_tier0_gateway_ha_vip_config
+# --
+
+resource "nsxt_policy_tier0_gateway_ha_vip_config" "${1:this}" {
+}

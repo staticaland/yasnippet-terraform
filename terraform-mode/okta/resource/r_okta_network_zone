@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_network_zone
+# key: r_okta_network_zone
+# --
+
+resource "okta_network_zone" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

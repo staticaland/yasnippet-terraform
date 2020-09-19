@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_endpointcontrol_forticlientregistrationsync
+# key: r_fortios_endpointcontrol_forticlientregistrationsync
+# --
+
+resource "fortios_endpointcontrol_forticlientregistrationsync" "${1:this}" {
+    peer_ip = "${2:peer_ip}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_rds_parametergroup_v3
+# key: r_huaweicloud_rds_parametergroup_v3
+# --
+
+resource "huaweicloud_rds_parametergroup_v3" "${1:this}" {
+    name = "${2:name}"
+}

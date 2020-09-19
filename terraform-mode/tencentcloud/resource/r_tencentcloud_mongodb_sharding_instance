@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_mongodb_sharding_instance
+# key: r_tencentcloud_mongodb_sharding_instance
+# --
+
+resource "tencentcloud_mongodb_sharding_instance" "${1:this}" {
+    available_zone = "${2:available_zone}"
+    engine_version = "${3:engine_version}"
+    instance_name = "${4:instance_name}"
+    machine_type = "${5:machine_type}"
+    memory = "${6:memory}"
+    nodes_per_shard = "${7:nodes_per_shard}"
+    password = "${8:password}"
+    shard_quantity = "${9:shard_quantity}"
+    volume = "${10:volume}"
+}

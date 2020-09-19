@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cr_ee_sync_rule
+# key: r_alicloud_cr_ee_sync_rule
+# --
+
+resource "alicloud_cr_ee_sync_rule" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    name = "${3:name}"
+    namespace_name = "${4:namespace_name}"
+    tag_filter = "${5:tag_filter}"
+    target_instance_id = "${6:target_instance_id}"
+    target_namespace_name = "${7:target_namespace_name}"
+    target_region_id = "${8:target_region_id}"
+}

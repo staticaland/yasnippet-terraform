@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_slb_domain_extension
+# key: r_alicloud_slb_domain_extension
+# --
+
+resource "alicloud_slb_domain_extension" "${1:this}" {
+    domain = "${2:domain}"
+    frontend_port = "${3:frontend_port}"
+    load_balancer_id = "${4:load_balancer_id}"
+    server_certificate_id = "${5:server_certificate_id}"
+}

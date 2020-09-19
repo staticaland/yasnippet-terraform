@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_delete_threat_protections
+# key: r_checkpoint_management_delete_threat_protections
+# --
+
+resource "checkpoint_management_delete_threat_protections" "${1:this}" {
+}

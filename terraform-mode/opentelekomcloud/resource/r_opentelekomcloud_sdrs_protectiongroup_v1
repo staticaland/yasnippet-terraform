@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_sdrs_protectiongroup_v1
+# key: r_opentelekomcloud_sdrs_protectiongroup_v1
+# --
+
+resource "opentelekomcloud_sdrs_protectiongroup_v1" "${1:this}" {
+    domain_id = "${2:domain_id}"
+    name = "${3:name}"
+    source_availability_zone = "${4:source_availability_zone}"
+    source_vpc_id = "${5:source_vpc_id}"
+    target_availability_zone = "${6:target_availability_zone}"
+}

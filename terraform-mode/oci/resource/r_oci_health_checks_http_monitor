@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_oci_health_checks_http_monitor
+# key: r_oci_health_checks_http_monitor
+# --
+
+resource "oci_health_checks_http_monitor" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    interval_in_seconds = "${4:interval_in_seconds}"
+    protocol = "${5:protocol}"
+    targets = "${6:targets}"
+}

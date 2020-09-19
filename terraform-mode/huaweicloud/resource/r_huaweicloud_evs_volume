@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_evs_volume
+# key: r_huaweicloud_evs_volume
+# --
+
+resource "huaweicloud_evs_volume" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    volume_type = "${3:volume_type}"
+}

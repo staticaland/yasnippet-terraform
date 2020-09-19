@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_auth_token
+# key: d_ibm_iam_auth_token
+# --
+
+data "ibm_iam_auth_token" "${1:this}" {
+}

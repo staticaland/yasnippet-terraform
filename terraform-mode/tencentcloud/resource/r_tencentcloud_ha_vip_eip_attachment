@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ha_vip_eip_attachment
+# key: r_tencentcloud_ha_vip_eip_attachment
+# --
+
+resource "tencentcloud_ha_vip_eip_attachment" "${1:this}" {
+    address_ip = "${2:address_ip}"
+    havip_id = "${3:havip_id}"
+}

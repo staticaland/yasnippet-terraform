@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_elasticsearch_host
+# key: d_elasticsearch_host
+# --
+
+data "elasticsearch_host" "${1:this}" {
+    active = "${2:active}"
+}

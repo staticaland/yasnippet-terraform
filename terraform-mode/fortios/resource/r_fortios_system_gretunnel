@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_gretunnel
+# key: r_fortios_system_gretunnel
+# --
+
+resource "fortios_system_gretunnel" "${1:this}" {
+    local_gw = "${2:local_gw}"
+    remote_gw = "${3:remote_gw}"
+}

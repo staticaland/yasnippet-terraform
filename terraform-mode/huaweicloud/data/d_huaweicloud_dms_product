@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_dms_product
+# key: d_huaweicloud_dms_product
+# --
+
+data "huaweicloud_dms_product" "${1:this}" {
+    engine = "${2:engine}"
+    instance_type = "${3:instance_type}"
+}

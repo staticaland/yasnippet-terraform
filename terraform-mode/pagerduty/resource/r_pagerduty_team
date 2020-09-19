@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_team
+# key: r_pagerduty_team
+# --
+
+resource "pagerduty_team" "${1:this}" {
+    name = "${2:name}"
+}

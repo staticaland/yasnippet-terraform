@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_client_js_policy
+# key: r_keycloak_openid_client_js_policy
+# --
+
+resource "keycloak_openid_client_js_policy" "${1:this}" {
+    code = "${2:code}"
+    decision_strategy = "${3:decision_strategy}"
+    name = "${4:name}"
+    realm_id = "${5:realm_id}"
+    resource_server_id = "${6:resource_server_id}"
+}

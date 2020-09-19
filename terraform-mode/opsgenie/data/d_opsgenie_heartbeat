@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_opsgenie_heartbeat
+# key: d_opsgenie_heartbeat
+# --
+
+data "opsgenie_heartbeat" "${1:this}" {
+    name = "${2:name}"
+}

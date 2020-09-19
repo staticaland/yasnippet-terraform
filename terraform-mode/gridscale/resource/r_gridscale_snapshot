@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_snapshot
+# key: r_gridscale_snapshot
+# --
+
+resource "gridscale_snapshot" "${1:this}" {
+    name = "${2:name}"
+    storage_uuid = "${3:storage_uuid}"
+}

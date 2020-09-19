@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_lb_nat_pool
+# key: r_azurestack_lb_nat_pool
+# --
+
+resource "azurestack_lb_nat_pool" "${1:this}" {
+    backend_port = "${2:backend_port}"
+    frontend_ip_configuration_name = "${3:frontend_ip_configuration_name}"
+    frontend_port_end = "${4:frontend_port_end}"
+    frontend_port_start = "${5:frontend_port_start}"
+    loadbalancer_id = "${6:loadbalancer_id}"
+    name = "${7:name}"
+    protocol = "${8:protocol}"
+    resource_group_name = "${9:resource_group_name}"
+}

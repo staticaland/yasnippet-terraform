@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ecs_dedicated_host
+# key: r_alicloud_ecs_dedicated_host
+# --
+
+resource "alicloud_ecs_dedicated_host" "${1:this}" {
+    dedicated_host_type = "${2:dedicated_host_type}"
+}

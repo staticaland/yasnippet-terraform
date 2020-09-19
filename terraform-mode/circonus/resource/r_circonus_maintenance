@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_circonus_maintenance
+# key: r_circonus_maintenance
+# --
+
+resource "circonus_maintenance" "${1:this}" {
+    severities = "${2:severities}"
+    start = "${3:start}"
+    stop = "${4:stop}"
+}

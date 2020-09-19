@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_webproxy_global
+# key: r_fortios_webproxy_global
+# --
+
+resource "fortios_webproxy_global" "${1:this}" {
+    proxy_fqdn = "${2:proxy_fqdn}"
+}

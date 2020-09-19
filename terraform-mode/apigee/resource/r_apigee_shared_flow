@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_apigee_shared_flow
+# key: r_apigee_shared_flow
+# --
+
+resource "apigee_shared_flow" "${1:this}" {
+    bundle = "${2:bundle}"
+    bundle_sha = "${3:bundle_sha}"
+    name = "${4:name}"
+}

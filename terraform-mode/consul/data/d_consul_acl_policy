@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_consul_acl_policy
+# key: d_consul_acl_policy
+# --
+
+data "consul_acl_policy" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_constellix_domain
+# key: d_constellix_domain
+# --
+
+data "constellix_domain" "${1:this}" {
+    name = "${2:name}"
+}

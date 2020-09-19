@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lbaas_server_instance_attachment
+# key: r_ibm_lbaas_server_instance_attachment
+# --
+
+resource "ibm_lbaas_server_instance_attachment" "${1:this}" {
+    lbaas_id = "${2:lbaas_id}"
+    private_ip_address = "${3:private_ip_address}"
+}

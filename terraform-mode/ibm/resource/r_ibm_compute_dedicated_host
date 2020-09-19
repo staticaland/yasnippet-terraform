@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_dedicated_host
+# key: r_ibm_compute_dedicated_host
+# --
+
+resource "ibm_compute_dedicated_host" "${1:this}" {
+    datacenter = "${2:datacenter}"
+    domain = "${3:domain}"
+    hostname = "${4:hostname}"
+    router_hostname = "${5:router_hostname}"
+}

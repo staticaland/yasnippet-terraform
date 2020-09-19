@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_target_tcp_proxy
+# key: r_google_compute_target_tcp_proxy
+# --
+
+resource "google_compute_target_tcp_proxy" "${1:this}" {
+    backend_service = "${2:backend_service}"
+    name = "${3:name}"
+}

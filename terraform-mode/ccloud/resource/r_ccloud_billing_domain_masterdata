@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ccloud_billing_domain_masterdata
+# key: r_ccloud_billing_domain_masterdata
+# --
+
+resource "ccloud_billing_domain_masterdata" "${1:this}" {
+    responsible_primary_contact_email = "${2:responsible_primary_contact_email}"
+    responsible_primary_contact_id = "${3:responsible_primary_contact_id}"
+}

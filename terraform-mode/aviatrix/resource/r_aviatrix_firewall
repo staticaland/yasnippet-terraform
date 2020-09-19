@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_firewall
+# key: r_aviatrix_firewall
+# --
+
+resource "aviatrix_firewall" "${1:this}" {
+    gw_name = "${2:gw_name}"
+}

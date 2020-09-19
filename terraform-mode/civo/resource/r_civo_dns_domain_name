@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_civo_dns_domain_name
+# key: r_civo_dns_domain_name
+# --
+
+resource "civo_dns_domain_name" "${1:this}" {
+    name = "${2:name}"
+}

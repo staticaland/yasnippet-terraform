@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_cookie_persistence_profile
+# key: r_nsxt_lb_cookie_persistence_profile
+# --
+
+resource "nsxt_lb_cookie_persistence_profile" "${1:this}" {
+    cookie_name = "${2:cookie_name}"
+}

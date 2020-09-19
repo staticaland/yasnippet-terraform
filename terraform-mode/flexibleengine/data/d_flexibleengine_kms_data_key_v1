@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_flexibleengine_kms_data_key_v1
+# key: d_flexibleengine_kms_data_key_v1
+# --
+
+data "flexibleengine_kms_data_key_v1" "${1:this}" {
+    datakey_length = "${2:datakey_length}"
+    key_id = "${3:key_id}"
+}

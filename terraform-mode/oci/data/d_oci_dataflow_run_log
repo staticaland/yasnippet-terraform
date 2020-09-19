@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_dataflow_run_log
+# key: d_oci_dataflow_run_log
+# --
+
+data "oci_dataflow_run_log" "${1:this}" {
+    name = "${2:name}"
+    run_id = "${3:run_id}"
+}

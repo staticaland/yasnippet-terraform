@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_feature_flags
+# key: r_cloudfoundry_feature_flags
+# --
+
+resource "cloudfoundry_feature_flags" "${1:this}" {
+}

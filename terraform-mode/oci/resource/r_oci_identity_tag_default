@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_identity_tag_default
+# key: r_oci_identity_tag_default
+# --
+
+resource "oci_identity_tag_default" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    tag_definition_id = "${3:tag_definition_id}"
+    value = "${4:value}"
+}

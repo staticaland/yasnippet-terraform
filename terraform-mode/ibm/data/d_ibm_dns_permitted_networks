@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_dns_permitted_networks
+# key: d_ibm_dns_permitted_networks
+# --
+
+data "ibm_dns_permitted_networks" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    zone_id = "${3:zone_id}"
+}

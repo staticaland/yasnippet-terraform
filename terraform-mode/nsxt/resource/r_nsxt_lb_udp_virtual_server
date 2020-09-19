@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_udp_virtual_server
+# key: r_nsxt_lb_udp_virtual_server
+# --
+
+resource "nsxt_lb_udp_virtual_server" "${1:this}" {
+    application_profile_id = "${2:application_profile_id}"
+    ip_address = "${3:ip_address}"
+    ports = "${4:ports}"
+}

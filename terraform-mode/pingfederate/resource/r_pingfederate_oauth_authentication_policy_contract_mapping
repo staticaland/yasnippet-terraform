@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_oauth_authentication_policy_contract_mapping
+# key: r_pingfederate_oauth_authentication_policy_contract_mapping
+# --
+
+resource "pingfederate_oauth_authentication_policy_contract_mapping" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_tags
+# key: d_outscale_tags
+# --
+
+data "outscale_tags" "${1:this}" {
+}

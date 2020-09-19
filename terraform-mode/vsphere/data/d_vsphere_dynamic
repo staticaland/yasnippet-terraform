@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_dynamic
+# key: d_vsphere_dynamic
+# --
+
+data "vsphere_dynamic" "${1:this}" {
+    filter = "${2:filter}"
+}

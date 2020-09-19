@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_gpdb_instance
+# key: r_alicloud_gpdb_instance
+# --
+
+resource "alicloud_gpdb_instance" "${1:this}" {
+    instance_class = "${2:instance_class}"
+    instance_group_count = "${3:instance_group_count}"
+}

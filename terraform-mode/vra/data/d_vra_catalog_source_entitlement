@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vra_catalog_source_entitlement
+# key: d_vra_catalog_source_entitlement
+# --
+
+data "vra_catalog_source_entitlement" "${1:this}" {
+    project_id = "${2:project_id}"
+}

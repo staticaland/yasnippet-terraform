@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_storage_bucket_object
+# key: d_google_storage_bucket_object
+# --
+
+data "google_storage_bucket_object" "${1:this}" {
+}

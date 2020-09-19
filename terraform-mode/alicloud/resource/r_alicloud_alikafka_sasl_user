@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_alikafka_sasl_user
+# key: r_alicloud_alikafka_sasl_user
+# --
+
+resource "alicloud_alikafka_sasl_user" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    username = "${3:username}"
+}

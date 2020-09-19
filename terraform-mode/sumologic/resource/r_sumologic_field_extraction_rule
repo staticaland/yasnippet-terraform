@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_field_extraction_rule
+# key: r_sumologic_field_extraction_rule
+# --
+
+resource "sumologic_field_extraction_rule" "${1:this}" {
+    enabled = "${2:enabled}"
+    name = "${3:name}"
+    parse_expression = "${4:parse_expression}"
+    scope = "${5:scope}"
+}

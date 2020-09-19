@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_openshift_route
+# key: r_openshift_route
+# --
+
+resource "openshift_route" "${1:this}" {
+}

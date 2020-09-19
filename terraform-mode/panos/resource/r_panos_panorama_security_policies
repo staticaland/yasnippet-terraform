@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_security_policies
+# key: r_panos_panorama_security_policies
+# --
+
+resource "panos_panorama_security_policies" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_function_package
+# key: d_ibm_function_package
+# --
+
+data "ibm_function_package" "${1:this}" {
+    name = "${2:name}"
+    namespace = "${3:namespace}"
+}

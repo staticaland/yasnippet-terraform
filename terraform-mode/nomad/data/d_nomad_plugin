@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_nomad_plugin
+# key: d_nomad_plugin
+# --
+
+data "nomad_plugin" "${1:this}" {
+    plugin_id = "${2:plugin_id}"
+}

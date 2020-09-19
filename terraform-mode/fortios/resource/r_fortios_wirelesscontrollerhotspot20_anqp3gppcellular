@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_wirelesscontrollerhotspot20_anqp3gppcellular
+# key: r_fortios_wirelesscontrollerhotspot20_anqp3gppcellular
+# --
+
+resource "fortios_wirelesscontrollerhotspot20_anqp3gppcellular" "${1:this}" {
+}

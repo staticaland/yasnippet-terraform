@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_consul_acl_role
+# key: d_consul_acl_role
+# --
+
+data "consul_acl_role" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_physical_interface
+# key: r_checkpoint_physical_interface
+# --
+
+resource "checkpoint_physical_interface" "${1:this}" {
+    name = "${2:name}"
+}

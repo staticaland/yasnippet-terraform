@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_pipeline_trigger
+# key: r_gitlab_pipeline_trigger
+# --
+
+resource "gitlab_pipeline_trigger" "${1:this}" {
+    description = "${2:description}"
+    project = "${3:project}"
+}

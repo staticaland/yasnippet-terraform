@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_is_instance_profiles
+# key: d_ibm_is_instance_profiles
+# --
+
+data "ibm_is_instance_profiles" "${1:this}" {
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_route_entry
+# key: r_tencentcloud_route_entry
+# --
+
+resource "tencentcloud_route_entry" "${1:this}" {
+    cidr_block = "${2:cidr_block}"
+    next_hub = "${3:next_hub}"
+    next_type = "${4:next_type}"
+    route_table_id = "${5:route_table_id}"
+    vpc_id = "${6:vpc_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_dns_ptrrecord_v2
+# key: r_opentelekomcloud_dns_ptrrecord_v2
+# --
+
+resource "opentelekomcloud_dns_ptrrecord_v2" "${1:this}" {
+    floatingip_id = "${2:floatingip_id}"
+    name = "${3:name}"
+}

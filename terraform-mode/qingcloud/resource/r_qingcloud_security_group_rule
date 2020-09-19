@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_security_group_rule
+# key: r_qingcloud_security_group_rule
+# --
+
+resource "qingcloud_security_group_rule" "${1:this}" {
+    action = "${2:action}"
+    protocol = "${3:protocol}"
+    security_group_id = "${4:security_group_id}"
+}

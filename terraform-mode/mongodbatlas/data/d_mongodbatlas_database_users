@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_database_users
+# key: d_mongodbatlas_database_users
+# --
+
+data "mongodbatlas_database_users" "${1:this}" {
+    project_id = "${2:project_id}"
+}

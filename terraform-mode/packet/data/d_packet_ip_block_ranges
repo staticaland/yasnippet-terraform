@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_packet_ip_block_ranges
+# key: d_packet_ip_block_ranges
+# --
+
+data "packet_ip_block_ranges" "${1:this}" {
+    project_id = "${2:project_id}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_network_peering
+# key: r_mongodbatlas_network_peering
+# --
+
+resource "mongodbatlas_network_peering" "${1:this}" {
+    container_id = "${2:container_id}"
+    project_id = "${3:project_id}"
+    provider_name = "${4:provider_name}"
+}

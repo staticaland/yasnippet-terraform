@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_vpc_address_prefix
+# key: r_ibm_is_vpc_address_prefix
+# --
+
+resource "ibm_is_vpc_address_prefix" "${1:this}" {
+    cidr = "${2:cidr}"
+    name = "${3:name}"
+    vpc = "${4:vpc}"
+    zone = "${5:zone}"
+}

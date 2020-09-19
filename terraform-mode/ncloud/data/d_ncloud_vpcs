@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_vpcs
+# key: d_ncloud_vpcs
+# --
+
+data "ncloud_vpcs" "${1:this}" {
+}

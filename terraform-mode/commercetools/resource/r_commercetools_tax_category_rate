@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_commercetools_tax_category_rate
+# key: r_commercetools_tax_category_rate
+# --
+
+resource "commercetools_tax_category_rate" "${1:this}" {
+    country = "${2:country}"
+    included_in_price = "${3:included_in_price}"
+    name = "${4:name}"
+    tax_category_id = "${5:tax_category_id}"
+}

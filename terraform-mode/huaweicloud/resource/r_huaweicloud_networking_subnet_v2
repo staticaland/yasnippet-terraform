@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_networking_subnet_v2
+# key: r_huaweicloud_networking_subnet_v2
+# --
+
+resource "huaweicloud_networking_subnet_v2" "${1:this}" {
+    cidr = "${2:cidr}"
+    network_id = "${3:network_id}"
+}

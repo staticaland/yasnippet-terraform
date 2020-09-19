@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_sops_file
+# key: d_sops_file
+# --
+
+data "sops_file" "${1:this}" {
+    source_file = "${2:source_file}"
+}

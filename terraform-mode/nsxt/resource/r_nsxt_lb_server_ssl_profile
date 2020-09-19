@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_lb_server_ssl_profile
+# key: r_nsxt_lb_server_ssl_profile
+# --
+
+resource "nsxt_lb_server_ssl_profile" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_logfortianalyzer3_setting
+# key: r_fortios_logfortianalyzer3_setting
+# --
+
+resource "fortios_logfortianalyzer3_setting" "${1:this}" {
+}

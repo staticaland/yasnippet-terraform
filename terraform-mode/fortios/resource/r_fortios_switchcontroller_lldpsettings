@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_lldpsettings
+# key: r_fortios_switchcontroller_lldpsettings
+# --
+
+resource "fortios_switchcontroller_lldpsettings" "${1:this}" {
+}

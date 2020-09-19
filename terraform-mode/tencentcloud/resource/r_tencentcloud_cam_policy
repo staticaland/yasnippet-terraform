@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cam_policy
+# key: r_tencentcloud_cam_policy
+# --
+
+resource "tencentcloud_cam_policy" "${1:this}" {
+    document = "${2:document}"
+    name = "${3:name}"
+}

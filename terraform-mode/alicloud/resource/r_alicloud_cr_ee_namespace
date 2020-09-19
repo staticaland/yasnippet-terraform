@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cr_ee_namespace
+# key: r_alicloud_cr_ee_namespace
+# --
+
+resource "alicloud_cr_ee_namespace" "${1:this}" {
+    auto_create = "${2:auto_create}"
+    default_visibility = "${3:default_visibility}"
+    instance_id = "${4:instance_id}"
+    name = "${5:name}"
+}

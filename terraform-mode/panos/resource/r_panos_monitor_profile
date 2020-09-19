@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_panos_monitor_profile
+# key: r_panos_monitor_profile
+# --
+
+resource "panos_monitor_profile" "${1:this}" {
+    name = "${2:name}"
+}

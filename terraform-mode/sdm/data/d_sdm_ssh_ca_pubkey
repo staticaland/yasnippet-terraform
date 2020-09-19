@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sdm_ssh_ca_pubkey
+# key: d_sdm_ssh_ca_pubkey
+# --
+
+data "sdm_ssh_ca_pubkey" "${1:this}" {
+}

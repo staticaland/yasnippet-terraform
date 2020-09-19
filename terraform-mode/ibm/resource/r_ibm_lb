@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb
+# key: r_ibm_lb
+# --
+
+resource "ibm_lb" "${1:this}" {
+    connections = "${2:connections}"
+    datacenter = "${3:datacenter}"
+}

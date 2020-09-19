@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_kms_key
+# key: d_ibm_kms_key
+# --
+
+data "ibm_kms_key" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    key_name = "${3:key_name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_permission_target
+# key: r_artifactory_permission_target
+# --
+
+resource "artifactory_permission_target" "${1:this}" {
+    name = "${2:name}"
+}

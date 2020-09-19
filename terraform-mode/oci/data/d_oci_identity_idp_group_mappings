@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_idp_group_mappings
+# key: d_oci_identity_idp_group_mappings
+# --
+
+data "oci_identity_idp_group_mappings" "${1:this}" {
+    identity_provider_id = "${2:identity_provider_id}"
+}

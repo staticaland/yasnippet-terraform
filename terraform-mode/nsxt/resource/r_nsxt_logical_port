@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_logical_port
+# key: r_nsxt_logical_port
+# --
+
+resource "nsxt_logical_port" "${1:this}" {
+    logical_switch_id = "${2:logical_switch_id}"
+}

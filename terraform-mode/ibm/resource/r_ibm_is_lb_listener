@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_lb_listener
+# key: r_ibm_is_lb_listener
+# --
+
+resource "ibm_is_lb_listener" "${1:this}" {
+    lb = "${2:lb}"
+    port = "${3:port}"
+    protocol = "${4:protocol}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexbot_server
+# key: r_flexbot_server
+# --
+
+resource "flexbot_server" "${1:this}" {
+}

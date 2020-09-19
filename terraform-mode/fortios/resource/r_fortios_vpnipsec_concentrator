@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpnipsec_concentrator
+# key: r_fortios_vpnipsec_concentrator
+# --
+
+resource "fortios_vpnipsec_concentrator" "${1:this}" {
+}

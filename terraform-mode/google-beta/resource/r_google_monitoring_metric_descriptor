@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_google_monitoring_metric_descriptor
+# key: r_google_monitoring_metric_descriptor
+# --
+
+resource "google_monitoring_metric_descriptor" "${1:this}" {
+    description = "${2:description}"
+    display_name = "${3:display_name}"
+    metric_kind = "${4:metric_kind}"
+    type = "${5:type}"
+    value_type = "${6:value_type}"
+}

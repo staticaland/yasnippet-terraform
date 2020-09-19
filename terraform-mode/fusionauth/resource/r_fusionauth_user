@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_user
+# key: r_fusionauth_user
+# --
+
+resource "fusionauth_user" "${1:this}" {
+}

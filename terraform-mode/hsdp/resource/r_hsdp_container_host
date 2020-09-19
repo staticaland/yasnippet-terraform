@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_container_host
+# key: r_hsdp_container_host
+# --
+
+resource "hsdp_container_host" "${1:this}" {
+    name = "${2:name}"
+}

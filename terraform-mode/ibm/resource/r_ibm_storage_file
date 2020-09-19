@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_storage_file
+# key: r_ibm_storage_file
+# --
+
+resource "ibm_storage_file" "${1:this}" {
+    capacity = "${2:capacity}"
+    datacenter = "${3:datacenter}"
+    iops = "${4:iops}"
+    type = "${5:type}"
+}

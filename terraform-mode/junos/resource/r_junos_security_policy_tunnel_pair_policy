@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_junos_security_policy_tunnel_pair_policy
+# key: r_junos_security_policy_tunnel_pair_policy
+# --
+
+resource "junos_security_policy_tunnel_pair_policy" "${1:this}" {
+    policy_a_to_b = "${2:policy_a_to_b}"
+    policy_b_to_a = "${3:policy_b_to_a}"
+    zone_a = "${4:zone_a}"
+    zone_b = "${5:zone_b}"
+}

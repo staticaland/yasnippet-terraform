@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ns1_zone
+# key: d_ns1_zone
+# --
+
+data "ns1_zone" "${1:this}" {
+    zone = "${2:zone}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_commandpersistence_cmd
+# key: r_commandpersistence_cmd
+# --
+
+resource "commandpersistence_cmd" "${1:this}" {
+    program = "${2:program}"
+}

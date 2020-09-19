@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_application_signature
+# key: r_panos_panorama_application_signature
+# --
+
+resource "panos_panorama_application_signature" "${1:this}" {
+    application_object = "${2:application_object}"
+    name = "${3:name}"
+}

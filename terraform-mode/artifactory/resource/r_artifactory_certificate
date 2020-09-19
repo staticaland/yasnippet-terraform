@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_certificate
+# key: r_artifactory_certificate
+# --
+
+resource "artifactory_certificate" "${1:this}" {
+    alias = "${2:alias}"
+    content = "${3:content}"
+}

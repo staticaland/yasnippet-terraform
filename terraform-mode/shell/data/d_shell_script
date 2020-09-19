@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_shell_script
+# key: d_shell_script
+# --
+
+data "shell_script" "${1:this}" {
+}

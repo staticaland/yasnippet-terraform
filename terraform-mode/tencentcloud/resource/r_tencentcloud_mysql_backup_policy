@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_mysql_backup_policy
+# key: r_tencentcloud_mysql_backup_policy
+# --
+
+resource "tencentcloud_mysql_backup_policy" "${1:this}" {
+    mysql_id = "${2:mysql_id}"
+}

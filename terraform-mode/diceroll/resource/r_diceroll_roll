@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_diceroll_roll
+# key: r_diceroll_roll
+# --
+
+resource "diceroll_roll" "${1:this}" {
+    seed = "${2:seed}"
+}

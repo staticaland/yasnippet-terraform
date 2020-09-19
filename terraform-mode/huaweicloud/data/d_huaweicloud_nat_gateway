@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_nat_gateway
+# key: d_huaweicloud_nat_gateway
+# --
+
+data "huaweicloud_nat_gateway" "${1:this}" {
+}

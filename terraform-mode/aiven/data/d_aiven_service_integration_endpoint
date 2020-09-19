@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_aiven_service_integration_endpoint
+# key: d_aiven_service_integration_endpoint
+# --
+
+data "aiven_service_integration_endpoint" "${1:this}" {
+    endpoint_name = "${2:endpoint_name}"
+    project = "${3:project}"
+}

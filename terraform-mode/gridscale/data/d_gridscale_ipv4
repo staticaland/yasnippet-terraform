@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_ipv4
+# key: d_gridscale_ipv4
+# --
+
+data "gridscale_ipv4" "${1:this}" {
+    resource_id = "${2:resource_id}"
+}

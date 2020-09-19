@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_policies
+# key: d_prismacloud_policies
+# --
+
+data "prismacloud_policies" "${1:this}" {
+}

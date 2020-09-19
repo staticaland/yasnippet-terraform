@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_identity_network_sources
+# key: d_oci_identity_network_sources
+# --
+
+data "oci_identity_network_sources" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

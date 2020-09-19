@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cs_kubernetes_autoscaler
+# key: r_alicloud_cs_kubernetes_autoscaler
+# --
+
+resource "alicloud_cs_kubernetes_autoscaler" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    cool_down_duration = "${3:cool_down_duration}"
+    defer_scale_in_duration = "${4:defer_scale_in_duration}"
+    utilization = "${5:utilization}"
+}

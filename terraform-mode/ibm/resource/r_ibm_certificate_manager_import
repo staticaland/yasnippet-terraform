@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_certificate_manager_import
+# key: r_ibm_certificate_manager_import
+# --
+
+resource "ibm_certificate_manager_import" "${1:this}" {
+    certificate_manager_instance_id = "${2:certificate_manager_instance_id}"
+    data = "${3:data}"
+    name = "${4:name}"
+}

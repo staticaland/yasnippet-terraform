@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_resource_group
+# key: d_ibm_resource_group
+# --
+
+data "ibm_resource_group" "${1:this}" {
+}

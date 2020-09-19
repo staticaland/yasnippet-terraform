@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_storage
+# key: r_gridscale_storage
+# --
+
+resource "gridscale_storage" "${1:this}" {
+    capacity = "${2:capacity}"
+    name = "${3:name}"
+}

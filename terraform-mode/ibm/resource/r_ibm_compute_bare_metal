@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_compute_bare_metal
+# key: r_ibm_compute_bare_metal
+# --
+
+resource "ibm_compute_bare_metal" "${1:this}" {
+    domain = "${2:domain}"
+}

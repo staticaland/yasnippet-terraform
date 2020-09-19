@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_vbs_backup_policy_v2
+# key: r_opentelekomcloud_vbs_backup_policy_v2
+# --
+
+resource "opentelekomcloud_vbs_backup_policy_v2" "${1:this}" {
+    name = "${2:name}"
+    retain_first_backup = "${3:retain_first_backup}"
+    start_time = "${4:start_time}"
+}

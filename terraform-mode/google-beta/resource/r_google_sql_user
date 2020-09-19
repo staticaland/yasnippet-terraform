@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_sql_user
+# key: r_google_sql_user
+# --
+
+resource "google_sql_user" "${1:this}" {
+    instance = "${2:instance}"
+    name = "${3:name}"
+}

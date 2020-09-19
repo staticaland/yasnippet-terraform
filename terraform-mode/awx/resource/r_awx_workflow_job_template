@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_awx_workflow_job_template
+# key: r_awx_workflow_job_template
+# --
+
+resource "awx_workflow_job_template" "${1:this}" {
+    name = "${2:name}"
+}

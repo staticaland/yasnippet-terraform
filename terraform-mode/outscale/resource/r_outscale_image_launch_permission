@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_image_launch_permission
+# key: r_outscale_image_launch_permission
+# --
+
+resource "outscale_image_launch_permission" "${1:this}" {
+    image_id = "${2:image_id}"
+}

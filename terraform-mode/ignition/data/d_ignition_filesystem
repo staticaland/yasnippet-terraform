@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ignition_filesystem
+# key: d_ignition_filesystem
+# --
+
+data "ignition_filesystem" "${1:this}" {
+    device = "${2:device}"
+    format = "${3:format}"
+}

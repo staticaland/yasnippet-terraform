@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_vm_cluster
+# key: r_oci_database_vm_cluster
+# --
+
+resource "oci_database_vm_cluster" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    cpu_core_count = "${3:cpu_core_count}"
+    display_name = "${4:display_name}"
+    exadata_infrastructure_id = "${5:exadata_infrastructure_id}"
+    gi_version = "${6:gi_version}"
+    ssh_public_keys = "${7:ssh_public_keys}"
+    vm_cluster_network_id = "${8:vm_cluster_network_id}"
+}

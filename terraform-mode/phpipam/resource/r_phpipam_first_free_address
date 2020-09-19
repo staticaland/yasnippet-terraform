@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_phpipam_first_free_address
+# key: r_phpipam_first_free_address
+# --
+
+resource "phpipam_first_free_address" "${1:this}" {
+    subnet_id = "${2:subnet_id}"
+}

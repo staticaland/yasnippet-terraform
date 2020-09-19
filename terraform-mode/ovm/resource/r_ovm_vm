@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ovm_vm
+# key: r_ovm_vm
+# --
+
+resource "ovm_vm" "${1:this}" {
+    repositoryid = "${2:repositoryid}"
+    serverpoolid = "${3:serverpoolid}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_pagerduty_escalation_policy
+# key: r_pagerduty_escalation_policy
+# --
+
+resource "pagerduty_escalation_policy" "${1:this}" {
+    name = "${2:name}"
+}

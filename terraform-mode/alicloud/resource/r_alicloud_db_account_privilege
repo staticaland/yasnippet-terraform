@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_db_account_privilege
+# key: r_alicloud_db_account_privilege
+# --
+
+resource "alicloud_db_account_privilege" "${1:this}" {
+    account_name = "${2:account_name}"
+    db_names = "${3:db_names}"
+    instance_id = "${4:instance_id}"
+}

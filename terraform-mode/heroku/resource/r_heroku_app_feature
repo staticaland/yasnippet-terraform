@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_heroku_app_feature
+# key: r_heroku_app_feature
+# --
+
+resource "heroku_app_feature" "${1:this}" {
+    app = "${2:app}"
+    name = "${3:name}"
+}

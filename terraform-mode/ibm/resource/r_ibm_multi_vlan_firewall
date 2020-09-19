@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_multi_vlan_firewall
+# key: r_ibm_multi_vlan_firewall
+# --
+
+resource "ibm_multi_vlan_firewall" "${1:this}" {
+    datacenter = "${2:datacenter}"
+    firewall_type = "${3:firewall_type}"
+    name = "${4:name}"
+    pod = "${5:pod}"
+}

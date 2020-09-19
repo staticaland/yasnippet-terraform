@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_app_route
+# key: r_ibm_app_route
+# --
+
+resource "ibm_app_route" "${1:this}" {
+    domain_guid = "${2:domain_guid}"
+    space_guid = "${3:space_guid}"
+}

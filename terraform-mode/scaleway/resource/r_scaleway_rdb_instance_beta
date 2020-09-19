@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_rdb_instance_beta
+# key: r_scaleway_rdb_instance_beta
+# --
+
+resource "scaleway_rdb_instance_beta" "${1:this}" {
+    engine = "${2:engine}"
+    node_type = "${3:node_type}"
+    password = "${4:password}"
+    user_name = "${5:user_name}"
+}

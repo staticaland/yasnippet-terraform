@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ansiblevault_env
+# key: d_ansiblevault_env
+# --
+
+data "ansiblevault_env" "${1:this}" {
+    env = "${2:env}"
+}

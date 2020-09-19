@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_adb_zones
+# key: d_alicloud_adb_zones
+# --
+
+data "alicloud_adb_zones" "${1:this}" {
+}

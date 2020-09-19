@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_instana_alerting_channel_victor_ops
+# key: r_instana_alerting_channel_victor_ops
+# --
+
+resource "instana_alerting_channel_victor_ops" "${1:this}" {
+    api_key = "${2:api_key}"
+    name = "${3:name}"
+    routing_key = "${4:routing_key}"
+}

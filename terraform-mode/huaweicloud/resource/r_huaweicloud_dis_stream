@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dis_stream
+# key: r_huaweicloud_dis_stream
+# --
+
+resource "huaweicloud_dis_stream" "${1:this}" {
+    partition_count = "${2:partition_count}"
+    stream_name = "${3:stream_name}"
+}

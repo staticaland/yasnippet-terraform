@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_awslambda_invocation
+# key: r_awslambda_invocation
+# --
+
+resource "awslambda_invocation" "${1:this}" {
+    function_name = "${2:function_name}"
+    input = "${3:input}"
+}

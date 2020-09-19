@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_smn_topic
+# key: r_huaweicloud_smn_topic
+# --
+
+resource "huaweicloud_smn_topic" "${1:this}" {
+    name = "${2:name}"
+}

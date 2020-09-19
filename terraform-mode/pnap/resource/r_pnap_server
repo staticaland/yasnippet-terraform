@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_pnap_server
+# key: r_pnap_server
+# --
+
+resource "pnap_server" "${1:this}" {
+    hostname = "${2:hostname}"
+    location = "${3:location}"
+    os = "${4:os}"
+    ssh_keys = "${5:ssh_keys}"
+    type = "${6:type}"
+}

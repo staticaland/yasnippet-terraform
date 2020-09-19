@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_panos_application_group
+# key: r_panos_application_group
+# --
+
+resource "panos_application_group" "${1:this}" {
+    name = "${2:name}"
+}

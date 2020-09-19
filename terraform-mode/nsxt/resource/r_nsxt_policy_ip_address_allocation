@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_ip_address_allocation
+# key: r_nsxt_policy_ip_address_allocation
+# --
+
+resource "nsxt_policy_ip_address_allocation" "${1:this}" {
+    display_name = "${2:display_name}"
+    pool_path = "${3:pool_path}"
+}

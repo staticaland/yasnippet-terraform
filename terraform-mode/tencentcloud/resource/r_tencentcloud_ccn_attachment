@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ccn_attachment
+# key: r_tencentcloud_ccn_attachment
+# --
+
+resource "tencentcloud_ccn_attachment" "${1:this}" {
+    ccn_id = "${2:ccn_id}"
+    instance_id = "${3:instance_id}"
+    instance_region = "${4:instance_region}"
+    instance_type = "${5:instance_type}"
+}

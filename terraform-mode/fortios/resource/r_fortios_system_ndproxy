@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ndproxy
+# key: r_fortios_system_ndproxy
+# --
+
+resource "fortios_system_ndproxy" "${1:this}" {
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_ldap_full_name_mapper
+# key: r_keycloak_ldap_full_name_mapper
+# --
+
+resource "keycloak_ldap_full_name_mapper" "${1:this}" {
+    ldap_full_name_attribute = "${2:ldap_full_name_attribute}"
+    ldap_user_federation_id = "${3:ldap_user_federation_id}"
+    name = "${4:name}"
+    realm_id = "${5:realm_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_bless_kms_public_key
+# key: d_bless_kms_public_key
+# --
+
+data "bless_kms_public_key" "${1:this}" {
+    kms_key_id = "${2:kms_key_id}"
+}

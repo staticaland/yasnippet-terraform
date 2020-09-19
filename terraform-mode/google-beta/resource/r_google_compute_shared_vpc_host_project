@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_shared_vpc_host_project
+# key: r_google_compute_shared_vpc_host_project
+# --
+
+resource "google_compute_shared_vpc_host_project" "${1:this}" {
+    project = "${2:project}"
+}

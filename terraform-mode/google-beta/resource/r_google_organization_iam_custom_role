@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_google_organization_iam_custom_role
+# key: r_google_organization_iam_custom_role
+# --
+
+resource "google_organization_iam_custom_role" "${1:this}" {
+    org_id = "${2:org_id}"
+    permissions = "${3:permissions}"
+    role_id = "${4:role_id}"
+    title = "${5:title}"
+}

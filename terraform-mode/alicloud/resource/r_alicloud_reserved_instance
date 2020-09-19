@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_reserved_instance
+# key: r_alicloud_reserved_instance
+# --
+
+resource "alicloud_reserved_instance" "${1:this}" {
+    instance_type = "${2:instance_type}"
+}

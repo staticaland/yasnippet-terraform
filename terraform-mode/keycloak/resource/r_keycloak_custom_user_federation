@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_custom_user_federation
+# key: r_keycloak_custom_user_federation
+# --
+
+resource "keycloak_custom_user_federation" "${1:this}" {
+    name = "${2:name}"
+    provider_id = "${3:provider_id}"
+    realm_id = "${4:realm_id}"
+}

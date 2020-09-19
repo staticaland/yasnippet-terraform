@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_databricks_scim_group
+# key: r_databricks_scim_group
+# --
+
+resource "databricks_scim_group" "${1:this}" {
+    display_name = "${2:display_name}"
+}

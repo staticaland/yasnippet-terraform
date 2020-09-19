@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_virtual_network_gateway
+# key: r_azurestack_virtual_network_gateway
+# --
+
+resource "azurestack_virtual_network_gateway" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    resource_group_name = "${4:resource_group_name}"
+    sku = "${5:sku}"
+    type = "${6:type}"
+}

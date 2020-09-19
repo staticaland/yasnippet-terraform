@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_msgraph_user
+# key: d_msgraph_user
+# --
+
+data "msgraph_user" "${1:this}" {
+}

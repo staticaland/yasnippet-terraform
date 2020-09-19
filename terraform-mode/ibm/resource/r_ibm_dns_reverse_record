@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dns_reverse_record
+# key: r_ibm_dns_reverse_record
+# --
+
+resource "ibm_dns_reverse_record" "${1:this}" {
+    hostname = "${2:hostname}"
+    ipaddress = "${3:ipaddress}"
+}

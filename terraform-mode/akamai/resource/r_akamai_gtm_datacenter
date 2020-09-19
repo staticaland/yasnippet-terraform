@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_akamai_gtm_datacenter
+# key: r_akamai_gtm_datacenter
+# --
+
+resource "akamai_gtm_datacenter" "${1:this}" {
+    domain = "${2:domain}"
+}

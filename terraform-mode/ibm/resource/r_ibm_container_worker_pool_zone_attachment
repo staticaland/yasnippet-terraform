@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_container_worker_pool_zone_attachment
+# key: r_ibm_container_worker_pool_zone_attachment
+# --
+
+resource "ibm_container_worker_pool_zone_attachment" "${1:this}" {
+    cluster = "${2:cluster}"
+    worker_pool = "${3:worker_pool}"
+    zone = "${4:zone}"
+}

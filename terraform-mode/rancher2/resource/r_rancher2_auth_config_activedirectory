@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_auth_config_activedirectory
+# key: r_rancher2_auth_config_activedirectory
+# --
+
+resource "rancher2_auth_config_activedirectory" "${1:this}" {
+    servers = "${2:servers}"
+    service_account_password = "${3:service_account_password}"
+    service_account_username = "${4:service_account_username}"
+    user_search_base = "${5:user_search_base}"
+}

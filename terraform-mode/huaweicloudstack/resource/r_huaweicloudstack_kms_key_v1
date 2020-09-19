@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloudstack_kms_key_v1
+# key: r_huaweicloudstack_kms_key_v1
+# --
+
+resource "huaweicloudstack_kms_key_v1" "${1:this}" {
+    key_alias = "${2:key_alias}"
+}

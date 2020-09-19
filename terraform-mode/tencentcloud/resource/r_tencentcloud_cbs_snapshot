@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cbs_snapshot
+# key: r_tencentcloud_cbs_snapshot
+# --
+
+resource "tencentcloud_cbs_snapshot" "${1:this}" {
+    snapshot_name = "${2:snapshot_name}"
+    storage_id = "${3:storage_id}"
+}

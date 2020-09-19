@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_apiuser_setting
+# key: r_fortios_system_apiuser_setting
+# --
+
+resource "fortios_system_apiuser_setting" "${1:this}" {
+    accprofile = "${2:accprofile}"
+    name = "${3:name}"
+    vdom = "${4:vdom}"
+}

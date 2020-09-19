@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ssl_key
+# key: r_bigip_ssl_key
+# --
+
+resource "bigip_ssl_key" "${1:this}" {
+    content = "${2:content}"
+    name = "${3:name}"
+}

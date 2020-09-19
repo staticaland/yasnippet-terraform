@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_policy_rule_idp_discovery
+# key: r_okta_policy_rule_idp_discovery
+# --
+
+resource "okta_policy_rule_idp_discovery" "${1:this}" {
+    name = "${2:name}"
+    policyid = "${3:policyid}"
+}

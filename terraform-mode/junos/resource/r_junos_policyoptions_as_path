@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_policyoptions_as_path
+# key: r_junos_policyoptions_as_path
+# --
+
+resource "junos_policyoptions_as_path" "${1:this}" {
+    name = "${2:name}"
+}

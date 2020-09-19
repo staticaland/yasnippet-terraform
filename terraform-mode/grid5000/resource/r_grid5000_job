@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_grid5000_job
+# key: r_grid5000_job
+# --
+
+resource "grid5000_job" "${1:this}" {
+    command = "${2:command}"
+    site = "${3:site}"
+}

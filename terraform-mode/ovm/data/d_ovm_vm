@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ovm_vm
+# key: d_ovm_vm
+# --
+
+data "ovm_vm" "${1:this}" {
+    name = "${2:name}"
+    repositoryid = "${3:repositoryid}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sendgrid_template
+# key: r_sendgrid_template
+# --
+
+resource "sendgrid_template" "${1:this}" {
+    name = "${2:name}"
+}

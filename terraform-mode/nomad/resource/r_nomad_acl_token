@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nomad_acl_token
+# key: r_nomad_acl_token
+# --
+
+resource "nomad_acl_token" "${1:this}" {
+    type = "${2:type}"
+}

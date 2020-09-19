@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_ons_instance
+# key: r_alicloud_ons_instance
+# --
+
+resource "alicloud_ons_instance" "${1:this}" {
+}

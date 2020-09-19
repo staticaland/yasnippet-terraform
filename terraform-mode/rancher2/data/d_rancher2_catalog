@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_catalog
+# key: d_rancher2_catalog
+# --
+
+data "rancher2_catalog" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_saml_client_scope
+# key: r_keycloak_saml_client_scope
+# --
+
+resource "keycloak_saml_client_scope" "${1:this}" {
+    name = "${2:name}"
+    realm_id = "${3:realm_id}"
+}

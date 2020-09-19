@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ckafka_user
+# key: r_tencentcloud_ckafka_user
+# --
+
+resource "tencentcloud_ckafka_user" "${1:this}" {
+    account_name = "${2:account_name}"
+    instance_id = "${3:instance_id}"
+    password = "${4:password}"
+}

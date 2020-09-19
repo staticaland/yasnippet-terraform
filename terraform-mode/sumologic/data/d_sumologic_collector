@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sumologic_collector
+# key: d_sumologic_collector
+# --
+
+data "sumologic_collector" "${1:this}" {
+}

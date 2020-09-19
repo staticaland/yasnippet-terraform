@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_timeboard
+# key: r_datadog_timeboard
+# --
+
+resource "datadog_timeboard" "${1:this}" {
+    description = "${2:description}"
+    title = "${3:title}"
+}

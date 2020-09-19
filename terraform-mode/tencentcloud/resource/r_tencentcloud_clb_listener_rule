@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_clb_listener_rule
+# key: r_tencentcloud_clb_listener_rule
+# --
+
+resource "tencentcloud_clb_listener_rule" "${1:this}" {
+    clb_id = "${2:clb_id}"
+    domain = "${3:domain}"
+    listener_id = "${4:listener_id}"
+    url = "${5:url}"
+}

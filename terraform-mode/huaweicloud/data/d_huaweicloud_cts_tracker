@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_cts_tracker
+# key: d_huaweicloud_cts_tracker
+# --
+
+data "huaweicloud_cts_tracker" "${1:this}" {
+}

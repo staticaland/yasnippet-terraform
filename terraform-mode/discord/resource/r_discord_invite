@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_discord_invite
+# key: r_discord_invite
+# --
+
+resource "discord_invite" "${1:this}" {
+    channel_id = "${2:channel_id}"
+}

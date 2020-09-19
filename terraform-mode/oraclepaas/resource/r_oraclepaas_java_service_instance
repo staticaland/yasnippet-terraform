@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oraclepaas_java_service_instance
+# key: r_oraclepaas_java_service_instance
+# --
+
+resource "oraclepaas_java_service_instance" "${1:this}" {
+    edition = "${2:edition}"
+    name = "${3:name}"
+    ssh_public_key = "${4:ssh_public_key}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_outscale_security_group
+# key: r_outscale_security_group
+# --
+
+resource "outscale_security_group" "${1:this}" {
+}

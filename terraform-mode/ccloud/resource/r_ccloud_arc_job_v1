@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ccloud_arc_job_v1
+# key: r_ccloud_arc_job_v1
+# --
+
+resource "ccloud_arc_job_v1" "${1:this}" {
+    to = "${2:to}"
+}

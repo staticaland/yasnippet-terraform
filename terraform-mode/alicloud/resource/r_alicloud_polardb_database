@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_polardb_database
+# key: r_alicloud_polardb_database
+# --
+
+resource "alicloud_polardb_database" "${1:this}" {
+    db_cluster_id = "${2:db_cluster_id}"
+    db_name = "${3:db_name}"
+}

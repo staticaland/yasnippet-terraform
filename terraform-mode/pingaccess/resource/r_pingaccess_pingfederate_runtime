@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_pingfederate_runtime
+# key: r_pingaccess_pingfederate_runtime
+# --
+
+resource "pingaccess_pingfederate_runtime" "${1:this}" {
+}

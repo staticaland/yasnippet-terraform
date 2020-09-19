@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloudstack_networking_secgroup_v2
+# key: r_huaweicloudstack_networking_secgroup_v2
+# --
+
+resource "huaweicloudstack_networking_secgroup_v2" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_oci_objectstorage_object
+# key: d_oci_objectstorage_object
+# --
+
+data "oci_objectstorage_object" "${1:this}" {
+    bucket = "${2:bucket}"
+    namespace = "${3:namespace}"
+    object = "${4:object}"
+}

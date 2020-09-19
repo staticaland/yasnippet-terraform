@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_global_cluster_config
+# key: d_mongodbatlas_global_cluster_config
+# --
+
+data "mongodbatlas_global_cluster_config" "${1:this}" {
+    cluster_name = "${2:cluster_name}"
+    project_id = "${3:project_id}"
+}

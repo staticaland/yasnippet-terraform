@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vault_identity_entity
+# key: d_vault_identity_entity
+# --
+
+data "vault_identity_entity" "${1:this}" {
+}

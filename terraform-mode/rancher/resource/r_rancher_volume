@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher_volume
+# key: r_rancher_volume
+# --
+
+resource "rancher_volume" "${1:this}" {
+    driver = "${2:driver}"
+    environment_id = "${3:environment_id}"
+    name = "${4:name}"
+}

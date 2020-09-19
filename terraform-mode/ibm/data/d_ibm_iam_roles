@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_iam_roles
+# key: d_ibm_iam_roles
+# --
+
+data "ibm_iam_roles" "${1:this}" {
+}

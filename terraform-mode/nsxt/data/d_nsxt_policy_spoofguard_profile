@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_spoofguard_profile
+# key: d_nsxt_policy_spoofguard_profile
+# --
+
+data "nsxt_policy_spoofguard_profile" "${1:this}" {
+}

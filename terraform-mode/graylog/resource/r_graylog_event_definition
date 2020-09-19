@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_graylog_event_definition
+# key: r_graylog_event_definition
+# --
+
+resource "graylog_event_definition" "${1:this}" {
+    config = "${2:config}"
+    priority = "${3:priority}"
+    title = "${4:title}"
+}

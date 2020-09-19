@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_policy46
+# key: r_fortios_firewall_policy46
+# --
+
+resource "fortios_firewall_policy46" "${1:this}" {
+    dstintf = "${2:dstintf}"
+    schedule = "${3:schedule}"
+    srcintf = "${4:srcintf}"
+}

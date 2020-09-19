@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_cis_healthchecks
+# key: d_ibm_cis_healthchecks
+# --
+
+data "ibm_cis_healthchecks" "${1:this}" {
+    cis_id = "${2:cis_id}"
+}

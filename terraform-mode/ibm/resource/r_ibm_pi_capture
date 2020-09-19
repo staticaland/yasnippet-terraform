@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_pi_capture
+# key: r_ibm_pi_capture
+# --
+
+resource "ibm_pi_capture" "${1:this}" {
+    pi_capture_destination = "${2:pi_capture_destination}"
+    pi_capture_name = "${3:pi_capture_name}"
+    pi_cloud_instance_id = "${4:pi_cloud_instance_id}"
+    pi_instance_name = "${5:pi_instance_name}"
+}

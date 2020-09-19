@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_proxylb
+# key: d_sakuracloud_proxylb
+# --
+
+data "sakuracloud_proxylb" "${1:this}" {
+}

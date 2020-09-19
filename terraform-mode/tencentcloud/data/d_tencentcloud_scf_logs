@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_scf_logs
+# key: d_tencentcloud_scf_logs
+# --
+
+data "tencentcloud_scf_logs" "${1:this}" {
+    function_name = "${2:function_name}"
+}

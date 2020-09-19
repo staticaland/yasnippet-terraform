@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_linode_rdns
+# key: r_linode_rdns
+# --
+
+resource "linode_rdns" "${1:this}" {
+    address = "${2:address}"
+    rdns = "${3:rdns}"
+}

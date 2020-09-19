@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_controltower_account_vending
+# key: r_controltower_account_vending
+# --
+
+resource "controltower_account_vending" "${1:this}" {
+    artefact_id = "${2:artefact_id}"
+    name = "${3:name}"
+    parameters = "${4:parameters}"
+    product_id = "${5:product_id}"
+}

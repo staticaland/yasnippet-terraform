@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_firebase_project_location
+# key: r_google_firebase_project_location
+# --
+
+resource "google_firebase_project_location" "${1:this}" {
+    location_id = "${2:location_id}"
+}

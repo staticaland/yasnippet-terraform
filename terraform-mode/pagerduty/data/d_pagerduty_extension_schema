@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_pagerduty_extension_schema
+# key: d_pagerduty_extension_schema
+# --
+
+data "pagerduty_extension_schema" "${1:this}" {
+    name = "${2:name}"
+}

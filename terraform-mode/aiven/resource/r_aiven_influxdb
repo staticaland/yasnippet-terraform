@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aiven_influxdb
+# key: r_aiven_influxdb
+# --
+
+resource "aiven_influxdb" "${1:this}" {
+    project = "${2:project}"
+    service_name = "${3:service_name}"
+}

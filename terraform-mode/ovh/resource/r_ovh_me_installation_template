@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ovh_me_installation_template
+# key: r_ovh_me_installation_template
+# --
+
+resource "ovh_me_installation_template" "${1:this}" {
+    base_template_name = "${2:base_template_name}"
+    default_language = "${3:default_language}"
+    template_name = "${4:template_name}"
+}

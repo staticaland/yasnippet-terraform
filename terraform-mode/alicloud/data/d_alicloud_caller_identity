@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_caller_identity
+# key: d_alicloud_caller_identity
+# --
+
+data "alicloud_caller_identity" "${1:this}" {
+}

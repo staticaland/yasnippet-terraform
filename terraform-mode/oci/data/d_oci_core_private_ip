@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_core_private_ip
+# key: d_oci_core_private_ip
+# --
+
+data "oci_core_private_ip" "${1:this}" {
+    private_ip_id = "${2:private_ip_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_authentication_users
+# key: r_splunk_authentication_users
+# --
+
+resource "splunk_authentication_users" "${1:this}" {
+    name = "${2:name}"
+}

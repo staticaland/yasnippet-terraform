@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_dmsnitch_snitch
+# key: r_dmsnitch_snitch
+# --
+
+resource "dmsnitch_snitch" "${1:this}" {
+    name = "${2:name}"
+}

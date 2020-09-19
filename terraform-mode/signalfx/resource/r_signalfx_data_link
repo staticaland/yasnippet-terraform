@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_data_link
+# key: r_signalfx_data_link
+# --
+
+resource "signalfx_data_link" "${1:this}" {
+}

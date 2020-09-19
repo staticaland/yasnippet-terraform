@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_aws_tgw_peering_domain_conn
+# key: r_aviatrix_aws_tgw_peering_domain_conn
+# --
+
+resource "aviatrix_aws_tgw_peering_domain_conn" "${1:this}" {
+    domain_name1 = "${2:domain_name1}"
+    domain_name2 = "${3:domain_name2}"
+    tgw_name1 = "${4:tgw_name1}"
+    tgw_name2 = "${5:tgw_name2}"
+}

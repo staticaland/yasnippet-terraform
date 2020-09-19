@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_backup_destination
+# key: r_oci_database_backup_destination
+# --
+
+resource "oci_database_backup_destination" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    type = "${4:type}"
+}

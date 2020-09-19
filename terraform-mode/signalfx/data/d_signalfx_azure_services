@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_signalfx_azure_services
+# key: d_signalfx_azure_services
+# --
+
+data "signalfx_azure_services" "${1:this}" {
+}

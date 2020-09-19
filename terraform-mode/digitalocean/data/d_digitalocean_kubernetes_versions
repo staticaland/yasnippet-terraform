@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_kubernetes_versions
+# key: d_digitalocean_kubernetes_versions
+# --
+
+data "digitalocean_kubernetes_versions" "${1:this}" {
+}

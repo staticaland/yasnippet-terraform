@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_ces_alarmrule
+# key: r_opentelekomcloud_ces_alarmrule
+# --
+
+resource "opentelekomcloud_ces_alarmrule" "${1:this}" {
+    alarm_name = "${2:alarm_name}"
+}

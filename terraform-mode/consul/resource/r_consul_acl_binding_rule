@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_consul_acl_binding_rule
+# key: r_consul_acl_binding_rule
+# --
+
+resource "consul_acl_binding_rule" "${1:this}" {
+    auth_method = "${2:auth_method}"
+    bind_name = "${3:bind_name}"
+    bind_type = "${4:bind_type}"
+}

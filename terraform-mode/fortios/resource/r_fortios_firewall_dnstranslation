@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_dnstranslation
+# key: r_fortios_firewall_dnstranslation
+# --
+
+resource "fortios_firewall_dnstranslation" "${1:this}" {
+}

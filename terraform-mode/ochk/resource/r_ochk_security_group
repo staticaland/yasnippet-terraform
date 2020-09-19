@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ochk_security_group
+# key: r_ochk_security_group
+# --
+
+resource "ochk_security_group" "${1:this}" {
+    display_name = "${2:display_name}"
+}

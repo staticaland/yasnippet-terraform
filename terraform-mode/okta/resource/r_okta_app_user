@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_okta_app_user
+# key: r_okta_app_user
+# --
+
+resource "okta_app_user" "${1:this}" {
+    app_id = "${2:app_id}"
+    user_id = "${3:user_id}"
+    username = "${4:username}"
+}

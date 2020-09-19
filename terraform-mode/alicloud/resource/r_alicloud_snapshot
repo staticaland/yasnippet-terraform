@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_snapshot
+# key: r_alicloud_snapshot
+# --
+
+resource "alicloud_snapshot" "${1:this}" {
+    disk_id = "${2:disk_id}"
+}

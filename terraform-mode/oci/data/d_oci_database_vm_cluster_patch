@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_oci_database_vm_cluster_patch
+# key: d_oci_database_vm_cluster_patch
+# --
+
+data "oci_database_vm_cluster_patch" "${1:this}" {
+    patch_id = "${2:patch_id}"
+    vm_cluster_id = "${3:vm_cluster_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_jira_comment
+# key: r_jira_comment
+# --
+
+resource "jira_comment" "${1:this}" {
+    body = "${2:body}"
+    issue_key = "${3:issue_key}"
+}

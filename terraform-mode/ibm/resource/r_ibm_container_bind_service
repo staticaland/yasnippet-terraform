@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_container_bind_service
+# key: r_ibm_container_bind_service
+# --
+
+resource "ibm_container_bind_service" "${1:this}" {
+    cluster_name_id = "${2:cluster_name_id}"
+    namespace_id = "${3:namespace_id}"
+}

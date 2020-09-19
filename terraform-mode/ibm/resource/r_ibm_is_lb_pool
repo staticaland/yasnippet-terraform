@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_lb_pool
+# key: r_ibm_is_lb_pool
+# --
+
+resource "ibm_is_lb_pool" "${1:this}" {
+    algorithm = "${2:algorithm}"
+    health_delay = "${3:health_delay}"
+    health_retries = "${4:health_retries}"
+    health_timeout = "${5:health_timeout}"
+    health_type = "${6:health_type}"
+    lb = "${7:lb}"
+    name = "${8:name}"
+    protocol = "${9:protocol}"
+}

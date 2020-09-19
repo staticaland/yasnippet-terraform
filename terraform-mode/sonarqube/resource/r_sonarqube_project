@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sonarqube_project
+# key: r_sonarqube_project
+# --
+
+resource "sonarqube_project" "${1:this}" {
+    key = "${2:key}"
+    name = "${3:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_firewall_policer
+# key: r_junos_firewall_policer
+# --
+
+resource "junos_firewall_policer" "${1:this}" {
+    name = "${2:name}"
+}

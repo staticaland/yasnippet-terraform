@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_cloud_asset_organization_feed
+# key: r_google_cloud_asset_organization_feed
+# --
+
+resource "google_cloud_asset_organization_feed" "${1:this}" {
+    billing_project = "${2:billing_project}"
+    feed_id = "${3:feed_id}"
+    org_id = "${4:org_id}"
+}

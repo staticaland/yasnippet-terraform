@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_license
+# key: r_vsphere_license
+# --
+
+resource "vsphere_license" "${1:this}" {
+    license_key = "${2:license_key}"
+}

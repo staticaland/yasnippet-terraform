@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_pi_tenant
+# key: d_ibm_pi_tenant
+# --
+
+data "ibm_pi_tenant" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+}

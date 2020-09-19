@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_admin
+# key: r_fortios_systemreplacemsg_admin
+# --
+
+resource "fortios_systemreplacemsg_admin" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

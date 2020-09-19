@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_google_firebase_project
+# key: r_google_firebase_project
+# --
+
+resource "google_firebase_project" "${1:this}" {
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_custom_hostname
+# key: r_cloudflare_custom_hostname
+# --
+
+resource "cloudflare_custom_hostname" "${1:this}" {
+    hostname = "${2:hostname}"
+    zone_id = "${3:zone_id}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_engine_listener
+# key: r_pingaccess_engine_listener
+# --
+
+resource "pingaccess_engine_listener" "${1:this}" {
+    name = "${2:name}"
+    port = "${3:port}"
+}

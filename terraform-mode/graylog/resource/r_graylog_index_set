@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: r_graylog_index_set
+# key: r_graylog_index_set
+# --
+
+resource "graylog_index_set" "${1:this}" {
+    index_analyzer = "${2:index_analyzer}"
+    index_optimization_max_num_segments = "${3:index_optimization_max_num_segments}"
+    index_prefix = "${4:index_prefix}"
+    retention_strategy = "${5:retention_strategy}"
+    retention_strategy_class = "${6:retention_strategy_class}"
+    rotation_strategy = "${7:rotation_strategy}"
+    rotation_strategy_class = "${8:rotation_strategy_class}"
+    shards = "${9:shards}"
+    title = "${10:title}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_report_theme
+# key: r_fortios_report_theme
+# --
+
+resource "fortios_report_theme" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_dhcp_options
+# key: d_outscale_dhcp_options
+# --
+
+data "outscale_dhcp_options" "${1:this}" {
+}

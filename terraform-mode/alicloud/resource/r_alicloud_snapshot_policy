@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_snapshot_policy
+# key: r_alicloud_snapshot_policy
+# --
+
+resource "alicloud_snapshot_policy" "${1:this}" {
+    repeat_weekdays = "${2:repeat_weekdays}"
+    retention_days = "${3:retention_days}"
+    time_points = "${4:time_points}"
+}

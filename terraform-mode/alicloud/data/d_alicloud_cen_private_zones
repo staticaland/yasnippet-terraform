@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_cen_private_zones
+# key: d_alicloud_cen_private_zones
+# --
+
+data "alicloud_cen_private_zones" "${1:this}" {
+    cen_id = "${2:cen_id}"
+}

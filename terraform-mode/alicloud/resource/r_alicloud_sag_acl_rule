@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_sag_acl_rule
+# key: r_alicloud_sag_acl_rule
+# --
+
+resource "alicloud_sag_acl_rule" "${1:this}" {
+    acl_id = "${2:acl_id}"
+    dest_cidr = "${3:dest_cidr}"
+    dest_port_range = "${4:dest_port_range}"
+    direction = "${5:direction}"
+    ip_protocol = "${6:ip_protocol}"
+    policy = "${7:policy}"
+    source_cidr = "${8:source_cidr}"
+    source_port_range = "${9:source_port_range}"
+}

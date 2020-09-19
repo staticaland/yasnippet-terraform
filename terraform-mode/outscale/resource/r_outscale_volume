@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_volume
+# key: r_outscale_volume
+# --
+
+resource "outscale_volume" "${1:this}" {
+    subregion_name = "${2:subregion_name}"
+}

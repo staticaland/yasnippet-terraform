@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_okta_policy_signon
+# key: r_okta_policy_signon
+# --
+
+resource "okta_policy_signon" "${1:this}" {
+    name = "${2:name}"
+}

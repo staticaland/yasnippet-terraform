@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_filter
+# key: r_cloudflare_filter
+# --
+
+resource "cloudflare_filter" "${1:this}" {
+    expression = "${2:expression}"
+    zone_id = "${3:zone_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ons_instances
+# key: d_alicloud_ons_instances
+# --
+
+data "alicloud_ons_instances" "${1:this}" {
+}

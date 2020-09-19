@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_okta_auth_server
+# key: r_okta_auth_server
+# --
+
+resource "okta_auth_server" "${1:this}" {
+    audiences = "${2:audiences}"
+    name = "${3:name}"
+}

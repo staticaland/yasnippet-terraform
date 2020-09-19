@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_scaleway_instance_security_group
+# key: r_scaleway_instance_security_group
+# --
+
+resource "scaleway_instance_security_group" "${1:this}" {
+}

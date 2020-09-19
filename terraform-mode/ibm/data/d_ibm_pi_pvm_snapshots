@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_pi_pvm_snapshots
+# key: d_ibm_pi_pvm_snapshots
+# --
+
+data "ibm_pi_pvm_snapshots" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+}

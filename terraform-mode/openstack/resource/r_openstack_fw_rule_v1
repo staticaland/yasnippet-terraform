@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_openstack_fw_rule_v1
+# key: r_openstack_fw_rule_v1
+# --
+
+resource "openstack_fw_rule_v1" "${1:this}" {
+    action = "${2:action}"
+    protocol = "${3:protocol}"
+}

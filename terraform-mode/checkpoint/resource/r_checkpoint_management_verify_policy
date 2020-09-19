@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_verify_policy
+# key: r_checkpoint_management_verify_policy
+# --
+
+resource "checkpoint_management_verify_policy" "${1:this}" {
+    policy_package = "${2:policy_package}"
+}

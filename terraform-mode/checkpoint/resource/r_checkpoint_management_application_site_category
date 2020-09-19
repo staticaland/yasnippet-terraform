@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_application_site_category
+# key: r_checkpoint_management_application_site_category
+# --
+
+resource "checkpoint_management_application_site_category" "${1:this}" {
+    name = "${2:name}"
+}

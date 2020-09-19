@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_exasol_physical_schema
+# key: r_exasol_physical_schema
+# --
+
+resource "exasol_physical_schema" "${1:this}" {
+    name = "${2:name}"
+}

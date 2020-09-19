@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_apigee_company_app
+# key: r_apigee_company_app
+# --
+
+resource "apigee_company_app" "${1:this}" {
+    company_name = "${2:company_name}"
+    name = "${3:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_hardware_firewall_shared
+# key: r_ibm_hardware_firewall_shared
+# --
+
+resource "ibm_hardware_firewall_shared" "${1:this}" {
+    firewall_type = "${2:firewall_type}"
+}

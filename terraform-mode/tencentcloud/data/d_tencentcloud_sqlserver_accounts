@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_sqlserver_accounts
+# key: d_tencentcloud_sqlserver_accounts
+# --
+
+data "tencentcloud_sqlserver_accounts" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

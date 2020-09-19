@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_discord_channel_permission
+# key: r_discord_channel_permission
+# --
+
+resource "discord_channel_permission" "${1:this}" {
+    channel_id = "${2:channel_id}"
+    overwrite_id = "${3:overwrite_id}"
+    type = "${4:type}"
+}

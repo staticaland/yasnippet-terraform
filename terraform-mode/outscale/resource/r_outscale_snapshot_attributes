@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_snapshot_attributes
+# key: r_outscale_snapshot_attributes
+# --
+
+resource "outscale_snapshot_attributes" "${1:this}" {
+    snapshot_id = "${2:snapshot_id}"
+}

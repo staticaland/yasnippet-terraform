@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ibm_tg_gateways
+# key: d_ibm_tg_gateways
+# --
+
+data "ibm_tg_gateways" "${1:this}" {
+}

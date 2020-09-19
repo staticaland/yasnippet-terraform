@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_datadog_synthetics_locations
+# key: d_datadog_synthetics_locations
+# --
+
+data "datadog_synthetics_locations" "${1:this}" {
+}

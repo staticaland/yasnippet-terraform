@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_openstack_networking_router_route_v2
+# key: r_openstack_networking_router_route_v2
+# --
+
+resource "openstack_networking_router_route_v2" "${1:this}" {
+    destination_cidr = "${2:destination_cidr}"
+    next_hop = "${3:next_hop}"
+    router_id = "${4:router_id}"
+}

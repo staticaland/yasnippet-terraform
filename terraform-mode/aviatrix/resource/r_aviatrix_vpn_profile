@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_vpn_profile
+# key: r_aviatrix_vpn_profile
+# --
+
+resource "aviatrix_vpn_profile" "${1:this}" {
+    name = "${2:name}"
+}

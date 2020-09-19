@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ibm_pi_instance_volumes
+# key: d_ibm_pi_instance_volumes
+# --
+
+data "ibm_pi_instance_volumes" "${1:this}" {
+    pi_cloud_instance_id = "${2:pi_cloud_instance_id}"
+    pi_instance_name = "${3:pi_instance_name}"
+}

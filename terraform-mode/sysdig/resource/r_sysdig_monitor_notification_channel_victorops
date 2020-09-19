@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_notification_channel_victorops
+# key: r_sysdig_monitor_notification_channel_victorops
+# --
+
+resource "sysdig_monitor_notification_channel_victorops" "${1:this}" {
+    api_key = "${2:api_key}"
+    name = "${3:name}"
+    routing_key = "${4:routing_key}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_splunk_authorization_roles
+# key: r_splunk_authorization_roles
+# --
+
+resource "splunk_authorization_roles" "${1:this}" {
+    name = "${2:name}"
+}

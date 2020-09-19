@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cam_role
+# key: r_tencentcloud_cam_role
+# --
+
+resource "tencentcloud_cam_role" "${1:this}" {
+    document = "${2:document}"
+    name = "${3:name}"
+}

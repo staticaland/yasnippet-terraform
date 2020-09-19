@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_project_level_mr_approvals
+# key: r_gitlab_project_level_mr_approvals
+# --
+
+resource "gitlab_project_level_mr_approvals" "${1:this}" {
+    project_id = "${2:project_id}"
+}

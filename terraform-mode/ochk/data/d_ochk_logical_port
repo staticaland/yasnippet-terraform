@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ochk_logical_port
+# key: d_ochk_logical_port
+# --
+
+data "ochk_logical_port" "${1:this}" {
+    display_name = "${2:display_name}"
+}

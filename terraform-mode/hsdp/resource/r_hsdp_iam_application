@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_hsdp_iam_application
+# key: r_hsdp_iam_application
+# --
+
+resource "hsdp_iam_application" "${1:this}" {
+    description = "${2:description}"
+    global_reference_id = "${3:global_reference_id}"
+    name = "${4:name}"
+    proposition_id = "${5:proposition_id}"
+}

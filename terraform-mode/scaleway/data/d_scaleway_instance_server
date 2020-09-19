@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_scaleway_instance_server
+# key: d_scaleway_instance_server
+# --
+
+data "scaleway_instance_server" "${1:this}" {
+}

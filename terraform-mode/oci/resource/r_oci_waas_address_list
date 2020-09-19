@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_waas_address_list
+# key: r_oci_waas_address_list
+# --
+
+resource "oci_waas_address_list" "${1:this}" {
+    addresses = "${2:addresses}"
+    compartment_id = "${3:compartment_id}"
+    display_name = "${4:display_name}"
+}

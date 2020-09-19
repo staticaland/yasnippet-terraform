@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_logical_tier0_router
+# key: r_nsxt_logical_tier0_router
+# --
+
+resource "nsxt_logical_tier0_router" "${1:this}" {
+    edge_cluster_id = "${2:edge_cluster_id}"
+}

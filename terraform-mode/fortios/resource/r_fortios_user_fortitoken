@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_fortitoken
+# key: r_fortios_user_fortitoken
+# --
+
+resource "fortios_user_fortitoken" "${1:this}" {
+}

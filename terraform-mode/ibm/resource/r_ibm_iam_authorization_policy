@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_iam_authorization_policy
+# key: r_ibm_iam_authorization_policy
+# --
+
+resource "ibm_iam_authorization_policy" "${1:this}" {
+    roles = "${2:roles}"
+    source_service_name = "${3:source_service_name}"
+    target_service_name = "${4:target_service_name}"
+}

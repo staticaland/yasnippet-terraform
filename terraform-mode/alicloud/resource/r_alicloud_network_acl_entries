@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_network_acl_entries
+# key: r_alicloud_network_acl_entries
+# --
+
+resource "alicloud_network_acl_entries" "${1:this}" {
+    network_acl_id = "${2:network_acl_id}"
+}

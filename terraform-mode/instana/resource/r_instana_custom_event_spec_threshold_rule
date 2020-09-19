@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_instana_custom_event_spec_threshold_rule
+# key: r_instana_custom_event_spec_threshold_rule
+# --
+
+resource "instana_custom_event_spec_threshold_rule" "${1:this}" {
+    entity_type = "${2:entity_type}"
+    name = "${3:name}"
+    rule_condition_operator = "${4:rule_condition_operator}"
+    rule_condition_value = "${5:rule_condition_value}"
+    rule_severity = "${6:rule_severity}"
+}

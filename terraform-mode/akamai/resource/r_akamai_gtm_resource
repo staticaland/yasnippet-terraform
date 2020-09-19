@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_akamai_gtm_resource
+# key: r_akamai_gtm_resource
+# --
+
+resource "akamai_gtm_resource" "${1:this}" {
+    aggregation_type = "${2:aggregation_type}"
+    domain = "${3:domain}"
+    name = "${4:name}"
+    type = "${5:type}"
+}

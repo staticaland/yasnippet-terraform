@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_wavefront_default_user_group
+# key: d_wavefront_default_user_group
+# --
+
+data "wavefront_default_user_group" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_dme_folder_record
+# key: d_dme_folder_record
+# --
+
+data "dme_folder_record" "${1:this}" {
+    name = "${2:name}"
+}

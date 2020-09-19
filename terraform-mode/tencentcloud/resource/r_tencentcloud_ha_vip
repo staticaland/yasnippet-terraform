@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_ha_vip
+# key: r_tencentcloud_ha_vip
+# --
+
+resource "tencentcloud_ha_vip" "${1:this}" {
+    name = "${2:name}"
+    subnet_id = "${3:subnet_id}"
+    vpc_id = "${4:vpc_id}"
+}

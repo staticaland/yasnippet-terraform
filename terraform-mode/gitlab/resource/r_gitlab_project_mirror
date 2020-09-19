@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_gitlab_project_mirror
+# key: r_gitlab_project_mirror
+# --
+
+resource "gitlab_project_mirror" "${1:this}" {
+    project = "${2:project}"
+    url = "${3:url}"
+}

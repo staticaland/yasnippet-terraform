@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_sensu_cluster_role_binding
+# key: r_sensu_cluster_role_binding
+# --
+
+resource "sensu_cluster_role_binding" "${1:this}" {
+    cluster_role = "${2:cluster_role}"
+    name = "${3:name}"
+}

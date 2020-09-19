@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_antivirus_settings
+# key: r_fortios_antivirus_settings
+# --
+
+resource "fortios_antivirus_settings" "${1:this}" {
+}

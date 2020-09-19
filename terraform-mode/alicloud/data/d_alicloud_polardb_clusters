@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_polardb_clusters
+# key: d_alicloud_polardb_clusters
+# --
+
+data "alicloud_polardb_clusters" "${1:this}" {
+}

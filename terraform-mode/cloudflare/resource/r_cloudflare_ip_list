@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_cloudflare_ip_list
+# key: r_cloudflare_ip_list
+# --
+
+resource "cloudflare_ip_list" "${1:this}" {
+    account_id = "${2:account_id}"
+    kind = "${3:kind}"
+    name = "${4:name}"
+}

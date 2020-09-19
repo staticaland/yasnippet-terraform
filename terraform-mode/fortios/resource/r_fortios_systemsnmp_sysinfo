@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemsnmp_sysinfo
+# key: r_fortios_systemsnmp_sysinfo
+# --
+
+resource "fortios_systemsnmp_sysinfo" "${1:this}" {
+}

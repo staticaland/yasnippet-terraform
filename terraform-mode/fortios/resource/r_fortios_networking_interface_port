@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_networking_interface_port
+# key: r_fortios_networking_interface_port
+# --
+
+resource "fortios_networking_interface_port" "${1:this}" {
+    name = "${2:name}"
+    type = "${3:type}"
+}

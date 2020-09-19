@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_postgresql_grant
+# key: r_postgresql_grant
+# --
+
+resource "postgresql_grant" "${1:this}" {
+    database = "${2:database}"
+    object_type = "${3:object_type}"
+    privileges = "${4:privileges}"
+    role = "${5:role}"
+}

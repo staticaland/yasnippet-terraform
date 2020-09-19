@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_junos_bgp_group
+# key: r_junos_bgp_group
+# --
+
+resource "junos_bgp_group" "${1:this}" {
+    name = "${2:name}"
+}

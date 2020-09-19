@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_sec_rule
+# key: r_opc_compute_sec_rule
+# --
+
+resource "opc_compute_sec_rule" "${1:this}" {
+    action = "${2:action}"
+    application = "${3:application}"
+    destination_list = "${4:destination_list}"
+    name = "${5:name}"
+    source_list = "${6:source_list}"
+}

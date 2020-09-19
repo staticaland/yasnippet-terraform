@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_gaap_http_rule
+# key: r_tencentcloud_gaap_http_rule
+# --
+
+resource "tencentcloud_gaap_http_rule" "${1:this}" {
+    domain = "${2:domain}"
+    health_check = "${3:health_check}"
+    listener_id = "${4:listener_id}"
+    path = "${5:path}"
+    realserver_type = "${6:realserver_type}"
+}

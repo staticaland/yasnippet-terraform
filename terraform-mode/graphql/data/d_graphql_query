@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_graphql_query
+# key: d_graphql_query
+# --
+
+data "graphql_query" "${1:this}" {
+    query = "${2:query}"
+    query_variables = "${3:query_variables}"
+}

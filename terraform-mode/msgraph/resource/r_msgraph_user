@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_msgraph_user
+# key: r_msgraph_user
+# --
+
+resource "msgraph_user" "${1:this}" {
+    account_enabled = "${2:account_enabled}"
+    display_name = "${3:display_name}"
+    mail_nickname = "${4:mail_nickname}"
+    user_principal_name = "${5:user_principal_name}"
+}

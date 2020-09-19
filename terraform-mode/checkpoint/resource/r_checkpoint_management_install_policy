@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_install_policy
+# key: r_checkpoint_management_install_policy
+# --
+
+resource "checkpoint_management_install_policy" "${1:this}" {
+    policy_package = "${2:policy_package}"
+    targets = "${3:targets}"
+}

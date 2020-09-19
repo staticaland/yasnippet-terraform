@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_centralsnatmap
+# key: r_fortios_firewall_centralsnatmap
+# --
+
+resource "fortios_firewall_centralsnatmap" "${1:this}" {
+    nat = "${2:nat}"
+    orig_port = "${3:orig_port}"
+    protocol = "${4:protocol}"
+}

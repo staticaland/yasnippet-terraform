@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_identity_group_membership_v3
+# key: r_flexibleengine_identity_group_membership_v3
+# --
+
+resource "flexibleengine_identity_group_membership_v3" "${1:this}" {
+    group = "${2:group}"
+    users = "${3:users}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_file_storage_snapshot
+# key: d_oci_file_storage_snapshot
+# --
+
+data "oci_file_storage_snapshot" "${1:this}" {
+    snapshot_id = "${2:snapshot_id}"
+}

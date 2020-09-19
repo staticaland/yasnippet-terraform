@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_openid_hardcoded_role_protocol_mapper
+# key: r_keycloak_openid_hardcoded_role_protocol_mapper
+# --
+
+resource "keycloak_openid_hardcoded_role_protocol_mapper" "${1:this}" {
+    name = "${2:name}"
+    realm_id = "${3:realm_id}"
+    role_id = "${4:role_id}"
+}

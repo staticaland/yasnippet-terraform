@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_cloudfoundry_isolation_segment
+# key: d_cloudfoundry_isolation_segment
+# --
+
+data "cloudfoundry_isolation_segment" "${1:this}" {
+    name = "${2:name}"
+}

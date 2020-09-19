@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_global_address
+# key: d_google_compute_global_address
+# --
+
+data "google_compute_global_address" "${1:this}" {
+    name = "${2:name}"
+}

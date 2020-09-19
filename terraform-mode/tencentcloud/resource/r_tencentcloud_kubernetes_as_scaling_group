@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_kubernetes_as_scaling_group
+# key: r_tencentcloud_kubernetes_as_scaling_group
+# --
+
+resource "tencentcloud_kubernetes_as_scaling_group" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_vxnet
+# key: r_qingcloud_vxnet
+# --
+
+resource "qingcloud_vxnet" "${1:this}" {
+    type = "${2:type}"
+}

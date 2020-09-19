@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ibm_dns_permitted_network
+# key: r_ibm_dns_permitted_network
+# --
+
+resource "ibm_dns_permitted_network" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    vpc_crn = "${3:vpc_crn}"
+    zone_id = "${4:zone_id}"
+}

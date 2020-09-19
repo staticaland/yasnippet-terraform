@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_azuread_application_certificate
+# key: r_azuread_application_certificate
+# --
+
+resource "azuread_application_certificate" "${1:this}" {
+    application_object_id = "${2:application_object_id}"
+    value = "${3:value}"
+}

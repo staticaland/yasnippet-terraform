@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ovh_me_ssh_key
+# key: d_ovh_me_ssh_key
+# --
+
+data "ovh_me_ssh_key" "${1:this}" {
+    key_name = "${2:key_name}"
+}

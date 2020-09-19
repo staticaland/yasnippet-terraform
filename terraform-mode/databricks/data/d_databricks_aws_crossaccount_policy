@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_databricks_aws_crossaccount_policy
+# key: d_databricks_aws_crossaccount_policy
+# --
+
+data "databricks_aws_crossaccount_policy" "${1:this}" {
+}

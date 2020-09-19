@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_oci_bds_bds_instance
+# key: r_oci_bds_bds_instance
+# --
+
+resource "oci_bds_bds_instance" "${1:this}" {
+    cluster_admin_password = "${2:cluster_admin_password}"
+    cluster_public_key = "${3:cluster_public_key}"
+    cluster_version = "${4:cluster_version}"
+    compartment_id = "${5:compartment_id}"
+    display_name = "${6:display_name}"
+    is_high_availability = "${7:is_high_availability}"
+    is_secure = "${8:is_secure}"
+}

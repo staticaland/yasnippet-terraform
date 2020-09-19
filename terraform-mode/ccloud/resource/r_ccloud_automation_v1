@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ccloud_automation_v1
+# key: r_ccloud_automation_v1
+# --
+
+resource "ccloud_automation_v1" "${1:this}" {
+    name = "${2:name}"
+    repository = "${3:repository}"
+    type = "${4:type}"
+}

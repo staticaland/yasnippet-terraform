@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_vpncertificate_ocspserver
+# key: r_fortios_vpncertificate_ocspserver
+# --
+
+resource "fortios_vpncertificate_ocspserver" "${1:this}" {
+}

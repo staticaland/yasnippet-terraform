@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_dhcp_relay_profile
+# key: r_nsxt_dhcp_relay_profile
+# --
+
+resource "nsxt_dhcp_relay_profile" "${1:this}" {
+    server_addresses = "${2:server_addresses}"
+}

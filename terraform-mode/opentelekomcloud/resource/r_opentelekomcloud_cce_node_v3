@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_cce_node_v3
+# key: r_opentelekomcloud_cce_node_v3
+# --
+
+resource "opentelekomcloud_cce_node_v3" "${1:this}" {
+    availability_zone = "${2:availability_zone}"
+    cluster_id = "${3:cluster_id}"
+    flavor_id = "${4:flavor_id}"
+    key_pair = "${5:key_pair}"
+}

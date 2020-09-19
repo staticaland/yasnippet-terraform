@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_aiven_connection_pool
+# key: r_aiven_connection_pool
+# --
+
+resource "aiven_connection_pool" "${1:this}" {
+    database_name = "${2:database_name}"
+    pool_name = "${3:pool_name}"
+    project = "${4:project}"
+    service_name = "${5:service_name}"
+    username = "${6:username}"
+}

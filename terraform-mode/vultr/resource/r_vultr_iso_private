@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vultr_iso_private
+# key: r_vultr_iso_private
+# --
+
+resource "vultr_iso_private" "${1:this}" {
+    url = "${2:url}"
+}

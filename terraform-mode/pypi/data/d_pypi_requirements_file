@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_pypi_requirements_file
+# key: d_pypi_requirements_file
+# --
+
+data "pypi_requirements_file" "${1:this}" {
+    output_dir = "${2:output_dir}"
+    requirements_file = "${3:requirements_file}"
+}

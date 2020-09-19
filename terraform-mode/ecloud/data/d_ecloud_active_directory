@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_active_directory
+# key: d_ecloud_active_directory
+# --
+
+data "ecloud_active_directory" "${1:this}" {
+    name = "${2:name}"
+}

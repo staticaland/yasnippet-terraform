@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_amixr_schedule
+# key: d_amixr_schedule
+# --
+
+data "amixr_schedule" "${1:this}" {
+    name = "${2:name}"
+}

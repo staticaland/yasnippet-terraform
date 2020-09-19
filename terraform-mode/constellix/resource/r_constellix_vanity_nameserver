@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_constellix_vanity_nameserver
+# key: r_constellix_vanity_nameserver
+# --
+
+resource "constellix_vanity_nameserver" "${1:this}" {
+    name = "${2:name}"
+    nameserver_group = "${3:nameserver_group}"
+    nameserver_list_string = "${4:nameserver_list_string}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_iap_client
+# key: r_google_iap_client
+# --
+
+resource "google_iap_client" "${1:this}" {
+    brand = "${2:brand}"
+    display_name = "${3:display_name}"
+}

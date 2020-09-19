@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_network_management_connectivity_test
+# key: r_google_network_management_connectivity_test
+# --
+
+resource "google_network_management_connectivity_test" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_solution_template
+# key: d_ecloud_solution_template
+# --
+
+data "ecloud_solution_template" "${1:this}" {
+    name = "${2:name}"
+    solution_id = "${3:solution_id}"
+}

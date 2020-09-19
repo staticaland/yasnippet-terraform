@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oktaasa_assign_group
+# key: r_oktaasa_assign_group
+# --
+
+resource "oktaasa_assign_group" "${1:this}" {
+    group_name = "${2:group_name}"
+    project_name = "${3:project_name}"
+}

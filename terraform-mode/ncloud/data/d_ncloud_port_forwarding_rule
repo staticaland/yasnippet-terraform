@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_ncloud_port_forwarding_rule
+# key: d_ncloud_port_forwarding_rule
+# --
+
+data "ncloud_port_forwarding_rule" "${1:this}" {
+}

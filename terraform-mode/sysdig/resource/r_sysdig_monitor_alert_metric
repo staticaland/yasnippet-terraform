@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_alert_metric
+# key: r_sysdig_monitor_alert_metric
+# --
+
+resource "sysdig_monitor_alert_metric" "${1:this}" {
+    metric = "${2:metric}"
+    name = "${3:name}"
+    trigger_after_minutes = "${4:trigger_after_minutes}"
+}

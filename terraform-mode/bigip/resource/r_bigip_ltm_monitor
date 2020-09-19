@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_monitor
+# key: r_bigip_ltm_monitor
+# --
+
+resource "bigip_ltm_monitor" "${1:this}" {
+    name = "${2:name}"
+    parent = "${3:parent}"
+}

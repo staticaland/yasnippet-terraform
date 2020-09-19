@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_digitalocean_container_registry
+# key: r_digitalocean_container_registry
+# --
+
+resource "digitalocean_container_registry" "${1:this}" {
+    name = "${2:name}"
+}

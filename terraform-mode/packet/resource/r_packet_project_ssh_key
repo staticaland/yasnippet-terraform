@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_packet_project_ssh_key
+# key: r_packet_project_ssh_key
+# --
+
+resource "packet_project_ssh_key" "${1:this}" {
+    name = "${2:name}"
+    project_id = "${3:project_id}"
+    public_key = "${4:public_key}"
+}

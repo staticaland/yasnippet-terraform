@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dws_cluster
+# key: r_huaweicloud_dws_cluster
+# --
+
+resource "huaweicloud_dws_cluster" "${1:this}" {
+    name = "${2:name}"
+    network_id = "${3:network_id}"
+    node_type = "${4:node_type}"
+    number_of_node = "${5:number_of_node}"
+    security_group_id = "${6:security_group_id}"
+    user_name = "${7:user_name}"
+    user_pwd = "${8:user_pwd}"
+    vpc_id = "${9:vpc_id}"
+}

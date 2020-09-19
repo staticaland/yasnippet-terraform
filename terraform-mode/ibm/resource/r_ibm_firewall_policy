@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ibm_firewall_policy
+# key: r_ibm_firewall_policy
+# --
+
+resource "ibm_firewall_policy" "${1:this}" {
+    firewall_id = "${2:firewall_id}"
+}

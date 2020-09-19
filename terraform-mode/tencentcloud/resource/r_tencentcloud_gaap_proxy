@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_gaap_proxy
+# key: r_tencentcloud_gaap_proxy
+# --
+
+resource "tencentcloud_gaap_proxy" "${1:this}" {
+    access_region = "${2:access_region}"
+    bandwidth = "${3:bandwidth}"
+    concurrent = "${4:concurrent}"
+    name = "${5:name}"
+    realserver_region = "${6:realserver_region}"
+}

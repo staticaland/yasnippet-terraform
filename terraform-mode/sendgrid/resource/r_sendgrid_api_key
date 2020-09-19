@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sendgrid_api_key
+# key: r_sendgrid_api_key
+# --
+
+resource "sendgrid_api_key" "${1:this}" {
+    name = "${2:name}"
+}

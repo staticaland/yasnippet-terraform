@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_segment_security_profile
+# key: d_nsxt_policy_segment_security_profile
+# --
+
+data "nsxt_policy_segment_security_profile" "${1:this}" {
+}

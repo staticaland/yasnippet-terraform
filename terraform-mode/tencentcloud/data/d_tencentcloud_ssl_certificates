@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_ssl_certificates
+# key: d_tencentcloud_ssl_certificates
+# --
+
+data "tencentcloud_ssl_certificates" "${1:this}" {
+}

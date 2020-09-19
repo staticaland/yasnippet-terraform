@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_disconnect
+# key: r_checkpoint_management_disconnect
+# --
+
+resource "checkpoint_management_disconnect" "${1:this}" {
+}

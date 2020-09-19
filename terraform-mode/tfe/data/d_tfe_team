@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_tfe_team
+# key: d_tfe_team
+# --
+
+data "tfe_team" "${1:this}" {
+    name = "${2:name}"
+    organization = "${3:organization}"
+}

@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_email
+# key: r_fusionauth_email
+# --
+
+resource "fusionauth_email" "${1:this}" {
+    default_from_name = "${2:default_from_name}"
+    default_html_template = "${3:default_html_template}"
+    default_subject = "${4:default_subject}"
+    default_text_template = "${5:default_text_template}"
+    from_email = "${6:from_email}"
+    name = "${7:name}"
+}

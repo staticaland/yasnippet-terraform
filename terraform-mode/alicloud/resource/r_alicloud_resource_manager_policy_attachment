@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_resource_manager_policy_attachment
+# key: r_alicloud_resource_manager_policy_attachment
+# --
+
+resource "alicloud_resource_manager_policy_attachment" "${1:this}" {
+    policy_name = "${2:policy_name}"
+    policy_type = "${3:policy_type}"
+    principal_name = "${4:principal_name}"
+    principal_type = "${5:principal_type}"
+    resource_group_id = "${6:resource_group_id}"
+}

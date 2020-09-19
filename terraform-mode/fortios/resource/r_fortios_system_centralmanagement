@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_centralmanagement
+# key: r_fortios_system_centralmanagement
+# --
+
+resource "fortios_system_centralmanagement" "${1:this}" {
+}

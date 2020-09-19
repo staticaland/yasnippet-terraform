@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_jira_jql
+# key: d_jira_jql
+# --
+
+data "jira_jql" "${1:this}" {
+    jql = "${2:jql}"
+}

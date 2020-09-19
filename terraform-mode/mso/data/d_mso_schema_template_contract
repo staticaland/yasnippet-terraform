@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_mso_schema_template_contract
+# key: d_mso_schema_template_contract
+# --
+
+data "mso_schema_template_contract" "${1:this}" {
+    contract_name = "${2:contract_name}"
+    schema_id = "${3:schema_id}"
+    template_name = "${4:template_name}"
+}

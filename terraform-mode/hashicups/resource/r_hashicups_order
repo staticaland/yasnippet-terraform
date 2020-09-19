@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_hashicups_order
+# key: r_hashicups_order
+# --
+
+resource "hashicups_order" "${1:this}" {
+}

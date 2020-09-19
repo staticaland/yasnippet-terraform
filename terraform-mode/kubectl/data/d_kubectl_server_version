@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_kubectl_server_version
+# key: d_kubectl_server_version
+# --
+
+data "kubectl_server_version" "${1:this}" {
+}

@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_keycloak_saml_user_attribute_protocol_mapper
+# key: r_keycloak_saml_user_attribute_protocol_mapper
+# --
+
+resource "keycloak_saml_user_attribute_protocol_mapper" "${1:this}" {
+    name = "${2:name}"
+    realm_id = "${3:realm_id}"
+    saml_attribute_name = "${4:saml_attribute_name}"
+    saml_attribute_name_format = "${5:saml_attribute_name_format}"
+    user_attribute = "${6:user_attribute}"
+}

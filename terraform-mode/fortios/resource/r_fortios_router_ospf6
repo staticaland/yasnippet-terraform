@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_ospf6
+# key: r_fortios_router_ospf6
+# --
+
+resource "fortios_router_ospf6" "${1:this}" {
+    router_id = "${2:router_id}"
+}

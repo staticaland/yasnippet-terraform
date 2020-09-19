@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_as_policy_v1
+# key: r_huaweicloud_as_policy_v1
+# --
+
+resource "huaweicloud_as_policy_v1" "${1:this}" {
+    scaling_group_id = "${2:scaling_group_id}"
+    scaling_policy_name = "${3:scaling_policy_name}"
+    scaling_policy_type = "${4:scaling_policy_type}"
+}

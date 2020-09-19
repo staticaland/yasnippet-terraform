@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fusionauth_theme
+# key: r_fusionauth_theme
+# --
+
+resource "fusionauth_theme" "${1:this}" {
+    default_messages = "${2:default_messages}"
+    name = "${3:name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sdm_node
+# key: d_sdm_node
+# --
+
+data "sdm_node" "${1:this}" {
+}

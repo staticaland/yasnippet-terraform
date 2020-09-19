@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_compute_volume_attach
+# key: r_huaweicloud_compute_volume_attach
+# --
+
+resource "huaweicloud_compute_volume_attach" "${1:this}" {
+    instance_id = "${2:instance_id}"
+    volume_id = "${3:volume_id}"
+}

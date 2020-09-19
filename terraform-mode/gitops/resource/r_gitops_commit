@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_gitops_commit
+# key: r_gitops_commit
+# --
+
+resource "gitops_commit" "${1:this}" {
+    handles = "${2:handles}"
+}

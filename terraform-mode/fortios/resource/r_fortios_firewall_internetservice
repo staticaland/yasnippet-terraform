@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_firewall_internetservice
+# key: r_fortios_firewall_internetservice
+# --
+
+resource "fortios_firewall_internetservice" "${1:this}" {
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_ccloud_domain_quota_v1
+# key: r_ccloud_domain_quota_v1
+# --
+
+resource "ccloud_domain_quota_v1" "${1:this}" {
+    domain_id = "${2:domain_id}"
+}

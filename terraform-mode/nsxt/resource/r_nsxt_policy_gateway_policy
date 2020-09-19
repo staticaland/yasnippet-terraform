@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_gateway_policy
+# key: r_nsxt_policy_gateway_policy
+# --
+
+resource "nsxt_policy_gateway_policy" "${1:this}" {
+    category = "${2:category}"
+    display_name = "${3:display_name}"
+}

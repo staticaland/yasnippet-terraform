@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_health_checks_ping_probe
+# key: r_oci_health_checks_ping_probe
+# --
+
+resource "oci_health_checks_ping_probe" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    protocol = "${3:protocol}"
+    targets = "${4:targets}"
+}

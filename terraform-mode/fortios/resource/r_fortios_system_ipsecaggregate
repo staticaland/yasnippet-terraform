@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ipsecaggregate
+# key: r_fortios_system_ipsecaggregate
+# --
+
+resource "fortios_system_ipsecaggregate" "${1:this}" {
+}

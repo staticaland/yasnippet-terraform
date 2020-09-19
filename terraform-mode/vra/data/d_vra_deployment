@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vra_deployment
+# key: d_vra_deployment
+# --
+
+data "vra_deployment" "${1:this}" {
+}

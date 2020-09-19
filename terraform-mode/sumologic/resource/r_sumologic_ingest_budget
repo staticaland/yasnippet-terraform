@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sumologic_ingest_budget
+# key: r_sumologic_ingest_budget
+# --
+
+resource "sumologic_ingest_budget" "${1:this}" {
+    capacity_bytes = "${2:capacity_bytes}"
+    field_value = "${3:field_value}"
+    name = "${4:name}"
+}

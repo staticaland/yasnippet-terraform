@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cam_group_memberships
+# key: d_tencentcloud_cam_group_memberships
+# --
+
+data "tencentcloud_cam_group_memberships" "${1:this}" {
+}

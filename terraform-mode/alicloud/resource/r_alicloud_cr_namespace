@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cr_namespace
+# key: r_alicloud_cr_namespace
+# --
+
+resource "alicloud_cr_namespace" "${1:this}" {
+    auto_create = "${2:auto_create}"
+    default_visibility = "${3:default_visibility}"
+    name = "${4:name}"
+}

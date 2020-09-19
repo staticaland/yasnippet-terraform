@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_cloudfoundry_asg
+# key: r_cloudfoundry_asg
+# --
+
+resource "cloudfoundry_asg" "${1:this}" {
+    name = "${2:name}"
+}

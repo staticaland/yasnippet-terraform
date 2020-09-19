@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_dms_enterprise_users
+# key: d_alicloud_dms_enterprise_users
+# --
+
+data "alicloud_dms_enterprise_users" "${1:this}" {
+}

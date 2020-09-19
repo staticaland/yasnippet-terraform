@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_sakuracloud_icon
+# key: r_sakuracloud_icon
+# --
+
+resource "sakuracloud_icon" "${1:this}" {
+    name = "${2:name}"
+}

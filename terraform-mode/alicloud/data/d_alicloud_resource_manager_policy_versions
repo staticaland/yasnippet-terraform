@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_resource_manager_policy_versions
+# key: d_alicloud_resource_manager_policy_versions
+# --
+
+data "alicloud_resource_manager_policy_versions" "${1:this}" {
+    policy_name = "${2:policy_name}"
+    policy_type = "${3:policy_type}"
+}

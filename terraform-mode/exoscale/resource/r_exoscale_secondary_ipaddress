@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_secondary_ipaddress
+# key: r_exoscale_secondary_ipaddress
+# --
+
+resource "exoscale_secondary_ipaddress" "${1:this}" {
+    compute_id = "${2:compute_id}"
+    ip_address = "${3:ip_address}"
+}

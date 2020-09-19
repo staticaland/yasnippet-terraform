@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_bigtable_gc_policy
+# key: r_google_bigtable_gc_policy
+# --
+
+resource "google_bigtable_gc_policy" "${1:this}" {
+    column_family = "${2:column_family}"
+    instance_name = "${3:instance_name}"
+    table = "${4:table}"
+}

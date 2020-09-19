@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tfe_oauth_client
+# key: r_tfe_oauth_client
+# --
+
+resource "tfe_oauth_client" "${1:this}" {
+    api_url = "${2:api_url}"
+    http_url = "${3:http_url}"
+    oauth_token = "${4:oauth_token}"
+    organization = "${5:organization}"
+    service_provider = "${6:service_provider}"
+}

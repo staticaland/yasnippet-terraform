@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_huaweicloud_networking_port
+# key: d_huaweicloud_networking_port
+# --
+
+data "huaweicloud_networking_port" "${1:this}" {
+}

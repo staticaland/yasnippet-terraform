@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_csbs_backup_policy
+# key: r_huaweicloud_csbs_backup_policy
+# --
+
+resource "huaweicloud_csbs_backup_policy" "${1:this}" {
+    name = "${2:name}"
+}

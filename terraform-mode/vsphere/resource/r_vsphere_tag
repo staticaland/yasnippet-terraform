@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vsphere_tag
+# key: r_vsphere_tag
+# --
+
+resource "vsphere_tag" "${1:this}" {
+    category_id = "${2:category_id}"
+    name = "${3:name}"
+}

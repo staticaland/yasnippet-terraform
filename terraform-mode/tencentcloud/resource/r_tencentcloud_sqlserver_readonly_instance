@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_sqlserver_readonly_instance
+# key: r_tencentcloud_sqlserver_readonly_instance
+# --
+
+resource "tencentcloud_sqlserver_readonly_instance" "${1:this}" {
+    master_instance_id = "${2:master_instance_id}"
+    memory = "${3:memory}"
+    name = "${4:name}"
+    readonly_group_type = "${5:readonly_group_type}"
+    storage = "${6:storage}"
+}

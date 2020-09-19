@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_rancher2_cluster_alert_group
+# key: d_rancher2_cluster_alert_group
+# --
+
+data "rancher2_cluster_alert_group" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    name = "${3:name}"
+}

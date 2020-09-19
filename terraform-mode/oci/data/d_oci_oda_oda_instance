@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_oda_oda_instance
+# key: d_oci_oda_oda_instance
+# --
+
+data "oci_oda_oda_instance" "${1:this}" {
+    oda_instance_id = "${2:oda_instance_id}"
+}

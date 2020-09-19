@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_okta_event_hook
+# key: r_okta_event_hook
+# --
+
+resource "okta_event_hook" "${1:this}" {
+    channel = "${2:channel}"
+    events = "${3:events}"
+    name = "${4:name}"
+}

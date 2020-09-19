@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_google_data_catalog_entry_group_iam_policy
+# key: r_google_data_catalog_entry_group_iam_policy
+# --
+
+resource "google_data_catalog_entry_group_iam_policy" "${1:this}" {
+    entry_group = "${2:entry_group}"
+    policy_data = "${3:policy_data}"
+}

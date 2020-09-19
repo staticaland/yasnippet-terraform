@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_akamai_edge_hostname
+# key: r_akamai_edge_hostname
+# --
+
+resource "akamai_edge_hostname" "${1:this}" {
+    contract = "${2:contract}"
+    edge_hostname = "${3:edge_hostname}"
+    group = "${4:group}"
+    product = "${5:product}"
+}

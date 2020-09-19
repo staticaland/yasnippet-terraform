@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_nlb_service
+# key: r_exoscale_nlb_service
+# --
+
+resource "exoscale_nlb_service" "${1:this}" {
+    instance_pool_id = "${2:instance_pool_id}"
+    name = "${3:name}"
+    nlb_id = "${4:nlb_id}"
+    port = "${5:port}"
+    target_port = "${6:target_port}"
+    zone = "${7:zone}"
+}

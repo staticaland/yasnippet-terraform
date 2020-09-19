@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_nosql_table
+# key: r_oci_nosql_table
+# --
+
+resource "oci_nosql_table" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    ddl_statement = "${3:ddl_statement}"
+    name = "${4:name}"
+}

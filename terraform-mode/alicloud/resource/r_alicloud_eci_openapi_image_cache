@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_eci_openapi_image_cache
+# key: r_alicloud_eci_openapi_image_cache
+# --
+
+resource "alicloud_eci_openapi_image_cache" "${1:this}" {
+    image_cache_name = "${2:image_cache_name}"
+    images = "${3:images}"
+    security_group_id = "${4:security_group_id}"
+    vswitch_id = "${5:vswitch_id}"
+}

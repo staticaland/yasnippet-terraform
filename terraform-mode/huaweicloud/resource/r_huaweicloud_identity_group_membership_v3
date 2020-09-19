@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_identity_group_membership_v3
+# key: r_huaweicloud_identity_group_membership_v3
+# --
+
+resource "huaweicloud_identity_group_membership_v3" "${1:this}" {
+    group = "${2:group}"
+    users = "${3:users}"
+}

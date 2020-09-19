@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_packet_volume_attachment
+# key: r_packet_volume_attachment
+# --
+
+resource "packet_volume_attachment" "${1:this}" {
+    device_id = "${2:device_id}"
+    volume_id = "${3:volume_id}"
+}

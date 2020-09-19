@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_csbs_backup
+# key: r_huaweicloud_csbs_backup
+# --
+
+resource "huaweicloud_csbs_backup" "${1:this}" {
+    resource_id = "${2:resource_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_access_key
+# key: d_outscale_access_key
+# --
+
+data "outscale_access_key" "${1:this}" {
+}

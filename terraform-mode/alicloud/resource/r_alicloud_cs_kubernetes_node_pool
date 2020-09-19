@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_cs_kubernetes_node_pool
+# key: r_alicloud_cs_kubernetes_node_pool
+# --
+
+resource "alicloud_cs_kubernetes_node_pool" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    instance_types = "${3:instance_types}"
+    name = "${4:name}"
+    node_count = "${5:node_count}"
+    vswitch_ids = "${6:vswitch_ids}"
+}

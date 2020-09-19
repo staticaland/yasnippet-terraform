@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_outscale_public_ip
+# key: d_outscale_public_ip
+# --
+
+data "outscale_public_ip" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_vultr_reverse_ipv6
+# key: d_vultr_reverse_ipv6
+# --
+
+data "vultr_reverse_ipv6" "${1:this}" {
+}

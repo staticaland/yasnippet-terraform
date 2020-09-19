@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_dhcp_server
+# key: r_nsxt_policy_dhcp_server
+# --
+
+resource "nsxt_policy_dhcp_server" "${1:this}" {
+    display_name = "${2:display_name}"
+}

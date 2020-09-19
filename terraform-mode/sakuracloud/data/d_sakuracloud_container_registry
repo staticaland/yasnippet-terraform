@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sakuracloud_container_registry
+# key: d_sakuracloud_container_registry
+# --
+
+data "sakuracloud_container_registry" "${1:this}" {
+}

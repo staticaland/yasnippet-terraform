@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_waf_instances
+# key: d_alicloud_waf_instances
+# --
+
+data "alicloud_waf_instances" "${1:this}" {
+}

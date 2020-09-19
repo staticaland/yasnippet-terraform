@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_oci_health_checks_vantage_points
+# key: d_oci_health_checks_vantage_points
+# --
+
+data "oci_health_checks_vantage_points" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_monitor_policy_conditions
+# key: d_tencentcloud_monitor_policy_conditions
+# --
+
+data "tencentcloud_monitor_policy_conditions" "${1:this}" {
+}

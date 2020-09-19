@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_consul_network_area_members
+# key: d_consul_network_area_members
+# --
+
+data "consul_network_area_members" "${1:this}" {
+    uuid = "${2:uuid}"
+}

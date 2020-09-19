@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_api_gateway_group
+# key: r_alicloud_api_gateway_group
+# --
+
+resource "alicloud_api_gateway_group" "${1:this}" {
+    description = "${2:description}"
+    name = "${3:name}"
+}

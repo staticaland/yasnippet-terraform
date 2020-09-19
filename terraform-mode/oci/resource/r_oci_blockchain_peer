@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_blockchain_peer
+# key: r_oci_blockchain_peer
+# --
+
+resource "oci_blockchain_peer" "${1:this}" {
+    ad = "${2:ad}"
+    blockchain_platform_id = "${3:blockchain_platform_id}"
+    role = "${4:role}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_dme_contact_list
+# key: r_dme_contact_list
+# --
+
+resource "dme_contact_list" "${1:this}" {
+    emails = "${2:emails}"
+    name = "${3:name}"
+}

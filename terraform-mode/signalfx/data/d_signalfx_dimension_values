@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_signalfx_dimension_values
+# key: d_signalfx_dimension_values
+# --
+
+data "signalfx_dimension_values" "${1:this}" {
+    query = "${2:query}"
+}

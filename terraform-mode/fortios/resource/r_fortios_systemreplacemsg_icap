@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_systemreplacemsg_icap
+# key: r_fortios_systemreplacemsg_icap
+# --
+
+resource "fortios_systemreplacemsg_icap" "${1:this}" {
+    msg_type = "${2:msg_type}"
+}

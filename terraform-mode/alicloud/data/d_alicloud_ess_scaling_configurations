@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ess_scaling_configurations
+# key: d_alicloud_ess_scaling_configurations
+# --
+
+data "alicloud_ess_scaling_configurations" "${1:this}" {
+}

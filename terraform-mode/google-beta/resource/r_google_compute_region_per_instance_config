@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_region_per_instance_config
+# key: r_google_compute_region_per_instance_config
+# --
+
+resource "google_compute_region_per_instance_config" "${1:this}" {
+    name = "${2:name}"
+    region = "${3:region}"
+    region_instance_group_manager = "${4:region_instance_group_manager}"
+}

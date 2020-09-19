@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_ibm_container_vpc_alb
+# key: d_ibm_container_vpc_alb
+# --
+
+data "ibm_container_vpc_alb" "${1:this}" {
+    alb_id = "${2:alb_id}"
+}

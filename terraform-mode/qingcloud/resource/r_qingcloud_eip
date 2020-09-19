@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_qingcloud_eip
+# key: r_qingcloud_eip
+# --
+
+resource "qingcloud_eip" "${1:this}" {
+    bandwidth = "${2:bandwidth}"
+}

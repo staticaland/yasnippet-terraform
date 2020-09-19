@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_dns_recordset
+# key: r_huaweicloud_dns_recordset
+# --
+
+resource "huaweicloud_dns_recordset" "${1:this}" {
+    name = "${2:name}"
+    records = "${3:records}"
+    type = "${4:type}"
+    zone_id = "${5:zone_id}"
+}

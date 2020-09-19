@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_outscale_route_table
+# key: r_outscale_route_table
+# --
+
+resource "outscale_route_table" "${1:this}" {
+    net_id = "${2:net_id}"
+}

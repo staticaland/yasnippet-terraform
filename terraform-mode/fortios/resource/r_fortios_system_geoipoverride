@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_geoipoverride
+# key: r_fortios_system_geoipoverride
+# --
+
+resource "fortios_system_geoipoverride" "${1:this}" {
+    name = "${2:name}"
+}

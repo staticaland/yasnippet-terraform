@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_regions
+# key: d_digitalocean_regions
+# --
+
+data "digitalocean_regions" "${1:this}" {
+}

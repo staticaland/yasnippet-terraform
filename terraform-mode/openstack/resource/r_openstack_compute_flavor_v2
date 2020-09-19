@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_openstack_compute_flavor_v2
+# key: r_openstack_compute_flavor_v2
+# --
+
+resource "openstack_compute_flavor_v2" "${1:this}" {
+    disk = "${2:disk}"
+    name = "${3:name}"
+    ram = "${4:ram}"
+    vcpus = "${5:vcpus}"
+}

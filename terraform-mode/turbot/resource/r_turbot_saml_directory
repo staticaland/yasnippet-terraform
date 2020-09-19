@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_turbot_saml_directory
+# key: r_turbot_saml_directory
+# --
+
+resource "turbot_saml_directory" "${1:this}" {
+    certificate = "${2:certificate}"
+    entry_point = "${3:entry_point}"
+    parent = "${4:parent}"
+    profile_id_template = "${5:profile_id_template}"
+    title = "${6:title}"
+}

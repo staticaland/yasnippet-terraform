@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_ad_user
+# key: r_ad_user
+# --
+
+resource "ad_user" "${1:this}" {
+    display_name = "${2:display_name}"
+    principal_name = "${3:principal_name}"
+    sam_account_name = "${4:sam_account_name}"
+}

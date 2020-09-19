@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_aviatrix_firenet
+# key: d_aviatrix_firenet
+# --
+
+data "aviatrix_firenet" "${1:this}" {
+    vpc_id = "${2:vpc_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_switchcontroller_virtualportpool
+# key: r_fortios_switchcontroller_virtualportpool
+# --
+
+resource "fortios_switchcontroller_virtualportpool" "${1:this}" {
+}

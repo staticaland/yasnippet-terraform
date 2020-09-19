@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_functions_application
+# key: r_oci_functions_application
+# --
+
+resource "oci_functions_application" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    subnet_ids = "${4:subnet_ids}"
+}

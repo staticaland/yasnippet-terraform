@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_sp_idp_connection
+# key: r_pingfederate_sp_idp_connection
+# --
+
+resource "pingfederate_sp_idp_connection" "${1:this}" {
+    entity_id = "${2:entity_id}"
+    name = "${3:name}"
+}

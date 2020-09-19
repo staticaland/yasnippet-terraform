@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cam_user
+# key: r_tencentcloud_cam_user
+# --
+
+resource "tencentcloud_cam_user" "${1:this}" {
+    name = "${2:name}"
+}

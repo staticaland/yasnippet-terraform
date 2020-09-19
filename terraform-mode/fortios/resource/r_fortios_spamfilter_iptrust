@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_fortios_spamfilter_iptrust
+# key: r_fortios_spamfilter_iptrust
+# --
+
+resource "fortios_spamfilter_iptrust" "${1:this}" {
+    fosid = "${2:fosid}"
+    name = "${3:name}"
+}

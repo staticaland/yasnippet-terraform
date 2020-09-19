@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ibm_network_interface_sg_attachment
+# key: r_ibm_network_interface_sg_attachment
+# --
+
+resource "ibm_network_interface_sg_attachment" "${1:this}" {
+    network_interface_id = "${2:network_interface_id}"
+    security_group_id = "${3:security_group_id}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_tencentcloud_cfs_access_group
+# key: r_tencentcloud_cfs_access_group
+# --
+
+resource "tencentcloud_cfs_access_group" "${1:this}" {
+    name = "${2:name}"
+}

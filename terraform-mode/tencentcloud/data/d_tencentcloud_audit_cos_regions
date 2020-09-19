@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_audit_cos_regions
+# key: d_tencentcloud_audit_cos_regions
+# --
+
+data "tencentcloud_audit_cos_regions" "${1:this}" {
+}

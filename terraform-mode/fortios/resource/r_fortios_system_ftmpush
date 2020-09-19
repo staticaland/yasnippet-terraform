@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_ftmpush
+# key: r_fortios_system_ftmpush
+# --
+
+resource "fortios_system_ftmpush" "${1:this}" {
+}

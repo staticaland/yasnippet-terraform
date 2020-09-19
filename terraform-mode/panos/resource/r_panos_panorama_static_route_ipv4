@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_panos_panorama_static_route_ipv4
+# key: r_panos_panorama_static_route_ipv4
+# --
+
+resource "panos_panorama_static_route_ipv4" "${1:this}" {
+    destination = "${2:destination}"
+    name = "${3:name}"
+    virtual_router = "${4:virtual_router}"
+}

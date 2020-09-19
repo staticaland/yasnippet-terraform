@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_vpn_community_star
+# key: r_checkpoint_management_vpn_community_star
+# --
+
+resource "checkpoint_management_vpn_community_star" "${1:this}" {
+    name = "${2:name}"
+}

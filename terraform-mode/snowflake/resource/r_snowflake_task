@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_snowflake_task
+# key: r_snowflake_task
+# --
+
+resource "snowflake_task" "${1:this}" {
+    database = "${2:database}"
+    name = "${3:name}"
+    schema = "${4:schema}"
+    sql_statement = "${5:sql_statement}"
+    warehouse = "${6:warehouse}"
+}

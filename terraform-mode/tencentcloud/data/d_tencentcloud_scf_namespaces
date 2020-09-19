@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_scf_namespaces
+# key: d_tencentcloud_scf_namespaces
+# --
+
+data "tencentcloud_scf_namespaces" "${1:this}" {
+}

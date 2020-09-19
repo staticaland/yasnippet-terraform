@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_onelogin_user_mappings
+# key: r_onelogin_user_mappings
+# --
+
+resource "onelogin_user_mappings" "${1:this}" {
+    match = "${2:match}"
+    name = "${3:name}"
+    position = "${4:position}"
+}

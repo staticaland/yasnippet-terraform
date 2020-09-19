@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_host_thumbprint
+# key: d_vsphere_host_thumbprint
+# --
+
+data "vsphere_host_thumbprint" "${1:this}" {
+    address = "${2:address}"
+}

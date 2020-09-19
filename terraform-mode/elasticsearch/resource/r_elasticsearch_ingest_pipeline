@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_elasticsearch_ingest_pipeline
+# key: r_elasticsearch_ingest_pipeline
+# --
+
+resource "elasticsearch_ingest_pipeline" "${1:this}" {
+    body = "${2:body}"
+    name = "${3:name}"
+}

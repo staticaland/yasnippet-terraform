@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_kms_vault
+# key: r_oci_kms_vault
+# --
+
+resource "oci_kms_vault" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+    vault_type = "${4:vault_type}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_spinnaker_application
+# key: r_spinnaker_application
+# --
+
+resource "spinnaker_application" "${1:this}" {
+    application = "${2:application}"
+    email = "${3:email}"
+}

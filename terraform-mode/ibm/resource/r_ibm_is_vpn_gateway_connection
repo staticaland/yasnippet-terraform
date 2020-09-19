@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_vpn_gateway_connection
+# key: r_ibm_is_vpn_gateway_connection
+# --
+
+resource "ibm_is_vpn_gateway_connection" "${1:this}" {
+    name = "${2:name}"
+    peer_address = "${3:peer_address}"
+    preshared_key = "${4:preshared_key}"
+    vpn_gateway = "${5:vpn_gateway}"
+}

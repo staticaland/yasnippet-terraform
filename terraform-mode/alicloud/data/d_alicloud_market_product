@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_market_product
+# key: d_alicloud_market_product
+# --
+
+data "alicloud_market_product" "${1:this}" {
+    product_code = "${2:product_code}"
+}

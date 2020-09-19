@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_mongodbatlas_network_container
+# key: r_mongodbatlas_network_container
+# --
+
+resource "mongodbatlas_network_container" "${1:this}" {
+    atlas_cidr_block = "${2:atlas_cidr_block}"
+    project_id = "${3:project_id}"
+}

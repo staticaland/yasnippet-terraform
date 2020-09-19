@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_ip_block_subnet
+# key: r_nsxt_ip_block_subnet
+# --
+
+resource "nsxt_ip_block_subnet" "${1:this}" {
+    block_id = "${2:block_id}"
+    size = "${3:size}"
+}

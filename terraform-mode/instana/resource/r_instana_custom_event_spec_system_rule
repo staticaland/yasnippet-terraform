@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_instana_custom_event_spec_system_rule
+# key: r_instana_custom_event_spec_system_rule
+# --
+
+resource "instana_custom_event_spec_system_rule" "${1:this}" {
+    name = "${2:name}"
+    rule_severity = "${3:rule_severity}"
+    rule_system_rule_id = "${4:rule_system_rule_id}"
+}

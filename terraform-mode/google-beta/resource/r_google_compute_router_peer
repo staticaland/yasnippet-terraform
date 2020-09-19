@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_router_peer
+# key: r_google_compute_router_peer
+# --
+
+resource "google_compute_router_peer" "${1:this}" {
+    interface = "${2:interface}"
+    name = "${3:name}"
+    peer_asn = "${4:peer_asn}"
+    peer_ip_address = "${5:peer_ip_address}"
+    router = "${6:router}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_oci_database_database_software_image
+# key: r_oci_database_database_software_image
+# --
+
+resource "oci_database_database_software_image" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    database_version = "${3:database_version}"
+    display_name = "${4:display_name}"
+    patch_set = "${5:patch_set}"
+}

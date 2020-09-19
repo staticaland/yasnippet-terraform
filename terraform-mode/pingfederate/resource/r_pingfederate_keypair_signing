@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_pingfederate_keypair_signing
+# key: r_pingfederate_keypair_signing
+# --
+
+resource "pingfederate_keypair_signing" "${1:this}" {
+}

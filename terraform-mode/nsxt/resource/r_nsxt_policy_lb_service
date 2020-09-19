@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_nsxt_policy_lb_service
+# key: r_nsxt_policy_lb_service
+# --
+
+resource "nsxt_policy_lb_service" "${1:this}" {
+    display_name = "${2:display_name}"
+}

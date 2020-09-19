@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_disk
+# key: r_google_compute_disk
+# --
+
+resource "google_compute_disk" "${1:this}" {
+    name = "${2:name}"
+}

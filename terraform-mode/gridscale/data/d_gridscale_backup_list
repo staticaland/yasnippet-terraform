@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_backup_list
+# key: d_gridscale_backup_list
+# --
+
+data "gridscale_backup_list" "${1:this}" {
+    storage_uuid = "${2:storage_uuid}"
+}

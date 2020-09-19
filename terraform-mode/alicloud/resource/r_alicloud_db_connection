@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_db_connection
+# key: r_alicloud_db_connection
+# --
+
+resource "alicloud_db_connection" "${1:this}" {
+    instance_id = "${2:instance_id}"
+}

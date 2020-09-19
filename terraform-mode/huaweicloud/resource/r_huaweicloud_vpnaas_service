@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_vpnaas_service
+# key: r_huaweicloud_vpnaas_service
+# --
+
+resource "huaweicloud_vpnaas_service" "${1:this}" {
+    router_id = "${2:router_id}"
+}

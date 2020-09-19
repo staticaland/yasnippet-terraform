@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_graylog_sidecars
+# key: r_graylog_sidecars
+# --
+
+resource "graylog_sidecars" "${1:this}" {
+}

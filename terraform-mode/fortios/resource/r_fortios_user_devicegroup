@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_fortios_user_devicegroup
+# key: r_fortios_user_devicegroup
+# --
+
+resource "fortios_user_devicegroup" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_realization_info
+# key: d_nsxt_policy_realization_info
+# --
+
+data "nsxt_policy_realization_info" "${1:this}" {
+    path = "${2:path}"
+}

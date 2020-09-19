@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_flexkube_pki
+# key: r_flexkube_pki
+# --
+
+resource "flexkube_pki" "${1:this}" {
+}

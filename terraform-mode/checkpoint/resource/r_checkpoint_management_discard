@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_discard
+# key: r_checkpoint_management_discard
+# --
+
+resource "checkpoint_management_discard" "${1:this}" {
+}

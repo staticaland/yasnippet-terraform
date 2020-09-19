@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_compute_instance_iam_binding
+# key: r_google_compute_instance_iam_binding
+# --
+
+resource "google_compute_instance_iam_binding" "${1:this}" {
+    instance_name = "${2:instance_name}"
+    members = "${3:members}"
+    role = "${4:role}"
+}

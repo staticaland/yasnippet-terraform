@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_databricks_dbfs_file
+# key: d_databricks_dbfs_file
+# --
+
+data "databricks_dbfs_file" "${1:this}" {
+    limit_file_size = "${2:limit_file_size}"
+    path = "${3:path}"
+}

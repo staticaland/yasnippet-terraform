@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_datascience_notebook_session_shapes
+# key: d_oci_datascience_notebook_session_shapes
+# --
+
+data "oci_datascience_notebook_session_shapes" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

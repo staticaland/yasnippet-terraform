@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_waf_instance
+# key: r_alicloud_waf_instance
+# --
+
+resource "alicloud_waf_instance" "${1:this}" {
+    big_screen = "${2:big_screen}"
+    exclusive_ip_package = "${3:exclusive_ip_package}"
+    ext_bandwidth = "${4:ext_bandwidth}"
+    ext_domain_package = "${5:ext_domain_package}"
+    log_storage = "${6:log_storage}"
+    log_time = "${7:log_time}"
+    package_code = "${8:package_code}"
+    prefessional_service = "${9:prefessional_service}"
+    subscription_type = "${10:subscription_type}"
+    waf_log = "${11:waf_log}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_network_containers
+# key: d_mongodbatlas_network_containers
+# --
+
+data "mongodbatlas_network_containers" "${1:this}" {
+    project_id = "${2:project_id}"
+    provider_name = "${3:provider_name}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_ecloud_site
+# key: d_ecloud_site
+# --
+
+data "ecloud_site" "${1:this}" {
+    pod_id = "${2:pod_id}"
+    solution_id = "${3:solution_id}"
+}

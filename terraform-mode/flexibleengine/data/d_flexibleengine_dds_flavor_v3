@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_flexibleengine_dds_flavor_v3
+# key: d_flexibleengine_dds_flavor_v3
+# --
+
+data "flexibleengine_dds_flavor_v3" "${1:this}" {
+}

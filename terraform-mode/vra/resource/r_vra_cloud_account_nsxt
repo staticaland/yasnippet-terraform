@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_vra_cloud_account_nsxt
+# key: r_vra_cloud_account_nsxt
+# --
+
+resource "vra_cloud_account_nsxt" "${1:this}" {
+    hostname = "${2:hostname}"
+    name = "${3:name}"
+    password = "${4:password}"
+    username = "${5:username}"
+}

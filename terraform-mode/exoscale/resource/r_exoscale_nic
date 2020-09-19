@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_exoscale_nic
+# key: r_exoscale_nic
+# --
+
+resource "exoscale_nic" "${1:this}" {
+    compute_id = "${2:compute_id}"
+    network_id = "${3:network_id}"
+}

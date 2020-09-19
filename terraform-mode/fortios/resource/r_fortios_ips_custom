@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_ips_custom
+# key: r_fortios_ips_custom
+# --
+
+resource "fortios_ips_custom" "${1:this}" {
+}

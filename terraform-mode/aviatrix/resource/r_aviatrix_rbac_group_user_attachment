@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_rbac_group_user_attachment
+# key: r_aviatrix_rbac_group_user_attachment
+# --
+
+resource "aviatrix_rbac_group_user_attachment" "${1:this}" {
+    group_name = "${2:group_name}"
+    user_name = "${3:user_name}"
+}

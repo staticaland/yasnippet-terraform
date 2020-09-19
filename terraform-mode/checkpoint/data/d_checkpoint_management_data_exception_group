@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_checkpoint_management_data_exception_group
+# key: d_checkpoint_management_data_exception_group
+# --
+
+data "checkpoint_management_data_exception_group" "${1:this}" {
+}

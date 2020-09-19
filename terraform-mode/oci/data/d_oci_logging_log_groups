@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_oci_logging_log_groups
+# key: d_oci_logging_log_groups
+# --
+
+data "oci_logging_log_groups" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+}

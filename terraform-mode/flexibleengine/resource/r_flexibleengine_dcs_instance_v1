@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: r_flexibleengine_dcs_instance_v1
+# key: r_flexibleengine_dcs_instance_v1
+# --
+
+resource "flexibleengine_dcs_instance_v1" "${1:this}" {
+    available_zones = "${2:available_zones}"
+    capacity = "${3:capacity}"
+    engine = "${4:engine}"
+    engine_version = "${5:engine_version}"
+    name = "${6:name}"
+    password = "${7:password}"
+    security_group_id = "${8:security_group_id}"
+    vpc_id = "${9:vpc_id}"
+}

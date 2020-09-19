@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_cos_buckets
+# key: d_tencentcloud_cos_buckets
+# --
+
+data "tencentcloud_cos_buckets" "${1:this}" {
+}

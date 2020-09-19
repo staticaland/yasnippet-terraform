@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_aviatrix_controller_config
+# key: r_aviatrix_controller_config
+# --
+
+resource "aviatrix_controller_config" "${1:this}" {
+}

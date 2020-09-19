@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_triton_fabric
+# key: r_triton_fabric
+# --
+
+resource "triton_fabric" "${1:this}" {
+    name = "${2:name}"
+    provision_end_ip = "${3:provision_end_ip}"
+    provision_start_ip = "${4:provision_start_ip}"
+    subnet = "${5:subnet}"
+    vlan_id = "${6:vlan_id}"
+}

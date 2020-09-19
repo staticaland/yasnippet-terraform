@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_artifactory_group
+# key: r_artifactory_group
+# --
+
+resource "artifactory_group" "${1:this}" {
+    name = "${2:name}"
+}

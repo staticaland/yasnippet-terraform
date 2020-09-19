@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vultr_reserved_ip
+# key: r_vultr_reserved_ip
+# --
+
+resource "vultr_reserved_ip" "${1:this}" {
+    ip_type = "${2:ip_type}"
+    region_id = "${3:region_id}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_prismacloud_alerts
+# key: d_prismacloud_alerts
+# --
+
+data "prismacloud_alerts" "${1:this}" {
+}

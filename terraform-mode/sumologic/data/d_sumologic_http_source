@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_sumologic_http_source
+# key: d_sumologic_http_source
+# --
+
+data "sumologic_http_source" "${1:this}" {
+}

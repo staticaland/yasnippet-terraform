@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_function_rule
+# key: r_ibm_function_rule
+# --
+
+resource "ibm_function_rule" "${1:this}" {
+    action_name = "${2:action_name}"
+    name = "${3:name}"
+    namespace = "${4:namespace}"
+    trigger_name = "${5:trigger_name}"
+}

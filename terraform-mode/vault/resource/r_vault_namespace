@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_vault_namespace
+# key: r_vault_namespace
+# --
+
+resource "vault_namespace" "${1:this}" {
+    path = "${2:path}"
+}

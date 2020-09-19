@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_ftpproxy_explicit
+# key: r_fortios_ftpproxy_explicit
+# --
+
+resource "fortios_ftpproxy_explicit" "${1:this}" {
+}

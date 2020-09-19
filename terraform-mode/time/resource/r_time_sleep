@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_time_sleep
+# key: r_time_sleep
+# --
+
+resource "time_sleep" "${1:this}" {
+}

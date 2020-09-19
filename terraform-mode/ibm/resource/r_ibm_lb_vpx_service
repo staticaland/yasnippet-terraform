@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_ibm_lb_vpx_service
+# key: r_ibm_lb_vpx_service
+# --
+
+resource "ibm_lb_vpx_service" "${1:this}" {
+    connection_limit = "${2:connection_limit}"
+    destination_ip_address = "${3:destination_ip_address}"
+    destination_port = "${4:destination_port}"
+    health_check = "${5:health_check}"
+    name = "${6:name}"
+    vip_id = "${7:vip_id}"
+    weight = "${8:weight}"
+}

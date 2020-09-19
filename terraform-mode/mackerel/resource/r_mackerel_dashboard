@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_mackerel_dashboard
+# key: r_mackerel_dashboard
+# --
+
+resource "mackerel_dashboard" "${1:this}" {
+    body_markdown = "${2:body_markdown}"
+    title = "${3:title}"
+    url_path = "${4:url_path}"
+}

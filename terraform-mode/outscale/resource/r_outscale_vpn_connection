@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_outscale_vpn_connection
+# key: r_outscale_vpn_connection
+# --
+
+resource "outscale_vpn_connection" "${1:this}" {
+    client_gateway_id = "${2:client_gateway_id}"
+    connection_type = "${3:connection_type}"
+    virtual_gateway_id = "${4:virtual_gateway_id}"
+}

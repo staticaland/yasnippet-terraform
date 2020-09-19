@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_linode_stackscript
+# key: r_linode_stackscript
+# --
+
+resource "linode_stackscript" "${1:this}" {
+    description = "${2:description}"
+    images = "${3:images}"
+    label = "${4:label}"
+    script = "${5:script}"
+}

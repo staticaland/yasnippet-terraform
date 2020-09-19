@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_auth0_connection
+# key: r_auth0_connection
+# --
+
+resource "auth0_connection" "${1:this}" {
+    name = "${2:name}"
+    strategy = "${3:strategy}"
+}

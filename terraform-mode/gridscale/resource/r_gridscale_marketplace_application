@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_gridscale_marketplace_application
+# key: r_gridscale_marketplace_application
+# --
+
+resource "gridscale_marketplace_application" "${1:this}" {
+    category = "${2:category}"
+    name = "${3:name}"
+    object_storage_path = "${4:object_storage_path}"
+    setup_cores = "${5:setup_cores}"
+    setup_memory = "${6:setup_memory}"
+    setup_storage_capacity = "${7:setup_storage_capacity}"
+}

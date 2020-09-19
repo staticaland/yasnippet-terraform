@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_fc_zones
+# key: d_alicloud_fc_zones
+# --
+
+data "alicloud_fc_zones" "${1:this}" {
+}

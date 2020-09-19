@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_pingaccess_acme_server
+# key: r_pingaccess_acme_server
+# --
+
+resource "pingaccess_acme_server" "${1:this}" {
+    name = "${2:name}"
+    url = "${3:url}"
+}

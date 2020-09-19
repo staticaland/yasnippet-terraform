@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_aiven_kafka_connector
+# key: d_aiven_kafka_connector
+# --
+
+data "aiven_kafka_connector" "${1:this}" {
+    connector_name = "${2:connector_name}"
+    project = "${3:project}"
+    service_name = "${4:service_name}"
+}

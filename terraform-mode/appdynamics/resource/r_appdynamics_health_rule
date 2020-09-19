@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: r_appdynamics_health_rule
+# key: r_appdynamics_health_rule
+# --
+
+resource "appdynamics_health_rule" "${1:this}" {
+    affected_entity_type = "${2:affected_entity_type}"
+    application_id = "${3:application_id}"
+    business_transaction_scope = "${4:business_transaction_scope}"
+    critical_compare_value = "${5:critical_compare_value}"
+    eval_detail_type = "${6:eval_detail_type}"
+    metric_aggregation_function = "${7:metric_aggregation_function}"
+    metric_eval_detail_type = "${8:metric_eval_detail_type}"
+    metric_path = "${9:metric_path}"
+    name = "${10:name}"
+    warn_compare_value = "${11:warn_compare_value}"
+}

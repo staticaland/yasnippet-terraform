@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_vault_identity_entity_alias
+# key: r_vault_identity_entity_alias
+# --
+
+resource "vault_identity_entity_alias" "${1:this}" {
+    canonical_id = "${2:canonical_id}"
+    mount_accessor = "${3:mount_accessor}"
+    name = "${4:name}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_akamai_group
+# key: d_akamai_group
+# --
+
+data "akamai_group" "${1:this}" {
+}

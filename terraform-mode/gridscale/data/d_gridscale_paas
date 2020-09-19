@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_gridscale_paas
+# key: d_gridscale_paas
+# --
+
+data "gridscale_paas" "${1:this}" {
+    resource_id = "${2:resource_id}"
+}

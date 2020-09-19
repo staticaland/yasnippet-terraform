@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_lb_listener_policy_rule
+# key: r_ibm_is_lb_listener_policy_rule
+# --
+
+resource "ibm_is_lb_listener_policy_rule" "${1:this}" {
+    condition = "${2:condition}"
+    lb = "${3:lb}"
+    listener = "${4:listener}"
+    policy = "${5:policy}"
+    type = "${6:type}"
+    value = "${7:value}"
+}

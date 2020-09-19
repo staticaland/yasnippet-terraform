@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_nsxt_policy_tier1_gateway
+# key: d_nsxt_policy_tier1_gateway
+# --
+
+data "nsxt_policy_tier1_gateway" "${1:this}" {
+}

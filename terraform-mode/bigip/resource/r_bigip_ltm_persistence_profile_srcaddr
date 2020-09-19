@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_persistence_profile_srcaddr
+# key: r_bigip_ltm_persistence_profile_srcaddr
+# --
+
+resource "bigip_ltm_persistence_profile_srcaddr" "${1:this}" {
+    defaults_from = "${2:defaults_from}"
+    name = "${3:name}"
+}

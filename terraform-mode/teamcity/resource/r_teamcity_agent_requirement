@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_teamcity_agent_requirement
+# key: r_teamcity_agent_requirement
+# --
+
+resource "teamcity_agent_requirement" "${1:this}" {
+    build_config_id = "${2:build_config_id}"
+    condition = "${3:condition}"
+    name = "${4:name}"
+}

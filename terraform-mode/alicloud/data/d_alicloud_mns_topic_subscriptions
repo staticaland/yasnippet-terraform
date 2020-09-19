@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_mns_topic_subscriptions
+# key: d_alicloud_mns_topic_subscriptions
+# --
+
+data "alicloud_mns_topic_subscriptions" "${1:this}" {
+    topic_name = "${2:topic_name}"
+}

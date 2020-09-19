@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_akamai_property_rules
+# key: d_akamai_property_rules
+# --
+
+data "akamai_property_rules" "${1:this}" {
+}

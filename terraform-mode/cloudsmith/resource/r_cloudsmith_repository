@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_cloudsmith_repository
+# key: r_cloudsmith_repository
+# --
+
+resource "cloudsmith_repository" "${1:this}" {
+    name = "${2:name}"
+    namespace = "${3:namespace}"
+}

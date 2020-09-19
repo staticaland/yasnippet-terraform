@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: r_mackerel_expression_monitor
+# key: r_mackerel_expression_monitor
+# --
+
+resource "mackerel_expression_monitor" "${1:this}" {
+    critical = "${2:critical}"
+    expression = "${3:expression}"
+    name = "${4:name}"
+    operator = "${5:operator}"
+    warning = "${6:warning}"
+}

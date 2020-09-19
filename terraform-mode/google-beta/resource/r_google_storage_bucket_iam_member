@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_storage_bucket_iam_member
+# key: r_google_storage_bucket_iam_member
+# --
+
+resource "google_storage_bucket_iam_member" "${1:this}" {
+    bucket = "${2:bucket}"
+    member = "${3:member}"
+    role = "${4:role}"
+}

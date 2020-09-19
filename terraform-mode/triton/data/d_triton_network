@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_triton_network
+# key: d_triton_network
+# --
+
+data "triton_network" "${1:this}" {
+    name = "${2:name}"
+}

@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_icinga2_service
+# key: r_icinga2_service
+# --
+
+resource "icinga2_service" "${1:this}" {
+    check_command = "${2:check_command}"
+    hostname = "${3:hostname}"
+    name = "${4:name}"
+}

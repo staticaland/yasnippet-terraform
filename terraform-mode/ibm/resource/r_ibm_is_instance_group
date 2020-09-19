@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_ibm_is_instance_group
+# key: r_ibm_is_instance_group
+# --
+
+resource "ibm_is_instance_group" "${1:this}" {
+    instance_count = "${2:instance_count}"
+    instance_template = "${3:instance_template}"
+    name = "${4:name}"
+    subnets = "${5:subnets}"
+}

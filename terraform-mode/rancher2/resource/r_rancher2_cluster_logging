@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_cluster_logging
+# key: r_rancher2_cluster_logging
+# --
+
+resource "rancher2_cluster_logging" "${1:this}" {
+    cluster_id = "${2:cluster_id}"
+    kind = "${3:kind}"
+    name = "${4:name}"
+}

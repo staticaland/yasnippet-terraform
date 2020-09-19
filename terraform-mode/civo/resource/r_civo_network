@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_civo_network
+# key: r_civo_network
+# --
+
+resource "civo_network" "${1:this}" {
+    label = "${2:label}"
+}

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_datadog_integration_aws_log_collection
+# key: r_datadog_integration_aws_log_collection
+# --
+
+resource "datadog_integration_aws_log_collection" "${1:this}" {
+    account_id = "${2:account_id}"
+    services = "${3:services}"
+}

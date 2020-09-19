@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_sysdig_monitor_alert_anomaly
+# key: r_sysdig_monitor_alert_anomaly
+# --
+
+resource "sysdig_monitor_alert_anomaly" "${1:this}" {
+    monitor = "${2:monitor}"
+    name = "${3:name}"
+    trigger_after_minutes = "${4:trigger_after_minutes}"
+}

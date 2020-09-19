@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_newrelic_synthetics_monitor_script
+# key: r_newrelic_synthetics_monitor_script
+# --
+
+resource "newrelic_synthetics_monitor_script" "${1:this}" {
+    monitor_id = "${2:monitor_id}"
+    text = "${3:text}"
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_google_compute_subnetwork
+# key: d_google_compute_subnetwork
+# --
+
+data "google_compute_subnetwork" "${1:this}" {
+}

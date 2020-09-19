@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_lb_certificate_v2
+# key: r_opentelekomcloud_lb_certificate_v2
+# --
+
+resource "opentelekomcloud_lb_certificate_v2" "${1:this}" {
+    certificate = "${2:certificate}"
+    private_key = "${3:private_key}"
+}

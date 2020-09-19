@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_oci_identity_tag_namespace
+# key: r_oci_identity_tag_namespace
+# --
+
+resource "oci_identity_tag_namespace" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    description = "${3:description}"
+    name = "${4:name}"
+}

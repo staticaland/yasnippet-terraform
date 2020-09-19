@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_emr_disk_types
+# key: d_alicloud_emr_disk_types
+# --
+
+data "alicloud_emr_disk_types" "${1:this}" {
+    cluster_type = "${2:cluster_type}"
+    destination_resource = "${3:destination_resource}"
+    instance_charge_type = "${4:instance_charge_type}"
+    instance_type = "${5:instance_type}"
+}

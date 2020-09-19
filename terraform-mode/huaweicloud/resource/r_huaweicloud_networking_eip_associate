@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_huaweicloud_networking_eip_associate
+# key: r_huaweicloud_networking_eip_associate
+# --
+
+resource "huaweicloud_networking_eip_associate" "${1:this}" {
+    port_id = "${2:port_id}"
+}

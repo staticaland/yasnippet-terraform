@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: r_azurestack_virtual_machine_extension
+# key: r_azurestack_virtual_machine_extension
+# --
+
+resource "azurestack_virtual_machine_extension" "${1:this}" {
+    location = "${2:location}"
+    name = "${3:name}"
+    publisher = "${4:publisher}"
+    resource_group_name = "${5:resource_group_name}"
+    type = "${6:type}"
+    type_handler_version = "${7:type_handler_version}"
+    virtual_machine_name = "${8:virtual_machine_name}"
+}

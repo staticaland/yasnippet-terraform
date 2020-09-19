@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_splunk_inputs_script
+# key: r_splunk_inputs_script
+# --
+
+resource "splunk_inputs_script" "${1:this}" {
+    interval = "${2:interval}"
+    name = "${3:name}"
+}

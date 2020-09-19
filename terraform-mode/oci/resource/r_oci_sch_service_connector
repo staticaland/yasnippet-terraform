@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_oci_sch_service_connector
+# key: r_oci_sch_service_connector
+# --
+
+resource "oci_sch_service_connector" "${1:this}" {
+    compartment_id = "${2:compartment_id}"
+    display_name = "${3:display_name}"
+}

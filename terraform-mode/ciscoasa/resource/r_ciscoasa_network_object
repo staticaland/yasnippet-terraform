@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_ciscoasa_network_object
+# key: r_ciscoasa_network_object
+# --
+
+resource "ciscoasa_network_object" "${1:this}" {
+    name = "${2:name}"
+    value = "${3:value}"
+}

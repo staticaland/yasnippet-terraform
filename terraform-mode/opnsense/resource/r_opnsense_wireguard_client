@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_opnsense_wireguard_client
+# key: r_opnsense_wireguard_client
+# --
+
+resource "opnsense_wireguard_client" "${1:this}" {
+    enabled = "${2:enabled}"
+    name = "${3:name}"
+    public_key = "${4:public_key}"
+    tunnel_address = "${5:tunnel_address}"
+}

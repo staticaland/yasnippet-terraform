@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_system_emailserver
+# key: r_fortios_system_emailserver
+# --
+
+resource "fortios_system_emailserver" "${1:this}" {
+}

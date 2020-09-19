@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_mongodbatlas_teams
+# key: d_mongodbatlas_teams
+# --
+
+data "mongodbatlas_teams" "${1:this}" {
+    org_id = "${2:org_id}"
+}

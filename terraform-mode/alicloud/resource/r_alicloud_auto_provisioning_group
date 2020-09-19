@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_alicloud_auto_provisioning_group
+# key: r_alicloud_auto_provisioning_group
+# --
+
+resource "alicloud_auto_provisioning_group" "${1:this}" {
+    launch_template_id = "${2:launch_template_id}"
+    total_target_capacity = "${3:total_target_capacity}"
+}

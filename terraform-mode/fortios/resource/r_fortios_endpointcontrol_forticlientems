@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_fortios_endpointcontrol_forticlientems
+# key: r_fortios_endpointcontrol_forticlientems
+# --
+
+resource "fortios_endpointcontrol_forticlientems" "${1:this}" {
+    address = "${2:address}"
+    admin_username = "${3:admin_username}"
+    serial_number = "${4:serial_number}"
+}

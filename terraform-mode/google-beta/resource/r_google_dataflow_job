@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: r_google_dataflow_job
+# key: r_google_dataflow_job
+# --
+
+resource "google_dataflow_job" "${1:this}" {
+    name = "${2:name}"
+    temp_gcs_location = "${3:temp_gcs_location}"
+    template_gcs_path = "${4:template_gcs_path}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_dme_template
+# key: r_dme_template
+# --
+
+resource "dme_template" "${1:this}" {
+    name = "${2:name}"
+}

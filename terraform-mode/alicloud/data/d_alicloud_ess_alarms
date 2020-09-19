@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_ess_alarms
+# key: d_alicloud_ess_alarms
+# --
+
+data "alicloud_ess_alarms" "${1:this}" {
+}

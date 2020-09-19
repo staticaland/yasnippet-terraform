@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: d_vsphere_vapp_container
+# key: d_vsphere_vapp_container
+# --
+
+data "vsphere_vapp_container" "${1:this}" {
+    datacenter_id = "${2:datacenter_id}"
+    name = "${3:name}"
+}

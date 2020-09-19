@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_tencentcloud_gaap_certificates
+# key: d_tencentcloud_gaap_certificates
+# --
+
+data "tencentcloud_gaap_certificates" "${1:this}" {
+}

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_hsdp_iam_permissions
+# key: d_hsdp_iam_permissions
+# --
+
+data "hsdp_iam_permissions" "${1:this}" {
+}

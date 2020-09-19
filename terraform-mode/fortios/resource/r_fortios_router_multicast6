@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: r_fortios_router_multicast6
+# key: r_fortios_router_multicast6
+# --
+
+resource "fortios_router_multicast6" "${1:this}" {
+}

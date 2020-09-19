@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_grid5000_site
+# key: d_grid5000_site
+# --
+
+data "grid5000_site" "${1:this}" {
+    name = "${2:name}"
+}

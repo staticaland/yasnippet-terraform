@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_signalfx_dashboard_group
+# key: r_signalfx_dashboard_group
+# --
+
+resource "signalfx_dashboard_group" "${1:this}" {
+    name = "${2:name}"
+}

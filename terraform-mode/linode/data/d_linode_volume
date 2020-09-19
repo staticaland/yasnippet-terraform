@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: d_linode_volume
+# key: d_linode_volume
+# --
+
+data "linode_volume" "${1:this}" {
+    id = "${2:id}"
+}

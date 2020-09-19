@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_bigip_ltm_pool_attachment
+# key: r_bigip_ltm_pool_attachment
+# --
+
+resource "bigip_ltm_pool_attachment" "${1:this}" {
+    node = "${2:node}"
+    pool = "${3:pool}"
+}

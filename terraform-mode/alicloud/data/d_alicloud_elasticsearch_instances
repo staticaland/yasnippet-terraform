@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: d_alicloud_elasticsearch_instances
+# key: d_alicloud_elasticsearch_instances
+# --
+
+data "alicloud_elasticsearch_instances" "${1:this}" {
+}

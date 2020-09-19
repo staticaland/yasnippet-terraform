@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_rancher2_auth_config_github
+# key: r_rancher2_auth_config_github
+# --
+
+resource "rancher2_auth_config_github" "${1:this}" {
+    client_id = "${2:client_id}"
+    client_secret = "${3:client_secret}"
+}

@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_checkpoint_management_install_database
+# key: r_checkpoint_management_install_database
+# --
+
+resource "checkpoint_management_install_database" "${1:this}" {
+    targets = "${2:targets}"
+}

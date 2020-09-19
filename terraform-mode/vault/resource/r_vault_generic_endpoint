@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_vault_generic_endpoint
+# key: r_vault_generic_endpoint
+# --
+
+resource "vault_generic_endpoint" "${1:this}" {
+    data_json = "${2:data_json}"
+    path = "${3:path}"
+}

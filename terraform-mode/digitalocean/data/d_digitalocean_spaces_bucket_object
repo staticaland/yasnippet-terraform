@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: d_digitalocean_spaces_bucket_object
+# key: d_digitalocean_spaces_bucket_object
+# --
+
+data "digitalocean_spaces_bucket_object" "${1:this}" {
+    bucket = "${2:bucket}"
+    key = "${3:key}"
+    region = "${4:region}"
+}

@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: r_linode_nodebalancer_node
+# key: r_linode_nodebalancer_node
+# --
+
+resource "linode_nodebalancer_node" "${1:this}" {
+    address = "${2:address}"
+    config_id = "${3:config_id}"
+    label = "${4:label}"
+    nodebalancer_id = "${5:nodebalancer_id}"
+}

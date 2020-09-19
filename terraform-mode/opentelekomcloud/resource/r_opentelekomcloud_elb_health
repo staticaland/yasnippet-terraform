@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: r_opentelekomcloud_elb_health
+# key: r_opentelekomcloud_elb_health
+# --
+
+resource "opentelekomcloud_elb_health" "${1:this}" {
+    listener_id = "${2:listener_id}"
+}

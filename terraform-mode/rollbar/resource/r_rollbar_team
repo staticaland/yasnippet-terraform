@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_rollbar_team
+# key: r_rollbar_team
+# --
+
+resource "rollbar_team" "${1:this}" {
+    access_level = "${2:access_level}"
+    name = "${3:name}"
+}

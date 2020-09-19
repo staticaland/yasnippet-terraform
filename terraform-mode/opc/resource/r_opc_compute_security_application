@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: r_opc_compute_security_application
+# key: r_opc_compute_security_application
+# --
+
+resource "opc_compute_security_application" "${1:this}" {
+    name = "${2:name}"
+    protocol = "${3:protocol}"
+}
