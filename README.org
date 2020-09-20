@@ -17,7 +17,7 @@ Or:
 #+BEGIN_SRC elisp
 (package! yasnippet-terraform
     :recipe (:host github :repo "staticaland/yasnippet-terraform"
-		:files ("terraform-mode/aws"))
+		:files ("terraform-mode/aws" "terraform-mode/terraform-configuration-language"))
     :pin "816f3890ba64b48d8a8128d1fcf2c9cd66c741c4")
 #+END_SRC
 
